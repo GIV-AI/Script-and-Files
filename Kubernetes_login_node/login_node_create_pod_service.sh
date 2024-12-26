@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Please check your quotas before proceeding with this script!"
+
 # Function to validate pod name
 validate_pod_name() {
   local pod_name="$1"
@@ -210,4 +212,4 @@ EOF
   fi
 fi
 
-echo "Please check your quotas before proceeding with this script!"
+
