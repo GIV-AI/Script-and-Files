@@ -9,7 +9,7 @@ USER_FILE="$USER_DIR/config_user.yaml"
 if sudo kubectl get ns "$USERNAME" >/dev/null 2>&1; then
     # Namespace deletion with suppressed warning
     sudo kubectl delete namespace "$USERNAME" --force --grace-period=0 2>/dev/null
-
+    sudo kubectl delete pv "$USERNAME"
     # Check if the config_user.yaml file exists
     if [[ -f "$USER_FILE" ]]; then
         # File exists; proceed with deletion

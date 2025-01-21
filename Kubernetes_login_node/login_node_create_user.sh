@@ -45,15 +45,10 @@ while true; do
 done
 
 while true; do
-    read -p "Enter 2g_20GPU (0-9): " GPU_20GB
+    read -p "Enter 20GPU (0-9): " GPU_20GB
     validate_number "$GPU_20GB" 0 9 && break
 done
  
-while true; do
-    read -p "Enter 1g_20GPU (1g, 0-9): " GPU_1_20GB
-    validate_number "$GPU_1_20GB" 0 9 && break
-done
-
 while true; do
     read -p "Enter 10GPU (0-9): " GPU_10GB
     validate_number "$GPU_10GB" 0 9 && break
@@ -159,7 +154,6 @@ spec:
     requests.nvidia.com/gpu: "$GPU_80GB"
     requests.nvidia.com/mig-3g.40gb: "$GPU_40GB"
     requests.nvidia.com/mig-2g.20gb: "$GPU_20GB"
-    requests.nvidia.com/mig-1g.20gb: "$GPU_1_20GB"
     requests.nvidia.com/mig-1g.10gb: "$GPU_10GB"
     pods: "$PODS"
 EOF
