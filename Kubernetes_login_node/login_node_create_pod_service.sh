@@ -88,15 +88,13 @@ while true; do
     echo "1) 80GB (nvidia.com/gpu)"
     echo "2) 40GB (nvidia.com/mig-3g.40gb)"
     echo "3) 20GB (nvidia.com/mig-2g.20gb)"
-    echo "4) 20GB (nvidia.com/mig-1g.20gb)"
-    echo "5) 10GB (nvidia.com/mig-1g.10gb)"
-    read -p "Enter your choice (1/2/3/4/5): " GPU_CHOICE
+    echo "4) 10GB (nvidia.com/mig-1g.10gb)"
+    read -p "Enter your choice (1/2/3/4): " GPU_CHOICE
     case $GPU_CHOICE in
         1) GPU_RESOURCE_KEY="nvidia.com/gpu"; break ;;
         2) GPU_RESOURCE_KEY="nvidia.com/mig-3g.40gb"; break ;;
         3) GPU_RESOURCE_KEY="nvidia.com/mig-2g.20gb"; break ;;
-        4) GPU_RESOURCE_KEY="nvidia.com/mig-1g.20gb"; break ;;
-        5) GPU_RESOURCE_KEY="nvidia.com/mig-1g.10gb"; break ;;
+        4) GPU_RESOURCE_KEY="nvidia.com/mig-1g.10gb"; break ;;
         *) echo "Invalid choice, please try again." ;;
     esac
 done
@@ -173,16 +171,24 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-# Wait for 30 seconds before checking the pod status
-echo "Please wait ..... Checking pod status."
-sleep 30
 
 # Check if pod is running before creating the service
-POD_STATUS=$(kubectl get pod $POD_NAME -o jsonpath='{.status.phase}')
-if [[ "$POD_STATUS" != "Running" ]]; then
-  echo "Service will not be created."
-  exit 1
+if [[ -n "$PORT" ]]; then
+  # checking pod status
+  echo "Please wait ....."
+  sleep 30
+  POD_STATUS=$(kubectl get pod $POD_NAME -o jsonpath='{.status.phase}')
+  if [[ "$POD_STATUS" != "Running" ]]; then
+    echo "The service will not be created due to pod is in a pending state. Re-check the status of the pod using the command 'kubectl get pod'."
+    echo "If it shows 'Pending', follow the guide provided by the system administrator."
+    exit 1
+  fi
+else
+  echo "Please wait for a minute and check the status of the pod using the command 'kubectl get pod'."
+  echo "If it shows 'Pending', follow the guide provided by the system administrator."
 fi
+
+
 
 # If port is specified, create the service
 if [[ -n "$PORT" ]]; then
@@ -211,5 +217,4 @@ EOF
     exit 1
   fi
 fi
-
 
