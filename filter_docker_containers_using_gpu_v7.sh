@@ -5,37 +5,10 @@ echo "##  Use the code with caution!  ##"
 echo "##################################"
 echo ""
 
-# Displaying the explanation of various fields in a table format
-#!/bin/bash
-
-# Displaying the explanation of various fields in a table format
-# echo "Explanation of the Fields Present in the Table"
-# echo "-----------------------------------------------"
-# echo "Container ID: Unique identifier for the container"
-# echo "Container Name: Name of the container"
-# echo "Status: Current status of the container"
-# echo "        - Created: Container has been created"
-# echo "        - Running: Container is currently running"
-# echo "        - Exited: Container has stopped running"
-# echo "Running Since: Timestamp indicating when the container started running"
-# echo "CPU Usage: CPU Usage represents the percentage of CPU resources utilized by the container. In a multi-core system, this value can exceed 100%, reflecting the cumulative usage across all cores."
-# echo "Memory Usage: Amount of memory being used by the container"
-# echo "GPU Status: Current GPU utilization status"
-# echo "            - Not Configured and Not Active"
-# echo "                Not Configured to Utilize NVIDIA GPU and Not Actively Using It"
-# echo "            - Actively Using GPU" 
-# echo "                Configured To Utilize NVIDIA GPU and Actively Using NVIDIA GPU"
-# echo "            - Configured, Not Active"
-# echo "                Configured To Utilize NVIDIA GPU But Not Actively Using It"
-# echo "            - Not Configured, But Active"
-# echo "                Not Configured to Utilize NVIDIA GPU But Still Actively"
-# echo "            (for more refer to abbreviation section)"
-# echo "Process Count: Number of processes running in the container"
-# echo "PIDs: Process IDs associated with the running processes"
-
 separatort0="------------------------------------------------------------------------------------------------------------------------------------------"
 separatort1="--------------------------+---------------------------------------------------------------------------------------------------------------"
 
+# Displaying the explanation of various fields in a table format
 echo "Explanation of the Fields Present in the Table"
 echo $separatort0
 printf "%-26s| %-109s|\n" "Fields" "Description"
@@ -62,41 +35,33 @@ printf "%-26s| %-109s|\n" " " "- Not Configured and Not Active: Not Configured t
 printf "%-26s| %-109s|\n" " " "- Actively Using GPU: Configured to Utilize NVIDIA GPU and Actively Using NVIDIA GPU."
 printf "%-26s| %-109s|\n" " " "- Configured, Not Active: Configured to Utilize NVIDIA GPU But Not Actively Using It."
 printf "%-26s| %-109s|\n" " " "- Not Configured, But Active: Not Configured to Utilize NVIDIA GPU But Still Actively."
-printf "%-26s| %-109s|\n" " " "(For more information, please refer to the abbreviation section given below)"
+echo "$separatort1"
+printf "%-26s| %-109s|\n" "GPU MIG Size" "Current MIG GPU Utilise"
 echo "$separatort1"
 printf "%-26s| %-109s|\n" "Process Count" "Number of processes running in the container."
-
 echo $separatort0
-# echo "| PIDs                    | Process IDs associated with the running processes.                                                           |"
-# echo "------------------------------------------------------------------------------------------------------------------------------------------"
 
 # Abbreviation section for GPU Status
 echo ""
-echo "Abbreviation for GPU Status as"
+echo "Abbreviation used:"
 echo "-------------------------------"
 echo "NCNA: Not Configured and Not Active"
 echo "AG: Actively Using GPU"
 echo "CNA: Configured, Not Active"
 echo "NCA: Not Configured, But Active"
+echo "N/A: Not Available"
 echo ""
 
 # List of containers
 echo "List of containers most likely started by users that may be utilizing GPUs:"
 echo "----------------------------------------------------------------------------"
 
-# # Print the table header with column titles with pids col
-# table_header=$(printf "%-13s| %-21s| %-10s| %-20s| %-15s| %-25s| %-11s| %-14s| %-10s" \
-# "Container ID" "Name" "Status" "Running since" "CPU Usage" "Memory Usage" \
-# "GPU Status" "Process Count" "PIDs")
-
-table_header=$(printf "%-13s| %-24s| %-10s| %-20s| %-12s| %-30s| %-11s| %-8s|\n\
-%-13s| %-24s| %-10s| %-20s| %-12s| %-30s| %-11s| %-8s|" \
+table_header=$(printf "%-13s| %-24s| %-10s| %-20s| %-12s| %-30s| %-11s| %-13s| %-8s|\n%-13s| %-24s| %-10s| %-20s| %-12s| %-30s| %-11s| %-13s| %-8s|" \
 "Container ID" "Container Name" "Status" "Running since" "CPU Usage" "Memory Usage" \
-"GPU Status" "Process" " " " " " " " " " " " " " " "Count")
+"GPU Status" "GPU MIG Size" "Process" " " " " " " " " " " " " " " "Count")
 
-# Print a separator line
-start=$(echo "-----------------------------------------------------------------------------------------------------------------------------------------------")
-table_separator=$(echo "-------------+-------------------------+-----------+---------------------+-------------+-------------------------------+------------+----------")
+start=$(echo "--------------------------------------------------------------------------------------------------------------------------------------------------------------")
+table_separator=$(echo "-------------+-------------------------+-----------+---------------------+-------------+-------------------------------+------------+--------------+----------")
 
 # Array to store the rows
 table_rows=()
@@ -148,42 +113,58 @@ for container_id in $docker_container_ids; do
         fi
 
         # Check GPU configuration
-        gpu_info=$(docker inspect --format '{{.Config.Env}}' "$container_id" 2>/dev/null)
-        gpu_status="NCNA"
+        gpu_status="NCNA"  # Default status
 
-        # Determine GPU usage
-        if [[ "$status" == "running" ]]; then
-            if [[ "$gpu_info" == *"NVIDIA_VISIBLE_DEVICES"* ]]; then
-                gpu_status="AG"
+        # Check if the container is running
+        if [ "$status" == "running" ]; then
+            # Check if the container can run nvidia-smi
+            if docker exec "$container_id" nvidia-smi &>/dev/null; then
+                # Check if the container is actively using GPU
+                container_pids=($(docker top "$container_id" 2>/dev/null | awk 'NR>1 {print $2}'))
+                for pid in "${container_pids[@]}"; do
+                    if [[ " ${gpu_processes[@]} " =~ " ${pid} " ]]; then
+                        gpu_status="AG"  # Actively Using GPU
+                        break
+                    fi
+                done
+                if [ "$gpu_status" != "AG" ]; then
+                    gpu_status="CNA"  # Configured, Not Active
+                fi
             else
-                gpu_status="NCA"
+                gpu_status="NCA"  # Not Configured, But Active (if any GPU process is found)
+                for pid in "${container_pids[@]}"; do
+                    if [[ " ${gpu_processes[@]} " =~ " ${pid} " ]]; then
+                        gpu_status="NCA"
+                        break
+                    fi
+                done
             fi
         else
-            if [[ "$gpu_info" == *"NVIDIA_VISIBLE_DEVICES"* ]]; then
-                gpu_status="CNA"
+            gpu_status="NCNA"  # Not Configured and Not Active if container is not running
+        fi
+
+        # Get GPU MIG size
+        container_gpu="N/A"
+        if [ "$status" == "running" ]; then
+            container_gpu=$(docker exec "$container_id" nvidia-smi -L 2>/dev/null)
+            if echo "$container_gpu" | grep -q "MIG"; then
+                container_gpu=$(echo "$container_gpu" | grep "MIG" | awk '{print $2}')
+            elif echo "$container_gpu" | grep -q "GPU"; then
+                container_gpu="40gb"
+            else
+                container_gpu="N/A"
             fi
         fi
 
         # Get process IDs
         container_pids=($(docker top "$container_id" 2>/dev/null | awk 'NR>1 {print $2}'))
-        pids_list=""
         pids_count=${#container_pids[@]}
-
-        # Prepare PIDs list with truncation
-        # if [ "$pids_count" -gt 2 ]; then
-        #     pids_list="${container_pids[0]}, ${container_pids[1]}, ..."
-        # else
-        #     pids_list=$(IFS=,; echo "${container_pids[*]}")
-        # fi
 
         # Skip special containers (etcd1, deepops-registry)
         if [[ "$container_name" != "etcd1" && "$container_name" != "deepops-registry" ]]; then
-            # table_rows+=("$(printf "%-13s| %-21s| %-10s| %-20s| %-15s| %-25s| %-11s| %-14s| %-20s" \
-            table_rows+=("$(printf "%-13s| %-24s| %-10s| %-20s| %-12s| %-30s| %-11s| %-8s|" \
+            table_rows+=("$(printf "%-13s| %-24s| %-10s| %-20s| %-12s| %-30s| %-11s| %-13s| %-8s|" \
             "$container_id" "$container_name" "$status" "$duration" "$cpu_usage" "$mem_usage" \
-            "$gpu_status" "$pids_count" \
-            # "$pids_list" \
-            )")
+            "$gpu_status" "$container_gpu" "$pids_count")")
         fi
     fi
 done
