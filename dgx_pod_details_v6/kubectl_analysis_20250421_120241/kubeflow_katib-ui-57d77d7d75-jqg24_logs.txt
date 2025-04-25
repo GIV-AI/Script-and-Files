@@ -1,0 +1,4 @@
+I0421 05:32:06.017212       1 request.go:682] Waited for 1.036273961s due to client-side throttling, not priority and fairness, request: GET:https://10.233.0.1:443/apis/networking.k8s.io/v1?timeout=32s
+2025/04/21 05:32:06 Serving the frontend dir /app/build
+2025/04/21 05:32:06 Serving at 0.0.0.0:8080
+2025/04/21 06:47:31 Sending file /app/build/static/index.html for url: /katib/

@@ -1,0 +1,220 @@
+Namespace: kubeflow
+Pod Name: workflow-controller-56cc57796-kl4vb
+Status: 2/2
+Other Details: Running                    39 (6h32m ago)   5d22h
+Name:                 workflow-controller-56cc57796-kl4vb
+Namespace:            kubeflow
+Priority:             1000000
+Priority Class Name:  workflow-controller
+Service Account:      argo
+Node:                 jain-dgx-server/192.168.1.248
+Start Time:           Tue, 15 Apr 2025 14:01:33 +0000
+Labels:               app=workflow-controller
+                      application-crd-id=kubeflow-pipelines
+                      pod-template-hash=56cc57796
+                      security.istio.io/tlsMode=istio
+                      service.istio.io/canonical-name=workflow-controller
+                      service.istio.io/canonical-revision=latest
+Annotations:          cni.projectcalico.org/containerID: a194dd53995b2bff84cbedebf769628e5ec05fb36d3b64dee43c5bb6cf87b1ff
+                      cni.projectcalico.org/podIP: 10.233.119.214/32
+                      cni.projectcalico.org/podIPs: 10.233.119.214/32
+                      kubectl.kubernetes.io/default-container: workflow-controller
+                      kubectl.kubernetes.io/default-logs-container: workflow-controller
+                      prometheus.io/path: /stats/prometheus
+                      prometheus.io/port: 15020
+                      prometheus.io/scrape: true
+                      sidecar.istio.io/status:
+                        {"initContainers":["istio-init"],"containers":["istio-proxy"],"volumes":["workload-socket","credential-socket","workload-certs","istio-env...
+Status:               Running
+IP:                   10.233.119.214
+IPs:
+  IP:           10.233.119.214
+Controlled By:  ReplicaSet/workflow-controller-56cc57796
+Init Containers:
+  istio-init:
+    Container ID:  docker://cb51f5783f5c4bf8c1b88c6d3e502ad445b2108fe0150f01e05a1144b9d86dcb
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      istio-iptables
+      -p
+      15001
+      -z
+      15006
+      -u
+      1337
+      -m
+      REDIRECT
+      -i
+      *
+      -x
+      
+      -b
+      *
+      -d
+      15090,15021,15020
+      --log_output_level=default:info
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:29:00 +0000
+      Finished:     Mon, 21 Apr 2025 05:29:01 +0000
+    Ready:          True
+    Restart Count:  7
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:        10m
+      memory:     40Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-cgnvh (ro)
+Containers:
+  workflow-controller:
+    Container ID:  docker://2ae6401b69a2b030417c7cc7d97228de0d93ae1b8881de0c268776b1008cdb05
+    Image:         gcr.io/ml-pipeline/workflow-controller:v3.3.8-license-compliance
+    Image ID:      docker-pullable://gcr.io/ml-pipeline/workflow-controller@sha256:6c8e4e2a644376e53803b449d64168740c9ada2754a8e958feb308aef8db898d
+    Ports:         9090/TCP, 6060/TCP
+    Host Ports:    0/TCP, 0/TCP
+    Command:
+      workflow-controller
+    Args:
+      --configmap
+      workflow-controller-configmap
+      --executor-image
+      gcr.io/ml-pipeline/argoexec:v3.3.8-license-compliance
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:32:01 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Mon, 21 Apr 2025 05:30:39 +0000
+      Finished:     Mon, 21 Apr 2025 05:30:39 +0000
+    Ready:          True
+    Restart Count:  32
+    Requests:
+      cpu:     100m
+      memory:  500Mi
+    Liveness:  http-get http://:15020/app-health/workflow-controller/livez delay=90s timeout=30s period=60s #success=1 #failure=3
+    Environment:
+      LEADER_ELECTION_IDENTITY:  workflow-controller-56cc57796-kl4vb (v1:metadata.name)
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-cgnvh (ro)
+  istio-proxy:
+    Container ID:  docker://eebacb046c7efea430339b11c556a19851a88c179bf4cf2e32932ad72014c3c2
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          15090/TCP
+    Host Port:     0/TCP
+    Args:
+      proxy
+      sidecar
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+      --concurrency
+      2
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:05 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 03:55:38 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:46 +0000
+    Ready:          True
+    Restart Count:  7
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=1s timeout=3s period=2s #success=1 #failure=30
+    Environment:
+      JWT_POLICY:                    third-party-jwt
+      PILOT_CERT_PROVIDER:           istiod
+      CA_ADDR:                       istiod.istio-system.svc:15012
+      POD_NAME:                      workflow-controller-56cc57796-kl4vb (v1:metadata.name)
+      POD_NAMESPACE:                 kubeflow (v1:metadata.namespace)
+      INSTANCE_IP:                    (v1:status.podIP)
+      SERVICE_ACCOUNT:                (v1:spec.serviceAccountName)
+      HOST_IP:                        (v1:status.hostIP)
+      PROXY_CONFIG:                  {}
+                                     
+      ISTIO_META_POD_PORTS:          [
+                                         {"name":"metrics","containerPort":9090,"protocol":"TCP"}
+                                         ,{"containerPort":6060,"protocol":"TCP"}
+                                     ]
+      ISTIO_META_APP_CONTAINERS:     workflow-controller
+      ISTIO_META_CLUSTER_ID:         Kubernetes
+      ISTIO_META_INTERCEPTION_MODE:  REDIRECT
+      ISTIO_META_WORKLOAD_NAME:      workflow-controller
+      ISTIO_META_OWNER:              kubernetes://apis/apps/v1/namespaces/kubeflow/deployments/workflow-controller
+      ISTIO_META_MESH_ID:            cluster.local
+      TRUST_DOMAIN:                  cluster.local
+      ISTIO_KUBE_APP_PROBERS:        {"/app-health/workflow-controller/livez":{"httpGet":{"path":"/healthz","port":6060,"scheme":"HTTP"},"timeoutSeconds":30}}
+    Mounts:
+      /etc/istio/pod from istio-podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-cgnvh (ro)
+      /var/run/secrets/tokens from istio-token (rw)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  kube-api-access-cgnvh:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

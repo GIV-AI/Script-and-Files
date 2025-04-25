@@ -1,0 +1,83 @@
+Namespace: gpu-operator
+Pod Name: nvidia-cuda-validator-8d49x
+Status: 0/1
+Other Details: Completed                  0                6h32m
+Name:             nvidia-cuda-validator-8d49x
+Namespace:        gpu-operator
+Priority:         0
+Service Account:  nvidia-operator-validator
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Mon, 21 Apr 2025 05:29:56 +0000
+Labels:           app=nvidia-cuda-validator
+Annotations:      cni.projectcalico.org/containerID: af527536eb078a7ce2526aaec65166e0c79d596459feff112869ef2144429fdc
+                  cni.projectcalico.org/podIP: 
+                  cni.projectcalico.org/podIPs: 
+Status:           Succeeded
+IP:               10.233.120.62
+IPs:
+  IP:           10.233.120.62
+Controlled By:  ClusterPolicy/cluster-policy
+Init Containers:
+  cuda-validation:
+    Container ID:  docker://3d41f2d6fcc7f28326b86a884ffe019d2bd090d4cd9ef55681fe3974c976f959
+    Image:         nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Image ID:      docker-pullable://nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:21dfc9c56b5f8bce73e60361d6e83759c3fa14dc6afc2d5ebdf1b891a936daf6
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+    Args:
+      vectorAdd
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:29:59 +0000
+      Finished:     Mon, 21 Apr 2025 05:30:07 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:
+      NVIDIA_VISIBLE_DEVICES:  all
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-fqjxw (ro)
+Containers:
+  nvidia-cuda-validator:
+    Container ID:  docker://9f0d10c67fac23f5dc2b34e459d669d8c53250071943d2619bc2e69587a1a322
+    Image:         nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Image ID:      docker-pullable://nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:21dfc9c56b5f8bce73e60361d6e83759c3fa14dc6afc2d5ebdf1b891a936daf6
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+    Args:
+      echo cuda workload validation is successful
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:30:09 +0000
+      Finished:     Mon, 21 Apr 2025 05:30:09 +0000
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-fqjxw (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-fqjxw:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+                             nvidia.com/gpu:NoSchedule op=Exists
+Events:                      <none>

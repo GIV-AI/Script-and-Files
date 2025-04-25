@@ -1,0 +1,76 @@
+Namespace: kubeflow
+Pod Name: katib-mysql-66c8cdff4f-4px7x
+Status: 1/1
+Other Details: Running                    7 (6h37m ago)    5d22h
+Name:             katib-mysql-66c8cdff4f-4px7x
+Namespace:        kubeflow
+Priority:         0
+Service Account:  default
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:29 +0000
+Labels:           katib.kubeflow.org/component=mysql
+                  pod-template-hash=66c8cdff4f
+Annotations:      cni.projectcalico.org/containerID: e822a398f31cb070c6f2204c130efc32b6fff47c1e11f737969cf7b29e0aaa15
+                  cni.projectcalico.org/podIP: 10.233.119.220/32
+                  cni.projectcalico.org/podIPs: 10.233.119.220/32
+                  sidecar.istio.io/inject: false
+Status:           Running
+IP:               10.233.119.220
+IPs:
+  IP:           10.233.119.220
+Controlled By:  ReplicaSet/katib-mysql-66c8cdff4f
+Containers:
+  katib-mysql:
+    Container ID:  docker://b36a8066c40504a5611e30795bffa0c2ecb932c4ba5c4d82a2e3807d53a307d1
+    Image:         mysql:8.0.29
+    Image ID:      docker-pullable://mysql@sha256:152cf187a3efc56afb0b3877b4d21e231d1d6eb828ca9221056590b0ac834c75
+    Port:          3306/TCP
+    Host Port:     0/TCP
+    Args:
+      --datadir
+      /var/lib/mysql/datadir
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:08 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    255
+      Started:      Mon, 21 Apr 2025 03:55:40 +0000
+      Finished:     Mon, 21 Apr 2025 05:25:06 +0000
+    Ready:          True
+    Restart Count:  7
+    Liveness:       exec [/bin/bash -c mysqladmin ping -u root -p${MYSQL_ROOT_PASSWORD}] delay=10s timeout=1s period=5s #success=1 #failure=10
+    Readiness:      exec [/bin/bash -c mysql -D ${MYSQL_DATABASE} -u root -p${MYSQL_ROOT_PASSWORD} -e 'SELECT 1'] delay=10s timeout=1s period=5s #success=1 #failure=10
+    Startup:        exec [/bin/bash -c mysqladmin ping -u root -p${MYSQL_ROOT_PASSWORD}] delay=0s timeout=1s period=15s #success=1 #failure=60
+    Environment:
+      MYSQL_ROOT_PASSWORD:         <set to the key 'MYSQL_ROOT_PASSWORD' in secret 'katib-mysql-secrets'>  Optional: false
+      MYSQL_ALLOW_EMPTY_PASSWORD:  true
+      MYSQL_DATABASE:              katib
+    Mounts:
+      /var/lib/mysql from katib-mysql (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-mfzq7 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  katib-mysql:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  katib-mysql
+    ReadOnly:   false
+  kube-api-access-mfzq7:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                    From     Message
+  ----     ------     ----                   ----     -------
+  Warning  Unhealthy  13m (x41 over 5h36m)   kubelet  Readiness probe errored: rpc error: code = Unknown desc = deadline exceeded ("DeadlineExceeded"): context deadline exceeded
+  Warning  Unhealthy  2m5s (x36 over 6h12m)  kubelet  Liveness probe errored: rpc error: code = Unknown desc = deadline exceeded ("DeadlineExceeded"): context deadline exceeded

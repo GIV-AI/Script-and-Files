@@ -1,5 +1,5 @@
 # https://ngc.nvidia.com/catalog/containers/nvidia:tensorflow
-FROM nvcr.io/nvidia/pytorch:22.11-py3 
+FROM kubeflowjupytor:ubuntu  
 
 # Start Jupyter up by default rather than a shell
 ENTRYPOINT ["/bin/sh"]

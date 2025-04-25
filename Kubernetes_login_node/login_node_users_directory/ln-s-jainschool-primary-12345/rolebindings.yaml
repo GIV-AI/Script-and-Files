@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: ln-s-jainschool-primary-12345
+  namespace: ln-s-jainschool-primary-12345
+subjects:
+- kind: ServiceAccount
+  name: ln-s-jainschool-primary-12345
+  namespace: ln-s-jainschool-primary-12345
+roleRef:
+  kind: Role
+  name: ln-s-jainschool-primary-12345
+  apiGroup: rbac.authorization.k8s.io

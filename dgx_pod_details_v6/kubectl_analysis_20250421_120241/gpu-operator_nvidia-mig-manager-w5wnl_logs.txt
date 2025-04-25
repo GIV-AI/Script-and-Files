@@ -1,0 +1,32 @@
+Defaulted container "nvidia-mig-manager" out of: nvidia-mig-manager, toolkit-validation (init)
+WITH_SHUTDOWN_HOST_GPU_CLIENTS=true
+DRIVER_ROOT=/
+DRIVER_ROOT_CTR_PATH=/host
+Starting nvidia-mig-manager
+W0421 05:29:52.767762  118643 client_config.go:615] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+time="2025-04-21T05:29:52Z" level=info msg="Waiting for change to 'nvidia.com/mig.config' label"
+time="2025-04-21T05:29:52Z" level=info msg="Updating to MIG config: all-disabled"
+Getting current value of the 'nvidia.com/gpu.deploy.device-plugin' node label
+Current value of 'nvidia.com/gpu.deploy.device-plugin=true'
+Getting current value of the 'nvidia.com/gpu.deploy.gpu-feature-discovery' node label
+Current value of 'nvidia.com/gpu.deploy.gpu-feature-discovery=true'
+Getting current value of the 'nvidia.com/gpu.deploy.dcgm-exporter' node label
+Current value of 'nvidia.com/gpu.deploy.dcgm-exporter=true'
+Getting current value of the 'nvidia.com/gpu.deploy.dcgm' node label
+Current value of 'nvidia.com/gpu.deploy.dcgm=true'
+Getting current value of the 'nvidia.com/gpu.deploy.nvsm' node label
+Current value of 'nvidia.com/gpu.deploy.nvsm='
+Asserting that the requested configuration is present in the configuration file
+Selected MIG configuration is valid
+Getting current value of the 'nvidia.com/mig.config.state' node label
+Current value of 'nvidia.com/mig.config.state=success'
+Checking if the selected MIG config is currently applied or not
+Selected MIG configuration currently applied
+Restarting any GPU clients previously shutdown on the host by restarting their systemd services
+Restarting any GPU clients previously shutdown in Kubernetes by reenabling their component-specific nodeSelector labels
+node/jain-dgx-server not labeled
+Changing the 'nvidia.com/mig.config.state' node label to 'success'
+node/jain-dgx-server not labeled
+time="2025-04-21T05:29:57Z" level=info msg="Successfuly updated to MIG config: all-disabled"
+time="2025-04-21T05:29:57Z" level=info msg="Waiting for change to 'nvidia.com/mig.config' label"
+W0421 05:30:48.087680  118643 reflector.go:436] /build/deployments/gpu-operator/main.go:359: watch of *v1.Node ended with: an error on the server ("unable to decode an event from the watch stream: http2: client connection lost") has prevented the request from succeeding

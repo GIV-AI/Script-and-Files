@@ -1,0 +1,120 @@
+Namespace: istio-system
+Pod Name: istiod-6995577d4-rqkxf
+Status: 1/1
+Other Details: Running                    7 (6h51m ago)    5d22h
+Name:             istiod-6995577d4-rqkxf
+Namespace:        istio-system
+Priority:         0
+Service Account:  istiod
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:00:27 +0000
+Labels:           app=istiod
+                  install.operator.istio.io/owning-resource=unknown
+                  istio=pilot
+                  istio.io/rev=default
+                  operator.istio.io/component=Pilot
+                  pod-template-hash=6995577d4
+                  sidecar.istio.io/inject=false
+Annotations:      cni.projectcalico.org/containerID: efe6f6da070fc890d98f6dae6e152cb8ee71d61eedaac4e2cabbf9cc4f20eb72
+                  cni.projectcalico.org/podIP: 10.233.119.246/32
+                  cni.projectcalico.org/podIPs: 10.233.119.246/32
+                  prometheus.io/port: 15014
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/inject: false
+Status:           Running
+IP:               10.233.119.246
+IPs:
+  IP:           10.233.119.246
+Controlled By:  ReplicaSet/istiod-6995577d4
+Containers:
+  discovery:
+    Container ID:  docker://af87f894ae8238838ef927dc4b5cebf5e30c2a2df081f0ae15cfe37a311ab4a4
+    Image:         docker.io/istio/pilot:1.16.0
+    Image ID:      docker-pullable://istio/pilot@sha256:ac0284d75ec9e6a73acaeb787881779ed27342c10fa5589d873dd30790a57868
+    Ports:         8080/TCP, 15010/TCP, 15017/TCP
+    Host Ports:    0/TCP, 0/TCP, 0/TCP
+    Args:
+      discovery
+      --monitoringAddr=:15014
+      --log_output_level=default:info
+      --domain
+      cluster.local
+      --keepaliveMaxServerConnectionAge
+      30m
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:27 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    137
+      Started:      Mon, 21 Apr 2025 03:55:43 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:50 +0000
+    Ready:          True
+    Restart Count:  7
+    Requests:
+      cpu:      10m
+      memory:   100Mi
+    Readiness:  http-get http://:8080/ready delay=1s timeout=5s period=3s #success=1 #failure=3
+    Environment:
+      ENABLE_DEBUG_ON_HTTP:                         
+      REVISION:                                     default
+      JWT_POLICY:                                   third-party-jwt
+      PILOT_CERT_PROVIDER:                          istiod
+      POD_NAME:                                     istiod-6995577d4-rqkxf (v1:metadata.name)
+      POD_NAMESPACE:                                istio-system (v1:metadata.namespace)
+      SERVICE_ACCOUNT:                               (v1:spec.serviceAccountName)
+      KUBECONFIG:                                   /var/run/secrets/remote/config
+      PILOT_TRACE_SAMPLING:                         100
+      PILOT_ENABLE_PROTOCOL_SNIFFING_FOR_OUTBOUND:  true
+      PILOT_ENABLE_PROTOCOL_SNIFFING_FOR_INBOUND:   true
+      ISTIOD_ADDR:                                  istiod.istio-system.svc:15012
+      PILOT_ENABLE_ANALYSIS:                        false
+      CLUSTER_ID:                                   Kubernetes
+    Mounts:
+      /etc/cacerts from cacerts (ro)
+      /var/run/secrets/istio-dns from local-certs (rw)
+      /var/run/secrets/istiod/ca from istio-csr-ca-configmap (ro)
+      /var/run/secrets/istiod/tls from istio-csr-dns-cert (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-24twx (ro)
+      /var/run/secrets/remote from istio-kubeconfig (ro)
+      /var/run/secrets/tokens from istio-token (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  local-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  cacerts:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  cacerts
+    Optional:    true
+  istio-kubeconfig:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  istio-kubeconfig
+    Optional:    true
+  istio-csr-dns-cert:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  istiod-tls
+    Optional:    true
+  istio-csr-ca-configmap:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  true
+  kube-api-access-24twx:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

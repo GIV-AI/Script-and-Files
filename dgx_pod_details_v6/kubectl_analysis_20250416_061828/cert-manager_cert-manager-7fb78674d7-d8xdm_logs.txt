@@ -1,0 +1,32 @@
+I0416 04:53:43.647315       1 start.go:75] cert-manager "msg"="starting controller" "git-commit"="a96bae172ddb1fcd4b57f1859ab9d1a9e94f7451" "version"="v1.10.1"
+I0416 04:53:43.647378       1 controller.go:242] cert-manager/controller/build-context "msg"="configured acme dns01 nameservers" "nameservers"=["169.254.25.10:53"]
+W0416 04:53:43.648092       1 client_config.go:617] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+I0416 04:53:43.653202       1 controller.go:70] cert-manager/controller "msg"="enabled controllers: [certificaterequests-approver certificaterequests-issuer-acme certificaterequests-issuer-ca certificaterequests-issuer-selfsigned certificaterequests-issuer-vault certificaterequests-issuer-venafi certificates-issuing certificates-key-manager certificates-metrics certificates-readiness certificates-request-manager certificates-revision-manager certificates-trigger challenges clusterissuers ingress-shim issuers orders]" 
+I0416 04:53:43.654034       1 controller.go:134] cert-manager/controller "msg"="starting leader election" 
+I0416 04:53:43.654119       1 controller.go:91] cert-manager/controller "msg"="starting metrics server" "address"={"IP":"::","Port":9402,"Zone":""}
+I0416 04:53:43.654309       1 leaderelection.go:248] attempting to acquire leader lease kube-system/cert-manager-controller...
+I0416 04:53:48.763066       1 leaderelection.go:258] successfully acquired lease kube-system/cert-manager-controller
+I0416 04:53:48.763552       1 controller.go:182] cert-manager/controller "msg"="not starting controller as it's disabled" "controller"="certificatesigningrequests-issuer-ca"
+I0416 04:53:48.763563       1 controller.go:182] cert-manager/controller "msg"="not starting controller as it's disabled" "controller"="certificatesigningrequests-issuer-venafi"
+I0416 04:53:48.765285       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="issuers"
+I0416 04:53:48.765329       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="certificaterequests-issuer-vault"
+I0416 04:53:48.765476       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="certificates-metrics"
+I0416 04:53:48.765657       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="certificates-trigger"
+I0416 04:53:48.765689       1 controller.go:182] cert-manager/controller "msg"="not starting controller as it's disabled" "controller"="certificatesigningrequests-issuer-vault"
+I0416 04:53:48.765807       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="certificates-revision-manager"
+I0416 04:53:48.866472       1 controller.go:182] cert-manager/controller "msg"="not starting controller as it's disabled" "controller"="gateway-shim"
+I0416 04:53:48.866541       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="challenges"
+I0416 04:53:48.867095       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="certificates-request-manager"
+I0416 04:53:48.867213       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="certificates-issuing"
+I0416 04:53:48.867254       1 controller.go:182] cert-manager/controller "msg"="not starting controller as it's disabled" "controller"="certificatesigningrequests-issuer-acme"
+I0416 04:53:48.867366       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="certificates-readiness"
+I0416 04:53:48.867659       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="clusterissuers"
+I0416 04:53:48.867749       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="certificaterequests-issuer-acme"
+I0416 04:53:48.867901       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="certificaterequests-issuer-selfsigned"
+I0416 04:53:48.868026       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="certificaterequests-issuer-venafi"
+I0416 04:53:48.868909       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="certificaterequests-issuer-ca"
+I0416 04:53:48.868910       1 controller.go:182] cert-manager/controller "msg"="not starting controller as it's disabled" "controller"="certificatesigningrequests-issuer-selfsigned"
+I0416 04:53:48.868988       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="certificates-key-manager"
+I0416 04:53:48.869149       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="orders"
+I0416 04:53:48.870810       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="ingress-shim"
+I0416 04:53:48.872351       1 controller.go:205] cert-manager/controller "msg"="starting controller" "controller"="certificaterequests-approver"

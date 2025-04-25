@@ -1,0 +1,173 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Detailed Description <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ ----------------------------------------------------------------------------------------------------------------------------- +
+| Date           | Time           | Namespace                                | Pod Name                                          |
+| ------------------------------------------------------------------------------------------------------------------------------ |
+| 2025-04-21     |  03:55:30      |  f-gi-aiml-1                             |  new1-0                                           |
+| 2025-04-21     |  05:38:53      |  f-gi-aiml-1                             |  test-0                                           |
+| 2025-04-21     |  05:39:17      |  s-jain-training-30                      |  test-0                                           |
+| 2025-04-21     |  05:41:32      |  s-jain-training-19                      |  day3-0                                           |
+| 2025-04-21     |  05:41:38      |  s-jain-training-6                       |  testdeepstream-0                                 |
+| 2025-04-21     |  05:41:44      |  s-jain-training-4                       |  day3notebook-0                                   |
+| 2025-04-21     |  05:41:46      |  s-jain-training-1                       |  test-0                                           |
+| 2025-04-21     |  05:41:46      |  s-jain-training-2                       |  test-0                                           |
+| 2025-04-21     |  05:41:54      |  s-jain-training-18                      |  day3-0                                           |
+| 2025-04-21     |  05:41:55      |  s-jain-training-11                      |  day3vp-0                                         |
+| 2025-04-21     |  05:41:58      |  s-jain-training-17                      |  testday3-0                                       |
+| 2025-04-21     |  05:41:59      |  s-jain-training-10                      |  projectday3-0                                    |
+| 2025-04-21     |  05:42:06      |  s-jain-training-3                       |  day3-0                                           |
+| 2025-04-21     |  05:42:07      |  s-jain-training-23                      |  day3-0                                           |
+| 2025-04-21     |  05:42:08      |  s-jain-training-8                       |  test2-0                                          |
+| 2025-04-21     |  05:42:09      |  s-jain-training-9                       |  test-0                                           |
+| 2025-04-21     |  05:42:10      |  s-jain-training-15                      |  pytroch24-0-0                                    |
+| 2025-04-21     |  05:42:19      |  s-jain-training-12                      |  kaju2-0                                          |
+| 2025-04-21     |  05:42:20      |  s-jain-training-7                       |  test2-0                                          |
+| 2025-04-21     |  05:42:28      |  s-jain-training-22                      |  day3-0                                           |
+| 2025-04-21     |  05:42:29      |  s-jain-training-13                      |  day3-0                                           |
+| 2025-04-21     |  05:42:33      |  s-jain-training-21                      |  tritonserver-0                                   |
+| 2025-04-21     |  05:43:15      |  s-jain-training-30                      |  nt1-0                                            |
+| 2025-04-21     |  05:43:25      |  s-jain-training-5                       |  daythreeproject-0                                |
+| 2025-04-21     |  06:42:00      |  f-gi-aiml-12                            |  test-0                                           |
+| 2025-04-21     |  07:02:43      |  s-jain-training-18                      |  deepstream-0                                     |
+| 2025-04-21     |  07:03:00      |  s-jain-training-4                       |  deepstreamnotebook-0                             |
+| 2025-04-21     |  07:03:51      |  s-jain-training-22                      |  deepstream-0                                     |
+| 2025-04-21     |  07:03:57      |  s-jain-training-23                      |  deepstreamproject-0                              |
+| 2025-04-21     |  07:04:04      |  s-jain-training-5                       |  daythreedeepstreamproject-0                      |
+| 2025-04-21     |  07:04:09      |  s-jain-training-6                       |  test-deepstream-0                                |
+| 2025-04-21     |  07:04:16      |  s-jain-training-10                      |  projectday3deepstream-0                          |
+| 2025-04-21     |  07:04:20      |  s-jain-training-15                      |  nvidiadeep-0                                     |
+| 2025-04-21     |  07:04:23      |  s-jain-training-21                      |  deepstream-0                                     |
+| 2025-04-21     |  07:04:40      |  s-jain-training-19                      |  deepstream-0                                     |
+| 2025-04-21     |  07:04:41      |  s-jain-training-11                      |  deepvp-0                                         |
+| 2025-04-21     |  07:05:09      |  s-jain-training-13                      |  deepday3-0                                       |
+| 2025-04-21     |  07:05:22      |  s-jain-training-3                       |  new-0                                            |
+| 2025-04-21     |  07:05:39      |  s-jain-training-12                      |  vkaju-0                                          |
+| 2025-04-21     |  07:07:23      |  s-jain-training-8                       |  test3-0                                          |
+| 2025-04-21     |  07:09:34      |  s-jain-training-15                      |  nvidiadeepst-0                                   |
+| 2025-04-21     |  07:11:03      |  s-jain-training-17                      |  day3dpstrm-0                                     |
+| 2025-04-21     |  07:11:54      |  s-jain-training-7                       |  test3-0                                          |
+| 2025-04-21     |  08:10:50      |  s-jain-training-19                      |  deepstream1-0                                    |
+| 2025-04-21     |  09:26:23      |  s-jain-training-21                      |  stream-0                                         |
+| 2025-04-21     |  10:20:34      |  s-jain-training-15                      |  triton-0                                         |
+| 2025-04-21     |  10:20:46      |  s-jain-training-18                      |  tritonserver-0                                   |
+| 2025-04-21     |  10:20:46      |  s-jain-training-23                      |  new1-0                                           |
+| 2025-04-21     |  10:20:47      |  s-jain-training-22                      |  triton-0                                         |
+| 2025-04-21     |  10:20:52      |  s-jain-training-3                       |  day2-25-0                                        |
+| 2025-04-21     |  10:21:04      |  s-jain-training-17                      |  testserver-0                                     |
+| 2025-04-21     |  10:21:09      |  s-jain-training-11                      |  tritonvp-0                                       |
+| 2025-04-21     |  10:21:10      |  f-gi-aiml-1                             |  triton-0                                         |
+| 2025-04-21     |  10:21:12      |  s-jain-training-4                       |  tritonnotebook-0                                 |
+| 2025-04-21     |  10:21:13      |  s-jain-training-5                       |  daythreeexample3-0                               |
+| 2025-04-21     |  10:21:17      |  s-jain-training-12                      |  triton-0                                         |
+| 2025-04-21     |  10:21:23      |  s-jain-training-6                       |  test-triton-server-0                             |
+| 2025-04-21     |  10:21:33      |  s-jain-training-13                      |  day3tritonserver-0                               |
+| 2025-04-21     |  10:21:43      |  s-jain-training-7                       |  test4-0                                          |
+| 2025-04-21     |  10:22:22      |  s-jain-training-10                      |  projectday3triton-0                              |
+| 2025-04-21     |  10:28:53      |  s-jain-training-20                      |  tritonserver-0                                   |
+| 2025-04-21     |  10:34:21      |  s-jain-training-3                       |  text25-0                                         |
+| 2025-04-21     |  10:39:13      |  s-jain-training-17                      |  testser3-0                                       |
+| 2025-04-21     |  11:54:17      |  s-jain-training-21                      |  streamserver-0                                   |
+| 2025-04-21     |  13:59:55      |  f-gi-aiml-1                             |  bert-0                                           |
+| 2025-04-21     |  14:33:46      |  f-gi-aiml-1                             |  bertnew-0                                        |
+| 2025-04-21     |  15:38:01      |  s-jain-training-18                      |  test-0                                           |
+| 2025-04-21     |  16:47:30      |  f-gi-aiml-1                             |  phi-0                                            |
+| 2025-04-21     |  16:58:37      |  f-gi-aiml-1                             |  pipeline-0                                       |
+| 2025-04-21     |  17:08:07      |  f-gi-aiml-123                           |  pipeline-0                                       |
+| 2025-04-21     |  17:23:15      |  f-gi-aiml-1234                          |  finetune-0                                       |
+| 2025-04-21     |  18:23:49      |  f-gi-aiml-1                             |  phinew-0                                         |
+| 2025-04-22     |  04:21:37      |  s-jain-training-21                      |  deepstream-0                                     |
+| 2025-04-22     |  04:56:01      |  s-jain-training-21                      |  llm-0                                            |
+| 2025-04-22     |  04:56:03      |  s-jain-training-2                       |  test-0                                           |
+| 2025-04-22     |  04:56:03      |  s-jain-training-19                      |  day4-0                                           |
+| 2025-04-22     |  04:56:10      |  s-jain-training-1                       |  test-0                                           |
+| 2025-04-22     |  04:56:11      |  s-jain-training-4                       |  llmnotebook-0                                    |
+| 2025-04-22     |  04:56:14      |  s-jain-training-8                       |  test5-0                                          |
+| 2025-04-22     |  04:56:21      |  s-jain-training-7                       |  test5-0                                          |
+| 2025-04-22     |  04:56:25      |  s-jain-training-3                       |  day4-0                                           |
+| 2025-04-22     |  04:56:27      |  s-jain-training-22                      |  day4-0                                           |
+| 2025-04-22     |  04:56:49      |  s-jain-training-9                       |  test-0                                           |
+| 2025-04-22     |  04:56:50      |  s-jain-training-11                      |  vphug-0                                          |
+| 2025-04-22     |  04:56:50      |  s-jain-training-13                      |  day4-0                                           |
+| 2025-04-22     |  04:56:51      |  f-gi-aiml-1                             |  test-0                                           |
+| 2025-04-22     |  04:56:53      |  s-jain-training-21                      |  llm1-0                                           |
+| 2025-04-22     |  04:57:05      |  s-jain-training-23                      |  day4-0                                           |
+| 2025-04-22     |  04:57:08      |  s-jain-training-12                      |  kajuhug-0                                        |
+| 2025-04-22     |  04:57:08      |  s-jain-training-17                      |  day4test-0                                       |
+| 2025-04-22     |  04:57:09      |  s-jain-training-18                      |  day4-0                                           |
+| 2025-04-22     |  04:57:09      |  s-jain-training-15                      |  hface-0                                          |
+| 2025-04-22     |  04:57:11      |  s-jain-training-5                       |  dayfourprojectone-0                              |
+| 2025-04-22     |  04:57:11      |  s-jain-training-10                      |  projectday4-0                                    |
+| 2025-04-22     |  04:57:23      |  s-jain-training-6                       |  test-0                                           |
+| 2025-04-22     |  05:22:21      |  s-jain-training-30                      |  note4-0                                          |
+| 2025-04-22     |  05:56:58      |  s-jain-training-30                      |  noebook5-0                                       |
+| 2025-04-22     |  06:36:40      |  f-gi-aiml-1                             |  bert-0                                           |
+| 2025-04-22     |  06:36:42      |  s-jain-training-15                      |  audiorouting-0                                   |
+| 2025-04-22     |  06:36:45      |  s-jain-training-18                      |  day4a-0                                          |
+| 2025-04-22     |  06:36:47      |  s-jain-training-6                       |  test4-0                                          |
+| 2025-04-22     |  06:36:52      |  s-jain-training-3                       |  day4-12pm-0                                      |
+| 2025-04-22     |  06:37:02      |  s-jain-training-19                      |  day4april-0                                      |
+| 2025-04-22     |  06:37:04      |  s-jain-training-22                      |  image4-0                                         |
+| 2025-04-22     |  06:37:14      |  s-jain-training-4                       |  day4llmnotebook-0                                |
+| 2025-04-22     |  06:37:52      |  s-jain-training-17                      |  day4test2-0                                      |
+| 2025-04-22     |  06:38:04      |  s-jain-training-11                      |  hugvp-0                                          |
+| 2025-04-22     |  06:38:08      |  s-jain-training-5                       |  test-0                                           |
+| 2025-04-22     |  06:38:10      |  s-jain-training-13                      |  day4-1-0                                         |
+| 2025-04-22     |  06:38:16      |  s-jain-training-8                       |  test7-0                                          |
+| 2025-04-22     |  06:38:21      |  s-jain-training-12                      |  kajukaju-0                                       |
+| 2025-04-22     |  06:38:35      |  s-jain-training-10                      |  project4daypart2-0                               |
+| 2025-04-22     |  06:38:47      |  s-jain-training-21                      |  fixme-0                                          |
+| 2025-04-22     |  06:53:25      |  s-jain-training-7                       |  test7-0                                          |
++ ------------------------------------------------------------------------------------------------------------------------------ +
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Summary <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
++ ---------------------------------------------------------------------- +
+| Date           | Namespace                                | Pod Count  |
+| ---------------------------------------------------------------------- |
+| 2025-04-21     |  f-gi-aiml-1                             | 8          |
+| 2025-04-21     |  s-jain-training-30                      | 2          |
+| 2025-04-21     |  s-jain-training-19                      | 3          |
+| 2025-04-21     |  s-jain-training-6                       | 3          |
+| 2025-04-21     |  s-jain-training-4                       | 3          |
+| 2025-04-21     |  s-jain-training-1                       | 1          |
+| 2025-04-21     |  s-jain-training-2                       | 1          |
+| 2025-04-21     |  s-jain-training-18                      | 4          |
+| 2025-04-21     |  s-jain-training-11                      | 3          |
+| 2025-04-21     |  s-jain-training-17                      | 4          |
+| 2025-04-21     |  s-jain-training-10                      | 3          |
+| 2025-04-21     |  s-jain-training-3                       | 4          |
+| 2025-04-21     |  s-jain-training-23                      | 3          |
+| 2025-04-21     |  s-jain-training-8                       | 2          |
+| 2025-04-21     |  s-jain-training-9                       | 1          |
+| 2025-04-21     |  s-jain-training-15                      | 4          |
+| 2025-04-21     |  s-jain-training-12                      | 3          |
+| 2025-04-21     |  s-jain-training-7                       | 3          |
+| 2025-04-21     |  s-jain-training-22                      | 3          |
+| 2025-04-21     |  s-jain-training-13                      | 3          |
+| 2025-04-21     |  s-jain-training-21                      | 4          |
+| 2025-04-21     |  s-jain-training-5                       | 3          |
+| 2025-04-21     |  f-gi-aiml-12                            | 1          |
+| 2025-04-21     |  s-jain-training-20                      | 1          |
+| 2025-04-21     |  f-gi-aiml-123                           | 1          |
+| 2025-04-21     |  f-gi-aiml-1234                          | 1          |
+| 2025-04-22     |  s-jain-training-21                      | 4          |
+| 2025-04-22     |  s-jain-training-2                       | 1          |
+| 2025-04-22     |  s-jain-training-19                      | 2          |
+| 2025-04-22     |  s-jain-training-1                       | 1          |
+| 2025-04-22     |  s-jain-training-4                       | 2          |
+| 2025-04-22     |  s-jain-training-8                       | 2          |
+| 2025-04-22     |  s-jain-training-7                       | 2          |
+| 2025-04-22     |  s-jain-training-3                       | 2          |
+| 2025-04-22     |  s-jain-training-22                      | 2          |
+| 2025-04-22     |  s-jain-training-9                       | 1          |
+| 2025-04-22     |  s-jain-training-11                      | 2          |
+| 2025-04-22     |  s-jain-training-13                      | 2          |
+| 2025-04-22     |  f-gi-aiml-1                             | 2          |
+| 2025-04-22     |  s-jain-training-23                      | 1          |
+| 2025-04-22     |  s-jain-training-12                      | 2          |
+| 2025-04-22     |  s-jain-training-17                      | 2          |
+| 2025-04-22     |  s-jain-training-18                      | 2          |
+| 2025-04-22     |  s-jain-training-15                      | 2          |
+| 2025-04-22     |  s-jain-training-5                       | 2          |
+| 2025-04-22     |  s-jain-training-10                      | 2          |
+| 2025-04-22     |  s-jain-training-6                       | 2          |
+| 2025-04-22     |  s-jain-training-30                      | 2          |
++ ---------------------------------------------------------------------- +

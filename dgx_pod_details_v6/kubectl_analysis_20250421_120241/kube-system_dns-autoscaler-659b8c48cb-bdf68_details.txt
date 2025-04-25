@@ -1,0 +1,72 @@
+Namespace: kube-system
+Pod Name: dns-autoscaler-659b8c48cb-bdf68
+Status: 1/1
+Other Details: Running                    8 (6h52m ago)    5d22h
+Name:                 dns-autoscaler-659b8c48cb-bdf68
+Namespace:            kube-system
+Priority:             2000000000
+Priority Class Name:  system-cluster-critical
+Service Account:      dns-autoscaler
+Node:                 jain-dgx-server/192.168.1.248
+Start Time:           Tue, 15 Apr 2025 13:26:11 +0000
+Labels:               k8s-app=dns-autoscaler
+                      pod-template-hash=659b8c48cb
+Annotations:          cni.projectcalico.org/containerID: e67a4eb4c1b5c65a606c35219c7222924c645acbebf5879b3449697471a39621
+                      cni.projectcalico.org/podIP: 10.233.119.137/32
+                      cni.projectcalico.org/podIPs: 10.233.119.137/32
+Status:               Running
+IP:                   10.233.119.137
+IPs:
+  IP:           10.233.119.137
+Controlled By:  ReplicaSet/dns-autoscaler-659b8c48cb
+Containers:
+  autoscaler:
+    Container ID:  docker://dc0748df11dcb3329e9d782043250697036dbeaece111184d76a540a939db8e1
+    Image:         registry.k8s.io/cpa/cluster-proportional-autoscaler:v1.8.8
+    Image ID:      docker-pullable://registry.k8s.io/cpa/cluster-proportional-autoscaler@sha256:69bf675e356770c651864305f2ce17ec25623ac0ff77a040f9396e72daba2d5f
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /cluster-proportional-autoscaler
+      --namespace=kube-system
+      --default-params={"linear":{"preventSinglePointFailure":true,"coresPerReplica":256,"nodesPerReplica":16,"min":2}}
+      --logtostderr=true
+      --v=2
+      --configmap=dns-autoscaler
+      --target=Deployment/coredns
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:04 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    2
+      Started:      Mon, 21 Apr 2025 03:55:40 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:41 +0000
+    Ready:          True
+    Restart Count:  8
+    Requests:
+      cpu:        20m
+      memory:     10Mi
+    Readiness:    http-get http://:8080/healthz delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-42p2c (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-42p2c:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node-role.kubernetes.io/control-plane:NoSchedule
+                             node-role.kubernetes.io/master:NoSchedule
+                             node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

@@ -1,0 +1,213 @@
+Namespace: kubeflow
+Pod Name: ml-pipeline-visualizationserver-845d745b46-md48c
+Status: 2/2
+Other Details: Running                    14 (6h51m ago)   5d22h
+Name:             ml-pipeline-visualizationserver-845d745b46-md48c
+Namespace:        kubeflow
+Priority:         0
+Service Account:  ml-pipeline-visualizationserver
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:31 +0000
+Labels:           app=ml-pipeline-visualizationserver
+                  app.kubernetes.io/component=ml-pipeline
+                  app.kubernetes.io/name=kubeflow-pipelines
+                  application-crd-id=kubeflow-pipelines
+                  pod-template-hash=845d745b46
+                  security.istio.io/tlsMode=istio
+                  service.istio.io/canonical-name=kubeflow-pipelines
+                  service.istio.io/canonical-revision=latest
+Annotations:      cluster-autoscaler.kubernetes.io/safe-to-evict: true
+                  cni.projectcalico.org/containerID: 87d20ea7c92d2f9421ccdb7ec1a1e57c7d8e032884746b992966fc6b8d433479
+                  cni.projectcalico.org/podIP: 10.233.119.204/32
+                  cni.projectcalico.org/podIPs: 10.233.119.204/32
+                  kubectl.kubernetes.io/default-container: ml-pipeline-visualizationserver
+                  kubectl.kubernetes.io/default-logs-container: ml-pipeline-visualizationserver
+                  prometheus.io/path: /stats/prometheus
+                  prometheus.io/port: 15020
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/status:
+                    {"initContainers":["istio-init"],"containers":["istio-proxy"],"volumes":["workload-socket","credential-socket","workload-certs","istio-env...
+Status:           Running
+IP:               10.233.119.204
+IPs:
+  IP:           10.233.119.204
+Controlled By:  ReplicaSet/ml-pipeline-visualizationserver-845d745b46
+Init Containers:
+  istio-init:
+    Container ID:  docker://cd970915dd9c5797d90d617a0108cbbc5e51caf5a4d9dbf93832523cfae39c18
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      istio-iptables
+      -p
+      15001
+      -z
+      15006
+      -u
+      1337
+      -m
+      REDIRECT
+      -i
+      *
+      -x
+      
+      -b
+      *
+      -d
+      15090,15021,15020
+      --log_output_level=default:info
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:29:02 +0000
+      Finished:     Mon, 21 Apr 2025 05:29:02 +0000
+    Ready:          True
+    Restart Count:  2
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:        10m
+      memory:     40Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-mq4d8 (ro)
+Containers:
+  ml-pipeline-visualizationserver:
+    Container ID:   docker://adfca17968be9989cba81d7458ca8b31cf6bb3d2171b92a6aca029424ce5f9b1
+    Image:          gcr.io/ml-pipeline/visualization-server:2.0.0-alpha.7
+    Image ID:       docker-pullable://gcr.io/ml-pipeline/visualization-server@sha256:dcb0c14235867a302232901e62e6edf11e95872b1daede4690a963f87ec11b7b
+    Port:           8888/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:06 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    137
+      Started:      Mon, 21 Apr 2025 03:55:43 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:51 +0000
+    Ready:          True
+    Restart Count:  7
+    Requests:
+      cpu:        30m
+      memory:     500Mi
+    Liveness:     exec [wget -q -S -O - http://localhost:8888/] delay=3s timeout=2s period=5s #success=1 #failure=3
+    Readiness:    exec [wget -q -S -O - http://localhost:8888/] delay=3s timeout=2s period=5s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-mq4d8 (ro)
+  istio-proxy:
+    Container ID:  docker://e8c2c935ff88666027d7cad7bad8d1c9aae5d9e3e4ed6263dd03979f91197029
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          15090/TCP
+    Host Port:     0/TCP
+    Args:
+      proxy
+      sidecar
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+      --concurrency
+      2
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:07 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 03:55:43 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:46 +0000
+    Ready:          True
+    Restart Count:  7
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=1s timeout=3s period=2s #success=1 #failure=30
+    Environment:
+      JWT_POLICY:                    third-party-jwt
+      PILOT_CERT_PROVIDER:           istiod
+      CA_ADDR:                       istiod.istio-system.svc:15012
+      POD_NAME:                      ml-pipeline-visualizationserver-845d745b46-md48c (v1:metadata.name)
+      POD_NAMESPACE:                 kubeflow (v1:metadata.namespace)
+      INSTANCE_IP:                    (v1:status.podIP)
+      SERVICE_ACCOUNT:                (v1:spec.serviceAccountName)
+      HOST_IP:                        (v1:status.hostIP)
+      PROXY_CONFIG:                  {}
+                                     
+      ISTIO_META_POD_PORTS:          [
+                                         {"name":"http","containerPort":8888,"protocol":"TCP"}
+                                     ]
+      ISTIO_META_APP_CONTAINERS:     ml-pipeline-visualizationserver
+      ISTIO_META_CLUSTER_ID:         Kubernetes
+      ISTIO_META_INTERCEPTION_MODE:  REDIRECT
+      ISTIO_META_WORKLOAD_NAME:      ml-pipeline-visualizationserver
+      ISTIO_META_OWNER:              kubernetes://apis/apps/v1/namespaces/kubeflow/deployments/ml-pipeline-visualizationserver
+      ISTIO_META_MESH_ID:            cluster.local
+      TRUST_DOMAIN:                  cluster.local
+    Mounts:
+      /etc/istio/pod from istio-podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-mq4d8 (ro)
+      /var/run/secrets/tokens from istio-token (rw)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  kube-api-access-mq4d8:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

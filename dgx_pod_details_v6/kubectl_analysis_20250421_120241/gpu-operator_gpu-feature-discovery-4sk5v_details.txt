@@ -1,0 +1,104 @@
+Namespace: gpu-operator
+Pod Name: gpu-feature-discovery-4sk5v
+Status: 1/1
+Other Details: Running                    1                6h56m
+Name:                 gpu-feature-discovery-4sk5v
+Namespace:            gpu-operator
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Service Account:      nvidia-gpu-feature-discovery
+Node:                 jain-dgx-server/192.168.1.248
+Start Time:           Mon, 21 Apr 2025 05:05:54 +0000
+Labels:               app=gpu-feature-discovery
+                      app.kubernetes.io/managed-by=gpu-operator
+                      app.kubernetes.io/part-of=nvidia-gpu
+                      controller-revision-hash=9d6b95b66
+                      helm.sh/chart=gpu-operator-v23.3.2
+                      pod-template-generation=2
+Annotations:          cni.projectcalico.org/containerID: 4b3b42c18b94b14d93dcda6520be8b6af3da57bcdd3558e276228a78fbd715f4
+                      cni.projectcalico.org/podIP: 10.233.119.169/32
+                      cni.projectcalico.org/podIPs: 10.233.119.169/32
+                      kubectl.kubernetes.io/restartedAt: 2025-04-21T05:05:23Z
+Status:               Running
+IP:                   10.233.119.169
+IPs:
+  IP:           10.233.119.169
+Controlled By:  DaemonSet/gpu-feature-discovery
+Init Containers:
+  toolkit-validation:
+    Container ID:  docker://b83f65d08257f815c1b3a3221a59dd14925ff03d4ea77f64fc714de0bab83629
+    Image:         nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Image ID:      docker-pullable://nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:21dfc9c56b5f8bce73e60361d6e83759c3fa14dc6afc2d5ebdf1b891a936daf6
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+    Args:
+      until [ -f /run/nvidia/validations/toolkit-ready ]; do echo waiting for nvidia container stack to be setup; sleep 5; done
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:28:57 +0000
+      Finished:     Mon, 21 Apr 2025 05:29:32 +0000
+    Ready:          True
+    Restart Count:  1
+    Environment:    <none>
+    Mounts:
+      /run/nvidia from run-nvidia (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-w52ng (ro)
+Containers:
+  gpu-feature-discovery:
+    Container ID:   docker://f4143d44d97b85b2d60e5dfc66956624bd5130746e29134def974011c2f1fa72
+    Image:          nvcr.io/nvidia/gpu-feature-discovery:v0.8.0-ubi8
+    Image ID:       docker-pullable://nvcr.io/nvidia/gpu-feature-discovery@sha256:84ce86490d0d313ed6517f2ac3a271e1179d7478d86c772da3846727d7feddc3
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:37:09 +0000
+    Ready:          True
+    Restart Count:  1
+    Environment:
+      GFD_SLEEP_INTERVAL:          60s
+      GFD_FAIL_ON_INIT_ERROR:      true
+      MIG_STRATEGY:                mixed
+      NVIDIA_MIG_MONITOR_DEVICES:  all
+    Mounts:
+      /etc/kubernetes/node-feature-discovery/features.d from output-dir (rw)
+      /sys/class/dmi/id/product_name from dmi-product-name (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-w52ng (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  output-dir:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/kubernetes/node-feature-discovery/features.d
+    HostPathType:  
+  dmi-product-name:
+    Type:          HostPath (bare host directory volume)
+    Path:          /sys/class/dmi/id/product_name
+    HostPathType:  
+  run-nvidia:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/nvidia
+    HostPathType:  Directory
+  kube-api-access-w52ng:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              nvidia.com/gpu.deploy.gpu-feature-discovery=true
+Tolerations:                 node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+                             nvidia.com/gpu:NoSchedule op=Exists
+Events:                      <none>

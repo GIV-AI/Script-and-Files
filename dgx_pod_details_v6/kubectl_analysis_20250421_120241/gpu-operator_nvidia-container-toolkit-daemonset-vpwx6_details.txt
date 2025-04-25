@@ -1,0 +1,156 @@
+Namespace: gpu-operator
+Pod Name: nvidia-container-toolkit-daemonset-vpwx6
+Status: 1/1
+Other Details: Running                    7 (6h51m ago)    5d22h
+Name:                 nvidia-container-toolkit-daemonset-vpwx6
+Namespace:            gpu-operator
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Service Account:      nvidia-container-toolkit
+Node:                 jain-dgx-server/192.168.1.248
+Start Time:           Tue, 15 Apr 2025 13:49:23 +0000
+Labels:               app=nvidia-container-toolkit-daemonset
+                      app.kubernetes.io/managed-by=gpu-operator
+                      controller-revision-hash=79c44d9bd6
+                      helm.sh/chart=gpu-operator-v23.3.2
+                      pod-template-generation=1
+Annotations:          cni.projectcalico.org/containerID: cb924f6fc46d4680081b29c3f5e5c35d6e82100cca2724daafd4b931ed354f03
+                      cni.projectcalico.org/podIP: 10.233.119.201/32
+                      cni.projectcalico.org/podIPs: 10.233.119.201/32
+Status:               Running
+IP:                   10.233.119.201
+IPs:
+  IP:           10.233.119.201
+Controlled By:  DaemonSet/nvidia-container-toolkit-daemonset
+Init Containers:
+  driver-validation:
+    Container ID:  docker://8333c2ca82817bdd8946ee6209478bf759fc6d026758d56648cde35fc4216c1a
+    Image:         nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Image ID:      docker-pullable://nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:21dfc9c56b5f8bce73e60361d6e83759c3fa14dc6afc2d5ebdf1b891a936daf6
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+    Args:
+      nvidia-validator
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:29:03 +0000
+      Finished:     Mon, 21 Apr 2025 05:29:06 +0000
+    Ready:          True
+    Restart Count:  2
+    Environment:
+      WITH_WAIT:  true
+      COMPONENT:  driver
+    Mounts:
+      /host from host-root (ro)
+      /host-dev-char from host-dev-char (rw)
+      /run/nvidia/driver from driver-install-path (rw)
+      /run/nvidia/validations from run-nvidia-validations (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-g57dj (ro)
+Containers:
+  nvidia-container-toolkit-ctr:
+    Container ID:  docker://de62965afc5ac84307ad223792f3ff53bee1fda2275e4768c5c267a831b3f312
+    Image:         nvcr.io/nvidia/k8s/container-toolkit:v1.13.0-ubuntu20.04
+    Image ID:      docker-pullable://nvcr.io/nvidia/k8s/container-toolkit@sha256:e3105fe0fec1107a1f010e442057bb61f1e02c9e7d5d74e99650bfccf5948e1a
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /bin/bash
+      -c
+    Args:
+      /bin/entrypoint.sh
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:09 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    137
+      Started:      Mon, 21 Apr 2025 03:55:42 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:51 +0000
+    Ready:          True
+    Restart Count:  7
+    Environment:
+      ROOT:                                             /usr/local/nvidia
+      RUNTIME_ARGS:                                     --config /runtime/config-dir/daemon.json --socket /runtime/sock-dir/docker.sock
+      NVIDIA_CONTAINER_RUNTIME_MODES_CDI_DEFAULT_KIND:  management.nvidia.com/gpu
+      NVIDIA_VISIBLE_DEVICES:                           void
+      RUNTIME:                                          docker
+    Mounts:
+      /bin/entrypoint.sh from nvidia-container-toolkit-entrypoint (ro,path="entrypoint.sh")
+      /host from host-root (ro)
+      /run/nvidia from nvidia-run-path (rw)
+      /runtime/config-dir/ from docker-config (rw)
+      /runtime/sock-dir/ from docker-socket (rw)
+      /usr/local/nvidia from toolkit-install-dir (rw)
+      /usr/share/containers/oci/hooks.d from crio-hooks (rw)
+      /var/run/cdi from cdi-root (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-g57dj (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  nvidia-container-toolkit-entrypoint:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      nvidia-container-toolkit-entrypoint
+    Optional:  false
+  nvidia-run-path:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/nvidia
+    HostPathType:  DirectoryOrCreate
+  run-nvidia-validations:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/nvidia/validations
+    HostPathType:  DirectoryOrCreate
+  driver-install-path:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/nvidia/driver
+    HostPathType:  
+  host-root:
+    Type:          HostPath (bare host directory volume)
+    Path:          /
+    HostPathType:  
+  toolkit-install-dir:
+    Type:          HostPath (bare host directory volume)
+    Path:          /usr/local/nvidia
+    HostPathType:  
+  crio-hooks:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/containers/oci/hooks.d
+    HostPathType:  
+  host-dev-char:
+    Type:          HostPath (bare host directory volume)
+    Path:          /dev/char
+    HostPathType:  
+  cdi-root:
+    Type:          HostPath (bare host directory volume)
+    Path:          /var/run/cdi
+    HostPathType:  DirectoryOrCreate
+  docker-config:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/docker
+    HostPathType:  DirectoryOrCreate
+  docker-socket:
+    Type:          HostPath (bare host directory volume)
+    Path:          /var/run
+    HostPathType:  
+  kube-api-access-g57dj:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              nvidia.com/gpu.deploy.container-toolkit=true
+Tolerations:                 node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+                             nvidia.com/gpu:NoSchedule op=Exists
+Events:                      <none>

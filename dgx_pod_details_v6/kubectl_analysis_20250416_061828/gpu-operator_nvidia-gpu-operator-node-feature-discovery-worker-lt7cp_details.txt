@@ -1,0 +1,107 @@
+Namespace: gpu-operator
+Pod Name: nvidia-gpu-operator-node-feature-discovery-worker-lt7cp
+Status: 1/1
+Other Details: Running     1 (12h ago)    16h
+Name:             nvidia-gpu-operator-node-feature-discovery-worker-lt7cp
+Namespace:        gpu-operator
+Priority:         0
+Service Account:  node-feature-discovery
+Node:             jainhpmgmt/192.168.1.249
+Start Time:       Tue, 15 Apr 2025 13:48:11 +0000
+Labels:           app.kubernetes.io/instance=nvidia-gpu-operator
+                  app.kubernetes.io/name=node-feature-discovery
+                  controller-revision-hash=658d889747
+                  pod-template-generation=1
+                  role=worker
+Annotations:      cni.projectcalico.org/containerID: 4ef654954162048e5650ef50179f69f5faccd9340fe8eee653a6f7d78ee3293d
+                  cni.projectcalico.org/podIP: 10.233.66.131/32
+                  cni.projectcalico.org/podIPs: 10.233.66.131/32
+Status:           Running
+IP:               10.233.66.131
+IPs:
+  IP:           10.233.66.131
+Controlled By:  DaemonSet/nvidia-gpu-operator-node-feature-discovery-worker
+Containers:
+  worker:
+    Container ID:  docker://9607ee8812bdf801545cee299f6bdf12b22758d78d8d89b06b99b3172a5a3c8a
+    Image:         registry.k8s.io/nfd/node-feature-discovery:v0.12.1
+    Image ID:      docker-pullable://registry.k8s.io/nfd/node-feature-discovery@sha256:445ed7b7c8580825c23a6f3835c1f13718fcf72b393f51e852aa5bdda04657e7
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      nfd-worker
+    Args:
+      --server=nvidia-gpu-operator-node-feature-discovery-master:8080
+      -enable-nodefeature-api
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:50:57 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    2
+      Started:      Tue, 15 Apr 2025 13:48:28 +0000
+      Finished:     Tue, 15 Apr 2025 17:41:10 +0000
+    Ready:          True
+    Restart Count:  1
+    Environment:
+      NODE_NAME:   (v1:spec.nodeName)
+    Mounts:
+      /etc/kubernetes/node-feature-discovery from nfd-worker-conf (ro)
+      /etc/kubernetes/node-feature-discovery/features.d/ from features-d (ro)
+      /etc/kubernetes/node-feature-discovery/source.d/ from source-d (ro)
+      /host-boot from host-boot (ro)
+      /host-etc/os-release from host-os-release (ro)
+      /host-sys from host-sys (ro)
+      /host-usr/lib from host-usr-lib (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-hzx6k (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  host-boot:
+    Type:          HostPath (bare host directory volume)
+    Path:          /boot
+    HostPathType:  
+  host-os-release:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/os-release
+    HostPathType:  
+  host-sys:
+    Type:          HostPath (bare host directory volume)
+    Path:          /sys
+    HostPathType:  
+  host-usr-lib:
+    Type:          HostPath (bare host directory volume)
+    Path:          /usr/lib
+    HostPathType:  
+  source-d:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/kubernetes/node-feature-discovery/source.d/
+    HostPathType:  
+  features-d:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/kubernetes/node-feature-discovery/features.d/
+    HostPathType:  
+  nfd-worker-conf:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      nvidia-gpu-operator-node-feature-discovery-worker-conf
+    Optional:  false
+  kube-api-access-hzx6k:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node-role.kubernetes.io/master:NoSchedule
+                             node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+                             nvidia.com/gpu:NoSchedule op=Exists
+Events:                      <none>

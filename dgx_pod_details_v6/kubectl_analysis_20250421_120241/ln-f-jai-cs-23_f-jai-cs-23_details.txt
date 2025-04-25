@@ -1,0 +1,73 @@
+Namespace: ln-f-jai-cs-23
+Pod Name: f-jai-cs-23
+Status: 1/1
+Other Details: Running                    0                3m
+Name:             f-jai-cs-23
+Namespace:        ln-f-jai-cs-23
+Priority:         0
+Service Account:  default
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Mon, 21 Apr 2025 11:59:41 +0000
+Labels:           app=f-jai-cs-23
+Annotations:      cni.projectcalico.org/containerID: 5faafddc9a1aedcedaf1b0cba95a4431043895a2de26290fa7ba790a35cefa41
+                  cni.projectcalico.org/podIP: 10.233.120.20/32
+                  cni.projectcalico.org/podIPs: 10.233.120.20/32
+Status:           Running
+IP:               10.233.120.20
+IPs:
+  IP:  10.233.120.20
+Containers:
+  f-jai-cs-23:
+    Container ID:  docker://1ebe9db1b0737e5d9d1faab56c73bb0812764cdaa0bfdadd7b1112f548b1da32
+    Image:         nvcr.io/nvidia/pytorch:25.03-py3
+    Image ID:      docker-pullable://nvcr.io/nvidia/pytorch@sha256:64887d431df52013f766878a546fad94716cbe0b39d991c3ea5c63a1a7d14c61
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+      while true; do sleep 1000; done
+    State:          Running
+      Started:      Mon, 21 Apr 2025 11:59:49 +0000
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:                     5
+      memory:                  10Gi
+      nvidia.com/mig-1g.18gb:  1
+    Requests:
+      cpu:                     5
+      memory:                  10Gi
+      nvidia.com/mig-1g.18gb:  1
+    Environment:               <none>
+    Mounts:
+      /data from f-jai-cs-23 (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-qmjgv (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  f-jai-cs-23:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  ln-f-jai-cs-23
+    ReadOnly:   false
+  kube-api-access-qmjgv:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Guaranteed
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  3m47s  default-scheduler  Successfully assigned ln-f-jai-cs-23/f-jai-cs-23 to jain-dgx-server
+  Normal  Pulled     3m47s  kubelet            Container image "nvcr.io/nvidia/pytorch:25.03-py3" already present on machine
+  Normal  Created    3m47s  kubelet            Created container f-jai-cs-23
+  Normal  Started    3m39s  kubelet            Started container f-jai-cs-23

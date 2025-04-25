@@ -1,0 +1,88 @@
+Namespace: knative-eventing
+Pod Name: eventing-webhook-6f48bb5f4c-9g22s
+Status: 1/1
+Other Details: Running                    7 (6h51m ago)    5d22h
+Name:             eventing-webhook-6f48bb5f4c-9g22s
+Namespace:        knative-eventing
+Priority:         0
+Service Account:  eventing-webhook
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:00:27 +0000
+Labels:           app=eventing-webhook
+                  app.kubernetes.io/component=knative-eventing
+                  app.kubernetes.io/name=knative-eventing
+                  app.kubernetes.io/version=1.8.1
+                  eventing.knative.dev/release=v1.8.1
+                  kustomize.component=knative
+                  pod-template-hash=6f48bb5f4c
+                  role=eventing-webhook
+Annotations:      cni.projectcalico.org/containerID: bbf5ebcc03e88bf91fbb4c8785275af8b52af521871c92b163d5878f4e6b664d
+                  cni.projectcalico.org/podIP: 10.233.119.167/32
+                  cni.projectcalico.org/podIPs: 10.233.119.167/32
+Status:           Running
+IP:               10.233.119.167
+IPs:
+  IP:           10.233.119.167
+Controlled By:  ReplicaSet/eventing-webhook-6f48bb5f4c
+Containers:
+  eventing-webhook:
+    Container ID:  docker://b0029f2aa4aecb85d24b4c0bc4bb39ee574f067f899e39754dcc495ab882e6d1
+    Image:         gcr.io/knative-releases/knative.dev/eventing/cmd/webhook@sha256:d217ab7e3452a87f8cbb3b45df65c98b18b8be39551e3e960cd49ea44bb415ba
+    Image ID:      docker-pullable://gcr.io/knative-releases/knative.dev/eventing/cmd/webhook@sha256:d217ab7e3452a87f8cbb3b45df65c98b18b8be39551e3e960cd49ea44bb415ba
+    Ports:         8443/TCP, 9090/TCP, 8008/TCP
+    Host Ports:    0/TCP, 0/TCP, 0/TCP
+    State:         Running
+      Started:     Mon, 21 Apr 2025 05:28:55 +0000
+    Last State:    Terminated
+      Reason:      Error
+      Message:     ","knative.dev/traceid":"8525b9b3-c525-4b1f-aa7b-64323b75e380","knative.dev/key":"validation.webhook.eventing.knative.dev","duration":0.140382968}
+{"level":"info","ts":"2025-04-21T05:10:41.010Z","logger":"eventing-webhook","caller":"webhook/webhook.go:240","msg":"Starting to fail readiness probes...","commit":"23a7b56","knative.dev/pod":"eventing-webhook-6f48bb5f4c-9g22s"}
+{"level":"info","ts":"2025-04-21T05:10:41.010Z","logger":"eventing-webhook.ConfigMapWebhook","caller":"controller/controller.go:498","msg":"Shutting down workers","commit":"23a7b56","knative.dev/pod":"eventing-webhook-6f48bb5f4c-9g22s"}
+{"level":"info","ts":"2025-04-21T05:10:41.010Z","logger":"eventing-webhook.sinkbindings.webhook.sources.knative.dev","caller":"controller/controller.go:498","msg":"Shutting down workers","commit":"23a7b56","knative.dev/pod":"eventing-webhook-6f48bb5f4c-9g22s"}
+{"level":"info","ts":"2025-04-21T05:10:41.010Z","logger":"eventing-webhook.WebhookCertificates","caller":"controller/controller.go:498","msg":"Shutting down workers","commit":"23a7b56","knative.dev/pod":"eventing-webhook-6f48bb5f4c-9g22s"}
+{"level":"info","ts":"2025-04-21T05:10:41.010Z","logger":"eventing-webhook.DefaultingWebhook","caller":"controller/controller.go:498","msg":"Shutting down workers","commit":"23a7b56","knative.dev/pod":"eventing-webhook-6f48bb5f4c-9g22s"}
+{"level":"info","ts":"2025-04-21T05:10:41.010Z","logger":"eventing-webhook","caller":"controller/controller.go:498","msg":"Shutting down workers","commit":"23a7b56","knative.dev/pod":"eventing-webhook-6f48bb5f4c-9g22s"}
+{"level":"info","ts":"2025-04-21T05:10:41.010Z","logger":"eventing-webhook.ConversionWebhook","caller":"controller/controller.go:498","msg":"Shutting down workers","commit":"23a7b56","knative.dev/pod":"eventing-webhook-6f48bb5f4c-9g22s"}
+{"level":"info","ts":"2025-04-21T05:10:41.010Z","logger":"eventing-webhook.ValidationWebhook","caller":"controller/controller.go:498","msg":"Shutting down workers","commit":"23a7b56","knative.dev/pod":"eventing-webhook-6f48bb5f4c-9g22s"}
+
+      Exit Code:    137
+      Started:      Mon, 21 Apr 2025 03:55:27 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:51 +0000
+    Ready:          True
+    Restart Count:  7
+    Limits:
+      cpu:     200m
+      memory:  200Mi
+    Requests:
+      cpu:      100m
+      memory:   50Mi
+    Liveness:   http-get https://:8443/ delay=120s timeout=1s period=1s #success=1 #failure=3
+    Readiness:  http-get https://:8443/ delay=0s timeout=1s period=1s #success=1 #failure=3
+    Environment:
+      SYSTEM_NAMESPACE:             knative-eventing (v1:metadata.namespace)
+      CONFIG_LOGGING_NAME:          config-logging
+      METRICS_DOMAIN:               knative.dev/eventing
+      WEBHOOK_NAME:                 eventing-webhook
+      WEBHOOK_PORT:                 8443
+      SINK_BINDING_SELECTION_MODE:  exclusion
+      POD_NAME:                     eventing-webhook-6f48bb5f4c-9g22s (v1:metadata.name)
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-cg5wd (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-cg5wd:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

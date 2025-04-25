@@ -1,0 +1,224 @@
+/chassis/localhost/power/GPU0PowerControl
+Properties:
+    MemberId = GPU0
+    Name = GPU0PowerControl
+    Oem_Power_Control_MaxInWatts = 700
+    Oem_Power_Control_MinInWatts = 200
+    Oem_Power_Control_Priority = P3
+    Oem_Power_Control_SpecificInfo = None
+    PowerConsumedWatts = 76
+    PowerLimit_LimitInWatts = 700
+
+/chassis/localhost/power/GPU1PowerControl
+Properties:
+    MemberId = GPU1
+    Name = GPU1PowerControl
+    Oem_Power_Control_MaxInWatts = 700
+    Oem_Power_Control_MinInWatts = 200
+    Oem_Power_Control_Priority = P3
+    Oem_Power_Control_SpecificInfo = None
+    PowerConsumedWatts = 76
+    PowerLimit_LimitInWatts = 700
+
+/chassis/localhost/power/GPU2PowerControl
+Properties:
+    MemberId = GPU2
+    Name = GPU2PowerControl
+    Oem_Power_Control_MaxInWatts = 700
+    Oem_Power_Control_MinInWatts = 200
+    Oem_Power_Control_Priority = P3
+    Oem_Power_Control_SpecificInfo = None
+    PowerConsumedWatts = 76
+    PowerLimit_LimitInWatts = 700
+
+/chassis/localhost/power/GPU3PowerControl
+Properties:
+    MemberId = GPU3
+    Name = GPU3PowerControl
+    Oem_Power_Control_MaxInWatts = 700
+    Oem_Power_Control_MinInWatts = 200
+    Oem_Power_Control_Priority = P3
+    Oem_Power_Control_SpecificInfo = None
+    PowerConsumedWatts = 72
+    PowerLimit_LimitInWatts = 700
+
+/chassis/localhost/power/GPU4PowerControl
+Properties:
+    MemberId = GPU4
+    Name = GPU4PowerControl
+    Oem_Power_Control_MaxInWatts = 700
+    Oem_Power_Control_MinInWatts = 200
+    Oem_Power_Control_Priority = P3
+    Oem_Power_Control_SpecificInfo = None
+    PowerConsumedWatts = 76
+    PowerLimit_LimitInWatts = 700
+
+/chassis/localhost/power/GPU5PowerControl
+Properties:
+    MemberId = GPU5
+    Name = GPU5PowerControl
+    Oem_Power_Control_MaxInWatts = 700
+    Oem_Power_Control_MinInWatts = 200
+    Oem_Power_Control_Priority = P3
+    Oem_Power_Control_SpecificInfo = None
+    PowerConsumedWatts = 76
+    PowerLimit_LimitInWatts = 700
+
+/chassis/localhost/power/GPU6PowerControl
+Properties:
+    MemberId = GPU6
+    Name = GPU6PowerControl
+    Oem_Power_Control_MaxInWatts = 700
+    Oem_Power_Control_MinInWatts = 200
+    Oem_Power_Control_Priority = P3
+    Oem_Power_Control_SpecificInfo = None
+    PowerConsumedWatts = 76
+    PowerLimit_LimitInWatts = 700
+
+/chassis/localhost/power/GPU7PowerControl
+Properties:
+    MemberId = GPU7
+    Name = GPU7PowerControl
+    Oem_Power_Control_MaxInWatts = 700
+    Oem_Power_Control_MinInWatts = 200
+    Oem_Power_Control_Priority = P3
+    Oem_Power_Control_SpecificInfo = None
+    PowerConsumedWatts = 72
+    PowerLimit_LimitInWatts = 700
+
+/chassis/localhost/power/GPUPowerControl
+Properties:
+    MemberId = GPU
+    Name = GPUPowerControl
+    Oem_Power_Control_MaxInWatts = 5600
+    Oem_Power_Control_MinInWatts = 1600
+    Oem_Power_Control_Priority = P3
+    Oem_Power_Control_SpecificInfo_PerGpuMaxPInWatts = 700
+    Oem_Power_Control_SpecificInfo_PerGpuMaxQInWatts = 400
+    PowerConsumedWatts = 600
+    PowerLimit_LimitInWatts = 5600
+
+/chassis/localhost/power/MemoryPowerControl
+Properties:
+    MemberId = Memory
+    Name = MemoryPowerControl
+    Oem_Power_Control_MaxInWatts = 135
+    Oem_Power_Control_MinInWatts = 70
+    Oem_Power_Control_Priority = P3
+    Oem_Power_Control_SpecificInfo = None
+    PowerConsumedWatts = -1
+    PowerLimit_LimitInWatts = 135
+
+/chassis/localhost/power/PSU0
+Properties:
+    FirmwareVersion = 02.04.02.01.02.04
+    LastPowerOutputWatts = 364
+    Manufacturer = Delta
+    MemberId = PSU0
+    Model = ECD16020137
+    Name = PSU0
+    Oem_PSU_Error = <NOT_SET>
+    PowerSupplyType = AC
+    SerialNumber = DTHTCT24351CP
+    Status_Health = OK
+    Status_State = Present
+
+/chassis/localhost/power/PSU1
+Properties:
+    FirmwareVersion = 02.04.02.01.02.04
+    LastPowerOutputWatts = 416
+    Manufacturer = Delta
+    MemberId = PSU1
+    Model = ECD16020137
+    Name = PSU1
+    Oem_PSU_Error = <NOT_SET>
+    PowerSupplyType = AC
+    SerialNumber = DTHTCT24351CT
+    Status_Health = OK
+    Status_State = Present
+
+/chassis/localhost/power/PSU2
+Properties:
+    FirmwareVersion = 02.04.02.01.02.04
+    LastPowerOutputWatts = 364
+    Manufacturer = Delta
+    MemberId = PSU2
+    Model = ECD16020137
+    Name = PSU2
+    Oem_PSU_Error = <NOT_SET>
+    PowerSupplyType = AC
+    SerialNumber = DTHTCT24351CH
+    Status_Health = OK
+    Status_State = Present
+
+/chassis/localhost/power/PSU3
+Properties:
+    FirmwareVersion = 02.04.02.01.02.04
+    LastPowerOutputWatts = 364
+    Manufacturer = Delta
+    MemberId = PSU3
+    Model = ECD16020137
+    Name = PSU3
+    Oem_PSU_Error = <NOT_SET>
+    PowerSupplyType = AC
+    SerialNumber = DTHTCT24351CQ
+    Status_Health = OK
+    Status_State = Present
+
+/chassis/localhost/power/PSU4
+Properties:
+    FirmwareVersion = 02.04.02.01.02.04
+    LastPowerOutputWatts = 351
+    Manufacturer = Delta
+    MemberId = PSU4
+    Model = ECD16020137
+    Name = PSU4
+    Oem_PSU_Error = <NOT_SET>
+    PowerSupplyType = AC
+    SerialNumber = DTHTCT24351CM
+    Status_Health = OK
+    Status_State = Present
+
+/chassis/localhost/power/PSU5
+Properties:
+    FirmwareVersion = 02.04.02.01.02.04
+    LastPowerOutputWatts = 377
+    Manufacturer = Delta
+    MemberId = PSU5
+    Model = ECD16020137
+    Name = PSU5
+    Oem_PSU_Error = <NOT_SET>
+    PowerSupplyType = AC
+    SerialNumber = DTHTCT24351CR
+    Status_Health = OK
+    Status_State = Present
+
+/chassis/localhost/power/ProcessorPowerControl
+Properties:
+    MemberId = Processor
+    Name = ProcessorPowerControl
+    Oem_Power_Control_MaxInWatts = 480
+    Oem_Power_Control_MinInWatts = 150
+    Oem_Power_Control_Priority = P3
+    Oem_Power_Control_SpecificInfo = None
+    PowerConsumedWatts = -1
+    PowerLimit_LimitInWatts = 480
+
+/chassis/localhost/power/RackMountPowerControl
+Properties:
+    MemberId = RackMount
+    Name = RackMountPowerControl
+    Oem_Power_Control_MaxInWatts = 6200
+    Oem_Power_Control_MinInWatts = 1600
+    Oem_Power_Control_Priority = P3
+    Oem_Power_Control_SpecificInfo = None
+    PowerConsumedWatts = 2262
+    PowerLimit_LimitInWatts = 6200
+
+/chassis/localhost/power/alerts
+
+/chassis/localhost/power/policy
+Properties:
+    mute_monitoring = <NOT_SET>
+    mute_notification = <NOT_SET>
+

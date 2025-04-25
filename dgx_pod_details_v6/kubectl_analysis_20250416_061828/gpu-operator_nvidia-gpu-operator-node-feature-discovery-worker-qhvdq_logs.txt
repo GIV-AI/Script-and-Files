@@ -1,0 +1,1452 @@
+I0416 04:53:45.208255       1 nfd-worker.go:159] Node Feature Discovery Worker v0.12.1
+I0416 04:53:45.208309       1 nfd-worker.go:160] NodeName: 'jain-dgx-server'
+I0416 04:53:45.208312       1 nfd-worker.go:161] Kubernetes namespace: 'gpu-operator'
+I0416 04:53:45.209902       1 nfd-worker.go:416] configuration file "/etc/kubernetes/node-feature-discovery/nfd-worker.conf" parsed
+I0416 04:53:45.209959       1 nfd-worker.go:448] worker (re-)configuration successfully completed
+I0416 04:53:45.304696       1 local.go:115] starting hooks...
+E0416 04:53:45.346438       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 04:53:45.347298       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 04:53:45.456306       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 04:53:45.456605       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 04:53:45.458485       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 04:53:45.458543       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 04:53:45.458597       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 04:53:45.458797       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 04:53:45.458857       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 04:53:45.459122       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 04:53:45.459476       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 04:53:45.460055       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 04:53:45.460162       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 04:53:45.460224       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 04:53:45.506951       1 nfd-worker.go:459] starting feature discovery...
+I0416 04:53:45.507390       1 nfd-worker.go:471] feature discovery completed
+I0416 04:53:45.597872       1 nfd-worker.go:624] updating NodeFeature object "jain-dgx-server"
+I0416 04:54:46.031475       1 local.go:115] starting hooks...
+E0416 04:54:46.034042       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 04:54:46.034112       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 04:54:46.034162       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 04:54:46.034221       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 04:54:46.034262       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 04:54:46.034315       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 04:54:46.034372       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 04:54:46.034427       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 04:54:46.034481       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 04:54:46.034539       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 04:54:46.034598       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 04:54:46.034660       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 04:54:46.034720       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 04:54:46.034776       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 04:54:46.072219       1 nfd-worker.go:459] starting feature discovery...
+I0416 04:54:46.072551       1 nfd-worker.go:471] feature discovery completed
+I0416 04:54:46.169942       1 nfd-worker.go:624] updating NodeFeature object "jain-dgx-server"
+I0416 04:55:46.701591       1 local.go:115] starting hooks...
+E0416 04:55:46.703912       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 04:55:46.703989       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 04:55:46.704066       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 04:55:46.704147       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 04:55:46.704206       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 04:55:46.704276       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 04:55:46.704347       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 04:55:46.704416       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 04:55:46.704476       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 04:55:46.704539       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 04:55:46.704596       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 04:55:46.704659       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 04:55:46.704720       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 04:55:46.704771       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 04:55:46.739951       1 nfd-worker.go:459] starting feature discovery...
+I0416 04:55:46.741134       1 nfd-worker.go:471] feature discovery completed
+I0416 04:56:47.025046       1 local.go:115] starting hooks...
+E0416 04:56:47.027586       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 04:56:47.027646       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 04:56:47.027694       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 04:56:47.027745       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 04:56:47.027782       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 04:56:47.027829       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 04:56:47.027877       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 04:56:47.027922       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 04:56:47.027968       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 04:56:47.028015       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 04:56:47.028060       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 04:56:47.028106       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 04:56:47.028154       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 04:56:47.028204       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 04:56:47.069430       1 nfd-worker.go:459] starting feature discovery...
+I0416 04:56:47.069793       1 nfd-worker.go:471] feature discovery completed
+I0416 04:57:47.378637       1 local.go:115] starting hooks...
+E0416 04:57:47.381627       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 04:57:47.381679       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 04:57:47.381721       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 04:57:47.381770       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 04:57:47.381806       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 04:57:47.381863       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 04:57:47.381916       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 04:57:47.381969       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 04:57:47.382022       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 04:57:47.382075       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 04:57:47.382124       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 04:57:47.382181       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 04:57:47.382236       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 04:57:47.382286       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 04:57:47.421833       1 nfd-worker.go:459] starting feature discovery...
+I0416 04:57:47.422158       1 nfd-worker.go:471] feature discovery completed
+I0416 04:58:47.680400       1 local.go:115] starting hooks...
+E0416 04:58:47.682970       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 04:58:47.683033       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 04:58:47.683086       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 04:58:47.683146       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 04:58:47.683190       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 04:58:47.683245       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 04:58:47.683299       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 04:58:47.683355       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 04:58:47.683412       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 04:58:47.683470       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 04:58:47.683524       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 04:58:47.683583       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 04:58:47.683649       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 04:58:47.683704       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 04:58:47.720378       1 nfd-worker.go:459] starting feature discovery...
+I0416 04:58:47.720710       1 nfd-worker.go:471] feature discovery completed
+I0416 04:59:48.026215       1 local.go:115] starting hooks...
+E0416 04:59:48.029476       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 04:59:48.029548       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 04:59:48.029607       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 04:59:48.029665       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 04:59:48.029713       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 04:59:48.029776       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 04:59:48.029830       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 04:59:48.029892       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 04:59:48.029958       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 04:59:48.030036       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 04:59:48.030119       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 04:59:48.030199       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 04:59:48.030248       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 04:59:48.030292       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 04:59:48.069360       1 nfd-worker.go:459] starting feature discovery...
+I0416 04:59:48.069709       1 nfd-worker.go:471] feature discovery completed
+I0416 05:00:48.345992       1 local.go:115] starting hooks...
+E0416 05:00:48.348554       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:00:48.348604       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:00:48.348655       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:00:48.348707       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:00:48.348743       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:00:48.348789       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:00:48.348836       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:00:48.348883       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:00:48.348929       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:00:48.348977       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:00:48.349022       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:00:48.349068       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:00:48.349115       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:00:48.349166       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:00:48.387290       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:00:48.387633       1 nfd-worker.go:471] feature discovery completed
+I0416 05:01:48.641312       1 local.go:115] starting hooks...
+E0416 05:01:48.643989       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:01:48.644050       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:01:48.644102       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:01:48.644157       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:01:48.644200       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:01:48.644254       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:01:48.644625       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:01:48.644986       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:01:48.645125       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:01:48.645200       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:01:48.645279       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:01:48.645374       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:01:48.645451       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:01:48.646085       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:01:48.682954       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:01:48.683306       1 nfd-worker.go:471] feature discovery completed
+I0416 05:02:48.953335       1 local.go:115] starting hooks...
+E0416 05:02:48.957493       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:02:48.957575       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:02:48.957626       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:02:48.957680       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:02:48.957724       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:02:48.957777       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:02:48.957849       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:02:48.957910       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:02:48.957969       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:02:48.958020       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:02:48.958067       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:02:48.958120       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:02:48.958175       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:02:48.958222       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:02:48.996478       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:02:48.996812       1 nfd-worker.go:471] feature discovery completed
+I0416 05:03:49.289997       1 local.go:115] starting hooks...
+E0416 05:03:49.292404       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:03:49.292472       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:03:49.292528       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:03:49.292597       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:03:49.292654       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:03:49.292725       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:03:49.292799       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:03:49.292870       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:03:49.292941       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:03:49.293013       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:03:49.293083       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:03:49.293161       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:03:49.293234       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:03:49.293304       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:03:49.329928       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:03:49.331056       1 nfd-worker.go:471] feature discovery completed
+I0416 05:04:49.597011       1 local.go:115] starting hooks...
+E0416 05:04:49.599773       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:04:49.599827       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:04:49.599875       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:04:49.599929       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:04:49.599970       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:04:49.600020       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:04:49.600074       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:04:49.600127       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:04:49.600182       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:04:49.600237       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:04:49.600290       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:04:49.600347       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:04:49.600402       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:04:49.600456       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:04:49.638306       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:04:49.638697       1 nfd-worker.go:471] feature discovery completed
+I0416 05:05:49.821928       1 local.go:115] starting hooks...
+E0416 05:05:49.823280       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:05:49.823354       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:05:49.823748       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:05:49.824423       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:05:49.824505       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:05:49.824613       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:05:49.824697       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:05:49.824766       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:05:49.824888       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:05:49.825068       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:05:49.829606       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:05:49.829692       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:05:49.829762       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:05:49.829827       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:05:49.886650       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:05:49.887174       1 nfd-worker.go:471] feature discovery completed
+I0416 05:06:50.178095       1 local.go:115] starting hooks...
+E0416 05:06:50.179291       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:06:50.179391       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:06:50.179476       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:06:50.179575       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:06:50.179657       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:06:50.179746       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:06:50.179838       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:06:50.179930       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:06:50.180006       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:06:50.180089       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:06:50.180173       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:06:50.180263       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:06:50.180356       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:06:50.180432       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:06:50.236884       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:06:50.237443       1 nfd-worker.go:471] feature discovery completed
+I0416 05:07:50.413440       1 local.go:115] starting hooks...
+E0416 05:07:50.415010       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:07:50.415109       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:07:50.415182       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:07:50.415265       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:07:50.415321       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:07:50.415404       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:07:50.415483       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:07:50.415578       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:07:50.415675       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:07:50.415760       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:07:50.415834       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:07:50.415918       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:07:50.415994       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:07:50.416074       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:07:50.470005       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:07:50.470489       1 nfd-worker.go:471] feature discovery completed
+I0416 05:08:50.672117       1 local.go:115] starting hooks...
+E0416 05:08:50.676891       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:08:50.679184       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:08:50.679231       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:08:50.680727       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:08:50.680781       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:08:50.680842       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:08:50.680915       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:08:50.680985       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:08:50.681055       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:08:50.681123       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:08:50.681191       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:08:50.681252       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:08:50.681306       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:08:50.681353       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:08:50.719836       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:08:50.720248       1 nfd-worker.go:471] feature discovery completed
+I0416 05:09:50.952844       1 local.go:115] starting hooks...
+E0416 05:09:50.955491       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:09:50.955573       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:09:50.955650       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:09:50.955719       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:09:50.955767       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:09:50.956746       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:09:50.956897       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:09:50.956961       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:09:50.957039       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:09:50.957101       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:09:50.957162       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:09:50.957220       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:09:50.957276       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:09:50.957335       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:09:51.003128       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:09:51.003555       1 nfd-worker.go:471] feature discovery completed
+I0416 05:10:51.262634       1 local.go:115] starting hooks...
+E0416 05:10:51.264914       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:10:51.264983       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:10:51.265151       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:10:51.265595       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:10:51.265654       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:10:51.265738       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:10:51.266090       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:10:51.266158       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:10:51.266889       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:10:51.266944       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:10:51.266992       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:10:51.267046       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:10:51.267101       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:10:51.267154       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:10:51.308295       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:10:51.308659       1 nfd-worker.go:471] feature discovery completed
+I0416 05:11:51.545577       1 local.go:115] starting hooks...
+E0416 05:11:51.547114       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:11:51.547185       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:11:51.547235       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:11:51.547288       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:11:51.547328       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:11:51.547381       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:11:51.547439       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:11:51.547495       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:11:51.547547       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:11:51.547615       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:11:51.547678       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:11:51.547745       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:11:51.547794       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:11:51.547854       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:11:51.592033       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:11:51.592458       1 nfd-worker.go:471] feature discovery completed
+I0416 05:12:51.840004       1 local.go:115] starting hooks...
+E0416 05:12:51.843082       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:12:51.843152       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:12:51.843207       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:12:51.843268       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:12:51.843315       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:12:51.843373       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:12:51.843431       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:12:51.843490       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:12:51.843547       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:12:51.843617       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:12:51.843675       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:12:51.843738       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:12:51.843798       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:12:51.843855       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:12:51.881378       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:12:51.881776       1 nfd-worker.go:471] feature discovery completed
+I0416 05:13:52.124633       1 local.go:115] starting hooks...
+E0416 05:13:52.127193       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:13:52.127246       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:13:52.127293       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:13:52.127346       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:13:52.127387       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:13:52.127437       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:13:52.127488       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:13:52.127540       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:13:52.127588       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:13:52.127654       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:13:52.127708       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:13:52.127765       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:13:52.127819       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:13:52.127871       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:13:52.170708       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:13:52.171033       1 nfd-worker.go:471] feature discovery completed
+I0416 05:14:52.435666       1 local.go:115] starting hooks...
+E0416 05:14:52.437050       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:14:52.437118       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:14:52.437174       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:14:52.437238       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:14:52.437286       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:14:52.437348       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:14:52.437410       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:14:52.437469       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:14:52.437531       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:14:52.437596       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:14:52.437654       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:14:52.437720       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:14:52.437781       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:14:52.437839       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:14:52.473872       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:14:52.474233       1 nfd-worker.go:471] feature discovery completed
+I0416 05:15:52.696006       1 local.go:115] starting hooks...
+E0416 05:15:52.699246       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:15:52.699315       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:15:52.699368       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:15:52.699429       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:15:52.699473       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:15:52.699526       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:15:52.699592       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:15:52.699676       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:15:52.699745       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:15:52.699808       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:15:52.699863       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:15:52.699919       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:15:52.699972       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:15:52.700025       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:15:52.740805       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:15:52.741163       1 nfd-worker.go:471] feature discovery completed
+I0416 05:16:52.972747       1 local.go:115] starting hooks...
+E0416 05:16:52.975198       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:16:52.975264       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:16:52.975311       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:16:52.975365       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:16:52.975404       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:16:52.975459       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:16:52.975507       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:16:52.975555       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:16:52.975621       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:16:52.975677       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:16:52.975733       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:16:52.975790       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:16:52.975846       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:16:52.975898       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:16:53.017044       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:16:53.017415       1 nfd-worker.go:471] feature discovery completed
+I0416 05:17:53.249018       1 local.go:115] starting hooks...
+E0416 05:17:53.251448       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:17:53.251505       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:17:53.251553       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:17:53.251612       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:17:53.251650       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:17:53.251703       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:17:53.251760       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:17:53.251815       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:17:53.251871       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:17:53.251925       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:17:53.251978       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:17:53.252037       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:17:53.252093       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:17:53.252149       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:17:53.298867       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:17:53.299197       1 nfd-worker.go:471] feature discovery completed
+I0416 05:18:53.549765       1 local.go:115] starting hooks...
+E0416 05:18:53.551314       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:18:53.551375       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:18:53.551435       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:18:53.551497       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:18:53.551541       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:18:53.551605       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:18:53.551663       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:18:53.551717       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:18:53.551784       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:18:53.551851       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:18:53.551917       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:18:53.551983       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:18:53.552048       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:18:53.552115       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:18:53.593494       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:18:53.593882       1 nfd-worker.go:471] feature discovery completed
+I0416 05:19:53.806832       1 local.go:115] starting hooks...
+E0416 05:19:53.809973       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:19:53.810141       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:19:53.810321       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:19:53.810583       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:19:53.810800       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:19:53.811016       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:19:53.811211       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:19:53.811422       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:19:53.811659       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:19:53.811921       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:19:53.812142       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:19:53.812401       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:19:53.812579       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:19:53.812742       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:19:53.855668       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:19:53.856004       1 nfd-worker.go:471] feature discovery completed
+I0416 05:20:54.093464       1 local.go:115] starting hooks...
+E0416 05:20:54.094651       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:20:54.094713       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:20:54.094770       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:20:54.094828       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:20:54.094873       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:20:54.094930       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:20:54.094987       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:20:54.095043       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:20:54.095108       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:20:54.095173       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:20:54.095236       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:20:54.095301       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:20:54.095362       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:20:54.095419       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:20:54.136997       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:20:54.137335       1 nfd-worker.go:471] feature discovery completed
+I0416 05:21:54.354721       1 local.go:115] starting hooks...
+E0416 05:21:54.357229       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:21:54.357313       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:21:54.357369       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:21:54.357430       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:21:54.357474       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:21:54.357529       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:21:54.357591       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:21:54.357647       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:21:54.357706       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:21:54.357765       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:21:54.357820       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:21:54.357881       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:21:54.357940       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:21:54.358008       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:21:54.395407       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:21:54.395900       1 nfd-worker.go:471] feature discovery completed
+I0416 05:22:54.648384       1 local.go:115] starting hooks...
+E0416 05:22:54.651196       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:22:54.651267       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:22:54.651318       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:22:54.651394       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:22:54.651445       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:22:54.651507       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:22:54.651567       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:22:54.651637       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:22:54.651700       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:22:54.651754       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:22:54.651811       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:22:54.651878       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:22:54.651949       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:22:54.652014       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:22:54.693151       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:22:54.693483       1 nfd-worker.go:471] feature discovery completed
+I0416 05:23:54.939778       1 local.go:115] starting hooks...
+E0416 05:23:54.940874       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:23:54.940938       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:23:54.940994       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:23:54.941057       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:23:54.941103       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:23:54.941179       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:23:54.941397       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:23:54.941862       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:23:54.941945       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:23:54.942029       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:23:54.942112       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:23:54.942179       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:23:54.942453       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:23:54.942542       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:23:54.981792       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:23:54.982135       1 nfd-worker.go:471] feature discovery completed
+I0416 05:24:55.225754       1 local.go:115] starting hooks...
+E0416 05:24:55.228466       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:24:55.228515       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:24:55.228745       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:24:55.229079       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:24:55.229156       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:24:55.229229       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:24:55.229323       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:24:55.229445       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:24:55.229696       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:24:55.230266       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:24:55.230342       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:24:55.230402       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:24:55.230460       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:24:55.230515       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:24:55.268388       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:24:55.268742       1 nfd-worker.go:471] feature discovery completed
+I0416 05:25:55.503239       1 local.go:115] starting hooks...
+E0416 05:25:55.506268       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:25:55.506333       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:25:55.506384       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:25:55.506445       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:25:55.506488       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:25:55.506543       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:25:55.506600       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:25:55.506655       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:25:55.506711       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:25:55.506768       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:25:55.506822       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:25:55.506880       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:25:55.506940       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:25:55.506995       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:25:55.545010       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:25:55.545360       1 nfd-worker.go:471] feature discovery completed
+I0416 05:26:55.783338       1 local.go:115] starting hooks...
+E0416 05:26:55.786827       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:26:55.786985       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:26:55.787138       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:26:55.787311       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:26:55.787474       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:26:55.787643       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:26:55.787826       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:26:55.787984       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:26:55.788125       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:26:55.788284       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:26:55.788410       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:26:55.788569       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:26:55.788618       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:26:55.788773       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:26:55.828608       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:26:55.829021       1 nfd-worker.go:471] feature discovery completed
+I0416 05:27:56.068043       1 local.go:115] starting hooks...
+E0416 05:27:56.070241       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:27:56.070315       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:27:56.070364       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:27:56.070415       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:27:56.070455       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:27:56.070505       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:27:56.070554       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:27:56.070604       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:27:56.070670       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:27:56.070724       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:27:56.070788       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:27:56.070857       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:27:56.070925       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:27:56.070978       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:27:56.113608       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:27:56.113962       1 nfd-worker.go:471] feature discovery completed
+I0416 05:28:56.342512       1 local.go:115] starting hooks...
+E0416 05:28:56.344303       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:28:56.344372       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:28:56.344424       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:28:56.344486       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:28:56.344528       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:28:56.344582       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:28:56.344641       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:28:56.344699       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:28:56.344758       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:28:56.344823       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:28:56.344880       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:28:56.344939       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:28:56.344996       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:28:56.345054       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:28:56.388058       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:28:56.388459       1 nfd-worker.go:471] feature discovery completed
+I0416 05:29:56.609681       1 local.go:115] starting hooks...
+E0416 05:29:56.611476       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:29:56.611546       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:29:56.611608       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:29:56.611671       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:29:56.611718       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:29:56.611776       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:29:56.611831       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:29:56.611884       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:29:56.611936       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:29:56.611993       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:29:56.612048       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:29:56.612102       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:29:56.612157       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:29:56.612212       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:29:56.650921       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:29:56.651248       1 nfd-worker.go:471] feature discovery completed
+I0416 05:30:56.889126       1 local.go:115] starting hooks...
+E0416 05:30:56.891364       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:30:56.891421       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:30:56.891471       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:30:56.891525       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:30:56.891565       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:30:56.891627       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:30:56.891682       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:30:56.891734       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:30:56.891787       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:30:56.891840       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:30:56.891893       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:30:56.891949       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:30:56.892003       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:30:56.892056       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:30:56.938154       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:30:56.938524       1 nfd-worker.go:471] feature discovery completed
+I0416 05:31:57.163111       1 local.go:115] starting hooks...
+E0416 05:31:57.165652       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:31:57.165703       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:31:57.165748       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:31:57.165808       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:31:57.165845       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:31:57.166152       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:31:57.166349       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:31:57.166403       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:31:57.166455       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:31:57.166506       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:31:57.166555       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:31:57.166829       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:31:57.166915       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:31:57.166974       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:31:57.213259       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:31:57.213638       1 nfd-worker.go:471] feature discovery completed
+I0416 05:32:57.432284       1 local.go:115] starting hooks...
+E0416 05:32:57.435071       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:32:57.435125       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:32:57.435176       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:32:57.435223       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:32:57.435265       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:32:57.435324       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:32:57.435377       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:32:57.435431       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:32:57.435486       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:32:57.435539       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:32:57.435590       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:32:57.435654       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:32:57.435708       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:32:57.435762       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:32:57.481617       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:32:57.481963       1 nfd-worker.go:471] feature discovery completed
+I0416 05:33:57.722268       1 local.go:115] starting hooks...
+E0416 05:33:57.725000       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:33:57.725053       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:33:57.725098       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:33:57.725324       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:33:57.725665       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:33:57.725981       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:33:57.726055       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:33:57.726139       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:33:57.726223       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:33:57.726303       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:33:57.726361       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:33:57.726887       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:33:57.726943       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:33:57.726998       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:33:57.765957       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:33:57.766352       1 nfd-worker.go:471] feature discovery completed
+I0416 05:34:58.007190       1 local.go:115] starting hooks...
+E0416 05:34:58.009931       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:34:58.009983       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:34:58.010033       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:34:58.010087       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:34:58.010123       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:34:58.010167       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:34:58.010213       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:34:58.010258       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:34:58.010302       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:34:58.010348       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:34:58.010390       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:34:58.010434       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:34:58.010479       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:34:58.010523       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:34:58.056141       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:34:58.056509       1 nfd-worker.go:471] feature discovery completed
+I0416 05:35:58.298742       1 local.go:115] starting hooks...
+E0416 05:35:58.301536       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:35:58.301597       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:35:58.301647       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:35:58.301700       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:35:58.301738       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:35:58.301786       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:35:58.301835       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:35:58.301885       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:35:58.301934       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:35:58.301987       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:35:58.302041       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:35:58.302103       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:35:58.302158       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:35:58.302211       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:35:58.339936       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:35:58.340362       1 nfd-worker.go:471] feature discovery completed
+I0416 05:36:58.589700       1 local.go:115] starting hooks...
+E0416 05:36:58.592873       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:36:58.592944       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:36:58.593001       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:36:58.593058       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:36:58.593102       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:36:58.593158       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:36:58.593217       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:36:58.593275       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:36:58.593333       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:36:58.593392       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:36:58.593449       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:36:58.593508       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:36:58.593565       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:36:58.593621       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:36:58.636646       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:36:58.637011       1 nfd-worker.go:471] feature discovery completed
+I0416 05:37:58.859575       1 local.go:115] starting hooks...
+E0416 05:37:58.862274       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:37:58.862333       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:37:58.862383       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:37:58.862436       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:37:58.862477       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:37:58.862529       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:37:58.862581       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:37:58.862634       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:37:58.862686       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:37:58.862740       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:37:58.862797       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:37:58.862861       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:37:58.862920       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:37:58.862978       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:37:58.908531       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:37:58.908892       1 nfd-worker.go:471] feature discovery completed
+I0416 05:38:59.136878       1 local.go:115] starting hooks...
+E0416 05:38:59.139269       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:38:59.139338       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:38:59.139399       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:38:59.139466       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:38:59.139515       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:38:59.139573       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:38:59.139650       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:38:59.139718       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:38:59.139780       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:38:59.139852       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:38:59.139918       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:38:59.139986       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:38:59.140054       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:38:59.140119       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:38:59.181854       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:38:59.182300       1 nfd-worker.go:471] feature discovery completed
+I0416 05:39:59.418676       1 local.go:115] starting hooks...
+E0416 05:39:59.420959       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:39:59.421009       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:39:59.421054       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:39:59.421115       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:39:59.421156       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:39:59.421217       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:39:59.421276       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:39:59.421341       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:39:59.421407       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:39:59.421475       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:39:59.421534       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:39:59.421595       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:39:59.421662       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:39:59.421730       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:39:59.464878       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:39:59.465257       1 nfd-worker.go:471] feature discovery completed
+I0416 05:40:59.718573       1 local.go:115] starting hooks...
+E0416 05:40:59.721311       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:40:59.721378       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:40:59.721429       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:40:59.721488       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:40:59.721530       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:40:59.721582       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:40:59.721639       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:40:59.721696       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:40:59.721750       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:40:59.721806       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:40:59.721859       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:40:59.721915       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:40:59.721971       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:40:59.722026       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:40:59.767290       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:40:59.767690       1 nfd-worker.go:471] feature discovery completed
+I0416 05:42:00.019719       1 local.go:115] starting hooks...
+E0416 05:42:00.022099       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:42:00.022165       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:42:00.022211       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:42:00.022270       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:42:00.022309       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:42:00.022358       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:42:00.022408       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:42:00.022457       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:42:00.022509       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:42:00.022559       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:42:00.022605       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:42:00.022659       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:42:00.022711       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:42:00.022761       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:42:00.062628       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:42:00.063000       1 nfd-worker.go:471] feature discovery completed
+I0416 05:43:00.307411       1 local.go:115] starting hooks...
+E0416 05:43:00.310025       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:43:00.310077       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:43:00.310119       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:43:00.310172       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:43:00.310213       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:43:00.310257       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:43:00.310304       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:43:00.310347       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:43:00.310392       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:43:00.310558       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:43:00.310875       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:43:00.310928       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:43:00.311022       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:43:00.311082       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:43:00.358685       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:43:00.359111       1 nfd-worker.go:471] feature discovery completed
+I0416 05:44:00.592838       1 local.go:115] starting hooks...
+E0416 05:44:00.593886       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:44:00.593948       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:44:00.593997       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:44:00.594057       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:44:00.594103       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:44:00.594159       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:44:00.594219       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:44:00.594277       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:44:00.594338       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:44:00.594397       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:44:00.594454       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:44:00.594516       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:44:00.594575       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:44:00.594632       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:44:00.631654       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:44:00.631990       1 nfd-worker.go:471] feature discovery completed
+I0416 05:45:00.843007       1 local.go:115] starting hooks...
+E0416 05:45:00.845384       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:45:00.845434       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:45:00.845477       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:45:00.845526       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:45:00.845562       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:45:00.845605       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:45:00.845650       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:45:00.845695       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:45:00.845740       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:45:00.845790       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:45:00.845835       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:45:00.845882       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:45:00.845928       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:45:00.845973       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:45:00.888593       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:45:00.888921       1 nfd-worker.go:471] feature discovery completed
+I0416 05:46:01.127141       1 local.go:115] starting hooks...
+E0416 05:46:01.131742       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:46:01.131816       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:46:01.131866       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:46:01.131920       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:46:01.131959       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:46:01.132009       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:46:01.132062       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:46:01.132115       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:46:01.132187       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:46:01.132252       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:46:01.132305       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:46:01.132357       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:46:01.132423       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:46:01.132476       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:46:01.171929       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:46:01.172348       1 nfd-worker.go:471] feature discovery completed
+I0416 05:47:01.408053       1 local.go:115] starting hooks...
+E0416 05:47:01.410858       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:47:01.410910       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:47:01.410956       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:47:01.411015       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:47:01.411062       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:47:01.411117       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:47:01.411169       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:47:01.411221       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:47:01.411275       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:47:01.411336       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:47:01.411392       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:47:01.411448       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:47:01.411502       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:47:01.411555       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:47:01.449279       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:47:01.449601       1 nfd-worker.go:471] feature discovery completed
+I0416 05:48:01.688501       1 local.go:115] starting hooks...
+E0416 05:48:01.691044       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:48:01.691096       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:48:01.691139       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:48:01.691189       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:48:01.691227       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:48:01.691285       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:48:01.691349       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:48:01.691415       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:48:01.691473       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:48:01.691530       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:48:01.691609       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:48:01.691675       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:48:01.691912       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:48:01.692298       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:48:01.733359       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:48:01.733697       1 nfd-worker.go:471] feature discovery completed
+I0416 05:49:01.946084       1 local.go:115] starting hooks...
+E0416 05:49:01.948028       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:49:01.948272       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:49:01.948601       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:49:01.948656       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:49:01.948696       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:49:01.948755       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:49:01.948971       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:49:01.949147       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:49:01.949234       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:49:01.950201       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:49:01.950277       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:49:01.950343       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:49:01.950404       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:49:01.950461       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:49:01.987867       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:49:01.988193       1 nfd-worker.go:471] feature discovery completed
+I0416 05:50:02.121666       1 local.go:115] starting hooks...
+E0416 05:50:02.122920       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:50:02.123017       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:50:02.123106       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:50:02.123199       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:50:02.123264       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:50:02.123353       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:50:02.123447       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:50:02.123535       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:50:02.123652       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:50:02.124016       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:50:02.124589       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:50:02.124745       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:50:02.124930       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:50:02.125277       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:50:02.180658       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:50:02.181246       1 nfd-worker.go:471] feature discovery completed
+I0416 05:51:02.356166       1 local.go:115] starting hooks...
+E0416 05:51:02.357423       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:51:02.357521       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:51:02.357603       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:51:02.357673       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:51:02.357737       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:51:02.357835       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:51:02.357942       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:51:02.358047       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:51:02.358152       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:51:02.358261       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:51:02.358367       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:51:02.358479       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:51:02.358603       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:51:02.358699       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:51:02.413191       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:51:02.413764       1 nfd-worker.go:471] feature discovery completed
+I0416 05:52:02.642492       1 local.go:115] starting hooks...
+E0416 05:52:02.645362       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:52:02.645416       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:52:02.645459       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:52:02.645510       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:52:02.645550       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:52:02.645596       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:52:02.645653       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:52:02.645705       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:52:02.645754       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:52:02.645804       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:52:02.645852       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:52:02.645903       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:52:02.645958       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:52:02.646010       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:52:02.688874       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:52:02.689271       1 nfd-worker.go:471] feature discovery completed
+I0416 05:53:02.905335       1 local.go:115] starting hooks...
+E0416 05:53:02.907367       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:53:02.907425       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:53:02.907475       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:53:02.907528       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:53:02.907569       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:53:02.907631       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:53:02.907685       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:53:02.907738       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:53:02.907790       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:53:02.907844       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:53:02.907894       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:53:02.907950       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:53:02.908002       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:53:02.908052       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:53:02.953815       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:53:02.954181       1 nfd-worker.go:471] feature discovery completed
+I0416 05:54:03.165288       1 local.go:115] starting hooks...
+E0416 05:54:03.168000       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:54:03.168051       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:54:03.168094       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:54:03.168143       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:54:03.168179       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:54:03.168224       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:54:03.168270       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:54:03.168314       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:54:03.168358       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:54:03.168404       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:54:03.168447       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:54:03.168493       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:54:03.168642       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:54:03.168948       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:54:03.206534       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:54:03.206866       1 nfd-worker.go:471] feature discovery completed
+I0416 05:55:03.425199       1 local.go:115] starting hooks...
+E0416 05:55:03.427973       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:55:03.428023       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:55:03.428067       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:55:03.428115       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:55:03.428151       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:55:03.428196       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:55:03.428239       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:55:03.428437       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:55:03.428750       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:55:03.429006       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:55:03.429086       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:55:03.429138       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:55:03.429191       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:55:03.429242       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:55:03.471344       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:55:03.471823       1 nfd-worker.go:471] feature discovery completed
+I0416 05:56:03.682709       1 local.go:115] starting hooks...
+E0416 05:56:03.685627       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:56:03.685679       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:56:03.685722       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:56:03.685768       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:56:03.685803       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:56:03.685849       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:56:03.685896       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:56:03.685939       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:56:03.685992       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:56:03.686037       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:56:03.686079       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:56:03.686123       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:56:03.686168       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:56:03.686213       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:56:03.724895       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:56:03.725229       1 nfd-worker.go:471] feature discovery completed
+I0416 05:57:03.942756       1 local.go:115] starting hooks...
+E0416 05:57:03.943842       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:57:03.943905       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:57:03.943957       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:57:03.944016       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:57:03.944059       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:57:03.944118       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:57:03.944180       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:57:03.944235       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:57:03.944290       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:57:03.944347       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:57:03.944400       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:57:03.944456       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:57:03.944510       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:57:03.944566       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:57:03.983269       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:57:03.983634       1 nfd-worker.go:471] feature discovery completed
+I0416 05:58:04.236670       1 local.go:115] starting hooks...
+E0416 05:58:04.237730       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:58:04.237786       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:58:04.237839       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:58:04.237886       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:58:04.237924       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:58:04.237970       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:58:04.238017       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:58:04.238063       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:58:04.238108       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:58:04.238155       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:58:04.238202       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:58:04.238248       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:58:04.238294       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:58:04.238337       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:58:04.281009       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:58:04.281372       1 nfd-worker.go:471] feature discovery completed
+I0416 05:59:04.496675       1 local.go:115] starting hooks...
+E0416 05:59:04.498526       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 05:59:04.498579       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 05:59:04.498623       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 05:59:04.498842       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 05:59:04.499187       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 05:59:04.499243       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 05:59:04.499311       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 05:59:04.499383       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 05:59:04.499459       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 05:59:04.499532       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 05:59:04.499584       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 05:59:04.499647       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 05:59:04.499711       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 05:59:04.499763       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 05:59:04.540202       1 nfd-worker.go:459] starting feature discovery...
+I0416 05:59:04.540555       1 nfd-worker.go:471] feature discovery completed
+I0416 06:00:04.803371       1 local.go:115] starting hooks...
+E0416 06:00:04.804821       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:00:04.804908       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:00:04.804973       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:00:04.805043       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:00:04.805093       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:00:04.805154       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:00:04.805218       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:00:04.805282       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:00:04.805341       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:00:04.805412       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:00:04.805475       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:00:04.805542       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:00:04.805604       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:00:04.805668       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:00:04.847741       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:00:04.848086       1 nfd-worker.go:471] feature discovery completed
+I0416 06:01:05.082012       1 local.go:115] starting hooks...
+E0416 06:01:05.085045       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:01:05.085112       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:01:05.085161       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:01:05.085213       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:01:05.085253       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:01:05.085305       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:01:05.085361       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:01:05.085415       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:01:05.085467       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:01:05.085520       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:01:05.085571       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:01:05.085625       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:01:05.085677       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:01:05.085732       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:01:05.126461       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:01:05.126858       1 nfd-worker.go:471] feature discovery completed
+I0416 06:02:05.349066       1 local.go:115] starting hooks...
+E0416 06:02:05.351582       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:02:05.351824       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:02:05.352023       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:02:05.352214       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:02:05.352407       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:02:05.352592       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:02:05.352889       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:02:05.353309       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:02:05.353548       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:02:05.353757       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:02:05.353915       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:02:05.354141       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:02:05.354641       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:02:05.354827       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:02:05.393505       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:02:05.393882       1 nfd-worker.go:471] feature discovery completed
+I0416 06:03:05.611956       1 local.go:115] starting hooks...
+E0416 06:03:05.614623       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:03:05.614678       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:03:05.614720       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:03:05.614767       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:03:05.614805       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:03:05.614848       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:03:05.614895       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:03:05.614941       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:03:05.614989       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:03:05.615040       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:03:05.615089       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:03:05.615140       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:03:05.615195       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:03:05.615247       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:03:05.658090       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:03:05.658592       1 nfd-worker.go:471] feature discovery completed
+I0416 06:04:05.874938       1 local.go:115] starting hooks...
+E0416 06:04:05.877387       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:04:05.877440       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:04:05.877483       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:04:05.877537       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:04:05.877576       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:04:05.877620       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:04:05.877667       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:04:05.877714       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:04:05.877762       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:04:05.877811       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:04:05.877861       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:04:05.877910       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:04:05.877957       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:04:05.878004       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:04:05.919858       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:04:05.920206       1 nfd-worker.go:471] feature discovery completed
+I0416 06:05:06.134202       1 local.go:115] starting hooks...
+E0416 06:05:06.137494       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:05:06.137561       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:05:06.137616       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:05:06.137672       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:05:06.137714       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:05:06.137762       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:05:06.137817       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:05:06.137868       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:05:06.137922       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:05:06.137973       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:05:06.138027       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:05:06.138081       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:05:06.138140       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:05:06.138193       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:05:06.177992       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:05:06.178344       1 nfd-worker.go:471] feature discovery completed
+I0416 06:06:06.398424       1 local.go:115] starting hooks...
+E0416 06:06:06.401191       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:06:06.401242       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:06:06.401288       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:06:06.401336       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:06:06.401373       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:06:06.401417       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:06:06.401471       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:06:06.401530       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:06:06.401595       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:06:06.401660       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:06:06.401729       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:06:06.401794       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:06:06.401859       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:06:06.401926       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:06:06.449954       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:06:06.450292       1 nfd-worker.go:471] feature discovery completed
+I0416 06:07:06.668488       1 local.go:115] starting hooks...
+E0416 06:07:06.671253       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:07:06.671311       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:07:06.671361       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:07:06.671426       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:07:06.671467       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:07:06.671515       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:07:06.671571       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:07:06.671633       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:07:06.671686       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:07:06.671738       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:07:06.671792       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:07:06.671849       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:07:06.671903       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:07:06.671955       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:07:06.721364       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:07:06.721793       1 nfd-worker.go:471] feature discovery completed
+I0416 06:08:06.959833       1 local.go:115] starting hooks...
+E0416 06:08:06.962543       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:08:06.962596       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:08:06.962641       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:08:06.962700       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:08:06.962738       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:08:06.962786       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:08:06.962832       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:08:06.962880       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:08:06.962926       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:08:06.962974       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:08:06.963029       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:08:06.963079       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:08:06.963291       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:08:06.963685       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:08:07.009707       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:08:07.010090       1 nfd-worker.go:471] feature discovery completed
+I0416 06:09:07.266099       1 local.go:115] starting hooks...
+E0416 06:09:07.268424       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:09:07.268474       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:09:07.268515       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:09:07.268566       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:09:07.268602       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:09:07.268646       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:09:07.268693       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:09:07.268739       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:09:07.268784       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:09:07.268830       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:09:07.268878       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:09:07.268929       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:09:07.268975       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:09:07.269021       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:09:07.309445       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:09:07.309845       1 nfd-worker.go:471] feature discovery completed
+I0416 06:10:07.542885       1 local.go:115] starting hooks...
+E0416 06:10:07.546062       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:10:07.546118       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:10:07.546169       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:10:07.546222       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:10:07.546260       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:10:07.546312       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:10:07.546365       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:10:07.546416       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:10:07.546467       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:10:07.546520       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:10:07.546569       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:10:07.546624       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:10:07.546679       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:10:07.546733       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:10:07.588408       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:10:07.588740       1 nfd-worker.go:471] feature discovery completed
+I0416 06:11:07.827659       1 local.go:115] starting hooks...
+E0416 06:11:07.830509       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:11:07.830562       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:11:07.830610       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:11:07.830662       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:11:07.830699       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:11:07.830748       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:11:07.830798       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:11:07.830846       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:11:07.830904       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:11:07.830958       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:11:07.831288       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:11:07.831426       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:11:07.831486       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:11:07.831544       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:11:07.879464       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:11:07.879842       1 nfd-worker.go:471] feature discovery completed
+I0416 06:12:08.106382       1 local.go:115] starting hooks...
+E0416 06:12:08.108038       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:12:08.108111       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:12:08.108171       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:12:08.108240       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:12:08.108282       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:12:08.108346       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:12:08.108416       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:12:08.108475       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:12:08.108547       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:12:08.108618       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:12:08.108686       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:12:08.108745       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:12:08.108815       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:12:08.108886       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:12:08.149800       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:12:08.150178       1 nfd-worker.go:471] feature discovery completed
+I0416 06:13:08.365885       1 local.go:115] starting hooks...
+E0416 06:13:08.368293       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:13:08.368344       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:13:08.368387       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:13:08.368432       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:13:08.368467       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:13:08.368512       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:13:08.368557       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:13:08.368601       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:13:08.368645       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:13:08.368692       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:13:08.368735       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:13:08.368780       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:13:08.368826       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:13:08.368868       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:13:08.411307       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:13:08.411680       1 nfd-worker.go:471] feature discovery completed
+I0416 06:14:08.622985       1 local.go:115] starting hooks...
+E0416 06:14:08.624428       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:14:08.624500       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:14:08.624558       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:14:08.624617       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:14:08.624678       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:14:08.624747       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:14:08.624812       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:14:08.624875       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:14:08.624939       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:14:08.625001       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:14:08.625066       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:14:08.625128       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:14:08.625198       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:14:08.625258       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:14:08.667430       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:14:08.667802       1 nfd-worker.go:471] feature discovery completed
+I0416 06:15:08.899815       1 local.go:115] starting hooks...
+E0416 06:15:08.902642       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:15:08.902717       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:15:08.902773       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:15:08.902840       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:15:08.902888       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:15:08.902962       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:15:08.903043       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:15:08.903113       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:15:08.903184       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:15:08.903259       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:15:08.903333       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:15:08.903408       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:15:08.903484       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:15:08.903554       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:15:08.948776       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:15:08.949120       1 nfd-worker.go:471] feature discovery completed
+I0416 06:16:09.185284       1 local.go:115] starting hooks...
+E0416 06:16:09.187605       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:16:09.187664       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:16:09.187712       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:16:09.187762       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:16:09.187799       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:16:09.187846       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:16:09.187894       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:16:09.187940       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:16:09.187989       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:16:09.188259       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:16:09.188609       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:16:09.188663       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:16:09.188716       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:16:09.188769       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:16:09.227896       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:16:09.228223       1 nfd-worker.go:471] feature discovery completed
+I0416 06:17:09.456111       1 local.go:115] starting hooks...
+E0416 06:17:09.458346       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:17:09.458400       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:17:09.458457       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:17:09.458513       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:17:09.458550       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:17:09.458597       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:17:09.458647       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:17:09.458696       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:17:09.458743       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:17:09.458799       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:17:09.458846       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:17:09.458915       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:17:09.458979       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:17:09.459031       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:17:09.506380       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:17:09.506756       1 nfd-worker.go:471] feature discovery completed
+I0416 06:18:09.727688       1 local.go:115] starting hooks...
+E0416 06:18:09.730472       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enp41s0f1np1/speed: invalid argument
+E0416 06:18:09.730540       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f0/speed: invalid argument
+E0416 06:18:09.730589       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ens6f1/speed: invalid argument
+E0416 06:18:09.730645       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/enx52dfa80fee45/speed: invalid argument
+E0416 06:18:09.730685       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp154s0/speed: invalid argument
+E0416 06:18:09.730738       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp170s0f0/speed: invalid argument
+E0416 06:18:09.730792       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp192s0/speed: invalid argument
+E0416 06:18:09.730845       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp206s0/speed: invalid argument
+E0416 06:18:09.730898       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp220s0/speed: invalid argument
+E0416 06:18:09.730951       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp24s0/speed: invalid argument
+E0416 06:18:09.731003       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp41s0f0/speed: invalid argument
+E0416 06:18:09.731056       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp64s0/speed: invalid argument
+E0416 06:18:09.731111       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp79s0/speed: invalid argument
+E0416 06:18:09.731163       1 network.go:143] failed to read net iface attribute speed: read /host-sys/class/net/ibp94s0/speed: invalid argument
+I0416 06:18:09.771656       1 nfd-worker.go:459] starting feature discovery...
+I0416 06:18:09.772138       1 nfd-worker.go:471] feature discovery completed

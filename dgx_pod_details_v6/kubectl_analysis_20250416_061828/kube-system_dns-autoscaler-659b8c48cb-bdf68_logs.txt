@@ -1,0 +1,5 @@
+I0416 04:53:46.014524       1 autoscaler.go:49] Scaling Namespace: kube-system, Target: deployment/coredns
+I0416 04:53:49.276066       1 plugin.go:50] Set control mode to linear
+I0416 04:53:49.276098       1 linear_controller.go:60] ConfigMap version change (old:  new: 943) - rebuilding params
+I0416 04:53:49.276103       1 linear_controller.go:61] Params from apiserver: 
+{"coresPerReplica":256,"min":2,"nodesPerReplica":16,"preventSinglePointFailure":true}

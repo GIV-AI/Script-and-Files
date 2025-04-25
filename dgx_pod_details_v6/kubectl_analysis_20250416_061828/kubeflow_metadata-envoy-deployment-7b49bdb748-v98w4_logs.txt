@@ -1,0 +1,31 @@
+[2025-04-16 04:53:43.554][1][info][main] [source/server/server.cc:249] initializing epoch 0 (hot restart version=11.104)
+[2025-04-16 04:53:43.555][1][info][main] [source/server/server.cc:251] statically linked extensions:
+[2025-04-16 04:53:43.555][1][info][main] [source/server/server.cc:253]   access_loggers: envoy.file_access_log,envoy.http_grpc_access_log,envoy.tcp_grpc_access_log
+[2025-04-16 04:53:43.555][1][info][main] [source/server/server.cc:256]   filters.http: envoy.buffer,envoy.cors,envoy.csrf,envoy.ext_authz,envoy.fault,envoy.filters.http.adaptive_concurrency,envoy.filters.http.dynamic_forward_proxy,envoy.filters.http.grpc_http1_reverse_bridge,envoy.filters.http.grpc_stats,envoy.filters.http.header_to_metadata,envoy.filters.http.jwt_authn,envoy.filters.http.original_src,envoy.filters.http.rbac,envoy.filters.http.tap,envoy.grpc_http1_bridge,envoy.grpc_json_transcoder,envoy.grpc_web,envoy.gzip,envoy.health_check,envoy.http_dynamo_filter,envoy.ip_tagging,envoy.lua,envoy.rate_limit,envoy.router,envoy.squash
+[2025-04-16 04:53:43.555][1][info][main] [source/server/server.cc:259]   filters.listener: envoy.listener.http_inspector,envoy.listener.original_dst,envoy.listener.original_src,envoy.listener.proxy_protocol,envoy.listener.tls_inspector
+[2025-04-16 04:53:43.555][1][info][main] [source/server/server.cc:262]   filters.network: envoy.client_ssl_auth,envoy.echo,envoy.ext_authz,envoy.filters.network.dubbo_proxy,envoy.filters.network.mysql_proxy,envoy.filters.network.rbac,envoy.filters.network.sni_cluster,envoy.filters.network.thrift_proxy,envoy.filters.network.zookeeper_proxy,envoy.http_connection_manager,envoy.mongo_proxy,envoy.ratelimit,envoy.redis_proxy,envoy.tcp_proxy
+[2025-04-16 04:53:43.555][1][info][main] [source/server/server.cc:264]   stat_sinks: envoy.dog_statsd,envoy.metrics_service,envoy.stat_sinks.hystrix,envoy.statsd
+[2025-04-16 04:53:43.555][1][info][main] [source/server/server.cc:266]   tracers: envoy.dynamic.ot,envoy.lightstep,envoy.tracers.datadog,envoy.tracers.opencensus,envoy.tracers.xray,envoy.zipkin
+[2025-04-16 04:53:43.555][1][info][main] [source/server/server.cc:269]   transport_sockets.downstream: envoy.transport_sockets.alts,envoy.transport_sockets.raw_buffer,envoy.transport_sockets.tap,envoy.transport_sockets.tls,raw_buffer,tls
+[2025-04-16 04:53:43.555][1][info][main] [source/server/server.cc:272]   transport_sockets.upstream: envoy.transport_sockets.alts,envoy.transport_sockets.raw_buffer,envoy.transport_sockets.tap,envoy.transport_sockets.tls,raw_buffer,tls
+[2025-04-16 04:53:43.555][1][info][main] [source/server/server.cc:278] buffer implementation: new
+[2025-04-16 04:53:43.557][1][warning][misc] [source/common/protobuf/utility.cc:282] Using deprecated option 'envoy.api.v2.listener.Filter.config' from file listener.proto. This configuration will be removed from Envoy soon. Please see https://www.envoyproxy.io/docs/envoy/latest/intro/deprecated for details.
+[2025-04-16 04:53:43.557][1][info][main] [source/server/server.cc:344] admin address: 0.0.0.0:9901
+[2025-04-16 04:53:43.696][1][info][main] [source/server/server.cc:458] runtime: layers:
+  - name: base
+    static_layer:
+      {}
+  - name: admin
+    admin_layer:
+      {}
+[2025-04-16 04:53:43.696][1][info][config] [source/server/configuration_impl.cc:62] loading 0 static secret(s)
+[2025-04-16 04:53:43.696][1][info][config] [source/server/configuration_impl.cc:68] loading 1 cluster(s)
+[2025-04-16 04:53:43.698][1][info][config] [source/server/configuration_impl.cc:72] loading 1 listener(s)
+[2025-04-16 04:53:43.699][1][warning][misc] [source/common/protobuf/utility.cc:282] Using deprecated option 'envoy.api.v2.route.CorsPolicy.allow_origin' from file route.proto. This configuration will be removed from Envoy soon. Please see https://www.envoyproxy.io/docs/envoy/latest/intro/deprecated for details.
+[2025-04-16 04:53:43.700][1][info][config] [source/server/configuration_impl.cc:97] loading tracing configuration
+[2025-04-16 04:53:43.700][1][info][config] [source/server/configuration_impl.cc:117] loading stats sink configuration
+[2025-04-16 04:53:43.700][1][info][main] [source/server/server.cc:549] starting main dispatch loop
+[2025-04-16 04:53:51.913][1][info][upstream] [source/common/upstream/cluster_manager_impl.cc:161] cm init: all clusters initialized
+[2025-04-16 04:53:51.913][1][info][main] [source/server/server.cc:528] all clusters initialized. initializing init manager
+[2025-04-16 04:53:51.913][1][info][config] [source/server/listener_manager_impl.cc:578] all dependencies initialized. starting workers
+[2025-04-16 05:08:51.916][1][info][main] [source/server/drain_manager_impl.cc:63] shutting down parent after drain

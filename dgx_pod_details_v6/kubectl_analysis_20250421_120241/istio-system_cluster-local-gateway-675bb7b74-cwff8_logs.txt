@@ -1,0 +1,150 @@
+2025-04-21T05:29:00.038438Z	info	FLAG: --concurrency="0"
+2025-04-21T05:29:00.038495Z	info	FLAG: --domain="istio-system.svc.cluster.local"
+2025-04-21T05:29:00.038512Z	info	FLAG: --help="false"
+2025-04-21T05:29:00.038514Z	info	FLAG: --log_as_json="false"
+2025-04-21T05:29:00.038516Z	info	FLAG: --log_caller=""
+2025-04-21T05:29:00.038519Z	info	FLAG: --log_output_level="default:info"
+2025-04-21T05:29:00.038520Z	info	FLAG: --log_rotate=""
+2025-04-21T05:29:00.038524Z	info	FLAG: --log_rotate_max_age="30"
+2025-04-21T05:29:00.038526Z	info	FLAG: --log_rotate_max_backups="1000"
+2025-04-21T05:29:00.038529Z	info	FLAG: --log_rotate_max_size="104857600"
+2025-04-21T05:29:00.038531Z	info	FLAG: --log_stacktrace_level="default:none"
+2025-04-21T05:29:00.038543Z	info	FLAG: --log_target="[stdout]"
+2025-04-21T05:29:00.038546Z	info	FLAG: --meshConfig="./etc/istio/config/mesh"
+2025-04-21T05:29:00.038548Z	info	FLAG: --outlierLogPath=""
+2025-04-21T05:29:00.038550Z	info	FLAG: --proxyComponentLogLevel="misc:error"
+2025-04-21T05:29:00.038552Z	info	FLAG: --proxyLogLevel="warning"
+2025-04-21T05:29:00.038554Z	info	FLAG: --serviceCluster="istio-proxy"
+2025-04-21T05:29:00.038556Z	info	FLAG: --stsPort="0"
+2025-04-21T05:29:00.038558Z	info	FLAG: --templateFile=""
+2025-04-21T05:29:00.038559Z	info	FLAG: --tokenManagerPlugin="GoogleTokenExchange"
+2025-04-21T05:29:00.038563Z	info	FLAG: --vklog="0"
+2025-04-21T05:29:00.038566Z	info	Version 1.16.0-8f2e2dc5d57f6f1f7a453e03ec96ca72b2205783-Clean
+2025-04-21T05:29:00.040078Z	info	Maximum file descriptors (ulimit -n): 1048576
+2025-04-21T05:29:00.058171Z	info	Proxy role	ips=[10.233.119.243] type=router id=cluster-local-gateway-675bb7b74-cwff8.istio-system domain=istio-system.svc.cluster.local
+2025-04-21T05:29:00.058248Z	info	Apply mesh config from file accessLogFile: /dev/stdout
+defaultConfig:
+  discoveryAddress: istiod.istio-system.svc:15012
+  proxyMetadata: {}
+  tracing: {}
+enablePrometheusMerge: true
+rootNamespace: istio-system
+tcpKeepalive:
+  interval: 5s
+  probes: 3
+  time: 10s
+trustDomain: cluster.local
+2025-04-21T05:29:00.059755Z	info	Effective config: binaryPath: /usr/local/bin/envoy
+configPath: ./etc/istio/proxy
+controlPlaneAuthPolicy: MUTUAL_TLS
+discoveryAddress: istiod.istio-system.svc:15012
+drainDuration: 45s
+parentShutdownDuration: 60s
+proxyAdminPort: 15000
+serviceCluster: istio-proxy
+statNameLength: 189
+statusPort: 15020
+terminationDrainDuration: 5s
+tracing: {}
+
+2025-04-21T05:29:00.059767Z	info	JWT policy is third-party-jwt
+2025-04-21T05:29:00.059769Z	info	using credential fetcher of JWT type in cluster.local trust domain
+2025-04-21T05:29:02.062844Z	info	Opening status port 15020
+2025-04-21T05:29:02.064286Z	info	Workload SDS socket not found. Starting Istio SDS Server
+2025-04-21T05:29:02.064328Z	info	CA Endpoint istiod.istio-system.svc:15012, provider Citadel
+2025-04-21T05:29:02.064398Z	info	Using CA istiod.istio-system.svc:15012 cert with certs: var/run/secrets/istio/root-cert.pem
+2025-04-21T05:29:02.064846Z	info	citadelclient	Citadel client using custom root cert: var/run/secrets/istio/root-cert.pem
+2025-04-21T05:29:02.082628Z	info	ads	All caches have been synced up in 2.04711187s, marking server ready
+2025-04-21T05:29:02.082920Z	info	xdsproxy	Initializing with upstream address "istiod.istio-system.svc:15012" and cluster "Kubernetes"
+2025-04-21T05:29:02.082929Z	info	sds	Starting SDS grpc server
+2025-04-21T05:29:02.083214Z	info	starting Http service at 127.0.0.1:15004
+2025-04-21T05:29:02.085218Z	info	Pilot SAN: [istiod.istio-system.svc]
+2025-04-21T05:29:02.089160Z	info	Starting proxy agent
+2025-04-21T05:29:02.089397Z	info	starting
+2025-04-21T05:29:02.089528Z	info	Envoy command: [-c etc/istio/proxy/envoy-rev.json --drain-time-s 45 --drain-strategy immediate --parent-shutdown-time-s 60 --local-address-ip-version v4 --file-flush-interval-msec 1000 --disable-hot-restart --log-format %Y-%m-%dT%T.%fZ	%l	envoy %n	%v -l warning --component-log-level misc:error]
+2025-04-21T05:29:22.067249Z	warn	ca	ca request failed, starting attempt 1 in 100.961549ms
+2025-04-21T05:29:22.169152Z	warn	ca	ca request failed, starting attempt 2 in 208.969253ms
+2025-04-21T05:29:22.378683Z	warn	ca	ca request failed, starting attempt 3 in 364.737157ms
+2025-04-21T05:29:22.744422Z	warn	ca	ca request failed, starting attempt 4 in 778.042089ms
+2025-04-21T05:29:32.077336Z	warn	sds	failed to warm certificate: failed to generate workload certificate: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp: lookup istiod.istio-system.svc on 169.254.25.10:53: no such host"
+2025-04-21T05:29:32.781973Z	warn	ca	ca request failed, starting attempt 1 in 103.990298ms
+2025-04-21T05:29:32.886311Z	warn	ca	ca request failed, starting attempt 2 in 203.396906ms
+2025-04-21T05:29:33.089819Z	warn	ca	ca request failed, starting attempt 3 in 405.55714ms
+2025-04-21T05:29:33.496478Z	warn	ca	ca request failed, starting attempt 4 in 843.82193ms
+2025-04-21T05:29:52.747455Z	warning	envoy config	StreamAggregatedResources gRPC config stream to xds-grpc closed since 30s ago: 14, connection error: desc = "transport: Error while dialing dial tcp: lookup istiod.istio-system.svc: i/o timeout"
+2025-04-21T05:29:54.341529Z	warn	sds	failed to warm certificate: failed to generate workload certificate: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp: lookup istiod.istio-system.svc: i/o timeout"
+2025-04-21T05:29:55.479673Z	warn	ca	ca request failed, starting attempt 1 in 104.01447ms
+2025-04-21T05:29:55.584116Z	warn	ca	ca request failed, starting attempt 2 in 213.405511ms
+2025-04-21T05:29:55.772776Z	warning	envoy config	StreamAggregatedResources gRPC config stream to xds-grpc closed since 33s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.233.11.195:15012: connect: connection refused"
+2025-04-21T05:29:55.797957Z	warn	ca	ca request failed, starting attempt 3 in 410.428801ms
+2025-04-21T05:29:56.208509Z	warn	ca	ca request failed, starting attempt 4 in 849.673391ms
+2025-04-21T05:29:57.058575Z	warn	sds	failed to warm certificate: failed to generate workload certificate: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp: lookup istiod.istio-system.svc: i/o timeout"
+2025-04-21T05:29:57.822117Z	warn	ca	ca request failed, starting attempt 1 in 101.379052ms
+2025-04-21T05:29:57.924383Z	warn	ca	ca request failed, starting attempt 2 in 215.164323ms
+2025-04-21T05:29:58.139891Z	warn	ca	ca request failed, starting attempt 3 in 437.451196ms
+2025-04-21T05:29:58.577448Z	warn	ca	ca request failed, starting attempt 4 in 870.680299ms
+2025-04-21T05:29:59.065056Z	warning	envoy config	StreamAggregatedResources gRPC config stream to xds-grpc closed since 36s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.233.11.195:15012: connect: connection refused"
+2025-04-21T05:29:59.448762Z	warn	sds	failed to warm certificate: failed to generate workload certificate: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 10.233.11.195:15012: connect: connection refused"
+2025-04-21T05:30:01.530373Z	warn	ca	ca request failed, starting attempt 1 in 106.586887ms
+2025-04-21T05:30:01.637944Z	warn	ca	ca request failed, starting attempt 2 in 207.151065ms
+2025-04-21T05:30:01.845289Z	warn	ca	ca request failed, starting attempt 3 in 401.311062ms
+2025-04-21T05:30:02.247254Z	warn	ca	ca request failed, starting attempt 4 in 787.679759ms
+2025-04-21T05:30:23.035519Z	warn	sds	failed to warm certificate: failed to generate workload certificate: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp: lookup istiod.istio-system.svc: i/o timeout"
+2025-04-21T05:30:24.163987Z	warning	envoy config	StreamAggregatedResources gRPC config stream to xds-grpc closed since 61s ago: 14, connection error: desc = "transport: Error while dialing dial tcp: lookup istiod.istio-system.svc: i/o timeout"
+2025-04-21T05:30:24.656756Z	warn	ca	ca request failed, starting attempt 1 in 108.841852ms
+2025-04-21T05:30:24.766287Z	warn	ca	ca request failed, starting attempt 2 in 218.413405ms
+2025-04-21T05:30:24.985654Z	warn	ca	ca request failed, starting attempt 3 in 388.224475ms
+2025-04-21T05:30:25.374136Z	warn	ca	ca request failed, starting attempt 4 in 850.418044ms
+2025-04-21T05:30:26.225089Z	warn	sds	failed to warm certificate: failed to generate workload certificate: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp: lookup istiod.istio-system.svc: i/o timeout"
+2025-04-21T05:30:29.002244Z	warn	ca	ca request failed, starting attempt 1 in 90.981383ms
+2025-04-21T05:30:33.046376Z	warn	ca	ca request failed, starting attempt 2 in 205.40287ms
+2025-04-21T05:30:33.252933Z	warn	ca	ca request failed, starting attempt 3 in 402.928067ms
+2025-04-21T05:30:33.656592Z	warn	ca	ca request failed, starting attempt 4 in 804.351084ms
+2025-04-21T05:30:34.377493Z	warning	envoy config	StreamAggregatedResources gRPC config stream to xds-grpc closed since 72s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.233.11.195:15012: connect: connection refused"
+2025-04-21T05:30:34.461668Z	warn	sds	failed to warm certificate: failed to generate workload certificate: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp: lookup istiod.istio-system.svc on 169.254.25.10:53: no such host"
+2025-04-21T05:30:39.351859Z	warn	ca	ca request failed, starting attempt 1 in 90.412565ms
+2025-04-21T05:30:39.443103Z	warn	ca	ca request failed, starting attempt 2 in 209.532239ms
+2025-04-21T05:30:39.653457Z	warn	ca	ca request failed, starting attempt 3 in 439.2803ms
+2025-04-21T05:30:40.093396Z	warn	ca	ca request failed, starting attempt 4 in 737.934897ms
+2025-04-21T05:30:40.832371Z	warn	sds	failed to warm certificate: failed to generate workload certificate: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp: lookup istiod.istio-system.svc on 169.254.25.10:53: no such host"
+2025-04-21T05:30:49.269831Z	warning	envoy config	StreamAggregatedResources gRPC config stream to xds-grpc closed since 86s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.233.11.195:15012: connect: connection refused"
+2025-04-21T05:30:53.005854Z	warn	ca	ca request failed, starting attempt 1 in 96.377802ms
+2025-04-21T05:30:53.103149Z	warn	ca	ca request failed, starting attempt 2 in 207.476104ms
+2025-04-21T05:30:53.311564Z	warn	ca	ca request failed, starting attempt 3 in 392.527487ms
+2025-04-21T05:30:53.705283Z	warn	ca	ca request failed, starting attempt 4 in 752.110681ms
+2025-04-21T05:30:54.458195Z	warn	sds	failed to warm certificate: failed to generate workload certificate: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 10.233.11.195:15012: connect: connection refused"
+2025-04-21T05:31:09.942137Z	warning	envoy config	StreamAggregatedResources gRPC config stream to xds-grpc closed since 107s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.233.11.195:15012: connect: connection refused"
+2025-04-21T05:31:13.623092Z	warn	ca	ca request failed, starting attempt 1 in 104.868544ms
+2025-04-21T05:31:13.728610Z	warn	ca	ca request failed, starting attempt 2 in 212.96124ms
+2025-04-21T05:31:13.942473Z	warn	ca	ca request failed, starting attempt 3 in 406.740303ms
+2025-04-21T05:31:14.350223Z	warn	ca	ca request failed, starting attempt 4 in 833.796188ms
+2025-04-21T05:31:15.184260Z	warn	sds	failed to warm certificate: failed to generate workload certificate: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 10.233.11.195:15012: connect: connection refused"
+2025-04-21T05:31:27.887678Z	warning	envoy config	StreamAggregatedResources gRPC config stream to xds-grpc closed since 125s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.233.11.195:15012: connect: connection refused"
+2025-04-21T05:31:33.848865Z	warn	ca	ca request failed, starting attempt 1 in 91.617847ms
+2025-04-21T05:31:33.941343Z	warn	ca	ca request failed, starting attempt 2 in 192.311348ms
+2025-04-21T05:31:34.134694Z	warn	ca	ca request failed, starting attempt 3 in 431.899282ms
+2025-04-21T05:31:34.567055Z	warn	ca	ca request failed, starting attempt 4 in 723.380851ms
+2025-04-21T05:31:35.290887Z	warn	sds	failed to warm certificate: failed to generate workload certificate: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 10.233.11.195:15012: connect: connection refused"
+2025-04-21T05:31:49.612294Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2025-04-21T05:31:49.650137Z	info	ads	ADS: new connection for node:cluster-local-gateway-675bb7b74-cwff8.istio-system-1
+2025-04-21T05:31:49.650178Z	info	ads	ADS: new connection for node:cluster-local-gateway-675bb7b74-cwff8.istio-system-2
+2025-04-21T05:31:49.715791Z	info	cache	generated new workload certificate	latency=65.61334ms ttl=23h59m59.284214933s
+2025-04-21T05:31:49.715984Z	info	cache	returned workload certificate from cache	ttl=23h59m59.284021862s
+2025-04-21T05:31:49.716005Z	info	ads	SDS: PUSH request for node:cluster-local-gateway-675bb7b74-cwff8.istio-system resources:1 size:1.1kB resource:ROOTCA
+2025-04-21T05:31:49.716074Z	info	ads	SDS: PUSH request for node:cluster-local-gateway-675bb7b74-cwff8.istio-system resources:1 size:4.0kB resource:default
+2025-04-21T05:31:50.614832Z	info	cache	returned workload certificate from cache	ttl=23h59m58.385176618s
+2025-04-21T05:31:50.614867Z	info	cache	returned workload trust anchor from cache	ttl=23h59m58.385134843s
+2025-04-21T05:31:50.782972Z	info	Readiness succeeded in 2m50.751771375s
+2025-04-21T05:31:50.783193Z	info	Envoy proxy is ready
+2025-04-21T06:03:28.152069Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2025-04-21T06:34:58.390483Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2025-04-21T07:07:55.534156Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2025-04-21T07:35:32.930663Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2025-04-21T08:08:05.548836Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2025-04-21T08:37:31.477350Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2025-04-21T09:07:53.850495Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2025-04-21T09:38:12.766395Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2025-04-21T10:09:18.454344Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2025-04-21T10:38:09.368442Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2025-04-21T11:08:11.636300Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2025-04-21T11:35:33.484618Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012

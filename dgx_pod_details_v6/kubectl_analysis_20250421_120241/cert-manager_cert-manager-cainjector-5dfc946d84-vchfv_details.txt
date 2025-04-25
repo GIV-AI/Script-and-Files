@@ -1,0 +1,65 @@
+Namespace: cert-manager
+Pod Name: cert-manager-cainjector-5dfc946d84-vchfv
+Status: 1/1
+Other Details: Running                    9 (6h32m ago)    5d22h
+Name:             cert-manager-cainjector-5dfc946d84-vchfv
+Namespace:        cert-manager
+Priority:         0
+Service Account:  cert-manager-cainjector
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:00:27 +0000
+Labels:           app=cainjector
+                  app.kubernetes.io/component=cainjector
+                  app.kubernetes.io/instance=cert-manager
+                  app.kubernetes.io/name=cainjector
+                  app.kubernetes.io/version=v1.10.1
+                  pod-template-hash=5dfc946d84
+Annotations:      cni.projectcalico.org/containerID: 1735d74e8b0aa6f8cfdfca99d3e31b6fc81c7278c813bc81ca730bf0ce23c724
+                  cni.projectcalico.org/podIP: 10.233.119.168/32
+                  cni.projectcalico.org/podIPs: 10.233.119.168/32
+Status:           Running
+IP:               10.233.119.168
+IPs:
+  IP:           10.233.119.168
+Controlled By:  ReplicaSet/cert-manager-cainjector-5dfc946d84
+Containers:
+  cert-manager-cainjector:
+    Container ID:  docker://49d74b39ef3978cd0585ce61a2a99f539d9611609a16ad6435c5c23596e57e54
+    Image:         quay.io/jetstack/cert-manager-cainjector:v1.10.1
+    Image ID:      docker-pullable://quay.io/jetstack/cert-manager-cainjector@sha256:b5657161d2c2f74ab292da4cbaba3923bc74112525f70c3d884fb3c6ef83c303
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      --v=2
+      --leader-election-namespace=kube-system
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:30:01 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Mon, 21 Apr 2025 05:29:16 +0000
+      Finished:     Mon, 21 Apr 2025 05:29:46 +0000
+    Ready:          True
+    Restart Count:  9
+    Environment:
+      POD_NAMESPACE:  cert-manager (v1:metadata.namespace)
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-n78cz (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-n78cz:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

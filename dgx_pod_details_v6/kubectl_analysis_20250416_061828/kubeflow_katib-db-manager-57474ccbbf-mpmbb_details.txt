@@ -1,0 +1,63 @@
+Namespace: kubeflow
+Pod Name: katib-db-manager-57474ccbbf-mpmbb
+Status: 1/1
+Other Details: Running     3 (83m ago)    16h
+Name:             katib-db-manager-57474ccbbf-mpmbb
+Namespace:        kubeflow
+Priority:         0
+Service Account:  default
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:29 +0000
+Labels:           katib.kubeflow.org/component=db-manager
+                  pod-template-hash=57474ccbbf
+Annotations:      cni.projectcalico.org/containerID: 3866f5f1a0df7c6d7191682c6a08e2655ab894c073623168e66077a5cb8fecde
+                  cni.projectcalico.org/podIP: 10.233.119.161/32
+                  cni.projectcalico.org/podIPs: 10.233.119.161/32
+                  sidecar.istio.io/inject: false
+Status:           Running
+IP:               10.233.119.161
+IPs:
+  IP:           10.233.119.161
+Controlled By:  ReplicaSet/katib-db-manager-57474ccbbf
+Containers:
+  katib-db-manager:
+    Container ID:  docker://b334390daa696e74d5281d885b53b75724e9c8a353f9ab35f386b1d168c1d00a
+    Image:         docker.io/kubeflowkatib/katib-db-manager:v0.15.0
+    Image ID:      docker-pullable://kubeflowkatib/katib-db-manager@sha256:d9f7af4445c2fbea2ce19248e448a466127ea9505c6f1d2a70e896e6e050c161
+    Port:          6789/TCP
+    Host Port:     0/TCP
+    Command:
+      ./katib-db-manager
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:54:57 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    255
+      Started:      Wed, 16 Apr 2025 04:53:46 +0000
+      Finished:     Wed, 16 Apr 2025 04:54:46 +0000
+    Ready:          True
+    Restart Count:  3
+    Liveness:       exec [/bin/grpc_health_probe -addr=:6789] delay=10s timeout=1s period=60s #success=1 #failure=5
+    Environment:
+      DB_NAME:      mysql
+      DB_PASSWORD:  <set to the key 'MYSQL_ROOT_PASSWORD' in secret 'katib-mysql-secrets'>  Optional: false
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-p9hzw (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-p9hzw:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

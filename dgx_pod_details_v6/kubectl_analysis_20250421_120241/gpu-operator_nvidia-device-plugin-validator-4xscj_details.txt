@@ -1,0 +1,63 @@
+Namespace: gpu-operator
+Pod Name: nvidia-device-plugin-validator-4xscj
+Status: 0/1
+Other Details: UnexpectedAdmissionError   0                6h31m
+Name:             nvidia-device-plugin-validator-4xscj
+Namespace:        gpu-operator
+Priority:         0
+Service Account:  nvidia-operator-validator
+Node:             jain-dgx-server/
+Start Time:       Mon, 21 Apr 2025 05:31:21 +0000
+Labels:           app=nvidia-device-plugin-validator
+Annotations:      cni.projectcalico.org/containerID: dd80db19a09b42042f52ea546a2230309e44039d096a7387498945a0b9ebbe09
+                  cni.projectcalico.org/podIP: 
+                  cni.projectcalico.org/podIPs: 
+Status:           Failed
+Reason:           UnexpectedAdmissionError
+Message:          Pod was rejected: Allocate failed due to no healthy devices present; cannot allocate unhealthy devices nvidia.com/gpu, which is unexpected
+IP:               
+IPs:              <none>
+Controlled By:    ClusterPolicy/cluster-policy
+Init Containers:
+  plugin-validation:
+    Image:      nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      sh
+      -c
+    Args:
+      vectorAdd
+    Limits:
+      nvidia.com/gpu:  1
+    Requests:
+      nvidia.com/gpu:  1
+    Environment:       <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-zdctg (ro)
+Containers:
+  nvidia-device-plugin-validator:
+    Image:      nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      sh
+      -c
+    Args:
+      echo device-plugin workload validation is successful
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-zdctg (ro)
+Volumes:
+  kube-api-access-zdctg:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+                             nvidia.com/gpu:NoSchedule op=Exists
+Events:                      <none>

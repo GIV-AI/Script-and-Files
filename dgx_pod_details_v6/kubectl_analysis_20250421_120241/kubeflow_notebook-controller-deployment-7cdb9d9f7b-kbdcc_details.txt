@@ -1,0 +1,215 @@
+Namespace: kubeflow
+Pod Name: notebook-controller-deployment-7cdb9d9f7b-kbdcc
+Status: 2/2
+Other Details: Running                    34 (6h31m ago)   5d22h
+Name:             notebook-controller-deployment-7cdb9d9f7b-kbdcc
+Namespace:        kubeflow
+Priority:         0
+Service Account:  notebook-controller-service-account
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:32 +0000
+Labels:           app=notebook-controller
+                  kustomize.component=notebook-controller
+                  pod-template-hash=7cdb9d9f7b
+                  security.istio.io/tlsMode=istio
+                  service.istio.io/canonical-name=notebook-controller
+                  service.istio.io/canonical-revision=latest
+Annotations:      cni.projectcalico.org/containerID: 1ab28d56c08d51da0c6289af9c05ad7273b3c1462ffc77d01aa0214fac67727d
+                  cni.projectcalico.org/podIP: 10.233.119.179/32
+                  cni.projectcalico.org/podIPs: 10.233.119.179/32
+                  kubectl.kubernetes.io/default-container: manager
+                  kubectl.kubernetes.io/default-logs-container: manager
+                  prometheus.io/path: /stats/prometheus
+                  prometheus.io/port: 15020
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/status:
+                    {"initContainers":["istio-init"],"containers":["istio-proxy"],"volumes":["workload-socket","credential-socket","workload-certs","istio-env...
+Status:           Running
+IP:               10.233.119.179
+IPs:
+  IP:           10.233.119.179
+Controlled By:  ReplicaSet/notebook-controller-deployment-7cdb9d9f7b
+Init Containers:
+  istio-init:
+    Container ID:  docker://34b9619e8527aad5c95419f7529de1efa63aa180f4af8b6a9d17ed3e0b15d9a6
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      istio-iptables
+      -p
+      15001
+      -z
+      15006
+      -u
+      1337
+      -m
+      REDIRECT
+      -i
+      *
+      -x
+      
+      -b
+      *
+      -d
+      15090,15021,15020
+      --log_output_level=default:info
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:28:52 +0000
+      Finished:     Mon, 21 Apr 2025 05:28:52 +0000
+    Ready:          True
+    Restart Count:  7
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:        10m
+      memory:     40Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-qkq4k (ro)
+Containers:
+  manager:
+    Container ID:  docker://d6022b45f6ef3fafa618bdb8b5598394e8a6078e290ba5f67046f9c7a13b1295
+    Image:         docker.io/kubeflownotebookswg/notebook-controller:v1.7.0
+    Image ID:      docker-pullable://kubeflownotebookswg/notebook-controller@sha256:0daceb6d23afc5e7e8479a4ffdeaeef2ff3a296b14b958bc93d1834918bfc3b2
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /manager
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:34:09 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Mon, 21 Apr 2025 05:31:22 +0000
+      Finished:     Mon, 21 Apr 2025 05:31:22 +0000
+    Ready:          True
+    Restart Count:  27
+    Liveness:       http-get http://:15020/app-health/manager/livez delay=5s timeout=1s period=10s #success=1 #failure=3
+    Readiness:      http-get http://:15020/app-health/manager/readyz delay=5s timeout=1s period=10s #success=1 #failure=3
+    Environment:
+      USE_ISTIO:              <set to the key 'USE_ISTIO' of config map 'notebook-controller-config-dm5b6dd458'>              Optional: false
+      ISTIO_GATEWAY:          <set to the key 'ISTIO_GATEWAY' of config map 'notebook-controller-config-dm5b6dd458'>          Optional: false
+      CLUSTER_DOMAIN:         <set to the key 'CLUSTER_DOMAIN' of config map 'notebook-controller-config-dm5b6dd458'>         Optional: false
+      ENABLE_CULLING:         <set to the key 'ENABLE_CULLING' of config map 'notebook-controller-config-dm5b6dd458'>         Optional: false
+      CULL_IDLE_TIME:         <set to the key 'CULL_IDLE_TIME' of config map 'notebook-controller-config-dm5b6dd458'>         Optional: false
+      IDLENESS_CHECK_PERIOD:  <set to the key 'IDLENESS_CHECK_PERIOD' of config map 'notebook-controller-config-dm5b6dd458'>  Optional: false
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-qkq4k (ro)
+  istio-proxy:
+    Container ID:  docker://2bce33499d49fa5fd4f5739f78b2730d7acb09c3a5a316f6e7a3b6e17b3c7021
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          15090/TCP
+    Host Port:     0/TCP
+    Args:
+      proxy
+      sidecar
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+      --concurrency
+      2
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:28:54 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 03:55:43 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:46 +0000
+    Ready:          True
+    Restart Count:  7
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=1s timeout=3s period=2s #success=1 #failure=30
+    Environment:
+      JWT_POLICY:                    third-party-jwt
+      PILOT_CERT_PROVIDER:           istiod
+      CA_ADDR:                       istiod.istio-system.svc:15012
+      POD_NAME:                      notebook-controller-deployment-7cdb9d9f7b-kbdcc (v1:metadata.name)
+      POD_NAMESPACE:                 kubeflow (v1:metadata.namespace)
+      INSTANCE_IP:                    (v1:status.podIP)
+      SERVICE_ACCOUNT:                (v1:spec.serviceAccountName)
+      HOST_IP:                        (v1:status.hostIP)
+      PROXY_CONFIG:                  {}
+                                     
+      ISTIO_META_POD_PORTS:          [
+                                     ]
+      ISTIO_META_APP_CONTAINERS:     manager
+      ISTIO_META_CLUSTER_ID:         Kubernetes
+      ISTIO_META_INTERCEPTION_MODE:  REDIRECT
+      ISTIO_META_WORKLOAD_NAME:      notebook-controller-deployment
+      ISTIO_META_OWNER:              kubernetes://apis/apps/v1/namespaces/kubeflow/deployments/notebook-controller-deployment
+      ISTIO_META_MESH_ID:            cluster.local
+      TRUST_DOMAIN:                  cluster.local
+      ISTIO_KUBE_APP_PROBERS:        {"/app-health/manager/livez":{"httpGet":{"path":"/healthz","port":8081,"scheme":"HTTP"},"timeoutSeconds":1},"/app-health/manager/readyz":{"httpGet":{"path":"/readyz","port":8081,"scheme":"HTTP"},"timeoutSeconds":1}}
+    Mounts:
+      /etc/istio/pod from istio-podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-qkq4k (ro)
+      /var/run/secrets/tokens from istio-token (rw)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  kube-api-access-qkq4k:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

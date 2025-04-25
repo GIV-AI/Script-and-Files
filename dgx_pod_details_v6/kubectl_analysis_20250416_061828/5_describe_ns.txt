@@ -1,0 +1,172 @@
+Name:         auth
+Labels:       kubernetes.io/metadata.name=auth
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+
+Name:         cert-manager
+Labels:       kubernetes.io/metadata.name=cert-manager
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+
+Name:         deepops-nfs-client-provisioner
+Labels:       kubernetes.io/metadata.name=deepops-nfs-client-provisioner
+              name=deepops-nfs-client-provisioner
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+
+Name:         default
+Labels:       kubernetes.io/metadata.name=default
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+
+Name:         f-test-test123-1234
+Labels:       app.kubernetes.io/part-of=kubeflow-profile
+              istio-injection=enabled
+              katib.kubeflow.org/metrics-collector-injection=enabled
+              kubernetes.io/metadata.name=f-test-test123-1234
+              pipelines.kubeflow.org/enabled=true
+              serving.kubeflow.org/inferenceservice=enabled
+Annotations:  owner: f-test-test123-1234
+Status:       Active
+
+Resource Quotas
+  Name:                            kf-resource-quota
+  Resource                         Used   Hard
+  --------                         ---    ---
+  cpu                              80m    17
+  memory                           350Mi  65Gi
+  requests.nvidia.com/gpu          0      1
+  requests.nvidia.com/mig-1g.18gb  0      1
+  requests.nvidia.com/mig-2g.35gb  0      1
+  requests.nvidia.com/mig-3g.71gb  0      1
+  requests.storage                 0      100Gi
+
+No LimitRange resource.
+
+
+Name:         gpu-operator
+Labels:       kubernetes.io/metadata.name=gpu-operator
+              name=gpu-operator
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+
+Name:         istio-system
+Labels:       istio-injection=disabled
+              istio-operator-managed=Reconcile
+              kubernetes.io/metadata.name=istio-system
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+
+Name:         knative-eventing
+Labels:       app.kubernetes.io/component=knative-eventing
+              app.kubernetes.io/name=knative-eventing
+              app.kubernetes.io/version=1.8.1
+              eventing.knative.dev/release=v1.8.1
+              kubernetes.io/metadata.name=knative-eventing
+              kustomize.component=knative
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+
+Name:         knative-serving
+Labels:       app.kubernetes.io/name=knative-serving
+              app.kubernetes.io/version=1.8.0
+              istio-injection=enabled
+              kubernetes.io/metadata.name=knative-serving
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+
+Name:         kube-node-lease
+Labels:       kubernetes.io/metadata.name=kube-node-lease
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+
+Name:         kube-public
+Labels:       kubernetes.io/metadata.name=kube-public
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+
+Name:         kube-system
+Labels:       kubernetes.io/metadata.name=kube-system
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+
+Name:         kubeflow
+Labels:       control-plane=kubeflow
+              istio-injection=enabled
+              kubernetes.io/metadata.name=kubeflow
+Annotations:  <none>
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.
+
+
+Name:         kubeflow-deepops-example-com
+Labels:       app.kubernetes.io/part-of=kubeflow-profile
+              istio-injection=enabled
+              katib.kubeflow.org/metrics-collector-injection=enabled
+              kubernetes.io/metadata.name=kubeflow-deepops-example-com
+              pipelines.kubeflow.org/enabled=true
+              serving.kubeflow.org/inferenceservice=enabled
+Annotations:  owner: deepops@example.com
+Status:       Active
+
+No resource quota.
+
+No LimitRange resource.

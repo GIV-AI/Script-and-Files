@@ -1,0 +1,253 @@
+Namespace: kubeflow
+Pod Name: profiles-deployment-7cf8b9b794-g2llh
+Status: 3/3
+Other Details: Running     26 (84m ago)   16h
+Name:             profiles-deployment-7cf8b9b794-g2llh
+Namespace:        kubeflow
+Priority:         0
+Service Account:  profiles-controller-service-account
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:32 +0000
+Labels:           kustomize.component=profiles
+                  pod-template-hash=7cf8b9b794
+                  security.istio.io/tlsMode=istio
+                  service.istio.io/canonical-name=profiles-deployment
+                  service.istio.io/canonical-revision=latest
+Annotations:      cni.projectcalico.org/containerID: 9050b140037f339f838d46c46072084280c17f94ad8033888fcfdbe8ebcccbfa
+                  cni.projectcalico.org/podIP: 10.233.119.133/32
+                  cni.projectcalico.org/podIPs: 10.233.119.133/32
+                  kubectl.kubernetes.io/default-container: kfam
+                  kubectl.kubernetes.io/default-logs-container: kfam
+                  prometheus.io/path: /stats/prometheus
+                  prometheus.io/port: 15020
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/inject: true
+                  sidecar.istio.io/status:
+                    {"initContainers":["istio-init"],"containers":["istio-proxy"],"volumes":["workload-socket","credential-socket","workload-certs","istio-env...
+Status:           Running
+IP:               10.233.119.133
+IPs:
+  IP:           10.233.119.133
+Controlled By:  ReplicaSet/profiles-deployment-7cf8b9b794
+Init Containers:
+  istio-init:
+    Container ID:  docker://d8a3a52f81245036ff3f4c8c506e567f1595e67334309c26543bbf021f673224
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      istio-iptables
+      -p
+      15001
+      -z
+      15006
+      -u
+      1337
+      -m
+      REDIRECT
+      -i
+      *
+      -x
+      
+      -b
+      *
+      -d
+      15090,15021,15020
+      --log_output_level=default:info
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Wed, 16 Apr 2025 04:53:46 +0000
+      Finished:     Wed, 16 Apr 2025 04:53:46 +0000
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:        10m
+      memory:     40Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-82tnn (ro)
+Containers:
+  kfam:
+    Container ID:  docker://cd43bfe054adfe8e763e775a01e380bf6cc9ee711b6e59df934f9162cb0c5bd3
+    Image:         docker.io/kubeflownotebookswg/kfam:v1.7.0
+    Image ID:      docker-pullable://kubeflownotebookswg/kfam@sha256:3833b6cb378d885b42234c40f5452457d6b785b6a374a8f602bd518a8c8ad2ff
+    Port:          8081/TCP
+    Host Port:     0/TCP
+    Command:
+      /access-management
+      -cluster-admin
+      $(ADMIN)
+      -userid-header
+      $(USERID_HEADER)
+      -userid-prefix
+      $(USERID_PREFIX)
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:48 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    2
+      Started:      Tue, 15 Apr 2025 14:46:17 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:02 +0000
+    Ready:          True
+    Restart Count:  11
+    Liveness:       http-get http://:15020/app-health/kfam/livez delay=30s timeout=1s period=30s #success=1 #failure=3
+    Environment Variables from:
+      profiles-config-46c7tgh6fd  ConfigMap  Optional: false
+    Environment:                  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-82tnn (ro)
+  manager:
+    Container ID:  docker://2634bf4976454c95e50da94fca26a027e08e6befe1de34a4155e8af23e55ed98
+    Image:         docker.io/kubeflownotebookswg/profile-controller:v1.7.0
+    Image ID:      docker-pullable://kubeflownotebookswg/profile-controller@sha256:a85682cd10565d89b68e20ea727e58a7a8e89c9af745f0e1d14962e05b830840
+    Port:          9876/TCP
+    Host Port:     0/TCP
+    Command:
+      /manager
+      -userid-header
+      $(USERID_HEADER)
+      -userid-prefix
+      $(USERID_PREFIX)
+      -workload-identity
+      $(WORKLOAD_IDENTITY)
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:54:35 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Wed, 16 Apr 2025 04:54:11 +0000
+      Finished:     Wed, 16 Apr 2025 04:54:11 +0000
+    Ready:          True
+    Restart Count:  14
+    Liveness:       http-get http://:15020/app-health/manager/livez delay=15s timeout=1s period=20s #success=1 #failure=3
+    Readiness:      http-get http://:15020/app-health/manager/readyz delay=5s timeout=1s period=10s #success=1 #failure=3
+    Environment Variables from:
+      profiles-config-46c7tgh6fd  ConfigMap  Optional: false
+    Environment:                  <none>
+    Mounts:
+      /etc/profile-controller from namespace-labels (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-82tnn (ro)
+  istio-proxy:
+    Container ID:  docker://a6e0f8eb6cd184d6dada1d74d52ac16769ace6f32c062a3fff595e25760421c5
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          15090/TCP
+    Host Port:     0/TCP
+    Args:
+      proxy
+      sidecar
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+      --concurrency
+      2
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:48 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 15 Apr 2025 14:17:50 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:08 +0000
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=1s timeout=3s period=2s #success=1 #failure=30
+    Environment:
+      JWT_POLICY:                    third-party-jwt
+      PILOT_CERT_PROVIDER:           istiod
+      CA_ADDR:                       istiod.istio-system.svc:15012
+      POD_NAME:                      profiles-deployment-7cf8b9b794-g2llh (v1:metadata.name)
+      POD_NAMESPACE:                 kubeflow (v1:metadata.namespace)
+      INSTANCE_IP:                    (v1:status.podIP)
+      SERVICE_ACCOUNT:                (v1:spec.serviceAccountName)
+      HOST_IP:                        (v1:status.hostIP)
+      PROXY_CONFIG:                  {}
+                                     
+      ISTIO_META_POD_PORTS:          [
+                                         {"name":"kfam-http","containerPort":8081,"protocol":"TCP"}
+                                         ,{"containerPort":9876,"protocol":"TCP"}
+                                     ]
+      ISTIO_META_APP_CONTAINERS:     kfam,manager
+      ISTIO_META_CLUSTER_ID:         Kubernetes
+      ISTIO_META_INTERCEPTION_MODE:  REDIRECT
+      ISTIO_META_WORKLOAD_NAME:      profiles-deployment
+      ISTIO_META_OWNER:              kubernetes://apis/apps/v1/namespaces/kubeflow/deployments/profiles-deployment
+      ISTIO_META_MESH_ID:            cluster.local
+      TRUST_DOMAIN:                  cluster.local
+      ISTIO_KUBE_APP_PROBERS:        {"/app-health/kfam/livez":{"httpGet":{"path":"/metrics","port":8081,"scheme":"HTTP"},"timeoutSeconds":1},"/app-health/manager/livez":{"httpGet":{"path":"/healthz","port":9876,"scheme":"HTTP"},"timeoutSeconds":1},"/app-health/manager/readyz":{"httpGet":{"path":"/readyz","port":9876,"scheme":"HTTP"},"timeoutSeconds":1}}
+    Mounts:
+      /etc/istio/pod from istio-podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-82tnn (ro)
+      /var/run/secrets/tokens from istio-token (rw)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  namespace-labels:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      namespace-labels-data-4df5t8mdgf
+    Optional:  false
+  kube-api-access-82tnn:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

@@ -1,0 +1,216 @@
+Namespace: kubeflow
+Pod Name: centraldashboard-d45f69689-h8srw
+Status: 2/2
+Other Details: Running     2 (12h ago)    16h
+Name:             centraldashboard-d45f69689-h8srw
+Namespace:        kubeflow
+Priority:         0
+Service Account:  centraldashboard
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:28 +0000
+Labels:           app=centraldashboard
+                  app.kubernetes.io/component=centraldashboard
+                  app.kubernetes.io/name=centraldashboard
+                  kustomize.component=centraldashboard
+                  pod-template-hash=d45f69689
+                  security.istio.io/tlsMode=istio
+                  service.istio.io/canonical-name=centraldashboard
+                  service.istio.io/canonical-revision=latest
+Annotations:      cni.projectcalico.org/containerID: 983e55710725d0940b26165e4bcaa8d24059899abe7bf8b1540523e5aa098a50
+                  cni.projectcalico.org/podIP: 10.233.119.168/32
+                  cni.projectcalico.org/podIPs: 10.233.119.168/32
+                  kubectl.kubernetes.io/default-container: centraldashboard
+                  kubectl.kubernetes.io/default-logs-container: centraldashboard
+                  prometheus.io/path: /stats/prometheus
+                  prometheus.io/port: 15020
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/inject: true
+                  sidecar.istio.io/status:
+                    {"initContainers":["istio-init"],"containers":["istio-proxy"],"volumes":["workload-socket","credential-socket","workload-certs","istio-env...
+Status:           Running
+IP:               10.233.119.168
+IPs:
+  IP:           10.233.119.168
+Controlled By:  ReplicaSet/centraldashboard-d45f69689
+Init Containers:
+  istio-init:
+    Container ID:  docker://4b0fbe3aed3400a02e6a3b2c01bea6d243c2ad4937cb19c16fe1956c68d268e3
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      istio-iptables
+      -p
+      15001
+      -z
+      15006
+      -u
+      1337
+      -m
+      REDIRECT
+      -i
+      *
+      -x
+      
+      -b
+      *
+      -d
+      15090,15021,15020
+      --log_output_level=default:info
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Wed, 16 Apr 2025 04:53:40 +0000
+      Finished:     Wed, 16 Apr 2025 04:53:41 +0000
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:        10m
+      memory:     40Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-4c9cq (ro)
+Containers:
+  centraldashboard:
+    Container ID:   docker://bed51055608b4249421a9af0aeb880a436e4cd21c00e9d7820221f4da532608c
+    Image:          docker.io/kubeflownotebookswg/centraldashboard:v1.7.0
+    Image ID:       docker-pullable://kubeflownotebookswg/centraldashboard@sha256:8b71515073798089c144b1952083fa942fbb21b8729b0e0e164e408c04c71508
+    Port:           8082/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:41 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 15 Apr 2025 14:15:20 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:03 +0000
+    Ready:          True
+    Restart Count:  1
+    Liveness:       http-get http://:15020/app-health/centraldashboard/livez delay=30s timeout=1s period=30s #success=1 #failure=3
+    Environment:
+      USERID_HEADER:               kubeflow-userid
+      USERID_PREFIX:               
+      PROFILES_KFAM_SERVICE_HOST:  profiles-kfam.kubeflow
+      REGISTRATION_FLOW:           false
+      DASHBOARD_LINKS_CONFIGMAP:   centraldashboard-config
+      LOGOUT_URL:                  /authservice/logout
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-4c9cq (ro)
+  istio-proxy:
+    Container ID:  docker://c35cb02946802b0ce49f2233244a64ce9f68e9d1634d8b9d418cfcc778e3339b
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          15090/TCP
+    Host Port:     0/TCP
+    Args:
+      proxy
+      sidecar
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+      --concurrency
+      2
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:41 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 15 Apr 2025 14:15:20 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:08 +0000
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=1s timeout=3s period=2s #success=1 #failure=30
+    Environment:
+      JWT_POLICY:                    third-party-jwt
+      PILOT_CERT_PROVIDER:           istiod
+      CA_ADDR:                       istiod.istio-system.svc:15012
+      POD_NAME:                      centraldashboard-d45f69689-h8srw (v1:metadata.name)
+      POD_NAMESPACE:                 kubeflow (v1:metadata.namespace)
+      INSTANCE_IP:                    (v1:status.podIP)
+      SERVICE_ACCOUNT:                (v1:spec.serviceAccountName)
+      HOST_IP:                        (v1:status.hostIP)
+      PROXY_CONFIG:                  {}
+                                     
+      ISTIO_META_POD_PORTS:          [
+                                         {"containerPort":8082,"protocol":"TCP"}
+                                     ]
+      ISTIO_META_APP_CONTAINERS:     centraldashboard
+      ISTIO_META_CLUSTER_ID:         Kubernetes
+      ISTIO_META_INTERCEPTION_MODE:  REDIRECT
+      ISTIO_META_WORKLOAD_NAME:      centraldashboard
+      ISTIO_META_OWNER:              kubernetes://apis/apps/v1/namespaces/kubeflow/deployments/centraldashboard
+      ISTIO_META_MESH_ID:            cluster.local
+      TRUST_DOMAIN:                  cluster.local
+      ISTIO_KUBE_APP_PROBERS:        {"/app-health/centraldashboard/livez":{"httpGet":{"path":"/healthz","port":8082,"scheme":"HTTP"},"timeoutSeconds":1}}
+    Mounts:
+      /etc/istio/pod from istio-podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-4c9cq (ro)
+      /var/run/secrets/tokens from istio-token (rw)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  kube-api-access-4c9cq:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

@@ -1,0 +1,70 @@
+Namespace: gpu-operator
+Pod Name: nvidia-gpu-operator-node-feature-discovery-master-6f78fb7c8ttft
+Status: 1/1
+Other Details: Running     1 (12h ago)    16h
+Name:             nvidia-gpu-operator-node-feature-discovery-master-6f78fb7c8ttft
+Namespace:        gpu-operator
+Priority:         0
+Service Account:  node-feature-discovery
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 13:48:11 +0000
+Labels:           app.kubernetes.io/instance=nvidia-gpu-operator
+                  app.kubernetes.io/name=node-feature-discovery
+                  pod-template-hash=6f78fb7c95
+                  role=master
+Annotations:      cni.projectcalico.org/containerID: 61f64ed1703d4cb8948a19e82bdeb4defa3d60897d0b92c90b21085b5e3ebe13
+                  cni.projectcalico.org/podIP: 10.233.119.134/32
+                  cni.projectcalico.org/podIPs: 10.233.119.134/32
+Status:           Running
+IP:               10.233.119.134
+IPs:
+  IP:           10.233.119.134
+Controlled By:  ReplicaSet/nvidia-gpu-operator-node-feature-discovery-master-6f78fb7c95
+Containers:
+  master:
+    Container ID:  docker://7dd44b4c8fd3f6ee9ee8b9dd4bf7683c856169bffad3eeba5a08e4f23078d98b
+    Image:         registry.k8s.io/nfd/node-feature-discovery:v0.12.1
+    Image ID:      docker-pullable://registry.k8s.io/nfd/node-feature-discovery@sha256:445ed7b7c8580825c23a6f3835c1f13718fcf72b393f51e852aa5bdda04657e7
+    Port:          8080/TCP
+    Host Port:     0/TCP
+    Command:
+      nfd-master
+    Args:
+      -enable-nodefeature-api
+      --extra-label-ns=nvidia.com
+      -featurerules-controller=true
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:43 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    2
+      Started:      Tue, 15 Apr 2025 13:49:22 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:02 +0000
+    Ready:          True
+    Restart Count:  1
+    Liveness:       exec [/usr/bin/grpc_health_probe -addr=:8080] delay=10s timeout=1s period=10s #success=1 #failure=3
+    Readiness:      exec [/usr/bin/grpc_health_probe -addr=:8080] delay=5s timeout=1s period=10s #success=1 #failure=10
+    Environment:
+      NODE_NAME:   (v1:spec.nodeName)
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-9p288 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-9p288:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node-role.kubernetes.io/control-plane:NoSchedule
+                             node-role.kubernetes.io/master:NoSchedule
+                             node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

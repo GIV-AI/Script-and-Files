@@ -1,0 +1,211 @@
+Namespace: kubeflow-deepops-example-com
+Pod Name: test-0
+Status: 2/2
+Other Details: Running     0              84m
+Name:             test-0
+Namespace:        kubeflow-deepops-example-com
+Priority:         0
+Service Account:  default-editor
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Wed, 16 Apr 2025 04:54:57 +0000
+Labels:           app=test
+                  controller-revision-hash=test-55cf9d65ff
+                  notebook-name=test
+                  security.istio.io/tlsMode=istio
+                  service.istio.io/canonical-name=test
+                  service.istio.io/canonical-revision=latest
+                  statefulset=test
+                  statefulset.kubernetes.io/pod-name=test-0
+Annotations:      cni.projectcalico.org/containerID: fe6d91342e8bb8ea6f5a6f449a37ad769d8595ba0c10f696c2bb0eadd5e219bf
+                  cni.projectcalico.org/podIP: 10.233.119.198/32
+                  cni.projectcalico.org/podIPs: 10.233.119.198/32
+                  kubectl.kubernetes.io/default-container: test
+                  kubectl.kubernetes.io/default-logs-container: test
+                  prometheus.io/path: /stats/prometheus
+                  prometheus.io/port: 15020
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/status:
+                    {"initContainers":["istio-init"],"containers":["istio-proxy"],"volumes":["workload-socket","credential-socket","workload-certs","istio-env...
+Status:           Running
+IP:               10.233.119.198
+IPs:
+  IP:           10.233.119.198
+Controlled By:  StatefulSet/test
+Init Containers:
+  istio-init:
+    Container ID:  docker://ad269cc9f6d4aab8ac3f84b4e748968a514ecd855dc1e14973b6b042da846434
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      istio-iptables
+      -p
+      15001
+      -z
+      15006
+      -u
+      1337
+      -m
+      REDIRECT
+      -i
+      *
+      -x
+      
+      -b
+      *
+      -d
+      15090,15021,15020
+      --log_output_level=default:info
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Wed, 16 Apr 2025 04:54:59 +0000
+      Finished:     Wed, 16 Apr 2025 04:54:59 +0000
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:        10m
+      memory:     40Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-lt6cz (ro)
+Containers:
+  test:
+    Container ID:   docker://60396f184a71e723bc456cbdc4c5b2ab50e7e19971f817920528afe27ab9ee4f
+    Image:          nvcr.io/nvidia/pytorch:23.12-py3_kubeflow
+    Image ID:       docker://sha256:8603c248323c0bc0ccc9001cc376176d190c3c0ad2466f701b35ac5ad308dd8f
+    Port:           8888/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:55:09 +0000
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:             9600m
+      memory:          20615843020800m
+      nvidia.com/gpu:  1
+    Requests:
+      cpu:             8
+      memory:          16Gi
+      nvidia.com/gpu:  1
+    Environment:
+      NB_PREFIX:  /notebook/kubeflow-deepops-example-com/test
+    Mounts:
+      /dev/shm from dshm (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-lt6cz (ro)
+  istio-proxy:
+    Container ID:  docker://cb08b04b7f6744d2c3b9963f3c34c77c238c19ca4b2680f7f0a311652d8abdf9
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          15090/TCP
+    Host Port:     0/TCP
+    Args:
+      proxy
+      sidecar
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+      --concurrency
+      2
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:55:09 +0000
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=1s timeout=3s period=2s #success=1 #failure=30
+    Environment:
+      JWT_POLICY:                    third-party-jwt
+      PILOT_CERT_PROVIDER:           istiod
+      CA_ADDR:                       istiod.istio-system.svc:15012
+      POD_NAME:                      test-0 (v1:metadata.name)
+      POD_NAMESPACE:                 kubeflow-deepops-example-com (v1:metadata.namespace)
+      INSTANCE_IP:                    (v1:status.podIP)
+      SERVICE_ACCOUNT:                (v1:spec.serviceAccountName)
+      HOST_IP:                        (v1:status.hostIP)
+      PROXY_CONFIG:                  {}
+                                     
+      ISTIO_META_POD_PORTS:          [
+                                         {"name":"notebook-port","containerPort":8888,"protocol":"TCP"}
+                                     ]
+      ISTIO_META_APP_CONTAINERS:     test
+      ISTIO_META_CLUSTER_ID:         Kubernetes
+      ISTIO_META_INTERCEPTION_MODE:  REDIRECT
+      ISTIO_META_WORKLOAD_NAME:      test
+      ISTIO_META_OWNER:              kubernetes://apis/apps/v1/namespaces/kubeflow-deepops-example-com/statefulsets/test
+      ISTIO_META_MESH_ID:            cluster.local
+      TRUST_DOMAIN:                  cluster.local
+    Mounts:
+      /etc/istio/pod from istio-podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-lt6cz (ro)
+      /var/run/secrets/tokens from istio-token (rw)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  dshm:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  kube-api-access-lt6cz:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

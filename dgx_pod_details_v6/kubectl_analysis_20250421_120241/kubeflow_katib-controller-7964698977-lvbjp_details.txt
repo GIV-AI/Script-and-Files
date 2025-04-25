@@ -1,0 +1,78 @@
+Namespace: kubeflow
+Pod Name: katib-controller-7964698977-lvbjp
+Status: 1/1
+Other Details: Running                    10 (6h52m ago)   5d22h
+Name:             katib-controller-7964698977-lvbjp
+Namespace:        kubeflow
+Priority:         0
+Service Account:  katib-controller
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:29 +0000
+Labels:           katib.kubeflow.org/component=controller
+                  pod-template-hash=7964698977
+Annotations:      cni.projectcalico.org/containerID: 372bd15dc6ca89ee1c3bf898efcf68a01e6bf3a54a9e256176de2d2d9a9b2e08
+                  cni.projectcalico.org/podIP: 10.233.119.172/32
+                  cni.projectcalico.org/podIPs: 10.233.119.172/32
+                  prometheus.io/port: 8080
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/inject: false
+Status:           Running
+IP:               10.233.119.172
+IPs:
+  IP:           10.233.119.172
+Controlled By:  ReplicaSet/katib-controller-7964698977
+Containers:
+  katib-controller:
+    Container ID:  docker://f969ddd50ad9c5e9ac00edf5c89b57dca8e0b5d4a7d21cd778baf6446a3e2abb
+    Image:         docker.io/kubeflowkatib/katib-controller:v0.15.0
+    Image ID:      docker-pullable://kubeflowkatib/katib-controller@sha256:9425c85e570ffc45d99881ebce927bfb448683f464781321952d2697753fb1e0
+    Ports:         8443/TCP, 8080/TCP, 18080/TCP
+    Host Ports:    0/TCP, 0/TCP, 0/TCP
+    Command:
+      ./katib-controller
+    Args:
+      --webhook-port=8443
+      --trial-resources=Job.v1.batch
+      --trial-resources=TFJob.v1.kubeflow.org
+      --trial-resources=PyTorchJob.v1.kubeflow.org
+      --trial-resources=MPIJob.v1.kubeflow.org
+      --trial-resources=XGBoostJob.v1.kubeflow.org
+      --trial-resources=MXJob.v1.kubeflow.org
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:04 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 03:57:59 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:41 +0000
+    Ready:          True
+    Restart Count:  10
+    Liveness:       http-get http://:healthz/healthz delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:      http-get http://:healthz/readyz delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:
+      KATIB_CORE_NAMESPACE:  kubeflow (v1:metadata.namespace)
+    Mounts:
+      /tmp/cert from cert (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-cqfzz (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  cert:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  katib-webhook-cert
+    Optional:    false
+  kube-api-access-cqfzz:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

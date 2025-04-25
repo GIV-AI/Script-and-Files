@@ -1,0 +1,48 @@
+[2025-04-21 05:29:05 +0000] [1] [INFO] Starting gunicorn 20.1.0
+[2025-04-21 05:29:05 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-04-21 05:29:05 +0000] [1] [INFO] Using worker: sync
+[2025-04-21 05:29:05 +0000] [9] [INFO] Booting worker with pid: 9
+[2025-04-21 05:29:05 +0000] [10] [INFO] Booting worker with pid: 10
+[2025-04-21 05:29:05 +0000] [11] [INFO] Booting worker with pid: 11
+2025-04-21 05:29:06,175 | apps.default | INFO | Setting STATIC_DIR to: /src/apps/default/static
+2025-04-21 05:29:06,175 | apps.default | INFO | Setting STATIC_DIR to: /src/apps/default/static
+2025-04-21 05:29:06,175 | apps.default | INFO | Setting STATIC_DIR to: /src/apps/default/static
+2025-04-21 06:47:40,259 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:40,259 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 06:47:40,259 | kubeflow.kubeflow.crud_backend.serving | INFO | Serving index.html for path: /
+2025-04-21 06:47:40,259 | kubeflow.kubeflow.crud_backend.helpers | INFO | Setting the <base> to reflect the prefix: /volumes/
+2025-04-21 06:47:40,260 | kubeflow.kubeflow.crud_backend.csrf | INFO | Not setting Secure in CSRF cookie.
+127.0.0.6 - - [21/Apr/2025:06:47:40 +0000] "GET / HTTP/1.1" 200 7086 "http://192.168.1.248:32243/_/volumes/?ns=s-jain-training-4" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:40,294 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:40,295 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:40 +0000] "GET /static/runtime-es2015.5eb8a4a0dc5c075272e3.js HTTP/1.1" 200 0 "http://192.168.1.248:32243/volumes/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:40,297 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:40,298 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 06:47:40,298 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:40,298 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:40 +0000] "GET /static/polyfills-es2015.92f2c10f3a1f8f873d8f.js HTTP/1.1" 200 0 "http://192.168.1.248:32243/volumes/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+127.0.0.6 - - [21/Apr/2025:06:47:40 +0000] "GET /static/styles.b0162fb90338138298f0.css HTTP/1.1" 200 0 "http://192.168.1.248:32243/volumes/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:40,300 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:40,300 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 06:47:40,302 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:40,302 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 06:47:40,302 | kubeflow.kubeflow.crud_backend.serving | INFO | Serving index.html for path: roboto-latin-normal400.465390c6e54c60f4a15f.woff2
+2025-04-21 06:47:40,302 | kubeflow.kubeflow.crud_backend.helpers | INFO | Setting the <base> to reflect the prefix: /volumes/
+2025-04-21 06:47:40,302 | kubeflow.kubeflow.crud_backend.csrf | INFO | Not setting Secure in CSRF cookie.
+127.0.0.6 - - [21/Apr/2025:06:47:40 +0000] "GET /roboto-latin-normal400.465390c6e54c60f4a15f.woff2 HTTP/1.1" 200 7086 "http://192.168.1.248:32243/volumes/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+127.0.0.6 - - [21/Apr/2025:06:47:40 +0000] "GET /static/main-es2015.426fdbd0566b4ec6c1af.js HTTP/1.1" 200 0 "http://192.168.1.248:32243/volumes/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:40,318 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:40,318 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:40 +0000] "GET /static/roboto-latin-normal400.465390c6e54c60f4a15f.woff2 HTTP/1.1" 200 0 "http://192.168.1.248:32243/volumes/static/styles.b0162fb90338138298f0.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:40,486 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:40,486 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 06:47:40,486 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:40,487 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:40 +0000] "GET /static/roboto-latin-normal500.324b1e6d0f5ae7c6ab42.woff2 HTTP/1.1" 200 0 "http://192.168.1.248:32243/volumes/static/styles.b0162fb90338138298f0.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+127.0.0.6 - - [21/Apr/2025:06:47:40 +0000] "GET /static/material-icons.a269996c82994471c539.woff2 HTTP/1.1" 200 0 "http://192.168.1.248:32243/volumes/static/styles.b0162fb90338138298f0.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:40,501 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:40,501 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:40 +0000] "GET /api/namespaces/s-jain-training-4/pvcs HTTP/1.1" 200 84 "http://192.168.1.248:32243/volumes/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:41,505 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:41,505 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:41 +0000] "GET /api/namespaces/s-jain-training-4/pvcs HTTP/1.1" 200 84 "http://192.168.1.248:32243/volumes/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"

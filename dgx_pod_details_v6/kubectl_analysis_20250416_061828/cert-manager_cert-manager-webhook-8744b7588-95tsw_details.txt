@@ -1,0 +1,72 @@
+Namespace: cert-manager
+Pod Name: cert-manager-webhook-8744b7588-95tsw
+Status: 1/1
+Other Details: Running     1 (12h ago)    16h
+Name:             cert-manager-webhook-8744b7588-95tsw
+Namespace:        cert-manager
+Priority:         0
+Service Account:  cert-manager-webhook
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:00:27 +0000
+Labels:           app=webhook
+                  app.kubernetes.io/component=webhook
+                  app.kubernetes.io/instance=cert-manager
+                  app.kubernetes.io/name=webhook
+                  app.kubernetes.io/version=v1.10.1
+                  pod-template-hash=8744b7588
+Annotations:      cni.projectcalico.org/containerID: 3c0d69c6873a0d04c2f6fdcfaaec7980aedc1e2a3b51f8e43d9639d51b5fa5ce
+                  cni.projectcalico.org/podIP: 10.233.119.151/32
+                  cni.projectcalico.org/podIPs: 10.233.119.151/32
+Status:           Running
+IP:               10.233.119.151
+IPs:
+  IP:           10.233.119.151
+Controlled By:  ReplicaSet/cert-manager-webhook-8744b7588
+Containers:
+  cert-manager-webhook:
+    Container ID:  docker://66399967fd2fc70ed509b39c102df14225bae1bffda40bd5cb1ea97e60817763
+    Image:         quay.io/jetstack/cert-manager-webhook:v1.10.1
+    Image ID:      docker-pullable://quay.io/jetstack/cert-manager-webhook@sha256:64121721c6659e6790d7de527e8bc115ffc28b6e73e1b9a7f9aa11a90286fe25
+    Ports:         10250/TCP, 6080/TCP
+    Host Ports:    0/TCP, 0/TCP
+    Args:
+      --v=2
+      --secure-port=10250
+      --dynamic-serving-ca-secret-namespace=$(POD_NAMESPACE)
+      --dynamic-serving-ca-secret-name=cert-manager-webhook-ca
+      --dynamic-serving-dns-names=cert-manager-webhook
+      --dynamic-serving-dns-names=cert-manager-webhook.$(POD_NAMESPACE)
+      --dynamic-serving-dns-names=cert-manager-webhook.$(POD_NAMESPACE).svc
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:42 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 15 Apr 2025 14:00:35 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:02 +0000
+    Ready:          True
+    Restart Count:  1
+    Liveness:       http-get http://:6080/livez delay=60s timeout=1s period=10s #success=1 #failure=3
+    Readiness:      http-get http://:6080/healthz delay=5s timeout=1s period=5s #success=1 #failure=3
+    Environment:
+      POD_NAMESPACE:  cert-manager (v1:metadata.namespace)
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-rmmfl (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-rmmfl:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

@@ -1,0 +1,79 @@
+2025/04/21 03:52:37 [INFO] Starting node-cache image: 1.22.18
+2025/04/21 03:52:37 [INFO] Using Corefile /etc/coredns/Corefile
+2025/04/21 03:52:37 [INFO] Using Pidfile 
+2025/04/21 03:52:37 [ERROR] Failed to read node-cache coreFile /etc/coredns/Corefile.base - open /etc/coredns/Corefile.base: no such file or directory
+2025/04/21 03:52:37 [INFO] Skipping kube-dns configmap sync as no directory was specified
+2025/04/21 03:52:37 [INFO] Added interface - nodelocaldns
+.:53 on 169.254.25.10
+cluster.local.:53 on 169.254.25.10
+in-addr.arpa.:53 on 169.254.25.10
+ip6.arpa.:53 on 169.254.25.10
+[INFO] plugin/reload: Running configuration SHA512 = b32991913f8a1faf282eb5b2b86946d8b987c840e76d358c164ee3a17a417ab8233625b4eeebe33bd07977a8afaf261f77f3f23bd4d5d9d20fde58ce73bdffd8
+CoreDNS-1.10.0
+linux/amd64, go1.18.10, 
+[ERROR] plugin/errors: 2 8771867112221736772.1587275941333216651.in-addr.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 1212485933582177404.2126727226127009393.ip6.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 2914165953849005955.2172587734545841089.cluster.local. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 1212485933582177404.2126727226127009393.ip6.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 8771867112221736772.1587275941333216651.in-addr.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 2914165953849005955.2172587734545841089.cluster.local. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 8771867112221736772.1587275941333216651.in-addr.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 2914165953849005955.2172587734545841089.cluster.local. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 8771867112221736772.1587275941333216651.in-addr.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 1212485933582177404.2126727226127009393.ip6.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 2914165953849005955.2172587734545841089.cluster.local. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 8771867112221736772.1587275941333216651.in-addr.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 1212485933582177404.2126727226127009393.ip6.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 1212485933582177404.2126727226127009393.ip6.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 8771867112221736772.1587275941333216651.in-addr.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 1212485933582177404.2126727226127009393.ip6.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 2914165953849005955.2172587734545841089.cluster.local. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 1212485933582177404.2126727226127009393.ip6.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 8771867112221736772.1587275941333216651.in-addr.arpa. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 2914165953849005955.2172587734545841089.cluster.local. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 2914165953849005955.2172587734545841089.cluster.local. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 2914165953849005955.2172587734545841089.cluster.local. HINFO: dial tcp 10.233.0.3:53: i/o timeout
+[INFO] Added back nodelocaldns rule - {raw PREROUTING [-p tcp -d 169.254.25.10 --dport 53 -j NOTRACK]}
+[INFO] Added back nodelocaldns rule - {raw PREROUTING [-p udp -d 169.254.25.10 --dport 53 -j NOTRACK]}
+[INFO] Added back nodelocaldns rule - {filter INPUT [-p tcp -d 169.254.25.10 --dport 53 -j ACCEPT]}
+[INFO] Added back nodelocaldns rule - {filter INPUT [-p udp -d 169.254.25.10 --dport 53 -j ACCEPT]}
+[INFO] Added back nodelocaldns rule - {raw OUTPUT [-p tcp -s 169.254.25.10 --sport 53 -j NOTRACK]}
+[INFO] Added back nodelocaldns rule - {raw OUTPUT [-p udp -s 169.254.25.10 --sport 53 -j NOTRACK]}
+[INFO] Added back nodelocaldns rule - {filter OUTPUT [-p tcp -s 169.254.25.10 --sport 53 -j ACCEPT]}
+[INFO] Added back nodelocaldns rule - {filter OUTPUT [-p udp -s 169.254.25.10 --sport 53 -j ACCEPT]}
+[INFO] Added back nodelocaldns rule - {raw OUTPUT [-p tcp -d 169.254.25.10 --dport 53 -j NOTRACK]}
+[INFO] Added back nodelocaldns rule - {raw OUTPUT [-p udp -d 169.254.25.10 --dport 53 -j NOTRACK]}
+[INFO] Added back nodelocaldns rule - {raw OUTPUT [-p tcp -d 169.254.25.10 --dport 8080 -j NOTRACK]}
+[INFO] Added back nodelocaldns rule - {raw OUTPUT [-p tcp -s 169.254.25.10 --sport 8080 -j NOTRACK]}
+[ERROR] plugin/errors: 2 layers.nvcr.io. A: dial tcp 8.8.8.8:53: i/o timeout
+[ERROR] plugin/errors: 2 zipkin.istio-system. A: dial tcp 8.8.4.4:53: i/o timeout
+[ERROR] plugin/errors: 2 zipkin.istio-system. A: dial tcp 8.8.4.4:53: i/o timeout
+[ERROR] plugin/errors: 2 zipkin.istio-system. A: dial tcp 8.8.4.4:53: i/o timeout
+[ERROR] plugin/errors: 2 metadata-grpc-service. AAAA: dial tcp 8.8.4.4:53: i/o timeout
+[ERROR] plugin/errors: 2 metadata-grpc-service. AAAA: dial tcp 8.8.4.4:53: i/o timeout
+[ERROR] plugin/errors: 2 metadata-grpc-service. AAAA: dial tcp 8.8.4.4:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: dial tcp 8.8.8.8:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: dial tcp 8.8.8.8:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read tcp 10.233.0.3:35418->10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read tcp 10.233.0.3:35460->10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read tcp 10.233.0.3:35470->10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: dial tcp 8.8.8.8:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: dial tcp 8.8.4.4:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: dial tcp 8.8.8.8:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: dial tcp 8.8.8.8:53: i/o timeout
+[ERROR] plugin/errors: 2 metadata-grpc-service. AAAA: dial tcp 8.8.8.8:53: i/o timeout
+[ERROR] plugin/errors: 2 metadata-grpc-service. AAAA: dial tcp 8.8.8.8:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: dial tcp 8.8.8.8:53: i/o timeout
+[ERROR] plugin/errors: 2 metadata-grpc-service. AAAA: dial tcp 8.8.4.4:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: dial tcp 8.8.4.4:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: dial tcp 8.8.4.4:53: i/o timeout
+[ERROR] plugin/errors: 2 metadata-grpc-service. AAAA: dial tcp 8.8.4.4:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read tcp 10.233.0.3:35532->10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read tcp 10.233.0.3:35546->10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read tcp 10.233.0.3:35558->10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: dial tcp 8.8.8.8:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read tcp 10.233.0.3:35564->10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read tcp 10.233.0.3:35578->10.233.0.3:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: dial tcp 8.8.8.8:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: dial tcp 8.8.4.4:53: i/o timeout
+[ERROR] plugin/errors: 2 zipkin.istio-system. A: read tcp 10.233.0.3:35604->10.233.0.3:53: i/o timeout

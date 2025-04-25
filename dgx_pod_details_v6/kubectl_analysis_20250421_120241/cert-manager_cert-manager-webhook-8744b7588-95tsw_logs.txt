@@ -1,0 +1,6 @@
+I0421 05:30:09.961807       1 feature_gate.go:245] feature gates: &{map[]}
+W0421 05:30:09.961868       1 client_config.go:617] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+I0421 05:30:09.970396       1 webhook.go:129] cert-manager "msg"="using dynamic certificate generating using CA stored in Secret resource" "secret_name"="cert-manager-webhook-ca" "secret_namespace"="cert-manager"
+I0421 05:30:09.970547       1 server.go:133] cert-manager/webhook "msg"="listening for insecure healthz connections" "address"=":6080"
+I0421 05:30:09.970916       1 server.go:197] cert-manager/webhook "msg"="listening for secure connections" "address"=":10250"
+I0421 05:30:10.973685       1 dynamic_source.go:266] cert-manager/webhook "msg"="Updated cert-manager webhook TLS certificate" "DNSNames"=["cert-manager-webhook","cert-manager-webhook.cert-manager","cert-manager-webhook.cert-manager.svc"]

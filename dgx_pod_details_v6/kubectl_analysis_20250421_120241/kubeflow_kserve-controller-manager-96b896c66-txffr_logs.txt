@@ -1,0 +1,47 @@
+{"level":"info","ts":1745213403.0159788,"logger":"entrypoint","msg":"Setting up client for manager"}
+{"level":"info","ts":1745213403.0161507,"logger":"entrypoint","msg":"Setting up manager"}
+I0421 05:30:04.216016       1 request.go:665] Waited for 1.000701245s due to client-side throttling, not priority and fairness, request: GET:https://10.233.0.1:443/apis/kubeflow.org/v1alpha1?timeout=32s
+{"level":"info","ts":1745213404.4198868,"logger":"controller-runtime.metrics","msg":"Metrics server is starting to listen","addr":"127.0.0.1:8080"}
+{"level":"info","ts":1745213404.4200568,"logger":"entrypoint","msg":"Registering Components."}
+{"level":"info","ts":1745213404.4200625,"logger":"entrypoint","msg":"Setting up KServe v1alpha1 scheme"}
+{"level":"info","ts":1745213404.4201849,"logger":"entrypoint","msg":"Setting up KServe v1beta1 scheme"}
+{"level":"info","ts":1745213405.7804055,"logger":"entrypoint","msg":"Setting up Knative scheme"}
+{"level":"info","ts":1745213405.7805681,"logger":"entrypoint","msg":"Setting up Istio schemes"}
+{"level":"info","ts":1745213405.7806528,"logger":"entrypoint","msg":"Setting up core scheme"}
+{"level":"info","ts":1745213405.7807176,"logger":"setup","msg":"Setting up v1beta1 controller"}
+{"level":"info","ts":1745213405.7813766,"logger":"setup","msg":"Setting up v1beta1 TrainedModel controller"}
+{"level":"info","ts":1745213405.7814088,"logger":"setup","msg":"Setting up InferenceGraph controller"}
+{"level":"info","ts":1745213405.7814438,"logger":"entrypoint","msg":"setting up webhook server"}
+{"level":"info","ts":1745213405.7814522,"logger":"entrypoint","msg":"registering webhooks to the webhook server"}
+{"level":"info","ts":1745213405.7815084,"logger":"controller-runtime.webhook","msg":"Registering webhook","path":"/mutate-pods"}
+{"level":"info","ts":1745213405.7815652,"logger":"controller-runtime.builder","msg":"skip registering a mutating webhook, object does not implement admission.Defaulter or WithDefaulter wasn't called","GVK":"serving.kserve.io/v1alpha1, Kind=TrainedModel"}
+{"level":"info","ts":1745213405.7815816,"logger":"controller-runtime.builder","msg":"Registering a validating webhook","GVK":"serving.kserve.io/v1alpha1, Kind=TrainedModel","path":"/validate-serving-kserve-io-v1alpha1-trainedmodel"}
+{"level":"info","ts":1745213405.7816088,"logger":"controller-runtime.webhook","msg":"Registering webhook","path":"/validate-serving-kserve-io-v1alpha1-trainedmodel"}
+{"level":"info","ts":1745213405.781646,"logger":"controller-runtime.builder","msg":"skip registering a mutating webhook, object does not implement admission.Defaulter or WithDefaulter wasn't called","GVK":"serving.kserve.io/v1alpha1, Kind=InferenceGraph"}
+{"level":"info","ts":1745213405.7816515,"logger":"controller-runtime.builder","msg":"Registering a validating webhook","GVK":"serving.kserve.io/v1alpha1, Kind=InferenceGraph","path":"/validate-serving-kserve-io-v1alpha1-inferencegraph"}
+{"level":"info","ts":1745213405.781667,"logger":"controller-runtime.webhook","msg":"Registering webhook","path":"/validate-serving-kserve-io-v1alpha1-inferencegraph"}
+{"level":"info","ts":1745213405.7817025,"logger":"controller-runtime.builder","msg":"Registering a mutating webhook","GVK":"serving.kserve.io/v1beta1, Kind=InferenceService","path":"/mutate-serving-kserve-io-v1beta1-inferenceservice"}
+{"level":"info","ts":1745213405.7817204,"logger":"controller-runtime.webhook","msg":"Registering webhook","path":"/mutate-serving-kserve-io-v1beta1-inferenceservice"}
+{"level":"info","ts":1745213405.7817419,"logger":"controller-runtime.builder","msg":"Registering a validating webhook","GVK":"serving.kserve.io/v1beta1, Kind=InferenceService","path":"/validate-serving-kserve-io-v1beta1-inferenceservice"}
+{"level":"info","ts":1745213405.7817626,"logger":"controller-runtime.webhook","msg":"Registering webhook","path":"/validate-serving-kserve-io-v1beta1-inferenceservice"}
+{"level":"info","ts":1745213405.7817886,"logger":"entrypoint","msg":"Starting the Cmd."}
+{"level":"info","ts":1745213405.782831,"logger":"controller-runtime.webhook.webhooks","msg":"Starting webhook server"}
+{"level":"info","ts":1745213405.782924,"msg":"Starting server","path":"/metrics","kind":"metrics","addr":"127.0.0.1:8080"}
+{"level":"info","ts":1745213405.7830365,"logger":"controller-runtime.certwatcher","msg":"Updated current TLS certificate"}
+I0421 05:30:05.783404       1 leaderelection.go:248] attempting to acquire leader lease kubeflow/kserve-controller-manager-leader-lock...
+{"level":"info","ts":1745213405.7834628,"logger":"controller-runtime.webhook","msg":"Serving webhook server","host":"","port":9443}
+{"level":"info","ts":1745213405.7835693,"logger":"controller-runtime.certwatcher","msg":"Starting certificate watcher"}
+I0421 05:30:22.886217       1 leaderelection.go:258] successfully acquired lease kubeflow/kserve-controller-manager-leader-lock
+{"level":"info","ts":1745213422.8864112,"logger":"controller.inferenceservice","msg":"Starting EventSource","reconciler group":"serving.kserve.io","reconciler kind":"InferenceService","source":"kind source: *v1beta1.InferenceService"}
+{"level":"info","ts":1745213422.8864415,"logger":"controller.inferencegraph","msg":"Starting EventSource","reconciler group":"serving.kserve.io","reconciler kind":"InferenceGraph","source":"kind source: *v1alpha1.InferenceGraph"}
+{"level":"info","ts":1745213422.886473,"logger":"controller.inferencegraph","msg":"Starting EventSource","reconciler group":"serving.kserve.io","reconciler kind":"InferenceGraph","source":"kind source: *v1.Service"}
+{"level":"info","ts":1745213422.8864803,"logger":"controller.inferencegraph","msg":"Starting Controller","reconciler group":"serving.kserve.io","reconciler kind":"InferenceGraph"}
+{"level":"info","ts":1745213422.8864594,"logger":"controller.inferenceservice","msg":"Starting EventSource","reconciler group":"serving.kserve.io","reconciler kind":"InferenceService","source":"kind source: *v1.Service"}
+{"level":"info","ts":1745213422.886474,"logger":"controller.trainedmodel","msg":"Starting EventSource","reconciler group":"serving.kserve.io","reconciler kind":"TrainedModel","source":"kind source: *v1alpha1.TrainedModel"}
+{"level":"info","ts":1745213422.886511,"logger":"controller.trainedmodel","msg":"Starting Controller","reconciler group":"serving.kserve.io","reconciler kind":"TrainedModel"}
+{"level":"info","ts":1745213422.8865237,"logger":"controller.inferenceservice","msg":"Starting EventSource","reconciler group":"serving.kserve.io","reconciler kind":"InferenceService","source":"kind source: *v1alpha3.VirtualService"}
+{"level":"info","ts":1745213422.886548,"logger":"controller.inferenceservice","msg":"Starting EventSource","reconciler group":"serving.kserve.io","reconciler kind":"InferenceService","source":"kind source: *v1.Deployment"}
+{"level":"info","ts":1745213422.8865564,"logger":"controller.inferenceservice","msg":"Starting Controller","reconciler group":"serving.kserve.io","reconciler kind":"InferenceService"}
+{"level":"info","ts":1745213423.187996,"logger":"controller.trainedmodel","msg":"Starting workers","reconciler group":"serving.kserve.io","reconciler kind":"TrainedModel","worker count":1}
+{"level":"info","ts":1745213423.2163475,"logger":"controller.inferenceservice","msg":"Starting workers","reconciler group":"serving.kserve.io","reconciler kind":"InferenceService","worker count":1}
+{"level":"info","ts":1745213423.2163718,"logger":"controller.inferencegraph","msg":"Starting workers","reconciler group":"serving.kserve.io","reconciler kind":"InferenceGraph","worker count":1}

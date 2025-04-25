@@ -14,5 +14,5 @@ CURRENT_TIME=$(date +"%H-%M")
 CURRENT_DATE_FOLDER=$(date +'%d-%m-%Y')
 YESTERDAY_DATE=$(date -d "yesterday" +'%Y-%m-%d')
 # Define the base path
-MAIN_PATH="/home/vips-dgx/dgx_summary/$YEAR/$MONTH/$CURRENT_DATE_FOLDER"
+MAIN_PATH="/home/jain-dgx/Scripts_and_Files/all_logs_of_dgx_scripts/dgx_summary/$YEAR/$MONTH/$CURRENT_DATE_FOLDER"
 

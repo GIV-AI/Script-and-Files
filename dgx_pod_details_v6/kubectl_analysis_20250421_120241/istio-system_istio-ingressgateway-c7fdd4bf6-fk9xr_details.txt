@@ -1,0 +1,156 @@
+Namespace: istio-system
+Pod Name: istio-ingressgateway-c7fdd4bf6-fk9xr
+Status: 1/1
+Other Details: Running                    7 (6h37m ago)    5d22h
+Name:             istio-ingressgateway-c7fdd4bf6-fk9xr
+Namespace:        istio-system
+Priority:         0
+Service Account:  istio-ingressgateway-service-account
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:00:27 +0000
+Labels:           app=istio-ingressgateway
+                  chart=gateways
+                  heritage=Tiller
+                  install.operator.istio.io/owning-resource=unknown
+                  istio=ingressgateway
+                  istio.io/rev=default
+                  operator.istio.io/component=IngressGateways
+                  pod-template-hash=c7fdd4bf6
+                  release=istio
+                  service.istio.io/canonical-name=istio-ingressgateway
+                  service.istio.io/canonical-revision=latest
+                  sidecar.istio.io/inject=false
+Annotations:      cni.projectcalico.org/containerID: a5fc8bc562a99be72579837155ed861be2cf33499a61cb7f007145d029f76676
+                  cni.projectcalico.org/podIP: 10.233.119.134/32
+                  cni.projectcalico.org/podIPs: 10.233.119.134/32
+                  prometheus.io/path: /stats/prometheus
+                  prometheus.io/port: 15020
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/inject: false
+Status:           Running
+IP:               10.233.119.134
+IPs:
+  IP:           10.233.119.134
+Controlled By:  ReplicaSet/istio-ingressgateway-c7fdd4bf6
+Containers:
+  istio-proxy:
+    Container ID:  docker://01ac88666ba2abdd38f1dac28428ee23c3390e9b1b8e9d65065a0d5e348c4f56
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Ports:         15021/TCP, 8080/TCP, 8443/TCP, 31400/TCP, 15443/TCP, 15090/TCP
+    Host Ports:    0/TCP, 0/TCP, 0/TCP, 0/TCP, 0/TCP, 0/TCP
+    Args:
+      proxy
+      router
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:02 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    255
+      Started:      Mon, 21 Apr 2025 03:55:37 +0000
+      Finished:     Mon, 21 Apr 2025 05:25:06 +0000
+    Ready:          True
+    Restart Count:  7
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=1s timeout=1s period=2s #success=1 #failure=30
+    Environment:
+      JWT_POLICY:                   third-party-jwt
+      PILOT_CERT_PROVIDER:          istiod
+      CA_ADDR:                      istiod.istio-system.svc:15012
+      NODE_NAME:                     (v1:spec.nodeName)
+      POD_NAME:                     istio-ingressgateway-c7fdd4bf6-fk9xr (v1:metadata.name)
+      POD_NAMESPACE:                istio-system (v1:metadata.namespace)
+      INSTANCE_IP:                   (v1:status.podIP)
+      HOST_IP:                       (v1:status.hostIP)
+      SERVICE_ACCOUNT:               (v1:spec.serviceAccountName)
+      ISTIO_META_WORKLOAD_NAME:     istio-ingressgateway
+      ISTIO_META_OWNER:             kubernetes://apis/apps/v1/namespaces/istio-system/deployments/istio-ingressgateway
+      ISTIO_META_MESH_ID:           cluster.local
+      TRUST_DOMAIN:                 cluster.local
+      ISTIO_META_UNPRIVILEGED_POD:  true
+      ISTIO_META_CLUSTER_ID:        Kubernetes
+    Mounts:
+      /etc/istio/config from config-volume (rw)
+      /etc/istio/ingressgateway-ca-certs from ingressgateway-ca-certs (ro)
+      /etc/istio/ingressgateway-certs from ingressgateway-certs (ro)
+      /etc/istio/pod from podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-wpw2p (ro)
+      /var/run/secrets/tokens from istio-token (ro)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio
+    Optional:  true
+  ingressgateway-certs:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  istio-ingressgateway-certs
+    Optional:    true
+  ingressgateway-ca-certs:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  istio-ingressgateway-ca-certs
+    Optional:    true
+  kube-api-access-wpw2p:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

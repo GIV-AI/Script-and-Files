@@ -1,0 +1,59 @@
+[I 2025-04-21 08:10:55.727 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-04-21 08:10:55.729 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-04-21 08:10:55.730 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 08:10:55.730 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 08:10:55.730 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 08:10:55.730 LabApp] 'base_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 08:10:55.732 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-04-21 08:10:55.732 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-04-21 08:10:55.732 ServerApp] jupyterlab_code_formatter | extension was successfully linked.
+[I 2025-04-21 08:10:55.732 ServerApp] jupyterlab_jupytext | extension was successfully linked.
+[I 2025-04-21 08:10:55.732 ServerApp] jupyterlab_tensorboard_pro | extension was successfully linked.
+[I 2025-04-21 08:10:55.735 ServerApp] notebook | extension was successfully linked.
+[I 2025-04-21 08:10:55.736 ServerApp] Writing Jupyter server cookie secret to /root/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2025-04-21 08:10:55.885 ServerApp] notebook_shim | extension was successfully linked.
+[W 2025-04-21 08:10:55.912 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 2025-04-21 08:10:55.913 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-04-21 08:10:55.915 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-04-21 08:10:55.916 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-04-21 08:10:55.917 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.10/dist-packages/jupyterlab
+[I 2025-04-21 08:10:55.918 LabApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+[I 2025-04-21 08:10:55.918 LabApp] Extension Manager is 'pypi'.
+[I 2025-04-21 08:10:55.977 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-04-21 08:10:55.978 ServerApp] Registered jupyterlab_code_formatter server extension
+[I 2025-04-21 08:10:55.978 ServerApp] jupyterlab_code_formatter | extension was successfully loaded.
+[I 2025-04-21 08:10:55.978 ServerApp] [Jupytext Server Extension] NotebookApp.contents_manager_class is (a subclass of) jupytext.TextFileContentsManager already - OK
+[I 2025-04-21 08:10:55.978 ServerApp] jupyterlab_jupytext | extension was successfully loaded.
+[I 2025-04-21 08:10:56.516 ServerApp] jupyterlab_tensorboard_pro extension loaded.
+[I 2025-04-21 08:10:56.516 ServerApp] jupyterlab_tensorboard_pro | extension was successfully loaded.
+[I 2025-04-21 08:10:56.519 ServerApp] notebook | extension was successfully loaded.
+[I 2025-04-21 08:10:56.520 ServerApp] Serving notebooks from local directory: /workspace
+[I 2025-04-21 08:10:56.520 ServerApp] Jupyter Server 2.14.2 is running at:
+[I 2025-04-21 08:10:56.520 ServerApp] http://hostname:8888/notebook/s-jain-training-19/deepstream1/lab
+[I 2025-04-21 08:10:56.520 ServerApp]     http://127.0.0.1:8888/notebook/s-jain-training-19/deepstream1/lab
+[I 2025-04-21 08:10:56.520 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-04-21 08:10:56.542 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-04-21 08:11:03.524 ServerApp] 302 GET /notebook/s-jain-training-19/deepstream1/ (@127.0.0.6) 0.47ms
+[W 2025-04-21 08:11:05.208 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 08:11:10.878 ServerApp] New terminal with automatic name: 1
+[I 2025-04-21 08:35:19.392 ServerApp] Saving file at /DeepStream-Yolo/config_infer_primary_yoloV8.txt
+[I 2025-04-21 08:35:36.164 ServerApp] Saving file at /DeepStream-Yolo/config_infer_primary_yoloV8.txt
+[W 2025-04-21 08:35:40.317 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 08:35:43.714 ServerApp] Saving file at /DeepStream-Yolo/config_infer_primary_yoloV8.txt
+[I 2025-04-21 08:37:30.656 ServerApp] Saving file at /DeepStream-Yolo/deepstream_app_config.txt
+[I 2025-04-21 09:06:34.105 ServerApp] 302 GET /notebook/s-jain-training-19/deepstream1/ (@127.0.0.6) 0.49ms
+[W 2025-04-21 09:06:34.899 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 09:07:43.333 ServerApp] EOF on FD 15; stopping reading
+[I 2025-04-21 09:07:43.433 ServerApp] Terminal 1 closed
+[I 2025-04-21 09:07:51.888 ServerApp] New terminal with automatic name: 1
+[W 2025-04-21 09:11:39.975 ServerApp] delete /ultralytics/yolo11s.pt
+[W 2025-04-21 09:11:43.688 ServerApp] delete /ultralytics/yolo11s.pt.onnx
+[W 2025-04-21 09:11:52.852 ServerApp] delete /DeepStream-Yolo/yolo11s.pt.onnx
+[W 2025-04-21 09:11:56.626 ServerApp] delete /DeepStream-Yolo/labels.txt
+[W 2025-04-21 09:12:05.522 ServerApp] delete /ultralytics/labels.txt
+[I 2025-04-21 09:13:26.050 ServerApp] New terminal with automatic name: 2
+[I 2025-04-21 09:15:24.252 ServerApp] Copying ultralytics/labels.txt to /DeepStream-Yolo
+[I 2025-04-21 09:15:24.259 ServerApp] Copying ultralytics/yolo11s.pt.onnx to /DeepStream-Yolo
+[I 2025-04-21 09:32:15.884 ServerApp] 302 GET /notebook/s-jain-training-19/deepstream1/ (@127.0.0.6) 0.45ms
+[W 2025-04-21 09:32:16.469 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 09:32:18.904 ServerApp] New terminal with automatic name: 3

@@ -1,0 +1,69 @@
+Namespace: kubeflow
+Pod Name: admission-webhook-deployment-7d56d4455f-q5mgb
+Status: 1/1
+Other Details: Running                    7 (6h52m ago)    5d22h
+Name:             admission-webhook-deployment-7d56d4455f-q5mgb
+Namespace:        kubeflow
+Priority:         0
+Service Account:  admission-webhook-service-account
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:27 +0000
+Labels:           app=poddefaults
+                  app.kubernetes.io/component=poddefaults
+                  app.kubernetes.io/name=poddefaults
+                  kustomize.component=poddefaults
+                  pod-template-hash=7d56d4455f
+Annotations:      cni.projectcalico.org/containerID: fd34e4ff90ba5b0524571790e45467f5aed8301647f51faec1fa65aec29995bc
+                  cni.projectcalico.org/podIP: 10.233.119.146/32
+                  cni.projectcalico.org/podIPs: 10.233.119.146/32
+                  sidecar.istio.io/inject: false
+Status:           Running
+IP:               10.233.119.146
+IPs:
+  IP:           10.233.119.146
+Controlled By:  ReplicaSet/admission-webhook-deployment-7d56d4455f
+Containers:
+  admission-webhook:
+    Container ID:  docker://40949d6139bdbd4165d4391060e83d54b1d35bb4e14e492198434a9e94b5222f
+    Image:         docker.io/kubeflownotebookswg/poddefaults-webhook:v1.7.0
+    Image ID:      docker-pullable://kubeflownotebookswg/poddefaults-webhook@sha256:49557da6c764cbbfa92f770ada5a469883e22ad2054b31c9792bff26e13e4f72
+    Port:          4443/TCP
+    Host Port:     0/TCP
+    Args:
+      --tlsCertFile=/etc/webhook/certs/tls.crt
+      --tlsKeyFile=/etc/webhook/certs/tls.key
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:04 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    2
+      Started:      Mon, 21 Apr 2025 03:55:41 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:41 +0000
+    Ready:          True
+    Restart Count:  7
+    Environment:    <none>
+    Mounts:
+      /etc/webhook/certs from webhook-cert (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-dpdzp (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  webhook-cert:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  webhook-certs
+    Optional:    false
+  kube-api-access-dpdzp:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

@@ -1,0 +1,134 @@
+Namespace: gpu-operator
+Pod Name: nvidia-mig-manager-w5wnl
+Status: 1/1
+Other Details: Running     1 (12h ago)    16h
+Name:                 nvidia-mig-manager-w5wnl
+Namespace:            gpu-operator
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Service Account:      nvidia-mig-manager
+Node:                 jain-dgx-server/192.168.1.248
+Start Time:           Tue, 15 Apr 2025 13:53:24 +0000
+Labels:               app=nvidia-mig-manager
+                      app.kubernetes.io/managed-by=gpu-operator
+                      controller-revision-hash=d7759f4cb
+                      helm.sh/chart=gpu-operator-v23.3.2
+                      pod-template-generation=1
+Annotations:          cni.projectcalico.org/containerID: 96ddde81433b97ce876d7f2b58aa6d710b054ea6eece7f8d471739ace2b13619
+                      cni.projectcalico.org/podIP: 10.233.119.146/32
+                      cni.projectcalico.org/podIPs: 10.233.119.146/32
+Status:               Running
+IP:                   10.233.119.146
+IPs:
+  IP:           10.233.119.146
+Controlled By:  DaemonSet/nvidia-mig-manager
+Init Containers:
+  toolkit-validation:
+    Container ID:  docker://18a44b4a0bfe3d6b92f0825d986e4ae4f8d7b8757d0aa1760f51c2d38b269d27
+    Image:         nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Image ID:      docker-pullable://nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:21dfc9c56b5f8bce73e60361d6e83759c3fa14dc6afc2d5ebdf1b891a936daf6
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+    Args:
+      until [ -f /run/nvidia/validations/toolkit-ready ]; do echo waiting for nvidia container toolkit to be setup; sleep 5; done
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Wed, 16 Apr 2025 04:53:41 +0000
+      Finished:     Wed, 16 Apr 2025 04:54:11 +0000
+    Ready:          True
+    Restart Count:  1
+    Environment:    <none>
+    Mounts:
+      /run/nvidia from run-nvidia (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-vxnq6 (ro)
+Containers:
+  nvidia-mig-manager:
+    Container ID:  docker://03438b0348a45dac4b4e2e0ef2121c382075294777945b11d753460051da03b0
+    Image:         nvcr.io/nvidia/cloud-native/k8s-mig-manager:v0.5.2-ubuntu20.04
+    Image ID:      docker-pullable://nvcr.io/nvidia/cloud-native/k8s-mig-manager@sha256:764a7d4d4afb63c0d9c6552af3c16db95498f28009d29bed362f8d637ed5ee32
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      bash
+      -c
+    Args:
+      /bin/entrypoint.sh
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:54:28 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    143
+      Started:      Tue, 15 Apr 2025 13:53:57 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:03 +0000
+    Ready:          True
+    Restart Count:  1
+    Environment:
+      NODE_NAME:                       (v1:spec.nodeName)
+      CONFIG_FILE:                    /mig-parted-config/config.yaml
+      GPU_CLIENTS_FILE:               /gpu-clients/clients.yaml
+      DEFAULT_GPU_CLIENTS_NAMESPACE:  gpu-operator (v1:metadata.namespace)
+      WITH_REBOOT:                    false
+    Mounts:
+      /bin/entrypoint.sh from nvidia-mig-manager-entrypoint (ro,path="entrypoint.sh")
+      /gpu-clients from gpu-clients (rw)
+      /host from host-root (rw)
+      /mig-parted-config from mig-parted-config (rw)
+      /run/nvidia from run-nvidia (rw)
+      /sys from host-sys (rw)
+      /var/run/cdi from cdi-root (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-vxnq6 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  nvidia-mig-manager-entrypoint:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      nvidia-mig-manager-entrypoint
+    Optional:  false
+  host-sys:
+    Type:          HostPath (bare host directory volume)
+    Path:          /sys
+    HostPathType:  Directory
+  mig-parted-config:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      default-mig-parted-config
+    Optional:  false
+  run-nvidia:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/nvidia
+    HostPathType:  Directory
+  host-root:
+    Type:          HostPath (bare host directory volume)
+    Path:          /
+    HostPathType:  
+  gpu-clients:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      default-gpu-clients
+    Optional:  false
+  cdi-root:
+    Type:          HostPath (bare host directory volume)
+    Path:          /var/run/cdi
+    HostPathType:  DirectoryOrCreate
+  kube-api-access-vxnq6:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              nvidia.com/gpu.deploy.mig-manager=true
+Tolerations:                 node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+                             nvidia.com/gpu:NoSchedule op=Exists
+Events:                      <none>

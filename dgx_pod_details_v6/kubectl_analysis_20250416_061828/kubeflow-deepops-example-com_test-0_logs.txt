@@ -1,0 +1,169 @@
+[I 04:55:10.140 LabApp] Writing notebook server cookie secret to /root/.local/share/jupyter/runtime/notebook_cookie_secret
+[I 04:55:10.140 LabApp] Authentication of /metrics is OFF, since other authentication is disabled.
+[W 04:55:10.338 LabApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 04:55:10.969 LabApp] jupyter_tensorboard extension loaded.
+[I 04:55:10.973 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.10/dist-packages/jupyterlab
+[I 04:55:10.973 LabApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+[I 04:55:10.975 LabApp] [Jupytext Server Extension] NotebookApp.contents_manager_class is (a subclass of) jupytext.TextFileContentsManager already - OK
+[I 04:55:10.978 LabApp] Serving notebooks from local directory: /workspace
+[I 04:55:10.978 LabApp] Jupyter Notebook 6.4.10 is running at:
+[I 04:55:10.978 LabApp] http://hostname:8888/
+[I 04:55:10.978 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 05:01:10.262 LabApp] 302 GET /notebook/kubeflow-deepops-example-com/test/ (127.0.0.6) 0.430000ms
+[W 05:01:10.933 LabApp] Could not determine jupyterlab build status without nodejs
+[E 05:01:13.933 LabApp] Uncaught exception GET /notebook/kubeflow-deepops-example-com/test/lab/api/extensions?1744779671530 (127.0.0.6)
+    HTTPServerRequest(protocol='http', host='192.168.1.248:32243', method='GET', uri='/notebook/kubeflow-deepops-example-com/test/lab/api/extensions?1744779671530', version='HTTP/1.1', remote_ip='127.0.0.6')
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.10/dist-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/usr/lib/python3.10/asyncio/tasks.py", line 304, in __wakeup
+        future.result()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 780, in run
+        yielded = self.gen.throw(exc)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 767, in run
+        value = future.result()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 780, in run
+        yielded = self.gen.throw(exc)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 767, in run
+        value = future.result()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 780, in run
+        yielded = self.gen.throw(exc)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 767, in run
+        value = future.result()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 780, in run
+        yielded = self.gen.throw(exc)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab/handlers/extension_manager_handler.py", line 191, in _load_outdated
+        data = yield self.executor.submit(
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 767, in run
+        value = future.result()
+      File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+        return self.__get_result()
+      File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+        raise self._exception
+      File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+        result = self.fn(*self.args, **self.kwargs)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab/commands.py", line 542, in get_latest_compatible_package_versions
+        return handler.latest_compatible_package_versions(names)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab/commands.py", line 1680, in latest_compatible_package_versions
+        ret = self._run([which('npm'), 'pack'] + keys, cwd=tempdir)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab_server/process.py", line 59, in which
+        raise ValueError(msg)
+    ValueError: Please install Node.js and npm before continuing installation. You may be able to install Node.js from your package manager, from conda, or directly from the Node.js website (https://nodejs.org).
+[W 05:01:13.938 LabApp] Unhandled error
+[E 05:01:13.938 LabApp] {
+      "Host": "192.168.1.248:32243",
+      "Accept": "*/*",
+      "Referer": "http://192.168.1.248:32243/notebook/kubeflow-deepops-example-com/test/lab?",
+      "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0"
+    }
+[E 05:01:13.938 LabApp] 500 GET /notebook/kubeflow-deepops-example-com/test/lab/api/extensions?1744779671530 (127.0.0.6) 2420.000000ms referer=http://192.168.1.248:32243/notebook/kubeflow-deepops-example-com/test/lab?
+[E 05:01:13.938 LabApp] Uncaught exception GET /notebook/kubeflow-deepops-example-com/test/lab/api/extensions?1744779672532 (127.0.0.6)
+    HTTPServerRequest(protocol='http', host='192.168.1.248:32243', method='GET', uri='/notebook/kubeflow-deepops-example-com/test/lab/api/extensions?1744779672532', version='HTTP/1.1', remote_ip='127.0.0.6')
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.10/dist-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/usr/lib/python3.10/asyncio/tasks.py", line 304, in __wakeup
+        future.result()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 780, in run
+        yielded = self.gen.throw(exc)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 767, in run
+        value = future.result()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 780, in run
+        yielded = self.gen.throw(exc)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 767, in run
+        value = future.result()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 780, in run
+        yielded = self.gen.throw(exc)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 767, in run
+        value = future.result()
+    ValueError: Please install Node.js and npm before continuing installation. You may be able to install Node.js from your package manager, from conda, or directly from the Node.js website (https://nodejs.org).
+[W 05:01:13.939 LabApp] Unhandled error
+[E 05:01:13.939 LabApp] {
+      "Host": "192.168.1.248:32243",
+      "Accept": "*/*",
+      "Referer": "http://192.168.1.248:32243/notebook/kubeflow-deepops-example-com/test/lab?",
+      "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0"
+    }
+[E 05:01:13.939 LabApp] 500 GET /notebook/kubeflow-deepops-example-com/test/lab/api/extensions?1744779672532 (127.0.0.6) 1418.280000ms referer=http://192.168.1.248:32243/notebook/kubeflow-deepops-example-com/test/lab?
+[I 05:01:30.549 LabApp] 302 GET /notebook/kubeflow-deepops-example-com/test/ (127.0.0.6) 0.510000ms
+[W 05:01:31.372 LabApp] Could not determine jupyterlab build status without nodejs
+[E 05:01:31.786 LabApp] Uncaught exception GET /notebook/kubeflow-deepops-example-com/test/lab/api/extensions?1744779691449 (127.0.0.6)
+    HTTPServerRequest(protocol='http', host='192.168.1.248:32243', method='GET', uri='/notebook/kubeflow-deepops-example-com/test/lab/api/extensions?1744779691449', version='HTTP/1.1', remote_ip='127.0.0.6')
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.10/dist-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 780, in run
+        yielded = self.gen.throw(exc)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 767, in run
+        value = future.result()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 780, in run
+        yielded = self.gen.throw(exc)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 767, in run
+        value = future.result()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 780, in run
+        yielded = self.gen.throw(exc)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 767, in run
+        value = future.result()
+    ValueError: Please install Node.js and npm before continuing installation. You may be able to install Node.js from your package manager, from conda, or directly from the Node.js website (https://nodejs.org).
+[W 05:01:31.787 LabApp] Unhandled error
+[E 05:01:31.787 LabApp] {
+      "Host": "192.168.1.248:32243",
+      "Accept": "*/*",
+      "Referer": "http://192.168.1.248:32243/notebook/kubeflow-deepops-example-com/test/lab?",
+      "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0"
+    }
+[E 05:01:31.787 LabApp] 500 GET /notebook/kubeflow-deepops-example-com/test/lab/api/extensions?1744779691449 (127.0.0.6) 8.570000ms referer=http://192.168.1.248:32243/notebook/kubeflow-deepops-example-com/test/lab?
+[E 05:01:32.447 LabApp] Uncaught exception GET /notebook/kubeflow-deepops-example-com/test/lab/api/extensions?1744779692451 (127.0.0.6)
+    HTTPServerRequest(protocol='http', host='192.168.1.248:32243', method='GET', uri='/notebook/kubeflow-deepops-example-com/test/lab/api/extensions?1744779692451', version='HTTP/1.1', remote_ip='127.0.0.6')
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.10/dist-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 780, in run
+        yielded = self.gen.throw(exc)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 767, in run
+        value = future.result()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 780, in run
+        yielded = self.gen.throw(exc)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 767, in run
+        value = future.result()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 780, in run
+        yielded = self.gen.throw(exc)
+      File "/usr/local/lib/python3.10/dist-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/usr/local/lib/python3.10/dist-packages/tornado/gen.py", line 767, in run
+        value = future.result()
+    ValueError: Please install Node.js and npm before continuing installation. You may be able to install Node.js from your package manager, from conda, or directly from the Node.js website (https://nodejs.org).
+[W 05:01:32.447 LabApp] Unhandled error
+[E 05:01:32.447 LabApp] {
+      "Host": "192.168.1.248:32243",
+      "Accept": "*/*",
+      "Referer": "http://192.168.1.248:32243/notebook/kubeflow-deepops-example-com/test/lab?",
+      "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0"
+    }
+[E 05:01:32.447 LabApp] 500 GET /notebook/kubeflow-deepops-example-com/test/lab/api/extensions?1744779692451 (127.0.0.6) 8.550000ms referer=http://192.168.1.248:32243/notebook/kubeflow-deepops-example-com/test/lab?
+[I 05:01:33.816 LabApp] New terminal with automatic name: 1
+TermSocket.open: 1
+TermSocket.open: Opened 1
+Websocket closed

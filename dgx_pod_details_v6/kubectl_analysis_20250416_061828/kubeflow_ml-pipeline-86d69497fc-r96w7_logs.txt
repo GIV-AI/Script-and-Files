@@ -1,0 +1,403 @@
+I0416 04:53:48.855309       7 client_manager.go:160] Initializing client manager
+I0416 04:53:48.855600       7 config.go:57] Config DBConfig.ExtraParams not specified, skipping
+[mysql] 2025/04/16 04:54:42 packets.go:37: unexpected EOF
+[mysql] 2025/04/16 04:54:42 packets.go:37: unexpected EOF
+[mysql] 2025/04/16 04:54:42 packets.go:37: unexpected EOF
+I0416 04:55:22.695272       7 client_manager.go:415] We already own mlpipeline
+I0416 04:55:22.695511       7 swf.go:64] (Expected when in cluster) Failed to create scheduled workflow client by out of cluster kubeconfig. Error: stat /root/.kube/config: no such file or directory
+I0416 04:55:22.695520       7 swf.go:66] Starting to create scheduled workflow client by in cluster config.
+I0416 04:55:22.695917       7 client_manager.go:204] Client manager initialized successfully
+I0416 04:55:22.696878       7 main.go:184] Samples already loaded in the past. Skip loading.
+I0416 04:55:22.697804       7 resource_manager.go:1050] Default experiment already exists! ID: 28158869-f785-496d-9be7-5f496a8e8bfc
+I0416 04:55:22.697816       7 main.go:120] Starting Http Proxy
+I0416 04:55:22.698030       7 main.go:90] Starting RPC server
+I0416 05:01:05.198554       7 interceptor.go:29] /api.RunService/ListRuns handler starting
+I0416 05:01:05.198642       7 interceptor.go:29] /api.PipelineService/ListPipelines handler starting
+I0416 05:01:05.198802       7 util.go:360] Getting user identity...
+I0416 05:01:05.198810       7 util.go:370] User: deepops@example.com, ResourceAttributes: &ResourceAttributes{Namespace:undefined,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}
+I0416 05:01:05.198836       7 util.go:371] Authorizing request...
+I0416 05:01:05.206238       7 util.go:374] PermissionDenied: User 'deepops@example.com' is not authorized with reason:  (request: &ResourceAttributes{Namespace:undefined,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}): Unauthorized access
+E0416 05:01:05.206757       7 error.go:261] Unauthorized access
+github.com/kubeflow/pipelines/backend/src/apiserver/resource.(*ResourceManager).IsRequestAuthorized
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/resource/resource_manager.go:1302
+github.com/kubeflow/pipelines/backend/src/apiserver/server.isAuthorized
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/util.go:372
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).canAccessRun
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:398
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).ListRuns
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:192
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler.func1
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2198
+main.apiServerInterceptor
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/interceptor.go:30
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2200
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1282
+google.golang.org/grpc.(*Server).handleStream
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1616
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:921
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1581
+PermissionDenied: User 'deepops@example.com' is not authorized with reason:  (request: &ResourceAttributes{Namespace:undefined,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,})
+github.com/kubeflow/pipelines/backend/src/common/util.NewPermissionDeniedError
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:216
+github.com/kubeflow/pipelines/backend/src/apiserver/resource.(*ResourceManager).IsRequestAuthorized
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/resource/resource_manager.go:1301
+github.com/kubeflow/pipelines/backend/src/apiserver/server.isAuthorized
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/util.go:372
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).canAccessRun
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:398
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).ListRuns
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:192
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler.func1
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2198
+main.apiServerInterceptor
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/interceptor.go:30
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2200
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1282
+google.golang.org/grpc.(*Server).handleStream
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1616
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:921
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1581
+Failed to authorize with API resource references
+github.com/kubeflow/pipelines/backend/src/common/util.(*UserError).wrap
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:252
+github.com/kubeflow/pipelines/backend/src/common/util.Wrap
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:285
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).canAccessRun
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:400
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).ListRuns
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:192
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler.func1
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2198
+main.apiServerInterceptor
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/interceptor.go:30
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2200
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1282
+google.golang.org/grpc.(*Server).handleStream
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1616
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:921
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1581
+Failed to authorize with namespace resource reference.
+github.com/kubeflow/pipelines/backend/src/common/util.(*UserError).wrap
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:252
+github.com/kubeflow/pipelines/backend/src/common/util.Wrap
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:285
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).ListRuns
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:194
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler.func1
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2198
+main.apiServerInterceptor
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/interceptor.go:30
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2200
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1282
+google.golang.org/grpc.(*Server).handleStream
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1616
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:921
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1581
+/api.RunService/ListRuns call failed
+github.com/kubeflow/pipelines/backend/src/common/util.(*UserError).wrapf
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:247
+github.com/kubeflow/pipelines/backend/src/common/util.Wrapf
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:272
+main.apiServerInterceptor
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/interceptor.go:32
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2200
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1282
+google.golang.org/grpc.(*Server).handleStream
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1616
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:921
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1581
+I0416 05:01:05.208799       7 interceptor.go:37] /api.PipelineService/ListPipelines handler finished
+I0416 05:01:05.292900       7 interceptor.go:29] /api.RunService/ListRuns handler starting
+I0416 05:01:05.292917       7 util.go:360] Getting user identity...
+I0416 05:01:05.292922       7 util.go:370] User: deepops@example.com, ResourceAttributes: &ResourceAttributes{Namespace:kubeflow-deepops-example-com,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}
+I0416 05:01:05.292938       7 util.go:371] Authorizing request...
+I0416 05:01:05.295334       7 util.go:378] Authorized user 'deepops@example.com': &ResourceAttributes{Namespace:kubeflow-deepops-example-com,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}
+I0416 05:01:05.303550       7 interceptor.go:37] /api.RunService/ListRuns handler finished
+I0416 05:50:11.199922       7 interceptor.go:29] /api.PipelineService/ListPipelines handler starting
+I0416 05:50:11.200272       7 interceptor.go:29] /api.RunService/ListRuns handler starting
+I0416 05:50:11.200298       7 util.go:360] Getting user identity...
+I0416 05:50:11.200305       7 util.go:370] User: deepops@example.com, ResourceAttributes: &ResourceAttributes{Namespace:undefined,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}
+I0416 05:50:11.200333       7 util.go:371] Authorizing request...
+I0416 05:50:11.209687       7 interceptor.go:37] /api.PipelineService/ListPipelines handler finished
+I0416 05:50:11.211353       7 util.go:374] PermissionDenied: User 'deepops@example.com' is not authorized with reason:  (request: &ResourceAttributes{Namespace:undefined,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}): Unauthorized access
+E0416 05:50:11.211371       7 error.go:261] Unauthorized access
+github.com/kubeflow/pipelines/backend/src/apiserver/resource.(*ResourceManager).IsRequestAuthorized
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/resource/resource_manager.go:1302
+github.com/kubeflow/pipelines/backend/src/apiserver/server.isAuthorized
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/util.go:372
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).canAccessRun
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:398
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).ListRuns
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:192
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler.func1
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2198
+main.apiServerInterceptor
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/interceptor.go:30
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2200
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1282
+google.golang.org/grpc.(*Server).handleStream
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1616
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:921
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1581
+PermissionDenied: User 'deepops@example.com' is not authorized with reason:  (request: &ResourceAttributes{Namespace:undefined,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,})
+github.com/kubeflow/pipelines/backend/src/common/util.NewPermissionDeniedError
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:216
+github.com/kubeflow/pipelines/backend/src/apiserver/resource.(*ResourceManager).IsRequestAuthorized
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/resource/resource_manager.go:1301
+github.com/kubeflow/pipelines/backend/src/apiserver/server.isAuthorized
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/util.go:372
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).canAccessRun
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:398
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).ListRuns
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:192
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler.func1
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2198
+main.apiServerInterceptor
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/interceptor.go:30
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2200
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1282
+google.golang.org/grpc.(*Server).handleStream
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1616
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:921
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1581
+Failed to authorize with API resource references
+github.com/kubeflow/pipelines/backend/src/common/util.(*UserError).wrap
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:252
+github.com/kubeflow/pipelines/backend/src/common/util.Wrap
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:285
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).canAccessRun
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:400
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).ListRuns
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:192
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler.func1
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2198
+main.apiServerInterceptor
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/interceptor.go:30
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2200
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1282
+google.golang.org/grpc.(*Server).handleStream
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1616
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:921
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1581
+Failed to authorize with namespace resource reference.
+github.com/kubeflow/pipelines/backend/src/common/util.(*UserError).wrap
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:252
+github.com/kubeflow/pipelines/backend/src/common/util.Wrap
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:285
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).ListRuns
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:194
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler.func1
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2198
+main.apiServerInterceptor
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/interceptor.go:30
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2200
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1282
+google.golang.org/grpc.(*Server).handleStream
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1616
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:921
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1581
+/api.RunService/ListRuns call failed
+github.com/kubeflow/pipelines/backend/src/common/util.(*UserError).wrapf
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:247
+github.com/kubeflow/pipelines/backend/src/common/util.Wrapf
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:272
+main.apiServerInterceptor
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/interceptor.go:32
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2200
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1282
+google.golang.org/grpc.(*Server).handleStream
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1616
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:921
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1581
+I0416 05:50:11.463216       7 interceptor.go:29] /api.RunService/ListRuns handler starting
+I0416 05:50:11.463246       7 util.go:360] Getting user identity...
+I0416 05:50:11.463253       7 util.go:370] User: deepops@example.com, ResourceAttributes: &ResourceAttributes{Namespace:kubeflow-deepops-example-com,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}
+I0416 05:50:11.463276       7 util.go:371] Authorizing request...
+I0416 05:50:11.466375       7 util.go:378] Authorized user 'deepops@example.com': &ResourceAttributes{Namespace:kubeflow-deepops-example-com,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}
+I0416 05:50:11.471486       7 interceptor.go:37] /api.RunService/ListRuns handler finished
+I0416 06:05:29.546470       7 interceptor.go:29] /api.PipelineService/ListPipelines handler starting
+I0416 06:05:29.547480       7 interceptor.go:29] /api.RunService/ListRuns handler starting
+I0416 06:05:29.547507       7 util.go:360] Getting user identity...
+I0416 06:05:29.547514       7 util.go:370] User: f-test-test123-1234, ResourceAttributes: &ResourceAttributes{Namespace:undefined,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}
+I0416 06:05:29.547545       7 util.go:371] Authorizing request...
+I0416 06:05:29.551699       7 util.go:374] PermissionDenied: User 'f-test-test123-1234' is not authorized with reason:  (request: &ResourceAttributes{Namespace:undefined,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}): Unauthorized access
+E0416 06:05:29.551717       7 error.go:261] Unauthorized access
+github.com/kubeflow/pipelines/backend/src/apiserver/resource.(*ResourceManager).IsRequestAuthorized
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/resource/resource_manager.go:1302
+github.com/kubeflow/pipelines/backend/src/apiserver/server.isAuthorized
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/util.go:372
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).canAccessRun
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:398
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).ListRuns
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:192
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler.func1
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2198
+main.apiServerInterceptor
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/interceptor.go:30
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2200
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1282
+google.golang.org/grpc.(*Server).handleStream
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1616
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:921
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1581
+PermissionDenied: User 'f-test-test123-1234' is not authorized with reason:  (request: &ResourceAttributes{Namespace:undefined,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,})
+github.com/kubeflow/pipelines/backend/src/common/util.NewPermissionDeniedError
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:216
+github.com/kubeflow/pipelines/backend/src/apiserver/resource.(*ResourceManager).IsRequestAuthorized
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/resource/resource_manager.go:1301
+github.com/kubeflow/pipelines/backend/src/apiserver/server.isAuthorized
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/util.go:372
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).canAccessRun
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:398
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).ListRuns
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:192
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler.func1
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2198
+main.apiServerInterceptor
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/interceptor.go:30
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2200
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1282
+google.golang.org/grpc.(*Server).handleStream
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1616
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:921
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1581
+Failed to authorize with API resource references
+github.com/kubeflow/pipelines/backend/src/common/util.(*UserError).wrap
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:252
+github.com/kubeflow/pipelines/backend/src/common/util.Wrap
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:285
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).canAccessRun
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:400
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).ListRuns
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:192
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler.func1
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2198
+main.apiServerInterceptor
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/interceptor.go:30
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2200
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1282
+google.golang.org/grpc.(*Server).handleStream
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1616
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:921
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1581
+Failed to authorize with namespace resource reference.
+github.com/kubeflow/pipelines/backend/src/common/util.(*UserError).wrap
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:252
+github.com/kubeflow/pipelines/backend/src/common/util.Wrap
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:285
+github.com/kubeflow/pipelines/backend/src/apiserver/server.(*RunServer).ListRuns
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/server/run_server.go:194
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler.func1
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2198
+main.apiServerInterceptor
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/interceptor.go:30
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2200
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1282
+google.golang.org/grpc.(*Server).handleStream
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1616
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:921
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1581
+/api.RunService/ListRuns call failed
+github.com/kubeflow/pipelines/backend/src/common/util.(*UserError).wrapf
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:247
+github.com/kubeflow/pipelines/backend/src/common/util.Wrapf
+	/go/src/github.com/kubeflow/pipelines/backend/src/common/util/error.go:272
+main.apiServerInterceptor
+	/go/src/github.com/kubeflow/pipelines/backend/src/apiserver/interceptor.go:32
+github.com/kubeflow/pipelines/backend/api/go_client._RunService_ListRuns_Handler
+	/go/src/github.com/kubeflow/pipelines/backend/api/go_client/run.pb.go:2200
+google.golang.org/grpc.(*Server).processUnaryRPC
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1282
+google.golang.org/grpc.(*Server).handleStream
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:1616
+google.golang.org/grpc.(*Server).serveStreams.func1.2
+	/go/pkg/mod/google.golang.org/grpc@v1.44.0/server.go:921
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1581
+I0416 06:05:29.552989       7 interceptor.go:37] /api.PipelineService/ListPipelines handler finished
+I0416 06:05:29.793904       7 interceptor.go:29] /api.RunService/ListRuns handler starting
+I0416 06:05:29.793935       7 util.go:360] Getting user identity...
+I0416 06:05:29.793943       7 util.go:370] User: f-test-test123-1234, ResourceAttributes: &ResourceAttributes{Namespace:f-test-test123-1234,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}
+I0416 06:05:29.793966       7 util.go:371] Authorizing request...
+I0416 06:05:29.795685       7 util.go:378] Authorized user 'f-test-test123-1234': &ResourceAttributes{Namespace:f-test-test123-1234,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}
+I0416 06:05:29.797954       7 interceptor.go:37] /api.RunService/ListRuns handler finished
+I0416 06:10:32.163638       7 interceptor.go:29] /api.PipelineService/ListPipelines handler starting
+I0416 06:10:32.169395       7 interceptor.go:37] /api.PipelineService/ListPipelines handler finished
+I0416 06:10:32.177262       7 interceptor.go:29] /api.RunService/ListRuns handler starting
+I0416 06:10:32.177288       7 util.go:360] Getting user identity...
+I0416 06:10:32.177294       7 util.go:370] User: f-test-test123-1234, ResourceAttributes: &ResourceAttributes{Namespace:f-test-test123-1234,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}
+I0416 06:10:32.177320       7 util.go:371] Authorizing request...
+I0416 06:10:32.189591       7 util.go:378] Authorized user 'f-test-test123-1234': &ResourceAttributes{Namespace:f-test-test123-1234,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}
+I0416 06:10:32.191857       7 interceptor.go:37] /api.RunService/ListRuns handler finished
+I0416 06:11:54.977141       7 interceptor.go:29] /api.PipelineService/ListPipelines handler starting
+I0416 06:11:54.980258       7 interceptor.go:37] /api.PipelineService/ListPipelines handler finished
+I0416 06:11:54.992303       7 interceptor.go:29] /api.RunService/ListRuns handler starting
+I0416 06:11:54.992330       7 util.go:360] Getting user identity...
+I0416 06:11:54.992337       7 util.go:370] User: f-test-test123-1234, ResourceAttributes: &ResourceAttributes{Namespace:f-test-test123-1234,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}
+I0416 06:11:54.992366       7 util.go:371] Authorizing request...
+I0416 06:11:54.996313       7 util.go:378] Authorized user 'f-test-test123-1234': &ResourceAttributes{Namespace:f-test-test123-1234,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}
+I0416 06:11:55.002178       7 interceptor.go:37] /api.RunService/ListRuns handler finished
+I0416 06:12:35.820209       7 interceptor.go:29] /api.PipelineService/ListPipelines handler starting
+I0416 06:12:35.830324       7 interceptor.go:37] /api.PipelineService/ListPipelines handler finished
+I0416 06:12:35.834071       7 interceptor.go:29] /api.RunService/ListRuns handler starting
+I0416 06:12:35.834098       7 util.go:360] Getting user identity...
+I0416 06:12:35.834105       7 util.go:370] User: f-test-test123-1234, ResourceAttributes: &ResourceAttributes{Namespace:f-test-test123-1234,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}
+I0416 06:12:35.834141       7 util.go:371] Authorizing request...
+I0416 06:12:35.837545       7 util.go:378] Authorized user 'f-test-test123-1234': &ResourceAttributes{Namespace:f-test-test123-1234,Verb:list,Group:pipelines.kubeflow.org,Version:v1beta1,Resource:runs,Subresource:,Name:,}
+I0416 06:12:35.841839       7 interceptor.go:37] /api.RunService/ListRuns handler finished

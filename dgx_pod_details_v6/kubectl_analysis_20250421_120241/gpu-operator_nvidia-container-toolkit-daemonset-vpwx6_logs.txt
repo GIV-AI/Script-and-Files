@@ -1,0 +1,115 @@
+Defaulted container "nvidia-container-toolkit-ctr" out of: nvidia-container-toolkit-ctr, driver-validation (init)
+time="2025-04-21T05:29:14Z" level=info msg="Parsing arguments"
+time="2025-04-21T05:29:14Z" level=info msg="Starting nvidia-toolkit"
+time="2025-04-21T05:29:14Z" level=info msg="Verifying Flags"
+time="2025-04-21T05:29:14Z" level=info msg=Initializing
+time="2025-04-21T05:29:14Z" level=info msg="Installing toolkit"
+time="2025-04-21T05:29:14Z" level=info msg="Installing NVIDIA container toolkit to '/usr/local/nvidia/toolkit'"
+time="2025-04-21T05:29:14Z" level=info msg="Removing existing NVIDIA container toolkit installation"
+time="2025-04-21T05:29:14Z" level=info msg="Creating directory '/usr/local/nvidia/toolkit'"
+time="2025-04-21T05:29:14Z" level=info msg="Creating directory '/usr/local/nvidia/toolkit/.config/nvidia-container-runtime'"
+time="2025-04-21T05:29:14Z" level=info msg="Installing NVIDIA container library to '/usr/local/nvidia/toolkit'"
+time="2025-04-21T05:29:14Z" level=info msg="Finding library libnvidia-container.so.1 (root=)"
+time="2025-04-21T05:29:14Z" level=info msg="Checking library candidate '/usr/lib64/libnvidia-container.so.1'"
+time="2025-04-21T05:29:14Z" level=info msg="Skipping library candidate '/usr/lib64/libnvidia-container.so.1': error resolving link '/usr/lib64/libnvidia-container.so.1': lstat /usr/lib64/libnvidia-container.so.1: no such file or directory"
+time="2025-04-21T05:29:14Z" level=info msg="Checking library candidate '/usr/lib/x86_64-linux-gnu/libnvidia-container.so.1'"
+time="2025-04-21T05:29:14Z" level=info msg="Resolved link: '/usr/lib/x86_64-linux-gnu/libnvidia-container.so.1' => '/usr/lib/x86_64-linux-gnu/libnvidia-container.so.1.13.0'"
+time="2025-04-21T05:29:14Z" level=info msg="Installing '/usr/lib/x86_64-linux-gnu/libnvidia-container.so.1.13.0' to '/usr/local/nvidia/toolkit/libnvidia-container.so.1.13.0'"
+time="2025-04-21T05:29:14Z" level=info msg="Installed '/usr/lib/x86_64-linux-gnu/libnvidia-container.so.1.13.0' to '/usr/local/nvidia/toolkit/libnvidia-container.so.1.13.0'"
+time="2025-04-21T05:29:14Z" level=info msg="Creating symlink '/usr/local/nvidia/toolkit/libnvidia-container.so.1' -> 'libnvidia-container.so.1.13.0'"
+time="2025-04-21T05:29:14Z" level=info msg="Finding library libnvidia-container-go.so.1 (root=)"
+time="2025-04-21T05:29:14Z" level=info msg="Checking library candidate '/usr/lib64/libnvidia-container-go.so.1'"
+time="2025-04-21T05:29:14Z" level=info msg="Skipping library candidate '/usr/lib64/libnvidia-container-go.so.1': error resolving link '/usr/lib64/libnvidia-container-go.so.1': lstat /usr/lib64/libnvidia-container-go.so.1: no such file or directory"
+time="2025-04-21T05:29:14Z" level=info msg="Checking library candidate '/usr/lib/x86_64-linux-gnu/libnvidia-container-go.so.1'"
+time="2025-04-21T05:29:14Z" level=info msg="Resolved link: '/usr/lib/x86_64-linux-gnu/libnvidia-container-go.so.1' => '/usr/lib/x86_64-linux-gnu/libnvidia-container-go.so.1.13.0'"
+time="2025-04-21T05:29:14Z" level=info msg="Installing '/usr/lib/x86_64-linux-gnu/libnvidia-container-go.so.1.13.0' to '/usr/local/nvidia/toolkit/libnvidia-container-go.so.1.13.0'"
+time="2025-04-21T05:29:14Z" level=info msg="Installed '/usr/lib/x86_64-linux-gnu/libnvidia-container-go.so.1.13.0' to '/usr/local/nvidia/toolkit/libnvidia-container-go.so.1.13.0'"
+time="2025-04-21T05:29:14Z" level=info msg="Creating symlink '/usr/local/nvidia/toolkit/libnvidia-container-go.so.1' -> 'libnvidia-container-go.so.1.13.0'"
+time="2025-04-21T05:29:14Z" level=info msg="Installing executable '/usr/bin/nvidia-container-runtime' to /usr/local/nvidia/toolkit"
+time="2025-04-21T05:29:14Z" level=info msg="Installing '/usr/bin/nvidia-container-runtime' to '/usr/local/nvidia/toolkit/nvidia-container-runtime.real'"
+time="2025-04-21T05:29:14Z" level=info msg="Installed '/usr/local/nvidia/toolkit/nvidia-container-runtime.real'"
+time="2025-04-21T05:29:14Z" level=info msg="Installed wrapper '/usr/local/nvidia/toolkit/nvidia-container-runtime'"
+time="2025-04-21T05:29:14Z" level=info msg="Installing executable '/usr/bin/nvidia-container-runtime.cdi' to /usr/local/nvidia/toolkit"
+time="2025-04-21T05:29:14Z" level=info msg="Installing '/usr/bin/nvidia-container-runtime.cdi' to '/usr/local/nvidia/toolkit/nvidia-container-runtime.cdi.real'"
+time="2025-04-21T05:29:14Z" level=info msg="Installed '/usr/local/nvidia/toolkit/nvidia-container-runtime.cdi.real'"
+time="2025-04-21T05:29:14Z" level=info msg="Installed wrapper '/usr/local/nvidia/toolkit/nvidia-container-runtime.cdi'"
+time="2025-04-21T05:29:14Z" level=info msg="Installing executable '/usr/bin/nvidia-container-runtime.legacy' to /usr/local/nvidia/toolkit"
+time="2025-04-21T05:29:14Z" level=info msg="Installing '/usr/bin/nvidia-container-runtime.legacy' to '/usr/local/nvidia/toolkit/nvidia-container-runtime.legacy.real'"
+time="2025-04-21T05:29:14Z" level=info msg="Installed '/usr/local/nvidia/toolkit/nvidia-container-runtime.legacy.real'"
+time="2025-04-21T05:29:14Z" level=info msg="Installed wrapper '/usr/local/nvidia/toolkit/nvidia-container-runtime.legacy'"
+time="2025-04-21T05:29:14Z" level=info msg="Finding library libnvidia-ml.so (root=/)"
+time="2025-04-21T05:29:14Z" level=info msg="Checking library candidate '/usr/lib64/libnvidia-ml.so'"
+time="2025-04-21T05:29:14Z" level=info msg="Skipping library candidate '/usr/lib64/libnvidia-ml.so': error resolving link '/usr/lib64/libnvidia-ml.so': lstat /usr/lib64/libnvidia-ml.so: no such file or directory"
+time="2025-04-21T05:29:14Z" level=info msg="Checking library candidate '/usr/lib/x86_64-linux-gnu/libnvidia-ml.so'"
+time="2025-04-21T05:29:14Z" level=info msg="Skipping library candidate '/usr/lib/x86_64-linux-gnu/libnvidia-ml.so': error resolving link '/usr/lib/x86_64-linux-gnu/libnvidia-ml.so': lstat /usr/lib/x86_64-linux-gnu/libnvidia-ml.so: no such file or directory"
+time="2025-04-21T05:29:14Z" level=info msg="Checking library candidate '/usr/lib/aarch64-linux-gnu/libnvidia-ml.so'"
+time="2025-04-21T05:29:14Z" level=info msg="Skipping library candidate '/usr/lib/aarch64-linux-gnu/libnvidia-ml.so': error resolving link '/usr/lib/aarch64-linux-gnu/libnvidia-ml.so': lstat /usr/lib/aarch64-linux-gnu: no such file or directory"
+time="2025-04-21T05:29:14Z" level=warning msg="Error finding library path for root /: error locating NVIDIA management library: error locating library 'libnvidia-ml.so'"
+time="2025-04-21T05:29:14Z" level=info msg="Using library root "
+time="2025-04-21T05:29:14Z" level=info msg="Installing executable 'nvidia-container-runtime.experimental' to /usr/local/nvidia/toolkit"
+time="2025-04-21T05:29:14Z" level=info msg="Installing 'nvidia-container-runtime.experimental' to '/usr/local/nvidia/toolkit/nvidia-container-runtime.experimental.real'"
+time="2025-04-21T05:29:14Z" level=info msg="Installed '/usr/local/nvidia/toolkit/nvidia-container-runtime.experimental.real'"
+time="2025-04-21T05:29:14Z" level=info msg="Installed wrapper '/usr/local/nvidia/toolkit/nvidia-container-runtime.experimental'"
+time="2025-04-21T05:29:14Z" level=info msg="Installing NVIDIA container CLI from '/usr/bin/nvidia-container-cli'"
+time="2025-04-21T05:29:14Z" level=info msg="Installing executable '/usr/bin/nvidia-container-cli' to /usr/local/nvidia/toolkit"
+time="2025-04-21T05:29:14Z" level=info msg="Installing '/usr/bin/nvidia-container-cli' to '/usr/local/nvidia/toolkit/nvidia-container-cli.real'"
+time="2025-04-21T05:29:14Z" level=info msg="Installed '/usr/local/nvidia/toolkit/nvidia-container-cli.real'"
+time="2025-04-21T05:29:14Z" level=info msg="Installed wrapper '/usr/local/nvidia/toolkit/nvidia-container-cli'"
+time="2025-04-21T05:29:14Z" level=info msg="Installing NVIDIA container runtime hook from '/usr/bin/nvidia-container-runtime-hook'"
+time="2025-04-21T05:29:14Z" level=info msg="Installing executable '/usr/bin/nvidia-container-runtime-hook' to /usr/local/nvidia/toolkit"
+time="2025-04-21T05:29:14Z" level=info msg="Installing '/usr/bin/nvidia-container-runtime-hook' to '/usr/local/nvidia/toolkit/nvidia-container-runtime-hook.real'"
+time="2025-04-21T05:29:14Z" level=info msg="Installed '/usr/local/nvidia/toolkit/nvidia-container-runtime-hook.real'"
+time="2025-04-21T05:29:14Z" level=info msg="Installed wrapper '/usr/local/nvidia/toolkit/nvidia-container-runtime-hook'"
+time="2025-04-21T05:29:14Z" level=info msg="Creating symlink '/usr/local/nvidia/toolkit/nvidia-container-toolkit' -> 'nvidia-container-runtime-hook'"
+time="2025-04-21T05:29:14Z" level=info msg="Installing executable '/usr/bin/nvidia-ctk' to /usr/local/nvidia/toolkit"
+time="2025-04-21T05:29:14Z" level=info msg="Installing '/usr/bin/nvidia-ctk' to '/usr/local/nvidia/toolkit/nvidia-ctk.real'"
+Using config:
+accept-nvidia-visible-devices-as-volume-mounts = false
+accept-nvidia-visible-devices-envvar-when-unprivileged = true
+disable-require = false
+
+[nvidia-container-cli]
+  environment = []
+  ldconfig = "@/sbin/ldconfig.real"
+  load-kmods = true
+  path = "/usr/local/nvidia/toolkit/nvidia-container-cli"
+  root = "/"
+
+[nvidia-container-runtime]
+  log-level = "info"
+  mode = "auto"
+  runtimes = ["docker-runc", "runc"]
+
+  [nvidia-container-runtime.modes]
+
+    [nvidia-container-runtime.modes.cdi]
+      default-kind = "management.nvidia.com/gpu"
+
+    [nvidia-container-runtime.modes.csv]
+      mount-spec-path = "/etc/nvidia-container-runtime/host-files-for-container.d"
+
+[nvidia-container-runtime-hook]
+  skip-mode-detection = true
+
+[nvidia-ctk]
+  path = "/usr/local/nvidia/toolkit/nvidia-ctk"
+time="2025-04-21T05:29:14Z" level=info msg="Installed '/usr/local/nvidia/toolkit/nvidia-ctk.real'"
+time="2025-04-21T05:29:14Z" level=info msg="Installed wrapper '/usr/local/nvidia/toolkit/nvidia-ctk'"
+time="2025-04-21T05:29:14Z" level=info msg="Installing NVIDIA container toolkit config '/usr/local/nvidia/toolkit/.config/nvidia-container-runtime/config.toml'"
+time="2025-04-21T05:29:14Z" level=info msg="Skipping unset option: nvidia-container-cli.debug"
+time="2025-04-21T05:29:14Z" level=info msg="Skipping unset option: nvidia-container-runtime.debug"
+time="2025-04-21T05:29:14Z" level=info msg="Skipping unset option: nvidia-container-runtime.log-level"
+time="2025-04-21T05:29:14Z" level=info msg="Skipping unset option: nvidia-container-runtime.mode"
+time="2025-04-21T05:29:14Z" level=info msg="Skipping unset option: nvidia-container-runtime.modes.cdi.annotation-prefixes"
+time="2025-04-21T05:29:14Z" level=info msg="Skipping unset option: nvidia-container-runtime.runtimes"
+time="2025-04-21T05:29:14Z" level=info msg="Setting up runtime"
+time="2025-04-21T05:29:14Z" level=info msg="Starting 'setup' for docker"
+time="2025-04-21T05:29:14Z" level=info msg="Parsing arguments: [/usr/local/nvidia/toolkit]"
+time="2025-04-21T05:29:14Z" level=info msg="Successfully parsed arguments"
+time="2025-04-21T05:29:14Z" level=info msg="Loading docker config from /runtime/config-dir/daemon.json"
+time="2025-04-21T05:29:14Z" level=info msg="Successfully loaded config"
+time="2025-04-21T05:29:14Z" level=info msg="Flushing docker config to /runtime/config-dir/daemon.json"
+time="2025-04-21T05:29:14Z" level=info msg="Sending SIGHUP signal to docker"
+time="2025-04-21T05:29:16Z" level=info msg="Successfully signaled docker"
+time="2025-04-21T05:29:16Z" level=info msg="Completed 'setup' for docker"
+time="2025-04-21T05:29:16Z" level=info msg="Waiting for signal"

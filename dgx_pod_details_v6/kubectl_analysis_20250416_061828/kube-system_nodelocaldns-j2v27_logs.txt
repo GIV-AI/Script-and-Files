@@ -1,0 +1,25 @@
+2025/04/16 05:15:28 [INFO] Starting node-cache image: 1.22.18
+2025/04/16 05:15:28 [INFO] Using Corefile /etc/coredns/Corefile
+2025/04/16 05:15:28 [INFO] Using Pidfile 
+2025/04/16 05:15:28 [ERROR] Failed to read node-cache coreFile /etc/coredns/Corefile.base - open /etc/coredns/Corefile.base: no such file or directory
+2025/04/16 05:15:28 [INFO] Skipping kube-dns configmap sync as no directory was specified
+2025/04/16 05:15:28 [INFO] Added interface - nodelocaldns
+.:53 on 169.254.25.10
+cluster.local.:53 on 169.254.25.10
+in-addr.arpa.:53 on 169.254.25.10
+ip6.arpa.:53 on 169.254.25.10
+[INFO] plugin/reload: Running configuration SHA512 = b32991913f8a1faf282eb5b2b86946d8b987c840e76d358c164ee3a17a417ab8233625b4eeebe33bd07977a8afaf261f77f3f23bd4d5d9d20fde58ce73bdffd8
+CoreDNS-1.10.0
+linux/amd64, go1.18.10, 
+[INFO] Added back nodelocaldns rule - {raw PREROUTING [-p tcp -d 169.254.25.10 --dport 53 -j NOTRACK]}
+[INFO] Added back nodelocaldns rule - {raw PREROUTING [-p udp -d 169.254.25.10 --dport 53 -j NOTRACK]}
+[INFO] Added back nodelocaldns rule - {filter INPUT [-p tcp -d 169.254.25.10 --dport 53 -j ACCEPT]}
+[INFO] Added back nodelocaldns rule - {filter INPUT [-p udp -d 169.254.25.10 --dport 53 -j ACCEPT]}
+[INFO] Added back nodelocaldns rule - {raw OUTPUT [-p tcp -s 169.254.25.10 --sport 53 -j NOTRACK]}
+[INFO] Added back nodelocaldns rule - {raw OUTPUT [-p udp -s 169.254.25.10 --sport 53 -j NOTRACK]}
+[INFO] Added back nodelocaldns rule - {filter OUTPUT [-p tcp -s 169.254.25.10 --sport 53 -j ACCEPT]}
+[INFO] Added back nodelocaldns rule - {filter OUTPUT [-p udp -s 169.254.25.10 --sport 53 -j ACCEPT]}
+[INFO] Added back nodelocaldns rule - {raw OUTPUT [-p tcp -d 169.254.25.10 --dport 53 -j NOTRACK]}
+[INFO] Added back nodelocaldns rule - {raw OUTPUT [-p udp -d 169.254.25.10 --dport 53 -j NOTRACK]}
+[INFO] Added back nodelocaldns rule - {raw OUTPUT [-p tcp -d 169.254.25.10 --dport 8080 -j NOTRACK]}
+[INFO] Added back nodelocaldns rule - {raw OUTPUT [-p tcp -s 169.254.25.10 --sport 8080 -j NOTRACK]}

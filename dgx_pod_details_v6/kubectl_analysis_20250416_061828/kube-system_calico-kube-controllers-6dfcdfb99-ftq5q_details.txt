@@ -1,0 +1,71 @@
+Namespace: kube-system
+Pod Name: calico-kube-controllers-6dfcdfb99-ftq5q
+Status: 1/1
+Other Details: Running     2 (12h ago)    16h
+Name:                 calico-kube-controllers-6dfcdfb99-ftq5q
+Namespace:            kube-system
+Priority:             2000000000
+Priority Class Name:  system-cluster-critical
+Service Account:      calico-kube-controllers
+Node:                 jain-dgx-server/192.168.1.248
+Start Time:           Tue, 15 Apr 2025 13:25:57 +0000
+Labels:               k8s-app=calico-kube-controllers
+                      pod-template-hash=6dfcdfb99
+Annotations:          cni.projectcalico.org/containerID: 02d43add171420032cbdafc6304a2394af3e213db58a53c78ee0c09f5753f541
+                      cni.projectcalico.org/podIP: 10.233.119.136/32
+                      cni.projectcalico.org/podIPs: 10.233.119.136/32
+Status:               Running
+IP:                   10.233.119.136
+IPs:
+  IP:           10.233.119.136
+Controlled By:  ReplicaSet/calico-kube-controllers-6dfcdfb99
+Containers:
+  calico-kube-controllers:
+    Container ID:   docker://2f9b6b4d5e8a0efce83db7bba0868019283273c24a590eaed5e03ffaabcc4931
+    Image:          quay.io/calico/kube-controllers:v3.25.1
+    Image ID:       docker-pullable://quay.io/calico/kube-controllers@sha256:02c1232ee4b8c5a145c401ac1adb34a63ee7fc46b70b6ad0a4e068a774f25f8a
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:45 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    2
+      Started:      Tue, 15 Apr 2025 13:30:34 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:02 +0000
+    Ready:          True
+    Restart Count:  2
+    Limits:
+      cpu:     1
+      memory:  256M
+    Requests:
+      cpu:      30m
+      memory:   64M
+    Liveness:   exec [/usr/bin/check-status -l] delay=10s timeout=1s period=10s #success=1 #failure=6
+    Readiness:  exec [/usr/bin/check-status -r] delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:
+      ENABLED_CONTROLLERS:  node
+      DATASTORE_TYPE:       kubernetes
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-mjjtx (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-mjjtx:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 CriticalAddonsOnly op=Exists
+                             node-role.kubernetes.io/control-plane:NoSchedule
+                             node-role.kubernetes.io/master:NoSchedule
+                             node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

@@ -1,0 +1,17 @@
+2025/04/16 04:53:46 Starting overwatch
+2025/04/16 04:53:46 Using namespace: kube-system
+2025/04/16 04:53:46 Using in-cluster config to connect to apiserver
+2025/04/16 04:53:46 Using secret token for csrf signing
+2025/04/16 04:53:46 Initializing csrf token from kubernetes-dashboard-csrf secret
+2025/04/16 04:53:46 Empty token. Generating and storing in a secret kubernetes-dashboard-csrf
+2025/04/16 04:53:46 Successful initial request to the apiserver, version: v1.26.5
+2025/04/16 04:53:46 Generating JWE encryption key
+2025/04/16 04:53:46 New synchronizer has been registered: kubernetes-dashboard-key-holder-kube-system. Starting
+2025/04/16 04:53:46 Starting secret synchronizer for kubernetes-dashboard-key-holder in namespace kube-system
+2025/04/16 04:53:47 Initializing JWE encryption key from synchronized object
+2025/04/16 04:53:47 Creating in-cluster Sidecar client
+2025/04/16 04:53:47 Metric client health check failed: the server is currently unable to handle the request (get services dashboard-metrics-scraper). Retrying in 30 seconds.
+2025/04/16 04:53:47 Auto-generating certificates
+2025/04/16 04:53:47 Successfully created certificates
+2025/04/16 04:53:47 Serving securely on HTTPS port: 8443
+2025/04/16 04:54:17 Successful request to sidecar

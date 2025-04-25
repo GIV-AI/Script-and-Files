@@ -1,0 +1,214 @@
+[2025-04-21 05:29:08 +0000] [1] [INFO] Starting gunicorn 20.1.0
+[2025-04-21 05:29:08 +0000] [1] [INFO] Listening at: http://0.0.0.0:5000 (1)
+[2025-04-21 05:29:08 +0000] [1] [INFO] Using worker: sync
+[2025-04-21 05:29:08 +0000] [8] [INFO] Booting worker with pid: 8
+[2025-04-21 05:29:08 +0000] [9] [INFO] Booting worker with pid: 9
+[2025-04-21 05:29:08 +0000] [10] [INFO] Booting worker with pid: 10
+2025-04-21 05:29:09,364 | app | INFO | Setting STATIC_DIR to: /src/app/static
+2025-04-21 05:29:09,364 | app | INFO | Setting STATIC_DIR to: /src/app/static
+2025-04-21 05:29:09,364 | app | INFO | Setting STATIC_DIR to: /src/app/static
+2025-04-21 05:42:23,133 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:23,133 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 05:42:23,133 | kubeflow.kubeflow.crud_backend.serving | INFO | Serving index.html for path: /
+2025-04-21 05:42:23,133 | kubeflow.kubeflow.crud_backend.helpers | INFO | Setting the <base> to reflect the prefix: /tensorboards/
+2025-04-21 05:42:23,134 | kubeflow.kubeflow.crud_backend.csrf | INFO | Not setting Secure in CSRF cookie.
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET / HTTP/1.1" 200 6896 "http://192.168.1.248:32243/_/tensorboards/?ns=s-jain-training-15" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:23,163 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:23,163 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /static/runtime-es2015.1adba12e3fdb46400223.js HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:23,165 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:23,165 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 05:42:23,166 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:23,166 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /static/main-es2015.29b1499224c3bda84865.js HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /static/polyfills-es2015.92f2c10f3a1f8f873d8f.js HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:23,168 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:23,168 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /static/styles.5055c0d3caa36475abc5.css HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:23,172 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:23,172 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 05:42:23,172 | kubeflow.kubeflow.crud_backend.serving | INFO | Serving index.html for path: roboto-latin-normal400.465390c6e54c60f4a15f.woff2
+2025-04-21 05:42:23,172 | kubeflow.kubeflow.crud_backend.helpers | INFO | Setting the <base> to reflect the prefix: /tensorboards/
+2025-04-21 05:42:23,173 | kubeflow.kubeflow.crud_backend.csrf | INFO | Not setting Secure in CSRF cookie.
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /roboto-latin-normal400.465390c6e54c60f4a15f.woff2 HTTP/1.1" 200 6896 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:23,187 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:23,187 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /static/roboto-latin-normal400.465390c6e54c60f4a15f.woff2 HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/static/styles.5055c0d3caa36475abc5.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:23,327 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:23,327 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 05:42:23,328 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:23,328 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /static/roboto-latin-normal500.324b1e6d0f5ae7c6ab42.woff2 HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/static/styles.5055c0d3caa36475abc5.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /static/material-icons.a269996c82994471c539.woff2 HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/static/styles.5055c0d3caa36475abc5.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:23,345 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:23,345 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 05:42:23,360 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-30
+2025-04-21 05:42:23,360 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 05:42:23,360 | kubeflow.kubeflow.crud_backend.serving | INFO | Serving index.html for path: /
+2025-04-21 05:42:23,361 | kubeflow.kubeflow.crud_backend.helpers | INFO | Setting the <base> to reflect the prefix: /tensorboards/
+2025-04-21 05:42:23,361 | kubeflow.kubeflow.crud_backend.csrf | INFO | Not setting Secure in CSRF cookie.
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET / HTTP/1.1" 200 6896 "http://192.168.1.248:32243/_/tensorboards/?ns=s-jain-training-30" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /api/namespaces/s-jain-training-15/tensorboards HTTP/1.1" 200 93 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:23,390 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-30
+2025-04-21 05:42:23,391 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /static/runtime-es2015.1adba12e3fdb46400223.js HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:23,392 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-30
+2025-04-21 05:42:23,392 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /static/polyfills-es2015.92f2c10f3a1f8f873d8f.js HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:23,394 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-30
+2025-04-21 05:42:23,394 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /static/main-es2015.29b1499224c3bda84865.js HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:23,395 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-30
+2025-04-21 05:42:23,395 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /static/styles.5055c0d3caa36475abc5.css HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:23,397 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-30
+2025-04-21 05:42:23,397 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 05:42:23,397 | kubeflow.kubeflow.crud_backend.serving | INFO | Serving index.html for path: roboto-latin-normal400.465390c6e54c60f4a15f.woff2
+2025-04-21 05:42:23,397 | kubeflow.kubeflow.crud_backend.helpers | INFO | Setting the <base> to reflect the prefix: /tensorboards/
+2025-04-21 05:42:23,397 | kubeflow.kubeflow.crud_backend.csrf | INFO | Not setting Secure in CSRF cookie.
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /roboto-latin-normal400.465390c6e54c60f4a15f.woff2 HTTP/1.1" 200 6896 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:23,421 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-30
+2025-04-21 05:42:23,421 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /static/roboto-latin-normal400.465390c6e54c60f4a15f.woff2 HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/static/styles.5055c0d3caa36475abc5.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:23,545 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-30
+2025-04-21 05:42:23,545 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 05:42:23,545 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-30
+2025-04-21 05:42:23,545 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /static/material-icons.a269996c82994471c539.woff2 HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/static/styles.5055c0d3caa36475abc5.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /static/roboto-latin-normal500.324b1e6d0f5ae7c6ab42.woff2 HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/static/styles.5055c0d3caa36475abc5.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:23,566 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-30
+2025-04-21 05:42:23,566 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:23 +0000] "GET /api/namespaces/s-jain-training-30/tensorboards HTTP/1.1" 200 93 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:24,357 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:24,357 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:24 +0000] "GET /api/namespaces/s-jain-training-15/tensorboards HTTP/1.1" 200 93 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:27,123 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:27,123 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 05:42:27,123 | kubeflow.kubeflow.crud_backend.serving | INFO | Serving index.html for path: /
+2025-04-21 05:42:27,123 | kubeflow.kubeflow.crud_backend.helpers | INFO | Setting the <base> to reflect the prefix: /tensorboards/
+2025-04-21 05:42:27,123 | kubeflow.kubeflow.crud_backend.csrf | INFO | Not setting Secure in CSRF cookie.
+127.0.0.6 - - [21/Apr/2025:05:42:27 +0000] "GET / HTTP/1.1" 200 6896 "http://192.168.1.248:32243/_/tensorboards/?ns=s-jain-training-15" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:27,130 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:27,131 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:27 +0000] "GET /static/runtime-es2015.1adba12e3fdb46400223.js HTTP/1.1" 304 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:27,131 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:27,131 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 05:42:27,131 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:27,131 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:27 +0000] "GET /static/polyfills-es2015.92f2c10f3a1f8f873d8f.js HTTP/1.1" 304 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+127.0.0.6 - - [21/Apr/2025:05:42:27 +0000] "GET /static/main-es2015.29b1499224c3bda84865.js HTTP/1.1" 304 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:27,142 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:27,142 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:27 +0000] "GET /static/styles.5055c0d3caa36475abc5.css HTTP/1.1" 304 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:27,146 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:27,146 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 05:42:27,146 | kubeflow.kubeflow.crud_backend.serving | INFO | Serving index.html for path: roboto-latin-normal400.465390c6e54c60f4a15f.woff2
+2025-04-21 05:42:27,146 | kubeflow.kubeflow.crud_backend.helpers | INFO | Setting the <base> to reflect the prefix: /tensorboards/
+2025-04-21 05:42:27,146 | kubeflow.kubeflow.crud_backend.csrf | INFO | Not setting Secure in CSRF cookie.
+127.0.0.6 - - [21/Apr/2025:05:42:27 +0000] "GET /roboto-latin-normal400.465390c6e54c60f4a15f.woff2 HTTP/1.1" 200 6896 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:27,295 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:27,295 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:27 +0000] "GET /api/namespaces/s-jain-training-15/tensorboards HTTP/1.1" 200 93 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:28,338 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:28,338 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:28 +0000] "GET /api/namespaces/s-jain-training-15/tensorboards HTTP/1.1" 200 93 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:29,403 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:29,403 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:29 +0000] "GET /api/namespaces/s-jain-training-15/tensorboards HTTP/1.1" 200 93 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 05:42:31,420 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-15
+2025-04-21 05:42:31,420 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:05:42:31 +0000] "GET /api/namespaces/s-jain-training-15/tensorboards HTTP/1.1" 200 93 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:45:32,965 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: f-gi-aiml-1
+2025-04-21 06:45:32,965 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 06:45:32,965 | kubeflow.kubeflow.crud_backend.serving | INFO | Serving index.html for path: /
+2025-04-21 06:45:32,965 | kubeflow.kubeflow.crud_backend.helpers | INFO | Setting the <base> to reflect the prefix: /tensorboards/
+2025-04-21 06:45:32,965 | kubeflow.kubeflow.crud_backend.csrf | INFO | Not setting Secure in CSRF cookie.
+127.0.0.6 - - [21/Apr/2025:06:45:32 +0000] "GET / HTTP/1.1" 200 6896 "http://192.168.1.248:32243/_/tensorboards/?ns=f-gi-aiml-1" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:45:32,989 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: f-gi-aiml-1
+2025-04-21 06:45:32,989 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:45:32 +0000] "GET /static/runtime-es2015.1adba12e3fdb46400223.js HTTP/1.1" 304 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:45:32,990 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: f-gi-aiml-1
+2025-04-21 06:45:32,990 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:45:32 +0000] "GET /static/polyfills-es2015.92f2c10f3a1f8f873d8f.js HTTP/1.1" 304 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:45:32,992 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: f-gi-aiml-1
+2025-04-21 06:45:32,992 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 06:45:32,993 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: f-gi-aiml-1
+2025-04-21 06:45:32,993 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:45:32 +0000] "GET /static/main-es2015.29b1499224c3bda84865.js HTTP/1.1" 304 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:45:32,993 | kubeflow.kubeflow.crud_backend.serving | INFO | Serving index.html for path: roboto-latin-normal400.465390c6e54c60f4a15f.woff2
+2025-04-21 06:45:32,993 | kubeflow.kubeflow.crud_backend.helpers | INFO | Setting the <base> to reflect the prefix: /tensorboards/
+2025-04-21 06:45:32,993 | kubeflow.kubeflow.crud_backend.csrf | INFO | Not setting Secure in CSRF cookie.
+127.0.0.6 - - [21/Apr/2025:06:45:32 +0000] "GET /roboto-latin-normal400.465390c6e54c60f4a15f.woff2 HTTP/1.1" 200 6896 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:45:32,994 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: f-gi-aiml-1
+2025-04-21 06:45:32,994 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:45:32 +0000] "GET /static/styles.5055c0d3caa36475abc5.css HTTP/1.1" 304 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:45:33,017 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: f-gi-aiml-1
+2025-04-21 06:45:33,017 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:45:33 +0000] "GET /static/roboto-latin-normal400.465390c6e54c60f4a15f.woff2 HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/static/styles.5055c0d3caa36475abc5.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:45:33,150 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: f-gi-aiml-1
+2025-04-21 06:45:33,151 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 06:45:33,151 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: f-gi-aiml-1
+2025-04-21 06:45:33,151 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:45:33 +0000] "GET /static/roboto-latin-normal500.324b1e6d0f5ae7c6ab42.woff2 HTTP/1.1" 304 0 "http://192.168.1.248:32243/tensorboards/static/styles.5055c0d3caa36475abc5.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+127.0.0.6 - - [21/Apr/2025:06:45:33 +0000] "GET /static/material-icons.a269996c82994471c539.woff2 HTTP/1.1" 304 0 "http://192.168.1.248:32243/tensorboards/static/styles.5055c0d3caa36475abc5.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:45:33,182 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: f-gi-aiml-1
+2025-04-21 06:45:33,182 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:45:33 +0000] "GET /api/namespaces/f-gi-aiml-1/tensorboards HTTP/1.1" 200 86 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:42,121 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:42,121 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 06:47:42,121 | kubeflow.kubeflow.crud_backend.serving | INFO | Serving index.html for path: /
+2025-04-21 06:47:42,121 | kubeflow.kubeflow.crud_backend.helpers | INFO | Setting the <base> to reflect the prefix: /tensorboards/
+2025-04-21 06:47:42,121 | kubeflow.kubeflow.crud_backend.csrf | INFO | Not setting Secure in CSRF cookie.
+127.0.0.6 - - [21/Apr/2025:06:47:42 +0000] "GET / HTTP/1.1" 200 6896 "http://192.168.1.248:32243/_/tensorboards/?ns=s-jain-training-4" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:42,141 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:42,141 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:42 +0000] "GET /static/runtime-es2015.1adba12e3fdb46400223.js HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:42,144 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:42,144 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:42 +0000] "GET /static/polyfills-es2015.92f2c10f3a1f8f873d8f.js HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:42,144 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:42,144 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 06:47:42,144 | kubeflow.kubeflow.crud_backend.serving | INFO | Serving index.html for path: roboto-latin-normal400.465390c6e54c60f4a15f.woff2
+2025-04-21 06:47:42,144 | kubeflow.kubeflow.crud_backend.helpers | INFO | Setting the <base> to reflect the prefix: /tensorboards/
+2025-04-21 06:47:42,145 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:42,145 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 06:47:42,145 | kubeflow.kubeflow.crud_backend.csrf | INFO | Not setting Secure in CSRF cookie.
+127.0.0.6 - - [21/Apr/2025:06:47:42 +0000] "GET /roboto-latin-normal400.465390c6e54c60f4a15f.woff2 HTTP/1.1" 200 6896 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+127.0.0.6 - - [21/Apr/2025:06:47:42 +0000] "GET /static/main-es2015.29b1499224c3bda84865.js HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:42,147 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:42,147 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:42 +0000] "GET /static/styles.5055c0d3caa36475abc5.css HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:42,179 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:42,179 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:42 +0000] "GET /static/roboto-latin-normal400.465390c6e54c60f4a15f.woff2 HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/static/styles.5055c0d3caa36475abc5.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:42,287 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:42,287 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 06:47:42,287 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:42,287 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:42 +0000] "GET /static/roboto-latin-normal500.324b1e6d0f5ae7c6ab42.woff2 HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/static/styles.5055c0d3caa36475abc5.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+127.0.0.6 - - [21/Apr/2025:06:47:42 +0000] "GET /static/material-icons.a269996c82994471c539.woff2 HTTP/1.1" 200 0 "http://192.168.1.248:32243/tensorboards/static/styles.5055c0d3caa36475abc5.css" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:42,302 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:42,302 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:42 +0000] "GET /api/namespaces/s-jain-training-4/tensorboards HTTP/1.1" 200 92 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:43,308 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:43,308 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:43 +0000] "GET /api/namespaces/s-jain-training-4/tensorboards HTTP/1.1" 200 92 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:44,426 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:44,426 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:44 +0000] "GET /api/namespaces/s-jain-training-4/tensorboards HTTP/1.1" 200 92 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:46,428 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:46,428 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:46 +0000] "GET /api/namespaces/s-jain-training-4/tensorboards HTTP/1.1" 200 92 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:48,700 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:48,700 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 06:47:48,703 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:48,704 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:48 +0000] "GET /api/namespaces/s-jain-training-4/tensorboards HTTP/1.1" 200 92 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+127.0.0.6 - - [21/Apr/2025:06:47:48 +0000] "GET /api/namespaces/s-jain-training-4/poddefaults HTTP/1.1" 200 91 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:48,710 | app.routes.get | INFO | Found poddefaults: []
+127.0.0.6 - - [21/Apr/2025:06:47:50 +0000] "GET /api/namespaces/s-jain-training-4/tensorboards HTTP/1.1" 200 92 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"
+2025-04-21 06:47:50,540 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:50,540 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+2025-04-21 06:47:58,539 | kubeflow.kubeflow.crud_backend.authn | INFO | Handling request for user: s-jain-training-4
+2025-04-21 06:47:58,539 | kubeflow.kubeflow.crud_backend.csrf | INFO | Skipping CSRF check for safe method: GET
+127.0.0.6 - - [21/Apr/2025:06:47:58 +0000] "GET /api/namespaces/s-jain-training-4/tensorboards HTTP/1.1" 200 92 "http://192.168.1.248:32243/tensorboards/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0"

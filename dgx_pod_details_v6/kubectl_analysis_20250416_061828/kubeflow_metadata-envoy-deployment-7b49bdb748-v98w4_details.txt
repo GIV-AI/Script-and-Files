@@ -1,0 +1,59 @@
+Namespace: kubeflow
+Pod Name: metadata-envoy-deployment-7b49bdb748-v98w4
+Status: 1/1
+Other Details: Running     1 (12h ago)    16h
+Name:             metadata-envoy-deployment-7b49bdb748-v98w4
+Namespace:        kubeflow
+Priority:         0
+Service Account:  default
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:30 +0000
+Labels:           application-crd-id=kubeflow-pipelines
+                  component=metadata-envoy
+                  pod-template-hash=7b49bdb748
+Annotations:      cni.projectcalico.org/containerID: 90258479c82b4f0f0eb33e13066b6d7be77f8418515a57588822bbe23fc8bf08
+                  cni.projectcalico.org/podIP: 10.233.119.175/32
+                  cni.projectcalico.org/podIPs: 10.233.119.175/32
+                  sidecar.istio.io/inject: false
+Status:           Running
+IP:               10.233.119.175
+IPs:
+  IP:           10.233.119.175
+Controlled By:  ReplicaSet/metadata-envoy-deployment-7b49bdb748
+Containers:
+  container:
+    Container ID:   docker://24362eac63c924dbc68b1ee8b98093696e6f7fc7ceda64d01a2dea5dc822f27e
+    Image:          gcr.io/ml-pipeline/metadata-envoy:2.0.0-alpha.7
+    Image ID:       docker-pullable://gcr.io/ml-pipeline/metadata-envoy@sha256:a3e53e33c517865099b39fc94060d5dc21eb3d1c5a77f55d7c24549f44cb026c
+    Ports:          9090/TCP, 9901/TCP
+    Host Ports:     0/TCP, 0/TCP
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:43 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 15 Apr 2025 14:02:57 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:03 +0000
+    Ready:          True
+    Restart Count:  1
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-2mfgg (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-2mfgg:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

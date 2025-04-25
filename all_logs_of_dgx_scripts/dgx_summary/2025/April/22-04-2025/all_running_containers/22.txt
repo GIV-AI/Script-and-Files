@@ -1,0 +1,11 @@
+##################################
+##  Use the code with caution!  ##
+##################################
+List of containers most likely started by users that may be utilizing GPUs
+
+Container ID: 3967643df998, Name: /gracious_newton, Running since: 2025-04-21 05:35:54
+Container ID: 8ee9635832e3, Name: /flamboyant_nobel, Running since: 2025-04-21 05:34:04
+Container ID: ac6668e13eb8, Name: /stoic_poincare, Running since: 0001-01-01 00:00:00, Configured To Utilize NVIDIA GPU But Not Actively Using It
+Container ID: a117101c8235, Name: /trusting_poincare, Running since: 2025-04-19 18:55:44, Configured To Utilize NVIDIA GPU But Not Actively Using It
+Container ID: 2ace6a1a17be, Name: /ubuntujupytor, Running since: 2025-04-19 10:19:45
+Container ID: c693a3bbb69b, Name: /testing, Running since: 2025-04-17 10:37:51, Configured To Utilize NVIDIA GPU But Not Actively Using It

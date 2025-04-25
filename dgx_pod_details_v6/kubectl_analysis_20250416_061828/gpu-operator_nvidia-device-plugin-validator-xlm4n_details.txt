@@ -1,0 +1,86 @@
+Namespace: gpu-operator
+Pod Name: nvidia-device-plugin-validator-xlm4n
+Status: 0/1
+Other Details: Completed   0              83m
+Name:             nvidia-device-plugin-validator-xlm4n
+Namespace:        gpu-operator
+Priority:         0
+Service Account:  nvidia-operator-validator
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Wed, 16 Apr 2025 04:55:08 +0000
+Labels:           app=nvidia-device-plugin-validator
+Annotations:      cni.projectcalico.org/containerID: 81b7fbb4a46a3d6371a8dc7c0a1dc39235264748594cd63908deea3054fec293
+                  cni.projectcalico.org/podIP: 
+                  cni.projectcalico.org/podIPs: 
+Status:           Succeeded
+IP:               10.233.119.199
+IPs:
+  IP:           10.233.119.199
+Controlled By:  ClusterPolicy/cluster-policy
+Init Containers:
+  plugin-validation:
+    Container ID:  docker://bff7c80b81e7c9f03cffe98bc6a2a2a0ea6da1df86e77ae4e6808dba3169a09d
+    Image:         nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Image ID:      docker-pullable://nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:21dfc9c56b5f8bce73e60361d6e83759c3fa14dc6afc2d5ebdf1b891a936daf6
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+    Args:
+      vectorAdd
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Wed, 16 Apr 2025 04:55:10 +0000
+      Finished:     Wed, 16 Apr 2025 04:55:11 +0000
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      nvidia.com/gpu:  1
+    Requests:
+      nvidia.com/gpu:  1
+    Environment:       <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-42cw5 (ro)
+Containers:
+  nvidia-device-plugin-validator:
+    Container ID:  docker://cd10b8d60f2888138980fe4b7b1b9323c775ea69d32c5cbd4aabd34c1f4fe7fe
+    Image:         nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Image ID:      docker-pullable://nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:21dfc9c56b5f8bce73e60361d6e83759c3fa14dc6afc2d5ebdf1b891a936daf6
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+    Args:
+      echo device-plugin workload validation is successful
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Wed, 16 Apr 2025 04:55:12 +0000
+      Finished:     Wed, 16 Apr 2025 04:55:12 +0000
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-42cw5 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-42cw5:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+                             nvidia.com/gpu:NoSchedule op=Exists
+Events:                      <none>

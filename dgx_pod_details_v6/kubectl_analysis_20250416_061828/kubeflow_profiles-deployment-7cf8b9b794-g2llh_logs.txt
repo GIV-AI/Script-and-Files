@@ -1,0 +1,276 @@
+time="2025-04-16T04:53:48Z" level=info msg="Server started"
+E0416 04:53:48.221866       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:53:49.223441       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:53:50.224076       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:53:51.225411       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:53:52.226563       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:53:53.227655       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:53:54.229263       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:53:55.230799       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:53:56.232222       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:53:57.233513       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:53:58.235154       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:53:59.236242       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:00.237486       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:01.238515       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:02.240104       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:03.241501       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:04.243030       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:05.244244       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:06.245217       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:07.246324       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:08.247773       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:09.249878       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:10.251244       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:11.252401       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:12.253829       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:13.255113       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:14.256175       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:15.257747       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:16.259367       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:17.260079       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:18.260749       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:19.262248       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:20.263171       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:21.264250       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:22.265302       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:23.266170       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:24.267156       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:25.268355       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:26.269567       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:27.271170       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:28.271783       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:29.272679       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:30.273969       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:31.275206       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:32.275608       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:33.276248       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0416 04:54:34.276607       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/16 04:54:56 GET /metrics PrometheusMetrics 3.79655ms
+2025/04/16 04:55:26 GET /metrics PrometheusMetrics 5.61719ms
+2025/04/16 04:55:56 GET /metrics PrometheusMetrics 4.51658ms
+2025/04/16 04:56:26 GET /metrics PrometheusMetrics 5.727775ms
+2025/04/16 04:56:56 GET /metrics PrometheusMetrics 4.291895ms
+2025/04/16 04:57:26 GET /metrics PrometheusMetrics 3.909943ms
+2025/04/16 04:57:56 GET /metrics PrometheusMetrics 5.979962ms
+2025/04/16 04:58:26 GET /metrics PrometheusMetrics 5.262942ms
+2025/04/16 04:58:56 GET /metrics PrometheusMetrics 3.986993ms
+2025/04/16 04:59:26 GET /metrics PrometheusMetrics 5.118562ms
+2025/04/16 04:59:56 GET /metrics PrometheusMetrics 3.804722ms
+2025/04/16 05:00:26 GET /metrics PrometheusMetrics 5.721507ms
+2025/04/16 05:00:56 GET /metrics PrometheusMetrics 3.870522ms
+2025/04/16 05:01:05 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/16 05:01:05 GET /kfam/v1/role/clusteradmin?user=deepops%40example.com QueryClusterAdmin 81.59µs
+2025/04/16 05:01:05 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 05:01:05 GET /kfam/v1/bindings?user=deepops%40example.com ReadBinding 6.685908ms
+2025/04/16 05:01:05 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/16 05:01:05 GET /kfam/v1/role/clusteradmin?user=deepops%40example.com QueryClusterAdmin 45.035µs
+2025/04/16 05:01:05 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 05:01:05 GET /kfam/v1/bindings?user=deepops%40example.com ReadBinding 4.485678ms
+2025/04/16 05:01:05 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 05:01:05 GET /kfam/v1/bindings?namespace=kubeflow-deepops-example-com ReadBinding 71.472µs
+2025/04/16 05:01:26 GET /metrics PrometheusMetrics 5.532715ms
+2025/04/16 05:01:56 GET /metrics PrometheusMetrics 3.899068ms
+2025/04/16 05:02:26 GET /metrics PrometheusMetrics 4.381776ms
+2025/04/16 05:02:56 GET /metrics PrometheusMetrics 4.057467ms
+2025/04/16 05:03:26 GET /metrics PrometheusMetrics 6.889181ms
+2025/04/16 05:03:56 GET /metrics PrometheusMetrics 4.20239ms
+2025/04/16 05:04:26 GET /metrics PrometheusMetrics 3.885711ms
+2025/04/16 05:04:56 GET /metrics PrometheusMetrics 3.791411ms
+2025/04/16 05:05:26 GET /metrics PrometheusMetrics 4.005201ms
+2025/04/16 05:05:56 GET /metrics PrometheusMetrics 3.948168ms
+2025/04/16 05:06:26 GET /metrics PrometheusMetrics 3.66896ms
+2025/04/16 05:06:56 GET /metrics PrometheusMetrics 3.614405ms
+2025/04/16 05:07:26 GET /metrics PrometheusMetrics 3.725704ms
+2025/04/16 05:07:56 GET /metrics PrometheusMetrics 3.991902ms
+2025/04/16 05:08:26 GET /metrics PrometheusMetrics 4.211395ms
+2025/04/16 05:08:56 GET /metrics PrometheusMetrics 3.821922ms
+2025/04/16 05:09:26 GET /metrics PrometheusMetrics 4.076339ms
+2025/04/16 05:09:56 GET /metrics PrometheusMetrics 3.561323ms
+2025/04/16 05:10:26 GET /metrics PrometheusMetrics 3.989072ms
+2025/04/16 05:10:56 GET /metrics PrometheusMetrics 4.234607ms
+2025/04/16 05:11:26 GET /metrics PrometheusMetrics 4.532006ms
+2025/04/16 05:11:56 GET /metrics PrometheusMetrics 4.158969ms
+2025/04/16 05:12:26 GET /metrics PrometheusMetrics 3.787124ms
+2025/04/16 05:12:56 GET /metrics PrometheusMetrics 3.922977ms
+2025/04/16 05:13:26 GET /metrics PrometheusMetrics 3.974588ms
+2025/04/16 05:13:56 GET /metrics PrometheusMetrics 4.068804ms
+2025/04/16 05:14:26 GET /metrics PrometheusMetrics 4.006905ms
+2025/04/16 05:14:56 GET /metrics PrometheusMetrics 4.230278ms
+2025/04/16 05:15:26 GET /metrics PrometheusMetrics 3.894692ms
+2025/04/16 05:15:56 GET /metrics PrometheusMetrics 4.080934ms
+2025/04/16 05:16:26 GET /metrics PrometheusMetrics 3.725047ms
+2025/04/16 05:16:56 GET /metrics PrometheusMetrics 3.92142ms
+2025/04/16 05:17:26 GET /metrics PrometheusMetrics 3.972165ms
+2025/04/16 05:17:56 GET /metrics PrometheusMetrics 4.224572ms
+2025/04/16 05:18:26 GET /metrics PrometheusMetrics 3.63811ms
+2025/04/16 05:18:56 GET /metrics PrometheusMetrics 3.72899ms
+2025/04/16 05:19:26 GET /metrics PrometheusMetrics 3.853099ms
+2025/04/16 05:19:56 GET /metrics PrometheusMetrics 3.876909ms
+2025/04/16 05:20:26 GET /metrics PrometheusMetrics 3.616383ms
+2025/04/16 05:20:56 GET /metrics PrometheusMetrics 3.568863ms
+2025/04/16 05:21:26 GET /metrics PrometheusMetrics 3.806167ms
+2025/04/16 05:21:56 GET /metrics PrometheusMetrics 4.165173ms
+2025/04/16 05:22:26 GET /metrics PrometheusMetrics 4.522232ms
+2025/04/16 05:22:56 GET /metrics PrometheusMetrics 4.58098ms
+2025/04/16 05:23:26 GET /metrics PrometheusMetrics 4.551189ms
+2025/04/16 05:23:56 GET /metrics PrometheusMetrics 4.357609ms
+2025/04/16 05:24:26 GET /metrics PrometheusMetrics 4.206345ms
+2025/04/16 05:24:56 GET /metrics PrometheusMetrics 4.17842ms
+2025/04/16 05:25:26 GET /metrics PrometheusMetrics 3.697312ms
+2025/04/16 05:25:56 GET /metrics PrometheusMetrics 3.8458ms
+2025/04/16 05:26:26 GET /metrics PrometheusMetrics 3.954292ms
+2025/04/16 05:26:56 GET /metrics PrometheusMetrics 4.208442ms
+2025/04/16 05:27:26 GET /metrics PrometheusMetrics 4.142906ms
+2025/04/16 05:27:56 GET /metrics PrometheusMetrics 4.234026ms
+2025/04/16 05:28:26 GET /metrics PrometheusMetrics 3.824704ms
+2025/04/16 05:28:56 GET /metrics PrometheusMetrics 4.328784ms
+2025/04/16 05:29:26 GET /metrics PrometheusMetrics 4.353124ms
+2025/04/16 05:29:56 GET /metrics PrometheusMetrics 4.949903ms
+2025/04/16 05:30:26 GET /metrics PrometheusMetrics 4.081288ms
+2025/04/16 05:30:56 GET /metrics PrometheusMetrics 4.075461ms
+2025/04/16 05:31:26 GET /metrics PrometheusMetrics 3.829676ms
+2025/04/16 05:31:56 GET /metrics PrometheusMetrics 3.814665ms
+2025/04/16 05:32:26 GET /metrics PrometheusMetrics 4.085431ms
+2025/04/16 05:32:56 GET /metrics PrometheusMetrics 3.944536ms
+2025/04/16 05:33:26 GET /metrics PrometheusMetrics 3.891011ms
+2025/04/16 05:33:56 GET /metrics PrometheusMetrics 4.092565ms
+2025/04/16 05:34:26 GET /metrics PrometheusMetrics 3.800462ms
+2025/04/16 05:34:56 GET /metrics PrometheusMetrics 4.314805ms
+2025/04/16 05:35:26 GET /metrics PrometheusMetrics 4.058886ms
+2025/04/16 05:35:56 GET /metrics PrometheusMetrics 4.329243ms
+2025/04/16 05:36:26 GET /metrics PrometheusMetrics 3.883857ms
+2025/04/16 05:36:56 GET /metrics PrometheusMetrics 3.854015ms
+2025/04/16 05:37:26 GET /metrics PrometheusMetrics 3.976898ms
+2025/04/16 05:37:56 GET /metrics PrometheusMetrics 4.408832ms
+2025/04/16 05:38:26 GET /metrics PrometheusMetrics 4.043737ms
+2025/04/16 05:38:56 GET /metrics PrometheusMetrics 4.170503ms
+2025/04/16 05:39:26 GET /metrics PrometheusMetrics 4.466923ms
+2025/04/16 05:39:56 GET /metrics PrometheusMetrics 4.089783ms
+2025/04/16 05:40:26 GET /metrics PrometheusMetrics 3.872907ms
+2025/04/16 05:40:56 GET /metrics PrometheusMetrics 4.059758ms
+2025/04/16 05:41:26 GET /metrics PrometheusMetrics 3.943144ms
+2025/04/16 05:41:56 GET /metrics PrometheusMetrics 4.10273ms
+2025/04/16 05:42:26 GET /metrics PrometheusMetrics 3.879359ms
+2025/04/16 05:42:56 GET /metrics PrometheusMetrics 4.487093ms
+2025/04/16 05:43:26 GET /metrics PrometheusMetrics 4.360007ms
+2025/04/16 05:43:56 GET /metrics PrometheusMetrics 4.046252ms
+2025/04/16 05:44:26 GET /metrics PrometheusMetrics 3.826693ms
+2025/04/16 05:44:56 GET /metrics PrometheusMetrics 4.06103ms
+2025/04/16 05:45:26 GET /metrics PrometheusMetrics 7.579062ms
+2025/04/16 05:45:56 GET /metrics PrometheusMetrics 4.514674ms
+2025/04/16 05:46:26 GET /metrics PrometheusMetrics 5.756292ms
+2025/04/16 05:46:56 GET /metrics PrometheusMetrics 4.632729ms
+2025/04/16 05:47:26 GET /metrics PrometheusMetrics 5.972379ms
+2025/04/16 05:47:56 GET /metrics PrometheusMetrics 4.463276ms
+2025/04/16 05:48:26 GET /metrics PrometheusMetrics 5.719069ms
+2025/04/16 05:48:56 GET /metrics PrometheusMetrics 4.291696ms
+2025/04/16 05:49:26 GET /metrics PrometheusMetrics 4.016349ms
+2025/04/16 05:49:56 GET /metrics PrometheusMetrics 4.260063ms
+2025/04/16 05:50:11 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/16 05:50:11 GET /kfam/v1/role/clusteradmin?user=deepops%40example.com QueryClusterAdmin 85.45µs
+2025/04/16 05:50:11 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 05:50:11 GET /kfam/v1/bindings?user=deepops%40example.com ReadBinding 5.456819ms
+2025/04/16 05:50:11 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/16 05:50:11 GET /kfam/v1/role/clusteradmin?user=deepops%40example.com QueryClusterAdmin 37.351µs
+2025/04/16 05:50:11 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 05:50:11 GET /kfam/v1/bindings?user=deepops%40example.com ReadBinding 4.075896ms
+2025/04/16 05:50:11 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 05:50:11 GET /kfam/v1/bindings?namespace=kubeflow-deepops-example-com ReadBinding 102.019µs
+2025/04/16 05:50:26 GET /metrics PrometheusMetrics 4.632034ms
+2025/04/16 05:50:56 GET /metrics PrometheusMetrics 3.744349ms
+2025/04/16 05:51:26 GET /metrics PrometheusMetrics 3.853178ms
+2025/04/16 05:51:56 GET /metrics PrometheusMetrics 4.268719ms
+2025/04/16 05:52:26 GET /metrics PrometheusMetrics 3.930655ms
+2025/04/16 05:52:56 GET /metrics PrometheusMetrics 4.027535ms
+2025/04/16 05:53:26 GET /metrics PrometheusMetrics 3.534486ms
+2025/04/16 05:53:56 GET /metrics PrometheusMetrics 4.741915ms
+2025/04/16 05:54:26 GET /metrics PrometheusMetrics 4.006814ms
+2025/04/16 05:54:56 GET /metrics PrometheusMetrics 4.145222ms
+2025/04/16 05:55:26 GET /metrics PrometheusMetrics 3.752798ms
+2025/04/16 05:55:56 GET /metrics PrometheusMetrics 4.042923ms
+2025/04/16 05:56:26 GET /metrics PrometheusMetrics 3.724748ms
+2025/04/16 05:56:56 GET /metrics PrometheusMetrics 4.59681ms
+2025/04/16 05:57:26 GET /metrics PrometheusMetrics 4.076985ms
+2025/04/16 05:57:56 GET /metrics PrometheusMetrics 4.130261ms
+2025/04/16 05:58:26 GET /metrics PrometheusMetrics 4.241098ms
+2025/04/16 05:58:56 GET /metrics PrometheusMetrics 4.496098ms
+2025/04/16 05:59:26 GET /metrics PrometheusMetrics 3.846923ms
+2025/04/16 05:59:56 GET /metrics PrometheusMetrics 4.197594ms
+2025/04/16 06:00:26 GET /metrics PrometheusMetrics 4.548706ms
+2025/04/16 06:00:56 GET /metrics PrometheusMetrics 4.140222ms
+2025/04/16 06:01:26 GET /metrics PrometheusMetrics 4.062265ms
+2025/04/16 06:01:56 GET /metrics PrometheusMetrics 4.403341ms
+2025/04/16 06:02:26 GET /metrics PrometheusMetrics 4.166685ms
+2025/04/16 06:02:56 GET /metrics PrometheusMetrics 4.063015ms
+2025/04/16 06:03:26 GET /metrics PrometheusMetrics 3.486708ms
+2025/04/16 06:03:56 GET /metrics PrometheusMetrics 4.10808ms
+2025/04/16 06:04:26 GET /metrics PrometheusMetrics 3.770176ms
+2025/04/16 06:04:56 GET /metrics PrometheusMetrics 4.33856ms
+2025/04/16 06:05:26 GET /metrics PrometheusMetrics 3.959976ms
+2025/04/16 06:05:29 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/16 06:05:29 GET /kfam/v1/role/clusteradmin?user=f-test-test123-1234 QueryClusterAdmin 79.613µs
+2025/04/16 06:05:29 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 06:05:29 GET /kfam/v1/bindings?user=f-test-test123-1234 ReadBinding 6.738128ms
+2025/04/16 06:05:29 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/16 06:05:29 GET /kfam/v1/role/clusteradmin?user=f-test-test123-1234 QueryClusterAdmin 32.337µs
+2025/04/16 06:05:29 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 06:05:29 GET /kfam/v1/bindings?user=f-test-test123-1234 ReadBinding 5.989686ms
+2025/04/16 06:05:29 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 06:05:29 GET /kfam/v1/bindings?namespace=f-test-test123-1234 ReadBinding 56.509µs
+2025/04/16 06:05:56 GET /metrics PrometheusMetrics 4.172401ms
+2025/04/16 06:06:26 GET /metrics PrometheusMetrics 3.698773ms
+2025/04/16 06:06:56 GET /metrics PrometheusMetrics 3.973675ms
+2025/04/16 06:07:26 GET /metrics PrometheusMetrics 3.873151ms
+2025/04/16 06:07:56 GET /metrics PrometheusMetrics 3.883429ms
+2025/04/16 06:08:26 GET /metrics PrometheusMetrics 3.776502ms
+2025/04/16 06:08:56 GET /metrics PrometheusMetrics 4.060795ms
+2025/04/16 06:09:26 GET /metrics PrometheusMetrics 4.376278ms
+2025/04/16 06:09:56 GET /metrics PrometheusMetrics 4.535566ms
+2025/04/16 06:10:26 GET /metrics PrometheusMetrics 4.088359ms
+2025/04/16 06:10:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/16 06:10:32 GET /kfam/v1/role/clusteradmin?user=f-test-test123-1234 QueryClusterAdmin 74.597µs
+2025/04/16 06:10:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 06:10:32 GET /kfam/v1/bindings?user=f-test-test123-1234 ReadBinding 6.882169ms
+2025/04/16 06:10:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/16 06:10:32 GET /kfam/v1/role/clusteradmin?user=f-test-test123-1234 QueryClusterAdmin 46.481µs
+2025/04/16 06:10:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 06:10:32 GET /kfam/v1/bindings?user=f-test-test123-1234 ReadBinding 5.410207ms
+2025/04/16 06:10:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 06:10:32 GET /kfam/v1/bindings?namespace=f-test-test123-1234 ReadBinding 42.961µs
+2025/04/16 06:10:56 GET /metrics PrometheusMetrics 4.173035ms
+2025/04/16 06:11:26 GET /metrics PrometheusMetrics 4.642111ms
+2025/04/16 06:11:54 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/16 06:11:54 GET /kfam/v1/role/clusteradmin?user=f-test-test123-1234 QueryClusterAdmin 53.116µs
+2025/04/16 06:11:54 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 06:11:54 GET /kfam/v1/bindings?user=f-test-test123-1234 ReadBinding 3.973024ms
+2025/04/16 06:11:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/16 06:11:55 GET /kfam/v1/role/clusteradmin?user=f-test-test123-1234 QueryClusterAdmin 45.578µs
+2025/04/16 06:11:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 06:11:55 GET /kfam/v1/bindings?user=f-test-test123-1234 ReadBinding 5.712827ms
+2025/04/16 06:11:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 06:11:55 GET /kfam/v1/bindings?namespace=f-test-test123-1234 ReadBinding 79.612µs
+2025/04/16 06:11:56 GET /metrics PrometheusMetrics 4.42236ms
+2025/04/16 06:12:26 GET /metrics PrometheusMetrics 4.055373ms
+2025/04/16 06:12:35 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/16 06:12:35 GET /kfam/v1/role/clusteradmin?user=f-test-test123-1234 QueryClusterAdmin 72.266µs
+2025/04/16 06:12:35 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 06:12:35 GET /kfam/v1/bindings?user=f-test-test123-1234 ReadBinding 5.802341ms
+2025/04/16 06:12:36 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/16 06:12:36 GET /kfam/v1/role/clusteradmin?user=f-test-test123-1234 QueryClusterAdmin 29.098µs
+2025/04/16 06:12:36 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 06:12:36 GET /kfam/v1/bindings?user=f-test-test123-1234 ReadBinding 5.165463ms
+2025/04/16 06:12:36 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/16 06:12:36 GET /kfam/v1/bindings?namespace=f-test-test123-1234 ReadBinding 88.085µs
+2025/04/16 06:12:56 GET /metrics PrometheusMetrics 4.043917ms
+2025/04/16 06:13:26 GET /metrics PrometheusMetrics 4.072871ms
+2025/04/16 06:13:56 GET /metrics PrometheusMetrics 4.16743ms
+2025/04/16 06:14:26 GET /metrics PrometheusMetrics 3.922428ms
+2025/04/16 06:14:56 GET /metrics PrometheusMetrics 3.999651ms
+2025/04/16 06:15:26 GET /metrics PrometheusMetrics 4.112517ms
+2025/04/16 06:15:56 GET /metrics PrometheusMetrics 4.203382ms
+2025/04/16 06:16:26 GET /metrics PrometheusMetrics 4.043639ms
+2025/04/16 06:16:56 GET /metrics PrometheusMetrics 3.74557ms
+2025/04/16 06:17:26 GET /metrics PrometheusMetrics 3.813001ms
+2025/04/16 06:17:56 GET /metrics PrometheusMetrics 4.343748ms
+2025/04/16 06:18:26 GET /metrics PrometheusMetrics 3.874533ms

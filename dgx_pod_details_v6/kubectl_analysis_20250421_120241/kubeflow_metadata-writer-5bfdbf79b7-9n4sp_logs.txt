@@ -1,0 +1,37 @@
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Failed to access the Metadata store. Exception: "no healthy upstream"
+Connected to the metadata store
+Start watching Kubernetes Pods created by Argo
+Start watching Kubernetes Pods created by Argo
+Start watching Kubernetes Pods created by Argo
+Start watching Kubernetes Pods created by Argo
+Start watching Kubernetes Pods created by Argo
+Start watching Kubernetes Pods created by Argo
+Start watching Kubernetes Pods created by Argo
+Start watching Kubernetes Pods created by Argo
+Start watching Kubernetes Pods created by Argo
+Start watching Kubernetes Pods created by Argo
+Start watching Kubernetes Pods created by Argo
+Start watching Kubernetes Pods created by Argo
+Start watching Kubernetes Pods created by Argo

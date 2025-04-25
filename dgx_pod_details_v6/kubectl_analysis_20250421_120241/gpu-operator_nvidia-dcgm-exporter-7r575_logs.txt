@@ -1,0 +1,11 @@
+Defaulted container "nvidia-dcgm-exporter" out of: nvidia-dcgm-exporter, toolkit-validation (init)
+time="2025-04-21T05:36:17Z" level=info msg="Starting dcgm-exporter"
+time="2025-04-21T05:36:28Z" level=info msg="DCGM successfully initialized!"
+time="2025-04-21T05:36:28Z" level=info msg="Collecting DCP Metrics"
+time="2025-04-21T05:36:28Z" level=info msg="No configmap data specified, falling back to metric file /etc/dcgm-exporter/dcp-metrics-included.csv"
+time="2025-04-21T05:36:28Z" level=info msg="Initializing system entities of type: GPU"
+time="2025-04-21T05:37:33Z" level=info msg="Initializing system entities of type: NvSwitch"
+time="2025-04-21T05:37:33Z" level=info msg="Initializing system entities of type: NvLink"
+time="2025-04-21T05:37:33Z" level=info msg="Kubernetes metrics collection enabled!"
+time="2025-04-21T05:37:33Z" level=info msg="Pipeline starting"
+time="2025-04-21T05:37:33Z" level=info msg="Starting webserver"

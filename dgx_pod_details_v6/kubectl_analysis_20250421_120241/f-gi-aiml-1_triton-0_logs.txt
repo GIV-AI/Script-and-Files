@@ -1,0 +1,32 @@
+[I 2025-04-21 10:21:27.251 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-04-21 10:21:27.253 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-04-21 10:21:27.254 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 10:21:27.254 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 10:21:27.254 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 10:21:27.254 LabApp] 'base_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 10:21:27.256 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-04-21 10:21:27.256 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-04-21 10:21:27.258 ServerApp] notebook | extension was successfully linked.
+[I 2025-04-21 10:21:27.259 ServerApp] Writing Jupyter server cookie secret to /root/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2025-04-21 10:21:27.406 ServerApp] notebook_shim | extension was successfully linked.
+[W 2025-04-21 10:21:27.416 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 2025-04-21 10:21:27.416 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-04-21 10:21:27.418 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-04-21 10:21:27.419 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-04-21 10:21:27.420 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.10/dist-packages/jupyterlab
+[I 2025-04-21 10:21:27.420 LabApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+[I 2025-04-21 10:21:27.420 LabApp] Extension Manager is 'pypi'.
+[I 2025-04-21 10:21:27.485 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-04-21 10:21:27.487 ServerApp] notebook | extension was successfully loaded.
+[I 2025-04-21 10:21:27.487 ServerApp] Serving notebooks from local directory: /workspace
+[I 2025-04-21 10:21:27.487 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-04-21 10:21:27.487 ServerApp] http://triton-0:8888/notebook/f-gi-aiml-1/triton/lab
+[I 2025-04-21 10:21:27.487 ServerApp]     http://127.0.0.1:8888/notebook/f-gi-aiml-1/triton/lab
+[I 2025-04-21 10:21:27.487 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-04-21 10:21:27.499 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-04-21 10:21:43.926 ServerApp] 302 GET /notebook/f-gi-aiml-1/triton/ (@127.0.0.6) 0.51ms
+[W 2025-04-21 10:21:45.067 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 10:21:57.641 ServerApp] New terminal with automatic name: 1
+[I 2025-04-21 10:22:43.649 ServerApp] Uploading file to /testimg.jpg
+[I 2025-04-21 10:22:44.071 ServerApp] Saving file at /testimg.jpg
+[W 2025-04-21 11:42:57.702 TerminalsExtensionApp] WebSocket ping timeout after 90018 ms.

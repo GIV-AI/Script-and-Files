@@ -1,0 +1,227 @@
+Namespace: knative-serving
+Pod Name: webhook-665c977469-gvbx5
+Status: 2/2
+Other Details: Running                    47 (6h31m ago)   5d22h
+Name:             webhook-665c977469-gvbx5
+Namespace:        knative-serving
+Priority:         0
+Service Account:  controller
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:27 +0000
+Labels:           app=webhook
+                  app.kubernetes.io/name=knative-serving
+                  app.kubernetes.io/version=1.8.0
+                  pod-template-hash=665c977469
+                  role=webhook
+                  security.istio.io/tlsMode=istio
+                  service.istio.io/canonical-name=knative-serving
+                  service.istio.io/canonical-revision=1.8.0
+Annotations:      cluster-autoscaler.kubernetes.io/safe-to-evict: false
+                  cni.projectcalico.org/containerID: d24d255727b4804b5d13791a0af3b4f91f2cfdf302c32967c4d46c953fb6d54f
+                  cni.projectcalico.org/podIP: 10.233.120.46/32
+                  cni.projectcalico.org/podIPs: 10.233.120.46/32
+                  kubectl.kubernetes.io/default-container: webhook
+                  kubectl.kubernetes.io/default-logs-container: webhook
+                  prometheus.io/path: /stats/prometheus
+                  prometheus.io/port: 15020
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/inject: true
+                  sidecar.istio.io/status:
+                    {"initContainers":["istio-init"],"containers":["istio-proxy"],"volumes":["workload-socket","credential-socket","workload-certs","istio-env...
+Status:           Running
+IP:               10.233.120.46
+IPs:
+  IP:           10.233.120.46
+Controlled By:  ReplicaSet/webhook-665c977469
+Init Containers:
+  istio-init:
+    Container ID:  docker://ce2bd8531e7cd362898454a5465c6e895f4d8d0e46dc9c2d642e04f43d99e189
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      istio-iptables
+      -p
+      15001
+      -z
+      15006
+      -u
+      1337
+      -m
+      REDIRECT
+      -i
+      *
+      -x
+      
+      -b
+      *
+      -d
+      15090,15021,15020
+      --log_output_level=default:info
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:29:08 +0000
+      Finished:     Mon, 21 Apr 2025 05:29:08 +0000
+    Ready:          True
+    Restart Count:  7
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:        10m
+      memory:     40Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-pnz2v (ro)
+Containers:
+  webhook:
+    Container ID:   docker://c65deba69a09b481f7dcc283c1b79e1ffe00775ad89888cd06ac8ba962fdfaf1
+    Image:          gcr.io/knative-releases/knative.dev/serving/cmd/webhook@sha256:bc13765ba4895c0fa318a065392d05d0adc0e20415c739e0aacb3f56140bf9ae
+    Image ID:       docker-pullable://gcr.io/knative-releases/knative.dev/serving/cmd/webhook@sha256:bc13765ba4895c0fa318a065392d05d0adc0e20415c739e0aacb3f56140bf9ae
+    Ports:          9090/TCP, 8008/TCP, 8443/TCP
+    Host Ports:     0/TCP, 0/TCP, 0/TCP
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:32:20 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Mon, 21 Apr 2025 05:30:47 +0000
+      Finished:     Mon, 21 Apr 2025 05:30:52 +0000
+    Ready:          True
+    Restart Count:  40
+    Limits:
+      cpu:     500m
+      memory:  500Mi
+    Requests:
+      cpu:      100m
+      memory:   100Mi
+    Liveness:   http-get http://:15020/app-health/webhook/livez delay=20s timeout=1s period=1s #success=1 #failure=6
+    Readiness:  http-get http://:15020/app-health/webhook/readyz delay=0s timeout=1s period=1s #success=1 #failure=3
+    Environment:
+      POD_NAME:                   webhook-665c977469-gvbx5 (v1:metadata.name)
+      SYSTEM_NAMESPACE:           knative-serving (v1:metadata.namespace)
+      CONFIG_LOGGING_NAME:        config-logging
+      CONFIG_OBSERVABILITY_NAME:  config-observability
+      WEBHOOK_NAME:               webhook
+      WEBHOOK_PORT:               8443
+      METRICS_DOMAIN:             knative.dev/internal/serving
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-pnz2v (ro)
+  istio-proxy:
+    Container ID:  docker://2e37b37605bc64c50b3775e0c70af342b52e241140c0e425734c31aa1105b758
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          15090/TCP
+    Host Port:     0/TCP
+    Args:
+      proxy
+      sidecar
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+      --concurrency
+      2
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:08 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 03:55:45 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:46 +0000
+    Ready:          True
+    Restart Count:  7
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=1s timeout=3s period=2s #success=1 #failure=30
+    Environment:
+      JWT_POLICY:                    third-party-jwt
+      PILOT_CERT_PROVIDER:           istiod
+      CA_ADDR:                       istiod.istio-system.svc:15012
+      POD_NAME:                      webhook-665c977469-gvbx5 (v1:metadata.name)
+      POD_NAMESPACE:                 knative-serving (v1:metadata.namespace)
+      INSTANCE_IP:                    (v1:status.podIP)
+      SERVICE_ACCOUNT:                (v1:spec.serviceAccountName)
+      HOST_IP:                        (v1:status.hostIP)
+      PROXY_CONFIG:                  {}
+                                     
+      ISTIO_META_POD_PORTS:          [
+                                         {"name":"metrics","containerPort":9090,"protocol":"TCP"}
+                                         ,{"name":"profiling","containerPort":8008,"protocol":"TCP"}
+                                         ,{"name":"https-webhook","containerPort":8443,"protocol":"TCP"}
+                                     ]
+      ISTIO_META_APP_CONTAINERS:     webhook
+      ISTIO_META_CLUSTER_ID:         Kubernetes
+      ISTIO_META_INTERCEPTION_MODE:  REDIRECT
+      ISTIO_META_WORKLOAD_NAME:      webhook
+      ISTIO_META_OWNER:              kubernetes://apis/apps/v1/namespaces/knative-serving/deployments/webhook
+      ISTIO_META_MESH_ID:            cluster.local
+      TRUST_DOMAIN:                  cluster.local
+      ISTIO_KUBE_APP_PROBERS:        {"/app-health/webhook/livez":{"httpGet":{"path":"/","port":8443,"scheme":"HTTPS","httpHeaders":[{"name":"k-kubelet-probe","value":"webhook"}]},"timeoutSeconds":1},"/app-health/webhook/readyz":{"httpGet":{"path":"/","port":8443,"scheme":"HTTPS","httpHeaders":[{"name":"k-kubelet-probe","value":"webhook"}]},"timeoutSeconds":1}}
+    Mounts:
+      /etc/istio/pod from istio-podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-pnz2v (ro)
+      /var/run/secrets/tokens from istio-token (rw)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  kube-api-access-pnz2v:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

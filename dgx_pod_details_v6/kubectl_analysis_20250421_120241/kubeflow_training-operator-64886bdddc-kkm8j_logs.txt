@@ -1,0 +1,41 @@
+I0421 05:30:45.055817       1 request.go:682] Waited for 1.046496899s due to client-side throttling, not priority and fairness, request: GET:https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1?timeout=32s
+1.7452134453086755e+09	INFO	controller-runtime.metrics	Metrics server is starting to listen	{"addr": ":8080"}
+I0421 05:30:55.056040       1 request.go:682] Waited for 1.097668227s due to client-side throttling, not priority and fairness, request: GET:https://10.233.0.1:443/apis/sources.knative.dev/v1?timeout=32s
+I0421 05:31:05.056435       1 request.go:682] Waited for 2.548411914s due to client-side throttling, not priority and fairness, request: GET:https://10.233.0.1:443/apis/serving.kserve.io/v1alpha1?timeout=32s
+I0421 05:31:15.105579       1 request.go:682] Waited for 1.197072297s due to client-side throttling, not priority and fairness, request: GET:https://10.233.0.1:443/apis/argoproj.io/v1alpha1?timeout=32s
+1.74521347950785e+09	INFO	setup	starting manager
+1.7452134795105867e+09	INFO	Starting server	{"path": "/metrics", "kind": "metrics", "addr": "[::]:8080"}
+1.745213479510683e+09	INFO	Starting EventSource	{"controller": "mxjob-controller", "source": "kind source: *v1.MXJob"}
+1.7452134795107055e+09	INFO	Starting EventSource	{"controller": "mxjob-controller", "source": "kind source: *v1.Pod"}
+1.7452134795107105e+09	INFO	Starting EventSource	{"controller": "mxjob-controller", "source": "kind source: *v1.Service"}
+1.7452134795106647e+09	INFO	Starting EventSource	{"controller": "pytorchjob-controller", "source": "kind source: *v1.PyTorchJob"}
+1.7452134795107334e+09	INFO	Starting EventSource	{"controller": "pytorchjob-controller", "source": "kind source: *v1.Pod"}
+1.7452134795107396e+09	INFO	Starting EventSource	{"controller": "pytorchjob-controller", "source": "kind source: *v1.Service"}
+1.7452134795107422e+09	INFO	Starting Controller	{"controller": "pytorchjob-controller"}
+1.745213479510719e+09	INFO	Starting Controller	{"controller": "mxjob-controller"}
+1.745213479510758e+09	INFO	Starting EventSource	{"controller": "paddlejob-controller", "source": "kind source: *v1.PaddleJob"}
+1.7452134795107808e+09	INFO	Starting EventSource	{"controller": "paddlejob-controller", "source": "kind source: *v1.Pod"}
+1.7452134795107872e+09	INFO	Starting EventSource	{"controller": "paddlejob-controller", "source": "kind source: *v1.Service"}
+1.7452134795107906e+09	INFO	Starting Controller	{"controller": "paddlejob-controller"}
+1.7452134795106792e+09	INFO	Starting EventSource	{"controller": "xgboostjob-controller", "source": "kind source: *v1.XGBoostJob"}
+1.745213479510829e+09	INFO	Starting EventSource	{"controller": "xgboostjob-controller", "source": "kind source: *v1.Pod"}
+1.7452134795108488e+09	INFO	Starting EventSource	{"controller": "xgboostjob-controller", "source": "kind source: *v1.Service"}
+1.745213479510854e+09	INFO	Starting Controller	{"controller": "xgboostjob-controller"}
+1.7452134795108752e+09	INFO	Starting server	{"kind": "health probe", "addr": "[::]:8081"}
+1.7452134795108764e+09	INFO	Starting EventSource	{"controller": "mpijob-controller", "source": "kind source: *v1.MPIJob"}
+1.7452134795109196e+09	INFO	Starting EventSource	{"controller": "tfjob-controller", "source": "kind source: *v1.TFJob"}
+1.7452134795109284e+09	INFO	Starting EventSource	{"controller": "mpijob-controller", "source": "kind source: *v1.Pod"}
+1.7452134795109334e+09	INFO	Starting EventSource	{"controller": "tfjob-controller", "source": "kind source: *v1.Pod"}
+1.7452134795109365e+09	INFO	Starting EventSource	{"controller": "mpijob-controller", "source": "kind source: *v1.ConfigMap"}
+1.74521347951094e+09	INFO	Starting EventSource	{"controller": "tfjob-controller", "source": "kind source: *v1.Service"}
+1.7452134795109468e+09	INFO	Starting EventSource	{"controller": "mpijob-controller", "source": "kind source: *v1.Role"}
+1.7452134795109534e+09	INFO	Starting EventSource	{"controller": "mpijob-controller", "source": "kind source: *v1.RoleBinding"}
+1.7452134795109606e+09	INFO	Starting EventSource	{"controller": "mpijob-controller", "source": "kind source: *v1.ServiceAccount"}
+1.7452134795109658e+09	INFO	Starting Controller	{"controller": "mpijob-controller"}
+1.7452134795109482e+09	INFO	Starting Controller	{"controller": "tfjob-controller"}
+1.7452134796127646e+09	INFO	Starting workers	{"controller": "pytorchjob-controller", "worker count": 1}
+1.7452134796127784e+09	INFO	Starting workers	{"controller": "paddlejob-controller", "worker count": 1}
+1.7452134796130655e+09	INFO	Starting workers	{"controller": "tfjob-controller", "worker count": 1}
+1.7452134796130664e+09	INFO	Starting workers	{"controller": "xgboostjob-controller", "worker count": 1}
+1.7452134796131132e+09	INFO	Starting workers	{"controller": "mpijob-controller", "worker count": 1}
+1.7452134796131063e+09	INFO	Starting workers	{"controller": "mxjob-controller", "worker count": 1}

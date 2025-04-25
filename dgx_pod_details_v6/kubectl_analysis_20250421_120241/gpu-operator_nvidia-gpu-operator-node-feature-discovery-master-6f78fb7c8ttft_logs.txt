@@ -1,0 +1,11 @@
+W0421 05:28:59.577666       1 main.go:57] -featurerules-controller is deprecated, use '-crd-controller' flag instead
+I0421 05:28:59.578636       1 nfd-master.go:146] Node Feature Discovery Master v0.12.1
+I0421 05:28:59.578641       1 nfd-master.go:150] NodeName: "jain-dgx-server"
+I0421 05:28:59.578644       1 nfd-master.go:151] Kubernetes namespace: "gpu-operator"
+I0421 05:28:59.578648       1 nfd-master.go:162] starting nfd api controller
+I0421 05:28:59.593220       1 component.go:36] [core][Server #1] Server created
+I0421 05:28:59.593232       1 nfd-master.go:238] gRPC server serving on port: 8080
+I0421 05:28:59.593889       1 component.go:36] [core][Server #1 ListenSocket #2] ListenSocket created
+I0421 05:29:00.591959       1 nfd-master.go:487] will process all nodes in the cluster
+I0421 05:30:21.678066       1 nfd-master.go:805] node "jain-dgx-server" updated
+I0421 05:38:24.973859       1 nfd-master.go:805] node "jain-dgx-server" updated

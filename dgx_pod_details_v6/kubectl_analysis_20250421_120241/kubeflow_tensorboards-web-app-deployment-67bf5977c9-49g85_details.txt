@@ -1,0 +1,209 @@
+Namespace: kubeflow
+Pod Name: tensorboards-web-app-deployment-67bf5977c9-49g85
+Status: 2/2
+Other Details: Running                    14 (6h51m ago)   5d22h
+Name:             tensorboards-web-app-deployment-67bf5977c9-49g85
+Namespace:        kubeflow
+Priority:         0
+Service Account:  tensorboards-web-app-service-account
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:32 +0000
+Labels:           app=tensorboards-web-app
+                  kustomize.component=tensorboards-web-app
+                  pod-template-hash=67bf5977c9
+                  security.istio.io/tlsMode=istio
+                  service.istio.io/canonical-name=tensorboards-web-app
+                  service.istio.io/canonical-revision=latest
+Annotations:      cni.projectcalico.org/containerID: b2ede3ce118d0ec737d845fe22d55cf234af9cb1134e4b5839fa7cf34a35f38f
+                  cni.projectcalico.org/podIP: 10.233.119.247/32
+                  cni.projectcalico.org/podIPs: 10.233.119.247/32
+                  kubectl.kubernetes.io/default-container: tensorboards-web-app
+                  kubectl.kubernetes.io/default-logs-container: tensorboards-web-app
+                  prometheus.io/path: /stats/prometheus
+                  prometheus.io/port: 15020
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/status:
+                    {"initContainers":["istio-init"],"containers":["istio-proxy"],"volumes":["workload-socket","credential-socket","workload-certs","istio-env...
+Status:           Running
+IP:               10.233.119.247
+IPs:
+  IP:           10.233.119.247
+Controlled By:  ReplicaSet/tensorboards-web-app-deployment-67bf5977c9
+Init Containers:
+  istio-init:
+    Container ID:  docker://2931e9caf066f70d3d3ab5d08d7d6ac6b25ea4605d189a3deb99c7f69f853247
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      istio-iptables
+      -p
+      15001
+      -z
+      15006
+      -u
+      1337
+      -m
+      REDIRECT
+      -i
+      *
+      -x
+      
+      -b
+      *
+      -d
+      15090,15021,15020
+      --log_output_level=default:info
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:29:06 +0000
+      Finished:     Mon, 21 Apr 2025 05:29:06 +0000
+    Ready:          True
+    Restart Count:  7
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:        10m
+      memory:     40Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-2thz5 (ro)
+Containers:
+  tensorboards-web-app:
+    Container ID:   docker://32cfb7bd4c1be9df2d96adc9bb3cd930f2c6acc899646895b36d884b2722c29b
+    Image:          docker.io/kubeflownotebookswg/tensorboards-web-app:v1.7.0
+    Image ID:       docker-pullable://kubeflownotebookswg/tensorboards-web-app@sha256:c1dabb9295948aee51396d5e5de013abe7d6fbf3f842d46fefb74dd92c383575
+    Port:           5000/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:08 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 03:55:38 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:41 +0000
+    Ready:          True
+    Restart Count:  7
+    Environment:
+      APP_PREFIX:          /tensorboards
+      USERID_HEADER:       kubeflow-userid
+      USERID_PREFIX:       
+      APP_SECURE_COOKIES:  false 
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-2thz5 (ro)
+  istio-proxy:
+    Container ID:  docker://44c7a13ef59f60ffc5bd84ec3310ad6c25bba604bb0649f46e4eb78891f265fe
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          15090/TCP
+    Host Port:     0/TCP
+    Args:
+      proxy
+      sidecar
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+      --concurrency
+      2
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:08 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 03:55:39 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:46 +0000
+    Ready:          True
+    Restart Count:  7
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=1s timeout=3s period=2s #success=1 #failure=30
+    Environment:
+      JWT_POLICY:                    third-party-jwt
+      PILOT_CERT_PROVIDER:           istiod
+      CA_ADDR:                       istiod.istio-system.svc:15012
+      POD_NAME:                      tensorboards-web-app-deployment-67bf5977c9-49g85 (v1:metadata.name)
+      POD_NAMESPACE:                 kubeflow (v1:metadata.namespace)
+      INSTANCE_IP:                    (v1:status.podIP)
+      SERVICE_ACCOUNT:                (v1:spec.serviceAccountName)
+      HOST_IP:                        (v1:status.hostIP)
+      PROXY_CONFIG:                  {}
+                                     
+      ISTIO_META_POD_PORTS:          [
+                                         {"containerPort":5000,"protocol":"TCP"}
+                                     ]
+      ISTIO_META_APP_CONTAINERS:     tensorboards-web-app
+      ISTIO_META_CLUSTER_ID:         Kubernetes
+      ISTIO_META_INTERCEPTION_MODE:  REDIRECT
+      ISTIO_META_WORKLOAD_NAME:      tensorboards-web-app-deployment
+      ISTIO_META_OWNER:              kubernetes://apis/apps/v1/namespaces/kubeflow/deployments/tensorboards-web-app-deployment
+      ISTIO_META_MESH_ID:            cluster.local
+      TRUST_DOMAIN:                  cluster.local
+    Mounts:
+      /etc/istio/pod from istio-podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-2thz5 (ro)
+      /var/run/secrets/tokens from istio-token (rw)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  kube-api-access-2thz5:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

@@ -1,0 +1,101 @@
+Namespace: gpu-operator
+Pod Name: nvidia-dcgm-exporter-7r575
+Status: 1/1
+Other Details: Running                    6 (15h ago)      5d22h
+Name:                 nvidia-dcgm-exporter-7r575
+Namespace:            gpu-operator
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Service Account:      nvidia-dcgm-exporter
+Node:                 jain-dgx-server/192.168.1.248
+Start Time:           Tue, 15 Apr 2025 13:49:23 +0000
+Labels:               app=nvidia-dcgm-exporter
+                      app.kubernetes.io/managed-by=gpu-operator
+                      controller-revision-hash=5976b8fdd9
+                      helm.sh/chart=gpu-operator-v23.3.2
+                      pod-template-generation=1
+Annotations:          cni.projectcalico.org/containerID: 4ded65ca4b28d1f8a730dc204ecbd5d65e2989ac51a61fb2a3951bdd5fd636d6
+                      cni.projectcalico.org/podIP: 10.233.119.145/32
+                      cni.projectcalico.org/podIPs: 10.233.119.145/32
+Status:               Running
+IP:                   10.233.119.145
+IPs:
+  IP:           10.233.119.145
+Controlled By:  DaemonSet/nvidia-dcgm-exporter
+Init Containers:
+  toolkit-validation:
+    Container ID:  docker://b2589838f1cff4275d09b5d270863b422a44edccedb625e8f7c6ee5df8d125e3
+    Image:         nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Image ID:      docker-pullable://nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:21dfc9c56b5f8bce73e60361d6e83759c3fa14dc6afc2d5ebdf1b891a936daf6
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+    Args:
+      until [ -f /run/nvidia/validations/toolkit-ready ]; do echo waiting for nvidia container stack to be setup; sleep 5; done
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:28:51 +0000
+      Finished:     Mon, 21 Apr 2025 05:29:36 +0000
+    Ready:          True
+    Restart Count:  7
+    Environment:    <none>
+    Mounts:
+      /run/nvidia from run-nvidia (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-4knhd (ro)
+Containers:
+  nvidia-dcgm-exporter:
+    Container ID:   docker://ee58f2e1167e9bee7a61a70f6bc1410fc70492b6353733d847a502fed9c157d6
+    Image:          nvcr.io/nvidia/k8s/dcgm-exporter:3.1.7-3.1.4-ubuntu20.04
+    Image ID:       docker-pullable://nvcr.io/nvidia/k8s/dcgm-exporter@sha256:ccc40f815e13b7aa0f2a17245a57b5bdee8ff51f23b8b325f9e2a989287d8d91
+    Port:           9400/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:36:17 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Sun, 20 Apr 2025 15:15:38 +0000
+      Finished:     Sun, 20 Apr 2025 20:10:04 +0000
+    Ready:          True
+    Restart Count:  6
+    Environment:
+      DCGM_EXPORTER_LISTEN:      :9400
+      DCGM_EXPORTER_KUBERNETES:  true
+      DCGM_EXPORTER_COLLECTORS:  /etc/dcgm-exporter/dcp-metrics-included.csv
+    Mounts:
+      /var/lib/kubelet/pod-resources from pod-gpu-resources (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-4knhd (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  pod-gpu-resources:
+    Type:          HostPath (bare host directory volume)
+    Path:          /var/lib/kubelet/pod-resources
+    HostPathType:  
+  run-nvidia:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/nvidia
+    HostPathType:  
+  kube-api-access-4knhd:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              nvidia.com/gpu.deploy.dcgm-exporter=true
+Tolerations:                 node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+                             nvidia.com/gpu:NoSchedule op=Exists
+Events:                      <none>

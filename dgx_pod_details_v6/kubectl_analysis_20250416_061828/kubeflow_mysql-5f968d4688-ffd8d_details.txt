@@ -1,0 +1,219 @@
+Namespace: kubeflow
+Pod Name: mysql-5f968d4688-ffd8d
+Status: 2/2
+Other Details: Running     2 (88m ago)    16h
+Name:             mysql-5f968d4688-ffd8d
+Namespace:        kubeflow
+Priority:         0
+Service Account:  mysql
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:31 +0000
+Labels:           app=mysql
+                  application-crd-id=kubeflow-pipelines
+                  pod-template-hash=5f968d4688
+                  security.istio.io/tlsMode=istio
+                  service.istio.io/canonical-name=mysql
+                  service.istio.io/canonical-revision=latest
+Annotations:      cni.projectcalico.org/containerID: b98ee63b3d59d945573f7c8c19a2de6c68bcf3a41da4a28745c359a486995536
+                  cni.projectcalico.org/podIP: 10.233.119.189/32
+                  cni.projectcalico.org/podIPs: 10.233.119.189/32
+                  kubectl.kubernetes.io/default-container: mysql
+                  kubectl.kubernetes.io/default-logs-container: mysql
+                  prometheus.io/path: /stats/prometheus
+                  prometheus.io/port: 15020
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/status:
+                    {"initContainers":["istio-init"],"containers":["istio-proxy"],"volumes":["workload-socket","credential-socket","workload-certs","istio-env...
+Status:           Running
+IP:               10.233.119.189
+IPs:
+  IP:           10.233.119.189
+Controlled By:  ReplicaSet/mysql-5f968d4688
+Init Containers:
+  istio-init:
+    Container ID:  docker://e3eb6f031baadb849b1f8d79f6a28ebc7dc961c41593aae00fed343c4f7e666f
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      istio-iptables
+      -p
+      15001
+      -z
+      15006
+      -u
+      1337
+      -m
+      REDIRECT
+      -i
+      *
+      -x
+      
+      -b
+      *
+      -d
+      15090,15021,15020
+      --log_output_level=default:info
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Wed, 16 Apr 2025 04:53:42 +0000
+      Finished:     Wed, 16 Apr 2025 04:53:42 +0000
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:        10m
+      memory:     40Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-xs987 (ro)
+Containers:
+  mysql:
+    Container ID:  docker://563c350dec089a5b659c04f5576204f6062c01c1c5761396238e7dfcca7e0986
+    Image:         gcr.io/ml-pipeline/mysql:8.0.26
+    Image ID:      docker-pullable://gcr.io/ml-pipeline/mysql@sha256:882e55f40d61034a2bb8a1abab1353571ad2a33866f382350788eb34740528b5
+    Port:          3306/TCP
+    Host Port:     0/TCP
+    Args:
+      --datadir
+      /var/lib/mysql
+      --default-authentication-plugin=mysql_native_password
+      --disable-log-bin
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:46 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    255
+      Started:      Tue, 15 Apr 2025 14:16:16 +0000
+      Finished:     Wed, 16 Apr 2025 04:49:54 +0000
+    Ready:          True
+    Restart Count:  1
+    Requests:
+      cpu:     100m
+      memory:  800Mi
+    Environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD:  true
+    Mounts:
+      /var/lib/mysql from mysql-persistent-storage (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-xs987 (ro)
+  istio-proxy:
+    Container ID:  docker://e1feb95978f42a96f1bd7cdecafa1af479233ebfa62fa68ea7d0d83bac97cbf5
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          15090/TCP
+    Host Port:     0/TCP
+    Args:
+      proxy
+      sidecar
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+      --concurrency
+      2
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:47 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 15 Apr 2025 14:10:27 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:08 +0000
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=1s timeout=3s period=2s #success=1 #failure=30
+    Environment:
+      JWT_POLICY:                    third-party-jwt
+      PILOT_CERT_PROVIDER:           istiod
+      CA_ADDR:                       istiod.istio-system.svc:15012
+      POD_NAME:                      mysql-5f968d4688-ffd8d (v1:metadata.name)
+      POD_NAMESPACE:                 kubeflow (v1:metadata.namespace)
+      INSTANCE_IP:                    (v1:status.podIP)
+      SERVICE_ACCOUNT:                (v1:spec.serviceAccountName)
+      HOST_IP:                        (v1:status.hostIP)
+      PROXY_CONFIG:                  {}
+                                     
+      ISTIO_META_POD_PORTS:          [
+                                         {"name":"mysql","containerPort":3306,"protocol":"TCP"}
+                                     ]
+      ISTIO_META_APP_CONTAINERS:     mysql
+      ISTIO_META_CLUSTER_ID:         Kubernetes
+      ISTIO_META_INTERCEPTION_MODE:  REDIRECT
+      ISTIO_META_WORKLOAD_NAME:      mysql
+      ISTIO_META_OWNER:              kubernetes://apis/apps/v1/namespaces/kubeflow/deployments/mysql
+      ISTIO_META_MESH_ID:            cluster.local
+      TRUST_DOMAIN:                  cluster.local
+    Mounts:
+      /etc/istio/pod from istio-podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-xs987 (ro)
+      /var/run/secrets/tokens from istio-token (rw)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  mysql-persistent-storage:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  mysql-pv-claim
+    ReadOnly:   false
+  kube-api-access-xs987:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

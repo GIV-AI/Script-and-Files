@@ -1,0 +1,66 @@
+Namespace: kube-system
+Pod Name: kubernetes-metrics-scraper-6cdb9fb87f-l5k72
+Status: 1/1
+Other Details: Running     2 (12h ago)    16h
+Name:                 kubernetes-metrics-scraper-6cdb9fb87f-l5k72
+Namespace:            kube-system
+Priority:             2000000000
+Priority Class Name:  system-cluster-critical
+Service Account:      kubernetes-dashboard
+Node:                 jain-dgx-server/192.168.1.248
+Start Time:           Tue, 15 Apr 2025 13:26:13 +0000
+Labels:               k8s-app=kubernetes-metrics-scraper
+                      pod-template-hash=6cdb9fb87f
+Annotations:          cni.projectcalico.org/containerID: 3767aaeb8124002e211e3ffe3665fb9e0ea1ede7b00700dc5a5248d7d70725c4
+                      cni.projectcalico.org/podIP: 10.233.119.138/32
+                      cni.projectcalico.org/podIPs: 10.233.119.138/32
+Status:               Running
+IP:                   10.233.119.138
+IPs:
+  IP:           10.233.119.138
+Controlled By:  ReplicaSet/kubernetes-metrics-scraper-6cdb9fb87f
+Containers:
+  kubernetes-metrics-scraper:
+    Container ID:   docker://456d682534166d3c6d74767b0473212b73bf2dc4255bda3b20876b05df38912c
+    Image:          kubernetesui/metrics-scraper:v1.0.8
+    Image ID:       docker-pullable://kubernetesui/metrics-scraper@sha256:76049887f07a0476dc93efc2d3569b9529bf982b22d29f356092ce206e98765c
+    Port:           8000/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:45 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    2
+      Started:      Tue, 15 Apr 2025 13:30:46 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:03 +0000
+    Ready:          True
+    Restart Count:  2
+    Liveness:       http-get http://:8000/ delay=30s timeout=30s period=10s #success=1 #failure=3
+    Environment:    <none>
+    Mounts:
+      /tmp from tmp-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-drb8j (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  tmp-volume:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  kube-api-access-drb8j:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node-role.kubernetes.io/control-plane:NoSchedule
+                             node-role.kubernetes.io/master:NoSchedule
+                             node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

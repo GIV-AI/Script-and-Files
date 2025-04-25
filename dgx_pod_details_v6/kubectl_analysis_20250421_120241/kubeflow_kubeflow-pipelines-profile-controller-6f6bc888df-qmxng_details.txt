@@ -1,0 +1,75 @@
+Namespace: kubeflow
+Pod Name: kubeflow-pipelines-profile-controller-6f6bc888df-qmxng
+Status: 1/1
+Other Details: Running                    7 (6h51m ago)    5d22h
+Name:             kubeflow-pipelines-profile-controller-6f6bc888df-qmxng
+Namespace:        kubeflow
+Priority:         0
+Service Account:  default
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:30 +0000
+Labels:           app=kubeflow-pipelines-profile-controller
+                  app.kubernetes.io/component=ml-pipeline
+                  app.kubernetes.io/name=kubeflow-pipelines
+                  application-crd-id=kubeflow-pipelines
+                  pod-template-hash=6f6bc888df
+Annotations:      cni.projectcalico.org/containerID: 6af734e94ed49853954e9a6a6526fcc92db3c687faed669ac69eac93655dc6da
+                  cni.projectcalico.org/podIP: 10.233.120.58/32
+                  cni.projectcalico.org/podIPs: 10.233.120.58/32
+                  sidecar.istio.io/inject: false
+Status:           Running
+IP:               10.233.120.58
+IPs:
+  IP:           10.233.120.58
+Controlled By:  ReplicaSet/kubeflow-pipelines-profile-controller-6f6bc888df
+Containers:
+  profile-controller:
+    Container ID:  docker://a49db3838baeb47e42122564d16bf537b904908756dbcb8a53b3d9a4681186de
+    Image:         python:3.7
+    Image ID:      docker-pullable://python@sha256:eedf63967cdb57d8214db38ce21f105003ed4e4d0358f02bedc057341bcf92a0
+    Port:          8080/TCP
+    Host Port:     0/TCP
+    Command:
+      python
+      /hooks/sync.py
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:34 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    137
+      Started:      Mon, 21 Apr 2025 03:55:42 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:51 +0000
+    Ready:          True
+    Restart Count:  7
+    Environment Variables from:
+      kubeflow-pipelines-profile-controller-env-5252m69c4c  ConfigMap  Optional: false
+    Environment:
+      KFP_VERSION:                <set to the key 'appVersion' of config map 'pipeline-install-config'>           Optional: false
+      KFP_DEFAULT_PIPELINE_ROOT:  <set to the key 'defaultPipelineRoot' of config map 'pipeline-install-config'>  Optional: true
+      MINIO_ACCESS_KEY:           <set to the key 'accesskey' in secret 'mlpipeline-minio-artifact'>              Optional: false
+      MINIO_SECRET_KEY:           <set to the key 'secretkey' in secret 'mlpipeline-minio-artifact'>              Optional: false
+    Mounts:
+      /hooks from hooks (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-h7k99 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  hooks:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      kubeflow-pipelines-profile-controller-code-hdk828hd6c
+    Optional:  false
+  kube-api-access-h7k99:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

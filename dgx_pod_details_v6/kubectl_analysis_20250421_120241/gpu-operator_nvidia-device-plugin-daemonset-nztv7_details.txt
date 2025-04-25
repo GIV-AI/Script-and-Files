@@ -1,0 +1,123 @@
+Namespace: gpu-operator
+Pod Name: nvidia-device-plugin-daemonset-nztv7
+Status: 1/1
+Other Details: Running                    1                6h57m
+Name:                 nvidia-device-plugin-daemonset-nztv7
+Namespace:            gpu-operator
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Service Account:      nvidia-device-plugin
+Node:                 jain-dgx-server/192.168.1.248
+Start Time:           Mon, 21 Apr 2025 05:05:06 +0000
+Labels:               app=nvidia-device-plugin-daemonset
+                      app.kubernetes.io/managed-by=gpu-operator
+                      controller-revision-hash=c448c5fb7
+                      helm.sh/chart=gpu-operator-v23.3.2
+                      pod-template-generation=2
+Annotations:          cni.projectcalico.org/containerID: 8769cfa4916ec5e02ae2b9b05ec71ac3f5b73b2bce60bdf46d60b3ec81c37dde
+                      cni.projectcalico.org/podIP: 10.233.119.159/32
+                      cni.projectcalico.org/podIPs: 10.233.119.159/32
+                      kubectl.kubernetes.io/restartedAt: 2025-04-21T05:04:22Z
+Status:               Running
+IP:                   10.233.119.159
+IPs:
+  IP:           10.233.119.159
+Controlled By:  DaemonSet/nvidia-device-plugin-daemonset
+Init Containers:
+  toolkit-validation:
+    Container ID:  docker://34813ff7d638077533a87ad25ec3fa69e8a5bba28de73d2c4203e62fc2cc7031
+    Image:         nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Image ID:      docker-pullable://nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:21dfc9c56b5f8bce73e60361d6e83759c3fa14dc6afc2d5ebdf1b891a936daf6
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+    Args:
+      until [ -f /run/nvidia/validations/toolkit-ready ]; do echo waiting for nvidia container stack to be setup; sleep 5; done
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:29:06 +0000
+      Finished:     Mon, 21 Apr 2025 05:29:36 +0000
+    Ready:          True
+    Restart Count:  1
+    Environment:    <none>
+    Mounts:
+      /run/nvidia from run-nvidia (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-747kv (ro)
+Containers:
+  nvidia-device-plugin:
+    Container ID:  docker://de4b2a41194da8d2620a45bc3fbd63b0a98d43806e3adda8a432855560130ac2
+    Image:         nvcr.io/nvidia/k8s-device-plugin:v0.14.0-ubi8
+    Image ID:      docker-pullable://nvcr.io/nvidia/k8s-device-plugin@sha256:80871275fbcf888d4683c58638c7a75b3c46091040cafc6210a8c93513adb146
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /bin/bash
+      -c
+    Args:
+      /bin/entrypoint.sh
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:36:25 +0000
+    Ready:          True
+    Restart Count:  1
+    Environment:
+      PASS_DEVICE_SPECS:           true
+      FAIL_ON_INIT_ERROR:          true
+      DEVICE_LIST_STRATEGY:        envvar
+      DEVICE_ID_STRATEGY:          uuid
+      NVIDIA_VISIBLE_DEVICES:      all
+      NVIDIA_DRIVER_CAPABILITIES:  all
+      MIG_STRATEGY:                mixed
+      NVIDIA_MIG_MONITOR_DEVICES:  all
+    Mounts:
+      /bin/entrypoint.sh from nvidia-device-plugin-entrypoint (ro,path="entrypoint.sh")
+      /host from host-root (ro)
+      /run/nvidia from run-nvidia (rw)
+      /var/lib/kubelet/device-plugins from device-plugin (rw)
+      /var/run/cdi from cdi-root (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-747kv (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  nvidia-device-plugin-entrypoint:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      nvidia-device-plugin-entrypoint
+    Optional:  false
+  device-plugin:
+    Type:          HostPath (bare host directory volume)
+    Path:          /var/lib/kubelet/device-plugins
+    HostPathType:  
+  run-nvidia:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/nvidia
+    HostPathType:  Directory
+  host-root:
+    Type:          HostPath (bare host directory volume)
+    Path:          /
+    HostPathType:  
+  cdi-root:
+    Type:          HostPath (bare host directory volume)
+    Path:          /var/run/cdi
+    HostPathType:  DirectoryOrCreate
+  kube-api-access-747kv:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              nvidia.com/gpu.deploy.device-plugin=true
+Tolerations:                 node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+                             nvidia.com/gpu:NoSchedule op=Exists
+Events:                      <none>

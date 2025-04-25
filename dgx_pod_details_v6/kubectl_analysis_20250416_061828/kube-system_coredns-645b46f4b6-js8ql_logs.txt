@@ -1,0 +1,83 @@
+.:53
+[INFO] plugin/reload: Running configuration SHA512 = e49c8cbdef474376667615e2712834f114e0f8efecdcaa84e7a3d051ab8d93de87c4ff09c4c6494863143e18363a48a4d87b1cfa54794c879f50392170860d71
+CoreDNS-1.9.3
+linux/amd64, go1.18.2, 45b0a11
+[ERROR] plugin/errors: 2 2332406896470636200.8884249620960755538. HINFO: read udp 10.233.66.132:47762->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 2332406896470636200.8884249620960755538. HINFO: read udp 10.233.66.132:56934->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 2332406896470636200.8884249620960755538. HINFO: read udp 10.233.66.132:40326->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 3558451695742509597.349252997723025786.in-addr.arpa. HINFO: read udp 10.233.66.132:43655->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2199327799206137343.5703269295355122505.in-addr.arpa. HINFO: read udp 10.233.66.132:37164->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 7033468287843435476.4639740531606825070.ip6.arpa. HINFO: read udp 10.233.66.132:58596->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 604404660055973560.8675956540860672006.ip6.arpa. HINFO: read udp 10.233.66.132:35153->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 1873043340462922787.1623717447998272781.in-addr.arpa. HINFO: read udp 10.233.66.132:52628->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2215088741907694548.8630367061565348838.in-addr.arpa. HINFO: read udp 10.233.66.132:44124->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2244720127086484889.2331456313191750271.ip6.arpa. HINFO: read udp 10.233.66.132:51021->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:57836->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:40634->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:50716->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:39156->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2215088741907694548.8630367061565348838.in-addr.arpa. HINFO: read udp 10.233.66.132:43120->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2244720127086484889.2331456313191750271.ip6.arpa. HINFO: read udp 10.233.66.132:48457->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2244720127086484889.2331456313191750271.ip6.arpa. HINFO: read udp 10.233.66.132:60494->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2215088741907694548.8630367061565348838.in-addr.arpa. HINFO: read udp 10.233.66.132:50457->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:45102->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2244720127086484889.2331456313191750271.ip6.arpa. HINFO: read udp 10.233.66.132:43791->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:55751->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:47183->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2244720127086484889.2331456313191750271.ip6.arpa. HINFO: read udp 10.233.66.132:32986->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:44075->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2215088741907694548.8630367061565348838.in-addr.arpa. HINFO: read udp 10.233.66.132:37446->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:52778->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 2215088741907694548.8630367061565348838.in-addr.arpa. HINFO: read udp 10.233.66.132:41909->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:49333->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:56271->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:48066->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2244720127086484889.2331456313191750271.ip6.arpa. HINFO: read udp 10.233.66.132:41152->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2215088741907694548.8630367061565348838.in-addr.arpa. HINFO: read udp 10.233.66.132:48294->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2215088741907694548.8630367061565348838.in-addr.arpa. HINFO: read udp 10.233.66.132:51534->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2215088741907694548.8630367061565348838.in-addr.arpa. HINFO: read udp 10.233.66.132:46670->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:33916->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:57664->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:52770->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2215088741907694548.8630367061565348838.in-addr.arpa. HINFO: read udp 10.233.66.132:34837->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2244720127086484889.2331456313191750271.ip6.arpa. HINFO: read udp 10.233.66.132:48487->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:48069->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:39622->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:52534->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:49306->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:46643->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:38197->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:49170->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 2215088741907694548.8630367061565348838.in-addr.arpa. HINFO: read udp 10.233.66.132:57638->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 2244720127086484889.2331456313191750271.ip6.arpa. HINFO: read udp 10.233.66.132:60694->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 3068405878888774524.4957282618037778212.ip6.arpa. HINFO: read udp 10.233.66.132:46813->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 5114723145098269771.8913790927011427614.in-addr.arpa. HINFO: read udp 10.233.66.132:40497->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:34421->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:34044->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:55893->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:58911->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:33829->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:55719->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:35801->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:51161->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:36621->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:48066->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:43044->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:53297->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:43322->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:46021->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:60245->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:47971->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:47764->169.254.25.10:53: read: connection refused
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:36984->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 8626192417423113963.984446236440265524.ip6.arpa. HINFO: read udp 10.233.66.132:58917->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 4817787941015356973.3947935569335336584.ip6.arpa. HINFO: read udp 10.233.66.132:47964->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 3174603765498094880.796997929614411832.in-addr.arpa. HINFO: read udp 10.233.66.132:42845->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 241382463299393984.7039963757925430638.ip6.arpa. HINFO: read udp 10.233.66.132:55824->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 5535209721551161475.2953453822042594992.in-addr.arpa. HINFO: read udp 10.233.66.132:52522->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 . NS: read udp 10.233.66.132:58096->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 4045083822588854576.2423270203875548357.in-addr.arpa. HINFO: read udp 10.233.66.132:59624->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 1104054823754443075.6811937836171692846.in-addr.arpa. HINFO: read udp 10.233.66.132:59118->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 1104054823754443075.6811937836171692846.in-addr.arpa. HINFO: read udp 10.233.66.132:57908->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 154628761897090241.6278793422019274114.ip6.arpa. HINFO: read udp 10.233.66.132:43563->169.254.25.10:53: i/o timeout
+[ERROR] plugin/errors: 2 866134359681488738.8827018232279664747.in-addr.arpa. HINFO: read udp 10.233.66.132:49992->169.254.25.10:53: i/o timeout

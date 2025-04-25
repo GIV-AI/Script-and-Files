@@ -1,0 +1,126 @@
+[I 2025-04-21 10:20:57.326 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-04-21 10:20:57.328 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-04-21 10:20:57.329 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 10:20:57.329 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 10:20:57.329 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 10:20:57.329 LabApp] 'base_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 10:20:57.331 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-04-21 10:20:57.331 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-04-21 10:20:57.333 ServerApp] notebook | extension was successfully linked.
+[I 2025-04-21 10:20:57.334 ServerApp] Writing Jupyter server cookie secret to /root/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2025-04-21 10:20:57.473 ServerApp] notebook_shim | extension was successfully linked.
+[W 2025-04-21 10:20:57.483 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 2025-04-21 10:20:57.483 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-04-21 10:20:57.485 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-04-21 10:20:57.485 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-04-21 10:20:57.487 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.10/dist-packages/jupyterlab
+[I 2025-04-21 10:20:57.487 LabApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+[I 2025-04-21 10:20:57.487 LabApp] Extension Manager is 'pypi'.
+[I 2025-04-21 10:20:57.549 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-04-21 10:20:57.551 ServerApp] notebook | extension was successfully loaded.
+[I 2025-04-21 10:20:57.552 ServerApp] Serving notebooks from local directory: /workspace
+[I 2025-04-21 10:20:57.552 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-04-21 10:20:57.552 ServerApp] http://new1-0:8888/notebook/s-jain-training-23/new1/lab
+[I 2025-04-21 10:20:57.552 ServerApp]     http://127.0.0.1:8888/notebook/s-jain-training-23/new1/lab
+[I 2025-04-21 10:20:57.552 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-04-21 10:20:57.562 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-04-21 10:21:05.147 ServerApp] 302 GET /notebook/s-jain-training-23/new1/ (@127.0.0.6) 0.43ms
+[W 2025-04-21 10:21:05.984 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 10:21:10.202 ServerApp] Creating new notebook in 
+[I 2025-04-21 10:21:10.228 ServerApp] Writing notebook-signing key to /root/.local/share/jupyter/notebook_secret
+[I 2025-04-21 10:21:10.459 ServerApp] Kernel started: 98e26232-8f05-4945-b65f-f5d6acffffdb
+[I 2025-04-21 10:21:10.824 ServerApp] Connecting to kernel 98e26232-8f05-4945-b65f-f5d6acffffdb.
+[I 2025-04-21 10:21:10.833 ServerApp] Connecting to kernel 98e26232-8f05-4945-b65f-f5d6acffffdb.
+[I 2025-04-21 10:21:10.841 ServerApp] Connecting to kernel 98e26232-8f05-4945-b65f-f5d6acffffdb.
+[I 2025-04-21 10:22:18.378 ServerApp] New terminal with automatic name: 1
+[I 2025-04-21 10:23:10.395 ServerApp] Saving file at /Untitled.ipynb
+[I 2025-04-21 10:24:21.344 ServerApp] 302 GET /notebook/s-jain-training-23/new1/ (@127.0.0.6) 0.43ms
+[W 2025-04-21 10:24:22.353 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 10:24:22.415 ServerApp] Connecting to kernel 98e26232-8f05-4945-b65f-f5d6acffffdb.
+[I 2025-04-21 11:06:27.089 ServerApp] Uploading file to /vid.mp4
+[I 2025-04-21 11:06:28.447 ServerApp] Saving file at /vid.mp4
+[W 2025-04-21 11:08:01.244 ServerApp] 400 GET /notebook/s-jain-training-23/new1/api/contents/runs/detect/predict/vid.avi?type=file&content=1&hash=1&format=text&contentProviderId=undefined&1745233681109 (127.0.0.6): /workspace/runs/detect/predict/vid.avi is not UTF-8 encoded
+[W 2025-04-21 11:08:01.244 ServerApp] wrote error: '/workspace/runs/detect/predict/vid.avi is not UTF-8 encoded'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/services/contents/fileio.py", line 536, in _read_file
+        (bcontent.decode("utf8"), "text", bcontent)
+    UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 6: invalid continuation byte
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.10/dist-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/services/contents/handlers.py", line 156, in get
+        model = await ensure_async(
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_core/utils/__init__.py", line 198, in ensure_async
+        result = await obj
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/services/contents/filemanager.py", line 926, in get
+        model = await self._file_model(
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/services/contents/filemanager.py", line 835, in _file_model
+        content, format, bytes_content = await self._read_file(os_path, format, raw=True)  # type: ignore[misc]
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/services/contents/fileio.py", line 545, in _read_file
+        raise HTTPError(
+    tornado.web.HTTPError: HTTP 400: bad format (/workspace/runs/detect/predict/vid.avi is not UTF-8 encoded)
+[W 2025-04-21 11:08:01.247 ServerApp] 400 GET /notebook/s-jain-training-23/new1/api/contents/runs/detect/predict/vid.avi?type=file&content=1&hash=1&format=text&contentProviderId=undefined&1745233681109 (21a19bd1b32946f99c49ec0aca7dfdce@127.0.0.6) 182.65ms referer=http://192.168.1.248:32243/notebook/s-jain-training-23/new1/lab/tree/runs/detect/predict/vid.avi
+[I 2025-04-21 11:10:42.313 ServerApp] 302 GET /notebook/s-jain-training-23/new1/ (@127.0.0.6) 0.56ms
+[I 2025-04-21 11:10:43.415 ServerApp] Connecting to kernel 98e26232-8f05-4945-b65f-f5d6acffffdb.
+[W 2025-04-21 11:10:43.532 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 11:10:52.941 ServerApp] 302 GET /notebook/s-jain-training-23/new1/ (@127.0.0.6) 0.53ms
+[I 2025-04-21 11:10:53.724 ServerApp] Connecting to kernel 98e26232-8f05-4945-b65f-f5d6acffffdb.
+[W 2025-04-21 11:10:53.825 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 11:10:59.398 ServerApp] 302 GET /notebook/s-jain-training-23/new1/ (@127.0.0.6) 0.55ms
+[I 2025-04-21 11:11:00.207 ServerApp] Connecting to kernel 98e26232-8f05-4945-b65f-f5d6acffffdb.
+[W 2025-04-21 11:11:00.395 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 11:11:11.213 ServerApp] 302 GET /notebook/s-jain-training-23/new1/ (@127.0.0.6) 0.51ms
+[I 2025-04-21 11:11:12.012 ServerApp] Connecting to kernel 98e26232-8f05-4945-b65f-f5d6acffffdb.
+[W 2025-04-21 11:11:12.047 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 11:15:17.115 ServerApp] 302 GET /notebook/s-jain-training-23/new1/ (@127.0.0.6) 0.49ms
+[I 2025-04-21 11:15:17.931 ServerApp] Connecting to kernel 98e26232-8f05-4945-b65f-f5d6acffffdb.
+[W 2025-04-21 11:15:18.092 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 11:15:28.079 ServerApp] 302 GET /notebook/s-jain-training-23/new1/ (@127.0.0.6) 0.47ms
+[I 2025-04-21 11:15:28.882 ServerApp] Connecting to kernel 98e26232-8f05-4945-b65f-f5d6acffffdb.
+[W 2025-04-21 11:15:28.937 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 11:15:38.844 ServerApp] Starting buffering for 98e26232-8f05-4945-b65f-f5d6acffffdb:d55f2e7c-f29d-4ef2-946c-1dc37d9854fe
+[I 2025-04-21 11:15:48.520 ServerApp] 302 GET /notebook/s-jain-training-23/new1/ (@127.0.0.6) 0.48ms
+[W 2025-04-21 11:15:49.239 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 11:15:49.855 ServerApp] Connecting to kernel 98e26232-8f05-4945-b65f-f5d6acffffdb.
+[I 2025-04-21 11:15:49.870 ServerApp] Connecting to kernel 98e26232-8f05-4945-b65f-f5d6acffffdb.
+[W 2025-04-21 11:15:54.847 ServerApp] 400 GET /notebook/s-jain-training-23/new1/api/contents/runs/detect/predict/vid.avi?type=file&content=1&hash=1&format=text&contentProviderId=undefined&1745234154748 (127.0.0.6): /workspace/runs/detect/predict/vid.avi is not UTF-8 encoded
+[W 2025-04-21 11:15:54.847 ServerApp] wrote error: '/workspace/runs/detect/predict/vid.avi is not UTF-8 encoded'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/services/contents/fileio.py", line 536, in _read_file
+        (bcontent.decode("utf8"), "text", bcontent)
+    UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 6: invalid continuation byte
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.10/dist-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/services/contents/handlers.py", line 156, in get
+        model = await ensure_async(
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_core/utils/__init__.py", line 198, in ensure_async
+        result = await obj
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/services/contents/filemanager.py", line 926, in get
+        model = await self._file_model(
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/services/contents/filemanager.py", line 835, in _file_model
+        content, format, bytes_content = await self._read_file(os_path, format, raw=True)  # type: ignore[misc]
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/services/contents/fileio.py", line 545, in _read_file
+        raise HTTPError(
+    tornado.web.HTTPError: HTTP 400: bad format (/workspace/runs/detect/predict/vid.avi is not UTF-8 encoded)
+[W 2025-04-21 11:15:54.848 ServerApp] 400 GET /notebook/s-jain-training-23/new1/api/contents/runs/detect/predict/vid.avi?type=file&content=1&hash=1&format=text&contentProviderId=undefined&1745234154748 (21a19bd1b32946f99c49ec0aca7dfdce@127.0.0.6) 158.84ms referer=http://192.168.1.248:32243/notebook/s-jain-training-23/new1/lab/tree/runs/detect/predict/vid.avi
+[I 2025-04-21 11:16:59.552 ServerApp] 302 GET /notebook/s-jain-training-23/new1/ (@127.0.0.6) 0.52ms
+[I 2025-04-21 11:17:00.363 ServerApp] Connecting to kernel 98e26232-8f05-4945-b65f-f5d6acffffdb.
+[W 2025-04-21 11:17:00.376 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 11:32:29.953 ServerApp] Starting buffering for 98e26232-8f05-4945-b65f-f5d6acffffdb:73e305b4-4742-4ee5-bfa6-940f3e1bc807
+[I 2025-04-21 11:32:34.945 ServerApp] 302 GET /notebook/s-jain-training-23/new1/ (@127.0.0.6) 0.46ms
+[I 2025-04-21 11:32:35.674 ServerApp] Connecting to kernel 98e26232-8f05-4945-b65f-f5d6acffffdb.
+[W 2025-04-21 11:32:35.729 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 11:32:35.829 ServerApp] Starting buffering for 98e26232-8f05-4945-b65f-f5d6acffffdb:104fc695-d462-4cf2-aa25-1a9a4f0fe5e1
+[I 2025-04-21 11:32:36.250 ServerApp] Connecting to kernel 98e26232-8f05-4945-b65f-f5d6acffffdb.
+[I 2025-04-21 11:32:39.753 ServerApp] Starting buffering for 98e26232-8f05-4945-b65f-f5d6acffffdb:844ff18e-ed37-444f-8200-7a29b23eb0ae

@@ -1,0 +1,339 @@
+/systems/localhost/gpus/GPU0
+Properties:
+    Inventory_BrandName = NVIDIA
+    Inventory_ModelName = NVIDIA H200
+    Inventory_PCIeDeviceId = 9013:4318
+    Inventory_PCIeSubSystemId = 6334:4318
+    Inventory_PartNumber = 692-2G520-0280-001
+    Inventory_SerialNumber = 1654924146175
+    Inventory_UUID = GPU-e65205c1-b271-a9ee-962b-dd66e3939921
+    Specifications_ComputeCapability = 9.0
+    Specifications_MaxPCIeGen = 5
+    Specifications_MaxPCIeLinkWidth = 16x
+    Specifications_MaxSpeeds_GraphicsClock = 1980 MHz
+    Specifications_MaxSpeeds_MemClock = 3201 MHz
+    Specifications_MaxSpeeds_SMClock = 1980 MHz
+    Specifications_MaxSpeeds_VideoClock = 1545 MHz
+    Specifications_MemorySize = 140.40 GiB
+    Versions_VBIOSVersion = 96.00.A5.00.03
+    Connections_PCIeGen = 5
+    Connections_PCIeLinkWidth = 16x
+    Connections_PCIeLocation = 00000000:1B:00.0
+    Power_PowerDraw = 109861 mW
+    Stats_ErrorStats_ECCMode = Enabled
+    Stats_FrameBufferMemoryUsage_Free = 141851.19 MiB
+    Stats_FrameBufferMemoryUsage_Total = 143771.00 MiB
+    Stats_FrameBufferMemoryUsage_Used = 1919.81 MiB
+    Stats_PCIeRxThroughput = 1860 KB/s
+    Stats_PCIeTxThroughput = 1254 KB/s
+    Stats_PerformanceState = P0
+    Stats_UtilDecoder = 0%
+    Stats_UtilEncoder = 0%
+    Stats_UtilGPU = 0%
+    Stats_UtilMemory = 0%
+    Status_Health = OK
+    VMName = <NOT_SET>
+    VirtualizationMode = None
+
+/systems/localhost/gpus/GPU0/health
+Properties:
+    Health = OK
+
+/systems/localhost/gpus/GPU1
+Properties:
+    Inventory_BrandName = NVIDIA
+    Inventory_ModelName = NVIDIA H200
+    Inventory_PCIeDeviceId = 9013:4318
+    Inventory_PCIeSubSystemId = 6334:4318
+    Inventory_PartNumber = 692-2G520-0280-001
+    Inventory_SerialNumber = 1654824093694
+    Inventory_UUID = GPU-f1485326-6073-b07c-0160-7a0714efd34e
+    Specifications_ComputeCapability = 9.0
+    Specifications_MaxPCIeGen = 5
+    Specifications_MaxPCIeLinkWidth = 16x
+    Specifications_MaxSpeeds_GraphicsClock = 1980 MHz
+    Specifications_MaxSpeeds_MemClock = 3201 MHz
+    Specifications_MaxSpeeds_SMClock = 1980 MHz
+    Specifications_MaxSpeeds_VideoClock = 1545 MHz
+    Specifications_MemorySize = 140.40 GiB
+    Versions_VBIOSVersion = 96.00.A5.00.03
+    Connections_PCIeGen = 5
+    Connections_PCIeLinkWidth = 16x
+    Connections_PCIeLocation = 00000000:43:00.0
+    Power_PowerDraw = 113920 mW
+    Stats_ErrorStats_ECCMode = Enabled
+    Stats_FrameBufferMemoryUsage_Free = 142416.69 MiB
+    Stats_FrameBufferMemoryUsage_Total = 143771.00 MiB
+    Stats_FrameBufferMemoryUsage_Used = 1354.31 MiB
+    Stats_PCIeRxThroughput = 3357 KB/s
+    Stats_PCIeTxThroughput = 1357 KB/s
+    Stats_PerformanceState = P0
+    Stats_UtilDecoder = 0%
+    Stats_UtilEncoder = 0%
+    Stats_UtilGPU = 0%
+    Stats_UtilMemory = 0%
+    Status_Health = OK
+    VMName = <NOT_SET>
+    VirtualizationMode = None
+
+/systems/localhost/gpus/GPU1/health
+Properties:
+    Health = OK
+
+/systems/localhost/gpus/GPU2
+Properties:
+    Inventory_BrandName = NVIDIA
+    Inventory_ModelName = NVIDIA H200
+    Inventory_PCIeDeviceId = 9013:4318
+    Inventory_PCIeSubSystemId = 6334:4318
+    Inventory_PartNumber = 692-2G520-0280-001
+    Inventory_SerialNumber = 1654424043529
+    Inventory_UUID = GPU-f63bb2ed-f418-421d-3434-bf5901934adb
+    Specifications_ComputeCapability = 9.0
+    Specifications_MaxPCIeGen = 5
+    Specifications_MaxPCIeLinkWidth = 16x
+    Specifications_MaxSpeeds_GraphicsClock = 1980 MHz
+    Specifications_MaxSpeeds_MemClock = 3201 MHz
+    Specifications_MaxSpeeds_SMClock = 1980 MHz
+    Specifications_MaxSpeeds_VideoClock = 1545 MHz
+    Specifications_MemorySize = 140.40 GiB
+    Versions_VBIOSVersion = 96.00.A5.00.03
+    Connections_PCIeGen = 5
+    Connections_PCIeLinkWidth = 16x
+    Connections_PCIeLocation = 00000000:52:00.0
+    Power_PowerDraw = 116687 mW
+    Stats_ErrorStats_ECCMode = Enabled
+    Stats_FrameBufferMemoryUsage_Free = 141285.69 MiB
+    Stats_FrameBufferMemoryUsage_Total = 143771.00 MiB
+    Stats_FrameBufferMemoryUsage_Used = 2485.31 MiB
+    Stats_PCIeRxThroughput = 3323 KB/s
+    Stats_PCIeTxThroughput = 1348 KB/s
+    Stats_PerformanceState = P0
+    Stats_UtilDecoder = 0%
+    Stats_UtilEncoder = 0%
+    Stats_UtilGPU = 0%
+    Stats_UtilMemory = 0%
+    Status_Health = OK
+    VMName = <NOT_SET>
+    VirtualizationMode = None
+
+/systems/localhost/gpus/GPU2/health
+Properties:
+    Health = OK
+
+/systems/localhost/gpus/GPU3
+Properties:
+    Inventory_BrandName = NVIDIA
+    Inventory_ModelName = NVIDIA H200
+    Inventory_PCIeDeviceId = 9013:4318
+    Inventory_PCIeSubSystemId = 6334:4318
+    Inventory_PartNumber = 692-2G520-0280-001
+    Inventory_SerialNumber = 1654924155490
+    Inventory_UUID = GPU-a7e95ab1-dd96-7b8d-caec-355c6e042f19
+    Specifications_ComputeCapability = 9.0
+    Specifications_MaxPCIeGen = 5
+    Specifications_MaxPCIeLinkWidth = 16x
+    Specifications_MaxSpeeds_GraphicsClock = 1980 MHz
+    Specifications_MaxSpeeds_MemClock = 3201 MHz
+    Specifications_MaxSpeeds_SMClock = 1980 MHz
+    Specifications_MaxSpeeds_VideoClock = 1545 MHz
+    Specifications_MemorySize = 140.40 GiB
+    Versions_VBIOSVersion = 96.00.A5.00.03
+    Connections_PCIeGen = 5
+    Connections_PCIeLinkWidth = 16x
+    Connections_PCIeLocation = 00000000:61:00.0
+    Power_PowerDraw = 115665 mW
+    Stats_ErrorStats_ECCMode = Enabled
+    Stats_FrameBufferMemoryUsage_Free = 141851.19 MiB
+    Stats_FrameBufferMemoryUsage_Total = 143771.00 MiB
+    Stats_FrameBufferMemoryUsage_Used = 1919.81 MiB
+    Stats_PCIeRxThroughput = 1820 KB/s
+    Stats_PCIeTxThroughput = 1172 KB/s
+    Stats_PerformanceState = P0
+    Stats_UtilDecoder = 0%
+    Stats_UtilEncoder = 0%
+    Stats_UtilGPU = 0%
+    Stats_UtilMemory = 0%
+    Status_Health = OK
+    VMName = <NOT_SET>
+    VirtualizationMode = None
+
+/systems/localhost/gpus/GPU3/health
+Properties:
+    Health = OK
+
+/systems/localhost/gpus/GPU4
+Properties:
+    Inventory_BrandName = NVIDIA
+    Inventory_ModelName = NVIDIA H200
+    Inventory_PCIeDeviceId = 9013:4318
+    Inventory_PCIeSubSystemId = 6334:4318
+    Inventory_PartNumber = 692-2G520-0280-001
+    Inventory_SerialNumber = 1654924012275
+    Inventory_UUID = GPU-b222bc1a-b619-1cfc-25f6-3d0fb6c03d57
+    Specifications_ComputeCapability = 9.0
+    Specifications_MaxPCIeGen = 5
+    Specifications_MaxPCIeLinkWidth = 16x
+    Specifications_MaxSpeeds_GraphicsClock = 1980 MHz
+    Specifications_MaxSpeeds_MemClock = 3201 MHz
+    Specifications_MaxSpeeds_SMClock = 1980 MHz
+    Specifications_MaxSpeeds_VideoClock = 1545 MHz
+    Specifications_MemorySize = 140.40 GiB
+    Versions_VBIOSVersion = 96.00.A5.00.03
+    Connections_PCIeGen = 5
+    Connections_PCIeLinkWidth = 16x
+    Connections_PCIeLocation = 00000000:9D:00.0
+    Power_PowerDraw = 75777 mW
+    Stats_ErrorStats_ECCMode = Enabled
+    Stats_FrameBufferMemoryUsage_Free = 142982.19 MiB
+    Stats_FrameBufferMemoryUsage_Total = 143771.00 MiB
+    Stats_FrameBufferMemoryUsage_Used = 788.81 MiB
+    Stats_PCIeRxThroughput = 1577 KB/s
+    Stats_PCIeTxThroughput = 12584 KB/s
+    Stats_PerformanceState = P0
+    Stats_UtilDecoder = 0%
+    Stats_UtilEncoder = 0%
+    Stats_UtilGPU = 0%
+    Stats_UtilMemory = 0%
+    Status_Health = OK
+    VMName = <NOT_SET>
+    VirtualizationMode = None
+
+/systems/localhost/gpus/GPU4/health
+Properties:
+    Health = OK
+
+/systems/localhost/gpus/GPU5
+Properties:
+    Inventory_BrandName = NVIDIA
+    Inventory_ModelName = NVIDIA H200
+    Inventory_PCIeDeviceId = 9013:4318
+    Inventory_PCIeSubSystemId = 6334:4318
+    Inventory_PartNumber = 692-2G520-0280-001
+    Inventory_SerialNumber = 1654924155222
+    Inventory_UUID = GPU-f883e1e9-e8c2-a6fb-cf4d-a45285a0be8d
+    Specifications_ComputeCapability = 9.0
+    Specifications_MaxPCIeGen = 5
+    Specifications_MaxPCIeLinkWidth = 16x
+    Specifications_MaxSpeeds_GraphicsClock = 1980 MHz
+    Specifications_MaxSpeeds_MemClock = 3201 MHz
+    Specifications_MaxSpeeds_SMClock = 1980 MHz
+    Specifications_MaxSpeeds_VideoClock = 1545 MHz
+    Specifications_MemorySize = 140.40 GiB
+    Versions_VBIOSVersion = 96.00.A5.00.03
+    Connections_PCIeGen = 5
+    Connections_PCIeLinkWidth = 16x
+    Connections_PCIeLocation = 00000000:C3:00.0
+    Power_PowerDraw = 113397 mW
+    Stats_ErrorStats_ECCMode = Enabled
+    Stats_FrameBufferMemoryUsage_Free = 140835.69 MiB
+    Stats_FrameBufferMemoryUsage_Total = 143771.00 MiB
+    Stats_FrameBufferMemoryUsage_Used = 2935.31 MiB
+    Stats_PCIeRxThroughput = 1262 KB/s
+    Stats_PCIeTxThroughput = 1563 KB/s
+    Stats_PerformanceState = P0
+    Stats_UtilDecoder = 0%
+    Stats_UtilEncoder = 0%
+    Stats_UtilGPU = 0%
+    Stats_UtilMemory = 0%
+    Status_Health = OK
+    VMName = <NOT_SET>
+    VirtualizationMode = None
+
+/systems/localhost/gpus/GPU5/health
+Properties:
+    Health = OK
+
+/systems/localhost/gpus/GPU6
+Properties:
+    Inventory_BrandName = NVIDIA
+    Inventory_ModelName = NVIDIA H200
+    Inventory_PCIeDeviceId = 9013:4318
+    Inventory_PCIeSubSystemId = 6334:4318
+    Inventory_PartNumber = 692-2G520-0280-001
+    Inventory_SerialNumber = 1654924146230
+    Inventory_UUID = GPU-76025ace-07c4-9fdc-9984-9bee4c6b1ac7
+    Specifications_ComputeCapability = 9.0
+    Specifications_MaxPCIeGen = 5
+    Specifications_MaxPCIeLinkWidth = 16x
+    Specifications_MaxSpeeds_GraphicsClock = 1980 MHz
+    Specifications_MaxSpeeds_MemClock = 3201 MHz
+    Specifications_MaxSpeeds_SMClock = 1980 MHz
+    Specifications_MaxSpeeds_VideoClock = 1545 MHz
+    Specifications_MemorySize = 140.40 GiB
+    Versions_VBIOSVersion = 96.00.A5.00.03
+    Connections_PCIeGen = 5
+    Connections_PCIeLinkWidth = 16x
+    Connections_PCIeLocation = 00000000:D1:00.0
+    Power_PowerDraw = 117406 mW
+    Stats_ErrorStats_ECCMode = Enabled
+    Stats_FrameBufferMemoryUsage_Free = 140154.69 MiB
+    Stats_FrameBufferMemoryUsage_Total = 143771.00 MiB
+    Stats_FrameBufferMemoryUsage_Used = 3616.31 MiB
+    Stats_PCIeRxThroughput = 5011 KB/s
+    Stats_PCIeTxThroughput = 1394 KB/s
+    Stats_PerformanceState = P0
+    Stats_UtilDecoder = 0%
+    Stats_UtilEncoder = 0%
+    Stats_UtilGPU = 0%
+    Stats_UtilMemory = 0%
+    Status_Health = OK
+    VMName = <NOT_SET>
+    VirtualizationMode = None
+
+/systems/localhost/gpus/GPU6/health
+Properties:
+    Health = OK
+
+/systems/localhost/gpus/GPU7
+Properties:
+    Inventory_BrandName = NVIDIA
+    Inventory_ModelName = NVIDIA H200
+    Inventory_PCIeDeviceId = 9013:4318
+    Inventory_PCIeSubSystemId = 6334:4318
+    Inventory_PartNumber = 692-2G520-0280-001
+    Inventory_SerialNumber = 1654924145788
+    Inventory_UUID = GPU-e767ecdb-5d45-255f-8178-8659ba8db412
+    Specifications_ComputeCapability = 9.0
+    Specifications_MaxPCIeGen = 5
+    Specifications_MaxPCIeLinkWidth = 16x
+    Specifications_MaxSpeeds_GraphicsClock = 1980 MHz
+    Specifications_MaxSpeeds_MemClock = 3201 MHz
+    Specifications_MaxSpeeds_SMClock = 1980 MHz
+    Specifications_MaxSpeeds_VideoClock = 1545 MHz
+    Specifications_MemorySize = 140.40 GiB
+    Versions_VBIOSVersion = 96.00.A5.00.03
+    Connections_PCIeGen = 5
+    Connections_PCIeLinkWidth = 16x
+    Connections_PCIeLocation = 00000000:DF:00.0
+    Power_PowerDraw = 114453 mW
+    Stats_ErrorStats_ECCMode = Enabled
+    Stats_FrameBufferMemoryUsage_Free = 140835.69 MiB
+    Stats_FrameBufferMemoryUsage_Total = 143771.00 MiB
+    Stats_FrameBufferMemoryUsage_Used = 2935.31 MiB
+    Stats_PCIeRxThroughput = 1290 KB/s
+    Stats_PCIeTxThroughput = 6815 KB/s
+    Stats_PerformanceState = P0
+    Stats_UtilDecoder = 0%
+    Stats_UtilEncoder = 0%
+    Stats_UtilGPU = 0%
+    Stats_UtilMemory = 0%
+    Status_Health = OK
+    VMName = <NOT_SET>
+    VirtualizationMode = None
+
+/systems/localhost/gpus/GPU7/health
+Properties:
+    Health = OK
+
+/systems/localhost/gpus/alerts
+
+/systems/localhost/gpus/health
+Properties:
+    Health = OK
+
+/systems/localhost/gpus/policy
+Properties:
+    mute_monitoring = <NOT_SET>
+    mute_notification = <NOT_SET>
+

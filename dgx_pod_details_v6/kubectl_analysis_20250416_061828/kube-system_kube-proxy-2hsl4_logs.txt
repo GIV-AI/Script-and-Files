@@ -1,0 +1,22 @@
+I0416 04:53:38.053409       1 node.go:163] Successfully retrieved node IP: 192.168.1.248
+I0416 04:53:38.053442       1 server_others.go:109] "Detected node IP" address="192.168.1.248"
+I0416 04:53:38.103928       1 server_others.go:248] "Using ipvs Proxier"
+I0416 04:53:38.103942       1 server_others.go:250] "Creating dualStackProxier for ipvs"
+I0416 04:53:38.103951       1 server_others.go:465] "Detect-local-mode set to ClusterCIDR, but no IPv6 cluster CIDR defined, , defaulting to no-op detect-local for IPv6"
+I0416 04:53:38.104140       1 ipset.go:116] "Ipset name truncated" ipSetName="KUBE-6-LOAD-BALANCER-SOURCE-CIDR" truncatedName="KUBE-6-LOAD-BALANCER-SOURCE-CID"
+I0416 04:53:38.104153       1 ipset.go:116] "Ipset name truncated" ipSetName="KUBE-6-NODE-PORT-LOCAL-SCTP-HASH" truncatedName="KUBE-6-NODE-PORT-LOCAL-SCTP-HAS"
+I0416 04:53:38.104963       1 server.go:655] "Version info" version="v1.26.5"
+I0416 04:53:38.104968       1 server.go:657] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I0416 04:53:38.135499       1 conntrack.go:100] "Set sysctl" entry="net/netfilter/nf_conntrack_max" value=7340032
+I0416 04:53:38.135515       1 conntrack.go:52] "Setting nf_conntrack_max" nf_conntrack_max=7340032
+I0416 04:53:38.135827       1 conntrack.go:83] "Setting conntrack hashsize" conntrack hashsize=1835008
+I0416 04:53:38.175774       1 conntrack.go:100] "Set sysctl" entry="net/netfilter/nf_conntrack_tcp_timeout_close_wait" value=3600
+I0416 04:53:38.176670       1 config.go:444] "Starting node config controller"
+I0416 04:53:38.176678       1 shared_informer.go:270] Waiting for caches to sync for node config
+I0416 04:53:38.176678       1 config.go:226] "Starting endpoint slice config controller"
+I0416 04:53:38.176690       1 shared_informer.go:270] Waiting for caches to sync for endpoint slice config
+I0416 04:53:38.176942       1 config.go:317] "Starting service config controller"
+I0416 04:53:38.176958       1 shared_informer.go:270] Waiting for caches to sync for service config
+I0416 04:53:38.277915       1 shared_informer.go:277] Caches are synced for node config
+I0416 04:53:38.278048       1 shared_informer.go:277] Caches are synced for endpoint slice config
+I0416 04:53:38.278166       1 shared_informer.go:277] Caches are synced for service config

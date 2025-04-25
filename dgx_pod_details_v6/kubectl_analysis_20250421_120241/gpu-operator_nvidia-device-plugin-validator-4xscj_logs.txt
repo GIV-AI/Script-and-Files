@@ -1,0 +1,3 @@
+Defaulted container "nvidia-device-plugin-validator" out of: nvidia-device-plugin-validator, plugin-validation (init)
+Error from server (BadRequest): container "nvidia-device-plugin-validator" in pod "nvidia-device-plugin-validator-4xscj" is not available
+Failed to retrieve logs for gpu-operator/nvidia-device-plugin-validator-4xscj

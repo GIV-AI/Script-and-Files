@@ -1,0 +1,79 @@
+Namespace: kube-system
+Pod Name: coredns-645b46f4b6-m4zhl
+Status: 1/1
+Other Details: Running     2 (12h ago)    16h
+Name:                 coredns-645b46f4b6-m4zhl
+Namespace:            kube-system
+Priority:             2000000000
+Priority Class Name:  system-cluster-critical
+Service Account:      coredns
+Node:                 jain-dgx-server/192.168.1.248
+Start Time:           Tue, 15 Apr 2025 13:26:09 +0000
+Labels:               k8s-app=kube-dns
+                      pod-template-hash=645b46f4b6
+Annotations:          cni.projectcalico.org/containerID: 4f39b85f87c098453648a279b25f17866fb7d286d7a0a6d0ad3eb5f79eb155c0
+                      cni.projectcalico.org/podIP: 10.233.119.185/32
+                      cni.projectcalico.org/podIPs: 10.233.119.185/32
+                      createdby: kubespray
+Status:               Running
+IP:                   10.233.119.185
+IPs:
+  IP:           10.233.119.185
+Controlled By:  ReplicaSet/coredns-645b46f4b6
+Containers:
+  coredns:
+    Container ID:  docker://41f2538e5bfb1141917678ef0f88831e030c366d8ece9e1e18f07fca38a69440
+    Image:         registry.k8s.io/coredns/coredns:v1.9.3
+    Image ID:      docker-pullable://registry.k8s.io/coredns/coredns@sha256:8e352a029d304ca7431c6507b56800636c321cb52289686a581ab70aaa8a2e2a
+    Ports:         53/UDP, 53/TCP, 9153/TCP
+    Host Ports:    0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:43 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 15 Apr 2025 13:30:33 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:08 +0000
+    Ready:          True
+    Restart Count:  2
+    Limits:
+      memory:  300Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=0s timeout=5s period=10s #success=1 #failure=10
+    Readiness:    http-get http://:8181/ready delay=0s timeout=5s period=10s #success=1 #failure=10
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-gzm2s (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      coredns
+    Optional:  false
+  kube-api-access-gzm2s:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node-role.kubernetes.io/control-plane:NoSchedule
+                             node-role.kubernetes.io/master:NoSchedule
+                             node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age                From     Message
+  ----     ------            ----               ----     -------
+  Warning  DNSConfigForming  7s (x73 over 84m)  kubelet  Nameserver limits were exceeded, some nameservers have been omitted, the applied nameserver line is: 169.254.25.10 192.168.1.1 8.8.8.8

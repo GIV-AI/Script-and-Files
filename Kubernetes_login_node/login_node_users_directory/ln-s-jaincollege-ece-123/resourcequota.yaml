@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: resource-quota
+  namespace: ln-s-jaincollege-ece-123
+spec:
+  hard:
+    cpu: "12"
+    memory: "40Gi"
+    requests.nvidia.com/gpu: "1"
+    requests.nvidia.com/mig-3g.71gb: "2"
+    requests.nvidia.com/mig-2g.35gb: "1"
+    requests.nvidia.com/mig-1g.18gb: "2"
+    pods: "2"

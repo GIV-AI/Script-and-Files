@@ -1,0 +1,200 @@
+Namespace: gpu-operator
+Pod Name: nvidia-operator-validator-6qpmj
+Status: 1/1
+Other Details: Running                    6 (8h ago)       5d22h
+Name:                 nvidia-operator-validator-6qpmj
+Namespace:            gpu-operator
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Service Account:      nvidia-operator-validator
+Node:                 jain-dgx-server/192.168.1.248
+Start Time:           Tue, 15 Apr 2025 13:49:23 +0000
+Labels:               app=nvidia-operator-validator
+                      app.kubernetes.io/managed-by=gpu-operator
+                      app.kubernetes.io/part-of=gpu-operator
+                      controller-revision-hash=76d667c974
+                      helm.sh/chart=gpu-operator-v23.3.2
+                      pod-template-generation=1
+Annotations:          cni.projectcalico.org/containerID: acdd6645481f26eeb73013cfc87f48a13c6a4308d99598387f55fd1b92d13e0c
+                      cni.projectcalico.org/podIP: 10.233.119.187/32
+                      cni.projectcalico.org/podIPs: 10.233.119.187/32
+Status:               Running
+IP:                   10.233.119.187
+IPs:
+  IP:           10.233.119.187
+Controlled By:  DaemonSet/nvidia-operator-validator
+Init Containers:
+  driver-validation:
+    Container ID:  docker://2c7d79995cbd14d388cd55b975fd4756081547800b462290ef466eb3349f7605
+    Image:         nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Image ID:      docker-pullable://nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:21dfc9c56b5f8bce73e60361d6e83759c3fa14dc6afc2d5ebdf1b891a936daf6
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+    Args:
+      nvidia-validator
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:29:01 +0000
+      Finished:     Mon, 21 Apr 2025 05:29:04 +0000
+    Ready:          True
+    Restart Count:  7
+    Environment:
+      WITH_WAIT:  true
+      COMPONENT:  driver
+    Mounts:
+      /host from host-root (ro)
+      /host-dev-char from host-dev-char (rw)
+      /run/nvidia/driver from driver-install-path (rw)
+      /run/nvidia/validations from run-nvidia-validations (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-xz9nm (ro)
+  toolkit-validation:
+    Container ID:  docker://163ad60b6f06843417a371e1a0dda7783805fc1f483be6f20347036d748f4ce1
+    Image:         nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Image ID:      docker-pullable://nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:21dfc9c56b5f8bce73e60361d6e83759c3fa14dc6afc2d5ebdf1b891a936daf6
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+    Args:
+      nvidia-validator
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:29:30 +0000
+      Finished:     Mon, 21 Apr 2025 05:29:31 +0000
+    Ready:          True
+    Restart Count:  2
+    Environment:
+      NVIDIA_VISIBLE_DEVICES:  all
+      WITH_WAIT:               false
+      COMPONENT:               toolkit
+    Mounts:
+      /run/nvidia/validations from run-nvidia-validations (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-xz9nm (ro)
+  cuda-validation:
+    Container ID:  docker://09e04a9256c9c9027e5580f7242e6f1a22a503a3b8712fe30a06a3b33818ff0b
+    Image:         nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Image ID:      docker-pullable://nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:21dfc9c56b5f8bce73e60361d6e83759c3fa14dc6afc2d5ebdf1b891a936daf6
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+    Args:
+      nvidia-validator
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:29:32 +0000
+      Finished:     Mon, 21 Apr 2025 05:31:04 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:
+      WITH_WAIT:                    false
+      COMPONENT:                    cuda
+      NODE_NAME:                     (v1:spec.nodeName)
+      OPERATOR_NAMESPACE:           gpu-operator (v1:metadata.namespace)
+      VALIDATOR_IMAGE:              nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+      VALIDATOR_IMAGE_PULL_POLICY:  IfNotPresent
+    Mounts:
+      /run/nvidia/validations from run-nvidia-validations (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-xz9nm (ro)
+  plugin-validation:
+    Container ID:  docker://80d244d5c4aa95f30a395a2f1439027786050d2d680bfa9851541e9d01e79c95
+    Image:         nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Image ID:      docker-pullable://nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:21dfc9c56b5f8bce73e60361d6e83759c3fa14dc6afc2d5ebdf1b891a936daf6
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+    Args:
+      nvidia-validator
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:31:10 +0000
+      Finished:     Mon, 21 Apr 2025 05:31:40 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:
+      COMPONENT:                    plugin
+      WITH_WAIT:                    false
+      WITH_WORKLOAD:                true
+      MIG_STRATEGY:                 mixed
+      NODE_NAME:                     (v1:spec.nodeName)
+      OPERATOR_NAMESPACE:           gpu-operator (v1:metadata.namespace)
+      VALIDATOR_IMAGE:              nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+      VALIDATOR_IMAGE_PULL_POLICY:  IfNotPresent
+    Mounts:
+      /run/nvidia/validations from run-nvidia-validations (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-xz9nm (ro)
+Containers:
+  nvidia-operator-validator:
+    Container ID:  docker://e79af05020f8c62e45c7fc88b1f715811f45dc97396a8b451beb2f9104241610
+    Image:         nvcr.io/nvidia/cloud-native/gpu-operator-validator:v23.3.2
+    Image ID:      docker-pullable://nvcr.io/nvidia/cloud-native/gpu-operator-validator@sha256:21dfc9c56b5f8bce73e60361d6e83759c3fa14dc6afc2d5ebdf1b891a936daf6
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sh
+      -c
+    Args:
+      echo all validations are successful; sleep infinity
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:31:43 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    255
+      Started:      Sat, 19 Apr 2025 04:30:01 +0000
+      Finished:     Mon, 21 Apr 2025 03:51:58 +0000
+    Ready:          True
+    Restart Count:  6
+    Environment:    <none>
+    Mounts:
+      /run/nvidia/validations from run-nvidia-validations (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-xz9nm (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  run-nvidia-validations:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/nvidia/validations
+    HostPathType:  DirectoryOrCreate
+  driver-install-path:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/nvidia/driver
+    HostPathType:  
+  host-root:
+    Type:          HostPath (bare host directory volume)
+    Path:          /
+    HostPathType:  
+  host-dev-char:
+    Type:          HostPath (bare host directory volume)
+    Path:          /dev/char
+    HostPathType:  
+  kube-api-access-xz9nm:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              nvidia.com/gpu.deploy.operator-validator=true
+Tolerations:                 node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+                             nvidia.com/gpu:NoSchedule op=Exists
+Events:                      <none>

@@ -1,0 +1,26 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: ln-f-giindia-support-12
+  namespace: ln-f-giindia-support-12
+rules:
+- apiGroups: ["","storage.k8s.io"]
+  resources:
+    - pods
+    - pods/log
+    - pods/exec
+    - pods/attach
+    - pods/portforward
+    - services
+    - endpoints
+    - persistentvolumeclaims
+    - volumeattachments
+    - events
+  verbs:
+    - get
+    - list
+    - watch
+    - create
+    - update
+    - patch
+    - delete

@@ -1,0 +1,17 @@
+2025-04-19,DGX/System/Docker user login details,How many no. of users login using ssh = 29
+2025-04-19,Power Consumption of DGX,Current Total Power consumed in watts = 2262
+2025-04-19,Current Health Status of DGX = OK
+2025-04-19,Current Status of GPUs = OK
+2025-04-19,Current Status of GPUs Processing = 0
+2025-04-19,System Updates = Yes
+2025-04-19,Reboot = Yes
+2025-04-19,Current Disk Storage status Used = 233G, Available = 1.5T
+2025-04-19,Login Kubeflow Users,No of Users = 7
+2025-04-19,Total running pods = 31
+2025-04-19,Notebook Created by users, No. of notebook = 34
+2025-04-19,Total Containers,6
+2025-04-19,Containers Actively Using NVIDIA GPU,0
+2025-04-19,Containers Configured To Utilize NVIDIA GPU But Not Actively Using It,4
+2025-04-19,Other Containers,2
+2025-04-19, total rootless container: 2, total running rootless container: 2
+2025-04-19, total running rootless container with gpu: 1, total exiting rootless container: 0

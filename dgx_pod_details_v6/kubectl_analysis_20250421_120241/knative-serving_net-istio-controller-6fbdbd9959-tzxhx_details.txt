@@ -1,0 +1,221 @@
+Namespace: knative-serving
+Pod Name: net-istio-controller-6fbdbd9959-tzxhx
+Status: 2/2
+Other Details: Running                    34 (6h31m ago)   5d22h
+Name:             net-istio-controller-6fbdbd9959-tzxhx
+Namespace:        knative-serving
+Priority:         0
+Service Account:  controller
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:26 +0000
+Labels:           app=net-istio-controller
+                  app.kubernetes.io/component=net-istio
+                  app.kubernetes.io/name=knative-serving
+                  app.kubernetes.io/version=1.8.0
+                  pod-template-hash=6fbdbd9959
+                  security.istio.io/tlsMode=istio
+                  service.istio.io/canonical-name=knative-serving
+                  service.istio.io/canonical-revision=1.8.0
+Annotations:      cluster-autoscaler.kubernetes.io/safe-to-evict: true
+                  cni.projectcalico.org/containerID: db3b6dd8c266ff112e36f1efbcb3f6401884b46730fa8b0a71a65f2ce8b5d519
+                  cni.projectcalico.org/podIP: 10.233.119.152/32
+                  cni.projectcalico.org/podIPs: 10.233.119.152/32
+                  kubectl.kubernetes.io/default-container: controller
+                  kubectl.kubernetes.io/default-logs-container: controller
+                  prometheus.io/path: /stats/prometheus
+                  prometheus.io/port: 15020
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/inject: true
+                  sidecar.istio.io/status:
+                    {"initContainers":["istio-init"],"containers":["istio-proxy"],"volumes":["workload-socket","credential-socket","workload-certs","istio-env...
+Status:           Running
+IP:               10.233.119.152
+IPs:
+  IP:           10.233.119.152
+Controlled By:  ReplicaSet/net-istio-controller-6fbdbd9959
+Init Containers:
+  istio-init:
+    Container ID:  docker://f2fa77e33c44b0f14ed27f03f5f49cbf5993e0d062942f3c487111ec2b215ed1
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      istio-iptables
+      -p
+      15001
+      -z
+      15006
+      -u
+      1337
+      -m
+      REDIRECT
+      -i
+      *
+      -x
+      
+      -b
+      *
+      -d
+      15090,15021,15020
+      --log_output_level=default:info
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:29:19 +0000
+      Finished:     Mon, 21 Apr 2025 05:29:19 +0000
+    Ready:          True
+    Restart Count:  7
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:        10m
+      memory:     40Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-6q6hd (ro)
+Containers:
+  controller:
+    Container ID:   docker://7abd5eaa343192897bc382b9218d63bbb0b684bde27fc66cd48b3295899b3b22
+    Image:          gcr.io/knative-releases/knative.dev/net-istio/cmd/controller@sha256:2b484d982ef1a5d6ff93c46d3e45f51c2605c2e3ed766e20247d1727eb5ce918
+    Image ID:       docker-pullable://gcr.io/knative-releases/knative.dev/net-istio/cmd/controller@sha256:2b484d982ef1a5d6ff93c46d3e45f51c2605c2e3ed766e20247d1727eb5ce918
+    Ports:          9090/TCP, 8008/TCP
+    Host Ports:     0/TCP, 0/TCP
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:32:57 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Mon, 21 Apr 2025 05:31:22 +0000
+      Finished:     Mon, 21 Apr 2025 05:31:27 +0000
+    Ready:          True
+    Restart Count:  27
+    Limits:
+      cpu:     300m
+      memory:  400Mi
+    Requests:
+      cpu:     30m
+      memory:  40Mi
+    Environment:
+      SYSTEM_NAMESPACE:                              knative-serving (v1:metadata.namespace)
+      CONFIG_LOGGING_NAME:                           config-logging
+      CONFIG_OBSERVABILITY_NAME:                     config-observability
+      ENABLE_SECRET_INFORMER_FILTERING_BY_CERT_UID:  false
+      METRICS_DOMAIN:                                knative.dev/net-istio
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-6q6hd (ro)
+  istio-proxy:
+    Container ID:  docker://63d7d282d99212af1d745a73ea99540bb84851c0774f99f31a845fc0aa6d4238
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          15090/TCP
+    Host Port:     0/TCP
+    Args:
+      proxy
+      sidecar
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+      --concurrency
+      2
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:20 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 03:55:43 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:46 +0000
+    Ready:          True
+    Restart Count:  7
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=1s timeout=3s period=2s #success=1 #failure=30
+    Environment:
+      JWT_POLICY:                    third-party-jwt
+      PILOT_CERT_PROVIDER:           istiod
+      CA_ADDR:                       istiod.istio-system.svc:15012
+      POD_NAME:                      net-istio-controller-6fbdbd9959-tzxhx (v1:metadata.name)
+      POD_NAMESPACE:                 knative-serving (v1:metadata.namespace)
+      INSTANCE_IP:                    (v1:status.podIP)
+      SERVICE_ACCOUNT:                (v1:spec.serviceAccountName)
+      HOST_IP:                        (v1:status.hostIP)
+      PROXY_CONFIG:                  {}
+                                     
+      ISTIO_META_POD_PORTS:          [
+                                         {"name":"metrics","containerPort":9090,"protocol":"TCP"}
+                                         ,{"name":"profiling","containerPort":8008,"protocol":"TCP"}
+                                     ]
+      ISTIO_META_APP_CONTAINERS:     controller
+      ISTIO_META_CLUSTER_ID:         Kubernetes
+      ISTIO_META_INTERCEPTION_MODE:  REDIRECT
+      ISTIO_META_WORKLOAD_NAME:      net-istio-controller
+      ISTIO_META_OWNER:              kubernetes://apis/apps/v1/namespaces/knative-serving/deployments/net-istio-controller
+      ISTIO_META_MESH_ID:            cluster.local
+      TRUST_DOMAIN:                  cluster.local
+    Mounts:
+      /etc/istio/pod from istio-podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-6q6hd (ro)
+      /var/run/secrets/tokens from istio-token (rw)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  kube-api-access-6q6hd:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

@@ -1,0 +1,73 @@
+Namespace: knative-eventing
+Pod Name: eventing-controller-86647cbc5b-74f5h
+Status: 1/1
+Other Details: Running                    8 (6h31m ago)    5d22h
+Name:             eventing-controller-86647cbc5b-74f5h
+Namespace:        knative-eventing
+Priority:         0
+Service Account:  eventing-controller
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:00:27 +0000
+Labels:           app=eventing-controller
+                  app.kubernetes.io/component=knative-eventing
+                  app.kubernetes.io/name=knative-eventing
+                  app.kubernetes.io/version=1.8.1
+                  eventing.knative.dev/release=v1.8.1
+                  kustomize.component=knative
+                  pod-template-hash=86647cbc5b
+Annotations:      cni.projectcalico.org/containerID: 5503ba34f9bc6ba8050455f1b79a140c6f354f4134735cf011fd9d6cd2750d96
+                  cni.projectcalico.org/podIP: 10.233.119.222/32
+                  cni.projectcalico.org/podIPs: 10.233.119.222/32
+Status:           Running
+IP:               10.233.119.222
+IPs:
+  IP:           10.233.119.222
+Controlled By:  ReplicaSet/eventing-controller-86647cbc5b
+Containers:
+  eventing-controller:
+    Container ID:   docker://2510225b1f2faaea23ef8bc737a948e73e9c852055d7aeb89d0b90ad2bd0921b
+    Image:          gcr.io/knative-releases/knative.dev/eventing/cmd/controller@sha256:33d78536e9b38dbb2ec2952207b48ff8e05acb48e7d28c2305bd0a0f7156198f
+    Image ID:       docker-pullable://gcr.io/knative-releases/knative.dev/eventing/cmd/controller@sha256:33d78536e9b38dbb2ec2952207b48ff8e05acb48e7d28c2305bd0a0f7156198f
+    Ports:          9090/TCP, 8008/TCP, 8080/TCP
+    Host Ports:     0/TCP, 0/TCP, 0/TCP
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:30:46 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 05:29:05 +0000
+      Finished:     Mon, 21 Apr 2025 05:30:46 +0000
+    Ready:          True
+    Restart Count:  8
+    Requests:
+      cpu:      100m
+      memory:   100Mi
+    Liveness:   http-get http://:probes/health delay=20s timeout=5s period=10s #success=1 #failure=3
+    Readiness:  http-get http://:probes/readiness delay=20s timeout=5s period=10s #success=1 #failure=3
+    Environment:
+      SYSTEM_NAMESPACE:           knative-eventing (v1:metadata.namespace)
+      CONFIG_LOGGING_NAME:        config-logging
+      CONFIG_OBSERVABILITY_NAME:  config-observability
+      METRICS_DOMAIN:             knative.dev/eventing
+      APISERVER_RA_IMAGE:         gcr.io/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter@sha256:2fd38788ae96abd96e63bf8b7ef3e1b37370513a84a86cd153dfb1cd9442a095
+      POD_NAME:                   eventing-controller-86647cbc5b-74f5h (v1:metadata.name)
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-gb4vj (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-gb4vj:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

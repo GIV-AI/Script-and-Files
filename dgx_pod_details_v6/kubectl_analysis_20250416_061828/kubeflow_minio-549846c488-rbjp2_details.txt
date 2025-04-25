@@ -1,0 +1,218 @@
+Namespace: kubeflow
+Pod Name: minio-549846c488-rbjp2
+Status: 2/2
+Other Details: Running     2 (12h ago)    16h
+Name:             minio-549846c488-rbjp2
+Namespace:        kubeflow
+Priority:         0
+Service Account:  default
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:30 +0000
+Labels:           app=minio
+                  application-crd-id=kubeflow-pipelines
+                  pod-template-hash=549846c488
+                  security.istio.io/tlsMode=istio
+                  service.istio.io/canonical-name=minio
+                  service.istio.io/canonical-revision=latest
+Annotations:      cni.projectcalico.org/containerID: 4f0998d17fbf438ede42cb3aa880f50040f19c270aebc8af60dd43bd37e314fe
+                  cni.projectcalico.org/podIP: 10.233.119.186/32
+                  cni.projectcalico.org/podIPs: 10.233.119.186/32
+                  kubectl.kubernetes.io/default-container: minio
+                  kubectl.kubernetes.io/default-logs-container: minio
+                  prometheus.io/path: /stats/prometheus
+                  prometheus.io/port: 15020
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/status:
+                    {"initContainers":["istio-init"],"containers":["istio-proxy"],"volumes":["workload-socket","credential-socket","workload-certs","istio-env...
+Status:           Running
+IP:               10.233.119.186
+IPs:
+  IP:           10.233.119.186
+Controlled By:  ReplicaSet/minio-549846c488
+Init Containers:
+  istio-init:
+    Container ID:  docker://ea5e60c7d5ce93c1c5eff75d74ec0c860608c29c6d9febcf8ced98cc14db23e7
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      istio-iptables
+      -p
+      15001
+      -z
+      15006
+      -u
+      1337
+      -m
+      REDIRECT
+      -i
+      *
+      -x
+      
+      -b
+      *
+      -d
+      15090,15021,15020
+      --log_output_level=default:info
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Wed, 16 Apr 2025 04:53:45 +0000
+      Finished:     Wed, 16 Apr 2025 04:53:45 +0000
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:        10m
+      memory:     40Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-zldgg (ro)
+Containers:
+  minio:
+    Container ID:  docker://dca8f5ddc93b17ad687c0579b55c0bf45ff6852e12265b439a3b271542120334
+    Image:         gcr.io/ml-pipeline/minio:RELEASE.2019-08-14T20-37-41Z-license-compliance
+    Image ID:      docker-pullable://gcr.io/ml-pipeline/minio@sha256:587abc14be9bbeed794473cf7290c40e377062f2f77f5e4e27742a77680f08e0
+    Port:          9000/TCP
+    Host Port:     0/TCP
+    Args:
+      server
+      /data
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:47 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    137
+      Started:      Tue, 15 Apr 2025 14:07:41 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:13 +0000
+    Ready:          True
+    Restart Count:  1
+    Requests:
+      cpu:     20m
+      memory:  100Mi
+    Environment:
+      MINIO_ACCESS_KEY:  <set to the key 'accesskey' in secret 'mlpipeline-minio-artifact'>  Optional: false
+      MINIO_SECRET_KEY:  <set to the key 'secretkey' in secret 'mlpipeline-minio-artifact'>  Optional: false
+    Mounts:
+      /data from data (rw,path="minio")
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-zldgg (ro)
+  istio-proxy:
+    Container ID:  docker://9f4cdfc12e0c42a93b87f4f2ed35e5e65a532c23ffc6ef17764b87612475ceb8
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          15090/TCP
+    Host Port:     0/TCP
+    Args:
+      proxy
+      sidecar
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+      --concurrency
+      2
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:47 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 15 Apr 2025 14:07:41 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:08 +0000
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=1s timeout=3s period=2s #success=1 #failure=30
+    Environment:
+      JWT_POLICY:                    third-party-jwt
+      PILOT_CERT_PROVIDER:           istiod
+      CA_ADDR:                       istiod.istio-system.svc:15012
+      POD_NAME:                      minio-549846c488-rbjp2 (v1:metadata.name)
+      POD_NAMESPACE:                 kubeflow (v1:metadata.namespace)
+      INSTANCE_IP:                    (v1:status.podIP)
+      SERVICE_ACCOUNT:                (v1:spec.serviceAccountName)
+      HOST_IP:                        (v1:status.hostIP)
+      PROXY_CONFIG:                  {}
+                                     
+      ISTIO_META_POD_PORTS:          [
+                                         {"containerPort":9000,"protocol":"TCP"}
+                                     ]
+      ISTIO_META_APP_CONTAINERS:     minio
+      ISTIO_META_CLUSTER_ID:         Kubernetes
+      ISTIO_META_INTERCEPTION_MODE:  REDIRECT
+      ISTIO_META_WORKLOAD_NAME:      minio
+      ISTIO_META_OWNER:              kubernetes://apis/apps/v1/namespaces/kubeflow/deployments/minio
+      ISTIO_META_MESH_ID:            cluster.local
+      TRUST_DOMAIN:                  cluster.local
+    Mounts:
+      /etc/istio/pod from istio-podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-zldgg (ro)
+      /var/run/secrets/tokens from istio-token (rw)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  data:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  minio-pvc
+    ReadOnly:   false
+  kube-api-access-zldgg:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

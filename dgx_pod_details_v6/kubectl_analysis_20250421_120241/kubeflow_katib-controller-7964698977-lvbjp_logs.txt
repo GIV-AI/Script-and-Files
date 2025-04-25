@@ -1,0 +1,47 @@
+{"level":"info","ts":1745213344.4507382,"logger":"entrypoint","msg":"Config:","experiment-suggestion-name":"default","webhook-port":8443,"metrics-addr":":8080","healthz-addr":":18080","inject-security-context":false,"enable-grpc-probe-in-suggestion":true,"trial-resources":[{"Group":"batch","Version":"v1","Kind":"Job"},{"Group":"kubeflow.org","Version":"v1","Kind":"TFJob"},{"Group":"kubeflow.org","Version":"v1","Kind":"PyTorchJob"},{"Group":"kubeflow.org","Version":"v1","Kind":"MPIJob"},{"Group":"kubeflow.org","Version":"v1","Kind":"XGBoostJob"},{"Group":"kubeflow.org","Version":"v1","Kind":"MXJob"}]}
+I0421 05:29:05.501523       1 request.go:682] Waited for 1.036812909s due to client-side throttling, not priority and fairness, request: GET:https://10.233.0.1:443/apis/metacontroller.k8s.io/v1alpha1?timeout=32s
+{"level":"info","ts":1745213345.8042521,"logger":"controller-runtime.metrics","msg":"Metrics server is starting to listen","addr":":8080"}
+{"level":"info","ts":1745213345.8044279,"logger":"entrypoint","msg":"Registering Components."}
+{"level":"info","ts":1745213345.804526,"logger":"entrypoint","msg":"Setting up controller."}
+{"level":"info","ts":1745213345.8045373,"logger":"experiment-controller","msg":"Using the default suggestion implementation"}
+{"level":"info","ts":1745213345.8045957,"logger":"experiment-controller","msg":"Experiment controller created"}
+{"level":"info","ts":1745213345.8046198,"logger":"suggestion-controller","msg":"Suggestion controller created"}
+{"level":"info","ts":1745213345.804854,"logger":"trial-controller","msg":"Job watch added successfully","CRD Group":"batch","CRD Version":"v1","CRD Kind":"Job"}
+{"level":"info","ts":1745213345.8048723,"logger":"trial-controller","msg":"Job watch added successfully","CRD Group":"kubeflow.org","CRD Version":"v1","CRD Kind":"TFJob"}
+{"level":"info","ts":1745213345.8048875,"logger":"trial-controller","msg":"Job watch added successfully","CRD Group":"kubeflow.org","CRD Version":"v1","CRD Kind":"PyTorchJob"}
+{"level":"info","ts":1745213345.8049004,"logger":"trial-controller","msg":"Job watch added successfully","CRD Group":"kubeflow.org","CRD Version":"v1","CRD Kind":"MPIJob"}
+{"level":"info","ts":1745213345.8049147,"logger":"trial-controller","msg":"Job watch added successfully","CRD Group":"kubeflow.org","CRD Version":"v1","CRD Kind":"XGBoostJob"}
+{"level":"info","ts":1745213345.8049285,"logger":"trial-controller","msg":"Job watch added successfully","CRD Group":"kubeflow.org","CRD Version":"v1","CRD Kind":"MXJob"}
+{"level":"info","ts":1745213345.8049314,"logger":"trial-controller","msg":"Trial controller created"}
+{"level":"info","ts":1745213345.8049328,"logger":"entrypoint","msg":"Setting up webhooks."}
+{"level":"info","ts":1745213345.8049877,"logger":"controller-runtime.webhook","msg":"Registering webhook","path":"/validate-experiment"}
+{"level":"info","ts":1745213345.8050468,"logger":"controller-runtime.webhook","msg":"Registering webhook","path":"/mutate-experiment"}
+{"level":"info","ts":1745213345.8050885,"logger":"controller-runtime.webhook","msg":"Registering webhook","path":"/mutate-pod"}
+{"level":"info","ts":1745213345.80511,"logger":"entrypoint","msg":"Setting up health checker."}
+{"level":"info","ts":1745213345.8051145,"logger":"entrypoint","msg":"Starting the Cmd."}
+{"level":"info","ts":1745213345.8053246,"logger":"controller-runtime.webhook.webhooks","msg":"Starting webhook server"}
+{"level":"info","ts":1745213345.805346,"msg":"Starting server","path":"/metrics","kind":"metrics","addr":"[::]:8080"}
+{"level":"info","ts":1745213345.8053498,"msg":"Starting server","kind":"health probe","addr":"[::]:18080"}
+{"level":"info","ts":1745213345.8057046,"logger":"controller-runtime.certwatcher","msg":"Updated current TLS certificate"}
+{"level":"info","ts":1745213345.8058145,"logger":"controller-runtime.webhook","msg":"Serving webhook server","host":"","port":8443}
+{"level":"info","ts":1745213345.8058138,"msg":"Starting EventSource","controller":"trial-controller","source":"kind source: *v1beta1.Trial"}
+{"level":"info","ts":1745213345.8058372,"msg":"Starting EventSource","controller":"trial-controller","source":"kind source: *unstructured.Unstructured"}
+{"level":"info","ts":1745213345.8058405,"msg":"Starting EventSource","controller":"trial-controller","source":"kind source: *unstructured.Unstructured"}
+{"level":"info","ts":1745213345.8058438,"msg":"Starting EventSource","controller":"trial-controller","source":"kind source: *unstructured.Unstructured"}
+{"level":"info","ts":1745213345.8058498,"msg":"Starting EventSource","controller":"trial-controller","source":"kind source: *unstructured.Unstructured"}
+{"level":"info","ts":1745213345.805853,"msg":"Starting EventSource","controller":"trial-controller","source":"kind source: *unstructured.Unstructured"}
+{"level":"info","ts":1745213345.805857,"msg":"Starting EventSource","controller":"trial-controller","source":"kind source: *unstructured.Unstructured"}
+{"level":"info","ts":1745213345.8058596,"msg":"Starting Controller","controller":"trial-controller"}
+{"level":"info","ts":1745213345.805862,"logger":"controller-runtime.certwatcher","msg":"Starting certificate watcher"}
+{"level":"info","ts":1745213345.8059,"msg":"Starting EventSource","controller":"experiment-controller","source":"kind source: *v1beta1.Experiment"}
+{"level":"info","ts":1745213345.8059154,"msg":"Starting EventSource","controller":"experiment-controller","source":"kind source: *v1beta1.Trial"}
+{"level":"info","ts":1745213345.8059196,"msg":"Starting EventSource","controller":"experiment-controller","source":"kind source: *v1beta1.Suggestion"}
+{"level":"info","ts":1745213345.805922,"msg":"Starting Controller","controller":"experiment-controller"}
+{"level":"info","ts":1745213345.8059597,"msg":"Starting EventSource","controller":"suggestion-controller","source":"kind source: *v1beta1.Suggestion"}
+{"level":"info","ts":1745213345.8059897,"msg":"Starting EventSource","controller":"suggestion-controller","source":"kind source: *v1.Deployment"}
+{"level":"info","ts":1745213345.805995,"msg":"Starting EventSource","controller":"suggestion-controller","source":"kind source: *v1.Service"}
+{"level":"info","ts":1745213345.8060036,"msg":"Starting EventSource","controller":"suggestion-controller","source":"kind source: *v1.PersistentVolumeClaim"}
+{"level":"info","ts":1745213345.80601,"msg":"Starting Controller","controller":"suggestion-controller"}
+{"level":"info","ts":1745213346.2069063,"msg":"Starting workers","controller":"suggestion-controller","worker count":1}
+{"level":"info","ts":1745213346.2078216,"msg":"Starting workers","controller":"trial-controller","worker count":1}
+{"level":"info","ts":1745213346.208069,"msg":"Starting workers","controller":"experiment-controller","worker count":1}

@@ -1,0 +1,233 @@
+Namespace: kubeflow
+Pod Name: cache-server-6b44c46d47-cwfcx
+Status: 2/2
+Other Details: Running     6 (12h ago)    16h
+Name:             cache-server-6b44c46d47-cwfcx
+Namespace:        kubeflow
+Priority:         0
+Service Account:  kubeflow-pipelines-cache
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:28 +0000
+Labels:           app=cache-server
+                  app.kubernetes.io/component=ml-pipeline
+                  app.kubernetes.io/name=kubeflow-pipelines
+                  application-crd-id=kubeflow-pipelines
+                  pod-template-hash=6b44c46d47
+                  security.istio.io/tlsMode=istio
+                  service.istio.io/canonical-name=kubeflow-pipelines
+                  service.istio.io/canonical-revision=latest
+Annotations:      cni.projectcalico.org/containerID: 1045f22a89d05a88753913ed19da32cb7113f44b060027358b01b1049a669760
+                  cni.projectcalico.org/podIP: 10.233.119.188/32
+                  cni.projectcalico.org/podIPs: 10.233.119.188/32
+                  kubectl.kubernetes.io/default-container: server
+                  kubectl.kubernetes.io/default-logs-container: server
+                  prometheus.io/path: /stats/prometheus
+                  prometheus.io/port: 15020
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/status:
+                    {"initContainers":["istio-init"],"containers":["istio-proxy"],"volumes":["workload-socket","credential-socket","workload-certs","istio-env...
+Status:           Running
+IP:               10.233.119.188
+IPs:
+  IP:           10.233.119.188
+Controlled By:  ReplicaSet/cache-server-6b44c46d47
+Init Containers:
+  istio-init:
+    Container ID:  docker://21448245c85b9ab14380d1aa9ee0d844df989c8aebede1a72a5b88d9891b47a4
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      istio-iptables
+      -p
+      15001
+      -z
+      15006
+      -u
+      1337
+      -m
+      REDIRECT
+      -i
+      *
+      -x
+      
+      -b
+      *
+      -d
+      15090,15021,15020
+      --log_output_level=default:info
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Wed, 16 Apr 2025 04:53:45 +0000
+      Finished:     Wed, 16 Apr 2025 04:53:45 +0000
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:        10m
+      memory:     40Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-pf95t (ro)
+Containers:
+  server:
+    Container ID:  docker://172b76185288f432fa35e87b0264e72db96d67d03245d58f4efe3f70eb94c60e
+    Image:         gcr.io/ml-pipeline/cache-server:2.0.0-alpha.7
+    Image ID:      docker-pullable://gcr.io/ml-pipeline/cache-server@sha256:165d36514c8e4c0009a8673f6e9822c99d35f76063b1c7f6baff1d6d91dc0bb9
+    Port:          8443/TCP
+    Host Port:     0/TCP
+    Args:
+      --db_driver=$(DBCONFIG_DRIVER)
+      --db_host=$(DBCONFIG_HOST_NAME)
+      --db_port=$(DBCONFIG_PORT)
+      --db_name=$(DBCONFIG_DB_NAME)
+      --db_user=$(DBCONFIG_USER)
+      --db_password=$(DBCONFIG_PASSWORD)
+      --namespace_to_watch=$(NAMESPACE_TO_WATCH)
+      --tls_cert_filename=tls.crt
+      --tls_key_filename=tls.key
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:50 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    2
+      Started:      Tue, 15 Apr 2025 15:10:11 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:02 +0000
+    Ready:          True
+    Restart Count:  5
+    Environment:
+      NAMESPACE_TO_WATCH:       
+      DEFAULT_CACHE_STALENESS:  <set to the key 'DEFAULT_CACHE_STALENESS' of config map 'pipeline-install-config'>  Optional: false
+      MAXIMUM_CACHE_STALENESS:  <set to the key 'MAXIMUM_CACHE_STALENESS' of config map 'pipeline-install-config'>  Optional: false
+      CACHE_IMAGE:              <set to the key 'cacheImage' of config map 'pipeline-install-config'>               Optional: false
+      CACHE_NODE_RESTRICTIONS:  <set to the key 'cacheNodeRestrictions' of config map 'pipeline-install-config'>    Optional: false
+      DBCONFIG_DRIVER:          mysql
+      DBCONFIG_DB_NAME:         <set to the key 'cacheDb' of config map 'pipeline-install-config'>  Optional: false
+      DBCONFIG_HOST_NAME:       <set to the key 'dbHost' of config map 'pipeline-install-config'>   Optional: false
+      DBCONFIG_PORT:            <set to the key 'dbPort' of config map 'pipeline-install-config'>   Optional: false
+      DBCONFIG_USER:            <set to the key 'username' in secret 'mysql-secret'>                Optional: false
+      DBCONFIG_PASSWORD:        <set to the key 'password' in secret 'mysql-secret'>                Optional: false
+    Mounts:
+      /etc/webhook/certs from webhook-tls-certs (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-pf95t (ro)
+  istio-proxy:
+    Container ID:  docker://71e42d6807e1d5cd944df33b8ba5e02812009c2133d63880ae7f1bf868d14f7e
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          15090/TCP
+    Host Port:     0/TCP
+    Args:
+      proxy
+      sidecar
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+      --concurrency
+      2
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:50 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 15 Apr 2025 14:15:12 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:08 +0000
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=1s timeout=3s period=2s #success=1 #failure=30
+    Environment:
+      JWT_POLICY:                    third-party-jwt
+      PILOT_CERT_PROVIDER:           istiod
+      CA_ADDR:                       istiod.istio-system.svc:15012
+      POD_NAME:                      cache-server-6b44c46d47-cwfcx (v1:metadata.name)
+      POD_NAMESPACE:                 kubeflow (v1:metadata.namespace)
+      INSTANCE_IP:                    (v1:status.podIP)
+      SERVICE_ACCOUNT:                (v1:spec.serviceAccountName)
+      HOST_IP:                        (v1:status.hostIP)
+      PROXY_CONFIG:                  {}
+                                     
+      ISTIO_META_POD_PORTS:          [
+                                         {"name":"webhook-api","containerPort":8443,"protocol":"TCP"}
+                                     ]
+      ISTIO_META_APP_CONTAINERS:     server
+      ISTIO_META_CLUSTER_ID:         Kubernetes
+      ISTIO_META_INTERCEPTION_MODE:  REDIRECT
+      ISTIO_META_WORKLOAD_NAME:      cache-server
+      ISTIO_META_OWNER:              kubernetes://apis/apps/v1/namespaces/kubeflow/deployments/cache-server
+      ISTIO_META_MESH_ID:            cluster.local
+      TRUST_DOMAIN:                  cluster.local
+    Mounts:
+      /etc/istio/pod from istio-podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-pf95t (ro)
+      /var/run/secrets/tokens from istio-token (rw)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  webhook-tls-certs:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  webhook-server-tls
+    Optional:    false
+  kube-api-access-pf95t:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

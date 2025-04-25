@@ -1,0 +1,68 @@
+Namespace: istio-system
+Pod Name: authservice-0
+Status: 1/1
+Other Details: Running                    7 (6h37m ago)    5d21h
+Name:             authservice-0
+Namespace:        istio-system
+Priority:         0
+Service Account:  authservice
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:13:48 +0000
+Labels:           app=authservice
+                  controller-revision-hash=authservice-8498bd8c96
+                  statefulset.kubernetes.io/pod-name=authservice-0
+Annotations:      cni.projectcalico.org/containerID: 40df4727af481200bed22983faa0b86daae517284f922513f5798b943c820844
+                  cni.projectcalico.org/podIP: 10.233.119.173/32
+                  cni.projectcalico.org/podIPs: 10.233.119.173/32
+                  sidecar.istio.io/inject: false
+Status:           Running
+IP:               10.233.119.173
+IPs:
+  IP:           10.233.119.173
+Controlled By:  StatefulSet/authservice
+Containers:
+  authservice:
+    Container ID:   docker://ee84734bc579f92b664f798ecd14d5dbe58b2bc1244bd5cf791c4428ffaa6879
+    Image:          gcr.io/arrikto/kubeflow/oidc-authservice:e236439
+    Image ID:       docker://sha256:d7908b4ec3ff8844d411107f5a97d83af9d3d3dac00518ee6d79f21cad33cc48
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:37 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    255
+      Started:      Mon, 21 Apr 2025 03:55:40 +0000
+      Finished:     Mon, 21 Apr 2025 05:25:06 +0000
+    Ready:          True
+    Restart Count:  7
+    Readiness:      http-get http://:8081/ delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment Variables from:
+      oidc-authservice-client      Secret     Optional: false
+      oidc-authservice-parameters  ConfigMap  Optional: false
+    Environment:                   <none>
+    Mounts:
+      /var/lib/authservice from data (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-dxbwq (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  data:
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
+    ClaimName:  authservice-pvc
+    ReadOnly:   false
+  kube-api-access-dxbwq:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

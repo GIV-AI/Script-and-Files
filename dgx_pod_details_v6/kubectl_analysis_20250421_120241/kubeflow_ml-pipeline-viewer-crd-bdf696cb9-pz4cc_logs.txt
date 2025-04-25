@@ -1,0 +1,4 @@
+W0421 05:32:18.411917       1 client_config.go:617] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+I0421 05:32:19.613022       1 request.go:665] Waited for 1.192761901s due to client-side throttling, not priority and fairness, request: GET:https://10.233.0.1:443/apis/tensorboard.kubeflow.org/v1alpha1?timeout=32s
+I0421 05:32:29.617939       1 request.go:665] Waited for 1.798122677s due to client-side throttling, not priority and fairness, request: GET:https://10.233.0.1:443/apis/events.k8s.io/v1?timeout=32s
+I0421 05:32:37.220478       1 main.go:96] Starting controller for the Viewer CRD

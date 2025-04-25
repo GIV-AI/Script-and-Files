@@ -1,0 +1,266 @@
+Running standard show health
+[1G[K[1G  0.0% [/                                        ][1G[1G[K[1G  1.0% [-                                        ][1G[1G[K[1G  2.0% [\                                        ][1G[1G[K[1G  3.0% [=|                                       ][1G[1G[K[1G  4.0% [=/                                       ][1G[1G[K[1G  5.0% [==-                                      ][1G[1G[K[1G  6.0% [==\                                      ][1G[1G[K[1G  7.0% [==|                                      ][1G[1G[K[1G  8.0% [===/                                     ][1G[1G[K[1G  9.0% [===-                                     ][1G[1G[K[1G 10.0% [====\                                    ][1G[1G[K[1G 11.0% [====|                                    ][1G[1G[K[1G 12.0% [====/                                    ][1G[1G[K[1G 13.0% [=====-                                   ][1G[1G[K[1G 14.0% [=====\                                   ][1G[1G[K[1G 15.0% [======|                                  ][1G[1G[K[1G 16.0% [======/                                  ][1G[1G[K[1G 17.0% [======-                                  ][1G[1G[K[1G 18.0% [=======\                                 ][1G[1G[K[1G 19.0% [=======|                                 ][1G[1G[K[1G 20.0% [========/                                ][1G[1G[K[1G 21.0% [========-                                ][1G[1G[K[1G 22.0% [========\                                ][1G[1G[K[1G 23.0% [=========|                               ][1G[1G[K[1G 24.0% [=========/                               ][1G[1G[K[1G 25.0% [==========-                              ][1G[1G[K[1G 26.0% [==========\                              ][1G[1G[K[1G
+Info
+----
+Timestamp           :     Sat Apr 19 10:08:30 UTC 2025
+Version             :     24.06.02
+
+Checks
+------
+Verify installed DIMM memory sticks.................................. Healthy
+Verify disk controllers.............................................. Healthy
+Verify logical resource of NVMe devices.............................. Healthy
+Verify Network Adapters.............................................. Healthy
+Verify Cluster NIC active link technology consistency................ Healthy
+Verify Storage NIC active link technology consistency................ Healthy
+    Found InfiniBand for link/s PCI0000_29_00_0, PCI0000_aa_00_0
+    Found Ethernet for link/s PCI0000_29_00_1, PCI0000_aa_00_1
+Verify Cluster NIC devices consistency............................... Healthy
+Verify Storage NIC devices consistency............................... Healthy
+Verify installed GPU's............................................... Healthy
+Verify installed VGA Controllers..................................... Healthy
+Presence of NVSwitch controllers on PCI bus.......................... Healthy
+Verify PCIe switches................................................. Healthy
+Verify DIMM part number.............................................. Healthy
+Verify DIMM vendors.................................................. Healthy
+Verify DIMM vendors consistency...................................... Healthy
+Verify chassis [Serial:1660625000034] fan presence................... Healthy
+Verify GPUs VBIOS version consistency................................ Healthy
+VBIOS Version [GPU0 [00000000:1B:00.0]] [96.00.A5.00.03]
+Inforom Storage Version [GPU0 [00000000:1B:00.0]] [G520.0280.02.02]
+VBIOS Version [GPU1 [00000000:43:00.0]] [96.00.A5.00.03]
+Inforom Storage Version [GPU1 [00000000:43:00.0]] [G520.0280.02.02]
+VBIOS Version [GPU2 [00000000:52:00.0]] [96.00.A5.00.03]
+Inforom Storage Version [GPU2 [00000000:52:00.0]] [G520.0280.02.02]
+VBIOS Version [GPU3 [00000000:61:00.0]] [96.00.A5.00.03]
+Inforom Storage Version [GPU3 [00000000:61:00.0]] [G520.0280.02.02]
+VBIOS Version [GPU4 [00000000:9D:00.0]] [96.00.A5.00.03]
+Inforom Storage Version [GPU4 [00000000:9D:00.0]] [G520.0280.02.02]
+VBIOS Version [GPU5 [00000000:C3:00.0]] [96.00.A5.00.03]
+Inforom Storage Version [GPU5 [00000000:C3:00.0]] [G520.0280.02.02]
+VBIOS Version [GPU6 [00000000:D1:00.0]] [96.00.A5.00.03]
+Inforom Storage Version [GPU6 [00000000:D1:00.0]] [G520.0280.02.02]
+VBIOS Version [GPU7 [00000000:DF:00.0]] [96.00.A5.00.03]
+Inforom Storage Version [GPU7 [00000000:DF:00.0]] [G520.0280.02.02]
+Verify GPUs SKU Type consistency..................................... Healthy
+Quick health check of GPU using DCGM................................. Healthy
+    Found 0 device(s) recommended for blacklist:
+Number of logical CPU cores[224]..................................... Healthy
+    Observed 224 logical CPU cores, matching expectations
+Status of volumes.................................................... Healthy
+Status of software RAID disk superblocks............................. Healthy
+Check SMART status of NVMe devices................................... Healthy
+Verify NVIDIA ConnectX devices firmware version consistency.......... Healthy
+Verify GPU's identified using nvidia-smi............................. Healthy
+Verify installed NVMe devices........................................ Healthy
+Verify chassis [Serial:1660625000034] power supply presence.......... Healthy
+Check PSU Info (Vendor, Model) for Consistency....................... Healthy
+GPU link speed [0000:d1:00.0][32GT/s]................................ Healthy
+GPU link width [0000:d1:00.0][x16]................................... Healthy
+GPU link speed [0000:df:00.0][32GT/s]................................ Healthy
+GPU link width [0000:df:00.0][x16]................................... Healthy
+GPU link speed [0000:1b:00.0][32GT/s]................................ Healthy
+GPU link width [0000:1b:00.0][x16]................................... Healthy
+GPU link speed [0000:43:00.0][32GT/s]................................ Healthy
+GPU link width [0000:43:00.0][x16]................................... Healthy
+GPU link speed [0000:52:00.0][32GT/s]................................ Healthy
+GPU link width [0000:52:00.0][x16]................................... Healthy
+GPU link speed [0000:61:00.0][32GT/s]................................ Healthy
+GPU link width [0000:61:00.0][x16]................................... Healthy
+GPU link speed [0000:9d:00.0][32GT/s]................................ Healthy
+GPU link width [0000:9d:00.0][x16]................................... Healthy
+GPU link speed [0000:c3:00.0][32GT/s]................................ Healthy
+GPU link width [0000:c3:00.0][x16]................................... Healthy
+NVMe link speed [0000:01:00.0][8GT/s]................................ Healthy
+NVMe link width [0000:01:00.0][x4]................................... Healthy
+NVMe link speed [0000:02:00.0][8GT/s]................................ Healthy
+NVMe link width [0000:02:00.0][x4]................................... Healthy
+NVMe link speed [0000:2a:00.0][32GT/s]............................... Healthy
+NVMe link width [0000:2a:00.0][x4]................................... Healthy
+NVMe link speed [0000:2b:00.0][32GT/s]............................... Healthy
+NVMe link width [0000:2b:00.0][x4]................................... Healthy
+NVMe link speed [0000:2c:00.0][32GT/s]............................... Healthy
+NVMe link width [0000:2c:00.0][x4]................................... Healthy
+NVMe link speed [0000:2d:00.0][32GT/s]............................... Healthy
+NVMe link width [0000:2d:00.0][x4]................................... Healthy
+NVMe link speed [0000:ab:00.0][32GT/s]............................... Healthy
+NVMe link width [0000:ab:00.0][x4]................................... Healthy
+NVMe link speed [0000:ac:00.0][32GT/s]............................... Healthy
+NVMe link width [0000:ac:00.0][x4]................................... Healthy
+NVMe link speed [0000:ad:00.0][32GT/s]............................... Healthy
+NVMe link width [0000:ad:00.0][x4]................................... Healthy
+NVMe link speed [0000:ae:00.0][32GT/s]............................... Healthy
+NVMe link width [0000:ae:00.0][x4]................................... Healthy
+NetworkAdapter link speed [0000:0b:00.0][8GT/s]...................... Healthy
+NetworkAdapter link width [0000:0b:00.0][x4]......................... Healthy
+NetworkAdapter link speed [0000:18:00.0][32GT/s]..................... Healthy
+NetworkAdapter link width [0000:18:00.0][x16]........................ Healthy
+NetworkAdapter link speed [0000:29:00.0][32GT/s]..................... Healthy
+NetworkAdapter link width [0000:29:00.0][x16]........................ Healthy
+NetworkAdapter link speed [0000:29:00.1][32GT/s]..................... Healthy
+NetworkAdapter link width [0000:29:00.1][x16]........................ Healthy
+NetworkAdapter link speed [0000:40:00.0][32GT/s]..................... Healthy
+NetworkAdapter link width [0000:40:00.0][x16]........................ Healthy
+NetworkAdapter link speed [0000:4f:00.0][32GT/s]..................... Healthy
+NetworkAdapter link width [0000:4f:00.0][x16]........................ Healthy
+NetworkAdapter link speed [0000:5e:00.0][32GT/s]..................... Healthy
+NetworkAdapter link width [0000:5e:00.0][x16]........................ Healthy
+NetworkAdapter link speed [0000:82:00.0][16GT/s]..................... Healthy
+NetworkAdapter link width [0000:82:00.0][x8]......................... Healthy
+NetworkAdapter link speed [0000:82:00.1][16GT/s]..................... Healthy
+NetworkAdapter link width [0000:82:00.1][x8]......................... Healthy
+NetworkAdapter link speed [0000:9a:00.0][32GT/s]..................... Healthy
+NetworkAdapter link width [0000:9a:00.0][x16]........................ Healthy
+NetworkAdapter link speed [0000:aa:00.0][32GT/s]..................... Healthy
+NetworkAdapter link width [0000:aa:00.0][x16]........................ Healthy
+NetworkAdapter link speed [0000:aa:00.1][32GT/s]..................... Healthy
+NetworkAdapter link width [0000:aa:00.1][x16]........................ Healthy
+NetworkAdapter link speed [0000:c0:00.0][32GT/s]..................... Healthy
+NetworkAdapter link width [0000:c0:00.0][x16]........................ Healthy
+NetworkAdapter link speed [0000:ce:00.0][32GT/s]..................... Healthy
+NetworkAdapter link width [0000:ce:00.0][x16]........................ Healthy
+NetworkAdapter link speed [0000:dc:00.0][32GT/s]..................... Healthy
+NetworkAdapter link width [0000:dc:00.0][x16]........................ Healthy
+DGX Networking Module link speed [0000:16:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:16:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:17:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:17:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:17:02.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:17:02.0][x16]................. Healthy
+DGX Networking Module link speed [0000:19:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:19:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:1a:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:1a:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:3e:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:3e:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:3f:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:3f:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:3f:02.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:3f:02.0][x16]................. Healthy
+DGX Networking Module link speed [0000:41:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:41:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:42:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:42:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:4d:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:4d:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:4e:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:4e:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:4e:02.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:4e:02.0][x16]................. Healthy
+DGX Networking Module link speed [0000:50:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:50:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:51:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:51:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:5c:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:5c:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:5d:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:5d:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:5d:02.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:5d:02.0][x16]................. Healthy
+DGX Networking Module link speed [0000:5f:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:5f:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:60:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:60:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:98:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:98:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:99:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:99:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:99:02.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:99:02.0][x16]................. Healthy
+DGX Networking Module link speed [0000:9b:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:9b:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:9c:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:9c:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:be:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:be:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:bf:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:bf:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:bf:02.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:bf:02.0][x16]................. Healthy
+DGX Networking Module link speed [0000:c1:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:c1:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:c2:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:c2:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:cc:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:cc:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:cd:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:cd:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:cd:02.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:cd:02.0][x16]................. Healthy
+DGX Networking Module link speed [0000:cf:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:cf:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:d0:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:d0:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:da:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:da:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:db:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:db:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:db:02.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:db:02.0][x16]................. Healthy
+DGX Networking Module link speed [0000:dd:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:dd:00.0][x16]................. Healthy
+DGX Networking Module link speed [0000:de:00.0][32GT/s].............. Healthy
+DGX Networking Module link width [0000:de:00.0][x16]................. Healthy
+Check GPUDirect Topology information for consistency................. Healthy
+NVIDIA Driver Version [550.90.07]
+Check BMC sensor thresholds for chassis [Serial: 1660625000034] ..... Healthy
+    Checked 236 sensor values against BMC thresholds.
+BMC Firmware Revision [24.09.17]
+HGX Management Controller Firmware Revision [Version Unavailable]
+BaseOS Version [6.3.1]
+BIOS Version [1.5.3]
+Linux kernel version [5.15.0-1063-nvidia]
+System Uptime [up 5 hours, 52 minutes]
+Serial Number [1660625000034]
+Chassis [1660625000034] Power Supply Info
+    [PSU0] Vendor[Delta] Model[ECD16020137] Serial[DTHTCT24351CP] Firmware[02.04.02.01.02.04]
+    [PSU1] Vendor[Delta] Model[ECD16020137] Serial[DTHTCT24351CT] Firmware[02.04.02.01.02.04]
+    [PSU2] Vendor[Delta] Model[ECD16020137] Serial[DTHTCT24351CH] Firmware[02.04.02.01.02.04]
+    [PSU3] Vendor[Delta] Model[ECD16020137] Serial[DTHTCT24351CQ] Firmware[02.04.02.01.02.04]
+    [PSU4] Vendor[Delta] Model[ECD16020137] Serial[DTHTCT24351CM] Firmware[02.04.02.01.02.04]
+    [PSU5] Vendor[Delta] Model[ECD16020137] Serial[DTHTCT24351CR] Firmware[02.04.02.01.02.04]
+
+System Summary
+--------------
+    Product Name:DGXH200
+    Manufacturer:NVIDIA
+    Serial Number:1660625000034
+    Uptime:up 5 hours, 52 minutes
+
+MotherBoard:
+    BIOS Version:1.5.3
+    Serial Number:55507L0100084452JA
+
+BMC:
+    Firmware Version:24.09.17
+    IPMI Version:2.0
+
+HGX Management Controller:
+    Product Name:GPU Base board
+    Firmware Version:Version Unavailable
+
+GPU:
+    NVIDIA Driver Version:550.90.07
+    Product Name:NVIDIA H200
+    VBIOS Version(s):96.00.A5.00.03
+
+Software:
+    BaseOS Version:6.3.1
+    Kernel Version:5.15.0-1063-nvidia
+    OS Version:Ubuntu 22.04.4 LTS (Jammy Jellyfish)
+
+Health Summary
+--------------
+
+176 out of 176 checks are healthy
+0 out of 176 checks are unhealthy
+0 out of 176 checks are unknown
+0 out of 176 checks are informational
+0 out of 176 checks are disabled
+0 out of 176 checks are skipped
+Overall system status is healthy
+
+
+[1G[K[1G100.0% [=========================================][1G
+Status: [32mhealthy
+(B[m

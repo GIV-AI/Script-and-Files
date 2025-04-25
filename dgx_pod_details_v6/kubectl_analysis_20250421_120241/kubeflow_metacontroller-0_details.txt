@@ -1,0 +1,71 @@
+Namespace: kubeflow
+Pod Name: metacontroller-0
+Status: 1/1
+Other Details: Running                    11 (6h33m ago)   5d22h
+Name:             metacontroller-0
+Namespace:        kubeflow
+Priority:         0
+Service Account:  meta-controller-service
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:49 +0000
+Labels:           app=metacontroller
+                  application-crd-id=kubeflow-pipelines
+                  controller-revision-hash=metacontroller-5b7cc55bc5
+                  kustomize.component=metacontroller
+                  statefulset.kubernetes.io/pod-name=metacontroller-0
+Annotations:      cni.projectcalico.org/containerID: 9421a6cefaedb2f7af2cd73b87aff22e29161a2e23176cbd1dfd00486e335f2f
+                  cni.projectcalico.org/podIP: 10.233.119.174/32
+                  cni.projectcalico.org/podIPs: 10.233.119.174/32
+                  sidecar.istio.io/inject: false
+Status:           Running
+IP:               10.233.119.174
+IPs:
+  IP:           10.233.119.174
+Controlled By:  StatefulSet/metacontroller
+Containers:
+  metacontroller:
+    Container ID:  docker://9087437f69cc90542bda4726bd80470b44906a10accfdcc7cf476875ab7f0299
+    Image:         docker.io/metacontrollerio/metacontroller:v2.0.4
+    Image ID:      docker-pullable://metacontrollerio/metacontroller@sha256:897c9601d2cc88069e3d00185d21dcd1c5296927d549e4e044b907ace5e95ed8
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /usr/bin/metacontroller
+      --zap-log-level=4
+      --discovery-interval=3600s
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:46 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Mon, 21 Apr 2025 05:29:02 +0000
+      Finished:     Mon, 21 Apr 2025 05:29:32 +0000
+    Ready:          True
+    Restart Count:  11
+    Limits:
+      cpu:     1
+      memory:  1Gi
+    Requests:
+      cpu:        100m
+      memory:     256Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-h684d (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-h684d:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

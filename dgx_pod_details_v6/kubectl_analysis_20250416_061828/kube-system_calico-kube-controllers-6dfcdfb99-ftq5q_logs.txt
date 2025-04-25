@@ -1,0 +1,45 @@
+2025-04-16 04:53:45.411 [INFO][1] main.go 107: Loaded configuration from environment config=&config.Config{LogLevel:"info", WorkloadEndpointWorkers:1, ProfileWorkers:1, PolicyWorkers:1, NodeWorkers:1, Kubeconfig:"", DatastoreType:"kubernetes"}
+W0416 04:53:45.421125       1 client_config.go:617] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+2025-04-16 04:53:45.421 [INFO][1] main.go 131: Ensuring Calico datastore is initialized
+2025-04-16 04:53:50.481 [INFO][1] main.go 157: Calico datastore is initialized
+2025-04-16 04:53:50.481 [INFO][1] main.go 194: Getting initial config snapshot from datastore
+2025-04-16 04:53:50.494 [INFO][1] main.go 197: Got initial config snapshot
+2025-04-16 04:53:50.496 [INFO][1] resources.go 350: Main client watcher loop
+2025-04-16 04:53:50.496 [INFO][1] watchersyncer.go 89: Start called
+2025-04-16 04:53:50.497 [INFO][1] main.go 211: Starting status report routine
+2025-04-16 04:53:50.497 [INFO][1] main.go 220: Starting Prometheus metrics server on port 9094
+2025-04-16 04:53:50.497 [INFO][1] watchersyncer.go 130: Sending status update Status=wait-for-ready
+2025-04-16 04:53:50.497 [INFO][1] syncer.go 86: Node controller syncer status updated: wait-for-ready
+2025-04-16 04:53:50.497 [INFO][1] watchersyncer.go 149: Starting main event processing loop
+2025-04-16 04:53:50.497 [INFO][1] watchercache.go 181: Full resync is required ListRoot="/calico/resources/v3/projectcalico.org/ippools"
+2025-04-16 04:53:50.497 [INFO][1] main.go 503: Starting informer informer=&cache.sharedIndexInformer{indexer:(*cache.cache)(0xc000c2a2d0), controller:cache.Controller(nil), processor:(*cache.sharedProcessor)(0xc000ae1b20), cacheMutationDetector:cache.dummyMutationDetector{}, listerWatcher:(*cache.ListWatch)(0xc000c2a2b8), objectType:(*v1.Pod)(0xc0006a9000), resyncCheckPeriod:0, defaultEventHandlerResyncPeriod:0, clock:(*clock.RealClock)(0x30c62f0), started:false, stopped:false, startedLock:sync.Mutex{state:0, sema:0x0}, blockDeltas:sync.Mutex{state:0, sema:0x0}, watchErrorHandler:(cache.WatchErrorHandler)(nil), transform:(cache.TransformFunc)(nil)}
+2025-04-16 04:53:50.498 [INFO][1] main.go 503: Starting informer informer=&cache.sharedIndexInformer{indexer:(*cache.cache)(0xc000c2a318), controller:cache.Controller(nil), processor:(*cache.sharedProcessor)(0xc000ae1b90), cacheMutationDetector:cache.dummyMutationDetector{}, listerWatcher:(*cache.ListWatch)(0xc000c2a300), objectType:(*v1.Node)(0xc000b44840), resyncCheckPeriod:0, defaultEventHandlerResyncPeriod:0, clock:(*clock.RealClock)(0x30c62f0), started:false, stopped:false, startedLock:sync.Mutex{state:0, sema:0x0}, blockDeltas:sync.Mutex{state:0, sema:0x0}, watchErrorHandler:(cache.WatchErrorHandler)(nil), transform:(cache.TransformFunc)(nil)}
+2025-04-16 04:53:50.498 [INFO][1] main.go 509: Starting controller ControllerType="Node"
+2025-04-16 04:53:50.497 [INFO][1] watchercache.go 181: Full resync is required ListRoot="/calico/resources/v3/projectcalico.org/nodes"
+2025-04-16 04:53:50.497 [INFO][1] watchercache.go 181: Full resync is required ListRoot="/calico/resources/v3/projectcalico.org/clusterinformations"
+2025-04-16 04:53:50.498 [INFO][1] controller.go 193: Starting Node controller
+2025-04-16 04:53:50.498 [INFO][1] watchercache.go 294: Sending synced update ListRoot="/calico/resources/v3/projectcalico.org/ippools"
+2025-04-16 04:53:50.497 [INFO][1] watchercache.go 181: Full resync is required ListRoot="/calico/ipam/v2/assignment/"
+I0416 04:53:50.498929       1 shared_informer.go:255] Waiting for caches to sync for nodes
+2025-04-16 04:53:50.498 [INFO][1] watchersyncer.go 130: Sending status update Status=resync
+2025-04-16 04:53:50.498 [INFO][1] syncer.go 86: Node controller syncer status updated: resync
+2025-04-16 04:53:50.498 [INFO][1] watchersyncer.go 209: Received InSync event from one of the watcher caches
+2025-04-16 04:53:50.499 [INFO][1] watchercache.go 294: Sending synced update ListRoot="/calico/resources/v3/projectcalico.org/clusterinformations"
+2025-04-16 04:53:50.499 [INFO][1] watchersyncer.go 209: Received InSync event from one of the watcher caches
+2025-04-16 04:53:50.502 [INFO][1] watchercache.go 294: Sending synced update ListRoot="/calico/ipam/v2/assignment/"
+2025-04-16 04:53:50.502 [INFO][1] watchersyncer.go 209: Received InSync event from one of the watcher caches
+2025-04-16 04:53:50.502 [INFO][1] watchercache.go 294: Sending synced update ListRoot="/calico/resources/v3/projectcalico.org/nodes"
+2025-04-16 04:53:50.503 [INFO][1] watchersyncer.go 209: Received InSync event from one of the watcher caches
+2025-04-16 04:53:50.503 [INFO][1] watchersyncer.go 221: All watchers have sync'd data - sending data and final sync
+2025-04-16 04:53:50.503 [INFO][1] watchersyncer.go 130: Sending status update Status=in-sync
+2025-04-16 04:53:50.503 [INFO][1] syncer.go 86: Node controller syncer status updated: in-sync
+2025-04-16 04:53:50.511 [INFO][1] hostendpoints.go 173: successfully synced all hostendpoints
+I0416 04:53:50.599051       1 shared_informer.go:262] Caches are synced for nodes
+I0416 04:53:50.599077       1 shared_informer.go:255] Waiting for caches to sync for pods
+I0416 04:53:50.599103       1 shared_informer.go:262] Caches are synced for pods
+2025-04-16 04:53:50.599 [INFO][1] ipam.go 253: Will run periodic IPAM sync every 7m30s
+2025-04-16 04:53:50.599 [INFO][1] ipam.go 331: Syncer is InSync, kicking sync channel status=in-sync
+2025-04-16 04:53:50.615 [INFO][1] ipam_allocation.go 175: Candidate IP leak handle="k8s-pod-network.8a097004a4b424c5e81acc95f804b6c9d5bf44fc5733efb4b60832c15415c1cb" ip="10.233.119.194" node="jain-dgx-server" pod="kubeflow-deepops-example-com/test-0"
+2025-04-16 04:54:33.985 [INFO][1] ipam_allocation.go 203: Confirmed valid IP after 43.369749057s handle="k8s-pod-network.8a097004a4b424c5e81acc95f804b6c9d5bf44fc5733efb4b60832c15415c1cb" ip="10.233.119.194" node="jain-dgx-server" pod="kubeflow-deepops-example-com/test-0"
+2025-04-16 05:32:57.529 [INFO][1] resources.go 378: Terminating main client watcher loop
+2025-04-16 05:32:57.545 [INFO][1] resources.go 350: Main client watcher loop

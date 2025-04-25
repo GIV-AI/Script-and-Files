@@ -1,0 +1,4 @@
+I0416 04:54:57.498130       1 db.go:32] Using MySQL
+E0416 04:55:02.543759       1 connection.go:40] Ping to Katib db failed: dial tcp 10.233.44.190:3306: connect: connection refused
+I0416 04:55:07.507264       1 init.go:27] Initializing v1beta1 DB schema
+I0416 04:55:07.514587       1 main.go:113] Start Katib manager: 0.0.0.0:6789

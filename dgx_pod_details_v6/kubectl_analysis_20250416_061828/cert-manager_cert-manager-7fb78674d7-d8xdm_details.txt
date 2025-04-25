@@ -1,0 +1,69 @@
+Namespace: cert-manager
+Pod Name: cert-manager-7fb78674d7-d8xdm
+Status: 1/1
+Other Details: Running     1 (12h ago)    16h
+Name:             cert-manager-7fb78674d7-d8xdm
+Namespace:        cert-manager
+Priority:         0
+Service Account:  cert-manager
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:00:27 +0000
+Labels:           app=cert-manager
+                  app.kubernetes.io/component=controller
+                  app.kubernetes.io/instance=cert-manager
+                  app.kubernetes.io/name=cert-manager
+                  app.kubernetes.io/version=v1.10.1
+                  pod-template-hash=7fb78674d7
+Annotations:      cni.projectcalico.org/containerID: 26f65899959572cf1e867a3463b7661d37f6b7b9c4741d528591d9799b4a1b3b
+                  cni.projectcalico.org/podIP: 10.233.119.141/32
+                  cni.projectcalico.org/podIPs: 10.233.119.141/32
+                  prometheus.io/path: /metrics
+                  prometheus.io/port: 9402
+                  prometheus.io/scrape: true
+Status:           Running
+IP:               10.233.119.141
+IPs:
+  IP:           10.233.119.141
+Controlled By:  ReplicaSet/cert-manager-7fb78674d7
+Containers:
+  cert-manager-controller:
+    Container ID:  docker://1857c2de1c6064860b904319a32fadf1490a37d30928cabd39fa0f26742fba5e
+    Image:         quay.io/jetstack/cert-manager-controller:v1.10.1
+    Image ID:      docker-pullable://quay.io/jetstack/cert-manager-controller@sha256:1143471c90db621faee43ed53f250d0fcec9c86303ca83661c787d59486d2ff4
+    Port:          9402/TCP
+    Host Port:     0/TCP
+    Args:
+      --v=2
+      --cluster-resource-namespace=$(POD_NAMESPACE)
+      --leader-election-namespace=kube-system
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:43 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    137
+      Started:      Tue, 15 Apr 2025 14:00:53 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:13 +0000
+    Ready:          True
+    Restart Count:  1
+    Environment:
+      POD_NAMESPACE:  cert-manager (v1:metadata.namespace)
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-vkwwn (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-vkwwn:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

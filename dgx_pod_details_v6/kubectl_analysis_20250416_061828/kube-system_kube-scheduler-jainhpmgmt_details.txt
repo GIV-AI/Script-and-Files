@@ -1,0 +1,73 @@
+Namespace: kube-system
+Pod Name: kube-scheduler-jainhpmgmt
+Status: 1/1
+Other Details: Running     3 (12h ago)    16h
+Name:                 kube-scheduler-jainhpmgmt
+Namespace:            kube-system
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Node:                 jainhpmgmt/192.168.1.249
+Start Time:           Wed, 16 Apr 2025 04:47:37 +0000
+Labels:               component=kube-scheduler
+                      tier=control-plane
+Annotations:          kubernetes.io/config.hash: 993862b34c192b4167d1a485d17b2f48
+                      kubernetes.io/config.mirror: 993862b34c192b4167d1a485d17b2f48
+                      kubernetes.io/config.seen: 2025-04-15T13:25:00.317551958Z
+                      kubernetes.io/config.source: file
+Status:               Running
+IP:                   192.168.1.249
+IPs:
+  IP:           192.168.1.249
+Controlled By:  Node/jainhpmgmt
+Containers:
+  kube-scheduler:
+    Container ID:  docker://a82ed9687d6bde61560f34d741f1446f6a7c1635f72788e1cac4ac70f7655f1a
+    Image:         registry.k8s.io/kube-scheduler:v1.26.5
+    Image ID:      docker-pullable://registry.k8s.io/kube-scheduler@sha256:a3938384e78f260c79dc84e9149bb5d429e817fa9c6905c1471a1e14db527aab
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      kube-scheduler
+      --authentication-kubeconfig=/etc/kubernetes/scheduler.conf
+      --authorization-kubeconfig=/etc/kubernetes/scheduler.conf
+      --bind-address=0.0.0.0
+      --config=/etc/kubernetes/kubescheduler-config.yaml
+      --kubeconfig=/etc/kubernetes/scheduler.conf
+      --leader-elect=true
+      --profiling=False
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:47:38 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 15 Apr 2025 13:28:43 +0000
+      Finished:     Tue, 15 Apr 2025 17:41:10 +0000
+    Ready:          True
+    Restart Count:  3
+    Requests:
+      cpu:        100m
+    Liveness:     http-get https://:10259/healthz delay=10s timeout=15s period=10s #success=1 #failure=8
+    Startup:      http-get https://:10259/healthz delay=10s timeout=15s period=10s #success=1 #failure=30
+    Environment:  <none>
+    Mounts:
+      /etc/kubernetes/kubescheduler-config.yaml from kubescheduler-config (ro)
+      /etc/kubernetes/scheduler.conf from kubeconfig (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kubeconfig:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/kubernetes/scheduler.conf
+    HostPathType:  FileOrCreate
+  kubescheduler-config:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/kubernetes/kubescheduler-config.yaml
+    HostPathType:  
+QoS Class:         Burstable
+Node-Selectors:    <none>
+Tolerations:       :NoExecute op=Exists
+Events:            <none>

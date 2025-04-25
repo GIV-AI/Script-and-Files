@@ -1,0 +1,220 @@
+Namespace: kubeflow
+Pod Name: jupyter-web-app-deployment-57864d5958-hwgcm
+Status: 2/2
+Other Details: Running     2 (12h ago)    16h
+Name:             jupyter-web-app-deployment-57864d5958-hwgcm
+Namespace:        kubeflow
+Priority:         0
+Service Account:  jupyter-web-app-service-account
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:28 +0000
+Labels:           app=jupyter-web-app
+                  kustomize.component=jupyter-web-app
+                  pod-template-hash=57864d5958
+                  security.istio.io/tlsMode=istio
+                  service.istio.io/canonical-name=jupyter-web-app
+                  service.istio.io/canonical-revision=latest
+Annotations:      cni.projectcalico.org/containerID: f14d84b17c822e49cb597b929f188b5f605e4bc54dfb2d00c1690f0792b0e2f4
+                  cni.projectcalico.org/podIP: 10.233.119.155/32
+                  cni.projectcalico.org/podIPs: 10.233.119.155/32
+                  kubectl.kubernetes.io/default-container: jupyter-web-app
+                  kubectl.kubernetes.io/default-logs-container: jupyter-web-app
+                  prometheus.io/path: /stats/prometheus
+                  prometheus.io/port: 15020
+                  prometheus.io/scrape: true
+                  sidecar.istio.io/status:
+                    {"initContainers":["istio-init"],"containers":["istio-proxy"],"volumes":["workload-socket","credential-socket","workload-certs","istio-env...
+Status:           Running
+IP:               10.233.119.155
+IPs:
+  IP:           10.233.119.155
+Controlled By:  ReplicaSet/jupyter-web-app-deployment-57864d5958
+Init Containers:
+  istio-init:
+    Container ID:  docker://2b417b5a7494c687df03b0a8ac69f39779dbb064117de87d5d507f9fdb7e6f85
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      istio-iptables
+      -p
+      15001
+      -z
+      15006
+      -u
+      1337
+      -m
+      REDIRECT
+      -i
+      *
+      -x
+      
+      -b
+      *
+      -d
+      15090,15021,15020
+      --log_output_level=default:info
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Wed, 16 Apr 2025 04:53:44 +0000
+      Finished:     Wed, 16 Apr 2025 04:53:45 +0000
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:        10m
+      memory:     40Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-7dsbl (ro)
+Containers:
+  jupyter-web-app:
+    Container ID:   docker://9edc5e781d398ecfa1a33f9c5a7ca079279a8937d644956e90065296d61844eb
+    Image:          docker.io/kubeflownotebookswg/jupyter-web-app:v1.7.0
+    Image ID:       docker-pullable://kubeflownotebookswg/jupyter-web-app@sha256:34866de4a533dd769fe6379a846c99481b8c361889afd37118963d595d6cf7ea
+    Port:           5000/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:45 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 15 Apr 2025 14:15:30 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:03 +0000
+    Ready:          True
+    Restart Count:  1
+    Environment:
+      APP_PREFIX:          /jupyter
+      UI:                  default
+      USERID_HEADER:       kubeflow-userid
+      USERID_PREFIX:       
+      APP_SECURE_COOKIES:  false
+    Mounts:
+      /etc/config from config-volume (rw)
+      /src/apps/default/static/assets/logos from logos-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-7dsbl (ro)
+  istio-proxy:
+    Container ID:  docker://e2d487c1f621ab45d51031de186cacd0467a1c5c1d7bba599158855892553872
+    Image:         docker.io/istio/proxyv2:1.16.0
+    Image ID:      docker-pullable://istio/proxyv2@sha256:f6f97fa4fb77a3cbe1e3eca0fa46bd462ad6b284c129cf57bf91575c4fb50cf9
+    Port:          15090/TCP
+    Host Port:     0/TCP
+    Args:
+      proxy
+      sidecar
+      --domain
+      $(POD_NAMESPACE).svc.cluster.local
+      --proxyLogLevel=warning
+      --proxyComponentLogLevel=misc:error
+      --log_output_level=default:info
+      --concurrency
+      2
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:45 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 15 Apr 2025 14:15:30 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:08 +0000
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      cpu:     2
+      memory:  1Gi
+    Requests:
+      cpu:      10m
+      memory:   40Mi
+    Readiness:  http-get http://:15021/healthz/ready delay=1s timeout=3s period=2s #success=1 #failure=30
+    Environment:
+      JWT_POLICY:                    third-party-jwt
+      PILOT_CERT_PROVIDER:           istiod
+      CA_ADDR:                       istiod.istio-system.svc:15012
+      POD_NAME:                      jupyter-web-app-deployment-57864d5958-hwgcm (v1:metadata.name)
+      POD_NAMESPACE:                 kubeflow (v1:metadata.namespace)
+      INSTANCE_IP:                    (v1:status.podIP)
+      SERVICE_ACCOUNT:                (v1:spec.serviceAccountName)
+      HOST_IP:                        (v1:status.hostIP)
+      PROXY_CONFIG:                  {}
+                                     
+      ISTIO_META_POD_PORTS:          [
+                                         {"containerPort":5000,"protocol":"TCP"}
+                                     ]
+      ISTIO_META_APP_CONTAINERS:     jupyter-web-app
+      ISTIO_META_CLUSTER_ID:         Kubernetes
+      ISTIO_META_INTERCEPTION_MODE:  REDIRECT
+      ISTIO_META_WORKLOAD_NAME:      jupyter-web-app-deployment
+      ISTIO_META_OWNER:              kubernetes://apis/apps/v1/namespaces/kubeflow/deployments/jupyter-web-app-deployment
+      ISTIO_META_MESH_ID:            cluster.local
+      TRUST_DOMAIN:                  cluster.local
+    Mounts:
+      /etc/istio/pod from istio-podinfo (rw)
+      /etc/istio/proxy from istio-envoy (rw)
+      /var/lib/istio/data from istio-data (rw)
+      /var/run/secrets/credential-uds from credential-socket (rw)
+      /var/run/secrets/istio from istiod-ca-cert (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-7dsbl (ro)
+      /var/run/secrets/tokens from istio-token (rw)
+      /var/run/secrets/workload-spiffe-credentials from workload-certs (rw)
+      /var/run/secrets/workload-spiffe-uds from workload-socket (rw)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  workload-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  credential-socket:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  workload-certs:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-envoy:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     Memory
+    SizeLimit:  <unset>
+  istio-data:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  istio-podinfo:
+    Type:  DownwardAPI (a volume populated by information about the pod)
+    Items:
+      metadata.labels -> labels
+      metadata.annotations -> annotations
+  istio-token:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  43200
+  istiod-ca-cert:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      istio-ca-root-cert
+    Optional:  false
+  config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      jupyter-web-app-config-84khm987mh
+    Optional:  false
+  logos-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      jupyter-web-app-logos
+    Optional:  false
+  kube-api-access-7dsbl:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

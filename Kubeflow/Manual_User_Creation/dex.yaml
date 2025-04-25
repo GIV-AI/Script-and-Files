@@ -1,0 +1,150 @@
+apiVersion: v1
+data:
+  config.yaml: |
+    issuer: http://dex.auth.svc.cluster.local:5556/dex
+    storage:
+      type: kubernetes
+      config:
+        inCluster: true
+    web:
+      http: 0.0.0.0:5556
+    logger:
+      level: "debug"
+      format: text
+    oauth2:
+      skipApprovalScreen: true
+    enablePasswordDB: true
+    staticPasswords:
+    - email: deepops@example.com
+      hash: $2a$12$4FnDCaN7hZAg2gbLrpaP1e47dLS.wk6lia9hrXGWcLTqp04iKgko2
+      # https://github.com/dexidp/dex/pull/1601/commits
+      # FIXME: Use hashFromEnv instead
+      username: user
+      userID: "15841185641784"
+    - email: f-test-test123-1234
+      hash: $2a$12$RBsIJhpy4kgNB9yP54LpS.fKzAVkXduuQhwRakdD8yyXBAIcpNHha
+      username: f-test-test123-1234
+    - email: s-jaincollege-it-6080
+      hash: $2b$12$5uTnR1o5dl9/qlGpdtw2uOGa9SEgEme/dP/2bEUpfSDlcOQZiSAOG
+      username: s-jaincollege-it-6080
+    - email: f-jain-dc-9
+      hash: $2b$12$UTy8WZbjso3qSmQixmNsQuuMcoFXICiWUD1JXtOmD3t6N96ZM90Pe
+      username: f-jain-dc-9
+    - email: s-jain-training-1
+      hash: $2b$12$5sb2GtmebzUC39ncwT.AA.D3QZPZj3c.gRgOqoNPisr5Ptzwkhih.
+      username: s-jain-training-1
+    - email: s-jain-training-2
+      hash: $2b$12$0sWmpWqKwZmt/dL58NlAIuWYAud4UujOdqRuhTgNzJgPN.gYQPag.
+      username: s-jain-training-2
+    - email: s-jain-training-3
+      hash: $2b$12$Yq.RHKSlxIndJ3hGkzoMougCrWH1CWo9aZBqSGjB8drn/168ZZpgW
+      username: s-jain-training-3
+    - email: s-jain-training-4
+      hash: $2b$12$PXVgU3haYbuo4pKKHv2hl.D5RQ73In9BP6o7CDgj/Xj.JMITmWPAC
+      username: s-jain-training-4
+    - email: s-jain-training-5
+      hash: $2b$12$G1Umt8JHf0Dh87uaeBaoTugrrl0G7szeSNpZW3rDpoaDhASDBKof.
+      username: s-jain-training-5
+    - email: s-jain-training-6
+      hash: $2b$12$tgF2ENSV8Rlq6ZNBdQa/JeN9SF6ORzw9zrQkGewVQhhtjtS0qFuwq
+      username: s-jain-training-6
+    - email: s-jain-training-7
+      hash: $2b$12$MKsCQCSE/iMdC9q0MpwSz.rQpxBG787F3uFfd8e0Egu6aWTWUpnD.
+      username: s-jain-training-7
+    - email: s-jain-training-8
+      hash: $2b$12$B6fKgRKmWF4KtxwAbQVSH.zdzax1mlRoekRFAZmx/AtX.7qN3aQe.
+      username: s-jain-training-8
+    - email: s-jain-training-9
+      hash: $2b$12$LqAc95kAE8zPn1WP3Tu3i.hng9TL5xZHFepQmgY5mdsz9XuSVM4J.
+      username: s-jain-training-9
+    - email: s-jain-training-10
+      hash: $2b$12$mpvIHEIOMgmQsg4qW2z/D.bgqXGqbqt6yruLnemCIPkw/k4xgcKDy
+      username: s-jain-training-10
+    - email: s-jain-training-11
+      hash: $2b$12$Jf0MZwq0XeptnnO/X05T2OeiiCc19K.pELHo.xQLE/NYghk2r8IWO
+      username: s-jain-training-11
+    - email: s-jain-training-12
+      hash: $2b$12$5/dnhK3F0z2a9va3o08Guu/qC9GOyKJTPS4WohtYHSeXHBKPIorlC
+      username: s-jain-training-12
+    - email: s-jain-training-13
+      hash: $2b$12$dV5ZysLzw8ME91OgtFu5W.s7hWF7oTFqJ78/zJD8r6683nP1ggEp6
+      username: s-jain-training-13
+    - email: s-jain-training-14
+      hash: $2b$12$R3xEfMlzcF7irmTVlR.PluGJaNFr8IY2/jo0Im6In0Mq0QgukJdWW
+      username: s-jain-training-14
+    - email: s-jain-training-15
+      hash: $2b$12$ZWo4BsmprP1sTDmNGpmJIuAffyI3m.cp83osBAtaGFM/.sqyHq.M6
+      username: s-jain-training-15
+    - email: s-jain-training-16
+      hash: $2b$12$8LgZVkivow52KVGUJpaGrOPnmC7Av/FwEorrbrhcv6G6qxq6YjjFq
+      username: s-jain-training-16
+    - email: s-jain-training-17
+      hash: $2b$12$cv.X8VrTWsvASh0I9ZIlPu0IPn39Uu9aZoQNixlwBfEnfqTmSvcuq
+      username: s-jain-training-17
+    - email: s-jain-training-18
+      hash: $2b$12$A3nZ.jW/a5gNJKwEY/tbGOQc5rNc9q77YjmLD52fMtMO2EJqq1joi
+      username: s-jain-training-18
+    - email: s-jain-training-19
+      hash: $2b$12$2lLxbHboVpG0J9azOguPIOggCqDLr3OyCWlF7kc0LM44CCmKKFo2i
+      username: s-jain-training-19
+    - email: s-jain-training-20
+      hash: $2b$12$DKPMPR7X1udUL5s4PYR.ueUB2gBRCRn7a13MMRp4azY1wsYrYIxqy
+      username: s-jain-training-20
+    - email: s-jain-training-21
+      hash: $2b$12$3MUXnRV1PKI768AX0N2H8.dSmmiEyZEzCUjB0I3eSy8/P93AXnGuy
+      username: s-jain-training-21
+    - email: s-jain-training-22
+      hash: $2b$12$1.egCIOD2BCJTaxYczeVme5V1tY7tXfzO5fyqpxkqVPAExwC8hiaq
+      username: s-jain-training-22
+    - email: s-jain-training-23
+      hash: $2b$12$8xaoNxXlRnTntUeOEfVjauKTnti8VkVCzmDCYsqKmG2u/onawnRN2
+      username: s-jain-training-23
+    - email: s-jain-training-24
+      hash: $2b$12$l9WoqoOlswhmCbXOVbQIze..yvuJBItGGYeNX4la//bkFYkCfTnry
+      username: s-jain-training-24
+    - email: s-jain-training-25
+      hash: $2b$12$x7aHEqVG3n1e6ho1dFsahOjEJ4uaMtJUwC0I9pa5M/FsWrT1knY92
+      username: s-jain-training-25
+    - email: s-jain-training-26
+      hash: $2b$12$Su.0Ipbmni/PrfkDqILq8.Qy86x5v3VvJWdwu4FCcwCdJjTxGqOVu
+      username: s-jain-training-26
+    - email: s-jain-training-27
+      hash: $2b$12$m0g0QphfFa.TVTC3LFUT.eemjfilg4b7emtPTxmKj.KY0rOCrc0qq
+      username: s-jain-training-27
+    - email: s-jain-training-28
+      hash: $2b$12$IPe1hcWnAu0NSg7jPDI7/ebT5arM.CFNGcDsEAVI2nqOpBdKZri7G
+      username: s-jain-training-28
+    - email: s-jain-training-29
+      hash: $2b$12$aWSwoOyofHrdW53ubmmxxOe3cyc7WBmBzSbT/IFQXo.sRUEJgyMYe
+      username: s-jain-training-29
+    - email: s-jain-training-30
+      hash: $2b$12$QqXeZvn1WGoPmPXoqAYaOuPrNiF4a4Xpn5DUGTL/YPiHMI5y0du1y
+      username: s-jain-training-30
+    - email: f-gi-aiml-1
+      hash: $2a$12$3ISNPi5h8QAtF.c.2uLkY.ozfM5E24S7gGE7GL9x2CtlafqmMF5GG
+      username: f-gi-aiml-1
+    - email: f-gi-aiml-12
+      hash: $2a$12$3ISNPi5h8QAtF.c.2uLkY.ozfM5E24S7gGE7GL9x2CtlafqmMF5GG
+      username: f-gi-aiml-12
+    - email: f-gi-aiml-123
+      hash: $2a$12$3ISNPi5h8QAtF.c.2uLkY.ozfM5E24S7gGE7GL9x2CtlafqmMF5GG
+      username: f-gi-aiml-123
+    - email: f-gi-aiml-1234
+      hash: $2a$12$3ISNPi5h8QAtF.c.2uLkY.ozfM5E24S7gGE7GL9x2CtlafqmMF5GG
+      username: f-gi-aiml-1234
+    staticClients:
+    # https://github.com/dexidp/dex/pull/1664
+    - idEnv: OIDC_CLIENT_ID
+      redirectURIs: ["/login/oidc", "/authservice/oidc/callback"]
+      name: 'Dex Login Application'
+      secretEnv: OIDC_CLIENT_SECRET
+kind: ConfigMap
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","data":{"config.yaml":"issuer: http://dex.auth.svc.cluster.local:5556/dex\nstorage:\n  type: kubernetes\n  config:\n    inCluster: true\nweb:\n  http: 0.0.0.0:5556\nlogger:\n  level: \"debug\"\n  format: text\noauth2:\n  skipApprovalScreen: true\nenablePasswordDB: true\nstaticPasswords:\n- email: deepops@example.com\n  hash: $2a$12$4FnDCaN7hZAg2gbLrpaP1e47dLS.wk6lia9hrXGWcLTqp04iKgko2\n  # https://github.com/dexidp/dex/pull/1601/commits\n  # FIXME: Use hashFromEnv instead\n  username: user\n  userID: \"15841185641784\"\n- email: f-test-test123-1234\n  hash: $2a$12$RBsIJhpy4kgNB9yP54LpS.fKzAVkXduuQhwRakdD8yyXBAIcpNHha\n  username: f-test-test123-1234\n- email: s-jaincollege-it-6080\n  hash: $2b$12$5uTnR1o5dl9/qlGpdtw2uOGa9SEgEme/dP/2bEUpfSDlcOQZiSAOG\n  username: s-jaincollege-it-6080\n- email: f-jain-dc-9\n  hash: $2b$12$UTy8WZbjso3qSmQixmNsQuuMcoFXICiWUD1JXtOmD3t6N96ZM90Pe\n  username: f-jain-dc-9\n- email: s-jain-training-1\n  hash: $2b$12$5sb2GtmebzUC39ncwT.AA.D3QZPZj3c.gRgOqoNPisr5Ptzwkhih.\n  username: s-jain-training-1\n- email: s-jain-training-2\n  hash: $2b$12$0sWmpWqKwZmt/dL58NlAIuWYAud4UujOdqRuhTgNzJgPN.gYQPag.\n  username: s-jain-training-2\n- email: s-jain-training-3\n  hash: $2b$12$Yq.RHKSlxIndJ3hGkzoMougCrWH1CWo9aZBqSGjB8drn/168ZZpgW\n  username: s-jain-training-3\n- email: s-jain-training-4\n  hash: $2b$12$PXVgU3haYbuo4pKKHv2hl.D5RQ73In9BP6o7CDgj/Xj.JMITmWPAC\n  username: s-jain-training-4\n- email: s-jain-training-5\n  hash: $2b$12$G1Umt8JHf0Dh87uaeBaoTugrrl0G7szeSNpZW3rDpoaDhASDBKof.\n  username: s-jain-training-5\n- email: s-jain-training-6\n  hash: $2b$12$tgF2ENSV8Rlq6ZNBdQa/JeN9SF6ORzw9zrQkGewVQhhtjtS0qFuwq\n  username: s-jain-training-6\n- email: s-jain-training-7\n  hash: $2b$12$MKsCQCSE/iMdC9q0MpwSz.rQpxBG787F3uFfd8e0Egu6aWTWUpnD.\n  username: s-jain-training-7\n- email: s-jain-training-8\n  hash: $2b$12$B6fKgRKmWF4KtxwAbQVSH.zdzax1mlRoekRFAZmx/AtX.7qN3aQe.\n  username: s-jain-training-8\n- email: s-jain-training-9\n  hash: $2b$12$LqAc95kAE8zPn1WP3Tu3i.hng9TL5xZHFepQmgY5mdsz9XuSVM4J.\n  username: s-jain-training-9\n- email: s-jain-training-10\n  hash: $2b$12$mpvIHEIOMgmQsg4qW2z/D.bgqXGqbqt6yruLnemCIPkw/k4xgcKDy\n  username: s-jain-training-10\n- email: s-jain-training-11\n  hash: $2b$12$Jf0MZwq0XeptnnO/X05T2OeiiCc19K.pELHo.xQLE/NYghk2r8IWO\n  username: s-jain-training-11\n- email: s-jain-training-12\n  hash: $2b$12$5/dnhK3F0z2a9va3o08Guu/qC9GOyKJTPS4WohtYHSeXHBKPIorlC\n  username: s-jain-training-12\n- email: s-jain-training-13\n  hash: $2b$12$dV5ZysLzw8ME91OgtFu5W.s7hWF7oTFqJ78/zJD8r6683nP1ggEp6\n  username: s-jain-training-13\n- email: s-jain-training-14\n  hash: $2b$12$R3xEfMlzcF7irmTVlR.PluGJaNFr8IY2/jo0Im6In0Mq0QgukJdWW\n  username: s-jain-training-14\n- email: s-jain-training-15\n  hash: $2b$12$ZWo4BsmprP1sTDmNGpmJIuAffyI3m.cp83osBAtaGFM/.sqyHq.M6\n  username: s-jain-training-15\n- email: s-jain-training-16\n  hash: $2b$12$8LgZVkivow52KVGUJpaGrOPnmC7Av/FwEorrbrhcv6G6qxq6YjjFq\n  username: s-jain-training-16\n- email: s-jain-training-17\n  hash: $2b$12$cv.X8VrTWsvASh0I9ZIlPu0IPn39Uu9aZoQNixlwBfEnfqTmSvcuq\n  username: s-jain-training-17\n- email: s-jain-training-18\n  hash: $2b$12$A3nZ.jW/a5gNJKwEY/tbGOQc5rNc9q77YjmLD52fMtMO2EJqq1joi\n  username: s-jain-training-18\n- email: s-jain-training-19\n  hash: $2b$12$2lLxbHboVpG0J9azOguPIOggCqDLr3OyCWlF7kc0LM44CCmKKFo2i\n  username: s-jain-training-19\n- email: s-jain-training-20\n  hash: $2b$12$DKPMPR7X1udUL5s4PYR.ueUB2gBRCRn7a13MMRp4azY1wsYrYIxqy\n  username: s-jain-training-20\n- email: s-jain-training-21\n  hash: $2b$12$3MUXnRV1PKI768AX0N2H8.dSmmiEyZEzCUjB0I3eSy8/P93AXnGuy\n  username: s-jain-training-21\n- email: s-jain-training-22\n  hash: $2b$12$1.egCIOD2BCJTaxYczeVme5V1tY7tXfzO5fyqpxkqVPAExwC8hiaq\n  username: s-jain-training-22\n- email: s-jain-training-23\n  hash: $2b$12$8xaoNxXlRnTntUeOEfVjauKTnti8VkVCzmDCYsqKmG2u/onawnRN2\n  username: s-jain-training-23\n- email: s-jain-training-24\n  hash: $2b$12$l9WoqoOlswhmCbXOVbQIze..yvuJBItGGYeNX4la//bkFYkCfTnry\n  username: s-jain-training-24\n- email: s-jain-training-25\n  hash: $2b$12$x7aHEqVG3n1e6ho1dFsahOjEJ4uaMtJUwC0I9pa5M/FsWrT1knY92\n  username: s-jain-training-25\n- email: s-jain-training-26\n  hash: $2b$12$Su.0Ipbmni/PrfkDqILq8.Qy86x5v3VvJWdwu4FCcwCdJjTxGqOVu\n  username: s-jain-training-26\n- email: s-jain-training-27\n  hash: $2b$12$m0g0QphfFa.TVTC3LFUT.eemjfilg4b7emtPTxmKj.KY0rOCrc0qq\n  username: s-jain-training-27\n- email: s-jain-training-28\n  hash: $2b$12$IPe1hcWnAu0NSg7jPDI7/ebT5arM.CFNGcDsEAVI2nqOpBdKZri7G\n  username: s-jain-training-28\n- email: s-jain-training-29\n  hash: $2b$12$aWSwoOyofHrdW53ubmmxxOe3cyc7WBmBzSbT/IFQXo.sRUEJgyMYe\n  username: s-jain-training-29\n- email: s-jain-training-30\n  hash: $2b$12$QqXeZvn1WGoPmPXoqAYaOuPrNiF4a4Xpn5DUGTL/YPiHMI5y0du1y\n  username: s-jain-training-30\n- email: f-gi-aiml-1\n  hash: $2a$12$3ISNPi5h8QAtF.c.2uLkY.ozfM5E24S7gGE7GL9x2CtlafqmMF5GG\n  username: f-gi-aiml-1\n- email: f-gi-aiml-12\n  hash: $2a$12$3ISNPi5h8QAtF.c.2uLkY.ozfM5E24S7gGE7GL9x2CtlafqmMF5GG\n  username: f-gi-aiml-12\n- email: f-gi-aiml-123\n  hash: $2a$12$3ISNPi5h8QAtF.c.2uLkY.ozfM5E24S7gGE7GL9x2CtlafqmMF5GG\n  username: f-gi-aiml-123\n- email: f-gi-aiml-1234\n  hash: $2a$12$3ISNPi5h8QAtF.c.2uLkY.ozfM5E24S7gGE7GL9x2CtlafqmMF5GG\n  username: f-gi-aiml-1234\nstaticClients:\n# https://github.com/dexidp/dex/pull/1664\n- idEnv: OIDC_CLIENT_ID\n  redirectURIs: [\"/login/oidc\", \"/authservice/oidc/callback\"]\n  name: 'Dex Login Application'\n  secretEnv: OIDC_CLIENT_SECRET\n"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2025-04-15T14:00:26Z","name":"dex","namespace":"auth","resourceVersion":"2149450","uid":"23fc72a6-1464-405b-b29e-e529b47f40cd"}}
+  creationTimestamp: "2025-04-15T14:00:26Z"
+  name: dex
+  namespace: auth
+  resourceVersion: "2152647"
+  uid: 23fc72a6-1464-405b-b29e-e529b47f40cd

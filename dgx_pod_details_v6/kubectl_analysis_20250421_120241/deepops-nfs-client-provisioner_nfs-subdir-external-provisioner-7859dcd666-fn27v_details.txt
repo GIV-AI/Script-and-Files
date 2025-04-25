@@ -1,0 +1,67 @@
+Namespace: deepops-nfs-client-provisioner
+Pod Name: nfs-subdir-external-provisioner-7859dcd666-fn27v
+Status: 1/1
+Other Details: Running                    11 (6h33m ago)   5d22h
+Name:             nfs-subdir-external-provisioner-7859dcd666-fn27v
+Namespace:        deepops-nfs-client-provisioner
+Priority:         0
+Service Account:  nfs-subdir-external-provisioner
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 13:50:04 +0000
+Labels:           app=nfs-subdir-external-provisioner
+                  pod-template-hash=7859dcd666
+                  release=nfs-subdir-external-provisioner
+Annotations:      cni.projectcalico.org/containerID: 62611d8c62ac8dcf750b9b119dffcd7bfaeabb6d36423586191879bf9a50e17d
+                  cni.projectcalico.org/podIP: 10.233.119.255/32
+                  cni.projectcalico.org/podIPs: 10.233.119.255/32
+Status:           Running
+IP:               10.233.119.255
+IPs:
+  IP:           10.233.119.255
+Controlled By:  ReplicaSet/nfs-subdir-external-provisioner-7859dcd666
+Containers:
+  nfs-subdir-external-provisioner:
+    Container ID:   docker://476356fd85077a4f5b67b90952dfc0e7dd452c006ea6c683cd849930cc5b99d4
+    Image:          k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2
+    Image ID:       docker-pullable://k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner@sha256:63d5e04551ec8b5aae83b6f35938ca5ddc50a88d85492d9731810c31591fa4c9
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:30:02 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    255
+      Started:      Mon, 21 Apr 2025 05:29:07 +0000
+      Finished:     Mon, 21 Apr 2025 05:29:37 +0000
+    Ready:          True
+    Restart Count:  11
+    Environment:
+      PROVISIONER_NAME:  cluster.local/nfs-subdir-external-provisioner
+      NFS_SERVER:        jain-dgx-server
+      NFS_PATH:          /workspace/export/deepops_nfs
+    Mounts:
+      /persistentvolumes from nfs-subdir-external-provisioner-root (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-w52vq (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  nfs-subdir-external-provisioner-root:
+    Type:      NFS (an NFS mount that lasts the lifetime of a pod)
+    Server:    jain-dgx-server
+    Path:      /workspace/export/deepops_nfs
+    ReadOnly:  false
+  kube-api-access-w52vq:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

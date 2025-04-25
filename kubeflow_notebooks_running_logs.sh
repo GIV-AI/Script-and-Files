@@ -1,11 +1,10 @@
 #!/bin/bash
 
-# Run the commands and store the outputs in variables
+# Get the outputs of profiles and pods
 PROFILE_OUTPUT=$(sudo kubectl get profile)
 PODS_OUTPUT=$(sudo kubectl get pods -A)
 
-
-# Read profiles.txt from the second line
+# Function to pad strings for aligned formatting
 add_space() {
     str=$1
     w_length=$2
@@ -15,24 +14,33 @@ add_space() {
     finalstr="${str}${spaces}"
     echo "$finalstr"
 }
+
+# Print header
 echo
 echo "| $(add_space "Username/Namespace" 35) | $(add_space "POD Name" 55) | $(add_space "Age" 10)"
 echo "------------------------------------------------------------------------------------------------------"
-echo "$PROFILE_OUTPUT" |tail -n +2 | while IFS= read -r line; do
+
+# Iterate through each profile (namespace)
+echo "$PROFILE_OUTPUT" | tail -n +2 | while IFS= read -r line; do
     namespace=$(echo "$line" | awk '{print $1}')
-    echo "$PODS_OUTPUT" | tail -n +2 | grep -v -e "ml-pipeline-visualizationserver" -e "ml-pipeline-ui-artifact" | grep -e "$namespace" | while IFS= read -r detail; do
+
+    # Only match exact namespace using grep -E "^namespace[[:space:]]"
+    echo "$PODS_OUTPUT" | tail -n +2 | \
+    grep -v -e "ml-pipeline-visualizationserver" -e "ml-pipeline-ui-artifact" | \
+    grep -E "^$namespace[[:space:]]" | while IFS= read -r detail; do
+
         username=$(echo "$detail" | awk '{print $1}')
-        f_username=$(add_space $username 35)
+        f_username=$(add_space "$username" 35)
 
         pod_name=$(echo "$detail" | awk '{print $2}')
-        pod_name=$(add_space $pod_name 55)
+        pod_name=$(add_space "$pod_name" 55)
 
         status=$(echo "$detail" | awk '{print $4}')
         age=$(echo "$detail" | awk '{print $NF}')
-        f_age=$(add_space $age 10)
+        f_age=$(add_space "$age" 10)
+
         if [[ $status == "Running" ]]; then
             echo "| $f_username | $pod_name | $f_age"
         fi
     done
 done
-

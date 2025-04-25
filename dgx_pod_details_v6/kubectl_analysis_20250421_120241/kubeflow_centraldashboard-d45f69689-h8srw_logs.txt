@@ -1,0 +1,38 @@
+
+> kubeflow-centraldashboard@0.0.2 start /app
+> npm run serve
+
+
+> kubeflow-centraldashboard@0.0.2 serve /app
+> node dist/server.js
+
+Initializing Kubernetes configuration
+Unable to fetch Nodes Error: connect ECONNREFUSED 10.233.0.1:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1144:16) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '10.233.0.1',
+  port: 443
+}
+Unable to fetch Application information: Error: connect ECONNREFUSED 10.233.0.1:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1144:16) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '10.233.0.1',
+  port: 443
+}
+Unable to fetch Nodes Error: connect ECONNREFUSED 10.233.0.1:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1144:16) {
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '10.233.0.1',
+  port: 443
+}
+"other" is not a supported platform for Metrics
+Using Profiles service at http://profiles-kfam.kubeflow:8081/kfam
+Server listening on port http://localhost:8082 (in production mode)
+Unable to fetch Application information: 404 page not found
+

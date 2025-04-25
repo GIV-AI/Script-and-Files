@@ -1,0 +1,75 @@
+Namespace: kube-system
+Pod Name: calico-kube-controllers-6dfcdfb99-ftq5q
+Status: 1/1
+Other Details: Running                    8 (6h52m ago)    5d22h
+Name:                 calico-kube-controllers-6dfcdfb99-ftq5q
+Namespace:            kube-system
+Priority:             2000000000
+Priority Class Name:  system-cluster-critical
+Service Account:      calico-kube-controllers
+Node:                 jain-dgx-server/192.168.1.248
+Start Time:           Tue, 15 Apr 2025 13:25:57 +0000
+Labels:               k8s-app=calico-kube-controllers
+                      pod-template-hash=6dfcdfb99
+Annotations:          cni.projectcalico.org/containerID: c153886baea13a25b6386cfdd3d8ba937f00b3f58a4ffca8a7a25a1cab395b30
+                      cni.projectcalico.org/podIP: 10.233.119.209/32
+                      cni.projectcalico.org/podIPs: 10.233.119.209/32
+Status:               Running
+IP:                   10.233.119.209
+IPs:
+  IP:           10.233.119.209
+Controlled By:  ReplicaSet/calico-kube-controllers-6dfcdfb99
+Containers:
+  calico-kube-controllers:
+    Container ID:   docker://5109fe56ca7b3580cade4be754d147e2b105985566d00adb71fb9536fc1682f3
+    Image:          quay.io/calico/kube-controllers:v3.25.1
+    Image ID:       docker-pullable://quay.io/calico/kube-controllers@sha256:02c1232ee4b8c5a145c401ac1adb34a63ee7fc46b70b6ad0a4e068a774f25f8a
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:28:59 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    2
+      Started:      Mon, 21 Apr 2025 03:55:25 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:41 +0000
+    Ready:          True
+    Restart Count:  8
+    Limits:
+      cpu:     1
+      memory:  256M
+    Requests:
+      cpu:      30m
+      memory:   64M
+    Liveness:   exec [/usr/bin/check-status -l] delay=10s timeout=1s period=10s #success=1 #failure=6
+    Readiness:  exec [/usr/bin/check-status -r] delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:
+      ENABLED_CONTROLLERS:  node
+      DATASTORE_TYPE:       kubernetes
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-mjjtx (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-mjjtx:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 CriticalAddonsOnly op=Exists
+                             node-role.kubernetes.io/control-plane:NoSchedule
+                             node-role.kubernetes.io/master:NoSchedule
+                             node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                     From     Message
+  ----     ------     ----                    ----     -------
+  Warning  Unhealthy  9m20s (x16 over 6h14m)  kubelet  Liveness probe errored: rpc error: code = Unknown desc = deadline exceeded ("DeadlineExceeded"): context deadline exceeded
+  Warning  Unhealthy  9m20s (x16 over 6h3m)   kubelet  Readiness probe errored: rpc error: code = Unknown desc = deadline exceeded ("DeadlineExceeded"): context deadline exceeded

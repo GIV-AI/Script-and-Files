@@ -1,0 +1,67 @@
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name    
+tcp        0      0 0.0.0.0:51855           0.0.0.0:*               LISTEN      0          303356     9698/rpc.mountd     
+tcp        0      0 0.0.0.0:50641           0.0.0.0:*               LISTEN      0          303364     9698/rpc.mountd     
+tcp        0      0 127.0.0.1:16000         0.0.0.0:*               LISTEN      0          19696      9714/nv-fabricmanag 
+tcp        0      0 169.254.25.10:9254      0.0.0.0:*               LISTEN      0          242854     19494/node-cache    
+tcp        0      0 0.0.0.0:44233           0.0.0.0:*               LISTEN      115        140387     9708/rpc.statd      
+tcp        0      0 0.0.0.0:43461           0.0.0.0:*               LISTEN      0          303348     9698/rpc.mountd     
+tcp        0      0 127.0.0.1:10249         0.0.0.0:*               LISTEN      0          229535     18385/kube-proxy    
+tcp        0      0 127.0.0.1:10248         0.0.0.0:*               LISTEN      0          13725479   2019992/kubelet     
+tcp        0      0 0.0.0.0:42195           0.0.0.0:*               LISTEN      0          303402     -                   
+tcp        0      0 127.0.0.1:9099          0.0.0.0:*               LISTEN      0          595900     215823/calico-node  
+tcp        0      0 127.0.0.1:6666          0.0.0.0:*               LISTEN      0          84050      9714/nv-fabricmanag 
+tcp        0      0 127.0.0.1:5555          0.0.0.0:*               LISTEN      0          13813270   2019951/nv-hostengi 
+tcp        0      0 169.254.25.10:53        0.0.0.0:*               LISTEN      0          242856     19494/node-cache    
+tcp        0      0 127.0.0.1:2379          0.0.0.0:*               LISTEN      0          118866     9548/etcd           
+tcp        0      0 127.0.0.1:1883          0.0.0.0:*               LISTEN      117        263212     8825/mosquitto      
+tcp        0      0 127.0.0.1:273           0.0.0.0:*               LISTEN      0          13941219   2077896/nvsm_api_ga 
+tcp        0      0 127.0.0.1:159           0.0.0.0:*               LISTEN      0          13862203   2019845/nvsm_apis_m 
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      102        53360      7487/systemd-resolv 
+tcp        0      0 0.0.0.0:8000            0.0.0.0:*               LISTEN      0          37262222   308351/docker-proxy 
+tcp        0      0 192.168.1.248:2380      0.0.0.0:*               LISTEN      0          118862     9548/etcd           
+tcp        0      0 192.168.1.248:2379      0.0.0.0:*               LISTEN      0          118867     9548/etcd           
+tcp        0      0 0.0.0.0:2049            0.0.0.0:*               LISTEN      0          303386     -                   
+tcp        0      0 0.0.0.0:514             0.0.0.0:*               LISTEN      0          151579     8704/rsyslogd       
+tcp        0      0 0.0.0.0:111             0.0.0.0:*               LISTEN      0          60421      1/init              
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      0          80662      9731/sshd: /usr/sbi 
+tcp6       0      0 :::58647                :::*                    LISTEN      0          303352     9698/rpc.mountd     
+tcp6       0      0 :::52509                :::*                    LISTEN      0          303368     9698/rpc.mountd     
+tcp6       0      0 :::50471                :::*                    LISTEN      115        140391     9708/rpc.statd      
+tcp6       0      0 :::42689                :::*                    LISTEN      0          52293      9690/cri-dockerd    
+tcp6       0      0 ::1:1883                :::*                    LISTEN      117        263213     8825/mosquitto      
+tcp6       0      0 :::36093                :::*                    LISTEN      0          303404     -                   
+tcp6       0      0 :::34579                :::*                    LISTEN      0          303360     9698/rpc.mountd     
+tcp6       0      0 :::10250                :::*                    LISTEN      0          13915224   2019992/kubelet     
+tcp6       0      0 :::10257                :::*                    LISTEN      0          80936      11331/kube-controll 
+tcp6       0      0 :::10256                :::*                    LISTEN      0          227510     18385/kube-proxy    
+tcp6       0      0 :::10259                :::*                    LISTEN      0          252541     11342/kube-schedule 
+tcp6       0      0 :::9253                 :::*                    LISTEN      0          242855     19494/node-cache    
+tcp6       0      0 :::9353                 :::*                    LISTEN      0          242840     19494/node-cache    
+tcp6       0      0 :::8000                 :::*                    LISTEN      0          37316536   308375/docker-proxy 
+tcp6       0      0 :::6443                 :::*                    LISTEN      0          77880      11471/kube-apiserve 
+tcp6       0      0 :::2049                 :::*                    LISTEN      0          303396     -                   
+tcp6       0      0 :::514                  :::*                    LISTEN      0          151580     8704/rsyslogd       
+tcp6       0      0 :::111                  :::*                    LISTEN      0          61449      1/init              
+tcp6       0      0 :::22                   :::*                    LISTEN      0          80664      9731/sshd: /usr/sbi 
+udp        0      0 0.0.0.0:45232           0.0.0.0:*                           0          303362     9698/rpc.mountd     
+udp        0      0 0.0.0.0:52848           0.0.0.0:*                           0          303401     -                   
+udp        0      0 0.0.0.0:59319           0.0.0.0:*                           115        140385     9708/rpc.statd      
+udp        0      0 169.254.25.10:53        0.0.0.0:*                           0          242857     19494/node-cache    
+udp        0      0 127.0.0.53:53           0.0.0.0:*                           102        53359      7487/systemd-resolv 
+udp        0      0 0.0.0.0:111             0.0.0.0:*                           0          60422      1/init              
+udp        0      0 127.0.0.1:323           0.0.0.0:*                           0          87977      8689/chronyd        
+udp        0      0 0.0.0.0:514             0.0.0.0:*                           0          151583     8704/rsyslogd       
+udp        0      0 127.0.0.1:980           0.0.0.0:*                           0          140381     9708/rpc.statd      
+udp        0      0 0.0.0.0:4789            0.0.0.0:*                           0          663168     -                   
+udp        0      0 0.0.0.0:34902           0.0.0.0:*                           0          303354     9698/rpc.mountd     
+udp        0      0 0.0.0.0:35068           0.0.0.0:*                           0          303346     9698/rpc.mountd     
+udp6       0      0 :::39592                :::*                                0          303403     -                   
+udp6       0      0 :::40202                :::*                                0          303366     9698/rpc.mountd     
+udp6       0      0 :::42881                :::*                                0          303350     9698/rpc.mountd     
+udp6       0      0 :::44630                :::*                                0          303358     9698/rpc.mountd     
+udp6       0      0 :::52243                :::*                                115        140389     9708/rpc.statd      
+udp6       0      0 :::111                  :::*                                0          60423      1/init              
+udp6       0      0 ::1:323                 :::*                                0          87978      8689/chronyd        
+udp6       0      0 :::514                  :::*                                0          151584     8704/rsyslogd       
+udp6       0      0 fe80::c670:bdff:fe1:546 :::*                                101        302326     7440/systemd-networ 

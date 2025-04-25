@@ -1,0 +1,78 @@
+Defaulted container "nvidia-device-plugin" out of: nvidia-device-plugin, toolkit-validation (init)
+NVIDIA_DRIVER_ROOT=/
+CONTAINER_DRIVER_ROOT=/host
+Starting nvidia-device-plugin
+I0416 04:54:35.074726       1 main.go:154] Starting FS watcher.
+I0416 04:54:35.075330       1 main.go:161] Starting OS watcher.
+I0416 04:54:35.076199       1 main.go:176] Starting Plugins.
+I0416 04:54:35.076212       1 main.go:234] Loading configuration.
+I0416 04:54:35.082113       1 main.go:242] Updating config with default resource matching patterns.
+I0416 04:54:35.482654       1 main.go:253] 
+Running with config:
+{
+  "version": "v1",
+  "flags": {
+    "migStrategy": "mixed",
+    "failOnInitError": true,
+    "nvidiaDriverRoot": "/",
+    "gdsEnabled": false,
+    "mofedEnabled": false,
+    "plugin": {
+      "passDeviceSpecs": true,
+      "deviceListStrategy": [
+        "envvar"
+      ],
+      "deviceIDStrategy": "uuid",
+      "cdiAnnotationPrefix": "cdi.k8s.io/",
+      "nvidiaCTKPath": "/usr/bin/nvidia-ctk",
+      "containerDriverRoot": "/host"
+    }
+  },
+  "resources": {
+    "gpus": [
+      {
+        "pattern": "*",
+        "name": "nvidia.com/gpu"
+      }
+    ],
+    "mig": [
+      {
+        "pattern": "1g.18gb",
+        "name": "nvidia.com/mig-1g.18gb"
+      },
+      {
+        "pattern": "2g.35gb",
+        "name": "nvidia.com/mig-2g.35gb"
+      },
+      {
+        "pattern": "3g.71gb",
+        "name": "nvidia.com/mig-3g.71gb"
+      },
+      {
+        "pattern": "4g.71gb",
+        "name": "nvidia.com/mig-4g.71gb"
+      },
+      {
+        "pattern": "7g.141gb",
+        "name": "nvidia.com/mig-7g.141gb"
+      },
+      {
+        "pattern": "1g.18gb+me",
+        "name": "nvidia.com/mig-1g.18gb.me"
+      },
+      {
+        "pattern": "1g.35gb",
+        "name": "nvidia.com/mig-1g.35gb"
+      }
+    ]
+  },
+  "sharing": {
+    "timeSlicing": {}
+  }
+}
+I0416 04:54:35.482670       1 main.go:256] Retreiving plugins.
+I0416 04:54:35.482935       1 factory.go:107] Detected NVML platform: found NVML library
+I0416 04:54:35.482970       1 factory.go:107] Detected non-Tegra platform: /sys/devices/soc0/family file not found
+I0416 04:54:36.297014       1 server.go:165] Starting GRPC server for 'nvidia.com/gpu'
+I0416 04:54:36.298677       1 server.go:117] Starting to serve 'nvidia.com/gpu' on /var/lib/kubelet/device-plugins/nvidia-gpu.sock
+I0416 04:54:36.300394       1 server.go:125] Registered device plugin for 'nvidia.com/gpu' with Kubelet

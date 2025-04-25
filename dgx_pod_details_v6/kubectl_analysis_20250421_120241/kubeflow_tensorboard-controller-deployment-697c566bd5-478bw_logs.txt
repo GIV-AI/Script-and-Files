@@ -1,0 +1,9 @@
+I0421 05:34:26.028202       1 request.go:665] Waited for 1.04341035s due to client-side throttling, not priority and fairness, request: GET:https://10.233.0.1:443/apis/dex.coreos.com/v1?timeout=32s
+1.7452136663299034e+09	INFO	controller-runtime.metrics	Metrics server is starting to listen	{"addr": "127.0.0.1:8080"}
+1.7452136663302965e+09	INFO	setup	starting manager
+1.7452136663310592e+09	INFO	Starting server	{"path": "/metrics", "kind": "metrics", "addr": "127.0.0.1:8080"}
+1.745213666331143e+09	INFO	Starting server	{"kind": "health probe", "addr": "[::]:8081"}
+1.7452136664318855e+09	INFO	controller.tensorboard	Starting EventSource	{"reconciler group": "tensorboard.kubeflow.org", "reconciler kind": "Tensorboard", "source": "kind source: *v1alpha1.Tensorboard"}
+1.74521366643195e+09	INFO	controller.tensorboard	Starting EventSource	{"reconciler group": "tensorboard.kubeflow.org", "reconciler kind": "Tensorboard", "source": "kind source: *v1.Deployment"}
+1.7452136664319544e+09	INFO	controller.tensorboard	Starting Controller	{"reconciler group": "tensorboard.kubeflow.org", "reconciler kind": "Tensorboard"}
+1.7452136665332808e+09	INFO	controller.tensorboard	Starting workers	{"reconciler group": "tensorboard.kubeflow.org", "reconciler kind": "Tensorboard", "worker count": 1}

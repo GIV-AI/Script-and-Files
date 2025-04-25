@@ -1,0 +1,62 @@
+[I 2025-04-21 10:21:36.032 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-04-21 10:21:36.034 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-04-21 10:21:36.035 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 10:21:36.035 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 10:21:36.035 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 10:21:36.035 LabApp] 'base_url' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-04-21 10:21:36.037 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2025-04-21 10:21:36.037 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-04-21 10:21:36.170 ServerApp] notebook_shim | extension was successfully linked.
+[W 2025-04-21 10:21:36.180 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 2025-04-21 10:21:36.180 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-04-21 10:21:36.181 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-04-21 10:21:36.182 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-04-21 10:21:36.183 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.10/dist-packages/jupyterlab
+[I 2025-04-21 10:21:36.183 LabApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+[I 2025-04-21 10:21:36.183 LabApp] Extension Manager is 'pypi'.
+[I 2025-04-21 10:21:36.247 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-04-21 10:21:36.248 ServerApp] Serving notebooks from local directory: /workspace
+[I 2025-04-21 10:21:36.248 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-04-21 10:21:36.248 ServerApp] http://triton-0:8888/notebook/s-jain-training-12/triton/lab
+[I 2025-04-21 10:21:36.248 ServerApp]     http://127.0.0.1:8888/notebook/s-jain-training-12/triton/lab
+[I 2025-04-21 10:21:36.248 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2025-04-21 10:21:36.257 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-04-21 10:21:56.693 ServerApp] 302 GET /notebook/s-jain-training-12/triton/ (@127.0.0.6) 0.49ms
+[W 2025-04-21 10:21:57.485 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-04-21 10:22:12.109 ServerApp] Creating new notebook in 
+[I 2025-04-21 10:22:12.134 ServerApp] Writing notebook-signing key to /root/.local/share/jupyter/notebook_secret
+[I 2025-04-21 10:22:12.361 ServerApp] Kernel started: 5a8bb7a6-a6c0-492e-b762-2dd9656eae02
+[I 2025-04-21 10:22:12.720 ServerApp] Connecting to kernel 5a8bb7a6-a6c0-492e-b762-2dd9656eae02.
+[I 2025-04-21 10:22:12.730 ServerApp] Connecting to kernel 5a8bb7a6-a6c0-492e-b762-2dd9656eae02.
+[I 2025-04-21 10:22:12.739 ServerApp] Connecting to kernel 5a8bb7a6-a6c0-492e-b762-2dd9656eae02.
+[I 2025-04-21 10:24:12.316 ServerApp] Saving file at /Untitled.ipynb
+[I 2025-04-21 10:24:55.761 ServerApp] New terminal with automatic name: 1
+[I 2025-04-21 11:45:09.931 ServerApp] Uploading file to /vid.mp4
+[I 2025-04-21 11:45:10.971 ServerApp] Saving file at /vid.mp4
+[I 2025-04-21 11:45:32.076 ServerApp] New terminal with automatic name: 2
+[W 2025-04-21 11:50:17.352 ServerApp] 400 GET /notebook/s-jain-training-12/triton/api/contents/runs/detect/predict/vid.avi?type=file&content=1&hash=1&format=text&contentProviderId=undefined&1745236217249 (127.0.0.6): /workspace/runs/detect/predict/vid.avi is not UTF-8 encoded
+[W 2025-04-21 11:50:17.352 ServerApp] wrote error: '/workspace/runs/detect/predict/vid.avi is not UTF-8 encoded'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/services/contents/fileio.py", line 536, in _read_file
+        (bcontent.decode("utf8"), "text", bcontent)
+    UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 6: invalid continuation byte
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.10/dist-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/services/contents/handlers.py", line 156, in get
+        model = await ensure_async(
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_core/utils/__init__.py", line 198, in ensure_async
+        result = await obj
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/services/contents/filemanager.py", line 926, in get
+        model = await self._file_model(
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/services/contents/filemanager.py", line 835, in _file_model
+        content, format, bytes_content = await self._read_file(os_path, format, raw=True)  # type: ignore[misc]
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_server/services/contents/fileio.py", line 545, in _read_file
+        raise HTTPError(
+    tornado.web.HTTPError: HTTP 400: bad format (/workspace/runs/detect/predict/vid.avi is not UTF-8 encoded)
+[W 2025-04-21 11:50:17.354 ServerApp] 400 GET /notebook/s-jain-training-12/triton/api/contents/runs/detect/predict/vid.avi?type=file&content=1&hash=1&format=text&contentProviderId=undefined&1745236217249 (f183442a909d4b7b9e1c98d0b4a05f60@127.0.0.6) 155.28ms referer=http://192.168.1.248:32243/notebook/s-jain-training-12/triton/lab/tree/runs/detect/predict/vid.avi

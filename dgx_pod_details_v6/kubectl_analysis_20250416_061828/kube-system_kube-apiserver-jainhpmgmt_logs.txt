@@ -1,0 +1,438 @@
+Flag --apiserver-count has been deprecated, apiserver-count is deprecated and will be removed in a future version.
+I0416 04:50:14.353745       1 server.go:555] external host was not specified, using 192.168.1.249
+I0416 04:50:14.355293       1 server.go:163] Version: v1.26.5
+I0416 04:50:14.355362       1 server.go:165] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I0416 04:50:14.868248       1 shared_informer.go:270] Waiting for caches to sync for node_authorizer
+I0416 04:50:14.869984       1 plugins.go:158] Loaded 12 mutating admission controller(s) successfully in the following order: NamespaceLifecycle,LimitRanger,ServiceAccount,NodeRestriction,TaintNodesByCondition,Priority,DefaultTolerationSeconds,DefaultStorageClass,StorageObjectInUseProtection,RuntimeClass,DefaultIngressClass,MutatingAdmissionWebhook.
+I0416 04:50:14.870006       1 plugins.go:161] Loaded 12 validating admission controller(s) successfully in the following order: LimitRanger,ServiceAccount,PodSecurity,Priority,PersistentVolumeClaimResize,RuntimeClass,CertificateApproval,CertificateSigning,CertificateSubjectRestriction,ValidatingAdmissionPolicy,ValidatingAdmissionWebhook,ResourceQuota.
+W0416 04:50:14.956317       1 genericapiserver.go:660] Skipping API apiextensions.k8s.io/v1beta1 because it has no resources.
+I0416 04:50:14.958030       1 instance.go:277] Using reconciler: lease
+E0416 04:50:14.973433       1 instance.go:384] Could not construct pre-rendered responses for ServiceAccountIssuerDiscovery endpoints. Endpoints will not be enabled. Error: issuer URL must use https scheme, got: kubernetes.default.svc
+I0416 04:50:15.234585       1 instance.go:621] API group "internal.apiserver.k8s.io" is not enabled, skipping.
+I0416 04:50:16.392244       1 instance.go:621] API group "resource.k8s.io" is not enabled, skipping.
+W0416 04:50:16.483890       1 genericapiserver.go:660] Skipping API authentication.k8s.io/v1beta1 because it has no resources.
+W0416 04:50:16.483907       1 genericapiserver.go:660] Skipping API authentication.k8s.io/v1alpha1 because it has no resources.
+W0416 04:50:16.485857       1 genericapiserver.go:660] Skipping API authorization.k8s.io/v1beta1 because it has no resources.
+W0416 04:50:16.490151       1 genericapiserver.go:660] Skipping API autoscaling/v2beta1 because it has no resources.
+W0416 04:50:16.490161       1 genericapiserver.go:660] Skipping API autoscaling/v2beta2 because it has no resources.
+W0416 04:50:16.492881       1 genericapiserver.go:660] Skipping API batch/v1beta1 because it has no resources.
+W0416 04:50:16.495075       1 genericapiserver.go:660] Skipping API certificates.k8s.io/v1beta1 because it has no resources.
+W0416 04:50:16.496960       1 genericapiserver.go:660] Skipping API coordination.k8s.io/v1beta1 because it has no resources.
+W0416 04:50:16.497023       1 genericapiserver.go:660] Skipping API discovery.k8s.io/v1beta1 because it has no resources.
+W0416 04:50:16.501748       1 genericapiserver.go:660] Skipping API networking.k8s.io/v1beta1 because it has no resources.
+W0416 04:50:16.501757       1 genericapiserver.go:660] Skipping API networking.k8s.io/v1alpha1 because it has no resources.
+W0416 04:50:16.503541       1 genericapiserver.go:660] Skipping API node.k8s.io/v1beta1 because it has no resources.
+W0416 04:50:16.503550       1 genericapiserver.go:660] Skipping API node.k8s.io/v1alpha1 because it has no resources.
+W0416 04:50:16.503584       1 genericapiserver.go:660] Skipping API policy/v1beta1 because it has no resources.
+W0416 04:50:16.508333       1 genericapiserver.go:660] Skipping API rbac.authorization.k8s.io/v1beta1 because it has no resources.
+W0416 04:50:16.508343       1 genericapiserver.go:660] Skipping API rbac.authorization.k8s.io/v1alpha1 because it has no resources.
+W0416 04:50:16.510170       1 genericapiserver.go:660] Skipping API scheduling.k8s.io/v1beta1 because it has no resources.
+W0416 04:50:16.510179       1 genericapiserver.go:660] Skipping API scheduling.k8s.io/v1alpha1 because it has no resources.
+W0416 04:50:16.515244       1 genericapiserver.go:660] Skipping API storage.k8s.io/v1alpha1 because it has no resources.
+W0416 04:50:16.519951       1 genericapiserver.go:660] Skipping API flowcontrol.apiserver.k8s.io/v1beta1 because it has no resources.
+W0416 04:50:16.519961       1 genericapiserver.go:660] Skipping API flowcontrol.apiserver.k8s.io/v1alpha1 because it has no resources.
+W0416 04:50:16.524440       1 genericapiserver.go:660] Skipping API apps/v1beta2 because it has no resources.
+W0416 04:50:16.524449       1 genericapiserver.go:660] Skipping API apps/v1beta1 because it has no resources.
+W0416 04:50:16.526723       1 genericapiserver.go:660] Skipping API admissionregistration.k8s.io/v1beta1 because it has no resources.
+W0416 04:50:16.526732       1 genericapiserver.go:660] Skipping API admissionregistration.k8s.io/v1alpha1 because it has no resources.
+W0416 04:50:16.528596       1 genericapiserver.go:660] Skipping API events.k8s.io/v1beta1 because it has no resources.
+W0416 04:50:16.553249       1 genericapiserver.go:660] Skipping API apiregistration.k8s.io/v1beta1 because it has no resources.
+I0416 04:50:17.175195       1 dynamic_cafile_content.go:157] "Starting controller" name="request-header::/etc/kubernetes/ssl/front-proxy-ca.crt"
+I0416 04:50:17.175221       1 dynamic_cafile_content.go:157] "Starting controller" name="client-ca-bundle::/etc/kubernetes/ssl/ca.crt"
+I0416 04:50:17.175320       1 dynamic_serving_content.go:132] "Starting controller" name="serving-cert::/etc/kubernetes/ssl/apiserver.crt::/etc/kubernetes/ssl/apiserver.key"
+I0416 04:50:17.175457       1 secure_serving.go:210] Serving securely on [::]:6443
+I0416 04:50:17.175579       1 controller.go:83] Starting OpenAPI AggregationController
+I0416 04:50:17.175738       1 autoregister_controller.go:141] Starting autoregister controller
+I0416 04:50:17.175754       1 apf_controller.go:361] Starting API Priority and Fairness config controller
+I0416 04:50:17.175787       1 cache.go:32] Waiting for caches to sync for autoregister controller
+I0416 04:50:17.175808       1 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I0416 04:50:17.175902       1 crdregistration_controller.go:111] Starting crd-autoregister controller
+I0416 04:50:17.175940       1 shared_informer.go:270] Waiting for caches to sync for crd-autoregister
+I0416 04:50:17.176092       1 available_controller.go:423] Starting AvailableConditionController
+I0416 04:50:17.176137       1 cache.go:32] Waiting for caches to sync for AvailableConditionController controller
+I0416 04:50:17.176132       1 controller.go:80] Starting OpenAPI V3 AggregationController
+I0416 04:50:17.176243       1 apiservice_controller.go:97] Starting APIServiceRegistrationController
+I0416 04:50:17.176262       1 cache.go:32] Waiting for caches to sync for APIServiceRegistrationController controller
+I0416 04:50:17.176270       1 dynamic_serving_content.go:132] "Starting controller" name="aggregator-proxy-cert::/etc/kubernetes/ssl/front-proxy-client.crt::/etc/kubernetes/ssl/front-proxy-client.key"
+I0416 04:50:17.176400       1 customresource_discovery_controller.go:288] Starting DiscoveryController
+I0416 04:50:17.176471       1 naming_controller.go:291] Starting NamingConditionController
+I0416 04:50:17.176478       1 controller.go:85] Starting OpenAPI V3 controller
+I0416 04:50:17.176553       1 controller.go:85] Starting OpenAPI controller
+I0416 04:50:17.176566       1 gc_controller.go:78] Starting apiserver lease garbage collector
+I0416 04:50:17.176629       1 establishing_controller.go:76] Starting EstablishingController
+I0416 04:50:17.176680       1 nonstructuralschema_controller.go:192] Starting NonStructuralSchemaConditionController
+I0416 04:50:17.176772       1 controller.go:121] Starting legacy_token_tracking_controller
+I0416 04:50:17.176795       1 shared_informer.go:270] Waiting for caches to sync for configmaps
+I0416 04:50:17.176973       1 cluster_authentication_trust_controller.go:440] Starting cluster_authentication_trust_controller controller
+I0416 04:50:17.176994       1 shared_informer.go:270] Waiting for caches to sync for cluster_authentication_trust_controller
+I0416 04:50:17.177060       1 crd_finalizer.go:266] Starting CRDFinalizer
+I0416 04:50:17.177079       1 dynamic_cafile_content.go:157] "Starting controller" name="client-ca-bundle::/etc/kubernetes/ssl/ca.crt"
+I0416 04:50:17.177209       1 apiapproval_controller.go:186] Starting KubernetesAPIApprovalPolicyConformantConditionController
+I0416 04:50:17.177390       1 dynamic_cafile_content.go:157] "Starting controller" name="request-header::/etc/kubernetes/ssl/front-proxy-ca.crt"
+I0416 04:50:17.269168       1 shared_informer.go:277] Caches are synced for node_authorizer
+I0416 04:50:17.276116       1 cache.go:39] Caches are synced for autoregister controller
+I0416 04:50:17.276257       1 cache.go:39] Caches are synced for AvailableConditionController controller
+I0416 04:50:17.276579       1 cache.go:39] Caches are synced for APIServiceRegistrationController controller
+I0416 04:50:17.276577       1 apf_controller.go:366] Running API Priority and Fairness config worker
+I0416 04:50:17.276611       1 apf_controller.go:369] Running API Priority and Fairness periodic rebalancing process
+I0416 04:50:17.276863       1 shared_informer.go:277] Caches are synced for configmaps
+I0416 04:50:17.277102       1 shared_informer.go:277] Caches are synced for cluster_authentication_trust_controller
+I0416 04:50:17.286891       1 controller.go:615] quota admission added evaluator for: leases.coordination.k8s.io
+E0416 04:50:17.307088       1 controller.go:189] failed to update lease, error: Operation cannot be fulfilled on leases.coordination.k8s.io "kube-apiserver-r4lu25ovuizahof3lho65crzai": StorageError: invalid object, Code: 4, Key: /registry/leases/kube-system/kube-apiserver-r4lu25ovuizahof3lho65crzai, ResourceVersion: 0, AdditionalErrorMsg: Precondition failed: UID in precondition: 4eda6718-2b82-445d-b7bb-0a5aff454dac, UID in object meta: 
+I0416 04:50:17.376838       1 shared_informer.go:277] Caches are synced for crd-autoregister
+I0416 04:50:17.968546       1 controller.go:132] OpenAPI AggregationController: action for item k8s_internal_local_delegation_chain_0000000000: Nothing (removed from the queue).
+I0416 04:50:18.180365       1 storage_scheduling.go:111] all system priority classes are created successfully or already exist.
+W0416 04:50:18.499807       1 lease.go:251] Resetting endpoints for master service "kubernetes" to [192.168.1.248 192.168.1.249]
+I0416 04:50:18.501707       1 controller.go:615] quota admission added evaluator for: endpoints
+I0416 04:50:18.507436       1 controller.go:615] quota admission added evaluator for: endpointslices.discovery.k8s.io
+W0416 04:50:28.501650       1 lease.go:251] Resetting endpoints for master service "kubernetes" to [192.168.1.249]
+I0416 04:50:58.840684       1 controller.go:615] quota admission added evaluator for: nodefeatures.nfd.k8s-sigs.io
+W0416 04:53:05.141070       1 dispatcher.go:196] Failed calling webhook, failing closed admission-webhook-deployment.kubeflow.org: failed calling webhook "admission-webhook-deployment.kubeflow.org": failed to call webhook: Post "https://admission-webhook-service.kubeflow.svc:443/apply-poddefault?timeout=10s": dial tcp 10.233.30.26:443: connect: connection refused
+W0416 04:53:05.153361       1 dispatcher.go:196] Failed calling webhook, failing closed admission-webhook-deployment.kubeflow.org: failed calling webhook "admission-webhook-deployment.kubeflow.org": failed to call webhook: Post "https://admission-webhook-service.kubeflow.svc:443/apply-poddefault?timeout=10s": dial tcp 10.233.30.26:443: connect: connection refused
+W0416 04:53:05.159796       1 dispatcher.go:196] Failed calling webhook, failing closed admission-webhook-deployment.kubeflow.org: failed calling webhook "admission-webhook-deployment.kubeflow.org": failed to call webhook: Post "https://admission-webhook-service.kubeflow.svc:443/apply-poddefault?timeout=10s": dial tcp 10.233.30.26:443: connect: connection refused
+W0416 04:53:05.169775       1 dispatcher.go:196] Failed calling webhook, failing closed admission-webhook-deployment.kubeflow.org: failed calling webhook "admission-webhook-deployment.kubeflow.org": failed to call webhook: Post "https://admission-webhook-service.kubeflow.svc:443/apply-poddefault?timeout=10s": dial tcp 10.233.30.26:443: connect: connection refused
+W0416 04:53:05.217795       1 dispatcher.go:196] Failed calling webhook, failing closed admission-webhook-deployment.kubeflow.org: failed calling webhook "admission-webhook-deployment.kubeflow.org": failed to call webhook: Post "https://admission-webhook-service.kubeflow.svc:443/apply-poddefault?timeout=10s": dial tcp 10.233.30.26:443: connect: connection refused
+W0416 04:53:05.305925       1 dispatcher.go:196] Failed calling webhook, failing closed admission-webhook-deployment.kubeflow.org: failed calling webhook "admission-webhook-deployment.kubeflow.org": failed to call webhook: Post "https://admission-webhook-service.kubeflow.svc:443/apply-poddefault?timeout=10s": dial tcp 10.233.30.26:443: connect: connection refused
+W0416 04:53:05.474245       1 dispatcher.go:196] Failed calling webhook, failing closed admission-webhook-deployment.kubeflow.org: failed calling webhook "admission-webhook-deployment.kubeflow.org": failed to call webhook: Post "https://admission-webhook-service.kubeflow.svc:443/apply-poddefault?timeout=10s": dial tcp 10.233.30.26:443: connect: connection refused
+W0416 04:53:05.802272       1 dispatcher.go:196] Failed calling webhook, failing closed admission-webhook-deployment.kubeflow.org: failed calling webhook "admission-webhook-deployment.kubeflow.org": failed to call webhook: Post "https://admission-webhook-service.kubeflow.svc:443/apply-poddefault?timeout=10s": dial tcp 10.233.30.26:443: connect: connection refused
+W0416 04:53:06.450337       1 dispatcher.go:196] Failed calling webhook, failing closed admission-webhook-deployment.kubeflow.org: failed calling webhook "admission-webhook-deployment.kubeflow.org": failed to call webhook: Post "https://admission-webhook-service.kubeflow.svc:443/apply-poddefault?timeout=10s": dial tcp 10.233.30.26:443: connect: connection refused
+W0416 04:53:07.738589       1 dispatcher.go:196] Failed calling webhook, failing closed admission-webhook-deployment.kubeflow.org: failed calling webhook "admission-webhook-deployment.kubeflow.org": failed to call webhook: Post "https://admission-webhook-service.kubeflow.svc:443/apply-poddefault?timeout=10s": dial tcp 10.233.30.26:443: connect: connection refused
+W0416 04:53:10.308819       1 dispatcher.go:196] Failed calling webhook, failing closed admission-webhook-deployment.kubeflow.org: failed calling webhook "admission-webhook-deployment.kubeflow.org": failed to call webhook: Post "https://admission-webhook-service.kubeflow.svc:443/apply-poddefault?timeout=10s": dial tcp 10.233.30.26:443: connect: connection refused
+W0416 04:53:15.444118       1 dispatcher.go:196] Failed calling webhook, failing closed admission-webhook-deployment.kubeflow.org: failed calling webhook "admission-webhook-deployment.kubeflow.org": failed to call webhook: Post "https://admission-webhook-service.kubeflow.svc:443/apply-poddefault?timeout=10s": dial tcp 10.233.30.26:443: connect: connection refused
+W0416 04:53:25.694305       1 dispatcher.go:196] Failed calling webhook, failing closed admission-webhook-deployment.kubeflow.org: failed calling webhook "admission-webhook-deployment.kubeflow.org": failed to call webhook: Post "https://admission-webhook-service.kubeflow.svc:443/apply-poddefault?timeout=10s": dial tcp 10.233.30.26:443: connect: connection refused
+W0416 04:53:46.184398       1 dispatcher.go:196] Failed calling webhook, failing closed admission-webhook-deployment.kubeflow.org: failed calling webhook "admission-webhook-deployment.kubeflow.org": failed to call webhook: Post "https://admission-webhook-service.kubeflow.svc:443/apply-poddefault?timeout=10s": dial tcp 10.233.30.26:443: connect: connection refused
+I0416 04:53:50.029304       1 controller.go:615] quota admission added evaluator for: signingkeies.dex.coreos.com
+I0416 04:53:50.036626       1 controller.go:615] quota admission added evaluator for: authrequests.dex.coreos.com
+W0416 04:53:51.577618       1 dispatcher.go:187] Failed calling webhook, failing closed rev.validation.istio.io: failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+W0416 04:53:51.589269       1 dispatcher.go:176] Failed calling webhook, failing open rev.validation.istio.io: failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+E0416 04:53:51.589306       1 dispatcher.go:183] failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+I0416 04:53:51.589342       1 controller.go:615] quota admission added evaluator for: gateways.networking.istio.io
+W0416 04:53:52.573272       1 dispatcher.go:176] Failed calling webhook, failing open rev.validation.istio.io: failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+E0416 04:53:52.573378       1 dispatcher.go:183] failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+W0416 04:53:52.591783       1 dispatcher.go:176] Failed calling webhook, failing open rev.validation.istio.io: failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+E0416 04:53:52.591839       1 dispatcher.go:183] failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+W0416 04:54:00.600949       1 dispatcher.go:176] Failed calling webhook, failing open rev.validation.istio.io: failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+E0416 04:54:00.601003       1 dispatcher.go:183] failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+W0416 04:54:16.610424       1 dispatcher.go:176] Failed calling webhook, failing open rev.validation.istio.io: failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+E0416 04:54:16.610479       1 dispatcher.go:183] failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+I0416 04:54:28.605321       1 trace.go:219] Trace[1131574848]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:8919a1d1-e4f4-48e7-acb5-10e3c8936b38,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/kubeflow-deepops-example-com/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 04:54:27.151) (total time: 1453ms):
+Trace[1131574848]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:5f7f50bf-eaaf-4b39-9a7d-1a005cd41272 1450ms (04:54:27.155)
+Trace[1131574848]:  ---"Request completed" 1367ms (04:54:28.522)]
+Trace[1131574848]: [1.453941553s] [1.453941553s] END
+W0416 04:54:48.625080       1 dispatcher.go:195] rejected by webhook "rev.validation.istio.io": &errors.StatusError{ErrStatus:v1.Status{TypeMeta:v1.TypeMeta{Kind:"", APIVersion:""}, ListMeta:v1.ListMeta{SelfLink:"", ResourceVersion:"", Continue:"", RemainingItemCount:(*int64)(nil)}, Status:"Failure", Message:"admission webhook \"rev.validation.istio.io\" denied the request: configuration is invalid: gateway must have at least one server", Reason:"", Details:(*v1.StatusDetails)(nil), Code:400}}
+I0416 04:54:59.732632       1 controller.go:615] quota admission added evaluator for: statefulsets.apps
+I0416 04:57:56.826912       1 trace.go:219] Trace[1236300437]: "Update" accept:application/vnd.kubernetes.protobuf, */*,audit-id:8209740c-8f85-49ad-bce6-6b2f62aa2607,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/kube-scheduler,user-agent:kube-scheduler/v1.26.5 (linux/amd64) kubernetes/890a139/leader-election,verb:PUT (16-Apr-2025 04:57:56.036) (total time: 789ms):
+Trace[1236300437]: ["GuaranteedUpdate etcd3" audit-id:8209740c-8f85-49ad-bce6-6b2f62aa2607,key:/leases/kube-system/kube-scheduler,type:*coordination.Lease,resource:leases.coordination.k8s.io 789ms (04:57:56.037)
+Trace[1236300437]:  ---"Txn call completed" 788ms (04:57:56.826)]
+Trace[1236300437]: [789.960891ms] [789.960891ms] END
+I0416 04:59:12.260732       1 trace.go:219] Trace[1006548099]: "Patch" accept:application/vnd.kubernetes.protobuf,application/json,audit-id:ba8d3316-12a2-4a91-b532-0ef05c0fde4e,client:127.0.0.1,protocol:HTTP/2.0,resource:nodes,scope:resource,url:/api/v1/nodes/jainhpmgmt/status,user-agent:kubelet/v1.26.5 (linux/amd64) kubernetes/890a139,verb:PATCH (16-Apr-2025 04:59:11.673) (total time: 587ms):
+Trace[1006548099]: ["GuaranteedUpdate etcd3" audit-id:ba8d3316-12a2-4a91-b532-0ef05c0fde4e,key:/minions/jainhpmgmt,type:*core.Node,resource:nodes 587ms (04:59:11.673)
+Trace[1006548099]:  ---"Txn call completed" 581ms (04:59:12.259)]
+Trace[1006548099]: ---"Object stored in database" 582ms (04:59:12.259)
+Trace[1006548099]: [587.447203ms] [587.447203ms] END
+I0416 04:59:41.705143       1 trace.go:219] Trace[612457645]: "Get" accept:application/json, */*,audit-id:b16eaad5-4f69-4c04-9d94-ccca73ea1ad0,client:10.233.119.162,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/controller.knative.dev.eventing.pkg.reconciler.eventtype.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (16-Apr-2025 04:59:41.132) (total time: 572ms):
+Trace[612457645]: ---"About to write a response" 572ms (04:59:41.704)
+Trace[612457645]: [572.699755ms] [572.699755ms] END
+I0416 04:59:41.705325       1 trace.go:219] Trace[341447985]: "Update" accept:application/json, */*,audit-id:ca8ffffe-b16f-4ffe-a151-d7191e065452,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/net-istio-controller.knative.dev.net-istio.pkg.reconciler.serverlessservice.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 04:59:40.926) (total time: 778ms):
+Trace[341447985]: ["GuaranteedUpdate etcd3" audit-id:ca8ffffe-b16f-4ffe-a151-d7191e065452,key:/leases/knative-serving/net-istio-controller.knative.dev.net-istio.pkg.reconciler.serverlessservice.reconciler.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 778ms (04:59:40.926)
+Trace[341447985]:  ---"Txn call completed" 777ms (04:59:41.704)]
+Trace[341447985]: [778.889761ms] [778.889761ms] END
+I0416 05:00:15.831480       1 trace.go:219] Trace[289977911]: "Get" accept:application/json, */*,audit-id:38c95f97-96dc-494f-aa58-4182dd85da31,client:192.168.1.248,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-gateway-status-leader,user-agent:pilot-discovery/1.16.0,verb:GET (16-Apr-2025 05:00:14.751) (total time: 1080ms):
+Trace[289977911]: ---"About to write a response" 1080ms (05:00:15.831)
+Trace[289977911]: [1.080347708s] [1.080347708s] END
+I0416 05:00:15.831546       1 trace.go:219] Trace[399497646]: "Get" accept:application/json, */*,audit-id:6b7bc3a9-5127-4d04-9dc2-5e7e1fda43f7,client:192.168.1.248,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-leader,user-agent:pilot-discovery/1.16.0,verb:GET (16-Apr-2025 05:00:14.751) (total time: 1080ms):
+Trace[399497646]: ---"About to write a response" 1080ms (05:00:15.831)
+Trace[399497646]: [1.080184225s] [1.080184225s] END
+I0416 05:00:15.831545       1 trace.go:219] Trace[46248628]: "Get" accept:application/json, */*,audit-id:9e8ffcfe-8125-442a-a583-5aed7d7fc38a,client:192.168.1.248,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-gateway-deployment-leader,user-agent:pilot-discovery/1.16.0,verb:GET (16-Apr-2025 05:00:14.751) (total time: 1080ms):
+Trace[46248628]: ---"About to write a response" 1080ms (05:00:15.831)
+Trace[46248628]: [1.080432441s] [1.080432441s] END
+I0416 05:00:15.831732       1 trace.go:219] Trace[690718710]: "Get" accept:application/json, */*,audit-id:9e962197-7559-4f75-ac25-8461233cf6a3,client:10.233.119.157,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.conversionwebhook.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (16-Apr-2025 05:00:15.094) (total time: 737ms):
+Trace[690718710]: ---"About to write a response" 737ms (05:00:15.831)
+Trace[690718710]: [737.638608ms] [737.638608ms] END
+I0416 05:00:15.831823       1 trace.go:219] Trace[1090539683]: "Get" accept:application/json, */*,audit-id:1bf9d6ae-2d57-4efc-96f2-d368dc6c7cef,client:192.168.1.248,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-namespace-controller-election,user-agent:pilot-discovery/1.16.0,verb:GET (16-Apr-2025 05:00:14.894) (total time: 937ms):
+Trace[1090539683]: ---"About to write a response" 937ms (05:00:15.831)
+Trace[1090539683]: [937.164879ms] [937.164879ms] END
+I0416 05:00:15.831886       1 trace.go:219] Trace[877613173]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:bf31d46a-76bc-4231-a876-87524ea7a809,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/kube-controller-manager,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/leader-election,verb:GET (16-Apr-2025 05:00:14.769) (total time: 1062ms):
+Trace[877613173]: ---"About to write a response" 1061ms (05:00:15.831)
+Trace[877613173]: [1.062018441s] [1.062018441s] END
+I0416 05:01:05.557384       1 controller.go:615] quota admission added evaluator for: offlinesessionses.dex.coreos.com
+I0416 05:01:05.584400       1 controller.go:615] quota admission added evaluator for: authcodes.dex.coreos.com
+I0416 05:02:26.733059       1 trace.go:219] Trace[1331203774]: "Update" accept:application/json, */*,audit-id:c6315892-b30c-4750-9532-b803d96bc293,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/controller.knative.dev.serving.pkg.reconciler.labeler.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:02:26.050) (total time: 682ms):
+Trace[1331203774]: ["GuaranteedUpdate etcd3" audit-id:c6315892-b30c-4750-9532-b803d96bc293,key:/leases/knative-serving/controller.knative.dev.serving.pkg.reconciler.labeler.reconciler.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 682ms (05:02:26.050)
+Trace[1331203774]:  ---"Txn call completed" 681ms (05:02:26.732)]
+Trace[1331203774]: [682.535724ms] [682.535724ms] END
+I0416 05:02:26.733086       1 trace.go:219] Trace[828655011]: "Update" accept:application/json, */*,audit-id:68c071d7-6e11-423f-bb44-7de68e6ace40,client:10.233.119.157,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.sinkbindings.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:02:26.049) (total time: 683ms):
+Trace[828655011]: ["GuaranteedUpdate etcd3" audit-id:68c071d7-6e11-423f-bb44-7de68e6ace40,key:/leases/knative-eventing/eventing-webhook.sinkbindings.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 682ms (05:02:26.050)
+Trace[828655011]:  ---"Txn call completed" 681ms (05:02:26.732)]
+Trace[828655011]: [683.413813ms] [683.413813ms] END
+I0416 05:02:26.733178       1 trace.go:219] Trace[1062595279]: "Get" accept:application/json, */*,audit-id:2bdb41f1-dea3-4345-9561-a0d23faf6237,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/controller.knative.dev.serving.pkg.reconciler.nscert.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (16-Apr-2025 05:02:26.184) (total time: 549ms):
+Trace[1062595279]: ---"About to write a response" 548ms (05:02:26.732)
+Trace[1062595279]: [549.080281ms] [549.080281ms] END
+I0416 05:02:26.733252       1 trace.go:219] Trace[1014692300]: "Update" accept:application/json, */*,audit-id:6107edd8-f50f-4995-bcea-2be9bc1cf956,client:10.233.119.157,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.validationwebhook.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:02:26.050) (total time: 682ms):
+Trace[1014692300]: ["GuaranteedUpdate etcd3" audit-id:6107edd8-f50f-4995-bcea-2be9bc1cf956,key:/leases/knative-eventing/eventing-webhook.validationwebhook.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 682ms (05:02:26.050)
+Trace[1014692300]:  ---"Txn call completed" 681ms (05:02:26.732)]
+Trace[1014692300]: [682.923165ms] [682.923165ms] END
+I0416 05:02:26.733250       1 trace.go:219] Trace[1394734687]: "Update" accept:application/json, */*,audit-id:0c6b9327-a8bc-4b62-b02f-98ccdee52ebe,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/controller.knative.dev.serving.pkg.reconciler.configuration.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:02:26.050) (total time: 682ms):
+Trace[1394734687]: ["GuaranteedUpdate etcd3" audit-id:0c6b9327-a8bc-4b62-b02f-98ccdee52ebe,key:/leases/knative-serving/controller.knative.dev.serving.pkg.reconciler.configuration.reconciler.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 682ms (05:02:26.050)
+Trace[1394734687]:  ---"Txn call completed" 681ms (05:02:26.732)]
+Trace[1394734687]: [682.99022ms] [682.99022ms] END
+I0416 05:04:20.211686       1 trace.go:219] Trace[1466285574]: "Update" accept:application/json, */*,audit-id:2d2cdcb9-3291-4422-9d73-3543e6ae3bda,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/net-istio-webhook.configmapwebhook.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:04:19.096) (total time: 1115ms):
+Trace[1466285574]: ["GuaranteedUpdate etcd3" audit-id:2d2cdcb9-3291-4422-9d73-3543e6ae3bda,key:/leases/knative-serving/net-istio-webhook.configmapwebhook.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 1114ms (05:04:19.096)
+Trace[1466285574]:  ---"Txn call completed" 1113ms (05:04:20.211)]
+Trace[1466285574]: [1.115124306s] [1.115124306s] END
+I0416 05:04:20.212138       1 trace.go:219] Trace[972807424]: "Get" accept:application/json, */*,audit-id:1ccc36b9-584f-4862-9a54-3850930c3623,client:10.233.119.162,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/controller.knative.dev.eventing.pkg.reconciler.sugar.trigger.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (16-Apr-2025 05:04:19.604) (total time: 607ms):
+Trace[972807424]: ---"About to write a response" 607ms (05:04:20.211)
+Trace[972807424]: [607.339829ms] [607.339829ms] END
+I0416 05:04:20.212167       1 trace.go:219] Trace[1438383260]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:ef08d56a-0c7b-4a77-a4ef-8334b7081ef9,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/kube-scheduler,user-agent:kube-scheduler/v1.26.5 (linux/amd64) kubernetes/890a139/leader-election,verb:GET (16-Apr-2025 05:04:19.201) (total time: 1011ms):
+Trace[1438383260]: ---"About to write a response" 1010ms (05:04:20.212)
+Trace[1438383260]: [1.01104061s] [1.01104061s] END
+I0416 05:04:20.212176       1 trace.go:219] Trace[1736407416]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:ced5dede-9f47-440c-bb82-da13fff7e50c,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/kube-controller-manager,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/leader-election,verb:GET (16-Apr-2025 05:04:19.198) (total time: 1013ms):
+Trace[1736407416]: ---"About to write a response" 1013ms (05:04:20.212)
+Trace[1736407416]: [1.013758174s] [1.013758174s] END
+I0416 05:04:20.212191       1 trace.go:219] Trace[397455282]: "Get" accept:application/json, */*,audit-id:b3726f31-fd02-41be-a567-efa529da2040,client:10.233.119.162,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/controller.knative.dev.eventing.pkg.reconciler.subscription.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (16-Apr-2025 05:04:19.604) (total time: 607ms):
+Trace[397455282]: ---"About to write a response" 607ms (05:04:20.212)
+Trace[397455282]: [607.602294ms] [607.602294ms] END
+I0416 05:04:20.214380       1 trace.go:219] Trace[2075324673]: "Get" accept:application/json, */*,audit-id:e7ba153f-3f60-453a-a6e0-b426bf582f1f,client:10.233.119.136,protocol:HTTP/2.0,resource:nodes,scope:resource,url:/api/v1/nodes/jain-dgx-server,user-agent:kube-controllers/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (16-Apr-2025 05:04:19.097) (total time: 1117ms):
+Trace[2075324673]: ---"About to write a response" 1115ms (05:04:20.212)
+Trace[2075324673]: [1.117254043s] [1.117254043s] END
+I0416 05:14:54.238931       1 trace.go:219] Trace[2095115831]: "Update" accept:application/json, */*,audit-id:f0e5b478-02f7-4fdd-be2c-1d6f3874e65a,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/net-istio-controller.knative.dev.net-istio.pkg.reconciler.serverlessservice.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:14:53.650) (total time: 588ms):
+Trace[2095115831]: ["GuaranteedUpdate etcd3" audit-id:f0e5b478-02f7-4fdd-be2c-1d6f3874e65a,key:/leases/knative-serving/net-istio-controller.knative.dev.net-istio.pkg.reconciler.serverlessservice.reconciler.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 588ms (05:14:53.650)
+Trace[2095115831]:  ---"Txn call completed" 587ms (05:14:54.238)]
+Trace[2095115831]: [588.764206ms] [588.764206ms] END
+I0416 05:15:27.695468       1 controller.go:615] quota admission added evaluator for: controllerrevisions.apps
+I0416 05:15:28.964162       1 trace.go:219] Trace[842435484]: "Create" accept:application/vnd.kubernetes.protobuf,application/json,audit-id:bf69747c-f338-4b91-a3e9-796e1c88e6cf,client:127.0.0.1,protocol:HTTP/2.0,resource:events,scope:resource,url:/api/v1/namespaces/kube-system/events,user-agent:kubelet/v1.26.5 (linux/amd64) kubernetes/890a139,verb:POST (16-Apr-2025 05:15:28.251) (total time: 712ms):
+Trace[842435484]: ["Create etcd3" audit-id:bf69747c-f338-4b91-a3e9-796e1c88e6cf,key:/events/kube-system/nodelocaldns-jrzcm.1836b4a56d5f238a,type:*core.Event,resource:events 712ms (05:15:28.251)
+Trace[842435484]:  ---"Txn call succeeded" 712ms (05:15:28.963)]
+Trace[842435484]: [712.998422ms] [712.998422ms] END
+I0416 05:21:17.597193       1 alloc.go:327] "allocated clusterIPs" service="kubeflow-deepops-example-com/testing" clusterIPs=map[IPv4:10.233.57.114]
+I0416 05:21:17.603978       1 controller.go:615] quota admission added evaluator for: virtualservices.networking.istio.io
+I0416 05:21:18.999741       1 trace.go:219] Trace[271415716]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:28e0a7be-0017-4431-9e06-03aab8edfa0f,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/kubeflow-deepops-example-com/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 05:21:17.604) (total time: 1394ms):
+Trace[271415716]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:dfbd85f3-f678-4a68-8156-24940d9d4d88 1394ms (05:21:17.605)
+Trace[271415716]:  ---"Request completed" 1364ms (05:21:18.969)]
+Trace[271415716]: [1.39491605s] [1.39491605s] END
+I0416 05:26:49.181285       1 trace.go:219] Trace[1456755076]: "GuaranteedUpdate etcd3" audit-id:,key:/masterleases/192.168.1.249,type:*v1.Endpoints,resource:apiServerIPInfo (16-Apr-2025 05:26:48.610) (total time: 570ms):
+Trace[1456755076]: ---"initial value restored" 568ms (05:26:49.178)
+Trace[1456755076]: [570.662334ms] [570.662334ms] END
+I0416 05:35:56.330470       1 trace.go:219] Trace[2108133385]: "Update" accept:application/json, */*,audit-id:7f82d6f9-6fd5-4b30-b443-66d113c7bf8d,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/controller.knative.dev.control-protocol.pkg.certificates.reconciler.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:35:55.748) (total time: 581ms):
+Trace[2108133385]: ["GuaranteedUpdate etcd3" audit-id:7f82d6f9-6fd5-4b30-b443-66d113c7bf8d,key:/leases/knative-serving/controller.knative.dev.control-protocol.pkg.certificates.reconciler.reconciler.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 581ms (05:35:55.749)
+Trace[2108133385]:  ---"Txn call completed" 579ms (05:35:56.330)]
+Trace[2108133385]: [581.393635ms] [581.393635ms] END
+I0416 05:35:56.360041       1 trace.go:219] Trace[1419072596]: "Get" accept:application/json, */*,audit-id:77aa420d-673b-498d-831f-c57fc1df6a1d,client:192.168.1.248,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-leader,user-agent:pilot-discovery/1.16.0,verb:GET (16-Apr-2025 05:35:55.822) (total time: 537ms):
+Trace[1419072596]: ---"About to write a response" 537ms (05:35:56.359)
+Trace[1419072596]: [537.976014ms] [537.976014ms] END
+I0416 05:35:56.360253       1 trace.go:219] Trace[881592253]: "Get" accept:application/json, */*,audit-id:f7adfd43-f544-4633-8fa2-4d75bcf54295,client:192.168.1.248,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-namespace-controller-election,user-agent:pilot-discovery/1.16.0,verb:GET (16-Apr-2025 05:35:55.822) (total time: 537ms):
+Trace[881592253]: ---"About to write a response" 537ms (05:35:56.360)
+Trace[881592253]: [537.699517ms] [537.699517ms] END
+I0416 05:35:56.360275       1 trace.go:219] Trace[892640141]: "Get" accept:application/json, */*,audit-id:d8ba1b89-1a52-4a2a-b069-0a70e64f0fa0,client:192.168.1.248,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-gateway-status-leader,user-agent:pilot-discovery/1.16.0,verb:GET (16-Apr-2025 05:35:55.822) (total time: 537ms):
+Trace[892640141]: ---"About to write a response" 537ms (05:35:56.360)
+Trace[892640141]: [537.938209ms] [537.938209ms] END
+I0416 05:35:56.360256       1 trace.go:219] Trace[1448768162]: "Get" accept:application/json, */*,audit-id:113e03b3-b062-4c68-a5ef-dc20cb4b23f3,client:192.168.1.248,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-gateway-deployment-leader,user-agent:pilot-discovery/1.16.0,verb:GET (16-Apr-2025 05:35:55.822) (total time: 537ms):
+Trace[1448768162]: ---"About to write a response" 537ms (05:35:56.360)
+Trace[1448768162]: [537.994329ms] [537.994329ms] END
+I0416 05:35:56.360392       1 trace.go:219] Trace[1027674596]: "Update" accept:application/json, */*,audit-id:4849feb2-0356-4598-acd9-f19a86395a86,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/net-istio-webhook.webhookcertificates.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:35:55.749) (total time: 610ms):
+Trace[1027674596]: ["GuaranteedUpdate etcd3" audit-id:4849feb2-0356-4598-acd9-f19a86395a86,key:/leases/knative-serving/net-istio-webhook.webhookcertificates.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 610ms (05:35:55.749)
+Trace[1027674596]:  ---"Txn call completed" 609ms (05:35:56.360)]
+Trace[1027674596]: [610.801729ms] [610.801729ms] END
+I0416 05:46:39.385342       1 trace.go:219] Trace[932060335]: "Get" accept:application/json, */*,audit-id:fd8f9947-b274-4fa7-9645-6a9854991ad7,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/controller.knative.dev.serving.pkg.reconciler.labeler.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (16-Apr-2025 05:46:38.652) (total time: 733ms):
+Trace[932060335]: ---"About to write a response" 732ms (05:46:39.385)
+Trace[932060335]: [733.012522ms] [733.012522ms] END
+I0416 05:46:39.385333       1 trace.go:219] Trace[1117108321]: "Update" accept:application/json, */*,audit-id:6a6f086a-7982-4119-8560-4eac5eee9ce2,client:10.233.119.157,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.sinkbindings.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:46:38.650) (total time: 734ms):
+Trace[1117108321]: ["GuaranteedUpdate etcd3" audit-id:6a6f086a-7982-4119-8560-4eac5eee9ce2,key:/leases/knative-eventing/eventing-webhook.sinkbindings.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 734ms (05:46:38.651)
+Trace[1117108321]:  ---"Txn call completed" 732ms (05:46:39.385)]
+Trace[1117108321]: [734.507519ms] [734.507519ms] END
+I0416 05:46:39.385442       1 trace.go:219] Trace[1800018142]: "Update" accept:application/json, */*,audit-id:ff8e1608-c658-4a54-9347-7310338c7756,client:10.233.119.157,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.validationwebhook.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:46:38.650) (total time: 735ms):
+Trace[1800018142]: ["GuaranteedUpdate etcd3" audit-id:ff8e1608-c658-4a54-9347-7310338c7756,key:/leases/knative-eventing/eventing-webhook.validationwebhook.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 734ms (05:46:38.650)
+Trace[1800018142]:  ---"Txn call completed" 732ms (05:46:39.385)]
+Trace[1800018142]: [735.056659ms] [735.056659ms] END
+I0416 05:46:39.386902       1 trace.go:219] Trace[650934060]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:dd3786dc-d5e7-452f-b3f6-f71028fd1564,client:::1,protocol:HTTP/2.0,resource:namespaces,scope:resource,url:/api/v1/namespaces/default,user-agent:kube-apiserver/v1.26.5 (linux/amd64) kubernetes/890a139,verb:GET (16-Apr-2025 05:46:38.683) (total time: 703ms):
+Trace[650934060]: ---"About to write a response" 703ms (05:46:39.386)
+Trace[650934060]: [703.143473ms] [703.143473ms] END
+I0416 05:46:39.386927       1 trace.go:219] Trace[2076112394]: "Get" accept:application/json, */*,audit-id:48dbe220-1d10-4ebe-ad73-a53a2874f4c5,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/controller.knative.dev.serving.pkg.reconciler.configuration.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (16-Apr-2025 05:46:38.652) (total time: 734ms):
+Trace[2076112394]: ---"About to write a response" 733ms (05:46:39.386)
+Trace[2076112394]: [734.083149ms] [734.083149ms] END
+I0416 05:46:39.386957       1 trace.go:219] Trace[1162101785]: "Update" accept:application/json, */*,audit-id:7c74b113-cae3-401b-ae86-25e6e3c96b93,client:10.233.119.162,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/controller.knative.dev.eventing.pkg.reconciler.source.crd.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:46:38.653) (total time: 733ms):
+Trace[1162101785]: ["GuaranteedUpdate etcd3" audit-id:7c74b113-cae3-401b-ae86-25e6e3c96b93,key:/leases/knative-eventing/controller.knative.dev.eventing.pkg.reconciler.source.crd.reconciler.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 733ms (05:46:38.653)
+Trace[1162101785]:  ---"Txn call completed" 732ms (05:46:39.386)]
+Trace[1162101785]: [733.633556ms] [733.633556ms] END
+I0416 05:46:39.387135       1 trace.go:219] Trace[755224150]: "Get" accept:application/json, */*,audit-id:3a716ada-b2d4-4d0c-926a-fa61388e1c47,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/controller.knative.dev.serving.pkg.reconciler.nscert.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (16-Apr-2025 05:46:38.652) (total time: 734ms):
+Trace[755224150]: ---"About to write a response" 734ms (05:46:39.386)
+Trace[755224150]: [734.591992ms] [734.591992ms] END
+I0416 05:47:26.605785       1 trace.go:219] Trace[938581400]: "Update" accept:application/json, */*,audit-id:92cf9e63-9b93-483f-aff5-170e34eb7544,client:10.233.119.157,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.configmapwebhook.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:47:26.058) (total time: 547ms):
+Trace[938581400]: ["GuaranteedUpdate etcd3" audit-id:92cf9e63-9b93-483f-aff5-170e34eb7544,key:/leases/knative-eventing/eventing-webhook.configmapwebhook.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 547ms (05:47:26.058)
+Trace[938581400]:  ---"Txn call completed" 546ms (05:47:26.605)]
+Trace[938581400]: [547.567642ms] [547.567642ms] END
+I0416 05:47:53.531142       1 trace.go:219] Trace[1381285417]: "Update" accept:application/json, */*,audit-id:399d2ece-8617-41e8-8cdb-deb190b7c52d,client:10.233.119.162,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/controller.knative.dev.eventing.pkg.reconciler.parallel.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:47:52.785) (total time: 745ms):
+Trace[1381285417]: ["GuaranteedUpdate etcd3" audit-id:399d2ece-8617-41e8-8cdb-deb190b7c52d,key:/leases/knative-eventing/controller.knative.dev.eventing.pkg.reconciler.parallel.reconciler.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 745ms (05:47:52.785)
+Trace[1381285417]:  ---"Txn call completed" 743ms (05:47:53.530)]
+Trace[1381285417]: [745.341224ms] [745.341224ms] END
+I0416 05:47:53.531213       1 trace.go:219] Trace[323189966]: "Update" accept:application/json, */*,audit-id:918e7c39-cb6f-417c-ab6a-4a13e53311e9,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/autoscaler-bucket-00-of-01,user-agent:autoscaler/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:47:52.785) (total time: 745ms):
+Trace[323189966]: ["GuaranteedUpdate etcd3" audit-id:918e7c39-cb6f-417c-ab6a-4a13e53311e9,key:/leases/knative-serving/autoscaler-bucket-00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 745ms (05:47:52.785)
+Trace[323189966]:  ---"Txn call completed" 743ms (05:47:53.530)]
+Trace[323189966]: [745.518878ms] [745.518878ms] END
+I0416 05:47:53.531361       1 trace.go:219] Trace[2134548986]: "Update" accept:application/json, */*,audit-id:f9038f94-7902-4153-8f97-11b9b63aa1bd,client:10.233.119.162,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/controller.knative.dev.eventing.pkg.reconciler.subscription.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:47:52.785) (total time: 745ms):
+Trace[2134548986]: ["GuaranteedUpdate etcd3" audit-id:f9038f94-7902-4153-8f97-11b9b63aa1bd,key:/leases/knative-eventing/controller.knative.dev.eventing.pkg.reconciler.subscription.reconciler.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 745ms (05:47:52.785)
+Trace[2134548986]:  ---"Txn call completed" 743ms (05:47:53.531)]
+Trace[2134548986]: [745.853816ms] [745.853816ms] END
+I0416 05:47:53.531421       1 trace.go:219] Trace[1626955719]: "Update" accept:application/json, */*,audit-id:7c6bce17-6a65-4229-bc9b-3d137fc1987a,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/controller.knative.dev.serving.pkg.reconciler.revision.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:47:52.787) (total time: 744ms):
+Trace[1626955719]: ["GuaranteedUpdate etcd3" audit-id:7c6bce17-6a65-4229-bc9b-3d137fc1987a,key:/leases/knative-serving/controller.knative.dev.serving.pkg.reconciler.revision.reconciler.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 743ms (05:47:52.787)
+Trace[1626955719]:  ---"Txn call completed" 742ms (05:47:53.531)]
+Trace[1626955719]: [744.125991ms] [744.125991ms] END
+I0416 05:47:53.531438       1 trace.go:219] Trace[1401033499]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:39b8f186-7285-4c5e-86e0-980d2bc3a2d4,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/kube-controller-manager,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/leader-election,verb:GET (16-Apr-2025 05:47:52.792) (total time: 739ms):
+Trace[1401033499]: ---"About to write a response" 739ms (05:47:53.531)
+Trace[1401033499]: [739.196926ms] [739.196926ms] END
+I0416 05:47:53.531461       1 trace.go:219] Trace[1440584863]: "Update" accept:application/json, */*,audit-id:ea8864c3-8dfa-4e46-bf72-6db8869b829e,client:10.233.119.162,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/controller.knative.dev.eventing.pkg.reconciler.pingsource.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:47:52.786) (total time: 744ms):
+Trace[1440584863]: ["GuaranteedUpdate etcd3" audit-id:ea8864c3-8dfa-4e46-bf72-6db8869b829e,key:/leases/knative-eventing/controller.knative.dev.eventing.pkg.reconciler.pingsource.reconciler.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 744ms (05:47:52.786)
+Trace[1440584863]:  ---"Txn call completed" 743ms (05:47:53.531)]
+Trace[1440584863]: [744.99705ms] [744.99705ms] END
+I0416 05:47:53.531494       1 trace.go:219] Trace[571625184]: "Update" accept:application/json, */*,audit-id:1e584f76-4de5-4df7-8c94-b0cf24b9f8df,client:10.233.119.162,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/controller.knative.dev.eventing.pkg.reconciler.sugar.trigger.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:47:52.784) (total time: 746ms):
+Trace[571625184]: ["GuaranteedUpdate etcd3" audit-id:1e584f76-4de5-4df7-8c94-b0cf24b9f8df,key:/leases/knative-eventing/controller.knative.dev.eventing.pkg.reconciler.sugar.trigger.reconciler.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 746ms (05:47:52.785)
+Trace[571625184]:  ---"Txn call completed" 744ms (05:47:53.531)]
+Trace[571625184]: [746.424611ms] [746.424611ms] END
+I0416 05:47:53.531358       1 trace.go:219] Trace[1972838199]: "Update" accept:application/json, */*,audit-id:cbab0b7b-1290-4b9f-8408-5280e714a394,client:10.233.119.157,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.webhookcertificates.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:47:52.785) (total time: 745ms):
+Trace[1972838199]: ["GuaranteedUpdate etcd3" audit-id:cbab0b7b-1290-4b9f-8408-5280e714a394,key:/leases/knative-eventing/eventing-webhook.webhookcertificates.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 745ms (05:47:52.786)
+Trace[1972838199]:  ---"Txn call completed" 743ms (05:47:53.531)]
+Trace[1972838199]: [745.296387ms] [745.296387ms] END
+I0416 05:47:53.531568       1 trace.go:219] Trace[310764388]: "Update" accept:application/json, */*,audit-id:383feea8-5ec4-4a2e-997c-11b26d6b7506,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/controller.knative.dev.serving.pkg.reconciler.service.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:47:52.787) (total time: 744ms):
+Trace[310764388]: ["GuaranteedUpdate etcd3" audit-id:383feea8-5ec4-4a2e-997c-11b26d6b7506,key:/leases/knative-serving/controller.knative.dev.serving.pkg.reconciler.service.reconciler.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 744ms (05:47:52.787)
+Trace[310764388]:  ---"Txn call completed" 743ms (05:47:53.531)]
+Trace[310764388]: [744.360489ms] [744.360489ms] END
+I0416 05:47:53.531663       1 trace.go:219] Trace[663521930]: "Update" accept:application/json, */*,audit-id:a3c135c8-89b5-4297-93ec-fbe7bede5f97,client:10.233.119.162,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/controller.knative.dev.eventing.pkg.reconciler.sugar.namespace.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:47:52.786) (total time: 744ms):
+Trace[663521930]: ["GuaranteedUpdate etcd3" audit-id:a3c135c8-89b5-4297-93ec-fbe7bede5f97,key:/leases/knative-eventing/controller.knative.dev.eventing.pkg.reconciler.sugar.namespace.reconciler.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 744ms (05:47:52.786)
+Trace[663521930]:  ---"Txn call completed" 743ms (05:47:53.531)]
+Trace[663521930]: [744.806388ms] [744.806388ms] END
+I0416 05:47:53.531700       1 trace.go:219] Trace[1235747746]: "Update" accept:application/json, */*,audit-id:a94325d1-7e3c-4d53-ab40-69e4671e89b8,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/controller.knative.dev.serving.pkg.reconciler.serverlessservice.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (16-Apr-2025 05:47:52.784) (total time: 746ms):
+Trace[1235747746]: ["GuaranteedUpdate etcd3" audit-id:a94325d1-7e3c-4d53-ab40-69e4671e89b8,key:/leases/knative-serving/controller.knative.dev.serving.pkg.reconciler.serverlessservice.reconciler.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 746ms (05:47:52.785)
+Trace[1235747746]:  ---"Txn call completed" 745ms (05:47:53.531)]
+Trace[1235747746]: [746.831819ms] [746.831819ms] END
+I0416 05:47:53.531857       1 trace.go:219] Trace[61303823]: "Get" accept:application/json, */*,audit-id:b5d2fe8f-f671-4861-88f1-bb63599c3c3a,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/net-istio-webhook.configmapwebhook.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (16-Apr-2025 05:47:52.786) (total time: 745ms):
+Trace[61303823]: ---"About to write a response" 744ms (05:47:53.531)
+Trace[61303823]: [745.021832ms] [745.021832ms] END
+I0416 05:47:53.531947       1 trace.go:219] Trace[2078565381]: "Get" accept:application/json, */*,audit-id:c7a05323-510d-4e78-a59f-f4f9ba7f5cd7,client:192.168.1.248,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/net-istio-controller.knative.dev.net-istio.pkg.reconciler.ingress.reconciler.00-of-01,user-agent:controller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (16-Apr-2025 05:47:52.786) (total time: 745ms):
+Trace[2078565381]: ---"About to write a response" 745ms (05:47:53.531)
+Trace[2078565381]: [745.7265ms] [745.7265ms] END
+I0416 05:59:58.748137       1 controller.go:615] quota admission added evaluator for: serviceaccounts
+I0416 05:59:58.761640       1 controller.go:615] quota admission added evaluator for: replicasets.apps
+I0416 06:00:00.217987       1 trace.go:219] Trace[889937549]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:3ff475cf-fd89-47ac-96a1-1f3bd74b5420,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:replicaset-controller,verb:POST (16-Apr-2025 05:59:58.777) (total time: 1440ms):
+Trace[889937549]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:99d1820a-a758-4b9d-93fb-e290624c2f35 1438ms (05:59:58.779)
+Trace[889937549]:  ---"Request completed" 1398ms (06:00:00.177)]
+Trace[889937549]: [1.440678344s] [1.440678344s] END
+I0416 06:00:00.224707       1 trace.go:219] Trace[732367164]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:c75eab23-c94a-4564-8b80-9848e48201fd,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:replicaset-controller,verb:POST (16-Apr-2025 05:59:58.777) (total time: 1447ms):
+Trace[732367164]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:55821c5e-c9c4-4a8a-b35f-cf44a80f0ccd 1445ms (05:59:58.778)
+Trace[732367164]:  ---"Request completed" 1398ms (06:00:00.177)]
+Trace[732367164]: [1.447574883s] [1.447574883s] END
+I0416 06:06:10.534264       1 alloc.go:327] "allocated clusterIPs" service="f-test-test123-1234/test" clusterIPs=map[IPv4:10.233.62.197]
+I0416 06:06:11.954135       1 trace.go:219] Trace[1018387601]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:23b358e3-902f-4ad7-a8d5-88382d67ca82,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:06:10.548) (total time: 1405ms):
+Trace[1018387601]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:a5499674-b46e-4cf5-a46d-4da5f425f934 1402ms (06:06:10.551)
+Trace[1018387601]:  ---"Request completed" 1361ms (06:06:11.913)]
+Trace[1018387601]: [1.405737078s] [1.405737078s] END
+I0416 06:09:10.093899       1 controller.go:615] quota admission added evaluator for: notebooks.kubeflow.org
+I0416 06:10:05.929296       1 alloc.go:327] "allocated clusterIPs" service="f-test-test123-1234/test" clusterIPs=map[IPv4:10.233.56.129]
+I0416 06:10:07.332234       1 trace.go:219] Trace[115355653]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:0f89e365-c413-4166-8427-93d13614d087,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:10:05.938) (total time: 1393ms):
+Trace[115355653]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:c138ada4-81f8-4252-bd05-c2e7225bcab8 1390ms (06:10:05.941)
+Trace[115355653]:  ---"Request completed" 1362ms (06:10:07.304)]
+Trace[115355653]: [1.393708699s] [1.393708699s] END
+I0416 06:10:08.720596       1 trace.go:219] Trace[277236666]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:959d453b-ee24-4d10-9dff-ead726b22477,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:10:07.344) (total time: 1375ms):
+Trace[277236666]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:df18b86b-0c3e-4201-86dd-a8a263623188 1374ms (06:10:07.346)
+Trace[277236666]:  ---"Request completed" 1355ms (06:10:08.701)]
+Trace[277236666]: [1.37556678s] [1.37556678s] END
+I0416 06:10:10.101238       1 trace.go:219] Trace[2073994453]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:22d78cc2-0bbd-4825-b2aa-3a65d2eb8ee3,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:10:08.724) (total time: 1376ms):
+Trace[2073994453]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:ab6505b1-12f6-4210-9db7-7ac8669c6bfa 1375ms (06:10:08.725)
+Trace[2073994453]:  ---"Request completed" 1356ms (06:10:10.081)]
+Trace[2073994453]: [1.376272919s] [1.376272919s] END
+I0416 06:10:11.482704       1 trace.go:219] Trace[1358743880]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:152d243a-d75a-473a-957f-64462c325d15,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:10:10.105) (total time: 1376ms):
+Trace[1358743880]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:824705b9-0e7f-430e-a6e4-7a6e48a32c2e 1375ms (06:10:10.107)
+Trace[1358743880]:  ---"Request completed" 1355ms (06:10:11.463)]
+Trace[1358743880]: [1.376837196s] [1.376837196s] END
+I0416 06:10:12.863642       1 trace.go:219] Trace[1313379669]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:35f48fb4-f372-46cc-a1e9-4d5fbe664bde,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:10:11.487) (total time: 1376ms):
+Trace[1313379669]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:b8cfc976-cfb4-41be-a9fe-f23564a15124 1375ms (06:10:11.488)
+Trace[1313379669]:  ---"Request completed" 1355ms (06:10:12.843)]
+Trace[1313379669]: [1.376097591s] [1.376097591s] END
+I0416 06:10:14.243667       1 trace.go:219] Trace[590729839]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:250d7a94-bf55-47e5-a11c-4c62a0213af3,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:10:12.868) (total time: 1375ms):
+Trace[590729839]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:36c08f3f-bb8f-4841-b758-f05df30e3ba0 1373ms (06:10:12.869)
+Trace[590729839]:  ---"Request completed" 1355ms (06:10:14.224)]
+Trace[590729839]: [1.375116974s] [1.375116974s] END
+I0416 06:10:15.627353       1 trace.go:219] Trace[2085528687]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:bcaaa9fa-4674-4e99-a8b3-02b53c13a23b,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:10:14.248) (total time: 1378ms):
+Trace[2085528687]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:9df7ea03-85c9-44c2-9da2-8579101c151d 1377ms (06:10:14.250)
+Trace[2085528687]:  ---"Request completed" 1358ms (06:10:15.608)]
+Trace[2085528687]: [1.378436576s] [1.378436576s] END
+I0416 06:10:17.007743       1 trace.go:219] Trace[1126200077]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:4697040a-a2b7-4c83-bc2f-5ca51fea9e2d,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:10:15.631) (total time: 1375ms):
+Trace[1126200077]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:4724d063-f235-444c-96b9-2cfbfc16f554 1374ms (06:10:15.633)
+Trace[1126200077]:  ---"Request completed" 1355ms (06:10:16.989)]
+Trace[1126200077]: [1.375703687s] [1.375703687s] END
+I0416 06:10:18.388493       1 trace.go:219] Trace[1132388696]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:386eb405-e6f9-45bc-99fc-d78cfe0b58f9,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:10:17.012) (total time: 1375ms):
+Trace[1132388696]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:21be45b9-66ad-4fdc-9ef4-df213c8939c1 1374ms (06:10:17.013)
+Trace[1132388696]:  ---"Request completed" 1355ms (06:10:18.369)]
+Trace[1132388696]: [1.375821942s] [1.375821942s] END
+I0416 06:10:19.772194       1 trace.go:219] Trace[1567322299]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:2399ddd6-113d-4ff3-80fa-db62bf0093c8,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:10:18.393) (total time: 1379ms):
+Trace[1567322299]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:32054004-6092-4634-8f13-76d3975975f1 1377ms (06:10:18.394)
+Trace[1567322299]:  ---"Request completed" 1357ms (06:10:19.751)]
+Trace[1567322299]: [1.379013847s] [1.379013847s] END
+I0416 06:10:21.160333       1 trace.go:219] Trace[746700236]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:d483aa3a-de2f-4c47-b2d7-60515ce11f01,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:10:19.776) (total time: 1383ms):
+Trace[746700236]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:0e5159e7-5779-4d94-ba5e-922d339e936e 1382ms (06:10:19.777)
+Trace[746700236]:  ---"Request completed" 1355ms (06:10:21.132)]
+Trace[746700236]: [1.3836596s] [1.3836596s] END
+I0416 06:10:23.714930       1 trace.go:219] Trace[779563004]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:6f26d6b7-9245-4d12-9b03-45fb9e4e3c78,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:10:22.337) (total time: 1376ms):
+Trace[779563004]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:d7b78b35-8fa5-4338-afda-6c4a3cfba4a0 1375ms (06:10:22.339)
+Trace[779563004]:  ---"Request completed" 1356ms (06:10:23.695)]
+Trace[779563004]: [1.376928499s] [1.376928499s] END
+I0416 06:10:35.340330       1 trace.go:219] Trace[439521663]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:4a27055c-6f26-47f5-9b18-6719a54cefcc,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:10:33.961) (total time: 1378ms):
+Trace[439521663]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:8be7a069-b7da-4477-a2b0-a950e9706885 1377ms (06:10:33.962)
+Trace[439521663]:  ---"Request completed" 1357ms (06:10:35.320)]
+Trace[439521663]: [1.378995604s] [1.378995604s] END
+I0416 06:11:18.643956       1 alloc.go:327] "allocated clusterIPs" service="f-test-test123-1234/test" clusterIPs=map[IPv4:10.233.14.40]
+I0416 06:11:20.027852       1 trace.go:219] Trace[756368077]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:2492eaf1-2bf6-4f7f-ae74-7610eb8c303c,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:11:18.648) (total time: 1379ms):
+Trace[756368077]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:a3997988-945e-4109-a897-16fca993af0b 1375ms (06:11:18.652)
+Trace[756368077]:  ---"Request completed" 1355ms (06:11:20.007)]
+Trace[756368077]: [1.379068928s] [1.379068928s] END
+I0416 06:11:21.415720       1 trace.go:219] Trace[360593968]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:9133ffc4-b37d-4593-beee-bd719c3ed68b,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:11:20.040) (total time: 1375ms):
+Trace[360593968]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:a85e4f0e-1cec-422c-8821-c651192bbc84 1374ms (06:11:20.041)
+Trace[360593968]:  ---"Request completed" 1355ms (06:11:21.396)]
+Trace[360593968]: [1.375639579s] [1.375639579s] END
+I0416 06:11:22.809188       1 trace.go:219] Trace[1662268053]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:7644c81e-9a1f-41fa-a9f2-cf0801020f8f,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:11:21.420) (total time: 1389ms):
+Trace[1662268053]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:887fc8b3-38b2-4ca1-a5a0-6f3fc5f024c5 1388ms (06:11:21.421)
+Trace[1662268053]:  ---"Request completed" 1361ms (06:11:22.782)]
+Trace[1662268053]: [1.389007397s] [1.389007397s] END
+I0416 06:11:24.191212       1 trace.go:219] Trace[42687061]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:08a6f3f1-4137-4db7-86e8-d025666fc258,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:11:22.814) (total time: 1376ms):
+Trace[42687061]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:855f7c3d-7137-49a8-9518-0fa1e0c2e14c 1375ms (06:11:22.815)
+Trace[42687061]:  ---"Request completed" 1356ms (06:11:24.171)]
+Trace[42687061]: [1.37683375s] [1.37683375s] END
+I0416 06:11:25.571720       1 trace.go:219] Trace[143456972]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:0515544e-e4a7-49c9-85c6-a6893060e8df,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:11:24.196) (total time: 1375ms):
+Trace[143456972]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:fbe5b800-74da-4f5b-bbd4-b1b59c87f870 1374ms (06:11:24.197)
+Trace[143456972]:  ---"Request completed" 1355ms (06:11:25.553)]
+Trace[143456972]: [1.375542548s] [1.375542548s] END
+I0416 06:11:26.954418       1 trace.go:219] Trace[213182237]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:4e294b8c-2c8c-4fbb-8f63-bad851493937,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:11:25.576) (total time: 1378ms):
+Trace[213182237]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:9eb1c117-c85d-4557-bda7-66ca7d3466d4 1376ms (06:11:25.577)
+Trace[213182237]:  ---"Request completed" 1357ms (06:11:26.934)]
+Trace[213182237]: [1.378097193s] [1.378097193s] END
+I0416 06:11:28.334720       1 trace.go:219] Trace[892156135]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:9d21ee45-9644-4e58-969c-351cecf3c039,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:11:26.959) (total time: 1375ms):
+Trace[892156135]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:dad9c573-59da-48fa-a1a2-6e485a73e803 1374ms (06:11:26.960)
+Trace[892156135]:  ---"Request completed" 1356ms (06:11:28.316)]
+Trace[892156135]: [1.375492634s] [1.375492634s] END
+I0416 06:11:29.715570       1 trace.go:219] Trace[1930007979]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:60b346ce-7ebe-478b-ab49-6499db970d64,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:11:28.339) (total time: 1376ms):
+Trace[1930007979]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:b0710f83-27f5-4bfb-9824-4e4428ffb010 1374ms (06:11:28.340)
+Trace[1930007979]:  ---"Request completed" 1356ms (06:11:29.696)]
+Trace[1930007979]: [1.376052463s] [1.376052463s] END
+I0416 06:11:31.107176       1 trace.go:219] Trace[1028636789]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:847911ee-acc6-4bbe-a4cb-10b1ff1cbda0,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:11:29.720) (total time: 1386ms):
+Trace[1028636789]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:9971cb9c-0f2a-4b1a-a045-6f026d688b5e 1385ms (06:11:29.721)
+Trace[1028636789]:  ---"Request completed" 1358ms (06:11:31.079)]
+Trace[1028636789]: [1.386702854s] [1.386702854s] END
+I0416 06:11:32.487773       1 trace.go:219] Trace[734348865]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:5c4a3ed3-43a9-432d-a776-3741c1ff6db3,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:11:31.111) (total time: 1375ms):
+Trace[734348865]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:be2e0d6a-2d5a-497a-b88c-c9811fc1e5fc 1374ms (06:11:31.113)
+Trace[734348865]:  ---"Request completed" 1355ms (06:11:32.468)]
+Trace[734348865]: [1.375866786s] [1.375866786s] END
+I0416 06:11:33.869133       1 trace.go:219] Trace[2003573974]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:6a2769b0-2c53-43ea-b858-a427c257d498,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:11:32.492) (total time: 1376ms):
+Trace[2003573974]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:ceee2ea2-4f4e-4288-a055-2ceb2151c333 1374ms (06:11:32.494)
+Trace[2003573974]:  ---"Request completed" 1355ms (06:11:33.849)]
+Trace[2003573974]: [1.376111359s] [1.376111359s] END
+I0416 06:11:36.428560       1 trace.go:219] Trace[92416165]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:16229877-e001-47d6-ae5f-bcc26ee6206d,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:11:35.053) (total time: 1374ms):
+Trace[92416165]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:b9d22b06-9c61-4a5c-a0a0-4d1cf2213050 1373ms (06:11:35.055)
+Trace[92416165]:  ---"Request completed" 1354ms (06:11:36.409)]
+Trace[92416165]: [1.374879048s] [1.374879048s] END
+I0416 06:11:48.053411       1 trace.go:219] Trace[981567586]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:e58a88e5-cb58-43b5-bd54-41bef35e6ac0,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:11:46.674) (total time: 1378ms):
+Trace[981567586]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:00321497-4940-4325-95e4-87f8c3806da0 1377ms (06:11:46.675)
+Trace[981567586]:  ---"Request completed" 1358ms (06:11:48.033)]
+Trace[981567586]: [1.378941795s] [1.378941795s] END
+I0416 06:12:09.918619       1 trace.go:219] Trace[1665295017]: "Create" accept:application/vnd.kubernetes.protobuf, */*,audit-id:1e62cc7c-5ed6-4eea-9cb4-cebcea95da36,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/f-test-test123-1234/pods,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/system:serviceaccount:kube-system:statefulset-controller,verb:POST (16-Apr-2025 06:12:08.539) (total time: 1378ms):
+Trace[1665295017]: ["Call mutating webhook" configuration:admission-webhook-mutating-webhook-configuration,webhook:admission-webhook-deployment.kubeflow.org,resource:/v1, Resource=pods,subresource:,operation:CREATE,UID:3db706f7-5074-4459-821f-852199b68b18 1374ms (06:12:08.543)
+Trace[1665295017]:  ---"Request completed" 1355ms (06:12:09.899)]
+Trace[1665295017]: [1.378611481s] [1.378611481s] END

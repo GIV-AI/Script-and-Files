@@ -1,0 +1,184 @@
+NAMESPACE                        NAME                                                              READY   STATUS                     RESTARTS         AGE
+auth                             dex-767bfc69bd-6wxd6                                              1/1     Running                    6 (3h12m ago)    2d19h
+cert-manager                     cert-manager-7fb78674d7-d8xdm                                     1/1     Running                    11 (5h52m ago)   6d17h
+cert-manager                     cert-manager-cainjector-5dfc946d84-vchfv                          1/1     Running                    11 (5h52m ago)   6d17h
+cert-manager                     cert-manager-webhook-8744b7588-95tsw                              1/1     Running                    12 (5h52m ago)   6d17h
+deepops-nfs-client-provisioner   nfs-subdir-external-provisioner-7859dcd666-fn27v                  1/1     Running                    14 (5h52m ago)   6d17h
+f-gi-aiml-1                      bert-0                                                            2/2     Running                    0                35m
+f-gi-aiml-1                      ml-pipeline-ui-artifact-fb8c99584-ctmfc                           2/2     Running                    8 (5h52m ago)    3d2h
+f-gi-aiml-1                      ml-pipeline-visualizationserver-6659778c46-jwprs                  2/2     Running                    8 (5h52m ago)    3d2h
+f-gi-aiml-12                     ml-pipeline-ui-artifact-fb8c99584-z9ppr                           2/2     Running                    8 (5h52m ago)    3d2h
+f-gi-aiml-12                     ml-pipeline-visualizationserver-6659778c46-mgqn9                  2/2     Running                    8 (5h52m ago)    3d2h
+f-gi-aiml-123                    ml-pipeline-ui-artifact-fb8c99584-s9zxh                           2/2     Running                    8 (5h52m ago)    3d2h
+f-gi-aiml-123                    ml-pipeline-visualizationserver-6659778c46-86gwj                  2/2     Running                    8 (5h52m ago)    3d2h
+f-gi-aiml-1234                   ml-pipeline-ui-artifact-fb8c99584-299kp                           2/2     Running                    8 (5h52m ago)    3d2h
+f-gi-aiml-1234                   ml-pipeline-visualizationserver-6659778c46-5hbxw                  2/2     Running                    8 (5h52m ago)    3d2h
+f-giindia-support-12             ml-pipeline-ui-artifact-fb8c99584-ppf6h                           2/2     Running                    0                85m
+f-giindia-support-12             ml-pipeline-visualizationserver-6659778c46-62js2                  2/2     Running                    0                85m
+f-jain-dc-9                      ml-pipeline-ui-artifact-fb8c99584-xdlrt                           2/2     Running                    10 (5h52m ago)   3d19h
+f-jain-dc-9                      ml-pipeline-visualizationserver-6659778c46-56vhp                  2/2     Running                    10 (5h52m ago)   3d19h
+f-jain-santosh-1234              ml-pipeline-ui-artifact-fb8c99584-nl8zk                           2/2     Running                    10 (5h52m ago)   3d22h
+f-jain-santosh-1234              ml-pipeline-visualizationserver-6659778c46-hj8qs                  2/2     Running                    10 (5h52m ago)   3d22h
+f-jain-test-1234                 ml-pipeline-ui-artifact-fb8c99584-d2brf                           2/2     Running                    10 (5h52m ago)   3d22h
+f-jain-test-1234                 ml-pipeline-visualizationserver-6659778c46-x2kwr                  2/2     Running                    10 (5h52m ago)   3d22h
+f-test-test123-1234              ml-pipeline-ui-artifact-fb8c99584-qm9hr                           2/2     Running                    10 (5h52m ago)   4d
+f-test-test123-1234              ml-pipeline-visualizationserver-6659778c46-j2p8f                  2/2     Running                    10 (5h52m ago)   4d
+gpu-operator                     gpu-feature-discovery-wkp2p                                       1/1     Running                    4 (5h52m ago)    6h5m
+gpu-operator                     gpu-operator-784b7c5578-6rrmq                                     1/1     Running                    13 (5h52m ago)   6d17h
+gpu-operator                     nvidia-container-toolkit-daemonset-vpwx6                          1/1     Running                    9 (5h52m ago)    6d17h
+gpu-operator                     nvidia-cuda-validator-l47bf                                       0/1     Completed                  0                3h11m
+gpu-operator                     nvidia-dcgm-exporter-2hdn4                                        1/1     Running                    4 (5h52m ago)    6h5m
+gpu-operator                     nvidia-device-plugin-daemonset-cjm9x                              1/1     Running                    7 (5h52m ago)    6h5m
+gpu-operator                     nvidia-device-plugin-validator-twk8k                              0/1     UnexpectedAdmissionError   0                3h10m
+gpu-operator                     nvidia-gpu-operator-node-feature-discovery-master-6f78fb7c8ttft   1/1     Running                    9 (5h52m ago)    6d17h
+gpu-operator                     nvidia-gpu-operator-node-feature-discovery-worker-lt7cp           1/1     Running                    30 (10h ago)     6d17h
+gpu-operator                     nvidia-gpu-operator-node-feature-discovery-worker-qhvdq           1/1     Running                    12 (3h10m ago)   6d17h
+gpu-operator                     nvidia-mig-manager-w5wnl                                          1/1     Running                    8 (5h52m ago)    6d17h
+gpu-operator                     nvidia-operator-validator-5ldhp                                   1/1     Running                    1 (5h52m ago)    6h5m
+istio-system                     authservice-0                                                     1/1     Running                    9 (3h15m ago)    6d16h
+istio-system                     cluster-local-gateway-675bb7b74-cwff8                             1/1     Running                    9 (5h52m ago)    6d17h
+istio-system                     istio-ingressgateway-c7fdd4bf6-fk9xr                              1/1     Running                    9 (5h52m ago)    6d17h
+istio-system                     istiod-6995577d4-rqkxf                                            1/1     Running                    9 (5h52m ago)    6d17h
+knative-eventing                 eventing-controller-86647cbc5b-74f5h                              1/1     Running                    11 (3h11m ago)   6d17h
+knative-eventing                 eventing-webhook-6f48bb5f4c-9g22s                                 1/1     Running                    9 (5h52m ago)    6d17h
+knative-serving                  activator-855b695596-gsl4r                                        2/2     Running                    42 (3h10m ago)   6d17h
+knative-serving                  autoscaler-7cbddfc9f7-nlkt8                                       2/2     Running                    27 (3h10m ago)   6d17h
+knative-serving                  controller-6657c556fd-gh2l8                                       2/2     Running                    52 (3h10m ago)   6d17h
+knative-serving                  domain-mapping-544987775c-44vdw                                   2/2     Running                    58 (3h9m ago)    6d17h
+knative-serving                  domainmapping-webhook-6b48bdc856-xzltg                            2/2     Running                    60 (3h9m ago)    6d17h
+knative-serving                  net-istio-controller-6fbdbd9959-tzxhx                             2/2     Running                    46 (3h10m ago)   6d17h
+knative-serving                  net-istio-webhook-7d4879cd7f-z8skv                                2/2     Running                    52 (3h10m ago)   6d17h
+knative-serving                  webhook-665c977469-gvbx5                                          2/2     Running                    59 (3h10m ago)   6d17h
+kube-system                      calico-kube-controllers-6dfcdfb99-ftq5q                           1/1     Running                    10 (5h52m ago)   6d17h
+kube-system                      calico-node-bmhr4                                                 1/1     Running                    6 (10h ago)      6d17h
+kube-system                      calico-node-z7p9d                                                 1/1     Running                    15 (5h52m ago)   6d17h
+kube-system                      coredns-645b46f4b6-8mm2h                                          1/1     Running                    0                6h3m
+kube-system                      coredns-645b46f4b6-m4zhl                                          1/1     Running                    10 (5h52m ago)   6d17h
+kube-system                      dns-autoscaler-659b8c48cb-bdf68                                   1/1     Running                    10 (5h52m ago)   6d17h
+kube-system                      kube-apiserver-jain-dgx-server                                    1/1     Running                    11 (5h52m ago)   6d17h
+kube-system                      kube-apiserver-jainhpmgmt                                         1/1     Running                    46 (3h16m ago)   6d17h
+kube-system                      kube-controller-manager-jain-dgx-server                           1/1     Running                    13 (5h52m ago)   6d17h
+kube-system                      kube-controller-manager-jainhpmgmt                                1/1     Running                    13 (10h ago)     6d17h
+kube-system                      kube-proxy-2hsl4                                                  1/1     Running                    9 (5h52m ago)    6d17h
+kube-system                      kube-proxy-xdhk6                                                  1/1     Running                    6 (10h ago)      6d17h
+kube-system                      kube-scheduler-jain-dgx-server                                    1/1     Running                    12 (5h52m ago)   6d17h
+kube-system                      kube-scheduler-jainhpmgmt                                         1/1     Running                    12 (10h ago)     6d17h
+kube-system                      kubernetes-dashboard-5779d79d4c-t4gsj                             1/1     Running                    11 (5h52m ago)   6d17h
+kube-system                      kubernetes-metrics-scraper-6cdb9fb87f-l5k72                       1/1     Running                    12 (5h52m ago)   6d17h
+kube-system                      nodelocaldns-2g9bm                                                1/1     Running                    14 (10h ago)     5d20h
+kube-system                      nodelocaldns-2gdzm                                                1/1     Running                    13 (5h52m ago)   5d20h
+kubeflow-deepops-example-com     ml-pipeline-ui-artifact-fb8c99584-x26n7                           2/2     Running                    18 (5h52m ago)   6d15h
+kubeflow-deepops-example-com     ml-pipeline-visualizationserver-6659778c46-pglw8                  2/2     Running                    18 (5h52m ago)   6d15h
+kubeflow                         admission-webhook-deployment-7d56d4455f-q5mgb                     1/1     Running                    9 (5h52m ago)    6d17h
+kubeflow                         cache-server-6b44c46d47-cwfcx                                     2/2     Running                    22 (5h52m ago)   6d17h
+kubeflow                         centraldashboard-d45f69689-h8srw                                  2/2     Running                    18 (5h52m ago)   6d17h
+kubeflow                         jupyter-web-app-deployment-57864d5958-hwgcm                       2/2     Running                    18 (5h52m ago)   6d17h
+kubeflow                         katib-controller-7964698977-lvbjp                                 1/1     Running                    13 (5h52m ago)   6d17h
+kubeflow                         katib-db-manager-57474ccbbf-mpmbb                                 1/1     Running                    15 (3h11m ago)   6d17h
+kubeflow                         katib-mysql-66c8cdff4f-4px7x                                      1/1     Running                    9 (3h15m ago)    6d17h
+kubeflow                         katib-ui-57d77d7d75-jqg24                                         2/2     Running                    63 (3h10m ago)   6d17h
+kubeflow                         kserve-controller-manager-96b896c66-txffr                         2/2     Running                    23 (3h10m ago)   6d17h
+kubeflow                         kserve-models-web-app-9fbcd79f5-xmdlm                             2/2     Running                    22 (3h11m ago)   6d17h
+kubeflow                         kubeflow-pipelines-profile-controller-6f6bc888df-qmxng            1/1     Running                    9 (5h52m ago)    6d17h
+kubeflow                         metacontroller-0                                                  1/1     Running                    13 (5h52m ago)   6d17h
+kubeflow                         metadata-envoy-deployment-7b49bdb748-v98w4                        1/1     Running                    9 (5h52m ago)    6d17h
+kubeflow                         metadata-grpc-deployment-6d744c66bb-wfqxl                         2/2     Running                    66 (3h10m ago)   6d17h
+kubeflow                         metadata-writer-5bfdbf79b7-9n4sp                                  2/2     Running                    44 (3h6m ago)    6d17h
+kubeflow                         minio-549846c488-rbjp2                                            2/2     Running                    18 (5h52m ago)   6d17h
+kubeflow                         ml-pipeline-86d69497fc-r96w7                                      2/2     Running                    28 (3h9m ago)    6d17h
+kubeflow                         ml-pipeline-persistenceagent-5789446f9c-zdcj5                     2/2     Running                    30 (5h52m ago)   6d17h
+kubeflow                         ml-pipeline-scheduledworkflow-fb9fbd76b-gtbw4                     2/2     Running                    18 (5h52m ago)   6d17h
+kubeflow                         ml-pipeline-ui-74fcbdddd9-xsl27                                   2/2     Running                    18 (5h52m ago)   6d17h
+kubeflow                         ml-pipeline-viewer-crd-bdf696cb9-pz4cc                            2/2     Running                    59 (3h11m ago)   6d17h
+kubeflow                         ml-pipeline-visualizationserver-845d745b46-md48c                  2/2     Running                    18 (5h52m ago)   6d17h
+kubeflow                         mysql-5f968d4688-ffd8d                                            2/2     Running                    18 (3h15m ago)   6d17h
+kubeflow                         notebook-controller-deployment-7cdb9d9f7b-kbdcc                   2/2     Running                    41 (3h11m ago)   6d17h
+kubeflow                         profiles-deployment-7cf8b9b794-g2llh                              3/3     Running                    70 (3h9m ago)    6d17h
+kubeflow                         tensorboard-controller-deployment-697c566bd5-478bw                3/3     Running                    57 (3h11m ago)   6d17h
+kubeflow                         tensorboards-web-app-deployment-67bf5977c9-49g85                  2/2     Running                    18 (5h52m ago)   6d17h
+kubeflow                         training-operator-64886bdddc-kkm8j                                1/1     Running                    13 (3h11m ago)   6d17h
+kubeflow                         volumes-web-app-deployment-7f8c75d5b-44vnt                        2/2     Running                    18 (5h52m ago)   6d17h
+kubeflow                         workflow-controller-56cc57796-kl4vb                               2/2     Running                    51 (3h10m ago)   6d17h
+s-jain-training-1                ml-pipeline-ui-artifact-fb8c99584-xw5sb                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-1                ml-pipeline-visualizationserver-6659778c46-p9ph8                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-1                test-0                                                            2/2     Running                    0                35m
+s-jain-training-10               ml-pipeline-ui-artifact-fb8c99584-chtck                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-10               ml-pipeline-visualizationserver-6659778c46-gwqgg                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-10               project4daypart2-0                                                2/2     Running                    0                33m
+s-jain-training-11               hugvp-0                                                           2/2     Running                    0                34m
+s-jain-training-11               ml-pipeline-ui-artifact-fb8c99584-ngz7m                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-11               ml-pipeline-visualizationserver-6659778c46-5tc72                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-12               kajukaju-0                                                        2/2     Running                    0                33m
+s-jain-training-12               ml-pipeline-ui-artifact-fb8c99584-ft7l7                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-12               ml-pipeline-visualizationserver-6659778c46-7swdp                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-13               day4-1-0                                                          2/2     Running                    0                34m
+s-jain-training-13               ml-pipeline-ui-artifact-fb8c99584-x7zjk                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-13               ml-pipeline-visualizationserver-6659778c46-pkphk                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-14               ml-pipeline-ui-artifact-fb8c99584-gszlf                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-14               ml-pipeline-visualizationserver-6659778c46-cgm99                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-15               audiorouting-0                                                    2/2     Running                    0                35m
+s-jain-training-15               ml-pipeline-ui-artifact-fb8c99584-4fzdt                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-15               ml-pipeline-visualizationserver-6659778c46-kqjf6                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-16               ml-pipeline-ui-artifact-fb8c99584-2kvn7                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-16               ml-pipeline-visualizationserver-6659778c46-rj7r5                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-17               day4test2-0                                                       2/2     Running                    0                34m
+s-jain-training-17               ml-pipeline-ui-artifact-fb8c99584-pfvt2                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-17               ml-pipeline-visualizationserver-6659778c46-8hxtb                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-18               day4a-0                                                           2/2     Running                    0                35m
+s-jain-training-18               ml-pipeline-ui-artifact-fb8c99584-xfp4v                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-18               ml-pipeline-visualizationserver-6659778c46-trx6z                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-19               day4april-0                                                       2/2     Running                    0                35m
+s-jain-training-19               ml-pipeline-ui-artifact-fb8c99584-fb5vg                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-19               ml-pipeline-visualizationserver-6659778c46-qv4mq                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-2                ml-pipeline-ui-artifact-fb8c99584-r7ghh                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-2                ml-pipeline-visualizationserver-6659778c46-fqp8c                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-2                test-0                                                            2/2     Running                    0                35m
+s-jain-training-20               ml-pipeline-ui-artifact-fb8c99584-fnb7d                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-20               ml-pipeline-visualizationserver-6659778c46-s7kkh                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-21               fixme-0                                                           2/2     Running                    0                33m
+s-jain-training-21               ml-pipeline-ui-artifact-fb8c99584-n78dd                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-21               ml-pipeline-visualizationserver-6659778c46-9gckh                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-22               image4-0                                                          2/2     Running                    0                35m
+s-jain-training-22               ml-pipeline-ui-artifact-fb8c99584-vl6qj                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-22               ml-pipeline-visualizationserver-6659778c46-dk5w5                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-23               day4-0                                                            2/2     Running                    0                35m
+s-jain-training-23               ml-pipeline-ui-artifact-fb8c99584-zv67l                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-23               ml-pipeline-visualizationserver-6659778c46-pswmv                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-24               ml-pipeline-ui-artifact-fb8c99584-8zgtm                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-24               ml-pipeline-visualizationserver-6659778c46-lflvp                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-25               ml-pipeline-ui-artifact-fb8c99584-w8qp8                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-25               ml-pipeline-visualizationserver-6659778c46-k4wq6                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-26               ml-pipeline-ui-artifact-fb8c99584-8qwtd                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-26               ml-pipeline-visualizationserver-6659778c46-wpkgl                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-27               ml-pipeline-ui-artifact-fb8c99584-s4948                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-27               ml-pipeline-visualizationserver-6659778c46-cdj5m                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-28               ml-pipeline-ui-artifact-fb8c99584-sk9bt                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-28               ml-pipeline-visualizationserver-6659778c46-gd4sz                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-29               ml-pipeline-ui-artifact-fb8c99584-cqx5m                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-29               ml-pipeline-visualizationserver-6659778c46-wx4rx                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-3                day4-12pm-0                                                       2/2     Running                    0                35m
+s-jain-training-3                ml-pipeline-ui-artifact-fb8c99584-wvvd7                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-3                ml-pipeline-visualizationserver-6659778c46-49bdc                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-30               ml-pipeline-ui-artifact-fb8c99584-r2gtf                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-30               ml-pipeline-visualizationserver-6659778c46-psckn                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-30               noebook5-0                                                        2/2     Running                    0                75m
+s-jain-training-4                day4llmnotebook-0                                                 2/2     Running                    0                35m
+s-jain-training-4                ml-pipeline-ui-artifact-fb8c99584-hzm7n                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-4                ml-pipeline-visualizationserver-6659778c46-4v465                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-5                ml-pipeline-ui-artifact-fb8c99584-mlxhh                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-5                ml-pipeline-visualizationserver-6659778c46-g9chx                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-5                test-0                                                            2/2     Running                    0                34m
+s-jain-training-6                ml-pipeline-ui-artifact-fb8c99584-2qrst                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-6                ml-pipeline-visualizationserver-6659778c46-xh8hd                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-6                test4-0                                                           2/2     Running                    0                35m
+s-jain-training-7                ml-pipeline-ui-artifact-fb8c99584-zn7pc                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-7                ml-pipeline-visualizationserver-6659778c46-9sxc4                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-7                test7-0                                                           2/2     Running                    0                18m
+s-jain-training-8                ml-pipeline-ui-artifact-fb8c99584-6mpcr                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-8                ml-pipeline-visualizationserver-6659778c46-wdq44                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-8                test7-0                                                           2/2     Running                    0                33m
+s-jain-training-9                ml-pipeline-ui-artifact-fb8c99584-lmg7n                           2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-9                ml-pipeline-visualizationserver-6659778c46-kv2cq                  2/2     Running                    8 (5h52m ago)    3d2h
+s-jain-training-9                test-0                                                            2/2     Running                    0                34m
+s-jaincollege-it-6080            ml-pipeline-ui-artifact-fb8c99584-hqgrd                           2/2     Running                    10 (5h52m ago)   3d20h
+s-jaincollege-it-6080            ml-pipeline-visualizationserver-6659778c46-gr42h                  2/2     Running                    10 (5h52m ago)   3d20h

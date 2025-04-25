@@ -1,0 +1,2 @@
+Defaulted container "nvidia-cuda-validator" out of: nvidia-cuda-validator, cuda-validation (init)
+cuda workload validation is successful

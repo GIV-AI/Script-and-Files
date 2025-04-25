@@ -1,0 +1,89 @@
+Namespace: gpu-operator
+Pod Name: gpu-operator-784b7c5578-6rrmq
+Status: 1/1
+Other Details: Running     1 (12h ago)    16h
+Name:                 gpu-operator-784b7c5578-6rrmq
+Namespace:            gpu-operator
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Service Account:      gpu-operator
+Node:                 jain-dgx-server/192.168.1.248
+Start Time:           Tue, 15 Apr 2025 13:48:11 +0000
+Labels:               app=gpu-operator
+                      app.kubernetes.io/component=gpu-operator
+                      app.kubernetes.io/instance=nvidia-gpu-operator
+                      app.kubernetes.io/managed-by=Helm
+                      app.kubernetes.io/name=gpu-operator
+                      app.kubernetes.io/version=v23.3.2
+                      helm.sh/chart=gpu-operator-v23.3.2
+                      nvidia.com/gpu-driver-upgrade-drain.skip=true
+                      pod-template-hash=784b7c5578
+Annotations:          cni.projectcalico.org/containerID: dabb897cec98db1fb0d42e92b8175b79cc89131a96bf4f763f8460e8b0fa528b
+                      cni.projectcalico.org/podIP: 10.233.119.139/32
+                      cni.projectcalico.org/podIPs: 10.233.119.139/32
+                      openshift.io/scc: restricted-readonly
+Status:               Running
+IP:                   10.233.119.139
+IPs:
+  IP:           10.233.119.139
+Controlled By:  ReplicaSet/gpu-operator-784b7c5578
+Containers:
+  gpu-operator:
+    Container ID:  docker://b0f439bc87e82803461603a37261a06b6dff84497a957a016091e0c0af1a2bab
+    Image:         nvcr.io/nvidia/gpu-operator:v23.3.2
+    Image ID:      docker-pullable://nvcr.io/nvidia/gpu-operator@sha256:08ca33f491195b7ba867be1e6642b5ff8aff6a4b0b7cfc0ec87619252ccfddc7
+    Port:          8080/TCP
+    Host Port:     0/TCP
+    Command:
+      gpu-operator
+    Args:
+      --leader-elect
+      --zap-time-encoding=epoch
+      --zap-log-level=info
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:53:42 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Tue, 15 Apr 2025 13:49:05 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:02 +0000
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      cpu:     500m
+      memory:  350Mi
+    Requests:
+      cpu:      200m
+      memory:   100Mi
+    Liveness:   http-get http://:8081/healthz delay=15s timeout=1s period=20s #success=1 #failure=3
+    Readiness:  http-get http://:8081/readyz delay=5s timeout=1s period=10s #success=1 #failure=3
+    Environment:
+      WATCH_NAMESPACE:     
+      OPERATOR_NAMESPACE:  gpu-operator (v1:metadata.namespace)
+    Mounts:
+      /host-etc/os-release from host-os-release (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-8dr7v (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  host-os-release:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/os-release
+    HostPathType:  
+  kube-api-access-8dr7v:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node-role.kubernetes.io/control-plane:NoSchedule
+                             node-role.kubernetes.io/master:NoSchedule
+                             node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

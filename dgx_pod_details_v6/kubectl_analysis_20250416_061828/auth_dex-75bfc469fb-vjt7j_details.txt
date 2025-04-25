@@ -1,0 +1,71 @@
+Namespace: auth
+Pod Name: dex-75bfc469fb-vjt7j
+Status: 1/1
+Other Details: Running     0              14m
+Name:             dex-75bfc469fb-vjt7j
+Namespace:        auth
+Priority:         0
+Service Account:  dex
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Wed, 16 Apr 2025 06:04:28 +0000
+Labels:           app=dex
+                  pod-template-hash=75bfc469fb
+Annotations:      cni.projectcalico.org/containerID: 7e790fd34da58d78f747ea4effef309643f9936262721a332e51f4da8eb66e35
+                  cni.projectcalico.org/podIP: 10.233.119.203/32
+                  cni.projectcalico.org/podIPs: 10.233.119.203/32
+                  kubectl.kubernetes.io/restartedAt: 2025-04-16T06:04:28Z
+Status:           Running
+IP:               10.233.119.203
+IPs:
+  IP:           10.233.119.203
+Controlled By:  ReplicaSet/dex-75bfc469fb
+Containers:
+  dex:
+    Container ID:  docker://bfcc2344940bf62ff11748b84733a5061f3fbbc91ef3a78067775d2898a87880
+    Image:         ghcr.io/dexidp/dex:v2.31.2
+    Image ID:      docker-pullable://ghcr.io/dexidp/dex@sha256:a4422334fc2fa528f0b9ca59fe1dff1f41ec66e5086facc85b32fc8d3da72a79
+    Port:          5556/TCP
+    Host Port:     0/TCP
+    Command:
+      dex
+      serve
+      /etc/dex/cfg/config.yaml
+    State:          Running
+      Started:      Wed, 16 Apr 2025 06:04:29 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment Variables from:
+      dex-oidc-client  Secret  Optional: false
+    Environment:
+      KUBERNETES_POD_NAMESPACE:  auth (v1:metadata.namespace)
+    Mounts:
+      /etc/dex/cfg from config (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-snxrg (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  config:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      dex
+    Optional:  false
+  kube-api-access-snxrg:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  14m   default-scheduler  Successfully assigned auth/dex-75bfc469fb-vjt7j to jain-dgx-server
+  Normal  Pulled     14m   kubelet            Container image "ghcr.io/dexidp/dex:v2.31.2" already present on machine
+  Normal  Created    14m   kubelet            Created container dex
+  Normal  Started    14m   kubelet            Started container dex

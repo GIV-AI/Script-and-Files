@@ -1,0 +1,484 @@
+Flag --apiserver-count has been deprecated, apiserver-count is deprecated and will be removed in a future version.
+I0421 05:27:33.960701       1 server.go:555] external host was not specified, using 192.168.1.248
+I0421 05:27:33.961989       1 server.go:163] Version: v1.26.5
+I0421 05:27:33.962015       1 server.go:165] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I0421 05:27:34.349436       1 shared_informer.go:270] Waiting for caches to sync for node_authorizer
+I0421 05:27:34.350552       1 plugins.go:158] Loaded 12 mutating admission controller(s) successfully in the following order: NamespaceLifecycle,LimitRanger,ServiceAccount,NodeRestriction,TaintNodesByCondition,Priority,DefaultTolerationSeconds,DefaultStorageClass,StorageObjectInUseProtection,RuntimeClass,DefaultIngressClass,MutatingAdmissionWebhook.
+I0421 05:27:34.350561       1 plugins.go:161] Loaded 12 validating admission controller(s) successfully in the following order: LimitRanger,ServiceAccount,PodSecurity,Priority,PersistentVolumeClaimResize,RuntimeClass,CertificateApproval,CertificateSigning,CertificateSubjectRestriction,ValidatingAdmissionPolicy,ValidatingAdmissionWebhook,ResourceQuota.
+W0421 05:27:34.382135       1 genericapiserver.go:660] Skipping API apiextensions.k8s.io/v1beta1 because it has no resources.
+I0421 05:27:34.383030       1 instance.go:277] Using reconciler: lease
+E0421 05:27:34.388994       1 instance.go:384] Could not construct pre-rendered responses for ServiceAccountIssuerDiscovery endpoints. Endpoints will not be enabled. Error: issuer URL must use https scheme, got: kubernetes.default.svc
+I0421 05:27:34.514024       1 instance.go:621] API group "internal.apiserver.k8s.io" is not enabled, skipping.
+I0421 05:27:34.711600       1 instance.go:621] API group "resource.k8s.io" is not enabled, skipping.
+W0421 05:27:34.755648       1 genericapiserver.go:660] Skipping API authentication.k8s.io/v1beta1 because it has no resources.
+W0421 05:27:34.755659       1 genericapiserver.go:660] Skipping API authentication.k8s.io/v1alpha1 because it has no resources.
+W0421 05:27:34.756732       1 genericapiserver.go:660] Skipping API authorization.k8s.io/v1beta1 because it has no resources.
+W0421 05:27:34.759284       1 genericapiserver.go:660] Skipping API autoscaling/v2beta1 because it has no resources.
+W0421 05:27:34.759291       1 genericapiserver.go:660] Skipping API autoscaling/v2beta2 because it has no resources.
+W0421 05:27:34.760876       1 genericapiserver.go:660] Skipping API batch/v1beta1 because it has no resources.
+W0421 05:27:34.762169       1 genericapiserver.go:660] Skipping API certificates.k8s.io/v1beta1 because it has no resources.
+W0421 05:27:34.763327       1 genericapiserver.go:660] Skipping API coordination.k8s.io/v1beta1 because it has no resources.
+W0421 05:27:34.763351       1 genericapiserver.go:660] Skipping API discovery.k8s.io/v1beta1 because it has no resources.
+W0421 05:27:34.766257       1 genericapiserver.go:660] Skipping API networking.k8s.io/v1beta1 because it has no resources.
+W0421 05:27:34.766263       1 genericapiserver.go:660] Skipping API networking.k8s.io/v1alpha1 because it has no resources.
+W0421 05:27:34.767340       1 genericapiserver.go:660] Skipping API node.k8s.io/v1beta1 because it has no resources.
+W0421 05:27:34.767346       1 genericapiserver.go:660] Skipping API node.k8s.io/v1alpha1 because it has no resources.
+W0421 05:27:34.767369       1 genericapiserver.go:660] Skipping API policy/v1beta1 because it has no resources.
+W0421 05:27:34.770407       1 genericapiserver.go:660] Skipping API rbac.authorization.k8s.io/v1beta1 because it has no resources.
+W0421 05:27:34.770414       1 genericapiserver.go:660] Skipping API rbac.authorization.k8s.io/v1alpha1 because it has no resources.
+W0421 05:27:34.771502       1 genericapiserver.go:660] Skipping API scheduling.k8s.io/v1beta1 because it has no resources.
+W0421 05:27:34.771508       1 genericapiserver.go:660] Skipping API scheduling.k8s.io/v1alpha1 because it has no resources.
+W0421 05:27:34.774615       1 genericapiserver.go:660] Skipping API storage.k8s.io/v1alpha1 because it has no resources.
+W0421 05:27:34.784982       1 genericapiserver.go:660] Skipping API flowcontrol.apiserver.k8s.io/v1beta1 because it has no resources.
+W0421 05:27:34.784993       1 genericapiserver.go:660] Skipping API flowcontrol.apiserver.k8s.io/v1alpha1 because it has no resources.
+W0421 05:27:34.788552       1 genericapiserver.go:660] Skipping API apps/v1beta2 because it has no resources.
+W0421 05:27:34.788560       1 genericapiserver.go:660] Skipping API apps/v1beta1 because it has no resources.
+W0421 05:27:34.789973       1 genericapiserver.go:660] Skipping API admissionregistration.k8s.io/v1beta1 because it has no resources.
+W0421 05:27:34.789979       1 genericapiserver.go:660] Skipping API admissionregistration.k8s.io/v1alpha1 because it has no resources.
+W0421 05:27:34.791205       1 genericapiserver.go:660] Skipping API events.k8s.io/v1beta1 because it has no resources.
+W0421 05:27:34.802875       1 genericapiserver.go:660] Skipping API apiregistration.k8s.io/v1beta1 because it has no resources.
+I0421 05:27:35.207380       1 dynamic_cafile_content.go:157] "Starting controller" name="request-header::/etc/kubernetes/ssl/front-proxy-ca.crt"
+I0421 05:27:35.207407       1 dynamic_serving_content.go:132] "Starting controller" name="serving-cert::/etc/kubernetes/ssl/apiserver.crt::/etc/kubernetes/ssl/apiserver.key"
+I0421 05:27:35.207455       1 secure_serving.go:210] Serving securely on [::]:6443
+I0421 05:27:35.207500       1 dynamic_cafile_content.go:157] "Starting controller" name="client-ca-bundle::/etc/kubernetes/ssl/ca.crt"
+I0421 05:27:35.207560       1 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I0421 05:27:35.207736       1 available_controller.go:423] Starting AvailableConditionController
+I0421 05:27:35.207757       1 cache.go:32] Waiting for caches to sync for AvailableConditionController controller
+I0421 05:27:35.207999       1 controller.go:83] Starting OpenAPI AggregationController
+I0421 05:27:35.208099       1 controller.go:121] Starting legacy_token_tracking_controller
+I0421 05:27:35.208107       1 shared_informer.go:270] Waiting for caches to sync for configmaps
+I0421 05:27:35.208129       1 autoregister_controller.go:141] Starting autoregister controller
+I0421 05:27:35.208132       1 cache.go:32] Waiting for caches to sync for autoregister controller
+I0421 05:27:35.208150       1 apf_controller.go:361] Starting API Priority and Fairness config controller
+I0421 05:27:35.208168       1 cluster_authentication_trust_controller.go:440] Starting cluster_authentication_trust_controller controller
+I0421 05:27:35.208179       1 shared_informer.go:270] Waiting for caches to sync for cluster_authentication_trust_controller
+I0421 05:27:35.208209       1 dynamic_serving_content.go:132] "Starting controller" name="aggregator-proxy-cert::/etc/kubernetes/ssl/front-proxy-client.crt::/etc/kubernetes/ssl/front-proxy-client.key"
+I0421 05:27:35.208276       1 apiservice_controller.go:97] Starting APIServiceRegistrationController
+I0421 05:27:35.208280       1 cache.go:32] Waiting for caches to sync for APIServiceRegistrationController controller
+I0421 05:27:35.208290       1 controller.go:80] Starting OpenAPI V3 AggregationController
+I0421 05:27:35.208370       1 customresource_discovery_controller.go:288] Starting DiscoveryController
+I0421 05:27:35.208390       1 gc_controller.go:78] Starting apiserver lease garbage collector
+I0421 05:27:35.208422       1 dynamic_cafile_content.go:157] "Starting controller" name="client-ca-bundle::/etc/kubernetes/ssl/ca.crt"
+I0421 05:27:35.208463       1 dynamic_cafile_content.go:157] "Starting controller" name="request-header::/etc/kubernetes/ssl/front-proxy-ca.crt"
+I0421 05:27:35.208868       1 crdregistration_controller.go:111] Starting crd-autoregister controller
+I0421 05:27:35.208874       1 shared_informer.go:270] Waiting for caches to sync for crd-autoregister
+I0421 05:27:35.209161       1 crd_finalizer.go:266] Starting CRDFinalizer
+I0421 05:27:35.209183       1 apiapproval_controller.go:186] Starting KubernetesAPIApprovalPolicyConformantConditionController
+I0421 05:27:35.209181       1 nonstructuralschema_controller.go:192] Starting NonStructuralSchemaConditionController
+I0421 05:27:35.209580       1 controller.go:85] Starting OpenAPI controller
+I0421 05:27:35.209789       1 controller.go:85] Starting OpenAPI V3 controller
+I0421 05:27:35.209858       1 naming_controller.go:291] Starting NamingConditionController
+I0421 05:27:35.210454       1 establishing_controller.go:76] Starting EstablishingController
+I0421 05:27:35.251601       1 controller.go:615] quota admission added evaluator for: leases.coordination.k8s.io
+I0421 05:27:35.308086       1 cache.go:39] Caches are synced for AvailableConditionController controller
+I0421 05:27:35.308437       1 apf_controller.go:366] Running API Priority and Fairness config worker
+I0421 05:27:35.308444       1 cache.go:39] Caches are synced for autoregister controller
+I0421 05:27:35.308449       1 apf_controller.go:369] Running API Priority and Fairness periodic rebalancing process
+I0421 05:27:35.308556       1 shared_informer.go:277] Caches are synced for configmaps
+I0421 05:27:35.308901       1 cache.go:39] Caches are synced for APIServiceRegistrationController controller
+I0421 05:27:35.308903       1 shared_informer.go:277] Caches are synced for cluster_authentication_trust_controller
+I0421 05:27:35.349886       1 shared_informer.go:277] Caches are synced for node_authorizer
+I0421 05:27:35.408938       1 shared_informer.go:277] Caches are synced for crd-autoregister
+I0421 05:27:36.211442       1 storage_scheduling.go:111] all system priority classes are created successfully or already exist.
+W0421 05:27:36.422128       1 lease.go:251] Resetting endpoints for master service "kubernetes" to [192.168.1.248 192.168.1.249]
+I0421 05:27:36.423390       1 controller.go:615] quota admission added evaluator for: endpoints
+I0421 05:27:36.427601       1 controller.go:615] quota admission added evaluator for: endpointslices.discovery.k8s.io
+I0421 05:27:36.592346       1 controller.go:132] OpenAPI AggregationController: action for item k8s_internal_local_delegation_chain_0000000000: Nothing (removed from the queue).
+I0421 05:29:20.806642       1 controller.go:615] quota admission added evaluator for: nodefeatures.nfd.k8s-sigs.io
+W0421 05:29:33.381686       1 dispatcher.go:187] Failed calling webhook, failing closed rev.validation.istio.io: failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+W0421 05:29:33.398263       1 dispatcher.go:176] Failed calling webhook, failing open rev.validation.istio.io: failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+E0421 05:29:33.398293       1 dispatcher.go:183] failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+I0421 05:29:33.398314       1 controller.go:615] quota admission added evaluator for: gateways.networking.istio.io
+W0421 05:29:34.075764       1 dispatcher.go:176] Failed calling webhook, failing open rev.validation.istio.io: failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+E0421 05:29:34.075797       1 dispatcher.go:183] failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+W0421 05:29:34.398638       1 dispatcher.go:176] Failed calling webhook, failing open rev.validation.istio.io: failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+E0421 05:29:34.398670       1 dispatcher.go:183] failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+W0421 05:29:42.412448       1 dispatcher.go:176] Failed calling webhook, failing open rev.validation.istio.io: failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+E0421 05:29:42.412488       1 dispatcher.go:183] failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+W0421 05:29:58.418111       1 dispatcher.go:176] Failed calling webhook, failing open rev.validation.istio.io: failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+E0421 05:29:58.418142       1 dispatcher.go:183] failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+{"level":"warn","ts":"2025-04-21T05:30:38.108Z","logger":"etcd-client","caller":"v3/retry_interceptor.go:62","msg":"retrying of unary invoker failed","target":"etcd-endpoints://0xc00392d500/192.168.1.248:2379","attempt":0,"error":"rpc error: code = Canceled desc = context canceled"}
+E0421 05:30:38.108893       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"context canceled"}: context canceled
+E0421 05:30:38.108931       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0421 05:30:38.109985       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0421 05:30:38.111010       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+W0421 05:30:38.111430       1 dispatcher.go:176] Failed calling webhook, failing open rev.validation.istio.io: failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+E0421 05:30:38.111450       1 dispatcher.go:183] failed calling webhook "rev.validation.istio.io": failed to call webhook: Post "https://istiod.istio-system.svc:443/validate?timeout=10s": dial tcp 10.233.11.195:443: connect: connection refused
+E0421 05:30:38.112216       1 timeout.go:142] post-timeout activity - time-elapsed: 3.283108ms, GET "/api/v1/namespaces/istio-system/configmaps/istio-namespace-controller-election" result: <nil>
+E0421 05:30:46.929659       1 watch.go:270] unable to encode watch object *v1.WatchEvent: http2: stream closed (&streaming.encoderWithAllocator{writer:responsewriter.outerWithCloseNotifyAndFlush{UserProvidedDecorator:(*metrics.ResponseWriterDelegator)(0xc023856f00), InnerCloseNotifierFlusher:(*http2.responseWriter)(0xc009016780)}, encoder:(*versioning.codec)(0xc02380f180), memAllocator:(*runtime.Allocator)(0xc01b897320)})
+I0421 05:30:53.420988       1 controller.go:615] quota admission added evaluator for: deployments.apps
+E0421 05:31:00.378973       1 watch.go:270] unable to encode watch object *v1.WatchEvent: client disconnected (&streaming.encoderWithAllocator{writer:responsewriter.outerWithCloseNotifyAndFlush{UserProvidedDecorator:(*metrics.ResponseWriterDelegator)(0xc024f6ba70), InnerCloseNotifierFlusher:(*http2.responseWriter)(0xc00b9b0dc0)}, encoder:(*versioning.codec)(0xc00f56b720), memAllocator:(*runtime.Allocator)(0xc026ea5a58)})
+E0421 05:31:02.427122       1 authentication.go:70] "Unable to authenticate the request" err="[invalid bearer token, context canceled]"
+E0421 05:31:02.427189       1 writers.go:122] apiserver was unable to write a JSON response: http: Handler timeout
+E0421 05:31:02.427201       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http: Handler timeout"}: http: Handler timeout
+E0421 05:31:02.428333       1 writers.go:135] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E0421 05:31:02.429519       1 timeout.go:142] post-timeout activity - time-elapsed: 2.435611ms, GET "/apis/coordination.k8s.io/v1/namespaces/gpu-operator/leases/53822513.nvidia.com" result: <nil>
+I0421 05:31:09.660687       1 controller.go:615] quota admission added evaluator for: authrequests.dex.coreos.com
+W0421 05:31:42.124980       1 dispatcher.go:195] rejected by webhook "rev.validation.istio.io": &errors.StatusError{ErrStatus:v1.Status{TypeMeta:v1.TypeMeta{Kind:"", APIVersion:""}, ListMeta:v1.ListMeta{SelfLink:"", ResourceVersion:"", Continue:"", RemainingItemCount:(*int64)(nil)}, Status:"Failure", Message:"admission webhook \"rev.validation.istio.io\" denied the request: configuration is invalid: gateway must have at least one server", Reason:"", Details:(*v1.StatusDetails)(nil), Code:400}}
+I0421 05:38:32.983334       1 controller.go:615] quota admission added evaluator for: offlinesessionses.dex.coreos.com
+I0421 05:38:33.131815       1 controller.go:615] quota admission added evaluator for: authcodes.dex.coreos.com
+I0421 05:41:29.876145       1 controller.go:615] quota admission added evaluator for: notebooks.kubeflow.org
+I0421 07:06:11.780048       1 trace.go:219] Trace[1980145861]: "List" accept:,audit-id:2ff8eb9e-5102-4dbc-9ed1-06c5816dc39e,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 07:06:11.171) (total time: 608ms):
+Trace[1980145861]: ---"Writing http response done" count:3069 159ms (07:06:11.780)
+Trace[1980145861]: [608.858852ms] [608.858852ms] END
+I0421 07:16:12.948839       1 trace.go:219] Trace[1211007524]: "List" accept:,audit-id:929d4d48-a4a0-42cf-9812-e92ddaf6503d,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 07:16:12.327) (total time: 621ms):
+Trace[1211007524]: ---"Writing http response done" count:3123 176ms (07:16:12.948)
+Trace[1211007524]: [621.415003ms] [621.415003ms] END
+I0421 07:41:15.500618       1 trace.go:219] Trace[1350572319]: "List" accept:,audit-id:1b61f11e-e6db-478c-bb28-008b1abae616,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 07:41:14.990) (total time: 509ms):
+Trace[1350572319]: ---"Writing http response done" count:3212 194ms (07:41:15.500)
+Trace[1350572319]: [509.629023ms] [509.629023ms] END
+I0421 07:44:10.638917       1 trace.go:219] Trace[270432911]: "Update" accept:application/json, */*,audit-id:629d5a9a-f330-4123-9e37-190065116bc5,client:10.233.120.57,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/autoscaler-bucket-00-of-01,user-agent:autoscaler/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (21-Apr-2025 07:44:10.082) (total time: 556ms):
+Trace[270432911]: ["GuaranteedUpdate etcd3" audit-id:629d5a9a-f330-4123-9e37-190065116bc5,key:/leases/knative-serving/autoscaler-bucket-00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 556ms (07:44:10.082)
+Trace[270432911]:  ---"Txn call completed" 555ms (07:44:10.638)]
+Trace[270432911]: [556.321302ms] [556.321302ms] END
+I0421 07:44:10.751335       1 trace.go:219] Trace[755724351]: "Get" accept:application/json, */*,audit-id:bceddf93-6d39-4712-88f5-2881b55c035e,client:10.233.119.255,protocol:HTTP/2.0,resource:endpoints,scope:resource,url:/api/v1/namespaces/deepops-nfs-client-provisioner/endpoints/cluster.local-nfs-subdir-external-provisioner,user-agent:nfs-subdir-external-provisioner/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 07:44:10.238) (total time: 512ms):
+Trace[755724351]: ---"About to write a response" 512ms (07:44:10.751)
+Trace[755724351]: [512.524687ms] [512.524687ms] END
+I0421 07:45:21.632418       1 trace.go:219] Trace[1425681070]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:7babf57c-a099-48c2-a5ad-10557df6486f,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/kube-scheduler,user-agent:kube-scheduler/v1.26.5 (linux/amd64) kubernetes/890a139/leader-election,verb:GET (21-Apr-2025 07:45:20.971) (total time: 661ms):
+Trace[1425681070]: ---"About to write a response" 661ms (07:45:21.632)
+Trace[1425681070]: [661.209667ms] [661.209667ms] END
+I0421 07:45:21.632716       1 trace.go:219] Trace[40323656]: "Get" accept:application/json, */*,audit-id:e5b24872-53f8-4b3a-b7a7-bac6708fedac,client:10.233.119.255,protocol:HTTP/2.0,resource:endpoints,scope:resource,url:/api/v1/namespaces/deepops-nfs-client-provisioner/endpoints/cluster.local-nfs-subdir-external-provisioner,user-agent:nfs-subdir-external-provisioner/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 07:45:21.087) (total time: 545ms):
+Trace[40323656]: ---"About to write a response" 545ms (07:45:21.632)
+Trace[40323656]: [545.19248ms] [545.19248ms] END
+I0421 07:45:21.632776       1 trace.go:219] Trace[2047739398]: "Update" accept:application/json, */*,audit-id:b2001890-d143-4fdb-8e28-08cad44c5789,client:10.233.120.46,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/webhook.defaultingwebhook.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (21-Apr-2025 07:45:20.883) (total time: 749ms):
+Trace[2047739398]: ["GuaranteedUpdate etcd3" audit-id:b2001890-d143-4fdb-8e28-08cad44c5789,key:/leases/knative-serving/webhook.defaultingwebhook.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 749ms (07:45:20.883)
+Trace[2047739398]:  ---"Txn call completed" 749ms (07:45:21.632)]
+Trace[2047739398]: [749.607021ms] [749.607021ms] END
+I0421 07:45:21.632899       1 trace.go:219] Trace[853040058]: "Update" accept:application/json, */*,audit-id:00ff66e4-640c-42e5-9b08-03d4dcff4ba8,client:10.233.120.46,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/webhook.validationwebhook.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (21-Apr-2025 07:45:20.883) (total time: 749ms):
+Trace[853040058]: ["GuaranteedUpdate etcd3" audit-id:00ff66e4-640c-42e5-9b08-03d4dcff4ba8,key:/leases/knative-serving/webhook.validationwebhook.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 749ms (07:45:20.883)
+Trace[853040058]:  ---"Txn call completed" 748ms (07:45:21.632)]
+Trace[853040058]: [749.231412ms] [749.231412ms] END
+I0421 07:45:21.633830       1 trace.go:219] Trace[567530222]: "List" accept:application/json,audit-id:321f34fa-6275-4437-8c35-b7301023c90e,client:10.233.119.144,protocol:HTTP/1.1,resource:notebooks,scope:namespace,url:/apis/kubeflow.org/v1beta1/namespaces/f-gi-aiml-12/notebooks,user-agent:OpenAPI-Generator/22.6.0/python,verb:LIST (21-Apr-2025 07:45:21.093) (total time: 540ms):
+Trace[567530222]: ["List(recursive=true) etcd3" audit-id:321f34fa-6275-4437-8c35-b7301023c90e,key:/kubeflow.org/notebooks/f-gi-aiml-12,resourceVersion:,resourceVersionMatch:,limit:0,continue: 540ms (07:45:21.093)]
+Trace[567530222]: [540.402007ms] [540.402007ms] END
+I0421 07:46:16.254470       1 trace.go:219] Trace[1013644575]: "List" accept:,audit-id:e6ffbe7d-bf3c-4c57-a774-028305768421,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 07:46:15.623) (total time: 631ms):
+Trace[1013644575]: ---"Writing http response done" count:3219 173ms (07:46:16.254)
+Trace[1013644575]: [631.222194ms] [631.222194ms] END
+I0421 07:48:25.142122       1 trace.go:219] Trace[208015578]: "Get" accept:application/json, */*,audit-id:acf91848-21b0-45bf-9ec4-4f375a95f5ad,client:10.233.119.246,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-gateway-deployment-leader,user-agent:pilot-discovery/1.16.0,verb:GET (21-Apr-2025 07:48:24.630) (total time: 511ms):
+Trace[208015578]: ---"About to write a response" 511ms (07:48:25.141)
+Trace[208015578]: [511.326192ms] [511.326192ms] END
+I0421 07:48:25.142141       1 trace.go:219] Trace[583857876]: "Get" accept:application/json, */*,audit-id:2edf716c-9fe5-4f73-b67d-1824d0278bae,client:10.233.119.246,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-leader,user-agent:pilot-discovery/1.16.0,verb:GET (21-Apr-2025 07:48:24.631) (total time: 510ms):
+Trace[583857876]: ---"About to write a response" 510ms (07:48:25.142)
+Trace[583857876]: [510.327776ms] [510.327776ms] END
+I0421 07:49:19.476818       1 trace.go:219] Trace[1740133120]: "Get" accept:application/json, */*,audit-id:89a7eb93-5e38-4f99-a952-64917bf1f234,client:10.233.119.167,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.sinkbindings.webhook.sources.knative.dev.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 07:49:18.970) (total time: 505ms):
+Trace[1740133120]: ---"About to write a response" 505ms (07:49:19.476)
+Trace[1740133120]: [505.839859ms] [505.839859ms] END
+I0421 07:49:19.477004       1 trace.go:219] Trace[977699881]: "Get" accept:application/json, */*,audit-id:b2048e85-52c3-4770-a156-78fffe46f803,client:10.233.119.167,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.webhookcertificates.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 07:49:18.972) (total time: 504ms):
+Trace[977699881]: ---"About to write a response" 504ms (07:49:19.476)
+Trace[977699881]: [504.326861ms] [504.326861ms] END
+I0421 07:49:19.477067       1 trace.go:219] Trace[1811762139]: "Get" accept:application/json, */*,audit-id:981e2bd7-db53-4c07-a659-87fbcb893947,client:10.233.119.136,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/domainmapping-webhook.defaultingwebhook.00-of-01,user-agent:domain-mapping-webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 07:49:18.964) (total time: 512ms):
+Trace[1811762139]: ---"About to write a response" 512ms (07:49:19.477)
+Trace[1811762139]: [512.878236ms] [512.878236ms] END
+I0421 07:49:19.477202       1 trace.go:219] Trace[559754112]: "Get" accept:application/json, */*,audit-id:aaffbb40-4db3-4b4f-8c20-320729166914,client:10.233.119.167,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.validationwebhook.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 07:49:18.964) (total time: 512ms):
+Trace[559754112]: ---"About to write a response" 512ms (07:49:19.477)
+Trace[559754112]: [512.531422ms] [512.531422ms] END
+I0421 07:49:19.477306       1 trace.go:219] Trace[360868531]: "Get" accept:application/json, */*,audit-id:58222cd9-fe43-4e10-bdc0-38ccfae734f3,client:10.233.120.57,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/autoscaler-bucket-00-of-01,user-agent:autoscaler/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 07:49:18.963) (total time: 513ms):
+Trace[360868531]: ---"About to write a response" 513ms (07:49:19.477)
+Trace[360868531]: [513.856541ms] [513.856541ms] END
+I0421 07:49:19.477323       1 trace.go:219] Trace[1086682436]: "Get" accept:application/json, */*,audit-id:c3e87612-5377-4fe0-8c7f-001936359d4c,client:10.233.119.167,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.sinkbindings.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 07:49:18.971) (total time: 506ms):
+Trace[1086682436]: ---"About to write a response" 506ms (07:49:19.477)
+Trace[1086682436]: [506.305331ms] [506.305331ms] END
+I0421 07:49:44.316235       1 trace.go:219] Trace[1787527742]: "Create" accept:,audit-id:0c9f13fb-1cee-4066-bd75-65865dbac76b,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:resource,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:POST (21-Apr-2025 07:49:43.297) (total time: 1018ms):
+Trace[1787527742]: ["Create etcd3" audit-id:0c9f13fb-1cee-4066-bd75-65865dbac76b,key:/dex.coreos.com/authrequests/auth/qzli7osyazrr7xwsa2hsb5uhu,type:*unstructured.Unstructured,resource:authrequests.dex.coreos.com 1017ms (07:49:43.298)
+Trace[1787527742]:  ---"Txn call succeeded" 1017ms (07:49:44.315)]
+Trace[1787527742]: [1.018278034s] [1.018278034s] END
+I0421 07:49:44.316309       1 trace.go:219] Trace[1790053804]: "List" accept:,audit-id:1ba86e50-ee3f-4610-8af7-93f1a5409693,client:10.233.119.181,protocol:HTTP/2.0,resource:connectors,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/connectors,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 07:49:43.577) (total time: 739ms):
+Trace[1790053804]: ["List(recursive=true) etcd3" audit-id:1ba86e50-ee3f-4610-8af7-93f1a5409693,key:/dex.coreos.com/connectors/auth,resourceVersion:,resourceVersionMatch:,limit:0,continue: 739ms (07:49:43.577)]
+Trace[1790053804]: [739.092078ms] [739.092078ms] END
+I0421 07:49:44.316327       1 trace.go:219] Trace[180126679]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:246afdc5-d15f-490f-8831-74636c128de6,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/kube-controller-manager,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/leader-election,verb:GET (21-Apr-2025 07:49:43.621) (total time: 694ms):
+Trace[180126679]: ---"About to write a response" 694ms (07:49:44.316)
+Trace[180126679]: [694.71286ms] [694.71286ms] END
+I0421 07:49:44.316487       1 trace.go:219] Trace[2035159492]: "Get" accept:application/json, */*,audit-id:d0bdc286-109a-4e8a-a97d-de2626e5d558,client:10.233.119.167,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.conversionwebhook.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 07:49:43.615) (total time: 700ms):
+Trace[2035159492]: ---"About to write a response" 700ms (07:49:44.316)
+Trace[2035159492]: [700.976627ms] [700.976627ms] END
+I0421 07:49:51.209025       1 trace.go:219] Trace[612387839]: "Get" accept:application/json, */*,audit-id:d4a4ba67-2f2e-425d-952b-e693981ea3bb,client:10.233.119.221,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/kubeflow/configmaps/kserve-controller-manager-leader-lock,user-agent:manager/v0.0.0 (linux/amd64) kubernetes/$Format/leader-election,verb:GET (21-Apr-2025 07:49:50.601) (total time: 607ms):
+Trace[612387839]: ---"About to write a response" 607ms (07:49:51.208)
+Trace[612387839]: [607.307977ms] [607.307977ms] END
+I0421 07:49:51.209042       1 trace.go:219] Trace[1777343364]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:156c892b-25c2-4fc5-a034-1b67fe1c79ce,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/kube-scheduler,user-agent:kube-scheduler/v1.26.5 (linux/amd64) kubernetes/890a139/leader-election,verb:GET (21-Apr-2025 07:49:50.661) (total time: 547ms):
+Trace[1777343364]: ---"About to write a response" 547ms (07:49:51.208)
+Trace[1777343364]: [547.443854ms] [547.443854ms] END
+I0421 07:49:51.209267       1 trace.go:219] Trace[1681218430]: "Get" accept:application/json, */*,audit-id:cb39a401-29f2-4085-9671-eb3ff98c41e5,client:10.233.119.255,protocol:HTTP/2.0,resource:endpoints,scope:resource,url:/api/v1/namespaces/deepops-nfs-client-provisioner/endpoints/cluster.local-nfs-subdir-external-provisioner,user-agent:nfs-subdir-external-provisioner/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 07:49:50.408) (total time: 800ms):
+Trace[1681218430]: ---"About to write a response" 800ms (07:49:51.209)
+Trace[1681218430]: [800.856452ms] [800.856452ms] END
+I0421 07:50:19.195317       1 trace.go:219] Trace[957448588]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:528a186f-eaa6-4d6b-bb4d-df1370d24d45,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/kube-controller-manager,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/leader-election,verb:GET (21-Apr-2025 07:50:18.678) (total time: 516ms):
+Trace[957448588]: ---"About to write a response" 516ms (07:50:19.195)
+Trace[957448588]: [516.318105ms] [516.318105ms] END
+I0421 07:50:19.195397       1 trace.go:219] Trace[2103210775]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:38fea8de-2ec7-41d9-af31-59068b4100b2,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/kube-scheduler,user-agent:kube-scheduler/v1.26.5 (linux/amd64) kubernetes/890a139/leader-election,verb:GET (21-Apr-2025 07:50:18.523) (total time: 672ms):
+Trace[2103210775]: ---"About to write a response" 672ms (07:50:19.195)
+Trace[2103210775]: [672.299007ms] [672.299007ms] END
+I0421 07:50:19.199335       1 trace.go:219] Trace[1675823650]: "Get" accept:application/json, */*,audit-id:2eae9531-aeaa-4b9b-9a00-bf022de24993,client:10.233.119.246,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-gateway-status-leader,user-agent:pilot-discovery/1.16.0,verb:GET (21-Apr-2025 07:50:18.217) (total time: 982ms):
+Trace[1675823650]: ---"About to write a response" 982ms (07:50:19.199)
+Trace[1675823650]: [982.246194ms] [982.246194ms] END
+I0421 07:50:19.199364       1 trace.go:219] Trace[1575433484]: "Update" accept:application/json, */*,audit-id:4c90bc4e-f653-4a5a-9120-b8332780728e,client:10.233.119.221,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/kubeflow/configmaps/kserve-controller-manager-leader-lock,user-agent:manager/v0.0.0 (linux/amd64) kubernetes/$Format/leader-election,verb:PUT (21-Apr-2025 07:50:18.092) (total time: 1106ms):
+Trace[1575433484]: ["GuaranteedUpdate etcd3" audit-id:4c90bc4e-f653-4a5a-9120-b8332780728e,key:/configmaps/kubeflow/kserve-controller-manager-leader-lock,type:*core.ConfigMap,resource:configmaps 1106ms (07:50:18.092)
+Trace[1575433484]:  ---"Txn call completed" 1106ms (07:50:19.199)]
+Trace[1575433484]: [1.1068949s] [1.1068949s] END
+I0421 07:50:19.199370       1 trace.go:219] Trace[964083709]: "Get" accept:application/json, */*,audit-id:7cb9fa77-8e3c-4d69-9868-2c4924ca3d93,client:10.233.119.246,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-gateway-deployment-leader,user-agent:pilot-discovery/1.16.0,verb:GET (21-Apr-2025 07:50:18.198) (total time: 1000ms):
+Trace[964083709]: ---"About to write a response" 1000ms (07:50:19.199)
+Trace[964083709]: [1.000553247s] [1.000553247s] END
+I0421 07:50:19.199428       1 trace.go:219] Trace[559598602]: "Get" accept:application/json, */*,audit-id:0e7250b6-9072-4657-92c3-f0caa35910a3,client:10.233.119.246,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-leader,user-agent:pilot-discovery/1.16.0,verb:GET (21-Apr-2025 07:50:18.216) (total time: 982ms):
+Trace[559598602]: ---"About to write a response" 982ms (07:50:19.199)
+Trace[559598602]: [982.591113ms] [982.591113ms] END
+I0421 07:50:19.199453       1 trace.go:219] Trace[251731734]: "Get" accept:application/json, */*,audit-id:c4ddec4a-dfc1-48fe-a112-7b8a81ba4209,client:10.233.119.246,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-namespace-controller-election,user-agent:pilot-discovery/1.16.0,verb:GET (21-Apr-2025 07:50:18.172) (total time: 1027ms):
+Trace[251731734]: ---"About to write a response" 1027ms (07:50:19.199)
+Trace[251731734]: [1.027173391s] [1.027173391s] END
+I0421 07:50:25.451100       1 trace.go:219] Trace[977445826]: "Create" accept:,audit-id:a4af3e32-eaf6-446f-92bd-c0ae3e498a58,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:resource,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:POST (21-Apr-2025 07:50:24.756) (total time: 694ms):
+Trace[977445826]: ["Create etcd3" audit-id:a4af3e32-eaf6-446f-92bd-c0ae3e498a58,key:/dex.coreos.com/authrequests/auth/dlfcsocewrdszxgte6nejz2oe,type:*unstructured.Unstructured,resource:authrequests.dex.coreos.com 694ms (07:50:24.756)
+Trace[977445826]:  ---"Txn call succeeded" 693ms (07:50:25.450)]
+Trace[977445826]: [694.718188ms] [694.718188ms] END
+I0421 07:50:56.049401       1 trace.go:219] Trace[1279299476]: "Update" accept:application/json, */*,audit-id:930d94df-9d20-493f-9219-1f8ac520b5ce,client:10.233.119.221,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kubeflow/leases/kserve-controller-manager-leader-lock,user-agent:manager/v0.0.0 (linux/amd64) kubernetes/$Format/leader-election,verb:PUT (21-Apr-2025 07:50:55.489) (total time: 559ms):
+Trace[1279299476]: ["GuaranteedUpdate etcd3" audit-id:930d94df-9d20-493f-9219-1f8ac520b5ce,key:/leases/kubeflow/kserve-controller-manager-leader-lock,type:*coordination.Lease,resource:leases.coordination.k8s.io 559ms (07:50:55.489)
+Trace[1279299476]:  ---"Txn call completed" 558ms (07:50:56.049)]
+Trace[1279299476]: [559.742703ms] [559.742703ms] END
+I0421 07:51:02.596348       1 trace.go:219] Trace[1607123839]: "Update" accept:application/json, */*,audit-id:13b4a9fa-9aac-4755-89a4-cc88ec6cba51,client:10.233.119.221,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/kubeflow/configmaps/kserve-controller-manager-leader-lock,user-agent:manager/v0.0.0 (linux/amd64) kubernetes/$Format/leader-election,verb:PUT (21-Apr-2025 07:51:02.075) (total time: 520ms):
+Trace[1607123839]: ["GuaranteedUpdate etcd3" audit-id:13b4a9fa-9aac-4755-89a4-cc88ec6cba51,key:/configmaps/kubeflow/kserve-controller-manager-leader-lock,type:*core.ConfigMap,resource:configmaps 520ms (07:51:02.075)
+Trace[1607123839]:  ---"Txn call completed" 520ms (07:51:02.596)]
+Trace[1607123839]: [520.766498ms] [520.766498ms] END
+I0421 07:52:12.606058       1 trace.go:219] Trace[807901927]: "Update" accept:application/json, */*,audit-id:572d0cb4-7264-4089-8aa7-584f93876f23,client:10.233.119.246,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-gateway-status-leader,user-agent:pilot-discovery/1.16.0,verb:PUT (21-Apr-2025 07:52:12.069) (total time: 536ms):
+Trace[807901927]: ["GuaranteedUpdate etcd3" audit-id:572d0cb4-7264-4089-8aa7-584f93876f23,key:/configmaps/istio-system/istio-gateway-status-leader,type:*core.ConfigMap,resource:configmaps 536ms (07:52:12.069)
+Trace[807901927]:  ---"Txn call completed" 535ms (07:52:12.605)]
+Trace[807901927]: [536.460722ms] [536.460722ms] END
+I0421 07:52:12.606219       1 trace.go:219] Trace[368645821]: "Update" accept:application/json, */*,audit-id:0448e3c8-ee10-4393-81e9-6284968f8df6,client:10.233.119.246,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-leader,user-agent:pilot-discovery/1.16.0,verb:PUT (21-Apr-2025 07:52:12.070) (total time: 535ms):
+Trace[368645821]: ["GuaranteedUpdate etcd3" audit-id:0448e3c8-ee10-4393-81e9-6284968f8df6,key:/configmaps/istio-system/istio-leader,type:*core.ConfigMap,resource:configmaps 535ms (07:52:12.070)
+Trace[368645821]:  ---"Txn call completed" 535ms (07:52:12.606)]
+Trace[368645821]: [535.955018ms] [535.955018ms] END
+I0421 07:52:12.606235       1 trace.go:219] Trace[1857137838]: "Update" accept:application/json, */*,audit-id:a48cc355-aaf9-4fde-8dea-5233eab36b4e,client:10.233.119.246,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-gateway-deployment-leader,user-agent:pilot-discovery/1.16.0,verb:PUT (21-Apr-2025 07:52:12.070) (total time: 536ms):
+Trace[1857137838]: ["GuaranteedUpdate etcd3" audit-id:a48cc355-aaf9-4fde-8dea-5233eab36b4e,key:/configmaps/istio-system/istio-gateway-deployment-leader,type:*core.ConfigMap,resource:configmaps 535ms (07:52:12.070)
+Trace[1857137838]:  ---"Txn call completed" 535ms (07:52:12.606)]
+Trace[1857137838]: [536.089869ms] [536.089869ms] END
+I0421 08:01:18.408175       1 trace.go:219] Trace[41951787]: "List" accept:,audit-id:7480370d-a2bf-47bf-a348-4a8fe19c79bd,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 08:01:17.354) (total time: 1053ms):
+Trace[41951787]: ["List(recursive=true) etcd3" audit-id:7480370d-a2bf-47bf-a348-4a8fe19c79bd,key:/dex.coreos.com/authrequests/auth,resourceVersion:,resourceVersionMatch:,limit:0,continue: 1053ms (08:01:17.354)]
+Trace[41951787]: ---"Writing http response done" count:3310 229ms (08:01:18.408)
+Trace[41951787]: [1.05321192s] [1.05321192s] END
+I0421 08:06:19.230437       1 trace.go:219] Trace[1233170293]: "List" accept:,audit-id:4a119c99-12fb-412a-992b-35d5a8ccdb24,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 08:06:18.523) (total time: 707ms):
+Trace[1233170293]: ["List(recursive=true) etcd3" audit-id:4a119c99-12fb-412a-992b-35d5a8ccdb24,key:/dex.coreos.com/authrequests/auth,resourceVersion:,resourceVersionMatch:,limit:0,continue: 707ms (08:06:18.523)]
+Trace[1233170293]: ---"Writing http response done" count:3307 179ms (08:06:19.230)
+Trace[1233170293]: [707.063157ms] [707.063157ms] END
+I0421 08:11:20.005738       1 trace.go:219] Trace[1175167562]: "List" accept:,audit-id:ab4f6f45-6996-48c6-979a-9df9b22d1406,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 08:11:19.355) (total time: 650ms):
+Trace[1175167562]: ---"Writing http response done" count:3307 177ms (08:11:20.005)
+Trace[1175167562]: [650.298202ms] [650.298202ms] END
+I0421 08:16:20.782266       1 trace.go:219] Trace[1714580685]: "List" accept:,audit-id:f63dadee-b093-4541-b832-a6fe671c6632,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 08:16:20.079) (total time: 702ms):
+Trace[1714580685]: ["List(recursive=true) etcd3" audit-id:f63dadee-b093-4541-b832-a6fe671c6632,key:/dex.coreos.com/authrequests/auth,resourceVersion:,resourceVersionMatch:,limit:0,continue: 702ms (08:16:20.079)]
+Trace[1714580685]: ---"Writing http response done" count:3307 177ms (08:16:20.782)
+Trace[1714580685]: [702.647078ms] [702.647078ms] END
+I0421 08:21:21.541901       1 trace.go:219] Trace[678720908]: "List" accept:,audit-id:d88ea5f5-589f-4263-9004-13ba028ff1cb,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 08:21:20.859) (total time: 682ms):
+Trace[678720908]: ---"Writing http response done" count:3307 225ms (08:21:21.541)
+Trace[678720908]: [682.285112ms] [682.285112ms] END
+I0421 08:26:22.196015       1 trace.go:219] Trace[568425250]: "List" accept:,audit-id:28db678d-13c8-4a0c-bb19-3d0858b54d63,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 08:26:21.611) (total time: 584ms):
+Trace[568425250]: ---"Writing http response done" count:3307 130ms (08:26:22.195)
+Trace[568425250]: [584.398872ms] [584.398872ms] END
+I0421 08:36:23.331982       1 trace.go:219] Trace[2084674377]: "List" accept:,audit-id:1d38adc9-1f45-41d7-8086-bcb0c0066aea,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 08:36:22.764) (total time: 567ms):
+Trace[2084674377]: ---"Writing http response done" count:3305 135ms (08:36:23.331)
+Trace[2084674377]: [567.236483ms] [567.236483ms] END
+I0421 08:41:24.041520       1 trace.go:219] Trace[797141762]: "List" accept:,audit-id:12196781-3a09-4059-abe2-74767e4d4f49,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 08:41:23.375) (total time: 666ms):
+Trace[797141762]: ---"Writing http response done" count:3305 203ms (08:41:24.041)
+Trace[797141762]: [666.058018ms] [666.058018ms] END
+I0421 08:43:59.745083       1 trace.go:219] Trace[1430924255]: "Get" accept:application/json, */*,audit-id:1a0794c9-4fe8-4f73-b646-12d2ffea6463,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/istio-system/pods/authservice-0/log,user-agent:kubectl/v1.26.5 (linux/amd64) kubernetes/890a139,verb:GET (21-Apr-2025 08:43:57.981) (total time: 1763ms):
+Trace[1430924255]: ---"Writing http response done" 1761ms (08:43:59.745)
+Trace[1430924255]: [1.763652108s] [1.763652108s] END
+I0421 08:44:01.682002       1 trace.go:219] Trace[641557606]: "Get" accept:application/json, */*,audit-id:df2d7752-8bd6-4451-b941-2088f45909fe,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/istio-system/pods/istio-ingressgateway-c7fdd4bf6-fk9xr/log,user-agent:kubectl/v1.26.5 (linux/amd64) kubernetes/890a139,verb:GET (21-Apr-2025 08:43:59.999) (total time: 1682ms):
+Trace[641557606]: ---"Writing http response done" 1680ms (08:44:01.681)
+Trace[641557606]: [1.682437398s] [1.682437398s] END
+I0421 08:44:03.704195       1 trace.go:219] Trace[903665656]: "Get" accept:application/json, */*,audit-id:4ccb35a8-2a75-45e1-b95c-3c85455a8adb,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/istio-system/pods/istiod-6995577d4-rqkxf/log,user-agent:kubectl/v1.26.5 (linux/amd64) kubernetes/890a139,verb:GET (21-Apr-2025 08:44:01.862) (total time: 1841ms):
+Trace[903665656]: ---"Writing http response done" 1839ms (08:44:03.704)
+Trace[903665656]: [1.841884938s] [1.841884938s] END
+I0421 08:44:19.287708       1 trace.go:219] Trace[366921407]: "Get" accept:application/json, */*,audit-id:7d63b7dd-32e2-409e-a04f-c6b375a6fc71,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/kube-system/pods/calico-node-bmhr4/log,user-agent:kubectl/v1.26.5 (linux/amd64) kubernetes/890a139,verb:GET (21-Apr-2025 08:44:18.080) (total time: 1207ms):
+Trace[366921407]: ---"Writing http response done" 1205ms (08:44:19.287)
+Trace[366921407]: [1.207570816s] [1.207570816s] END
+I0421 08:44:20.062102       1 trace.go:219] Trace[204924425]: "Get" accept:application/json, */*,audit-id:d28ac988-f2b9-4c6e-9e22-d6f823ab34fd,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/kube-system/pods/calico-node-z7p9d/log,user-agent:kubectl/v1.26.5 (linux/amd64) kubernetes/890a139,verb:GET (21-Apr-2025 08:44:19.436) (total time: 625ms):
+Trace[204924425]: ---"Writing http response done" 624ms (08:44:20.062)
+Trace[204924425]: [625.936519ms] [625.936519ms] END
+I0421 08:44:37.063640       1 trace.go:219] Trace[951329564]: "Get" accept:application/json, */*,audit-id:109ae952-a267-4806-bfd4-4b1142f31ab2,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/kubeflow/pods/jupyter-web-app-deployment-57864d5958-hwgcm/log,user-agent:kubectl/v1.26.5 (linux/amd64) kubernetes/890a139,verb:GET (21-Apr-2025 08:44:35.257) (total time: 1805ms):
+Trace[951329564]: ---"Writing http response done" 1804ms (08:44:37.063)
+Trace[951329564]: [1.805789353s] [1.805789353s] END
+I0421 08:46:24.857994       1 trace.go:219] Trace[877195503]: "List" accept:,audit-id:d83c5eb0-e854-4479-9c83-5f4b584b9a91,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 08:46:24.147) (total time: 710ms):
+Trace[877195503]: ["List(recursive=true) etcd3" audit-id:d83c5eb0-e854-4479-9c83-5f4b584b9a91,key:/dex.coreos.com/authrequests/auth,resourceVersion:,resourceVersionMatch:,limit:0,continue: 710ms (08:46:24.147)]
+Trace[877195503]: ---"Writing http response done" count:3305 177ms (08:46:24.857)
+Trace[877195503]: [710.513418ms] [710.513418ms] END
+I0421 08:51:25.599729       1 trace.go:219] Trace[1776891064]: "List" accept:,audit-id:b257c5fc-38dd-4d6f-b4e0-858db868aa9b,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 08:51:24.964) (total time: 635ms):
+Trace[1776891064]: ---"Writing http response done" count:3305 172ms (08:51:25.599)
+Trace[1776891064]: [635.154969ms] [635.154969ms] END
+I0421 08:56:26.364262       1 trace.go:219] Trace[1444687244]: "List" accept:,audit-id:d8c09a80-f4a3-4e21-96ab-59ca126a70aa,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 08:56:25.715) (total time: 648ms):
+Trace[1444687244]: ---"Writing http response done" count:3305 176ms (08:56:26.364)
+Trace[1444687244]: [648.84348ms] [648.84348ms] END
+I0421 09:01:27.111178       1 trace.go:219] Trace[1316777628]: "List" accept:,audit-id:6b6f1285-8fa4-43fe-9acd-e05f665ed17b,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 09:01:26.447) (total time: 663ms):
+Trace[1316777628]: ---"Writing http response done" count:3305 172ms (09:01:27.111)
+Trace[1316777628]: [663.959075ms] [663.959075ms] END
+I0421 09:06:27.867063       1 trace.go:219] Trace[39226865]: "List" accept:,audit-id:be80f832-3152-4f95-82dc-7322dd56e3d1,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 09:06:27.220) (total time: 646ms):
+Trace[39226865]: ---"Writing http response done" count:3305 178ms (09:06:27.867)
+Trace[39226865]: [646.871001ms] [646.871001ms] END
+I0421 09:11:28.662525       1 trace.go:219] Trace[399598739]: "List" accept:,audit-id:c6c8a98d-f20b-4408-a0ad-c75a46f6d52f,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 09:11:27.963) (total time: 699ms):
+Trace[399598739]: ["List(recursive=true) etcd3" audit-id:c6c8a98d-f20b-4408-a0ad-c75a46f6d52f,key:/dex.coreos.com/authrequests/auth,resourceVersion:,resourceVersionMatch:,limit:0,continue: 699ms (09:11:27.963)]
+Trace[399598739]: ---"Writing http response done" count:3305 174ms (09:11:28.662)
+Trace[399598739]: [699.050929ms] [699.050929ms] END
+I0421 09:16:29.437014       1 trace.go:219] Trace[1024384346]: "List" accept:,audit-id:ed5aa5f3-ca79-4861-b234-6bc9db75fd90,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 09:16:28.755) (total time: 681ms):
+Trace[1024384346]: ["List(recursive=true) etcd3" audit-id:ed5aa5f3-ca79-4861-b234-6bc9db75fd90,key:/dex.coreos.com/authrequests/auth,resourceVersion:,resourceVersionMatch:,limit:0,continue: 681ms (09:16:28.755)]
+Trace[1024384346]: ---"Writing http response done" count:3305 175ms (09:16:29.436)
+Trace[1024384346]: [681.747932ms] [681.747932ms] END
+I0421 09:21:30.238112       1 trace.go:219] Trace[1951051681]: "List" accept:,audit-id:3adc1fe7-e528-4eb4-8a3b-a865f8d484f3,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 09:21:29.544) (total time: 693ms):
+Trace[1951051681]: ["List(recursive=true) etcd3" audit-id:3adc1fe7-e528-4eb4-8a3b-a865f8d484f3,key:/dex.coreos.com/authrequests/auth,resourceVersion:,resourceVersionMatch:,limit:0,continue: 693ms (09:21:29.544)]
+Trace[1951051681]: ---"Writing http response done" count:3305 176ms (09:21:30.238)
+Trace[1951051681]: [693.141247ms] [693.141247ms] END
+I0421 09:26:31.013884       1 trace.go:219] Trace[210641891]: "List" accept:,audit-id:3037d8fb-e944-4bd5-8272-08a62ef035f0,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 09:26:30.383) (total time: 630ms):
+Trace[210641891]: ---"Writing http response done" count:3305 168ms (09:26:31.013)
+Trace[210641891]: [630.376881ms] [630.376881ms] END
+I0421 09:31:31.751757       1 trace.go:219] Trace[2041732643]: "List" accept:,audit-id:41094de7-d1c1-45e0-afef-c25ac7e0eddc,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 09:31:31.110) (total time: 641ms):
+Trace[2041732643]: ---"Writing http response done" count:3305 174ms (09:31:31.751)
+Trace[2041732643]: [641.538097ms] [641.538097ms] END
+I0421 09:36:32.534162       1 trace.go:219] Trace[1406237395]: "List" accept:,audit-id:82dc80ca-f5c5-4672-b8ae-8c4665a41e71,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 09:36:31.848) (total time: 685ms):
+Trace[1406237395]: ["List(recursive=true) etcd3" audit-id:82dc80ca-f5c5-4672-b8ae-8c4665a41e71,key:/dex.coreos.com/authrequests/auth,resourceVersion:,resourceVersionMatch:,limit:0,continue: 685ms (09:36:31.848)]
+Trace[1406237395]: ---"Writing http response done" count:3305 175ms (09:36:32.534)
+Trace[1406237395]: [685.975845ms] [685.975845ms] END
+I0421 09:41:33.283671       1 trace.go:219] Trace[1205161577]: "List" accept:,audit-id:9575138e-e551-4646-97c4-40df75712f2f,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 09:41:32.643) (total time: 640ms):
+Trace[1205161577]: ---"Writing http response done" count:3305 179ms (09:41:33.283)
+Trace[1205161577]: [640.295097ms] [640.295097ms] END
+I0421 09:56:10.365112       1 controller.go:615] quota admission added evaluator for: signingkeies.dex.coreos.com
+I0421 10:13:02.706767       1 controller.go:615] quota admission added evaluator for: namespaces
+I0421 10:13:03.957104       1 controller.go:615] quota admission added evaluator for: serviceaccounts
+I0421 10:13:04.241266       1 controller.go:615] quota admission added evaluator for: roles.rbac.authorization.k8s.io
+I0421 10:13:04.525498       1 controller.go:615] quota admission added evaluator for: rolebindings.rbac.authorization.k8s.io
+I0421 10:26:37.849447       1 trace.go:219] Trace[365014934]: "List" accept:,audit-id:21cf7b02-0051-4c60-987f-cedcb451b5bb,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 10:26:37.291) (total time: 557ms):
+Trace[365014934]: ---"Writing http response done" count:3310 138ms (10:26:37.849)
+Trace[365014934]: [557.889408ms] [557.889408ms] END
+I0421 10:36:55.276459       1 alloc.go:327] "allocated clusterIPs" service="ln-s-jain-it-0987/test1" clusterIPs=map[IPv4:10.233.17.247]
+I0421 10:40:43.282592       1 alloc.go:327] "allocated clusterIPs" service="ln-f-jai-cs-23/f-jai-cs" clusterIPs=map[IPv4:10.233.60.183]
+I0421 10:41:39.651389       1 trace.go:219] Trace[52447699]: "List" accept:,audit-id:aadc2333-fa17-4d75-b319-8ebaddc6582e,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 10:41:38.951) (total time: 699ms):
+Trace[52447699]: ["List(recursive=true) etcd3" audit-id:aadc2333-fa17-4d75-b319-8ebaddc6582e,key:/dex.coreos.com/authrequests/auth,resourceVersion:,resourceVersionMatch:,limit:0,continue: 699ms (10:41:38.951)]
+Trace[52447699]: ---"Writing http response done" count:3315 174ms (10:41:39.651)
+Trace[52447699]: [699.926229ms] [699.926229ms] END
+I0421 10:46:40.327827       1 trace.go:219] Trace[1716659093]: "List" accept:,audit-id:7793591b-9628-4f66-ae03-12b853a847bf,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 10:46:39.755) (total time: 572ms):
+Trace[1716659093]: ---"Writing http response done" count:3315 150ms (10:46:40.327)
+Trace[1716659093]: [572.163483ms] [572.163483ms] END
+I0421 10:48:14.915294       1 trace.go:219] Trace[1676029962]: "Patch" accept:application/vnd.kubernetes.protobuf,application/json,audit-id:23eeab12-ee4f-4de8-bfb1-edf234e3cd9b,client:127.0.0.1,protocol:HTTP/2.0,resource:nodes,scope:resource,url:/api/v1/nodes/jain-dgx-server/status,user-agent:kubelet/v1.26.5 (linux/amd64) kubernetes/890a139,verb:PATCH (21-Apr-2025 10:48:14.360) (total time: 554ms):
+Trace[1676029962]: ["GuaranteedUpdate etcd3" audit-id:23eeab12-ee4f-4de8-bfb1-edf234e3cd9b,key:/minions/jain-dgx-server,type:*core.Node,resource:nodes 554ms (10:48:14.360)
+Trace[1676029962]:  ---"Txn call completed" 548ms (10:48:14.914)]
+Trace[1676029962]: ---"Object stored in database" 549ms (10:48:14.914)
+Trace[1676029962]: [554.652963ms] [554.652963ms] END
+I0421 11:00:38.485978       1 trace.go:219] Trace[860451128]: "List" accept:application/json,audit-id:135b41ec-8244-4a31-9040-66a7468e4b2e,client:10.233.119.144,protocol:HTTP/1.1,resource:notebooks,scope:namespace,url:/apis/kubeflow.org/v1beta1/namespaces/s-jain-training-17/notebooks,user-agent:OpenAPI-Generator/22.6.0/python,verb:LIST (21-Apr-2025 11:00:37.856) (total time: 629ms):
+Trace[860451128]: ["List(recursive=true) etcd3" audit-id:135b41ec-8244-4a31-9040-66a7468e4b2e,key:/kubeflow.org/notebooks/s-jain-training-17,resourceVersion:,resourceVersionMatch:,limit:0,continue: 629ms (11:00:37.856)]
+Trace[860451128]: [629.648346ms] [629.648346ms] END
+I0421 11:00:50.200866       1 trace.go:219] Trace[1016323515]: "Get" accept:application/json, */*,audit-id:f9aaa149-587d-422b-87e1-ace334233dfc,client:10.233.119.167,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.sinkbindings.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 11:00:49.579) (total time: 621ms):
+Trace[1016323515]: ---"About to write a response" 621ms (11:00:50.200)
+Trace[1016323515]: [621.456588ms] [621.456588ms] END
+I0421 11:00:50.201117       1 trace.go:219] Trace[196426068]: "Get" accept:application/json, */*,audit-id:35c0ae60-04ce-4759-a3c1-dbafb8b96fc3,client:10.233.119.167,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.webhookcertificates.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 11:00:49.575) (total time: 625ms):
+Trace[196426068]: ---"About to write a response" 625ms (11:00:50.201)
+Trace[196426068]: [625.678314ms] [625.678314ms] END
+I0421 11:00:50.201225       1 trace.go:219] Trace[576276317]: "List" accept:application/json,audit-id:47438272-b99b-42b7-b0a8-2d87224365fc,client:10.233.119.144,protocol:HTTP/1.1,resource:notebooks,scope:namespace,url:/apis/kubeflow.org/v1beta1/namespaces/s-jain-training-7/notebooks,user-agent:OpenAPI-Generator/22.6.0/python,verb:LIST (21-Apr-2025 11:00:49.687) (total time: 514ms):
+Trace[576276317]: ["List(recursive=true) etcd3" audit-id:47438272-b99b-42b7-b0a8-2d87224365fc,key:/kubeflow.org/notebooks/s-jain-training-7,resourceVersion:,resourceVersionMatch:,limit:0,continue: 514ms (11:00:49.687)]
+Trace[576276317]: [514.111726ms] [514.111726ms] END
+I0421 11:01:13.587640       1 trace.go:219] Trace[1991534558]: "Get" accept:application/vnd.kubernetes.protobuf,application/json,audit-id:549d0465-9131-4eb4-b0d0-e8af861459be,client:10.233.119.209,protocol:HTTP/2.0,resource:clusterinformations,scope:resource,url:/apis/crd.projectcalico.org/v1/clusterinformations/default,user-agent:Go-http-client/2.0,verb:GET (21-Apr-2025 11:01:12.907) (total time: 680ms):
+Trace[1991534558]: ---"About to write a response" 679ms (11:01:13.587)
+Trace[1991534558]: [680.130916ms] [680.130916ms] END
+I0421 11:01:13.589395       1 trace.go:219] Trace[1587381009]: "Update" accept:application/json,audit-id:25ea11a2-ac8f-4ee4-ad45-96bcabdda415,client:10.233.119.174,protocol:HTTP/2.0,resource:deployments,scope:resource,url:/apis/apps/v1/namespaces/s-jain-training-24/deployments/ml-pipeline-ui-artifact,user-agent:metacontroller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (21-Apr-2025 11:01:12.887) (total time: 701ms):
+Trace[1587381009]: ["GuaranteedUpdate etcd3" audit-id:25ea11a2-ac8f-4ee4-ad45-96bcabdda415,key:/deployments/s-jain-training-24/ml-pipeline-ui-artifact,type:*apps.Deployment,resource:deployments.apps 701ms (11:01:12.888)]
+Trace[1587381009]: [701.571757ms] [701.571757ms] END
+I0421 11:01:13.685496       1 trace.go:219] Trace[1956196347]: "Get" accept:application/json, */*,audit-id:16269616-945d-472e-adeb-4450fd05abd5,client:192.168.1.249,protocol:HTTP/2.0,resource:nodefeatures,scope:resource,url:/apis/nfd.k8s-sigs.io/v1alpha1/namespaces/gpu-operator/nodefeatures/jainhpmgmt,user-agent:nfd-worker/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 11:01:12.919) (total time: 766ms):
+Trace[1956196347]: ---"About to write a response" 741ms (11:01:13.661)
+Trace[1956196347]: [766.274995ms] [766.274995ms] END
+I0421 11:01:20.715427       1 trace.go:219] Trace[1467802847]: "Update" accept:application/json, */*,audit-id:68a35fe9-6c5d-41f9-9bee-7b6b4587ada0,client:10.233.119.255,protocol:HTTP/2.0,resource:endpoints,scope:resource,url:/api/v1/namespaces/deepops-nfs-client-provisioner/endpoints/cluster.local-nfs-subdir-external-provisioner,user-agent:nfs-subdir-external-provisioner/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (21-Apr-2025 11:01:20.146) (total time: 568ms):
+Trace[1467802847]: ["GuaranteedUpdate etcd3" audit-id:68a35fe9-6c5d-41f9-9bee-7b6b4587ada0,key:/services/endpoints/deepops-nfs-client-provisioner/cluster.local-nfs-subdir-external-provisioner,type:*core.Endpoints,resource:endpoints 568ms (11:01:20.147)
+Trace[1467802847]:  ---"Txn call completed" 567ms (11:01:20.715)]
+Trace[1467802847]: [568.419595ms] [568.419595ms] END
+I0421 11:01:20.890713       1 trace.go:219] Trace[2046358]: "Update" accept:application/json, */*,audit-id:ed0d8aea-1977-4022-bf41-95a324756840,client:10.233.119.221,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/kubeflow/configmaps/kserve-controller-manager-leader-lock,user-agent:manager/v0.0.0 (linux/amd64) kubernetes/$Format/leader-election,verb:PUT (21-Apr-2025 11:01:20.148) (total time: 742ms):
+Trace[2046358]: ["GuaranteedUpdate etcd3" audit-id:ed0d8aea-1977-4022-bf41-95a324756840,key:/configmaps/kubeflow/kserve-controller-manager-leader-lock,type:*core.ConfigMap,resource:configmaps 742ms (11:01:20.148)
+Trace[2046358]:  ---"Txn call completed" 742ms (11:01:20.890)]
+Trace[2046358]: [742.53702ms] [742.53702ms] END
+I0421 11:01:20.890856       1 trace.go:219] Trace[968403327]: "Get" accept:application/json, */*,audit-id:48190a5f-65ee-4023-96b2-34631f92ae6d,client:10.233.119.167,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.sinkbindings.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 11:01:20.359) (total time: 531ms):
+Trace[968403327]: ---"About to write a response" 530ms (11:01:20.890)
+Trace[968403327]: [531.004499ms] [531.004499ms] END
+I0421 11:01:20.891021       1 trace.go:219] Trace[49585381]: "Update" accept:application/json,audit-id:34125051-c6e7-4b17-883f-563594a04efd,client:10.233.119.174,protocol:HTTP/2.0,resource:namespaces,scope:resource,url:/api/v1/namespaces/cert-manager/status,user-agent:metacontroller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (21-Apr-2025 11:01:20.285) (total time: 605ms):
+Trace[49585381]: ["GuaranteedUpdate etcd3" audit-id:34125051-c6e7-4b17-883f-563594a04efd,key:/namespaces/cert-manager,type:*core.Namespace,resource:namespaces 605ms (11:01:20.285)]
+Trace[49585381]: [605.553414ms] [605.553414ms] END
+I0421 11:01:21.546104       1 trace.go:219] Trace[1739374683]: "Update" accept:application/json, */*,audit-id:9e230144-4965-4382-b13f-f2c1f7b15cf5,client:10.233.119.167,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-eventing/leases/eventing-webhook.webhookcertificates.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (21-Apr-2025 11:01:20.892) (total time: 653ms):
+Trace[1739374683]: ["GuaranteedUpdate etcd3" audit-id:9e230144-4965-4382-b13f-f2c1f7b15cf5,key:/leases/knative-eventing/eventing-webhook.webhookcertificates.00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 653ms (11:01:20.892)
+Trace[1739374683]:  ---"Txn call completed" 653ms (11:01:21.546)]
+Trace[1739374683]: [653.729639ms] [653.729639ms] END
+I0421 11:01:21.546348       1 trace.go:219] Trace[1401049127]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:da245657-f42e-4f68-954d-f13ac52a9013,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/kube-scheduler,user-agent:kube-scheduler/v1.26.5 (linux/amd64) kubernetes/890a139/leader-election,verb:GET (21-Apr-2025 11:01:21.036) (total time: 509ms):
+Trace[1401049127]: ---"About to write a response" 509ms (11:01:21.546)
+Trace[1401049127]: [509.552652ms] [509.552652ms] END
+I0421 11:01:21.546685       1 trace.go:219] Trace[1492784111]: "Update" accept:application/json, */*,audit-id:c009b77c-358a-48fb-bc20-d3dd972568a3,client:10.233.119.221,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kubeflow/leases/kserve-controller-manager-leader-lock,user-agent:manager/v0.0.0 (linux/amd64) kubernetes/$Format/leader-election,verb:PUT (21-Apr-2025 11:01:20.893) (total time: 653ms):
+Trace[1492784111]: ["GuaranteedUpdate etcd3" audit-id:c009b77c-358a-48fb-bc20-d3dd972568a3,key:/leases/kubeflow/kserve-controller-manager-leader-lock,type:*coordination.Lease,resource:leases.coordination.k8s.io 653ms (11:01:20.893)
+Trace[1492784111]:  ---"Txn call completed" 652ms (11:01:21.546)]
+Trace[1492784111]: [653.161249ms] [653.161249ms] END
+I0421 11:01:27.796641       1 trace.go:219] Trace[806587766]: "Update" accept:application/json, */*,audit-id:79e7f78d-a0a5-40fd-b90a-8d732589824a,client:10.233.119.246,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-gateway-status-leader,user-agent:pilot-discovery/1.16.0,verb:PUT (21-Apr-2025 11:01:26.753) (total time: 1042ms):
+Trace[806587766]: ["GuaranteedUpdate etcd3" audit-id:79e7f78d-a0a5-40fd-b90a-8d732589824a,key:/configmaps/istio-system/istio-gateway-status-leader,type:*core.ConfigMap,resource:configmaps 1042ms (11:01:26.753)
+Trace[806587766]:  ---"Txn call completed" 1042ms (11:01:27.796)]
+Trace[806587766]: [1.042985933s] [1.042985933s] END
+I0421 11:01:27.796742       1 trace.go:219] Trace[2134883483]: "Update" accept:application/json, */*,audit-id:35ef6b80-d381-4e4a-a9fa-418201a5460d,client:10.233.119.246,protocol:HTTP/2.0,resource:configmaps,scope:resource,url:/api/v1/namespaces/istio-system/configmaps/istio-gateway-deployment-leader,user-agent:pilot-discovery/1.16.0,verb:PUT (21-Apr-2025 11:01:26.753) (total time: 1043ms):
+Trace[2134883483]: ["GuaranteedUpdate etcd3" audit-id:35ef6b80-d381-4e4a-a9fa-418201a5460d,key:/configmaps/istio-system/istio-gateway-deployment-leader,type:*core.ConfigMap,resource:configmaps 1043ms (11:01:26.753)
+Trace[2134883483]:  ---"Txn call completed" 1042ms (11:01:27.796)]
+Trace[2134883483]: [1.043231739s] [1.043231739s] END
+I0421 11:01:27.796754       1 trace.go:219] Trace[1885794401]: "Get" accept:application/json, */*,audit-id:9234571d-3b88-4a21-a741-eb3ddddab259,client:10.233.119.132,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/cert-manager-controller,user-agent:cert-manager-leader-election/v1.10.1 (linux/amd64) cert-manager/a96bae172ddb1fcd4b57f1859ab9d1a9e94f7451,verb:GET (21-Apr-2025 11:01:26.805) (total time: 991ms):
+Trace[1885794401]: ---"About to write a response" 990ms (11:01:27.796)
+Trace[1885794401]: [991.026274ms] [991.026274ms] END
+I0421 11:01:27.796792       1 trace.go:219] Trace[1987892120]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:bb4284f4-eb3c-49af-822d-3e58c04345b0,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/kube-controller-manager,user-agent:kube-controller-manager/v1.26.5 (linux/amd64) kubernetes/890a139/leader-election,verb:GET (21-Apr-2025 11:01:26.863) (total time: 933ms):
+Trace[1987892120]: ---"About to write a response" 933ms (11:01:27.796)
+Trace[1987892120]: [933.205193ms] [933.205193ms] END
+I0421 11:01:27.796913       1 trace.go:219] Trace[702786684]: "Get" accept:application/json, */*,audit-id:c4f2b346-d8da-466f-b37d-f0347fcc18e8,client:10.233.120.46,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/webhook.configmapwebhook.00-of-01,user-agent:webhook/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 11:01:27.082) (total time: 714ms):
+Trace[702786684]: ---"About to write a response" 714ms (11:01:27.796)
+Trace[702786684]: [714.813177ms] [714.813177ms] END
+I0421 11:01:27.796995       1 trace.go:219] Trace[1598441189]: "Get" accept:application/json, */*,audit-id:68ef4896-6d09-4fb3-a026-992cd58d9a8c,client:10.233.119.255,protocol:HTTP/2.0,resource:endpoints,scope:resource,url:/api/v1/namespaces/deepops-nfs-client-provisioner/endpoints/cluster.local-nfs-subdir-external-provisioner,user-agent:nfs-subdir-external-provisioner/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 11:01:26.801) (total time: 995ms):
+Trace[1598441189]: ---"About to write a response" 995ms (11:01:27.796)
+Trace[1598441189]: [995.086611ms] [995.086611ms] END
+I0421 11:01:27.797246       1 trace.go:219] Trace[1993905975]: "Get" accept:application/json,audit-id:12eff6d8-d770-42f3-9b77-8e7d4bb6296d,client:10.233.119.174,protocol:HTTP/2.0,resource:namespaces,scope:resource,url:/api/v1/namespaces/s-jain-training-17,user-agent:metacontroller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:GET (21-Apr-2025 11:01:27.085) (total time: 711ms):
+Trace[1993905975]: ---"About to write a response" 711ms (11:01:27.797)
+Trace[1993905975]: [711.927153ms] [711.927153ms] END
+I0421 11:01:27.797321       1 trace.go:219] Trace[473521430]: "Update" accept:application/json,audit-id:cf8f0587-5ee8-41d5-884e-18f0ca7c62e4,client:10.233.119.174,protocol:HTTP/2.0,resource:namespaces,scope:resource,url:/api/v1/namespaces/s-jain-training-9/status,user-agent:metacontroller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (21-Apr-2025 11:01:27.285) (total time: 511ms):
+Trace[473521430]: ["GuaranteedUpdate etcd3" audit-id:cf8f0587-5ee8-41d5-884e-18f0ca7c62e4,key:/namespaces/s-jain-training-9,type:*core.Namespace,resource:namespaces 511ms (11:01:27.285)]
+Trace[473521430]: [511.694133ms] [511.694133ms] END
+I0421 11:01:27.797528       1 trace.go:219] Trace[1728796496]: "List" accept:application/json,audit-id:27d6ff40-779f-4b5b-b107-7c7b786bd791,client:10.233.119.144,protocol:HTTP/1.1,resource:notebooks,scope:namespace,url:/apis/kubeflow.org/v1beta1/namespaces/s-jain-training-11/notebooks,user-agent:OpenAPI-Generator/22.6.0/python,verb:LIST (21-Apr-2025 11:01:26.842) (total time: 955ms):
+Trace[1728796496]: ["List(recursive=true) etcd3" audit-id:27d6ff40-779f-4b5b-b107-7c7b786bd791,key:/kubeflow.org/notebooks/s-jain-training-11,resourceVersion:,resourceVersionMatch:,limit:0,continue: 955ms (11:01:26.842)]
+Trace[1728796496]: [955.44026ms] [955.44026ms] END
+I0421 11:01:27.797562       1 trace.go:219] Trace[166167065]: "Update" accept:application/json,audit-id:223241fa-2c31-4add-bee4-6e7a3b38249f,client:10.233.119.174,protocol:HTTP/2.0,resource:deployments,scope:resource,url:/apis/apps/v1/namespaces/s-jain-training-12/deployments/ml-pipeline-ui-artifact,user-agent:metacontroller/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (21-Apr-2025 11:01:26.884) (total time: 912ms):
+Trace[166167065]: ["GuaranteedUpdate etcd3" audit-id:223241fa-2c31-4add-bee4-6e7a3b38249f,key:/deployments/s-jain-training-12/ml-pipeline-ui-artifact,type:*apps.Deployment,resource:deployments.apps 912ms (11:01:26.885)]
+Trace[166167065]: [912.748701ms] [912.748701ms] END
+I0421 11:01:38.503427       1 trace.go:219] Trace[520691491]: "Update" accept:application/vnd.kubernetes.protobuf,application/json,audit-id:13d519fe-8d26-4e3d-a454-edfe1aec4554,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-node-lease/leases/jain-dgx-server,user-agent:kubelet/v1.26.5 (linux/amd64) kubernetes/890a139,verb:PUT (21-Apr-2025 11:01:37.966) (total time: 537ms):
+Trace[520691491]: ["GuaranteedUpdate etcd3" audit-id:13d519fe-8d26-4e3d-a454-edfe1aec4554,key:/leases/kube-node-lease/jain-dgx-server,type:*coordination.Lease,resource:leases.coordination.k8s.io 537ms (11:01:37.966)
+Trace[520691491]:  ---"Txn call completed" 536ms (11:01:38.503)]
+Trace[520691491]: [537.292867ms] [537.292867ms] END
+I0421 11:01:57.495472       1 trace.go:219] Trace[1041298297]: "Patch" accept:application/vnd.kubernetes.protobuf,application/json,audit-id:021928ff-0a5d-46c7-9f49-ef54cefb932b,client:127.0.0.1,protocol:HTTP/2.0,resource:nodes,scope:resource,url:/api/v1/nodes/jain-dgx-server/status,user-agent:kubelet/v1.26.5 (linux/amd64) kubernetes/890a139,verb:PATCH (21-Apr-2025 11:01:56.788) (total time: 706ms):
+Trace[1041298297]: ["GuaranteedUpdate etcd3" audit-id:021928ff-0a5d-46c7-9f49-ef54cefb932b,key:/minions/jain-dgx-server,type:*core.Node,resource:nodes 706ms (11:01:56.789)
+Trace[1041298297]:  ---"Txn call completed" 700ms (11:01:57.494)]
+Trace[1041298297]: ---"Object stored in database" 701ms (11:01:57.495)
+Trace[1041298297]: [706.534422ms] [706.534422ms] END
+I0421 11:03:00.690546       1 trace.go:219] Trace[1827413611]: "Get" accept:application/vnd.kubernetes.protobuf, */*,audit-id:49c33be6-abf5-4d72-a36b-02ce64d52707,client:127.0.0.1,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/kube-system/leases/kube-scheduler,user-agent:kube-scheduler/v1.26.5 (linux/amd64) kubernetes/890a139/leader-election,verb:GET (21-Apr-2025 11:03:00.037) (total time: 652ms):
+Trace[1827413611]: ---"About to write a response" 652ms (11:03:00.690)
+Trace[1827413611]: [652.859032ms] [652.859032ms] END
+I0421 11:03:00.692370       1 trace.go:219] Trace[1467300415]: "Patch" accept:application/vnd.kubernetes.protobuf,application/json,audit-id:88d70e20-7ce4-484d-be40-fd002f910fb6,client:127.0.0.1,protocol:HTTP/2.0,resource:nodes,scope:resource,url:/api/v1/nodes/jain-dgx-server/status,user-agent:kubelet/v1.26.5 (linux/amd64) kubernetes/890a139,verb:PATCH (21-Apr-2025 11:02:59.964) (total time: 728ms):
+Trace[1467300415]: ["GuaranteedUpdate etcd3" audit-id:88d70e20-7ce4-484d-be40-fd002f910fb6,key:/minions/jain-dgx-server,type:*core.Node,resource:nodes 728ms (11:02:59.964)
+Trace[1467300415]:  ---"Txn call completed" 717ms (11:03:00.691)]
+Trace[1467300415]: ---"Object stored in database" 719ms (11:03:00.692)
+Trace[1467300415]: [728.286542ms] [728.286542ms] END
+I0421 11:03:04.585889       1 trace.go:219] Trace[1934717093]: "Update" accept:application/json, */*,audit-id:c282f1b2-0ed0-490f-a7c9-8b7daf5f5453,client:10.233.120.57,protocol:HTTP/2.0,resource:leases,scope:resource,url:/apis/coordination.k8s.io/v1/namespaces/knative-serving/leases/autoscaler-bucket-00-of-01,user-agent:autoscaler/v0.0.0 (linux/amd64) kubernetes/$Format,verb:PUT (21-Apr-2025 11:03:03.995) (total time: 590ms):
+Trace[1934717093]: ["GuaranteedUpdate etcd3" audit-id:c282f1b2-0ed0-490f-a7c9-8b7daf5f5453,key:/leases/knative-serving/autoscaler-bucket-00-of-01,type:*coordination.Lease,resource:leases.coordination.k8s.io 590ms (11:03:03.995)
+Trace[1934717093]:  ---"Txn call completed" 589ms (11:03:04.585)]
+Trace[1934717093]: [590.555719ms] [590.555719ms] END
+I0421 11:06:42.435232       1 trace.go:219] Trace[39239280]: "List" accept:,audit-id:87945d9a-2ca6-4f67-ab01-af54798cc686,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 11:06:41.898) (total time: 536ms):
+Trace[39239280]: ---"Writing http response done" count:3314 173ms (11:06:42.435)
+Trace[39239280]: [536.586939ms] [536.586939ms] END
+I0421 11:11:43.253920       1 trace.go:219] Trace[1867832517]: "List" accept:,audit-id:e2f63717-115d-42dd-bf68-cb8a501bbdb0,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 11:11:42.571) (total time: 682ms):
+Trace[1867832517]: ["List(recursive=true) etcd3" audit-id:e2f63717-115d-42dd-bf68-cb8a501bbdb0,key:/dex.coreos.com/authrequests/auth,resourceVersion:,resourceVersionMatch:,limit:0,continue: 682ms (11:11:42.571)]
+Trace[1867832517]: ---"Writing http response done" count:3314 166ms (11:11:43.253)
+Trace[1867832517]: [682.701602ms] [682.701602ms] END
+I0421 11:31:45.491753       1 trace.go:219] Trace[349087518]: "List" accept:,audit-id:bac3f3c5-f6ad-4c8e-b4bb-a8dd47a0be31,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 11:31:44.819) (total time: 672ms):
+Trace[349087518]: ---"Writing http response done" count:3315 173ms (11:31:45.491)
+Trace[349087518]: [672.348212ms] [672.348212ms] END
+I0421 11:46:47.400378       1 trace.go:219] Trace[1937546762]: "List" accept:,audit-id:46f9a461-6c55-41f1-b42c-dc32e8ec9e3d,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 11:46:46.775) (total time: 625ms):
+Trace[1937546762]: ---"Writing http response done" count:3258 167ms (11:46:47.400)
+Trace[1937546762]: [625.258213ms] [625.258213ms] END
+I0421 11:56:48.737295       1 trace.go:219] Trace[641130592]: "List" accept:,audit-id:61eec01c-1523-4823-8054-8038996eba58,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 11:56:48.063) (total time: 674ms):
+Trace[641130592]: ---"Writing http response done" count:3233 180ms (11:56:48.737)
+Trace[641130592]: [674.050498ms] [674.050498ms] END
+I0421 12:00:11.604548       1 alloc.go:327] "allocated clusterIPs" service="ln-f-jai-cs-23/f-jai-cs-23" clusterIPs=map[IPv4:10.233.59.236]
+I0421 12:01:49.460864       1 trace.go:219] Trace[833081353]: "List" accept:,audit-id:f2892bd5-d821-4d12-aa32-e005c8810fdc,client:10.233.119.181,protocol:HTTP/2.0,resource:authrequests,scope:namespace,url:/apis/dex.coreos.com/v1/namespaces/auth/authrequests,user-agent:Go-http-client/2.0,verb:LIST (21-Apr-2025 12:01:48.831) (total time: 629ms):
+Trace[833081353]: ---"Writing http response done" count:3233 167ms (12:01:49.460)
+Trace[833081353]: [629.487009ms] [629.487009ms] END
+I0421 12:03:04.076649       1 trace.go:219] Trace[104426457]: "Get" accept:application/json, */*,audit-id:d6da4e7e-ccac-4abd-812a-47f8d4f5a16f,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/istio-system/pods/authservice-0/log,user-agent:kubectl/v1.26.5 (linux/amd64) kubernetes/890a139,verb:GET (21-Apr-2025 12:02:59.289) (total time: 4787ms):
+Trace[104426457]: ---"Writing http response done" 4785ms (12:03:04.076)
+Trace[104426457]: [4.787381914s] [4.787381914s] END
+I0421 12:03:05.365743       1 trace.go:219] Trace[1429035010]: "Get" accept:application/json, */*,audit-id:05914326-a92d-4ccc-949b-b4d766430617,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/istio-system/pods/cluster-local-gateway-675bb7b74-cwff8/log,user-agent:kubectl/v1.26.5 (linux/amd64) kubernetes/890a139,verb:GET (21-Apr-2025 12:03:04.385) (total time: 980ms):
+Trace[1429035010]: ---"Writing http response done" 978ms (12:03:05.365)
+Trace[1429035010]: [980.464285ms] [980.464285ms] END
+I0421 12:03:08.809788       1 trace.go:219] Trace[926168539]: "Get" accept:application/json, */*,audit-id:ae4edde3-ea13-4895-99c3-44990d4cdf4a,client:127.0.0.1,protocol:HTTP/2.0,resource:pods,scope:resource,url:/api/v1/namespaces/istio-system/pods/istiod-6995577d4-rqkxf/log,user-agent:kubectl/v1.26.5 (linux/amd64) kubernetes/890a139,verb:GET (21-Apr-2025 12:03:05.927) (total time: 2882ms):
+Trace[926168539]: ---"Writing http response done" 2881ms (12:03:08.809)
+Trace[926168539]: [2.882565482s] [2.882565482s] END

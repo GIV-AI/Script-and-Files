@@ -1,0 +1,23 @@
+I0421 05:28:50.029663       1 node.go:163] Successfully retrieved node IP: 192.168.1.248
+I0421 05:28:50.029702       1 server_others.go:109] "Detected node IP" address="192.168.1.248"
+I0421 05:28:50.070949       1 server_others.go:248] "Using ipvs Proxier"
+I0421 05:28:50.070962       1 server_others.go:250] "Creating dualStackProxier for ipvs"
+I0421 05:28:50.070971       1 server_others.go:465] "Detect-local-mode set to ClusterCIDR, but no IPv6 cluster CIDR defined, , defaulting to no-op detect-local for IPv6"
+I0421 05:28:50.071148       1 ipset.go:116] "Ipset name truncated" ipSetName="KUBE-6-LOAD-BALANCER-SOURCE-CIDR" truncatedName="KUBE-6-LOAD-BALANCER-SOURCE-CID"
+I0421 05:28:50.071155       1 ipset.go:116] "Ipset name truncated" ipSetName="KUBE-6-NODE-PORT-LOCAL-SCTP-HASH" truncatedName="KUBE-6-NODE-PORT-LOCAL-SCTP-HAS"
+I0421 05:28:50.071725       1 server.go:655] "Version info" version="v1.26.5"
+I0421 05:28:50.071731       1 server.go:657] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I0421 05:28:50.102757       1 conntrack.go:100] "Set sysctl" entry="net/netfilter/nf_conntrack_max" value=7340032
+I0421 05:28:50.102774       1 conntrack.go:52] "Setting nf_conntrack_max" nf_conntrack_max=7340032
+I0421 05:28:50.103096       1 conntrack.go:83] "Setting conntrack hashsize" conntrack hashsize=1835008
+I0421 05:28:50.130637       1 conntrack.go:100] "Set sysctl" entry="net/netfilter/nf_conntrack_tcp_timeout_close_wait" value=3600
+I0421 05:28:50.131537       1 config.go:444] "Starting node config controller"
+I0421 05:28:50.131553       1 config.go:226] "Starting endpoint slice config controller"
+I0421 05:28:50.131864       1 config.go:317] "Starting service config controller"
+I0421 05:28:50.132196       1 shared_informer.go:270] Waiting for caches to sync for node config
+I0421 05:28:50.132202       1 shared_informer.go:270] Waiting for caches to sync for endpoint slice config
+I0421 05:28:50.132293       1 shared_informer.go:270] Waiting for caches to sync for service config
+I0421 05:28:50.232987       1 shared_informer.go:277] Caches are synced for service config
+I0421 05:28:50.233117       1 shared_informer.go:277] Caches are synced for node config
+I0421 05:28:50.233242       1 shared_informer.go:277] Caches are synced for endpoint slice config
+I0421 05:36:50.077471       1 graceful_termination.go:102] "Removed real server from graceful delete real server list" realServer="10.233.0.3:53/TCP/10.233.119.194:53"

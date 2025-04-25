@@ -1,0 +1,18 @@
+apiVersion: kubeflow.org/v1beta1
+kind: Profile
+metadata:
+  name: f-jain-it-7080
+spec:
+  owner:
+    kind: User
+    name: f-jain-it-7080
+  resourceQuotaSpec:
+    hard:
+      cpu: "8"
+      memory: "17Gi"
+      requests.nvidia.com/gpu: "0"
+      requests.nvidia.com/mig-3g.71gb: "0"
+      requests.nvidia.com/mig-2g.35gb: "0"
+      requests.nvidia.com/mig-1g.18gb: "1"
+      requests.storage: "30Gi"
+  

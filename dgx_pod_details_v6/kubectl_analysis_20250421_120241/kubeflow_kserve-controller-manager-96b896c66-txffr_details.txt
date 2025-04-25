@@ -1,0 +1,103 @@
+Namespace: kubeflow
+Pod Name: kserve-controller-manager-96b896c66-txffr
+Status: 2/2
+Other Details: Running                    16 (6h33m ago)   5d22h
+Name:             kserve-controller-manager-96b896c66-txffr
+Namespace:        kubeflow
+Priority:         0
+Service Account:  kserve-controller-manager
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:30 +0000
+Labels:           app=kserve
+                  app.kubernetes.io/name=kserve
+                  control-plane=kserve-controller-manager
+                  controller-tools.k8s.io=1.0
+                  pod-template-hash=96b896c66
+Annotations:      cni.projectcalico.org/containerID: 7a3d90408b21318b202dc8c406367f5d5cb16777c0362c53b7c0c41280cfb94e
+                  cni.projectcalico.org/podIP: 10.233.119.221/32
+                  cni.projectcalico.org/podIPs: 10.233.119.221/32
+                  kubectl.kubernetes.io/default-container: manager
+                  sidecar.istio.io/inject: false
+Status:           Running
+IP:               10.233.119.221
+IPs:
+  IP:           10.233.119.221
+Controlled By:  ReplicaSet/kserve-controller-manager-96b896c66
+Containers:
+  manager:
+    Container ID:  docker://eb8d609cb83d6734932682313778d887cf20bcd488fb1a8299cecb01d507504a
+    Image:         kserve/kserve-controller:v0.10.0
+    Image ID:      docker-pullable://kserve/kserve-controller@sha256:22ff858b57c12e036f5738b9c876fe89cd3abbdcbf842f726880d37d979cc61b
+    Port:          9443/TCP
+    Host Port:     0/TCP
+    Command:
+      /manager
+    Args:
+      --metrics-addr=127.0.0.1:8080
+      --leader-elect
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:30:02 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Mon, 21 Apr 2025 05:29:08 +0000
+      Finished:     Mon, 21 Apr 2025 05:29:38 +0000
+    Ready:          True
+    Restart Count:  9
+    Limits:
+      cpu:     100m
+      memory:  300Mi
+    Requests:
+      cpu:     100m
+      memory:  200Mi
+    Environment:
+      POD_NAMESPACE:  kubeflow (v1:metadata.namespace)
+      SECRET_NAME:    kserve-webhook-server-cert
+    Mounts:
+      /tmp/k8s-webhook-server/serving-certs from cert (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-ddzbz (ro)
+  kube-rbac-proxy:
+    Container ID:  docker://fd717176879a5bf4fab2f69146199edf13d9d74e4d2f756dc8713ad797e81aa3
+    Image:         gcr.io/kubebuilder/kube-rbac-proxy:v0.13.1
+    Image ID:      docker-pullable://gcr.io/kubebuilder/kube-rbac-proxy@sha256:d4883d7c622683b3319b5e6b3a7edfbf2594c18060131a8bf64504805f875522
+    Port:          8443/TCP
+    Host Port:     0/TCP
+    Args:
+      --secure-listen-address=0.0.0.0:8443
+      --upstream=http://127.0.0.1:8080/
+      --logtostderr=true
+      --v=10
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:29:08 +0000
+    Last State:     Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Mon, 21 Apr 2025 03:55:51 +0000
+      Finished:     Mon, 21 Apr 2025 05:10:41 +0000
+    Ready:          True
+    Restart Count:  7
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-ddzbz (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  cert:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  kserve-webhook-server-cert
+    Optional:    false
+  kube-api-access-ddzbz:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

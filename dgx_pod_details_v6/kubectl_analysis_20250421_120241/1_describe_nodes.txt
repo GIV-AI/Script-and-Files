@@ -1,0 +1,541 @@
+Name:               jain-dgx-server
+Roles:              control-plane
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    feature.node.kubernetes.io/cpu-cpuid.ADX=true
+                    feature.node.kubernetes.io/cpu-cpuid.AESNI=true
+                    feature.node.kubernetes.io/cpu-cpuid.AMXBF16=true
+                    feature.node.kubernetes.io/cpu-cpuid.AMXINT8=true
+                    feature.node.kubernetes.io/cpu-cpuid.AMXTILE=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX2=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512BF16=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512BITALG=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512BW=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512CD=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512DQ=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512F=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512FP16=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512IFMA=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512VBMI=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512VBMI2=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512VL=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512VNNI=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512VPOPCNTDQ=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVXVNNI=true
+                    feature.node.kubernetes.io/cpu-cpuid.CETIBT=true
+                    feature.node.kubernetes.io/cpu-cpuid.CETSS=true
+                    feature.node.kubernetes.io/cpu-cpuid.CLDEMOTE=true
+                    feature.node.kubernetes.io/cpu-cpuid.CMPSB_SCADBS_SHORT=true
+                    feature.node.kubernetes.io/cpu-cpuid.CMPXCHG8=true
+                    feature.node.kubernetes.io/cpu-cpuid.ENQCMD=true
+                    feature.node.kubernetes.io/cpu-cpuid.FLUSH_L1D=true
+                    feature.node.kubernetes.io/cpu-cpuid.FMA3=true
+                    feature.node.kubernetes.io/cpu-cpuid.FSRM=true
+                    feature.node.kubernetes.io/cpu-cpuid.FXSR=true
+                    feature.node.kubernetes.io/cpu-cpuid.FXSROPT=true
+                    feature.node.kubernetes.io/cpu-cpuid.GFNI=true
+                    feature.node.kubernetes.io/cpu-cpuid.IA32_ARCH_CAP=true
+                    feature.node.kubernetes.io/cpu-cpuid.IA32_CORE_CAP=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBPB=true
+                    feature.node.kubernetes.io/cpu-cpuid.LAHF=true
+                    feature.node.kubernetes.io/cpu-cpuid.MD_CLEAR=true
+                    feature.node.kubernetes.io/cpu-cpuid.MOVBE=true
+                    feature.node.kubernetes.io/cpu-cpuid.MOVDIR64B=true
+                    feature.node.kubernetes.io/cpu-cpuid.MOVDIRI=true
+                    feature.node.kubernetes.io/cpu-cpuid.MOVSB_ZL=true
+                    feature.node.kubernetes.io/cpu-cpuid.OSXSAVE=true
+                    feature.node.kubernetes.io/cpu-cpuid.PCONFIG=true
+                    feature.node.kubernetes.io/cpu-cpuid.PREFETCHI=true
+                    feature.node.kubernetes.io/cpu-cpuid.SERIALIZE=true
+                    feature.node.kubernetes.io/cpu-cpuid.SHA=true
+                    feature.node.kubernetes.io/cpu-cpuid.SPEC_CTRL_SSBD=true
+                    feature.node.kubernetes.io/cpu-cpuid.STIBP=true
+                    feature.node.kubernetes.io/cpu-cpuid.STOSB_SHORT=true
+                    feature.node.kubernetes.io/cpu-cpuid.SYSCALL=true
+                    feature.node.kubernetes.io/cpu-cpuid.SYSEE=true
+                    feature.node.kubernetes.io/cpu-cpuid.TME=true
+                    feature.node.kubernetes.io/cpu-cpuid.TSXLDTRK=true
+                    feature.node.kubernetes.io/cpu-cpuid.VAES=true
+                    feature.node.kubernetes.io/cpu-cpuid.VMX=true
+                    feature.node.kubernetes.io/cpu-cpuid.VPCLMULQDQ=true
+                    feature.node.kubernetes.io/cpu-cpuid.WAITPKG=true
+                    feature.node.kubernetes.io/cpu-cpuid.WBNOINVD=true
+                    feature.node.kubernetes.io/cpu-cpuid.X87=true
+                    feature.node.kubernetes.io/cpu-cpuid.XGETBV1=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVE=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVEC=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVEOPT=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVES=true
+                    feature.node.kubernetes.io/cpu-cstate.enabled=true
+                    feature.node.kubernetes.io/cpu-hardware_multithreading=true
+                    feature.node.kubernetes.io/cpu-model.family=6
+                    feature.node.kubernetes.io/cpu-model.id=143
+                    feature.node.kubernetes.io/cpu-model.vendor_id=Intel
+                    feature.node.kubernetes.io/cpu-pstate.scaling_governor=performance
+                    feature.node.kubernetes.io/cpu-pstate.status=active
+                    feature.node.kubernetes.io/cpu-pstate.turbo=true
+                    feature.node.kubernetes.io/cpu-rdt.RDTCMT=true
+                    feature.node.kubernetes.io/cpu-rdt.RDTL2CA=true
+                    feature.node.kubernetes.io/cpu-rdt.RDTL3CA=true
+                    feature.node.kubernetes.io/cpu-rdt.RDTMBA=true
+                    feature.node.kubernetes.io/cpu-rdt.RDTMBM=true
+                    feature.node.kubernetes.io/cpu-rdt.RDTMON=true
+                    feature.node.kubernetes.io/custom-rdma.available=true
+                    feature.node.kubernetes.io/custom-rdma.capable=true
+                    feature.node.kubernetes.io/kernel-config.NO_HZ=true
+                    feature.node.kubernetes.io/kernel-config.NO_HZ_IDLE=true
+                    feature.node.kubernetes.io/kernel-version.full=5.15.0-1063-nvidia
+                    feature.node.kubernetes.io/kernel-version.major=5
+                    feature.node.kubernetes.io/kernel-version.minor=15
+                    feature.node.kubernetes.io/kernel-version.revision=0
+                    feature.node.kubernetes.io/memory-numa=true
+                    feature.node.kubernetes.io/network-sriov.capable=true
+                    feature.node.kubernetes.io/pci-10de.present=true
+                    feature.node.kubernetes.io/pci-10de.sriov.capable=true
+                    feature.node.kubernetes.io/pci-15b3.present=true
+                    feature.node.kubernetes.io/pci-15b3.sriov.capable=true
+                    feature.node.kubernetes.io/pci-1a03.present=true
+                    feature.node.kubernetes.io/pci-8086.present=true
+                    feature.node.kubernetes.io/pci-8086.sriov.capable=true
+                    feature.node.kubernetes.io/storage-nonrotationaldisk=true
+                    feature.node.kubernetes.io/system-os_release.ID=ubuntu
+                    feature.node.kubernetes.io/system-os_release.VERSION_ID=22.04
+                    feature.node.kubernetes.io/system-os_release.VERSION_ID.major=22
+                    feature.node.kubernetes.io/system-os_release.VERSION_ID.minor=04
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=jain-dgx-server
+                    kubernetes.io/os=linux
+                    node-role.kubernetes.io/control-plane=
+                    node.kubernetes.io/exclude-from-external-load-balancers=
+                    nvidia.com/cuda.driver.major=550
+                    nvidia.com/cuda.driver.minor=90
+                    nvidia.com/cuda.driver.rev=07
+                    nvidia.com/cuda.runtime.major=12
+                    nvidia.com/cuda.runtime.minor=4
+                    nvidia.com/gfd.timestamp=1745213829
+                    nvidia.com/gpu.compute.major=9
+                    nvidia.com/gpu.compute.minor=0
+                    nvidia.com/gpu.count=8
+                    nvidia.com/gpu.deploy.container-toolkit=true
+                    nvidia.com/gpu.deploy.dcgm=true
+                    nvidia.com/gpu.deploy.dcgm-exporter=true
+                    nvidia.com/gpu.deploy.device-plugin=true
+                    nvidia.com/gpu.deploy.driver=true
+                    nvidia.com/gpu.deploy.gpu-feature-discovery=true
+                    nvidia.com/gpu.deploy.mig-manager=true
+                    nvidia.com/gpu.deploy.node-status-exporter=true
+                    nvidia.com/gpu.deploy.operator-validator=true
+                    nvidia.com/gpu.family=hopper
+                    nvidia.com/gpu.machine=DGXH200
+                    nvidia.com/gpu.memory=143771
+                    nvidia.com/gpu.present=true
+                    nvidia.com/gpu.product=NVIDIA-H200
+                    nvidia.com/gpu.replicas=0
+                    nvidia.com/mig-1g.18gb.count=56
+                    nvidia.com/mig-1g.18gb.engines.copy=1
+                    nvidia.com/mig-1g.18gb.engines.decoder=1
+                    nvidia.com/mig-1g.18gb.engines.encoder=0
+                    nvidia.com/mig-1g.18gb.engines.jpeg=1
+                    nvidia.com/mig-1g.18gb.engines.ofa=0
+                    nvidia.com/mig-1g.18gb.memory=16384
+                    nvidia.com/mig-1g.18gb.multiprocessors=16
+                    nvidia.com/mig-1g.18gb.product=NVIDIA-H200-MIG-1g.18gb
+                    nvidia.com/mig-1g.18gb.replicas=1
+                    nvidia.com/mig-1g.18gb.slices.ci=1
+                    nvidia.com/mig-1g.18gb.slices.gi=1
+                    nvidia.com/mig.capable=true
+                    nvidia.com/mig.config=all-disabled
+                    nvidia.com/mig.config.state=success
+                    nvidia.com/mig.strategy=mixed
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///var/run/cri-dockerd.sock
+                    nfd.node.kubernetes.io/extended-resources: 
+                    nfd.node.kubernetes.io/feature-labels:
+                      cpu-cpuid.ADX,cpu-cpuid.AESNI,cpu-cpuid.AMXBF16,cpu-cpuid.AMXINT8,cpu-cpuid.AMXTILE,cpu-cpuid.AVX,cpu-cpuid.AVX2,cpu-cpuid.AVX512BF16,cpu-...
+                    nfd.node.kubernetes.io/master.version: v0.12.1
+                    nfd.node.kubernetes.io/worker.version: v0.12.1
+                    node.alpha.kubernetes.io/ttl: 0
+                    nvidia.com/gpu-driver-upgrade-enabled: true
+                    projectcalico.org/IPv4Address: 192.168.1.248/24
+                    projectcalico.org/IPv4VXLANTunnelAddr: 10.233.119.128
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Tue, 15 Apr 2025 13:24:39 +0000
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  jain-dgx-server
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 21 Apr 2025 12:02:32 +0000
+Conditions:
+  Type                 Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----                 ------  -----------------                 ------------------                ------                       -------
+  NetworkUnavailable   False   Mon, 21 Apr 2025 05:29:44 +0000   Mon, 21 Apr 2025 05:29:44 +0000   CalicoIsUp                   Calico is running on this node
+  MemoryPressure       False   Mon, 21 Apr 2025 12:02:32 +0000   Mon, 21 Apr 2025 05:35:44 +0000   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure         False   Mon, 21 Apr 2025 12:02:32 +0000   Mon, 21 Apr 2025 05:35:44 +0000   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure          False   Mon, 21 Apr 2025 12:02:32 +0000   Mon, 21 Apr 2025 05:35:44 +0000   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready                True    Mon, 21 Apr 2025 12:02:32 +0000   Mon, 21 Apr 2025 05:35:44 +0000   KubeletReady                 kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:  192.168.1.248
+  Hostname:    jain-dgx-server
+Capacity:
+  cpu:                     224
+  ephemeral-storage:       1844165180Ki
+  hugepages-1Gi:           0
+  hugepages-2Mi:           0
+  memory:                  2113470804Ki
+  nvidia.com/gpu:          0
+  nvidia.com/mig-1g.18gb:  56
+  nvidia.com/mig-2g.35gb:  0
+  nvidia.com/mig-3g.71gb:  0
+  pods:                    1k
+Allocatable:
+  cpu:                     224
+  ephemeral-storage:       1699582627075
+  hugepages-1Gi:           0
+  hugepages-2Mi:           0
+  memory:                  2113368404Ki
+  nvidia.com/gpu:          0
+  nvidia.com/mig-1g.18gb:  56
+  nvidia.com/mig-2g.35gb:  0
+  nvidia.com/mig-3g.71gb:  0
+  pods:                    1k
+System Info:
+  Machine ID:                     66a4c4770e2a4479a7a2fe79b3937b9f
+  System UUID:                    a686af32-bfde-1000-02b9-5cff35fc0b15
+  Boot ID:                        d96fc154-e9d9-4203-a46e-ec16961309e1
+  Kernel Version:                 5.15.0-1063-nvidia
+  OS Image:                       Ubuntu 22.04.4 LTS
+  Operating System:               linux
+  Architecture:                   amd64
+  Container Runtime Version:      docker://20.10.20
+  Kubelet Version:                v1.26.5
+  Kube-Proxy Version:             v1.26.5
+PodCIDR:                          10.233.64.0/24
+PodCIDRs:                         10.233.64.0/24
+Non-terminated Pods:              (165 in total)
+  Namespace                       Name                                                               CPU Requests  CPU Limits   Memory Requests  Memory Limits         Age
+  ---------                       ----                                                               ------------  ----------   ---------------  -------------         ---
+  auth                            dex-767bfc69bd-6wxd6                                               0 (0%)        0 (0%)       0 (0%)           0 (0%)                2d
+  cert-manager                    cert-manager-7fb78674d7-d8xdm                                      0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  cert-manager                    cert-manager-cainjector-5dfc946d84-vchfv                           0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  cert-manager                    cert-manager-webhook-8744b7588-95tsw                               0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  deepops-nfs-client-provisioner  nfs-subdir-external-provisioner-7859dcd666-fn27v                   0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  f-gi-aiml-1                     ml-pipeline-ui-artifact-fb8c99584-ctmfc                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  f-gi-aiml-1                     ml-pipeline-visualizationserver-6659778c46-jwprs                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  f-gi-aiml-1                     triton-0                                                           8010m (3%)    11600m (5%)  16424Mi (0%)     21689584844800m (1%)  101m
+  f-gi-aiml-12                    ml-pipeline-ui-artifact-fb8c99584-z9ppr                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  f-gi-aiml-12                    ml-pipeline-visualizationserver-6659778c46-mgqn9                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  f-gi-aiml-12                    test-0                                                             8010m (3%)    11600m (5%)  16424Mi (0%)     21689584844800m (1%)  5h20m
+  f-gi-aiml-123                   ml-pipeline-ui-artifact-fb8c99584-s9zxh                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  f-gi-aiml-123                   ml-pipeline-visualizationserver-6659778c46-86gwj                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  f-gi-aiml-1234                  ml-pipeline-ui-artifact-fb8c99584-299kp                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  f-gi-aiml-1234                  ml-pipeline-visualizationserver-6659778c46-5hbxw                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  f-jain-dc-9                     ml-pipeline-ui-artifact-fb8c99584-xdlrt                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           3d
+  f-jain-dc-9                     ml-pipeline-visualizationserver-6659778c46-56vhp                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              3d
+  f-jain-santosh-1234             ml-pipeline-ui-artifact-fb8c99584-nl8zk                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           3d3h
+  f-jain-santosh-1234             ml-pipeline-visualizationserver-6659778c46-hj8qs                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              3d3h
+  f-jain-test-1234                ml-pipeline-ui-artifact-fb8c99584-d2brf                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           3d3h
+  f-jain-test-1234                ml-pipeline-visualizationserver-6659778c46-x2kwr                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              3d3h
+  f-test-test123-1234             ml-pipeline-ui-artifact-fb8c99584-qm9hr                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           3d5h
+  f-test-test123-1234             ml-pipeline-visualizationserver-6659778c46-j2p8f                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              3d5h
+  gpu-operator                    gpu-feature-discovery-4sk5v                                        0 (0%)        0 (0%)       0 (0%)           0 (0%)                6h56m
+  gpu-operator                    gpu-operator-784b7c5578-6rrmq                                      200m (0%)     500m (0%)    100Mi (0%)       350Mi (0%)            5d22h
+  gpu-operator                    nvidia-container-toolkit-daemonset-vpwx6                           0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  gpu-operator                    nvidia-dcgm-exporter-7r575                                         0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  gpu-operator                    nvidia-device-plugin-daemonset-nztv7                               0 (0%)        0 (0%)       0 (0%)           0 (0%)                6h57m
+  gpu-operator                    nvidia-gpu-operator-node-feature-discovery-master-6f78fb7c8ttft    0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  gpu-operator                    nvidia-gpu-operator-node-feature-discovery-worker-qhvdq            0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  gpu-operator                    nvidia-mig-manager-w5wnl                                           0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  gpu-operator                    nvidia-operator-validator-6qpmj                                    0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  istio-system                    authservice-0                                                      0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d21h
+  istio-system                    cluster-local-gateway-675bb7b74-cwff8                              100m (0%)     2 (0%)       128Mi (0%)       1Gi (0%)              5d22h
+  istio-system                    istio-ingressgateway-c7fdd4bf6-fk9xr                               10m (0%)      2 (0%)       40Mi (0%)        1Gi (0%)              5d22h
+  istio-system                    istiod-6995577d4-rqkxf                                             10m (0%)      0 (0%)       100Mi (0%)       0 (0%)                5d22h
+  knative-eventing                eventing-controller-86647cbc5b-74f5h                               100m (0%)     0 (0%)       100Mi (0%)       0 (0%)                5d22h
+  knative-eventing                eventing-webhook-6f48bb5f4c-9g22s                                  100m (0%)     200m (0%)    50Mi (0%)        200Mi (0%)            5d22h
+  knative-serving                 activator-855b695596-gsl4r                                         310m (0%)     3 (1%)       100Mi (0%)       1624Mi (0%)           5d22h
+  knative-serving                 autoscaler-7cbddfc9f7-nlkt8                                        110m (0%)     3 (1%)       140Mi (0%)       2024Mi (0%)           5d22h
+  knative-serving                 controller-6657c556fd-gh2l8                                        110m (0%)     3 (1%)       140Mi (0%)       2024Mi (0%)           5d22h
+  knative-serving                 domain-mapping-544987775c-44vdw                                    40m (0%)      2300m (1%)   80Mi (0%)        1424Mi (0%)           5d22h
+  knative-serving                 domainmapping-webhook-6b48bdc856-xzltg                             110m (0%)     2500m (1%)   140Mi (0%)       1524Mi (0%)           5d22h
+  knative-serving                 net-istio-controller-6fbdbd9959-tzxhx                              40m (0%)      2300m (1%)   80Mi (0%)        1424Mi (0%)           5d22h
+  knative-serving                 net-istio-webhook-7d4879cd7f-z8skv                                 30m (0%)      2200m (0%)   60Mi (0%)        1224Mi (0%)           5d22h
+  knative-serving                 webhook-665c977469-gvbx5                                           110m (0%)     2500m (1%)   140Mi (0%)       1524Mi (0%)           5d22h
+  kube-system                     calico-kube-controllers-6dfcdfb99-ftq5q                            30m (0%)      1 (0%)       64M (0%)         256M (0%)             5d22h
+  kube-system                     calico-node-z7p9d                                                  150m (0%)     300m (0%)    64M (0%)         500M (0%)             5d22h
+  kube-system                     coredns-645b46f4b6-m4zhl                                           100m (0%)     0 (0%)       70Mi (0%)        300Mi (0%)            5d22h
+  kube-system                     dns-autoscaler-659b8c48cb-bdf68                                    20m (0%)      0 (0%)       10Mi (0%)        0 (0%)                5d22h
+  kube-system                     kube-apiserver-jain-dgx-server                                     250m (0%)     0 (0%)       0 (0%)           0 (0%)                5d22h
+  kube-system                     kube-controller-manager-jain-dgx-server                            200m (0%)     0 (0%)       0 (0%)           0 (0%)                5d22h
+  kube-system                     kube-proxy-2hsl4                                                   0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  kube-system                     kube-scheduler-jain-dgx-server                                     100m (0%)     0 (0%)       0 (0%)           0 (0%)                5d22h
+  kube-system                     kubernetes-dashboard-5779d79d4c-t4gsj                              50m (0%)      100m (0%)    64M (0%)         256M (0%)             5d22h
+  kube-system                     kubernetes-metrics-scraper-6cdb9fb87f-l5k72                        0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  kube-system                     nodelocaldns-2gdzm                                                 100m (0%)     0 (0%)       70Mi (0%)        200Mi (0%)            5d
+  kubeflow-deepops-example-com    ml-pipeline-ui-artifact-fb8c99584-x26n7                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           5d20h
+  kubeflow-deepops-example-com    ml-pipeline-visualizationserver-6659778c46-pglw8                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              5d20h
+  kubeflow                        admission-webhook-deployment-7d56d4455f-q5mgb                      0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  kubeflow                        cache-server-6b44c46d47-cwfcx                                      10m (0%)      2 (0%)       40Mi (0%)        1Gi (0%)              5d22h
+  kubeflow                        centraldashboard-d45f69689-h8srw                                   10m (0%)      2 (0%)       40Mi (0%)        1Gi (0%)              5d22h
+  kubeflow                        jupyter-web-app-deployment-57864d5958-hwgcm                        10m (0%)      2 (0%)       40Mi (0%)        1Gi (0%)              5d22h
+  kubeflow                        katib-controller-7964698977-lvbjp                                  0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  kubeflow                        katib-db-manager-57474ccbbf-mpmbb                                  0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  kubeflow                        katib-mysql-66c8cdff4f-4px7x                                       0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  kubeflow                        katib-ui-57d77d7d75-jqg24                                          10m (0%)      2 (0%)       40Mi (0%)        1Gi (0%)              5d22h
+  kubeflow                        kserve-controller-manager-96b896c66-txffr                          100m (0%)     100m (0%)    200Mi (0%)       300Mi (0%)            5d22h
+  kubeflow                        kserve-models-web-app-9fbcd79f5-xmdlm                              10m (0%)      2 (0%)       40Mi (0%)        1Gi (0%)              5d22h
+  kubeflow                        kubeflow-pipelines-profile-controller-6f6bc888df-qmxng             0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  kubeflow                        metacontroller-0                                                   100m (0%)     1 (0%)       256Mi (0%)       1Gi (0%)              5d22h
+  kubeflow                        metadata-envoy-deployment-7b49bdb748-v98w4                         0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  kubeflow                        metadata-grpc-deployment-6d744c66bb-wfqxl                          10m (0%)      2 (0%)       40Mi (0%)        1Gi (0%)              5d22h
+  kubeflow                        metadata-writer-5bfdbf79b7-9n4sp                                   10m (0%)      2 (0%)       40Mi (0%)        1Gi (0%)              5d22h
+  kubeflow                        minio-549846c488-rbjp2                                             30m (0%)      2 (0%)       140Mi (0%)       1Gi (0%)              5d22h
+  kubeflow                        ml-pipeline-86d69497fc-r96w7                                       260m (0%)     2 (0%)       540Mi (0%)       1Gi (0%)              5d22h
+  kubeflow                        ml-pipeline-persistenceagent-5789446f9c-zdcj5                      130m (0%)     2 (0%)       540Mi (0%)       1Gi (0%)              5d22h
+  kubeflow                        ml-pipeline-scheduledworkflow-fb9fbd76b-gtbw4                      10m (0%)      2 (0%)       40Mi (0%)        1Gi (0%)              5d22h
+  kubeflow                        ml-pipeline-ui-74fcbdddd9-xsl27                                    20m (0%)      2 (0%)       110Mi (0%)       1Gi (0%)              5d22h
+  kubeflow                        ml-pipeline-viewer-crd-bdf696cb9-pz4cc                             10m (0%)      2 (0%)       40Mi (0%)        1Gi (0%)              5d22h
+  kubeflow                        ml-pipeline-visualizationserver-845d745b46-md48c                   40m (0%)      2 (0%)       540Mi (0%)       1Gi (0%)              5d22h
+  kubeflow                        mysql-5f968d4688-ffd8d                                             110m (0%)     2 (0%)       840Mi (0%)       1Gi (0%)              5d22h
+  kubeflow                        notebook-controller-deployment-7cdb9d9f7b-kbdcc                    10m (0%)      2 (0%)       40Mi (0%)        1Gi (0%)              5d22h
+  kubeflow                        profiles-deployment-7cf8b9b794-g2llh                               10m (0%)      2 (0%)       40Mi (0%)        1Gi (0%)              5d22h
+  kubeflow                        tensorboard-controller-deployment-697c566bd5-478bw                 25m (0%)      3 (1%)       168Mi (0%)       1280Mi (0%)           5d22h
+  kubeflow                        tensorboards-web-app-deployment-67bf5977c9-49g85                   10m (0%)      2 (0%)       40Mi (0%)        1Gi (0%)              5d22h
+  kubeflow                        training-operator-64886bdddc-kkm8j                                 0 (0%)        0 (0%)       0 (0%)           0 (0%)                5d22h
+  kubeflow                        volumes-web-app-deployment-7f8c75d5b-44vnt                         10m (0%)      2 (0%)       40Mi (0%)        1Gi (0%)              5d22h
+  kubeflow                        workflow-controller-56cc57796-kl4vb                                110m (0%)     2 (0%)       540Mi (0%)       1Gi (0%)              5d22h
+  ln-f-jai-cs-23                  f-jai-cs-23                                                        5 (2%)        5 (2%)       10Gi (0%)        10Gi (0%)             3m
+  s-jain-training-1               ml-pipeline-ui-artifact-fb8c99584-xw5sb                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-1               ml-pipeline-visualizationserver-6659778c46-p9ph8                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-1               test-0                                                             8010m (3%)    11600m (5%)  16424Mi (0%)     21689584844800m (1%)  101m
+  s-jain-training-10              ml-pipeline-ui-artifact-fb8c99584-chtck                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-10              ml-pipeline-visualizationserver-6659778c46-gwqgg                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-10              projectday3triton-0                                                8010m (3%)    11600m (5%)  16424Mi (0%)     21689584844800m (1%)  100m
+  s-jain-training-11              ml-pipeline-ui-artifact-fb8c99584-ngz7m                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-11              ml-pipeline-visualizationserver-6659778c46-5tc72                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-12              ml-pipeline-ui-artifact-fb8c99584-ft7l7                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-12              ml-pipeline-visualizationserver-6659778c46-7swdp                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-12              triton-0                                                           8010m (3%)    11600m (5%)  16424Mi (0%)     21689584844800m (1%)  101m
+  s-jain-training-13              ml-pipeline-ui-artifact-fb8c99584-x7zjk                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-13              ml-pipeline-visualizationserver-6659778c46-pkphk                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-14              ml-pipeline-ui-artifact-fb8c99584-gszlf                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-14              ml-pipeline-visualizationserver-6659778c46-cgm99                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-15              ml-pipeline-ui-artifact-fb8c99584-4fzdt                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-15              ml-pipeline-visualizationserver-6659778c46-kqjf6                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-16              ml-pipeline-ui-artifact-fb8c99584-2kvn7                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-16              ml-pipeline-visualizationserver-6659778c46-rj7r5                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-17              ml-pipeline-ui-artifact-fb8c99584-pfvt2                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-17              ml-pipeline-visualizationserver-6659778c46-8hxtb                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-18              ml-pipeline-ui-artifact-fb8c99584-xfp4v                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-18              ml-pipeline-visualizationserver-6659778c46-trx6z                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-19              deepstream1-0                                                      8010m (3%)    11600m (5%)  16424Mi (0%)     21689584844800m (1%)  3h51m
+  s-jain-training-19              ml-pipeline-ui-artifact-fb8c99584-fb5vg                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-19              ml-pipeline-visualizationserver-6659778c46-qv4mq                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-2               ml-pipeline-ui-artifact-fb8c99584-r7ghh                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-2               ml-pipeline-visualizationserver-6659778c46-fqp8c                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-2               test-0                                                             8010m (3%)    11600m (5%)  16424Mi (0%)     21689584844800m (1%)  101m
+  s-jain-training-20              ml-pipeline-ui-artifact-fb8c99584-fnb7d                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-20              ml-pipeline-visualizationserver-6659778c46-s7kkh                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-21              ml-pipeline-ui-artifact-fb8c99584-n78dd                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-21              ml-pipeline-visualizationserver-6659778c46-9gckh                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-21              streamserver-0                                                     8010m (3%)    11600m (5%)  16424Mi (0%)     21689584844800m (1%)  8m25s
+  s-jain-training-22              ml-pipeline-ui-artifact-fb8c99584-vl6qj                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-22              ml-pipeline-visualizationserver-6659778c46-dk5w5                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-23              ml-pipeline-ui-artifact-fb8c99584-zv67l                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-23              ml-pipeline-visualizationserver-6659778c46-pswmv                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-23              new1-0                                                             8010m (3%)    11600m (5%)  16424Mi (0%)     21689584844800m (1%)  101m
+  s-jain-training-24              ml-pipeline-ui-artifact-fb8c99584-8zgtm                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-24              ml-pipeline-visualizationserver-6659778c46-lflvp                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-25              ml-pipeline-ui-artifact-fb8c99584-w8qp8                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-25              ml-pipeline-visualizationserver-6659778c46-k4wq6                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-26              ml-pipeline-ui-artifact-fb8c99584-8qwtd                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-26              ml-pipeline-visualizationserver-6659778c46-wpkgl                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-27              ml-pipeline-ui-artifact-fb8c99584-s4948                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-27              ml-pipeline-visualizationserver-6659778c46-cdj5m                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-28              ml-pipeline-ui-artifact-fb8c99584-sk9bt                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-28              ml-pipeline-visualizationserver-6659778c46-gd4sz                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-29              ml-pipeline-ui-artifact-fb8c99584-cqx5m                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-29              ml-pipeline-visualizationserver-6659778c46-wx4rx                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-3               ml-pipeline-ui-artifact-fb8c99584-wvvd7                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-3               ml-pipeline-visualizationserver-6659778c46-49bdc                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-3               text25-0                                                           8010m (3%)    11600m (5%)  16424Mi (0%)     21689584844800m (1%)  88m
+  s-jain-training-30              ml-pipeline-ui-artifact-fb8c99584-r2gtf                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-30              ml-pipeline-visualizationserver-6659778c46-psckn                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-4               ml-pipeline-ui-artifact-fb8c99584-hzm7n                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-4               ml-pipeline-visualizationserver-6659778c46-4v465                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-4               tritonnotebook-0                                                   8010m (3%)    11600m (5%)  16424Mi (0%)     21689584844800m (1%)  101m
+  s-jain-training-5               daythreeexample3-0                                                 8010m (3%)    11600m (5%)  16424Mi (0%)     21689584844800m (1%)  101m
+  s-jain-training-5               ml-pipeline-ui-artifact-fb8c99584-mlxhh                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-5               ml-pipeline-visualizationserver-6659778c46-g9chx                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-6               ml-pipeline-ui-artifact-fb8c99584-2qrst                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-6               ml-pipeline-visualizationserver-6659778c46-xh8hd                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-6               test-triton-server-0                                               8010m (3%)    11600m (5%)  16424Mi (0%)     21689584844800m (1%)  101m
+  s-jain-training-7               ml-pipeline-ui-artifact-fb8c99584-zn7pc                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-7               ml-pipeline-visualizationserver-6659778c46-9sxc4                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-7               test4-0                                                            8010m (3%)    11600m (5%)  16424Mi (0%)     21689584844800m (1%)  101m
+  s-jain-training-8               ml-pipeline-ui-artifact-fb8c99584-6mpcr                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-8               ml-pipeline-visualizationserver-6659778c46-wdq44                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-9               ml-pipeline-ui-artifact-fb8c99584-lmg7n                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           2d7h
+  s-jain-training-9               ml-pipeline-visualizationserver-6659778c46-kv2cq                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              2d7h
+  s-jain-training-9               test-0                                                             8010m (3%)    11600m (5%)  16424Mi (0%)     21689584844800m (1%)  100m
+  s-jaincollege-it-6080           ml-pipeline-ui-artifact-fb8c99584-hqgrd                            20m (0%)      2100m (0%)   110Mi (0%)       1524Mi (0%)           3d1h
+  s-jaincollege-it-6080           ml-pipeline-visualizationserver-6659778c46-gr42h                   60m (0%)      2500m (1%)   240Mi (0%)       2Gi (0%)              3d1h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                Requests           Limits
+  --------                --------           ------
+  cpu                     131785m (58%)      434 (193%)
+  memory                  283366508Ki (13%)  527780930816 (24%)
+  ephemeral-storage       0 (0%)             0 (0%)
+  hugepages-1Gi           0 (0%)             0 (0%)
+  hugepages-2Mi           0 (0%)             0 (0%)
+  nvidia.com/gpu          0                  0
+  nvidia.com/mig-1g.18gb  16                 16
+  nvidia.com/mig-2g.35gb  0                  0
+  nvidia.com/mig-3g.71gb  0                  0
+Events:                   <none>
+
+
+Name:               jainhpmgmt
+Roles:              control-plane
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    feature.node.kubernetes.io/cpu-cpuid.ADX=true
+                    feature.node.kubernetes.io/cpu-cpuid.AESNI=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX2=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512BW=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512CD=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512DQ=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512F=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512VL=true
+                    feature.node.kubernetes.io/cpu-cpuid.AVX512VNNI=true
+                    feature.node.kubernetes.io/cpu-cpuid.CMPXCHG8=true
+                    feature.node.kubernetes.io/cpu-cpuid.FLUSH_L1D=true
+                    feature.node.kubernetes.io/cpu-cpuid.FMA3=true
+                    feature.node.kubernetes.io/cpu-cpuid.FXSR=true
+                    feature.node.kubernetes.io/cpu-cpuid.FXSROPT=true
+                    feature.node.kubernetes.io/cpu-cpuid.IA32_ARCH_CAP=true
+                    feature.node.kubernetes.io/cpu-cpuid.IBPB=true
+                    feature.node.kubernetes.io/cpu-cpuid.LAHF=true
+                    feature.node.kubernetes.io/cpu-cpuid.MD_CLEAR=true
+                    feature.node.kubernetes.io/cpu-cpuid.MOVBE=true
+                    feature.node.kubernetes.io/cpu-cpuid.MPX=true
+                    feature.node.kubernetes.io/cpu-cpuid.OSXSAVE=true
+                    feature.node.kubernetes.io/cpu-cpuid.SPEC_CTRL_SSBD=true
+                    feature.node.kubernetes.io/cpu-cpuid.STIBP=true
+                    feature.node.kubernetes.io/cpu-cpuid.SYSCALL=true
+                    feature.node.kubernetes.io/cpu-cpuid.SYSEE=true
+                    feature.node.kubernetes.io/cpu-cpuid.VMX=true
+                    feature.node.kubernetes.io/cpu-cpuid.X87=true
+                    feature.node.kubernetes.io/cpu-cpuid.XGETBV1=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVE=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVEC=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVEOPT=true
+                    feature.node.kubernetes.io/cpu-cpuid.XSAVES=true
+                    feature.node.kubernetes.io/cpu-cstate.enabled=true
+                    feature.node.kubernetes.io/cpu-hardware_multithreading=true
+                    feature.node.kubernetes.io/cpu-model.family=6
+                    feature.node.kubernetes.io/cpu-model.id=85
+                    feature.node.kubernetes.io/cpu-model.vendor_id=Intel
+                    feature.node.kubernetes.io/cpu-pstate.scaling_governor=powersave
+                    feature.node.kubernetes.io/cpu-pstate.status=active
+                    feature.node.kubernetes.io/cpu-pstate.turbo=true
+                    feature.node.kubernetes.io/cpu-rdt.RDTCMT=true
+                    feature.node.kubernetes.io/cpu-rdt.RDTL3CA=true
+                    feature.node.kubernetes.io/cpu-rdt.RDTMBA=true
+                    feature.node.kubernetes.io/cpu-rdt.RDTMBM=true
+                    feature.node.kubernetes.io/cpu-rdt.RDTMON=true
+                    feature.node.kubernetes.io/kernel-config.NO_HZ=true
+                    feature.node.kubernetes.io/kernel-config.NO_HZ_FULL=true
+                    feature.node.kubernetes.io/kernel-version.full=6.8.0-57-generic
+                    feature.node.kubernetes.io/kernel-version.major=6
+                    feature.node.kubernetes.io/kernel-version.minor=8
+                    feature.node.kubernetes.io/kernel-version.revision=0
+                    feature.node.kubernetes.io/memory-numa=true
+                    feature.node.kubernetes.io/pci-102b.present=true
+                    feature.node.kubernetes.io/pci-14e4.present=true
+                    feature.node.kubernetes.io/system-os_release.ID=ubuntu
+                    feature.node.kubernetes.io/system-os_release.VERSION_ID=22.04
+                    feature.node.kubernetes.io/system-os_release.VERSION_ID.major=22
+                    feature.node.kubernetes.io/system-os_release.VERSION_ID.minor=04
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=jainhpmgmt
+                    kubernetes.io/os=linux
+                    node-role.kubernetes.io/control-plane=
+                    node.kubernetes.io/exclude-from-external-load-balancers=
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///var/run/cri-dockerd.sock
+                    nfd.node.kubernetes.io/extended-resources: 
+                    nfd.node.kubernetes.io/feature-labels:
+                      cpu-cpuid.ADX,cpu-cpuid.AESNI,cpu-cpuid.AVX,cpu-cpuid.AVX2,cpu-cpuid.AVX512BW,cpu-cpuid.AVX512CD,cpu-cpuid.AVX512DQ,cpu-cpuid.AVX512F,cpu-...
+                    nfd.node.kubernetes.io/worker.version: v0.12.1
+                    node.alpha.kubernetes.io/ttl: 0
+                    projectcalico.org/IPv4Address: 192.168.1.249/24
+                    projectcalico.org/IPv4VXLANTunnelAddr: 10.233.66.128
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Tue, 15 Apr 2025 13:25:00 +0000
+Taints:             node-role.kubernetes.io/master:NoSchedule
+Unschedulable:      false
+Lease:
+  HolderIdentity:  jainhpmgmt
+  AcquireTime:     <unset>
+  RenewTime:       Mon, 21 Apr 2025 12:02:34 +0000
+Conditions:
+  Type                 Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----                 ------  -----------------                 ------------------                ------                       -------
+  NetworkUnavailable   False   Mon, 21 Apr 2025 03:52:45 +0000   Mon, 21 Apr 2025 03:52:45 +0000   CalicoIsUp                   Calico is running on this node
+  MemoryPressure       False   Mon, 21 Apr 2025 12:02:40 +0000   Mon, 21 Apr 2025 03:52:09 +0000   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure         False   Mon, 21 Apr 2025 12:02:40 +0000   Mon, 21 Apr 2025 03:52:09 +0000   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure          False   Mon, 21 Apr 2025 12:02:40 +0000   Mon, 21 Apr 2025 03:52:09 +0000   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready                True    Mon, 21 Apr 2025 12:02:40 +0000   Mon, 21 Apr 2025 03:52:09 +0000   KubeletReady                 kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:  192.168.1.249
+  Hostname:    jainhpmgmt
+Capacity:
+  cpu:                40
+  ephemeral-storage:  3458000256Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             65582816Ki
+  pods:               110
+Allocatable:
+  cpu:                40
+  ephemeral-storage:  3186893030654
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             65480416Ki
+  pods:               110
+System Info:
+  Machine ID:                 e5d5c253f35c48bbb955f43b8c71ca4c
+  System UUID:                37303550-3135-4753-4834-303247503447
+  Boot ID:                    1c64c70d-2106-469e-9402-dab764206fd9
+  Kernel Version:             6.8.0-57-generic
+  OS Image:                   Ubuntu 22.04.5 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  docker://20.10.20
+  Kubelet Version:            v1.26.5
+  Kube-Proxy Version:         v1.26.5
+PodCIDR:                      10.233.65.0/24
+PodCIDRs:                     10.233.65.0/24
+Non-terminated Pods:          (8 in total)
+  Namespace                   Name                                                       CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                                       ------------  ----------  ---------------  -------------  ---
+  gpu-operator                nvidia-gpu-operator-node-feature-discovery-worker-lt7cp    0 (0%)        0 (0%)      0 (0%)           0 (0%)         5d22h
+  kube-system                 calico-node-bmhr4                                          150m (0%)     300m (0%)   64M (0%)         500M (0%)      5d22h
+  kube-system                 coredns-645b46f4b6-js8ql                                   100m (0%)     0 (0%)      70Mi (0%)        300Mi (0%)     5d22h
+  kube-system                 kube-apiserver-jainhpmgmt                                  250m (0%)     0 (0%)      0 (0%)           0 (0%)         5d22h
+  kube-system                 kube-controller-manager-jainhpmgmt                         200m (0%)     0 (0%)      0 (0%)           0 (0%)         5d22h
+  kube-system                 kube-proxy-xdhk6                                           0 (0%)        0 (0%)      0 (0%)           0 (0%)         5d22h
+  kube-system                 kube-scheduler-jainhpmgmt                                  100m (0%)     0 (0%)      0 (0%)           0 (0%)         5d22h
+  kube-system                 nodelocaldns-2g9bm                                         100m (0%)     0 (0%)      70Mi (0%)        200Mi (0%)     5d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests        Limits
+  --------           --------        ------
+  cpu                900m (2%)       300m (0%)
+  memory             210800640 (0%)  1024288k (1%)
+  ephemeral-storage  0 (0%)          0 (0%)
+  hugepages-1Gi      0 (0%)          0 (0%)
+  hugepages-2Mi      0 (0%)          0 (0%)
+Events:              <none>

@@ -1,0 +1,90 @@
+Namespace: kube-system
+Pod Name: nodelocaldns-jrzcm
+Status: 1/1
+Other Details: Running     1 (63m ago)    63m
+Name:                 nodelocaldns-jrzcm
+Namespace:            kube-system
+Priority:             2000000000
+Priority Class Name:  system-cluster-critical
+Service Account:      nodelocaldns
+Node:                 jainhpmgmt/192.168.1.249
+Start Time:           Wed, 16 Apr 2025 05:15:27 +0000
+Labels:               controller-revision-hash=5cc654b79c
+                      k8s-app=node-local-dns
+                      pod-template-generation=6
+Annotations:          kubectl.kubernetes.io/restartedAt: 2025-04-16T05:15:26Z
+                      prometheus.io/port: 9253
+                      prometheus.io/scrape: true
+Status:               Running
+IP:                   192.168.1.249
+IPs:
+  IP:           192.168.1.249
+Controlled By:  DaemonSet/nodelocaldns
+Containers:
+  node-cache:
+    Container ID:  docker://0086c8af248fb183bf4d07fb205030492791d9d27181992fe743239a1b1b4ebd
+    Image:         registry.k8s.io/dns/k8s-dns-node-cache:1.22.18
+    Image ID:      docker-pullable://registry.k8s.io/dns/k8s-dns-node-cache@sha256:6edf05a385e854def4b34cdca0778585303e1d734861b989029541ec1192d2b1
+    Ports:         53/UDP, 53/TCP, 9253/TCP
+    Host Ports:    53/UDP, 53/TCP, 9253/TCP
+    Args:
+      -localip
+      169.254.25.10
+      -conf
+      /etc/coredns/Corefile
+      -upstreamsvc
+      coredns
+    State:          Running
+      Started:      Wed, 16 Apr 2025 05:15:29 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Wed, 16 Apr 2025 05:15:28 +0000
+      Finished:     Wed, 16 Apr 2025 05:15:28 +0000
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      memory:  200Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://169.254.25.10:9254/health delay=0s timeout=5s period=10s #success=1 #failure=10
+    Readiness:    http-get http://169.254.25.10:9254/health delay=0s timeout=5s period=10s #success=1 #failure=10
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (rw)
+      /run/xtables.lock from xtables-lock (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-8djtc (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      nodelocaldns
+    Optional:  false
+  xtables-lock:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/xtables.lock
+    HostPathType:  FileOrCreate
+  kube-api-access-8djtc:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 :NoSchedule op=Exists
+                             :NoExecute op=Exists
+                             node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/network-unavailable:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+Events:                      <none>

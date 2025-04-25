@@ -1,0 +1,95 @@
+NAMESPACE                        NAME                                                              READY   STATUS                     RESTARTS         AGE
+auth                             dex-78dbd9df47-jx82l                                              1/1     Running                    0                2m37s
+cert-manager                     cert-manager-7fb78674d7-d8xdm                                     1/1     Running                    4 (45h ago)      2d23h
+cert-manager                     cert-manager-cainjector-5dfc946d84-vchfv                          1/1     Running                    4 (45h ago)      2d23h
+cert-manager                     cert-manager-webhook-8744b7588-95tsw                              1/1     Running                    4 (45h ago)      2d23h
+deepops-nfs-client-provisioner   nfs-subdir-external-provisioner-7859dcd666-fn27v                  1/1     Running                    6 (4h38m ago)    2d23h
+f-jain-dc-9                      ml-pipeline-ui-artifact-fb8c99584-xdlrt                           2/2     Running                    0                146m
+f-jain-dc-9                      ml-pipeline-visualizationserver-6659778c46-56vhp                  2/2     Running                    0                146m
+f-jain-santosh-1234              ml-pipeline-ui-artifact-fb8c99584-nl8zk                           2/2     Running                    0                4h59m
+f-jain-santosh-1234              ml-pipeline-visualizationserver-6659778c46-hj8qs                  2/2     Running                    0                4h59m
+f-jain-test-1234                 ml-pipeline-ui-artifact-fb8c99584-d2brf                           2/2     Running                    0                5h2m
+f-jain-test-1234                 ml-pipeline-visualizationserver-6659778c46-x2kwr                  2/2     Running                    0                5h2m
+f-test-test123-1234              ml-pipeline-ui-artifact-fb8c99584-qm9hr                           2/2     Running                    0                6h54m
+f-test-test123-1234              ml-pipeline-visualizationserver-6659778c46-j2p8f                  2/2     Running                    0                6h54m
+gpu-operator                     gpu-feature-discovery-76rgw                                       1/1     Running                    4 (45h ago)      2d23h
+gpu-operator                     gpu-operator-784b7c5578-6rrmq                                     1/1     Running                    5 (45h ago)      2d23h
+gpu-operator                     nvidia-container-toolkit-daemonset-vpwx6                          1/1     Running                    4 (45h ago)      2d23h
+gpu-operator                     nvidia-cuda-validator-hv2gk                                       0/1     Completed                  0                45h
+gpu-operator                     nvidia-dcgm-exporter-7r575                                        1/1     Running                    4 (45h ago)      2d23h
+gpu-operator                     nvidia-device-plugin-daemonset-86zm6                              1/1     Running                    4 (45h ago)      2d23h
+gpu-operator                     nvidia-device-plugin-validator-gp5c2                              0/1     UnexpectedAdmissionError   0                45h
+gpu-operator                     nvidia-gpu-operator-node-feature-discovery-master-6f78fb7c8ttft   1/1     Running                    4 (45h ago)      2d23h
+gpu-operator                     nvidia-gpu-operator-node-feature-discovery-worker-lt7cp           1/1     Running                    19 (45h ago)     2d23h
+gpu-operator                     nvidia-gpu-operator-node-feature-discovery-worker-qhvdq           1/1     Running                    4 (45h ago)      2d23h
+gpu-operator                     nvidia-mig-manager-w5wnl                                          1/1     Running                    4 (45h ago)      2d23h
+gpu-operator                     nvidia-operator-validator-6qpmj                                   1/1     Running                    4 (45h ago)      2d23h
+istio-system                     authservice-0                                                     1/1     Running                    4 (45h ago)      2d23h
+istio-system                     cluster-local-gateway-675bb7b74-cwff8                             1/1     Running                    4 (45h ago)      2d23h
+istio-system                     istio-ingressgateway-c7fdd4bf6-fk9xr                              1/1     Running                    4 (45h ago)      2d23h
+istio-system                     istiod-6995577d4-rqkxf                                            1/1     Running                    4 (45h ago)      2d23h
+knative-eventing                 eventing-controller-86647cbc5b-74f5h                              1/1     Running                    4 (45h ago)      2d23h
+knative-eventing                 eventing-webhook-6f48bb5f4c-9g22s                                 1/1     Running                    4 (45h ago)      2d23h
+knative-serving                  activator-855b695596-gsl4r                                        2/2     Running                    25 (45h ago)     2d23h
+knative-serving                  autoscaler-7cbddfc9f7-nlkt8                                       2/2     Running                    10 (45h ago)     2d23h
+knative-serving                  controller-6657c556fd-gh2l8                                       2/2     Running                    24 (45h ago)     2d23h
+knative-serving                  domain-mapping-544987775c-44vdw                                   2/2     Running                    31 (45h ago)     2d23h
+knative-serving                  domainmapping-webhook-6b48bdc856-xzltg                            2/2     Running                    31 (45h ago)     2d23h
+knative-serving                  net-istio-controller-6fbdbd9959-tzxhx                             2/2     Running                    17 (45h ago)     2d23h
+knative-serving                  net-istio-webhook-7d4879cd7f-z8skv                                2/2     Running                    23 (45h ago)     2d23h
+knative-serving                  webhook-665c977469-gvbx5                                          2/2     Running                    31 (45h ago)     2d23h
+kube-system                      calico-kube-controllers-6dfcdfb99-ftq5q                           1/1     Running                    5 (45h ago)      3d
+kube-system                      calico-node-bmhr4                                                 1/1     Running                    3 (2d2h ago)     3d
+kube-system                      calico-node-z7p9d                                                 1/1     Running                    5 (45h ago)      3d
+kube-system                      coredns-645b46f4b6-js8ql                                          1/1     Running                    3 (2d2h ago)     3d
+kube-system                      coredns-645b46f4b6-m4zhl                                          1/1     Running                    5 (45h ago)      3d
+kube-system                      dns-autoscaler-659b8c48cb-bdf68                                   1/1     Running                    5 (45h ago)      3d
+kube-system                      kube-apiserver-jain-dgx-server                                    1/1     Running                    6 (45h ago)      3d
+kube-system                      kube-apiserver-jainhpmgmt                                         1/1     Running                    25 (45h ago)     3d
+kube-system                      kube-controller-manager-jain-dgx-server                           1/1     Running                    8 (45h ago)      3d
+kube-system                      kube-controller-manager-jainhpmgmt                                1/1     Running                    7 (2d2h ago)     3d
+kube-system                      kube-proxy-2hsl4                                                  1/1     Running                    4 (45h ago)      2d23h
+kube-system                      kube-proxy-xdhk6                                                  1/1     Running                    3 (2d2h ago)     2d23h
+kube-system                      kube-scheduler-jain-dgx-server                                    1/1     Running                    7 (45h ago)      3d
+kube-system                      kube-scheduler-jainhpmgmt                                         1/1     Running                    6 (2d2h ago)     3d
+kube-system                      kubernetes-dashboard-5779d79d4c-t4gsj                             1/1     Running                    5 (45h ago)      3d
+kube-system                      kubernetes-metrics-scraper-6cdb9fb87f-l5k72                       1/1     Running                    5 (45h ago)      3d
+kube-system                      nodelocaldns-2g9bm                                                1/1     Running                    11 (2d2h ago)    2d2h
+kube-system                      nodelocaldns-2gdzm                                                1/1     Running                    8 (45h ago)      2d2h
+kubeflow-deepops-example-com     ml-pipeline-ui-artifact-fb8c99584-x26n7                           2/2     Running                    8 (45h ago)      2d22h
+kubeflow-deepops-example-com     ml-pipeline-visualizationserver-6659778c46-pglw8                  2/2     Running                    8 (45h ago)      2d22h
+kubeflow-deepops-example-com     test1-0                                                           2/2     Running                    0                66m
+kubeflow-deepops-example-com     test123-0                                                         2/2     Running                    0                65m
+kubeflow                         admission-webhook-deployment-7d56d4455f-q5mgb                     1/1     Running                    4 (45h ago)      2d23h
+kubeflow                         cache-server-6b44c46d47-cwfcx                                     2/2     Running                    12 (45h ago)     2d23h
+kubeflow                         centraldashboard-d45f69689-h8srw                                  2/2     Running                    8 (45h ago)      2d23h
+kubeflow                         jupyter-web-app-deployment-57864d5958-hwgcm                       2/2     Running                    8 (45h ago)      2d23h
+kubeflow                         katib-controller-7964698977-lvbjp                                 1/1     Running                    4 (45h ago)      2d23h
+kubeflow                         katib-db-manager-57474ccbbf-mpmbb                                 1/1     Running                    6 (45h ago)      2d23h
+kubeflow                         katib-mysql-66c8cdff4f-4px7x                                      1/1     Running                    4 (45h ago)      2d23h
+kubeflow                         katib-ui-57d77d7d75-jqg24                                         2/2     Running                    34 (45h ago)     2d23h
+kubeflow                         kserve-controller-manager-96b896c66-txffr                         2/2     Running                    9 (45h ago)      2d23h
+kubeflow                         kserve-models-web-app-9fbcd79f5-xmdlm                             2/2     Running                    8 (45h ago)      2d23h
+kubeflow                         kubeflow-pipelines-profile-controller-6f6bc888df-qmxng            1/1     Running                    4 (45h ago)      2d23h
+kubeflow                         metacontroller-0                                                  1/1     Running                    4 (45h ago)      2d23h
+kubeflow                         metadata-envoy-deployment-7b49bdb748-v98w4                        1/1     Running                    4 (45h ago)      2d23h
+kubeflow                         metadata-grpc-deployment-6d744c66bb-wfqxl                         2/2     Running                    42 (45h ago)     2d23h
+kubeflow                         metadata-writer-5bfdbf79b7-9n4sp                                  2/2     Running                    25 (45h ago)     2d23h
+kubeflow                         minio-549846c488-rbjp2                                            2/2     Running                    8 (45h ago)      2d23h
+kubeflow                         ml-pipeline-86d69497fc-r96w7                                      2/2     Running                    17 (45h ago)     2d23h
+kubeflow                         ml-pipeline-persistenceagent-5789446f9c-zdcj5                     2/2     Running                    19 (45h ago)     2d23h
+kubeflow                         ml-pipeline-scheduledworkflow-fb9fbd76b-gtbw4                     2/2     Running                    8 (45h ago)      2d23h
+kubeflow                         ml-pipeline-ui-74fcbdddd9-xsl27                                   2/2     Running                    8 (45h ago)      2d23h
+kubeflow                         ml-pipeline-viewer-crd-bdf696cb9-pz4cc                            2/2     Running                    31 (45h ago)     2d23h
+kubeflow                         ml-pipeline-visualizationserver-845d745b46-md48c                  2/2     Running                    8 (45h ago)      2d23h
+kubeflow                         mysql-5f968d4688-ffd8d                                            2/2     Running                    8 (45h ago)      2d23h
+kubeflow                         notebook-controller-deployment-7cdb9d9f7b-kbdcc                   2/2     Running                    19 (45h ago)     2d23h
+kubeflow                         profiles-deployment-7cf8b9b794-g2llh                              3/3     Running                    41 (45h ago)     2d23h
+kubeflow                         tensorboard-controller-deployment-697c566bd5-478bw                3/3     Running                    28 (45h ago)     2d23h
+kubeflow                         tensorboards-web-app-deployment-67bf5977c9-49g85                  2/2     Running                    8 (45h ago)      2d23h
+kubeflow                         training-operator-64886bdddc-kkm8j                                1/1     Running                    4 (45h ago)      2d23h
+kubeflow                         volumes-web-app-deployment-7f8c75d5b-44vnt                        2/2     Running                    8 (45h ago)      2d23h
+kubeflow                         workflow-controller-56cc57796-kl4vb                               2/2     Running                    22 (4h38m ago)   2d23h
+ln-s-jaincollege-ece-123         work                                                              1/1     Running                    0                12m
+s-jaincollege-it-6080            ml-pipeline-ui-artifact-fb8c99584-hqgrd                           2/2     Running                    0                173m
+s-jaincollege-it-6080            ml-pipeline-visualizationserver-6659778c46-gr42h                  2/2     Running                    0                173m

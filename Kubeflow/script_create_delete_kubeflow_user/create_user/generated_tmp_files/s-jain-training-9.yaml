@@ -1,0 +1,18 @@
+apiVersion: kubeflow.org/v1beta1
+kind: Profile
+metadata:
+  name: s-jain-training-9
+spec:
+  owner:
+    kind: User
+    name: s-jain-training-9
+  resourceQuotaSpec:
+    hard:
+      cpu: "17"
+      memory: "33Gi"
+      requests.nvidia.com/gpu: "1"
+      requests.nvidia.com/mig-3g.71gb: "1"
+      requests.nvidia.com/mig-2g.35gb: "1"
+      requests.nvidia.com/mig-1g.18gb: "1"
+      requests.storage: "50Gi"
+  

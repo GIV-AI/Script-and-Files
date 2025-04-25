@@ -1,0 +1,2 @@
+Defaulted container "nvidia-device-plugin-validator" out of: nvidia-device-plugin-validator, plugin-validation (init)
+device-plugin workload validation is successful

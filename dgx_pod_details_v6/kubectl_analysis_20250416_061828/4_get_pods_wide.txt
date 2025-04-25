@@ -1,0 +1,86 @@
+NAMESPACE                        NAME                                                              READY   STATUS      RESTARTS       AGE   IP               NODE              NOMINATED NODE   READINESS GATES
+auth                             dex-75bfc469fb-vjt7j                                              1/1     Running     0              14m   10.233.119.203   jain-dgx-server   <none>           <none>
+cert-manager                     cert-manager-7fb78674d7-d8xdm                                     1/1     Running     1 (12h ago)    16h   10.233.119.141   jain-dgx-server   <none>           <none>
+cert-manager                     cert-manager-cainjector-5dfc946d84-vchfv                          1/1     Running     1 (12h ago)    16h   10.233.119.154   jain-dgx-server   <none>           <none>
+cert-manager                     cert-manager-webhook-8744b7588-95tsw                              1/1     Running     1 (12h ago)    16h   10.233.119.151   jain-dgx-server   <none>           <none>
+deepops-nfs-client-provisioner   nfs-subdir-external-provisioner-7859dcd666-fn27v                  1/1     Running     1 (12h ago)    16h   10.233.119.148   jain-dgx-server   <none>           <none>
+f-test-test123-1234              ml-pipeline-ui-artifact-fb8c99584-9lxxp                           2/2     Running     0              18m   10.233.119.202   jain-dgx-server   <none>           <none>
+f-test-test123-1234              ml-pipeline-visualizationserver-6659778c46-8mrd6                  2/2     Running     0              18m   10.233.119.201   jain-dgx-server   <none>           <none>
+gpu-operator                     gpu-feature-discovery-76rgw                                       1/1     Running     1 (12h ago)    16h   10.233.119.166   jain-dgx-server   <none>           <none>
+gpu-operator                     gpu-operator-784b7c5578-6rrmq                                     1/1     Running     1 (12h ago)    16h   10.233.119.139   jain-dgx-server   <none>           <none>
+gpu-operator                     nvidia-container-toolkit-daemonset-vpwx6                          1/1     Running     1 (12h ago)    16h   10.233.119.143   jain-dgx-server   <none>           <none>
+gpu-operator                     nvidia-cuda-validator-7gwbn                                       0/1     Completed   0              84m   10.233.119.197   jain-dgx-server   <none>           <none>
+gpu-operator                     nvidia-dcgm-exporter-7r575                                        1/1     Running     1 (12h ago)    16h   10.233.119.137   jain-dgx-server   <none>           <none>
+gpu-operator                     nvidia-device-plugin-daemonset-86zm6                              1/1     Running     1 (12h ago)    16h   10.233.119.144   jain-dgx-server   <none>           <none>
+gpu-operator                     nvidia-device-plugin-validator-xlm4n                              0/1     Completed   0              83m   10.233.119.199   jain-dgx-server   <none>           <none>
+gpu-operator                     nvidia-gpu-operator-node-feature-discovery-master-6f78fb7c8ttft   1/1     Running     1 (12h ago)    16h   10.233.119.134   jain-dgx-server   <none>           <none>
+gpu-operator                     nvidia-gpu-operator-node-feature-discovery-worker-lt7cp           1/1     Running     1 (12h ago)    16h   10.233.66.131    jainhpmgmt        <none>           <none>
+gpu-operator                     nvidia-gpu-operator-node-feature-discovery-worker-qhvdq           1/1     Running     1 (12h ago)    16h   10.233.119.140   jain-dgx-server   <none>           <none>
+gpu-operator                     nvidia-mig-manager-w5wnl                                          1/1     Running     1 (12h ago)    16h   10.233.119.146   jain-dgx-server   <none>           <none>
+gpu-operator                     nvidia-operator-validator-6qpmj                                   1/1     Running     1 (12h ago)    16h   10.233.119.145   jain-dgx-server   <none>           <none>
+istio-system                     authservice-0                                                     1/1     Running     1 (88m ago)    16h   10.233.119.158   jain-dgx-server   <none>           <none>
+istio-system                     cluster-local-gateway-675bb7b74-cwff8                             1/1     Running     1 (12h ago)    16h   10.233.119.172   jain-dgx-server   <none>           <none>
+istio-system                     istio-ingressgateway-c7fdd4bf6-fk9xr                              1/1     Running     1 (12h ago)    16h   10.233.119.171   jain-dgx-server   <none>           <none>
+istio-system                     istiod-6995577d4-rqkxf                                            1/1     Running     1 (12h ago)    16h   10.233.119.169   jain-dgx-server   <none>           <none>
+knative-eventing                 eventing-controller-86647cbc5b-74f5h                              1/1     Running     1 (12h ago)    16h   10.233.119.162   jain-dgx-server   <none>           <none>
+knative-eventing                 eventing-webhook-6f48bb5f4c-9g22s                                 1/1     Running     1 (12h ago)    16h   10.233.119.157   jain-dgx-server   <none>           <none>
+knative-serving                  activator-855b695596-gsl4r                                        2/2     Running     18 (12h ago)   16h   10.233.119.182   jain-dgx-server   <none>           <none>
+knative-serving                  autoscaler-7cbddfc9f7-nlkt8                                       2/2     Running     3 (12h ago)    16h   10.233.119.163   jain-dgx-server   <none>           <none>
+knative-serving                  controller-6657c556fd-gh2l8                                       2/2     Running     12 (83m ago)   16h   10.233.119.160   jain-dgx-server   <none>           <none>
+knative-serving                  domain-mapping-544987775c-44vdw                                   2/2     Running     20 (84m ago)   16h   10.233.119.173   jain-dgx-server   <none>           <none>
+knative-serving                  domainmapping-webhook-6b48bdc856-xzltg                            2/2     Running     19 (84m ago)   16h   10.233.119.156   jain-dgx-server   <none>           <none>
+knative-serving                  net-istio-controller-6fbdbd9959-tzxhx                             2/2     Running     5 (84m ago)    16h   10.233.119.181   jain-dgx-server   <none>           <none>
+knative-serving                  net-istio-webhook-7d4879cd7f-z8skv                                2/2     Running     11 (84m ago)   16h   10.233.119.164   jain-dgx-server   <none>           <none>
+knative-serving                  webhook-665c977469-gvbx5                                          2/2     Running     19 (84m ago)   16h   10.233.119.142   jain-dgx-server   <none>           <none>
+kube-system                      calico-kube-controllers-6dfcdfb99-ftq5q                           1/1     Running     2 (12h ago)    16h   10.233.119.136   jain-dgx-server   <none>           <none>
+kube-system                      calico-node-bmhr4                                                 1/1     Running     1 (12h ago)    16h   192.168.1.249    jainhpmgmt        <none>           <none>
+kube-system                      calico-node-z7p9d                                                 1/1     Running     2 (12h ago)    16h   192.168.1.248    jain-dgx-server   <none>           <none>
+kube-system                      coredns-645b46f4b6-js8ql                                          1/1     Running     1 (12h ago)    16h   10.233.66.132    jainhpmgmt        <none>           <none>
+kube-system                      coredns-645b46f4b6-m4zhl                                          1/1     Running     2 (12h ago)    16h   10.233.119.185   jain-dgx-server   <none>           <none>
+kube-system                      dns-autoscaler-659b8c48cb-bdf68                                   1/1     Running     2 (12h ago)    16h   10.233.119.130   jain-dgx-server   <none>           <none>
+kube-system                      kube-apiserver-jain-dgx-server                                    1/1     Running     3 (12h ago)    16h   192.168.1.248    jain-dgx-server   <none>           <none>
+kube-system                      kube-apiserver-jainhpmgmt                                         1/1     Running     6 (88m ago)    16h   192.168.1.249    jainhpmgmt        <none>           <none>
+kube-system                      kube-controller-manager-jain-dgx-server                           1/1     Running     5 (12h ago)    16h   192.168.1.248    jain-dgx-server   <none>           <none>
+kube-system                      kube-controller-manager-jainhpmgmt                                1/1     Running     3 (12h ago)    16h   192.168.1.249    jainhpmgmt        <none>           <none>
+kube-system                      kube-proxy-2hsl4                                                  1/1     Running     1 (12h ago)    16h   192.168.1.248    jain-dgx-server   <none>           <none>
+kube-system                      kube-proxy-xdhk6                                                  1/1     Running     1 (12h ago)    16h   192.168.1.249    jainhpmgmt        <none>           <none>
+kube-system                      kube-scheduler-jain-dgx-server                                    1/1     Running     4 (12h ago)    16h   192.168.1.248    jain-dgx-server   <none>           <none>
+kube-system                      kube-scheduler-jainhpmgmt                                         1/1     Running     3 (12h ago)    16h   192.168.1.249    jainhpmgmt        <none>           <none>
+kube-system                      kubernetes-dashboard-5779d79d4c-t4gsj                             1/1     Running     2 (12h ago)    16h   10.233.119.132   jain-dgx-server   <none>           <none>
+kube-system                      kubernetes-metrics-scraper-6cdb9fb87f-l5k72                       1/1     Running     2 (12h ago)    16h   10.233.119.138   jain-dgx-server   <none>           <none>
+kube-system                      nodelocaldns-j2v27                                                1/1     Running     0              63m   192.168.1.248    jain-dgx-server   <none>           <none>
+kube-system                      nodelocaldns-jrzcm                                                1/1     Running     1 (63m ago)    63m   192.168.1.249    jainhpmgmt        <none>           <none>
+kubeflow-deepops-example-com     ml-pipeline-ui-artifact-fb8c99584-x26n7                           2/2     Running     2 (12h ago)    15h   10.233.119.150   jain-dgx-server   <none>           <none>
+kubeflow-deepops-example-com     ml-pipeline-visualizationserver-6659778c46-pglw8                  2/2     Running     2 (12h ago)    15h   10.233.119.159   jain-dgx-server   <none>           <none>
+kubeflow-deepops-example-com     test-0                                                            2/2     Running     0              84m   10.233.119.198   jain-dgx-server   <none>           <none>
+kubeflow-deepops-example-com     testing-0                                                         2/2     Running     0              57m   10.233.119.200   jain-dgx-server   <none>           <none>
+kubeflow                         admission-webhook-deployment-7d56d4455f-q5mgb                     1/1     Running     1 (12h ago)    16h   10.233.119.183   jain-dgx-server   <none>           <none>
+kubeflow                         cache-server-6b44c46d47-cwfcx                                     2/2     Running     6 (12h ago)    16h   10.233.119.188   jain-dgx-server   <none>           <none>
+kubeflow                         centraldashboard-d45f69689-h8srw                                  2/2     Running     2 (12h ago)    16h   10.233.119.168   jain-dgx-server   <none>           <none>
+kubeflow                         jupyter-web-app-deployment-57864d5958-hwgcm                       2/2     Running     2 (12h ago)    16h   10.233.119.155   jain-dgx-server   <none>           <none>
+kubeflow                         katib-controller-7964698977-lvbjp                                 1/1     Running     1 (12h ago)    16h   10.233.119.170   jain-dgx-server   <none>           <none>
+kubeflow                         katib-db-manager-57474ccbbf-mpmbb                                 1/1     Running     3 (83m ago)    16h   10.233.119.161   jain-dgx-server   <none>           <none>
+kubeflow                         katib-mysql-66c8cdff4f-4px7x                                      1/1     Running     1 (88m ago)    16h   10.233.119.174   jain-dgx-server   <none>           <none>
+kubeflow                         katib-ui-57d77d7d75-jqg24                                         2/2     Running     22 (84m ago)   16h   10.233.119.165   jain-dgx-server   <none>           <none>
+kubeflow                         kserve-controller-manager-96b896c66-txffr                         2/2     Running     2 (12h ago)    16h   10.233.119.176   jain-dgx-server   <none>           <none>
+kubeflow                         kserve-models-web-app-9fbcd79f5-xmdlm                             2/2     Running     2 (12h ago)    16h   10.233.119.135   jain-dgx-server   <none>           <none>
+kubeflow                         kubeflow-pipelines-profile-controller-6f6bc888df-qmxng            1/1     Running     1 (12h ago)    16h   10.233.119.131   jain-dgx-server   <none>           <none>
+kubeflow                         metacontroller-0                                                  1/1     Running     1 (12h ago)    16h   10.233.119.147   jain-dgx-server   <none>           <none>
+kubeflow                         metadata-envoy-deployment-7b49bdb748-v98w4                        1/1     Running     1 (12h ago)    16h   10.233.119.175   jain-dgx-server   <none>           <none>
+kubeflow                         metadata-grpc-deployment-6d744c66bb-wfqxl                         2/2     Running     28 (83m ago)   16h   10.233.119.149   jain-dgx-server   <none>           <none>
+kubeflow                         metadata-writer-5bfdbf79b7-9n4sp                                  2/2     Running     17 (83m ago)   16h   10.233.119.167   jain-dgx-server   <none>           <none>
+kubeflow                         minio-549846c488-rbjp2                                            2/2     Running     2 (12h ago)    16h   10.233.119.186   jain-dgx-server   <none>           <none>
+kubeflow                         ml-pipeline-86d69497fc-r96w7                                      2/2     Running     9 (12h ago)    16h   10.233.119.195   jain-dgx-server   <none>           <none>
+kubeflow                         ml-pipeline-persistenceagent-5789446f9c-zdcj5                     2/2     Running     13 (12h ago)   16h   10.233.119.153   jain-dgx-server   <none>           <none>
+kubeflow                         ml-pipeline-scheduledworkflow-fb9fbd76b-gtbw4                     2/2     Running     2 (12h ago)    16h   10.233.119.191   jain-dgx-server   <none>           <none>
+kubeflow                         ml-pipeline-ui-74fcbdddd9-xsl27                                   2/2     Running     2 (12h ago)    16h   10.233.119.187   jain-dgx-server   <none>           <none>
+kubeflow                         ml-pipeline-viewer-crd-bdf696cb9-pz4cc                            2/2     Running     19 (84m ago)   16h   10.233.119.196   jain-dgx-server   <none>           <none>
+kubeflow                         ml-pipeline-visualizationserver-845d745b46-md48c                  2/2     Running     2 (12h ago)    16h   10.233.119.190   jain-dgx-server   <none>           <none>
+kubeflow                         mysql-5f968d4688-ffd8d                                            2/2     Running     2 (88m ago)    16h   10.233.119.189   jain-dgx-server   <none>           <none>
+kubeflow                         notebook-controller-deployment-7cdb9d9f7b-kbdcc                   2/2     Running     7 (84m ago)    16h   10.233.119.177   jain-dgx-server   <none>           <none>
+kubeflow                         profiles-deployment-7cf8b9b794-g2llh                              3/3     Running     26 (84m ago)   16h   10.233.119.133   jain-dgx-server   <none>           <none>
+kubeflow                         tensorboard-controller-deployment-697c566bd5-478bw                3/3     Running     12 (84m ago)   16h   10.233.119.178   jain-dgx-server   <none>           <none>
+kubeflow                         tensorboards-web-app-deployment-67bf5977c9-49g85                  2/2     Running     2 (12h ago)    16h   10.233.119.179   jain-dgx-server   <none>           <none>
+kubeflow                         training-operator-64886bdddc-kkm8j                                1/1     Running     1 (12h ago)    16h   10.233.119.184   jain-dgx-server   <none>           <none>
+kubeflow                         volumes-web-app-deployment-7f8c75d5b-44vnt                        2/2     Running     2 (12h ago)    16h   10.233.119.180   jain-dgx-server   <none>           <none>
+kubeflow                         workflow-controller-56cc57796-kl4vb                               2/2     Running     8 (84m ago)    16h   10.233.119.129   jain-dgx-server   <none>           <none>

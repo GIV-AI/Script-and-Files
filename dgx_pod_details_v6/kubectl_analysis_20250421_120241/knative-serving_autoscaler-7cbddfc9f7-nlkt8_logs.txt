@@ -1,0 +1,72 @@
+2025/04/21 05:31:04 Registering 4 clients
+2025/04/21 05:31:04 Registering 5 informer factories
+2025/04/21 05:31:04 Registering 5 informers
+2025/04/21 05:31:04 Registering 1 filtered informers
+2025/04/21 05:31:04 Registering 2 controllers
+2025/04/21 05:31:04 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:05 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:06 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:07 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:08 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:09 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:10 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:11 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:12 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:13 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:14 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:15 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:16 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:17 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:18 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:19 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:20 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:21 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:22 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:23 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:24 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:25 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:26 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:27 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:28 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:29 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:30 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:31 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:32 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:33 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:34 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:35 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:36 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:37 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:38 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:39 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:40 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:41 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:42 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:43 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:44 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:45 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:46 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:47 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:48 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:49 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:31:50 Failed to get k8s version Get "https://10.233.0.1:443/version": dial tcp 10.233.0.1:443: connect: connection refused
+{"severity":"INFO","timestamp":"2025-04-21T05:31:51.910587634Z","logger":"autoscaler","caller":"profiling/server.go:64","message":"Profiling enabled: false","commit":"e82287d"}
+{"severity":"INFO","timestamp":"2025-04-21T05:31:51.914030691Z","logger":"autoscaler","caller":"kpa/controller.go:75","message":"Setting up ConfigMap receivers","commit":"e82287d"}
+{"severity":"INFO","timestamp":"2025-04-21T05:31:51.914360127Z","logger":"autoscaler","caller":"kpa/controller.go:89","message":"Setting up KPA-Class event handlers","commit":"e82287d"}
+{"severity":"INFO","timestamp":"2025-04-21T05:31:52.117893719Z","logger":"autoscaler","caller":"autoscaler/main.go:177","message":"Running with Standard leader election","commit":"e82287d"}
+{"severity":"INFO","timestamp":"2025-04-21T05:31:52.118721116Z","logger":"autoscaler.stats-websocket-server","caller":"statserver/server.go:96","message":"Starting","commit":"e82287d","address":":8080"}
+{"severity":"INFO","timestamp":"2025-04-21T05:31:52.118745886Z","logger":"autoscaler","caller":"leaderelection/context.go:149","message":"autoscaler-bucket-00-of-01 will run in leader-elected mode with id \"autoscaler-7cbddfc9f7-nlkt8_10.233.120.57\"","commit":"e82287d"}
+{"severity":"INFO","timestamp":"2025-04-21T05:31:52.118789653Z","logger":"autoscaler","caller":"controller/controller.go:486","message":"Starting controller and workers","commit":"e82287d","knative.dev/controller":"knative.dev.serving.pkg.reconciler.autoscaling.kpa.Reconciler","knative.dev/kind":"autoscaling.internal.knative.dev.PodAutoscaler"}
+{"severity":"INFO","timestamp":"2025-04-21T05:31:52.11874478Z","logger":"autoscaler","caller":"leaderelection/context.go:149","message":"autoscaler-bucket-00-of-01 will run in leader-elected mode with id \"autoscaler-7cbddfc9f7-nlkt8_10.233.120.57\"","commit":"e82287d"}
+{"severity":"INFO","timestamp":"2025-04-21T05:31:52.118806223Z","logger":"autoscaler","caller":"controller/controller.go:496","message":"Started workers","commit":"e82287d","knative.dev/controller":"knative.dev.serving.pkg.reconciler.autoscaling.kpa.Reconciler","knative.dev/kind":"autoscaling.internal.knative.dev.PodAutoscaler"}
+{"severity":"INFO","timestamp":"2025-04-21T05:31:52.118815042Z","logger":"autoscaler","caller":"controller/controller.go:486","message":"Starting controller and workers","commit":"e82287d","knative.dev/controller":"knative.dev.serving.pkg.reconciler.metric.reconciler","knative.dev/kind":"autoscaling.internal.knative.dev.Metric"}
+{"severity":"INFO","timestamp":"2025-04-21T05:31:52.118823066Z","logger":"autoscaler","caller":"controller/controller.go:496","message":"Started workers","commit":"e82287d","knative.dev/controller":"knative.dev.serving.pkg.reconciler.metric.reconciler","knative.dev/kind":"autoscaling.internal.knative.dev.Metric"}
+I0421 05:31:52.118837       1 leaderelection.go:248] attempting to acquire leader lease knative-serving/autoscaler-bucket-00-of-01...
+I0421 05:31:52.118862       1 leaderelection.go:248] attempting to acquire leader lease knative-serving/autoscaler-bucket-00-of-01...
+I0421 05:33:02.966338       1 leaderelection.go:258] successfully acquired lease knative-serving/autoscaler-bucket-00-of-01
+{"severity":"INFO","timestamp":"2025-04-21T05:33:02.966471258Z","logger":"autoscaler","caller":"leaderelection/context.go:158","message":"\"autoscaler-7cbddfc9f7-nlkt8_10.233.120.57\" has started leading \"autoscaler-bucket-00-of-01\"","commit":"e82287d"}
+{"severity":"INFO","timestamp":"2025-04-21T05:33:02.974305231Z","logger":"autoscaler","caller":"statforwarder/leases.go:194","message":"Created Service for Lease knative-serving/autoscaler-bucket-00-of-01","commit":"e82287d"}
+{"severity":"INFO","timestamp":"2025-04-21T05:33:02.97631498Z","logger":"autoscaler","caller":"statforwarder/leases.go:274","message":"Bucket Endpoints autoscaler-bucket-00-of-01 updated with IP 10.233.120.57","commit":"e82287d"}
+{"severity":"INFO","timestamp":"2025-04-21T05:33:02.976334828Z","logger":"autoscaler","caller":"statforwarder/leases.go:200","message":"Created Endpoints for Lease knative-serving/autoscaler-bucket-00-of-01","commit":"e82287d"}
+I0421 05:33:03.901966       1 leaderelection.go:258] successfully acquired lease knative-serving/autoscaler-bucket-00-of-01
+{"severity":"INFO","timestamp":"2025-04-21T05:33:03.902094565Z","logger":"autoscaler","caller":"leaderelection/context.go:158","message":"\"autoscaler-7cbddfc9f7-nlkt8_10.233.120.57\" has started leading \"autoscaler-bucket-00-of-01\"","commit":"e82287d"}

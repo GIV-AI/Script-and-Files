@@ -1,0 +1,9 @@
+W0421 05:32:00.607277       1 client_config.go:617] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+time="2025-04-21T05:32:23Z" level=info msg="Setting up event handlers"
+time="2025-04-21T05:32:23Z" level=info msg="Setting up event handlers"
+time="2025-04-21T05:32:23Z" level=info msg="Setting up event handlers"
+time="2025-04-21T05:32:23Z" level=info msg="Starting The persistence agent"
+time="2025-04-21T05:32:23Z" level=info msg="Waiting for informer caches to sync"
+time="2025-04-21T05:32:23Z" level=info msg="Starting workers"
+time="2025-04-21T05:32:23Z" level=info msg="Started workers"
+time="2025-04-21T05:32:23Z" level=info msg="Wait for shut down"

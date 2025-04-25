@@ -1,0 +1,1078 @@
+Defaulted container "gpu-feature-discovery" out of: gpu-feature-discovery, toolkit-validation (init)
+I0421 05:37:09.154921       1 main.go:122] Starting OS watcher.
+I0421 05:37:09.155128       1 main.go:127] Loading configuration.
+I0421 05:37:09.155388       1 main.go:139] 
+Running with config:
+{
+  "version": "v1",
+  "flags": {
+    "migStrategy": "mixed",
+    "failOnInitError": true,
+    "gdsEnabled": null,
+    "mofedEnabled": null,
+    "gfd": {
+      "oneshot": false,
+      "noTimestamp": false,
+      "sleepInterval": "1m0s",
+      "outputFile": "/etc/kubernetes/node-feature-discovery/features.d/gfd",
+      "machineTypeFile": "/sys/class/dmi/id/product_name"
+    }
+  },
+  "resources": {
+    "gpus": null
+  },
+  "sharing": {
+    "timeSlicing": {}
+  }
+}
+I0421 05:37:09.155678       1 factory.go:48] Detected NVML platform: found NVML library
+I0421 05:37:09.155712       1 factory.go:48] Detected non-Tegra platform: /sys/devices/soc0/family file not found
+I0421 05:37:09.155716       1 factory.go:64] Using NVML manager
+I0421 05:37:09.155722       1 main.go:144] Start running
+I0421 05:37:32.528678       1 main.go:187] Creating Labels
+2025/04/21 05:37:32 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:37:32.529039       1 main.go:197] Sleeping for 60000000000
+I0421 05:38:37.927893       1 main.go:187] Creating Labels
+2025/04/21 05:38:37 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:38:37.928123       1 main.go:197] Sleeping for 60000000000
+I0421 05:39:43.487933       1 main.go:187] Creating Labels
+2025/04/21 05:39:43 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:39:43.488166       1 main.go:197] Sleeping for 60000000000
+I0421 05:40:49.355299       1 main.go:187] Creating Labels
+2025/04/21 05:40:49 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:40:49.355574       1 main.go:197] Sleeping for 60000000000
+I0421 05:42:19.131182       1 main.go:187] Creating Labels
+2025/04/21 05:42:19 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:42:19.131521       1 main.go:197] Sleeping for 60000000000
+I0421 05:43:29.690327       1 main.go:187] Creating Labels
+2025/04/21 05:43:29 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:43:29.690572       1 main.go:197] Sleeping for 60000000000
+I0421 05:44:40.511205       1 main.go:187] Creating Labels
+2025/04/21 05:44:40 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:44:40.511452       1 main.go:197] Sleeping for 60000000000
+I0421 05:45:47.231342       1 main.go:187] Creating Labels
+2025/04/21 05:45:47 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:45:47.231641       1 main.go:197] Sleeping for 60000000000
+I0421 05:46:52.694954       1 main.go:187] Creating Labels
+2025/04/21 05:46:52 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:46:52.695205       1 main.go:197] Sleeping for 60000000000
+I0421 05:47:59.462808       1 main.go:187] Creating Labels
+2025/04/21 05:47:59 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:47:59.463073       1 main.go:197] Sleeping for 60000000000
+I0421 05:49:10.028826       1 main.go:187] Creating Labels
+2025/04/21 05:49:10 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:49:10.034591       1 main.go:197] Sleeping for 60000000000
+I0421 05:50:15.508228       1 main.go:187] Creating Labels
+2025/04/21 05:50:15 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:50:15.508487       1 main.go:197] Sleeping for 60000000000
+I0421 05:51:21.434258       1 main.go:187] Creating Labels
+2025/04/21 05:51:21 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:51:21.434518       1 main.go:197] Sleeping for 60000000000
+I0421 05:52:27.775931       1 main.go:187] Creating Labels
+2025/04/21 05:52:27 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:52:27.786688       1 main.go:197] Sleeping for 60000000000
+I0421 05:53:32.978402       1 main.go:187] Creating Labels
+2025/04/21 05:53:32 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:53:32.978706       1 main.go:197] Sleeping for 60000000000
+I0421 05:54:41.446302       1 main.go:187] Creating Labels
+2025/04/21 05:54:41 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:54:41.446572       1 main.go:197] Sleeping for 60000000000
+I0421 05:55:45.174521       1 main.go:187] Creating Labels
+2025/04/21 05:55:45 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:55:45.174715       1 main.go:197] Sleeping for 60000000000
+I0421 05:56:49.370509       1 main.go:187] Creating Labels
+2025/04/21 05:56:49 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:56:49.370776       1 main.go:197] Sleeping for 60000000000
+I0421 05:57:52.847569       1 main.go:187] Creating Labels
+2025/04/21 05:57:52 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:57:52.847785       1 main.go:197] Sleeping for 60000000000
+I0421 05:58:57.502103       1 main.go:187] Creating Labels
+2025/04/21 05:58:57 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 05:58:57.502324       1 main.go:197] Sleeping for 60000000000
+I0421 06:00:00.983758       1 main.go:187] Creating Labels
+2025/04/21 06:00:00 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:00:00.983944       1 main.go:197] Sleeping for 60000000000
+I0421 06:01:06.708913       1 main.go:187] Creating Labels
+2025/04/21 06:01:06 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:01:06.709109       1 main.go:197] Sleeping for 60000000000
+I0421 06:02:10.244660       1 main.go:187] Creating Labels
+2025/04/21 06:02:10 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:02:10.244919       1 main.go:197] Sleeping for 60000000000
+I0421 06:03:13.635192       1 main.go:187] Creating Labels
+2025/04/21 06:03:13 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:03:13.635439       1 main.go:197] Sleeping for 60000000000
+I0421 06:04:17.080498       1 main.go:187] Creating Labels
+2025/04/21 06:04:17 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:04:17.080686       1 main.go:197] Sleeping for 60000000000
+I0421 06:05:20.675246       1 main.go:187] Creating Labels
+2025/04/21 06:05:20 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:05:20.675503       1 main.go:197] Sleeping for 60000000000
+I0421 06:06:24.183012       1 main.go:187] Creating Labels
+2025/04/21 06:06:24 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:06:24.183258       1 main.go:197] Sleeping for 60000000000
+I0421 06:07:28.488095       1 main.go:187] Creating Labels
+2025/04/21 06:07:28 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:07:28.488355       1 main.go:197] Sleeping for 60000000000
+I0421 06:08:31.941221       1 main.go:187] Creating Labels
+2025/04/21 06:08:31 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:08:31.942183       1 main.go:197] Sleeping for 60000000000
+I0421 06:09:37.792745       1 main.go:187] Creating Labels
+2025/04/21 06:09:37 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:09:37.792970       1 main.go:197] Sleeping for 60000000000
+I0421 06:10:41.424857       1 main.go:187] Creating Labels
+2025/04/21 06:10:41 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:10:41.426143       1 main.go:197] Sleeping for 60000000000
+I0421 06:11:44.847044       1 main.go:187] Creating Labels
+2025/04/21 06:11:44 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:11:44.847279       1 main.go:197] Sleeping for 60000000000
+I0421 06:12:48.275871       1 main.go:187] Creating Labels
+2025/04/21 06:12:48 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:12:48.276115       1 main.go:197] Sleeping for 60000000000
+I0421 06:13:52.831455       1 main.go:187] Creating Labels
+2025/04/21 06:13:52 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:13:52.831741       1 main.go:197] Sleeping for 60000000000
+I0421 06:14:56.762073       1 main.go:187] Creating Labels
+2025/04/21 06:14:56 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:14:56.762341       1 main.go:197] Sleeping for 60000000000
+I0421 06:16:00.502829       1 main.go:187] Creating Labels
+2025/04/21 06:16:00 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:16:00.503091       1 main.go:197] Sleeping for 60000000000
+I0421 06:17:04.211447       1 main.go:187] Creating Labels
+2025/04/21 06:17:04 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:17:04.212064       1 main.go:197] Sleeping for 60000000000
+I0421 06:18:10.712321       1 main.go:187] Creating Labels
+2025/04/21 06:18:10 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:18:10.712545       1 main.go:197] Sleeping for 60000000000
+I0421 06:19:14.108172       1 main.go:187] Creating Labels
+2025/04/21 06:19:14 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:19:14.108404       1 main.go:197] Sleeping for 60000000000
+I0421 06:20:17.877520       1 main.go:187] Creating Labels
+2025/04/21 06:20:17 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:20:17.877805       1 main.go:197] Sleeping for 60000000000
+I0421 06:21:21.415595       1 main.go:187] Creating Labels
+2025/04/21 06:21:21 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:21:21.415842       1 main.go:197] Sleeping for 60000000000
+I0421 06:22:26.010980       1 main.go:187] Creating Labels
+2025/04/21 06:22:26 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:22:26.011251       1 main.go:197] Sleeping for 60000000000
+I0421 06:23:29.599317       1 main.go:187] Creating Labels
+2025/04/21 06:23:29 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:23:29.599508       1 main.go:197] Sleeping for 60000000000
+I0421 06:24:34.143113       1 main.go:187] Creating Labels
+2025/04/21 06:24:34 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:24:34.143383       1 main.go:197] Sleeping for 60000000000
+I0421 06:25:50.266875       1 main.go:187] Creating Labels
+2025/04/21 06:25:50 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:25:50.267074       1 main.go:197] Sleeping for 60000000000
+I0421 06:27:28.520803       1 main.go:187] Creating Labels
+2025/04/21 06:27:28 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:27:28.521061       1 main.go:197] Sleeping for 60000000000
+I0421 06:28:51.626150       1 main.go:187] Creating Labels
+2025/04/21 06:28:51 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:28:51.626386       1 main.go:197] Sleeping for 60000000000
+I0421 06:29:56.055198       1 main.go:187] Creating Labels
+2025/04/21 06:29:56 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:29:56.056260       1 main.go:197] Sleeping for 60000000000
+I0421 06:31:02.392572       1 main.go:187] Creating Labels
+2025/04/21 06:31:02 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:31:02.392797       1 main.go:197] Sleeping for 60000000000
+I0421 06:32:11.158913       1 main.go:187] Creating Labels
+2025/04/21 06:32:11 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:32:11.159249       1 main.go:197] Sleeping for 60000000000
+I0421 06:33:14.544742       1 main.go:187] Creating Labels
+2025/04/21 06:33:14 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:33:14.544983       1 main.go:197] Sleeping for 60000000000
+I0421 06:34:19.669004       1 main.go:187] Creating Labels
+2025/04/21 06:34:19 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:34:19.679747       1 main.go:197] Sleeping for 60000000000
+I0421 06:35:23.101438       1 main.go:187] Creating Labels
+2025/04/21 06:35:23 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:35:23.101669       1 main.go:197] Sleeping for 60000000000
+I0421 06:36:28.098058       1 main.go:187] Creating Labels
+2025/04/21 06:36:28 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:36:28.098447       1 main.go:197] Sleeping for 60000000000
+I0421 06:37:31.725081       1 main.go:187] Creating Labels
+2025/04/21 06:37:31 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:37:31.725342       1 main.go:197] Sleeping for 60000000000
+I0421 06:38:38.718598       1 main.go:187] Creating Labels
+2025/04/21 06:38:38 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:38:38.718973       1 main.go:197] Sleeping for 60000000000
+I0421 06:39:42.214815       1 main.go:187] Creating Labels
+2025/04/21 06:39:42 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:39:42.215048       1 main.go:197] Sleeping for 60000000000
+I0421 06:40:46.309782       1 main.go:187] Creating Labels
+2025/04/21 06:40:46 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:40:46.319000       1 main.go:197] Sleeping for 60000000000
+I0421 06:41:49.808023       1 main.go:187] Creating Labels
+2025/04/21 06:41:49 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:41:49.808260       1 main.go:197] Sleeping for 60000000000
+I0421 06:42:53.392065       1 main.go:187] Creating Labels
+2025/04/21 06:42:53 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:42:53.398823       1 main.go:197] Sleeping for 60000000000
+I0421 06:43:57.036351       1 main.go:187] Creating Labels
+2025/04/21 06:43:57 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:43:57.036633       1 main.go:197] Sleeping for 60000000000
+I0421 06:45:00.603581       1 main.go:187] Creating Labels
+2025/04/21 06:45:00 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:45:00.603817       1 main.go:197] Sleeping for 60000000000
+I0421 06:46:06.812615       1 main.go:187] Creating Labels
+2025/04/21 06:46:06 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:46:06.812875       1 main.go:197] Sleeping for 60000000000
+I0421 06:47:11.539492       1 main.go:187] Creating Labels
+2025/04/21 06:47:11 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:47:11.539796       1 main.go:197] Sleeping for 60000000000
+I0421 06:48:15.367945       1 main.go:187] Creating Labels
+2025/04/21 06:48:15 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:48:15.368193       1 main.go:197] Sleeping for 60000000000
+I0421 06:49:18.733882       1 main.go:187] Creating Labels
+2025/04/21 06:49:18 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:49:18.734101       1 main.go:197] Sleeping for 60000000000
+I0421 06:50:23.238759       1 main.go:187] Creating Labels
+2025/04/21 06:50:23 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:50:23.239029       1 main.go:197] Sleeping for 60000000000
+I0421 06:51:26.608640       1 main.go:187] Creating Labels
+2025/04/21 06:51:26 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:51:26.608916       1 main.go:197] Sleeping for 60000000000
+I0421 06:52:31.143291       1 main.go:187] Creating Labels
+2025/04/21 06:52:31 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:52:31.143604       1 main.go:197] Sleeping for 60000000000
+I0421 06:53:35.844675       1 main.go:187] Creating Labels
+2025/04/21 06:53:35 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:53:35.844948       1 main.go:197] Sleeping for 60000000000
+I0421 06:54:40.671538       1 main.go:187] Creating Labels
+2025/04/21 06:54:40 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:54:40.671784       1 main.go:197] Sleeping for 60000000000
+I0421 06:55:43.875322       1 main.go:187] Creating Labels
+2025/04/21 06:55:43 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:55:43.875628       1 main.go:197] Sleeping for 60000000000
+I0421 06:56:47.447003       1 main.go:187] Creating Labels
+2025/04/21 06:56:47 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:56:47.454710       1 main.go:197] Sleeping for 60000000000
+I0421 06:57:50.662325       1 main.go:187] Creating Labels
+2025/04/21 06:57:50 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:57:50.662510       1 main.go:197] Sleeping for 60000000000
+I0421 06:58:54.219148       1 main.go:187] Creating Labels
+2025/04/21 06:58:54 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:58:54.219485       1 main.go:197] Sleeping for 60000000000
+I0421 06:59:57.519614       1 main.go:187] Creating Labels
+2025/04/21 06:59:57 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 06:59:57.519837       1 main.go:197] Sleeping for 60000000000
+I0421 07:01:01.326426       1 main.go:187] Creating Labels
+2025/04/21 07:01:01 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:01:01.326775       1 main.go:197] Sleeping for 60000000000
+I0421 07:02:06.183866       1 main.go:187] Creating Labels
+2025/04/21 07:02:06 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:02:06.184109       1 main.go:197] Sleeping for 60000000000
+I0421 07:03:10.784001       1 main.go:187] Creating Labels
+2025/04/21 07:03:10 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:03:10.784301       1 main.go:197] Sleeping for 60000000000
+I0421 07:04:16.575941       1 main.go:187] Creating Labels
+2025/04/21 07:04:16 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:04:16.576765       1 main.go:197] Sleeping for 60000000000
+I0421 07:05:23.169964       1 main.go:187] Creating Labels
+2025/04/21 07:05:23 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:05:23.170172       1 main.go:197] Sleeping for 60000000000
+I0421 07:06:28.744320       1 main.go:187] Creating Labels
+2025/04/21 07:06:28 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:06:28.744577       1 main.go:197] Sleeping for 60000000000
+I0421 07:07:36.306814       1 main.go:187] Creating Labels
+2025/04/21 07:07:36 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:07:36.307091       1 main.go:197] Sleeping for 60000000000
+I0421 07:08:41.481000       1 main.go:187] Creating Labels
+2025/04/21 07:08:41 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:08:41.481230       1 main.go:197] Sleeping for 60000000000
+I0421 07:09:46.396548       1 main.go:187] Creating Labels
+2025/04/21 07:09:46 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:09:46.396806       1 main.go:197] Sleeping for 60000000000
+I0421 07:10:51.116518       1 main.go:187] Creating Labels
+2025/04/21 07:10:51 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:10:51.116763       1 main.go:197] Sleeping for 60000000000
+I0421 07:11:56.824962       1 main.go:187] Creating Labels
+2025/04/21 07:11:56 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:11:56.825241       1 main.go:197] Sleeping for 60000000000
+I0421 07:13:02.054494       1 main.go:187] Creating Labels
+2025/04/21 07:13:02 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:13:02.054724       1 main.go:197] Sleeping for 60000000000
+I0421 07:14:11.920643       1 main.go:187] Creating Labels
+2025/04/21 07:14:11 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:14:11.920933       1 main.go:197] Sleeping for 60000000000
+I0421 07:15:17.710661       1 main.go:187] Creating Labels
+2025/04/21 07:15:17 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:15:17.710986       1 main.go:197] Sleeping for 60000000000
+I0421 07:16:22.499932       1 main.go:187] Creating Labels
+2025/04/21 07:16:22 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:16:22.500194       1 main.go:197] Sleeping for 60000000000
+I0421 07:17:28.289147       1 main.go:187] Creating Labels
+2025/04/21 07:17:28 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:17:28.289367       1 main.go:197] Sleeping for 60000000000
+I0421 07:18:33.626374       1 main.go:187] Creating Labels
+2025/04/21 07:18:33 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:18:33.626624       1 main.go:197] Sleeping for 60000000000
+I0421 07:19:43.502206       1 main.go:187] Creating Labels
+2025/04/21 07:19:43 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:19:43.502479       1 main.go:197] Sleeping for 60000000000
+I0421 07:20:48.978625       1 main.go:187] Creating Labels
+2025/04/21 07:20:48 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:20:48.982741       1 main.go:197] Sleeping for 60000000000
+I0421 07:21:53.714011       1 main.go:187] Creating Labels
+2025/04/21 07:21:53 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:21:53.714264       1 main.go:197] Sleeping for 60000000000
+I0421 07:22:59.375324       1 main.go:187] Creating Labels
+2025/04/21 07:22:59 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:22:59.387839       1 main.go:197] Sleeping for 60000000000
+I0421 07:24:06.246728       1 main.go:187] Creating Labels
+2025/04/21 07:24:06 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:24:06.246963       1 main.go:197] Sleeping for 60000000000
+I0421 07:25:13.116115       1 main.go:187] Creating Labels
+2025/04/21 07:25:13 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:25:13.116613       1 main.go:197] Sleeping for 60000000000
+I0421 07:26:17.843286       1 main.go:187] Creating Labels
+2025/04/21 07:26:17 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:26:17.843521       1 main.go:197] Sleeping for 60000000000
+I0421 07:27:23.983577       1 main.go:187] Creating Labels
+2025/04/21 07:27:23 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:27:23.983937       1 main.go:197] Sleeping for 60000000000
+I0421 07:28:29.098816       1 main.go:187] Creating Labels
+2025/04/21 07:28:29 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:28:29.104507       1 main.go:197] Sleeping for 60000000000
+I0421 07:29:37.623377       1 main.go:187] Creating Labels
+2025/04/21 07:29:37 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:29:37.623638       1 main.go:197] Sleeping for 60000000000
+I0421 07:30:42.468661       1 main.go:187] Creating Labels
+2025/04/21 07:30:42 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:30:42.468888       1 main.go:197] Sleeping for 60000000000
+I0421 07:31:48.164179       1 main.go:187] Creating Labels
+2025/04/21 07:31:48 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:31:48.164447       1 main.go:197] Sleeping for 60000000000
+I0421 07:32:52.896192       1 main.go:187] Creating Labels
+2025/04/21 07:32:52 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:32:52.896394       1 main.go:197] Sleeping for 60000000000
+I0421 07:33:58.990402       1 main.go:187] Creating Labels
+2025/04/21 07:33:58 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:33:58.990653       1 main.go:197] Sleeping for 60000000000
+I0421 07:35:05.349159       1 main.go:187] Creating Labels
+2025/04/21 07:35:05 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:35:05.349458       1 main.go:197] Sleeping for 60000000000
+I0421 07:36:12.319526       1 main.go:187] Creating Labels
+2025/04/21 07:36:12 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:36:12.319796       1 main.go:197] Sleeping for 60000000000
+I0421 07:37:17.748823       1 main.go:187] Creating Labels
+2025/04/21 07:37:17 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:37:17.749423       1 main.go:197] Sleeping for 60000000000
+I0421 07:38:22.541167       1 main.go:187] Creating Labels
+2025/04/21 07:38:22 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:38:22.541397       1 main.go:197] Sleeping for 60000000000
+I0421 07:39:28.145542       1 main.go:187] Creating Labels
+2025/04/21 07:39:28 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:39:28.146752       1 main.go:197] Sleeping for 60000000000
+I0421 07:40:33.695254       1 main.go:187] Creating Labels
+2025/04/21 07:40:33 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:40:33.695575       1 main.go:197] Sleeping for 60000000000
+I0421 07:41:43.948323       1 main.go:187] Creating Labels
+2025/04/21 07:41:43 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:41:43.948530       1 main.go:197] Sleeping for 60000000000
+I0421 07:42:48.732111       1 main.go:187] Creating Labels
+2025/04/21 07:42:48 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:42:48.732459       1 main.go:197] Sleeping for 60000000000
+I0421 07:43:53.681285       1 main.go:187] Creating Labels
+2025/04/21 07:43:53 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:43:53.681470       1 main.go:197] Sleeping for 60000000000
+I0421 07:44:58.874995       1 main.go:187] Creating Labels
+2025/04/21 07:44:58 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:44:58.882701       1 main.go:197] Sleeping for 60000000000
+I0421 07:46:05.405456       1 main.go:187] Creating Labels
+2025/04/21 07:46:05 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:46:05.405708       1 main.go:197] Sleeping for 60000000000
+I0421 07:47:13.036567       1 main.go:187] Creating Labels
+2025/04/21 07:47:13 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:47:13.042675       1 main.go:197] Sleeping for 60000000000
+I0421 07:48:17.719514       1 main.go:187] Creating Labels
+2025/04/21 07:48:17 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:48:17.719698       1 main.go:197] Sleeping for 60000000000
+I0421 07:49:23.942542       1 main.go:187] Creating Labels
+2025/04/21 07:49:23 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:49:23.942790       1 main.go:197] Sleeping for 60000000000
+I0421 07:50:29.009377       1 main.go:187] Creating Labels
+2025/04/21 07:50:29 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:50:29.009611       1 main.go:197] Sleeping for 60000000000
+I0421 07:51:36.726580       1 main.go:187] Creating Labels
+2025/04/21 07:51:36 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:51:36.726838       1 main.go:197] Sleeping for 60000000000
+I0421 07:52:41.507028       1 main.go:187] Creating Labels
+2025/04/21 07:52:41 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:52:41.507848       1 main.go:197] Sleeping for 60000000000
+I0421 07:53:46.901937       1 main.go:187] Creating Labels
+2025/04/21 07:53:46 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:53:46.902193       1 main.go:197] Sleeping for 60000000000
+I0421 07:54:51.694197       1 main.go:187] Creating Labels
+2025/04/21 07:54:51 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:54:51.694488       1 main.go:197] Sleeping for 60000000000
+I0421 07:55:57.929655       1 main.go:187] Creating Labels
+2025/04/21 07:55:57 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:55:57.930020       1 main.go:197] Sleeping for 60000000000
+I0421 07:57:03.369426       1 main.go:187] Creating Labels
+2025/04/21 07:57:03 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:57:03.369665       1 main.go:197] Sleeping for 60000000000
+I0421 07:58:13.802428       1 main.go:187] Creating Labels
+2025/04/21 07:58:13 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:58:13.802704       1 main.go:197] Sleeping for 60000000000
+I0421 07:59:18.475424       1 main.go:187] Creating Labels
+2025/04/21 07:59:18 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 07:59:18.475659       1 main.go:197] Sleeping for 60000000000
+I0421 08:00:24.732687       1 main.go:187] Creating Labels
+2025/04/21 08:00:24 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:00:24.733073       1 main.go:197] Sleeping for 60000000000
+I0421 08:01:31.746237       1 main.go:187] Creating Labels
+2025/04/21 08:01:31 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:01:31.746659       1 main.go:197] Sleeping for 60000000000
+I0421 08:02:42.886617       1 main.go:187] Creating Labels
+2025/04/21 08:02:42 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:02:42.886858       1 main.go:197] Sleeping for 60000000000
+I0421 08:03:47.641167       1 main.go:187] Creating Labels
+2025/04/21 08:03:47 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:03:47.641396       1 main.go:197] Sleeping for 60000000000
+I0421 08:04:53.061953       1 main.go:187] Creating Labels
+2025/04/21 08:04:53 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:04:53.062179       1 main.go:197] Sleeping for 60000000000
+I0421 08:05:58.013153       1 main.go:187] Creating Labels
+2025/04/21 08:05:58 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:05:58.013408       1 main.go:197] Sleeping for 60000000000
+I0421 08:07:03.886781       1 main.go:187] Creating Labels
+2025/04/21 08:07:03 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:07:03.887004       1 main.go:197] Sleeping for 60000000000
+I0421 08:08:13.191466       1 main.go:187] Creating Labels
+2025/04/21 08:08:13 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:08:13.191822       1 main.go:197] Sleeping for 60000000000
+I0421 08:09:17.906942       1 main.go:187] Creating Labels
+2025/04/21 08:09:17 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:09:17.907192       1 main.go:197] Sleeping for 60000000000
+I0421 08:10:23.573963       1 main.go:187] Creating Labels
+2025/04/21 08:10:23 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:10:23.574386       1 main.go:197] Sleeping for 60000000000
+I0421 08:11:28.724943       1 main.go:187] Creating Labels
+2025/04/21 08:11:28 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:11:28.725197       1 main.go:197] Sleeping for 60000000000
+I0421 08:12:36.782276       1 main.go:187] Creating Labels
+2025/04/21 08:12:36 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:12:36.782515       1 main.go:197] Sleeping for 60000000000
+I0421 08:13:41.320192       1 main.go:187] Creating Labels
+2025/04/21 08:13:41 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:13:41.320432       1 main.go:197] Sleeping for 60000000000
+I0421 08:14:48.240371       1 main.go:187] Creating Labels
+2025/04/21 08:14:48 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:14:48.240724       1 main.go:197] Sleeping for 60000000000
+I0421 08:15:53.112159       1 main.go:187] Creating Labels
+2025/04/21 08:15:53 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:15:53.112394       1 main.go:197] Sleeping for 60000000000
+I0421 08:17:01.779374       1 main.go:187] Creating Labels
+2025/04/21 08:17:01 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:17:01.779622       1 main.go:197] Sleeping for 60000000000
+I0421 08:18:12.540109       1 main.go:187] Creating Labels
+2025/04/21 08:18:12 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:18:12.540448       1 main.go:197] Sleeping for 60000000000
+I0421 08:19:17.239372       1 main.go:187] Creating Labels
+2025/04/21 08:19:17 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:19:17.239592       1 main.go:197] Sleeping for 60000000000
+I0421 08:20:22.595346       1 main.go:187] Creating Labels
+2025/04/21 08:20:22 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:20:22.595658       1 main.go:197] Sleeping for 60000000000
+I0421 08:21:27.814834       1 main.go:187] Creating Labels
+2025/04/21 08:21:27 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:21:27.815099       1 main.go:197] Sleeping for 60000000000
+I0421 08:22:33.030963       1 main.go:187] Creating Labels
+2025/04/21 08:22:33 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:22:33.034772       1 main.go:197] Sleeping for 60000000000
+I0421 08:23:41.877930       1 main.go:187] Creating Labels
+2025/04/21 08:23:41 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:23:41.878325       1 main.go:197] Sleeping for 60000000000
+I0421 08:24:51.570146       1 main.go:187] Creating Labels
+2025/04/21 08:24:51 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:24:51.570422       1 main.go:197] Sleeping for 60000000000
+I0421 08:25:56.074856       1 main.go:187] Creating Labels
+2025/04/21 08:25:56 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:25:56.075105       1 main.go:197] Sleeping for 60000000000
+I0421 08:27:02.729365       1 main.go:187] Creating Labels
+2025/04/21 08:27:02 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:27:02.729620       1 main.go:197] Sleeping for 60000000000
+I0421 08:28:15.892947       1 main.go:187] Creating Labels
+2025/04/21 08:28:15 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:28:15.893246       1 main.go:197] Sleeping for 60000000000
+I0421 08:29:20.514885       1 main.go:187] Creating Labels
+2025/04/21 08:29:20 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:29:20.515166       1 main.go:197] Sleeping for 60000000000
+I0421 08:30:27.622916       1 main.go:187] Creating Labels
+2025/04/21 08:30:27 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:30:27.623213       1 main.go:197] Sleeping for 60000000000
+I0421 08:31:32.534428       1 main.go:187] Creating Labels
+2025/04/21 08:31:32 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:31:32.534720       1 main.go:197] Sleeping for 60000000000
+I0421 08:32:42.686857       1 main.go:187] Creating Labels
+2025/04/21 08:32:42 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:32:42.687158       1 main.go:197] Sleeping for 60000000000
+I0421 08:33:48.366848       1 main.go:187] Creating Labels
+2025/04/21 08:33:48 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:33:48.370651       1 main.go:197] Sleeping for 60000000000
+I0421 08:34:53.108248       1 main.go:187] Creating Labels
+2025/04/21 08:34:53 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:34:53.108491       1 main.go:197] Sleeping for 60000000000
+I0421 08:35:58.863497       1 main.go:187] Creating Labels
+2025/04/21 08:35:58 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:35:58.870651       1 main.go:197] Sleeping for 60000000000
+I0421 08:37:06.271941       1 main.go:187] Creating Labels
+2025/04/21 08:37:06 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:37:06.272202       1 main.go:197] Sleeping for 60000000000
+I0421 08:38:13.143685       1 main.go:187] Creating Labels
+2025/04/21 08:38:13 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:38:13.144525       1 main.go:197] Sleeping for 60000000000
+I0421 08:39:17.898400       1 main.go:187] Creating Labels
+2025/04/21 08:39:17 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:39:17.898653       1 main.go:197] Sleeping for 60000000000
+I0421 08:40:23.367029       1 main.go:187] Creating Labels
+2025/04/21 08:40:23 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:40:23.372307       1 main.go:197] Sleeping for 60000000000
+I0421 08:41:28.686532       1 main.go:187] Creating Labels
+2025/04/21 08:41:28 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:41:28.686782       1 main.go:197] Sleeping for 60000000000
+I0421 08:42:34.553023       1 main.go:187] Creating Labels
+2025/04/21 08:42:34 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:42:34.553330       1 main.go:197] Sleeping for 60000000000
+I0421 08:43:46.978181       1 main.go:187] Creating Labels
+2025/04/21 08:43:46 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:43:46.978414       1 main.go:197] Sleeping for 60000000000
+I0421 08:44:52.559415       1 main.go:187] Creating Labels
+2025/04/21 08:44:52 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:44:52.559646       1 main.go:197] Sleeping for 60000000000
+I0421 08:45:57.556233       1 main.go:187] Creating Labels
+2025/04/21 08:45:57 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:45:57.556506       1 main.go:197] Sleeping for 60000000000
+I0421 08:47:04.909062       1 main.go:187] Creating Labels
+2025/04/21 08:47:04 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:47:04.909334       1 main.go:197] Sleeping for 60000000000
+I0421 08:48:12.140246       1 main.go:187] Creating Labels
+2025/04/21 08:48:12 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:48:12.140636       1 main.go:197] Sleeping for 60000000000
+I0421 08:49:17.701690       1 main.go:187] Creating Labels
+2025/04/21 08:49:17 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:49:17.701946       1 main.go:197] Sleeping for 60000000000
+I0421 08:50:22.473006       1 main.go:187] Creating Labels
+2025/04/21 08:50:22 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:50:22.473258       1 main.go:197] Sleeping for 60000000000
+I0421 08:51:28.261738       1 main.go:187] Creating Labels
+2025/04/21 08:51:28 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:51:28.262184       1 main.go:197] Sleeping for 60000000000
+I0421 08:52:33.337020       1 main.go:187] Creating Labels
+2025/04/21 08:52:33 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:52:33.337260       1 main.go:197] Sleeping for 60000000000
+I0421 08:53:44.279983       1 main.go:187] Creating Labels
+2025/04/21 08:53:44 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:53:44.280251       1 main.go:197] Sleeping for 60000000000
+I0421 08:54:49.135887       1 main.go:187] Creating Labels
+2025/04/21 08:54:49 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:54:49.136255       1 main.go:197] Sleeping for 60000000000
+I0421 08:55:54.269051       1 main.go:187] Creating Labels
+2025/04/21 08:55:54 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:55:54.269398       1 main.go:197] Sleeping for 60000000000
+I0421 08:56:59.514227       1 main.go:187] Creating Labels
+2025/04/21 08:56:59 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:56:59.514468       1 main.go:197] Sleeping for 60000000000
+I0421 08:58:07.240065       1 main.go:187] Creating Labels
+2025/04/21 08:58:07 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:58:07.240283       1 main.go:197] Sleeping for 60000000000
+I0421 08:59:12.448716       1 main.go:187] Creating Labels
+2025/04/21 08:59:12 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 08:59:12.454522       1 main.go:197] Sleeping for 60000000000
+I0421 09:00:17.247826       1 main.go:187] Creating Labels
+2025/04/21 09:00:17 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:00:17.248079       1 main.go:197] Sleeping for 60000000000
+I0421 09:01:22.071401       1 main.go:187] Creating Labels
+2025/04/21 09:01:22 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:01:22.071746       1 main.go:197] Sleeping for 60000000000
+I0421 09:02:27.243259       1 main.go:187] Creating Labels
+2025/04/21 09:02:27 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:02:27.243534       1 main.go:197] Sleeping for 60000000000
+I0421 09:03:32.489704       1 main.go:187] Creating Labels
+2025/04/21 09:03:32 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:03:32.489973       1 main.go:197] Sleeping for 60000000000
+I0421 09:04:42.346900       1 main.go:187] Creating Labels
+2025/04/21 09:04:42 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:04:42.347135       1 main.go:197] Sleeping for 60000000000
+I0421 09:05:47.687153       1 main.go:187] Creating Labels
+2025/04/21 09:05:47 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:05:47.690672       1 main.go:197] Sleeping for 60000000000
+I0421 09:06:52.616427       1 main.go:187] Creating Labels
+2025/04/21 09:06:52 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:06:52.616671       1 main.go:197] Sleeping for 60000000000
+I0421 09:07:57.996097       1 main.go:187] Creating Labels
+2025/04/21 09:07:57 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:07:58.002725       1 main.go:197] Sleeping for 60000000000
+I0421 09:09:03.432348       1 main.go:187] Creating Labels
+2025/04/21 09:09:03 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:09:03.432706       1 main.go:197] Sleeping for 60000000000
+I0421 09:10:13.647552       1 main.go:187] Creating Labels
+2025/04/21 09:10:13 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:10:13.647846       1 main.go:197] Sleeping for 60000000000
+I0421 09:11:18.324403       1 main.go:187] Creating Labels
+2025/04/21 09:11:18 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:11:18.324581       1 main.go:197] Sleeping for 60000000000
+I0421 09:12:25.949832       1 main.go:187] Creating Labels
+2025/04/21 09:12:25 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:12:25.950938       1 main.go:197] Sleeping for 60000000000
+I0421 09:13:31.281090       1 main.go:187] Creating Labels
+2025/04/21 09:13:31 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:13:31.281615       1 main.go:197] Sleeping for 60000000000
+I0421 09:14:42.248969       1 main.go:187] Creating Labels
+2025/04/21 09:14:42 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:14:42.249164       1 main.go:197] Sleeping for 60000000000
+I0421 09:15:47.068058       1 main.go:187] Creating Labels
+2025/04/21 09:15:47 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:15:47.068307       1 main.go:197] Sleeping for 60000000000
+I0421 09:16:52.541580       1 main.go:187] Creating Labels
+2025/04/21 09:16:52 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:16:52.541846       1 main.go:197] Sleeping for 60000000000
+I0421 09:17:58.062596       1 main.go:187] Creating Labels
+2025/04/21 09:17:58 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:17:58.062824       1 main.go:197] Sleeping for 60000000000
+I0421 09:19:03.905968       1 main.go:187] Creating Labels
+2025/04/21 09:19:03 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:19:03.906198       1 main.go:197] Sleeping for 60000000000
+I0421 09:20:12.675308       1 main.go:187] Creating Labels
+2025/04/21 09:20:12 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:20:12.683671       1 main.go:197] Sleeping for 60000000000
+I0421 09:21:17.637458       1 main.go:187] Creating Labels
+2025/04/21 09:21:17 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:21:17.637721       1 main.go:197] Sleeping for 60000000000
+I0421 09:22:22.433961       1 main.go:187] Creating Labels
+2025/04/21 09:22:22 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:22:22.434203       1 main.go:197] Sleeping for 60000000000
+I0421 09:23:27.921458       1 main.go:187] Creating Labels
+2025/04/21 09:23:27 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:23:27.921719       1 main.go:197] Sleeping for 60000000000
+I0421 09:24:33.002034       1 main.go:187] Creating Labels
+2025/04/21 09:24:33 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:24:33.002316       1 main.go:197] Sleeping for 60000000000
+I0421 09:25:43.173125       1 main.go:187] Creating Labels
+2025/04/21 09:25:43 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:25:43.173351       1 main.go:197] Sleeping for 60000000000
+I0421 09:26:48.635832       1 main.go:187] Creating Labels
+2025/04/21 09:26:48 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:26:48.636312       1 main.go:197] Sleeping for 60000000000
+I0421 09:27:53.461631       1 main.go:187] Creating Labels
+2025/04/21 09:27:53 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:27:53.461856       1 main.go:197] Sleeping for 60000000000
+I0421 09:28:58.792784       1 main.go:187] Creating Labels
+2025/04/21 09:28:58 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:28:58.793110       1 main.go:197] Sleeping for 60000000000
+I0421 09:30:04.289508       1 main.go:187] Creating Labels
+2025/04/21 09:30:04 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:30:04.289733       1 main.go:197] Sleeping for 60000000000
+I0421 09:31:14.016631       1 main.go:187] Creating Labels
+2025/04/21 09:31:14 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:31:14.050816       1 main.go:197] Sleeping for 60000000000
+I0421 09:32:18.860663       1 main.go:187] Creating Labels
+2025/04/21 09:32:18 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:32:18.861432       1 main.go:197] Sleeping for 60000000000
+I0421 09:33:24.526577       1 main.go:187] Creating Labels
+2025/04/21 09:33:24 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:33:24.530584       1 main.go:197] Sleeping for 60000000000
+I0421 09:34:29.640377       1 main.go:187] Creating Labels
+2025/04/21 09:34:29 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:34:29.640631       1 main.go:197] Sleeping for 60000000000
+I0421 09:35:38.776919       1 main.go:187] Creating Labels
+2025/04/21 09:35:38 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:35:38.777174       1 main.go:197] Sleeping for 60000000000
+I0421 09:36:43.644221       1 main.go:187] Creating Labels
+2025/04/21 09:36:43 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:36:43.644522       1 main.go:197] Sleeping for 60000000000
+I0421 09:37:49.191860       1 main.go:187] Creating Labels
+2025/04/21 09:37:49 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:37:49.192121       1 main.go:197] Sleeping for 60000000000
+I0421 09:38:53.932579       1 main.go:187] Creating Labels
+2025/04/21 09:38:53 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:38:53.932838       1 main.go:197] Sleeping for 60000000000
+I0421 09:40:00.819321       1 main.go:187] Creating Labels
+2025/04/21 09:40:00 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:40:00.820775       1 main.go:197] Sleeping for 60000000000
+I0421 09:41:09.041247       1 main.go:187] Creating Labels
+2025/04/21 09:41:09 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:41:09.041969       1 main.go:197] Sleeping for 60000000000
+I0421 09:42:14.050735       1 main.go:187] Creating Labels
+2025/04/21 09:42:14 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:42:14.050990       1 main.go:197] Sleeping for 60000000000
+I0421 09:43:18.867692       1 main.go:187] Creating Labels
+2025/04/21 09:43:18 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:43:18.867950       1 main.go:197] Sleeping for 60000000000
+I0421 09:44:23.890951       1 main.go:187] Creating Labels
+2025/04/21 09:44:23 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:44:23.891690       1 main.go:197] Sleeping for 60000000000
+I0421 09:45:28.929909       1 main.go:187] Creating Labels
+2025/04/21 09:45:28 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:45:28.930174       1 main.go:197] Sleeping for 60000000000
+I0421 09:46:35.995558       1 main.go:187] Creating Labels
+2025/04/21 09:46:35 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:46:35.995836       1 main.go:197] Sleeping for 60000000000
+I0421 09:47:42.380170       1 main.go:187] Creating Labels
+2025/04/21 09:47:42 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:47:42.386651       1 main.go:197] Sleeping for 60000000000
+I0421 09:48:47.179421       1 main.go:187] Creating Labels
+2025/04/21 09:48:47 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:48:47.179658       1 main.go:197] Sleeping for 60000000000
+I0421 09:49:52.010719       1 main.go:187] Creating Labels
+2025/04/21 09:49:52 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:49:52.011047       1 main.go:197] Sleeping for 60000000000
+I0421 09:50:57.263072       1 main.go:187] Creating Labels
+2025/04/21 09:50:57 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:50:57.263313       1 main.go:197] Sleeping for 60000000000
+I0421 09:52:02.501997       1 main.go:187] Creating Labels
+2025/04/21 09:52:02 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:52:02.502519       1 main.go:197] Sleeping for 60000000000
+I0421 09:53:11.911871       1 main.go:187] Creating Labels
+2025/04/21 09:53:11 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:53:11.912807       1 main.go:197] Sleeping for 60000000000
+I0421 09:54:17.267676       1 main.go:187] Creating Labels
+2025/04/21 09:54:17 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:54:17.268059       1 main.go:197] Sleeping for 60000000000
+I0421 09:55:22.134059       1 main.go:187] Creating Labels
+2025/04/21 09:55:22 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:55:22.134315       1 main.go:197] Sleeping for 60000000000
+I0421 09:56:27.735227       1 main.go:187] Creating Labels
+2025/04/21 09:56:27 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:56:27.735943       1 main.go:197] Sleeping for 60000000000
+I0421 09:57:32.958247       1 main.go:187] Creating Labels
+2025/04/21 09:57:32 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:57:32.958520       1 main.go:197] Sleeping for 60000000000
+I0421 09:58:43.536578       1 main.go:187] Creating Labels
+2025/04/21 09:58:43 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:58:43.536837       1 main.go:197] Sleeping for 60000000000
+I0421 09:59:48.275349       1 main.go:187] Creating Labels
+2025/04/21 09:59:48 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 09:59:48.275601       1 main.go:197] Sleeping for 60000000000
+I0421 10:00:53.931896       1 main.go:187] Creating Labels
+2025/04/21 10:00:53 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:00:53.932291       1 main.go:197] Sleeping for 60000000000
+I0421 10:01:58.972132       1 main.go:187] Creating Labels
+2025/04/21 10:01:58 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:01:58.972373       1 main.go:197] Sleeping for 60000000000
+I0421 10:03:06.979450       1 main.go:187] Creating Labels
+2025/04/21 10:03:06 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:03:06.979659       1 main.go:197] Sleeping for 60000000000
+I0421 10:04:11.791588       1 main.go:187] Creating Labels
+2025/04/21 10:04:11 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:04:11.791982       1 main.go:197] Sleeping for 60000000000
+I0421 10:05:16.974791       1 main.go:187] Creating Labels
+2025/04/21 10:05:16 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:05:16.975066       1 main.go:197] Sleeping for 60000000000
+I0421 10:06:21.730366       1 main.go:187] Creating Labels
+2025/04/21 10:06:21 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:06:21.731432       1 main.go:197] Sleeping for 60000000000
+I0421 10:07:27.146792       1 main.go:187] Creating Labels
+2025/04/21 10:07:27 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:07:27.147015       1 main.go:197] Sleeping for 60000000000
+I0421 10:08:32.394636       1 main.go:187] Creating Labels
+2025/04/21 10:08:32 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:08:32.394918       1 main.go:197] Sleeping for 60000000000
+I0421 10:09:41.687278       1 main.go:187] Creating Labels
+2025/04/21 10:09:41 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:09:41.687514       1 main.go:197] Sleeping for 60000000000
+I0421 10:10:47.287250       1 main.go:187] Creating Labels
+2025/04/21 10:10:47 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:10:47.287641       1 main.go:197] Sleeping for 60000000000
+I0421 10:11:52.114296       1 main.go:187] Creating Labels
+2025/04/21 10:11:52 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:11:52.114853       1 main.go:197] Sleeping for 60000000000
+I0421 10:12:57.725906       1 main.go:187] Creating Labels
+2025/04/21 10:12:57 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:12:57.726891       1 main.go:197] Sleeping for 60000000000
+I0421 10:14:02.886448       1 main.go:187] Creating Labels
+2025/04/21 10:14:02 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:14:02.886723       1 main.go:197] Sleeping for 60000000000
+I0421 10:15:13.924821       1 main.go:187] Creating Labels
+2025/04/21 10:15:13 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:15:13.925614       1 main.go:197] Sleeping for 60000000000
+I0421 10:16:18.720021       1 main.go:187] Creating Labels
+2025/04/21 10:16:18 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:16:18.720275       1 main.go:197] Sleeping for 60000000000
+I0421 10:17:24.269611       1 main.go:187] Creating Labels
+2025/04/21 10:17:24 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:17:24.269872       1 main.go:197] Sleeping for 60000000000
+I0421 10:18:29.452706       1 main.go:187] Creating Labels
+2025/04/21 10:18:29 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:18:29.452948       1 main.go:197] Sleeping for 60000000000
+I0421 10:19:38.874823       1 main.go:187] Creating Labels
+2025/04/21 10:19:38 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:19:38.875048       1 main.go:197] Sleeping for 60000000000
+I0421 10:20:48.885166       1 main.go:187] Creating Labels
+2025/04/21 10:20:48 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:20:48.885338       1 main.go:197] Sleeping for 60000000000
+I0421 10:21:56.117816       1 main.go:187] Creating Labels
+2025/04/21 10:21:56 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:21:56.118139       1 main.go:197] Sleeping for 60000000000
+I0421 10:23:01.834888       1 main.go:187] Creating Labels
+2025/04/21 10:23:01 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:23:01.835181       1 main.go:197] Sleeping for 60000000000
+I0421 10:24:12.166920       1 main.go:187] Creating Labels
+2025/04/21 10:24:12 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:24:12.167215       1 main.go:197] Sleeping for 60000000000
+I0421 10:25:17.320909       1 main.go:187] Creating Labels
+2025/04/21 10:25:17 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:25:17.326650       1 main.go:197] Sleeping for 60000000000
+I0421 10:26:22.460057       1 main.go:187] Creating Labels
+2025/04/21 10:26:22 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:26:22.460261       1 main.go:197] Sleeping for 60000000000
+I0421 10:27:28.378864       1 main.go:187] Creating Labels
+2025/04/21 10:27:28 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:27:28.382651       1 main.go:197] Sleeping for 60000000000
+I0421 10:28:33.752715       1 main.go:187] Creating Labels
+2025/04/21 10:28:33 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:28:33.752960       1 main.go:197] Sleeping for 60000000000
+I0421 10:29:44.685257       1 main.go:187] Creating Labels
+2025/04/21 10:29:44 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:29:44.685491       1 main.go:197] Sleeping for 60000000000
+I0421 10:30:50.515043       1 main.go:187] Creating Labels
+2025/04/21 10:30:50 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:30:50.515433       1 main.go:197] Sleeping for 60000000000
+I0421 10:31:55.499812       1 main.go:187] Creating Labels
+2025/04/21 10:31:55 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:31:55.500962       1 main.go:197] Sleeping for 60000000000
+I0421 10:33:03.243825       1 main.go:187] Creating Labels
+2025/04/21 10:33:03 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:33:03.244104       1 main.go:197] Sleeping for 60000000000
+I0421 10:34:11.601411       1 main.go:187] Creating Labels
+2025/04/21 10:34:11 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:34:11.611723       1 main.go:197] Sleeping for 60000000000
+I0421 10:35:16.649446       1 main.go:187] Creating Labels
+2025/04/21 10:35:16 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:35:16.649696       1 main.go:197] Sleeping for 60000000000
+I0421 10:36:22.291972       1 main.go:187] Creating Labels
+2025/04/21 10:36:22 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:36:22.292922       1 main.go:197] Sleeping for 60000000000
+I0421 10:37:27.412224       1 main.go:187] Creating Labels
+2025/04/21 10:37:27 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:37:27.412482       1 main.go:197] Sleeping for 60000000000
+I0421 10:38:34.443846       1 main.go:187] Creating Labels
+2025/04/21 10:38:34 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:38:34.470639       1 main.go:197] Sleeping for 60000000000
+I0421 10:39:42.673721       1 main.go:187] Creating Labels
+2025/04/21 10:39:42 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:39:42.673967       1 main.go:197] Sleeping for 60000000000
+I0421 10:40:48.148608       1 main.go:187] Creating Labels
+2025/04/21 10:40:48 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:40:48.148861       1 main.go:197] Sleeping for 60000000000
+I0421 10:41:53.290616       1 main.go:187] Creating Labels
+2025/04/21 10:41:53 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:41:53.294722       1 main.go:197] Sleeping for 60000000000
+I0421 10:42:58.942593       1 main.go:187] Creating Labels
+2025/04/21 10:42:58 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:42:58.942849       1 main.go:197] Sleeping for 60000000000
+I0421 10:44:07.318620       1 main.go:187] Creating Labels
+2025/04/21 10:44:07 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:44:07.326669       1 main.go:197] Sleeping for 60000000000
+I0421 10:45:12.959742       1 main.go:187] Creating Labels
+2025/04/21 10:45:12 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:45:12.959999       1 main.go:197] Sleeping for 60000000000
+I0421 10:46:19.842556       1 main.go:187] Creating Labels
+2025/04/21 10:46:19 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:46:19.843781       1 main.go:197] Sleeping for 60000000000
+I0421 10:47:24.872406       1 main.go:187] Creating Labels
+2025/04/21 10:47:24 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:47:24.907920       1 main.go:197] Sleeping for 60000000000
+I0421 10:48:32.233717       1 main.go:187] Creating Labels
+2025/04/21 10:48:32 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:48:32.233973       1 main.go:197] Sleeping for 60000000000
+I0421 10:49:43.311465       1 main.go:187] Creating Labels
+2025/04/21 10:49:43 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:49:43.314956       1 main.go:197] Sleeping for 60000000000
+I0421 10:50:48.331939       1 main.go:187] Creating Labels
+2025/04/21 10:50:48 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:50:48.332698       1 main.go:197] Sleeping for 60000000000
+I0421 10:51:54.886279       1 main.go:187] Creating Labels
+2025/04/21 10:51:54 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:51:54.890619       1 main.go:197] Sleeping for 60000000000
+I0421 10:53:00.468575       1 main.go:187] Creating Labels
+2025/04/21 10:53:00 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:53:00.478100       1 main.go:197] Sleeping for 60000000000
+I0421 10:54:11.488111       1 main.go:187] Creating Labels
+2025/04/21 10:54:11 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:54:11.488340       1 main.go:197] Sleeping for 60000000000
+I0421 10:55:18.105564       1 main.go:187] Creating Labels
+2025/04/21 10:55:18 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:55:18.110697       1 main.go:197] Sleeping for 60000000000
+I0421 10:56:23.246354       1 main.go:187] Creating Labels
+2025/04/21 10:56:23 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:56:23.251874       1 main.go:197] Sleeping for 60000000000
+I0421 10:57:30.296695       1 main.go:187] Creating Labels
+2025/04/21 10:57:30 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:57:30.296935       1 main.go:197] Sleeping for 60000000000
+I0421 10:58:39.664502       1 main.go:187] Creating Labels
+2025/04/21 10:58:39 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:58:39.664843       1 main.go:197] Sleeping for 60000000000
+I0421 10:59:44.894102       1 main.go:187] Creating Labels
+2025/04/21 10:59:44 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 10:59:44.894323       1 main.go:197] Sleeping for 60000000000
+I0421 11:00:50.553751       1 main.go:187] Creating Labels
+2025/04/21 11:00:50 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:00:50.558662       1 main.go:197] Sleeping for 60000000000
+I0421 11:01:55.757461       1 main.go:187] Creating Labels
+2025/04/21 11:01:55 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:01:55.757688       1 main.go:197] Sleeping for 60000000000
+I0421 11:03:02.765066       1 main.go:187] Creating Labels
+2025/04/21 11:03:02 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:03:02.768647       1 main.go:197] Sleeping for 60000000000
+I0421 11:04:12.881879       1 main.go:187] Creating Labels
+2025/04/21 11:04:12 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:04:12.882159       1 main.go:197] Sleeping for 60000000000
+I0421 11:05:18.263812       1 main.go:187] Creating Labels
+2025/04/21 11:05:18 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:05:18.264052       1 main.go:197] Sleeping for 60000000000
+I0421 11:06:23.511128       1 main.go:187] Creating Labels
+2025/04/21 11:06:23 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:06:23.511443       1 main.go:197] Sleeping for 60000000000
+I0421 11:07:29.153707       1 main.go:187] Creating Labels
+2025/04/21 11:07:29 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:07:29.153955       1 main.go:197] Sleeping for 60000000000
+I0421 11:08:37.252061       1 main.go:187] Creating Labels
+2025/04/21 11:08:37 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:08:37.258769       1 main.go:197] Sleeping for 60000000000
+I0421 11:09:42.576822       1 main.go:187] Creating Labels
+2025/04/21 11:09:42 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:09:42.577091       1 main.go:197] Sleeping for 60000000000
+I0421 11:10:48.563433       1 main.go:187] Creating Labels
+2025/04/21 11:10:48 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:10:48.563919       1 main.go:197] Sleeping for 60000000000
+I0421 11:11:53.830264       1 main.go:187] Creating Labels
+2025/04/21 11:11:53 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:11:53.830544       1 main.go:197] Sleeping for 60000000000
+I0421 11:13:00.117291       1 main.go:187] Creating Labels
+2025/04/21 11:13:00 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:13:00.117583       1 main.go:197] Sleeping for 60000000000
+I0421 11:14:10.224884       1 main.go:187] Creating Labels
+2025/04/21 11:14:10 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:14:10.225219       1 main.go:197] Sleeping for 60000000000
+I0421 11:15:15.251274       1 main.go:187] Creating Labels
+2025/04/21 11:15:15 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:15:15.251483       1 main.go:197] Sleeping for 60000000000
+I0421 11:16:22.252953       1 main.go:187] Creating Labels
+2025/04/21 11:16:22 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:16:22.253261       1 main.go:197] Sleeping for 60000000000
+I0421 11:17:27.636216       1 main.go:187] Creating Labels
+2025/04/21 11:17:27 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:17:27.636499       1 main.go:197] Sleeping for 60000000000
+I0421 11:18:34.406006       1 main.go:187] Creating Labels
+2025/04/21 11:18:34 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:18:34.406345       1 main.go:197] Sleeping for 60000000000
+I0421 11:19:43.886428       1 main.go:187] Creating Labels
+2025/04/21 11:19:43 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:19:43.886943       1 main.go:197] Sleeping for 60000000000
+I0421 11:20:48.949235       1 main.go:187] Creating Labels
+2025/04/21 11:20:48 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:20:48.950189       1 main.go:197] Sleeping for 60000000000
+I0421 11:21:54.973621       1 main.go:187] Creating Labels
+2025/04/21 11:21:54 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:21:54.978669       1 main.go:197] Sleeping for 60000000000
+I0421 11:23:00.454231       1 main.go:187] Creating Labels
+2025/04/21 11:23:00 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:23:00.454471       1 main.go:197] Sleeping for 60000000000
+I0421 11:24:12.290473       1 main.go:187] Creating Labels
+2025/04/21 11:24:12 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:24:12.290790       1 main.go:197] Sleeping for 60000000000
+I0421 11:25:17.815806       1 main.go:187] Creating Labels
+2025/04/21 11:25:17 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:25:17.818777       1 main.go:197] Sleeping for 60000000000
+I0421 11:26:22.883587       1 main.go:187] Creating Labels
+2025/04/21 11:26:22 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:26:22.883883       1 main.go:197] Sleeping for 60000000000
+I0421 11:27:28.789373       1 main.go:187] Creating Labels
+2025/04/21 11:27:28 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:27:28.794634       1 main.go:197] Sleeping for 60000000000
+I0421 11:28:33.752433       1 main.go:187] Creating Labels
+2025/04/21 11:28:33 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:28:33.752653       1 main.go:197] Sleeping for 60000000000
+I0421 11:29:44.087627       1 main.go:187] Creating Labels
+2025/04/21 11:29:44 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:29:44.087891       1 main.go:197] Sleeping for 60000000000
+I0421 11:30:48.902107       1 main.go:187] Creating Labels
+2025/04/21 11:30:48 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:30:48.902356       1 main.go:197] Sleeping for 60000000000
+I0421 11:31:53.894885       1 main.go:187] Creating Labels
+2025/04/21 11:31:53 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:31:53.896050       1 main.go:197] Sleeping for 60000000000
+I0421 11:32:59.739329       1 main.go:187] Creating Labels
+2025/04/21 11:32:59 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:32:59.739641       1 main.go:197] Sleeping for 60000000000
+I0421 11:34:07.385858       1 main.go:187] Creating Labels
+2025/04/21 11:34:07 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:34:07.386116       1 main.go:197] Sleeping for 60000000000
+I0421 11:35:14.365918       1 main.go:187] Creating Labels
+2025/04/21 11:35:14 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:35:14.366192       1 main.go:197] Sleeping for 60000000000
+I0421 11:36:19.430256       1 main.go:187] Creating Labels
+2025/04/21 11:36:19 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:36:19.430609       1 main.go:197] Sleeping for 60000000000
+I0421 11:37:24.733797       1 main.go:187] Creating Labels
+2025/04/21 11:37:24 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:37:24.734045       1 main.go:197] Sleeping for 60000000000
+I0421 11:38:31.231326       1 main.go:187] Creating Labels
+2025/04/21 11:38:31 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:38:31.231620       1 main.go:197] Sleeping for 60000000000
+I0421 11:39:40.023546       1 main.go:187] Creating Labels
+2025/04/21 11:39:40 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:39:40.023829       1 main.go:197] Sleeping for 60000000000
+I0421 11:40:45.834197       1 main.go:187] Creating Labels
+2025/04/21 11:40:45 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:40:45.834415       1 main.go:197] Sleeping for 60000000000
+I0421 11:41:50.958947       1 main.go:187] Creating Labels
+2025/04/21 11:41:50 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:41:50.959203       1 main.go:197] Sleeping for 60000000000
+I0421 11:42:56.024560       1 main.go:187] Creating Labels
+2025/04/21 11:42:56 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:42:56.025373       1 main.go:197] Sleeping for 60000000000
+I0421 11:44:02.761771       1 main.go:187] Creating Labels
+2025/04/21 11:44:02 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:44:02.762097       1 main.go:197] Sleeping for 60000000000
+I0421 11:45:11.380844       1 main.go:187] Creating Labels
+2025/04/21 11:45:11 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:45:11.381093       1 main.go:197] Sleeping for 60000000000
+I0421 11:46:16.663110       1 main.go:187] Creating Labels
+2025/04/21 11:46:16 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:46:16.663369       1 main.go:197] Sleeping for 60000000000
+I0421 11:47:22.244952       1 main.go:187] Creating Labels
+2025/04/21 11:47:22 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:47:22.245547       1 main.go:197] Sleeping for 60000000000
+I0421 11:48:27.426546       1 main.go:187] Creating Labels
+2025/04/21 11:48:27 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:48:27.426782       1 main.go:197] Sleeping for 60000000000
+I0421 11:49:35.091176       1 main.go:187] Creating Labels
+2025/04/21 11:49:35 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:49:35.091441       1 main.go:197] Sleeping for 60000000000
+I0421 11:50:41.513874       1 main.go:187] Creating Labels
+2025/04/21 11:50:41 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:50:41.514409       1 main.go:197] Sleeping for 60000000000
+I0421 11:51:47.047655       1 main.go:187] Creating Labels
+2025/04/21 11:51:47 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:51:47.047905       1 main.go:197] Sleeping for 60000000000
+I0421 11:52:56.943996       1 main.go:187] Creating Labels
+2025/04/21 11:52:56 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:52:56.944376       1 main.go:197] Sleeping for 60000000000
+I0421 11:54:10.396643       1 main.go:187] Creating Labels
+2025/04/21 11:54:10 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:54:10.396974       1 main.go:197] Sleeping for 60000000000
+I0421 11:55:20.632884       1 main.go:187] Creating Labels
+2025/04/21 11:55:20 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:55:20.633116       1 main.go:197] Sleeping for 60000000000
+I0421 11:56:30.992403       1 main.go:187] Creating Labels
+2025/04/21 11:56:30 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:56:30.993001       1 main.go:197] Sleeping for 60000000000
+I0421 11:57:45.323358       1 main.go:187] Creating Labels
+2025/04/21 11:57:45 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:57:45.323605       1 main.go:197] Sleeping for 60000000000
+I0421 11:58:50.703281       1 main.go:187] Creating Labels
+2025/04/21 11:58:50 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:58:50.703602       1 main.go:197] Sleeping for 60000000000
+I0421 11:59:55.704534       1 main.go:187] Creating Labels
+2025/04/21 11:59:55 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 11:59:55.704789       1 main.go:197] Sleeping for 60000000000
+I0421 12:01:02.440664       1 main.go:187] Creating Labels
+2025/04/21 12:01:02 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 12:01:02.440933       1 main.go:197] Sleeping for 60000000000
+I0421 12:02:12.292758       1 main.go:187] Creating Labels
+2025/04/21 12:02:12 Writing labels to output file /etc/kubernetes/node-feature-discovery/features.d/gfd
+I0421 12:02:12.293088       1 main.go:197] Sleeping for 60000000000

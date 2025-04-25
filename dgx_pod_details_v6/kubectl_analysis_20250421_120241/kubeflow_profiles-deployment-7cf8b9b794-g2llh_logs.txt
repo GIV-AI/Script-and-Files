@@ -1,0 +1,1248 @@
+time="2025-04-21T05:31:27Z" level=info msg="Server started"
+E0421 05:31:27.590973       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:28.592810       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:29.594062       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:30.595141       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:31.596438       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:32.597742       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:33.598608       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:34.600127       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:35.601432       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:36.602854       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:37.603967       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:38.604975       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:39.606037       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:40.606813       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:41.608282       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:42.609873       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:43.611284       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:44.611906       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+E0421 05:31:45.612878       1 reflector.go:125] pkg/mod/k8s.io/client-go@v0.0.0-20190528110200-4f3abb12cae2/tools/cache/reflector.go:93: Failed to list *v1.RoleBinding: Get "https://10.233.0.1:443/apis/rbac.authorization.k8s.io/v1/rolebindings?limit=500&resourceVersion=0": dial tcp 10.233.0.1:443: connect: connection refused
+2025/04/21 05:32:25 GET /metrics PrometheusMetrics 4.51385ms
+2025/04/21 05:32:55 GET /metrics PrometheusMetrics 5.132576ms
+2025/04/21 05:33:25 GET /metrics PrometheusMetrics 4.406179ms
+2025/04/21 05:33:55 GET /metrics PrometheusMetrics 5.391478ms
+2025/04/21 05:33:58 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:33:58 GET /kfam/v1/role/clusteradmin?user=s-jain-training-4 QueryClusterAdmin 116.34µs
+2025/04/21 05:33:58 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:33:58 GET /kfam/v1/bindings?user=s-jain-training-4 ReadBinding 68.12412ms
+2025/04/21 05:33:59 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:33:59 GET /kfam/v1/role/clusteradmin?user=s-jain-training-4 QueryClusterAdmin 90.691µs
+2025/04/21 05:33:59 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:33:59 GET /kfam/v1/bindings?user=s-jain-training-4 ReadBinding 21.077262ms
+2025/04/21 05:33:59 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:33:59 GET /kfam/v1/bindings?namespace=s-jain-training-4 ReadBinding 91.585µs
+2025/04/21 05:34:25 GET /metrics PrometheusMetrics 4.242602ms
+2025/04/21 05:37:02 GET /metrics PrometheusMetrics 3.958103ms
+2025/04/21 05:37:32 GET /metrics PrometheusMetrics 4.630515ms
+2025/04/21 05:38:02 GET /metrics PrometheusMetrics 4.190102ms
+2025/04/21 05:38:12 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:38:12 GET /kfam/v1/role/clusteradmin?user=s-jain-training-30 QueryClusterAdmin 75.007µs
+2025/04/21 05:38:12 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:38:12 GET /kfam/v1/bindings?user=s-jain-training-30 ReadBinding 17.776836ms
+2025/04/21 05:38:13 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:38:13 GET /kfam/v1/role/clusteradmin?user=s-jain-training-30 QueryClusterAdmin 40.551µs
+2025/04/21 05:38:13 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:38:13 GET /kfam/v1/bindings?user=s-jain-training-30 ReadBinding 16.696196ms
+2025/04/21 05:38:13 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:38:13 GET /kfam/v1/bindings?namespace=s-jain-training-30 ReadBinding 71.27µs
+2025/04/21 05:38:32 GET /metrics PrometheusMetrics 4.647323ms
+2025/04/21 05:38:34 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:38:34 GET /kfam/v1/role/clusteradmin?user=f-gi-aiml-1 QueryClusterAdmin 87.146µs
+2025/04/21 05:38:34 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:38:34 GET /kfam/v1/bindings?user=f-gi-aiml-1 ReadBinding 12.60236ms
+2025/04/21 05:38:34 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:38:34 GET /kfam/v1/role/clusteradmin?user=f-gi-aiml-1 QueryClusterAdmin 30.081µs
+2025/04/21 05:38:34 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:38:34 GET /kfam/v1/bindings?user=f-gi-aiml-1 ReadBinding 12.526334ms
+2025/04/21 05:38:34 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:38:34 GET /kfam/v1/bindings?namespace=f-gi-aiml-1 ReadBinding 101.039µs
+2025/04/21 05:38:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:38:55 GET /kfam/v1/role/clusteradmin?user=s-jain-training-30 QueryClusterAdmin 59.687µs
+2025/04/21 05:38:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:38:55 GET /kfam/v1/bindings?user=s-jain-training-30 ReadBinding 12.467476ms
+2025/04/21 05:38:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:38:55 GET /kfam/v1/role/clusteradmin?user=s-jain-training-30 QueryClusterAdmin 49.987µs
+2025/04/21 05:38:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:38:55 GET /kfam/v1/bindings?user=s-jain-training-30 ReadBinding 11.813006ms
+2025/04/21 05:38:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:38:55 GET /kfam/v1/bindings?namespace=s-jain-training-30 ReadBinding 112.981µs
+2025/04/21 05:39:02 GET /metrics PrometheusMetrics 5.957756ms
+2025/04/21 05:39:32 GET /metrics PrometheusMetrics 4.492357ms
+2025/04/21 05:39:34 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:39:34 GET /kfam/v1/role/clusteradmin?user=s-jain-training-4 QueryClusterAdmin 59.02µs
+2025/04/21 05:39:34 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:39:34 GET /kfam/v1/bindings?user=s-jain-training-4 ReadBinding 12.830292ms
+2025/04/21 05:39:34 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:39:34 GET /kfam/v1/role/clusteradmin?user=s-jain-training-4 QueryClusterAdmin 49.672µs
+2025/04/21 05:39:34 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:39:34 GET /kfam/v1/bindings?user=s-jain-training-4 ReadBinding 15.509133ms
+2025/04/21 05:39:34 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:39:34 GET /kfam/v1/bindings?namespace=s-jain-training-4 ReadBinding 99.995µs
+2025/04/21 05:40:02 GET /metrics PrometheusMetrics 4.080005ms
+2025/04/21 05:40:32 GET /metrics PrometheusMetrics 4.309077ms
+2025/04/21 05:40:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:40:53 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 67.662µs
+2025/04/21 05:40:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:40:53 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 11.887233ms
+2025/04/21 05:40:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:40:53 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 47.743µs
+2025/04/21 05:40:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:40:53 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 10.689651ms
+2025/04/21 05:40:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:40:53 GET /kfam/v1/bindings?namespace=s-jain-training-3 ReadBinding 64.696µs
+2025/04/21 05:41:02 GET /metrics PrometheusMetrics 5.539266ms
+2025/04/21 05:41:06 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:41:06 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 53.558µs
+2025/04/21 05:41:06 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:41:06 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 11.684009ms
+2025/04/21 05:41:06 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:41:06 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 33.243µs
+2025/04/21 05:41:06 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:41:06 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 11.324626ms
+2025/04/21 05:41:06 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:41:06 GET /kfam/v1/bindings?namespace=s-jain-training-3 ReadBinding 50.93µs
+2025/04/21 05:41:32 GET /metrics PrometheusMetrics 4.864555ms
+2025/04/21 05:41:44 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:41:44 GET /kfam/v1/role/clusteradmin?user=s-jain-training-16 QueryClusterAdmin 80.807µs
+2025/04/21 05:41:44 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:41:44 GET /kfam/v1/bindings?user=s-jain-training-16 ReadBinding 12.938081ms
+2025/04/21 05:41:45 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:41:45 GET /kfam/v1/role/clusteradmin?user=s-jain-training-16 QueryClusterAdmin 64.869µs
+2025/04/21 05:41:45 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:41:45 GET /kfam/v1/bindings?user=s-jain-training-16 ReadBinding 12.380104ms
+2025/04/21 05:41:45 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:41:45 GET /kfam/v1/bindings?namespace=s-jain-training-16 ReadBinding 63.524µs
+2025/04/21 05:42:02 GET /metrics PrometheusMetrics 4.183616ms
+2025/04/21 05:42:20 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:42:20 GET /kfam/v1/role/clusteradmin?user=s-jain-training-30 QueryClusterAdmin 64.062µs
+2025/04/21 05:42:20 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:42:20 GET /kfam/v1/bindings?user=s-jain-training-30 ReadBinding 11.744723ms
+2025/04/21 05:42:20 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:42:20 GET /kfam/v1/role/clusteradmin?user=s-jain-training-30 QueryClusterAdmin 45.44µs
+2025/04/21 05:42:20 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:42:20 GET /kfam/v1/bindings?user=s-jain-training-30 ReadBinding 12.092403ms
+2025/04/21 05:42:20 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:42:20 GET /kfam/v1/bindings?namespace=s-jain-training-30 ReadBinding 72.233µs
+2025/04/21 05:42:32 GET /metrics PrometheusMetrics 4.094223ms
+2025/04/21 05:43:02 GET /metrics PrometheusMetrics 6.565547ms
+2025/04/21 05:43:32 GET /metrics PrometheusMetrics 4.123133ms
+2025/04/21 05:44:02 GET /metrics PrometheusMetrics 4.15766ms
+2025/04/21 05:44:32 GET /metrics PrometheusMetrics 5.856668ms
+2025/04/21 05:45:02 GET /metrics PrometheusMetrics 4.250367ms
+2025/04/21 05:45:32 GET /metrics PrometheusMetrics 3.586967ms
+2025/04/21 05:45:57 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:45:57 GET /kfam/v1/role/clusteradmin?user=s-jain-training-30 QueryClusterAdmin 78.878µs
+2025/04/21 05:45:57 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:45:57 GET /kfam/v1/bindings?user=s-jain-training-30 ReadBinding 13.107508ms
+2025/04/21 05:45:57 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 05:45:57 GET /kfam/v1/role/clusteradmin?user=s-jain-training-30 QueryClusterAdmin 30.497µs
+2025/04/21 05:45:57 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:45:57 GET /kfam/v1/bindings?user=s-jain-training-30 ReadBinding 11.50126ms
+2025/04/21 05:45:57 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 05:45:57 GET /kfam/v1/bindings?namespace=s-jain-training-30 ReadBinding 66.848µs
+2025/04/21 05:46:02 GET /metrics PrometheusMetrics 6.014584ms
+2025/04/21 05:46:32 GET /metrics PrometheusMetrics 4.4517ms
+2025/04/21 05:47:02 GET /metrics PrometheusMetrics 3.989579ms
+2025/04/21 05:47:32 GET /metrics PrometheusMetrics 3.882651ms
+2025/04/21 05:48:02 GET /metrics PrometheusMetrics 3.925799ms
+2025/04/21 05:48:32 GET /metrics PrometheusMetrics 5.08821ms
+2025/04/21 05:49:02 GET /metrics PrometheusMetrics 4.567865ms
+2025/04/21 05:49:32 GET /metrics PrometheusMetrics 4.422943ms
+2025/04/21 05:50:02 GET /metrics PrometheusMetrics 5.92149ms
+2025/04/21 05:50:32 GET /metrics PrometheusMetrics 4.297518ms
+2025/04/21 05:51:02 GET /metrics PrometheusMetrics 4.528468ms
+2025/04/21 05:51:32 GET /metrics PrometheusMetrics 5.678007ms
+2025/04/21 05:52:02 GET /metrics PrometheusMetrics 4.040757ms
+2025/04/21 05:52:32 GET /metrics PrometheusMetrics 4.059035ms
+2025/04/21 05:53:02 GET /metrics PrometheusMetrics 5.627282ms
+2025/04/21 05:53:32 GET /metrics PrometheusMetrics 4.210911ms
+2025/04/21 05:54:02 GET /metrics PrometheusMetrics 6.02385ms
+2025/04/21 05:54:32 GET /metrics PrometheusMetrics 3.987654ms
+2025/04/21 05:55:02 GET /metrics PrometheusMetrics 4.09495ms
+2025/04/21 05:55:32 GET /metrics PrometheusMetrics 5.699487ms
+2025/04/21 05:56:02 GET /metrics PrometheusMetrics 3.847514ms
+2025/04/21 05:56:32 GET /metrics PrometheusMetrics 3.905289ms
+2025/04/21 05:57:02 GET /metrics PrometheusMetrics 5.718315ms
+2025/04/21 05:57:32 GET /metrics PrometheusMetrics 5.189575ms
+2025/04/21 05:58:02 GET /metrics PrometheusMetrics 4.121225ms
+2025/04/21 05:58:32 GET /metrics PrometheusMetrics 6.280147ms
+2025/04/21 05:59:02 GET /metrics PrometheusMetrics 4.517155ms
+2025/04/21 05:59:32 GET /metrics PrometheusMetrics 4.106471ms
+2025/04/21 06:00:02 GET /metrics PrometheusMetrics 3.938883ms
+2025/04/21 06:00:32 GET /metrics PrometheusMetrics 4.210365ms
+2025/04/21 06:01:02 GET /metrics PrometheusMetrics 9.710321ms
+2025/04/21 06:01:32 GET /metrics PrometheusMetrics 4.228136ms
+2025/04/21 06:02:02 GET /metrics PrometheusMetrics 4.610818ms
+2025/04/21 06:02:32 GET /metrics PrometheusMetrics 5.620085ms
+2025/04/21 06:03:02 GET /metrics PrometheusMetrics 3.842549ms
+2025/04/21 06:03:32 GET /metrics PrometheusMetrics 4.014986ms
+2025/04/21 06:04:02 GET /metrics PrometheusMetrics 5.78758ms
+2025/04/21 06:04:32 GET /metrics PrometheusMetrics 3.762317ms
+2025/04/21 06:05:02 GET /metrics PrometheusMetrics 4.116422ms
+2025/04/21 06:05:32 GET /metrics PrometheusMetrics 5.917017ms
+2025/04/21 06:06:02 GET /metrics PrometheusMetrics 4.145962ms
+2025/04/21 06:06:32 GET /metrics PrometheusMetrics 3.584578ms
+2025/04/21 06:07:02 GET /metrics PrometheusMetrics 6.016774ms
+2025/04/21 06:07:32 GET /metrics PrometheusMetrics 3.618631ms
+2025/04/21 06:08:02 GET /metrics PrometheusMetrics 4.878091ms
+2025/04/21 06:08:32 GET /metrics PrometheusMetrics 5.984593ms
+2025/04/21 06:09:02 GET /metrics PrometheusMetrics 4.01256ms
+2025/04/21 06:09:32 GET /metrics PrometheusMetrics 5.550854ms
+2025/04/21 06:10:02 GET /metrics PrometheusMetrics 4.013615ms
+2025/04/21 06:10:32 GET /metrics PrometheusMetrics 3.813039ms
+2025/04/21 06:11:02 GET /metrics PrometheusMetrics 6.11365ms
+2025/04/21 06:11:32 GET /metrics PrometheusMetrics 3.877574ms
+2025/04/21 06:12:02 GET /metrics PrometheusMetrics 4.09303ms
+2025/04/21 06:12:32 GET /metrics PrometheusMetrics 5.987244ms
+2025/04/21 06:13:02 GET /metrics PrometheusMetrics 4.045634ms
+2025/04/21 06:13:32 GET /metrics PrometheusMetrics 5.069577ms
+2025/04/21 06:14:02 GET /metrics PrometheusMetrics 4.213088ms
+2025/04/21 06:14:32 GET /metrics PrometheusMetrics 3.866403ms
+2025/04/21 06:15:02 GET /metrics PrometheusMetrics 5.897115ms
+2025/04/21 06:15:32 GET /metrics PrometheusMetrics 4.392585ms
+2025/04/21 06:16:02 GET /metrics PrometheusMetrics 4.269899ms
+2025/04/21 06:16:32 GET /metrics PrometheusMetrics 5.943336ms
+2025/04/21 06:17:02 GET /metrics PrometheusMetrics 4.422171ms
+2025/04/21 06:17:32 GET /metrics PrometheusMetrics 3.897851ms
+2025/04/21 06:18:02 GET /metrics PrometheusMetrics 13.932122ms
+2025/04/21 06:18:32 GET /metrics PrometheusMetrics 4.036172ms
+2025/04/21 06:19:02 GET /metrics PrometheusMetrics 5.665462ms
+2025/04/21 06:19:32 GET /metrics PrometheusMetrics 4.436295ms
+2025/04/21 06:20:02 GET /metrics PrometheusMetrics 4.358388ms
+2025/04/21 06:20:32 GET /metrics PrometheusMetrics 9.367369ms
+2025/04/21 06:21:02 GET /metrics PrometheusMetrics 3.997996ms
+2025/04/21 06:21:32 GET /metrics PrometheusMetrics 4.035665ms
+2025/04/21 06:22:02 GET /metrics PrometheusMetrics 14.012418ms
+2025/04/21 06:22:32 GET /metrics PrometheusMetrics 4.323986ms
+2025/04/21 06:23:02 GET /metrics PrometheusMetrics 5.701769ms
+2025/04/21 06:23:32 GET /metrics PrometheusMetrics 6.002852ms
+2025/04/21 06:24:02 GET /metrics PrometheusMetrics 4.810302ms
+2025/04/21 06:24:32 GET /metrics PrometheusMetrics 14.387749ms
+2025/04/21 06:25:02 GET /metrics PrometheusMetrics 4.595452ms
+2025/04/21 06:25:32 GET /metrics PrometheusMetrics 4.735947ms
+2025/04/21 06:26:02 GET /metrics PrometheusMetrics 10.084925ms
+2025/04/21 06:26:32 GET /metrics PrometheusMetrics 4.598423ms
+2025/04/21 06:27:02 GET /metrics PrometheusMetrics 4.638243ms
+2025/04/21 06:27:32 GET /metrics PrometheusMetrics 7.036504ms
+2025/04/21 06:28:02 GET /metrics PrometheusMetrics 4.440308ms
+2025/04/21 06:28:32 GET /metrics PrometheusMetrics 5.739382ms
+2025/04/21 06:29:02 GET /metrics PrometheusMetrics 5.600656ms
+2025/04/21 06:29:32 GET /metrics PrometheusMetrics 4.347528ms
+2025/04/21 06:30:02 GET /metrics PrometheusMetrics 6.205425ms
+2025/04/21 06:30:32 GET /metrics PrometheusMetrics 4.346402ms
+2025/04/21 06:31:02 GET /metrics PrometheusMetrics 4.175616ms
+2025/04/21 06:31:32 GET /metrics PrometheusMetrics 6.494003ms
+2025/04/21 06:32:02 GET /metrics PrometheusMetrics 3.855443ms
+2025/04/21 06:32:32 GET /metrics PrometheusMetrics 4.727831ms
+2025/04/21 06:33:02 GET /metrics PrometheusMetrics 5.998725ms
+2025/04/21 06:33:32 GET /metrics PrometheusMetrics 3.915074ms
+2025/04/21 06:34:02 GET /metrics PrometheusMetrics 3.761866ms
+2025/04/21 06:34:32 GET /metrics PrometheusMetrics 9.315759ms
+2025/04/21 06:35:02 GET /metrics PrometheusMetrics 4.175383ms
+2025/04/21 06:35:32 GET /metrics PrometheusMetrics 11.41511ms
+2025/04/21 06:36:02 GET /metrics PrometheusMetrics 4.185759ms
+2025/04/21 06:36:32 GET /metrics PrometheusMetrics 4.194691ms
+2025/04/21 06:37:02 GET /metrics PrometheusMetrics 5.99901ms
+2025/04/21 06:37:32 GET /metrics PrometheusMetrics 4.039754ms
+2025/04/21 06:38:02 GET /metrics PrometheusMetrics 6.311024ms
+2025/04/21 06:38:32 GET /metrics PrometheusMetrics 3.990804ms
+2025/04/21 06:39:02 GET /metrics PrometheusMetrics 4.080754ms
+2025/04/21 06:39:32 GET /metrics PrometheusMetrics 6.393969ms
+2025/04/21 06:40:02 GET /metrics PrometheusMetrics 3.940898ms
+2025/04/21 06:40:32 GET /metrics PrometheusMetrics 4.435458ms
+2025/04/21 06:41:02 GET /metrics PrometheusMetrics 10.059123ms
+2025/04/21 06:41:32 GET /metrics PrometheusMetrics 3.933977ms
+2025/04/21 06:42:02 GET /metrics PrometheusMetrics 6.934507ms
+2025/04/21 06:42:32 GET /metrics PrometheusMetrics 4.152054ms
+2025/04/21 06:43:02 GET /metrics PrometheusMetrics 3.767039ms
+2025/04/21 06:43:32 GET /metrics PrometheusMetrics 6.111912ms
+2025/04/21 06:44:02 GET /metrics PrometheusMetrics 4.266898ms
+2025/04/21 06:44:32 GET /metrics PrometheusMetrics 3.718035ms
+2025/04/21 06:45:02 GET /metrics PrometheusMetrics 6.010654ms
+2025/04/21 06:45:32 GET /metrics PrometheusMetrics 3.792388ms
+2025/04/21 06:46:02 GET /metrics PrometheusMetrics 4.181163ms
+2025/04/21 06:46:32 GET /metrics PrometheusMetrics 5.959934ms
+2025/04/21 06:47:02 GET /metrics PrometheusMetrics 4.036839ms
+2025/04/21 06:47:32 GET /metrics PrometheusMetrics 5.990581ms
+2025/04/21 06:48:02 GET /metrics PrometheusMetrics 4.285523ms
+2025/04/21 06:48:32 GET /metrics PrometheusMetrics 4.053009ms
+2025/04/21 06:49:02 GET /metrics PrometheusMetrics 11.251743ms
+2025/04/21 06:49:32 GET /metrics PrometheusMetrics 4.185821ms
+2025/04/21 06:50:02 GET /metrics PrometheusMetrics 6.026079ms
+2025/04/21 06:50:32 GET /metrics PrometheusMetrics 4.234084ms
+2025/04/21 06:51:02 GET /metrics PrometheusMetrics 3.909482ms
+2025/04/21 06:51:32 GET /metrics PrometheusMetrics 6.081664ms
+2025/04/21 06:52:02 GET /metrics PrometheusMetrics 3.956576ms
+2025/04/21 06:52:32 GET /metrics PrometheusMetrics 4.498076ms
+2025/04/21 06:53:02 GET /metrics PrometheusMetrics 6.865421ms
+2025/04/21 06:53:32 GET /metrics PrometheusMetrics 4.211242ms
+2025/04/21 06:54:02 GET /metrics PrometheusMetrics 4.35454ms
+2025/04/21 06:54:32 GET /metrics PrometheusMetrics 6.542299ms
+2025/04/21 06:55:02 GET /metrics PrometheusMetrics 4.63596ms
+2025/04/21 06:55:32 GET /metrics PrometheusMetrics 7.100596ms
+2025/04/21 06:56:02 GET /metrics PrometheusMetrics 5.281166ms
+2025/04/21 06:56:32 GET /metrics PrometheusMetrics 3.931487ms
+2025/04/21 06:57:02 GET /metrics PrometheusMetrics 7.636902ms
+2025/04/21 06:57:32 GET /metrics PrometheusMetrics 4.260883ms
+2025/04/21 06:58:02 GET /metrics PrometheusMetrics 4.866823ms
+2025/04/21 06:58:32 GET /metrics PrometheusMetrics 5.881993ms
+2025/04/21 06:59:02 GET /metrics PrometheusMetrics 4.534225ms
+2025/04/21 06:59:32 GET /metrics PrometheusMetrics 6.0695ms
+2025/04/21 07:00:02 GET /metrics PrometheusMetrics 4.409241ms
+2025/04/21 07:00:32 GET /metrics PrometheusMetrics 4.542468ms
+2025/04/21 07:01:02 GET /metrics PrometheusMetrics 5.903446ms
+2025/04/21 07:01:32 GET /metrics PrometheusMetrics 4.000877ms
+2025/04/21 07:02:02 GET /metrics PrometheusMetrics 4.550085ms
+2025/04/21 07:02:20 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:02:20 GET /kfam/v1/role/clusteradmin?user=s-jain-training-16 QueryClusterAdmin 58.025µs
+2025/04/21 07:02:20 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:02:20 GET /kfam/v1/bindings?user=s-jain-training-16 ReadBinding 12.376157ms
+2025/04/21 07:02:21 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:02:21 GET /kfam/v1/role/clusteradmin?user=s-jain-training-16 QueryClusterAdmin 38.574µs
+2025/04/21 07:02:21 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:02:21 GET /kfam/v1/bindings?user=s-jain-training-16 ReadBinding 11.402631ms
+2025/04/21 07:02:21 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:02:21 GET /kfam/v1/bindings?namespace=s-jain-training-16 ReadBinding 137.627µs
+2025/04/21 07:02:32 GET /metrics PrometheusMetrics 6.395359ms
+2025/04/21 07:02:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:02:55 GET /kfam/v1/role/clusteradmin?user=s-jain-training-1 QueryClusterAdmin 53.62µs
+2025/04/21 07:02:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:02:55 GET /kfam/v1/bindings?user=s-jain-training-1 ReadBinding 12.34084ms
+2025/04/21 07:02:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:02:55 GET /kfam/v1/role/clusteradmin?user=s-jain-training-1 QueryClusterAdmin 38.627µs
+2025/04/21 07:02:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:02:55 GET /kfam/v1/bindings?user=s-jain-training-1 ReadBinding 11.482907ms
+2025/04/21 07:02:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:02:55 GET /kfam/v1/bindings?namespace=s-jain-training-1 ReadBinding 77.004µs
+2025/04/21 07:02:59 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:02:59 GET /kfam/v1/role/clusteradmin?user=s-jain-training-21 QueryClusterAdmin 52.893µs
+2025/04/21 07:02:59 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:02:59 GET /kfam/v1/bindings?user=s-jain-training-21 ReadBinding 12.110206ms
+2025/04/21 07:02:59 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:02:59 GET /kfam/v1/role/clusteradmin?user=s-jain-training-21 QueryClusterAdmin 27.884µs
+2025/04/21 07:02:59 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:02:59 GET /kfam/v1/bindings?user=s-jain-training-21 ReadBinding 11.05796ms
+2025/04/21 07:02:59 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:02:59 GET /kfam/v1/bindings?namespace=s-jain-training-21 ReadBinding 59.984µs
+2025/04/21 07:03:02 GET /metrics PrometheusMetrics 4.24161ms
+2025/04/21 07:03:32 GET /metrics PrometheusMetrics 4.736239ms
+2025/04/21 07:03:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:03:53 GET /kfam/v1/role/clusteradmin?user=s-jain-training-13 QueryClusterAdmin 63.103µs
+2025/04/21 07:03:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:03:53 GET /kfam/v1/bindings?user=s-jain-training-13 ReadBinding 12.00012ms
+2025/04/21 07:03:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:03:53 GET /kfam/v1/role/clusteradmin?user=s-jain-training-13 QueryClusterAdmin 35.819µs
+2025/04/21 07:03:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:03:53 GET /kfam/v1/bindings?user=s-jain-training-13 ReadBinding 11.775668ms
+2025/04/21 07:03:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:03:53 GET /kfam/v1/bindings?namespace=s-jain-training-13 ReadBinding 86.104µs
+2025/04/21 07:03:58 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:03:58 GET /kfam/v1/role/clusteradmin?user=s-jain-training-9 QueryClusterAdmin 81.55µs
+2025/04/21 07:03:58 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:03:58 GET /kfam/v1/bindings?user=s-jain-training-9 ReadBinding 16.391325ms
+2025/04/21 07:03:58 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:03:58 GET /kfam/v1/role/clusteradmin?user=s-jain-training-9 QueryClusterAdmin 59.718µs
+2025/04/21 07:03:58 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:03:58 GET /kfam/v1/bindings?user=s-jain-training-9 ReadBinding 16.147359ms
+2025/04/21 07:03:59 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:03:59 GET /kfam/v1/bindings?namespace=s-jain-training-9 ReadBinding 76.992µs
+2025/04/21 07:04:00 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:04:00 GET /kfam/v1/role/clusteradmin?user=s-jain-training-19 QueryClusterAdmin 86.079µs
+2025/04/21 07:04:00 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:04:00 GET /kfam/v1/bindings?user=s-jain-training-19 ReadBinding 16.628853ms
+2025/04/21 07:04:00 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:04:00 GET /kfam/v1/role/clusteradmin?user=s-jain-training-19 QueryClusterAdmin 46.892µs
+2025/04/21 07:04:00 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:04:00 GET /kfam/v1/bindings?user=s-jain-training-19 ReadBinding 15.866574ms
+2025/04/21 07:04:01 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:04:01 GET /kfam/v1/bindings?namespace=s-jain-training-19 ReadBinding 98.594µs
+2025/04/21 07:04:02 GET /metrics PrometheusMetrics 6.182676ms
+2025/04/21 07:04:20 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:04:20 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 74.663µs
+2025/04/21 07:04:20 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:04:20 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 17.365547ms
+2025/04/21 07:04:20 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:04:20 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 39.564µs
+2025/04/21 07:04:20 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:04:20 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 16.28753ms
+2025/04/21 07:04:20 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:04:20 GET /kfam/v1/bindings?namespace=s-jain-training-3 ReadBinding 93.145µs
+2025/04/21 07:04:32 GET /metrics PrometheusMetrics 4.218919ms
+2025/04/21 07:05:02 GET /metrics PrometheusMetrics 4.825298ms
+2025/04/21 07:05:04 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:05:04 GET /kfam/v1/role/clusteradmin?user=s-jain-training-7 QueryClusterAdmin 65.377µs
+2025/04/21 07:05:04 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:05:04 GET /kfam/v1/bindings?user=s-jain-training-7 ReadBinding 11.863929ms
+2025/04/21 07:05:04 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:05:04 GET /kfam/v1/role/clusteradmin?user=s-jain-training-7 QueryClusterAdmin 149.232µs
+2025/04/21 07:05:04 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:05:04 GET /kfam/v1/bindings?user=s-jain-training-7 ReadBinding 12.225798ms
+2025/04/21 07:05:04 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:05:04 GET /kfam/v1/bindings?namespace=s-jain-training-7 ReadBinding 55.476µs
+2025/04/21 07:05:32 GET /metrics PrometheusMetrics 5.939986ms
+2025/04/21 07:05:48 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:05:48 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 69.794µs
+2025/04/21 07:05:48 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:05:48 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 26.462148ms
+2025/04/21 07:05:48 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:05:48 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 26.548µs
+2025/04/21 07:05:48 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:05:48 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 22.639823ms
+2025/04/21 07:05:48 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:05:48 GET /kfam/v1/bindings?namespace=s-jain-training-3 ReadBinding 53.368µs
+2025/04/21 07:05:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:05:55 GET /kfam/v1/role/clusteradmin?user=s-jain-training-8 QueryClusterAdmin 59.29µs
+2025/04/21 07:05:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:05:55 GET /kfam/v1/bindings?user=s-jain-training-8 ReadBinding 12.186781ms
+2025/04/21 07:05:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:05:55 GET /kfam/v1/role/clusteradmin?user=s-jain-training-8 QueryClusterAdmin 28.736µs
+2025/04/21 07:05:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:05:55 GET /kfam/v1/bindings?user=s-jain-training-8 ReadBinding 11.146778ms
+2025/04/21 07:05:55 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:05:55 GET /kfam/v1/bindings?namespace=s-jain-training-8 ReadBinding 42.647µs
+2025/04/21 07:06:02 GET /metrics PrometheusMetrics 4.144633ms
+2025/04/21 07:06:32 GET /metrics PrometheusMetrics 3.663177ms
+2025/04/21 07:06:50 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:06:50 GET /kfam/v1/role/clusteradmin?user=s-jain-training-13 QueryClusterAdmin 54.043µs
+2025/04/21 07:06:50 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:06:50 GET /kfam/v1/bindings?user=s-jain-training-13 ReadBinding 14.307072ms
+2025/04/21 07:06:50 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:06:50 GET /kfam/v1/role/clusteradmin?user=s-jain-training-13 QueryClusterAdmin 35.847µs
+2025/04/21 07:06:50 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:06:50 GET /kfam/v1/bindings?user=s-jain-training-13 ReadBinding 13.934615ms
+2025/04/21 07:06:50 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:06:50 GET /kfam/v1/bindings?namespace=s-jain-training-13 ReadBinding 51.967µs
+2025/04/21 07:07:02 GET /metrics PrometheusMetrics 5.949437ms
+2025/04/21 07:07:32 GET /metrics PrometheusMetrics 3.81858ms
+2025/04/21 07:08:02 GET /metrics PrometheusMetrics 4.067625ms
+2025/04/21 07:08:32 GET /metrics PrometheusMetrics 6.105558ms
+2025/04/21 07:09:02 GET /metrics PrometheusMetrics 4.030922ms
+2025/04/21 07:09:32 GET /metrics PrometheusMetrics 7.291792ms
+2025/04/21 07:10:02 GET /metrics PrometheusMetrics 6.408164ms
+2025/04/21 07:10:08 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:10:08 GET /kfam/v1/role/clusteradmin?user=s-jain-training-17 QueryClusterAdmin 65.326µs
+2025/04/21 07:10:08 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:10:08 GET /kfam/v1/bindings?user=s-jain-training-17 ReadBinding 17.246142ms
+2025/04/21 07:10:08 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:10:08 GET /kfam/v1/role/clusteradmin?user=s-jain-training-17 QueryClusterAdmin 75.764µs
+2025/04/21 07:10:08 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:10:08 GET /kfam/v1/bindings?user=s-jain-training-17 ReadBinding 16.237778ms
+2025/04/21 07:10:08 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:10:08 GET /kfam/v1/bindings?namespace=s-jain-training-17 ReadBinding 98.596µs
+2025/04/21 07:10:32 GET /metrics PrometheusMetrics 4.281656ms
+2025/04/21 07:11:02 GET /metrics PrometheusMetrics 5.801378ms
+2025/04/21 07:11:32 GET /metrics PrometheusMetrics 3.914851ms
+2025/04/21 07:12:02 GET /metrics PrometheusMetrics 4.210439ms
+2025/04/21 07:12:32 GET /metrics PrometheusMetrics 9.852086ms
+2025/04/21 07:13:02 GET /metrics PrometheusMetrics 3.980803ms
+2025/04/21 07:13:32 GET /metrics PrometheusMetrics 4.388669ms
+2025/04/21 07:14:02 GET /metrics PrometheusMetrics 6.241081ms
+2025/04/21 07:14:32 GET /metrics PrometheusMetrics 4.458747ms
+2025/04/21 07:15:02 GET /metrics PrometheusMetrics 4.035395ms
+2025/04/21 07:15:32 GET /metrics PrometheusMetrics 6.125195ms
+2025/04/21 07:16:02 GET /metrics PrometheusMetrics 3.892ms
+2025/04/21 07:16:32 GET /metrics PrometheusMetrics 4.686612ms
+2025/04/21 07:17:02 GET /metrics PrometheusMetrics 5.635125ms
+2025/04/21 07:17:32 GET /metrics PrometheusMetrics 3.803747ms
+2025/04/21 07:18:02 GET /metrics PrometheusMetrics 6.011499ms
+2025/04/21 07:18:32 GET /metrics PrometheusMetrics 4.815264ms
+2025/04/21 07:19:02 GET /metrics PrometheusMetrics 4.455346ms
+2025/04/21 07:19:32 GET /metrics PrometheusMetrics 6.418328ms
+2025/04/21 07:20:02 GET /metrics PrometheusMetrics 4.665018ms
+2025/04/21 07:20:32 GET /metrics PrometheusMetrics 6.132945ms
+2025/04/21 07:21:02 GET /metrics PrometheusMetrics 4.264995ms
+2025/04/21 07:21:32 GET /metrics PrometheusMetrics 4.336422ms
+2025/04/21 07:22:02 GET /metrics PrometheusMetrics 6.373071ms
+2025/04/21 07:22:32 GET /metrics PrometheusMetrics 4.625387ms
+2025/04/21 07:23:02 GET /metrics PrometheusMetrics 4.829141ms
+2025/04/21 07:23:32 GET /metrics PrometheusMetrics 4.381579ms
+2025/04/21 07:24:02 GET /metrics PrometheusMetrics 4.537038ms
+2025/04/21 07:24:32 GET /metrics PrometheusMetrics 6.072681ms
+2025/04/21 07:25:02 GET /metrics PrometheusMetrics 4.436478ms
+2025/04/21 07:25:32 GET /metrics PrometheusMetrics 3.958933ms
+2025/04/21 07:26:02 GET /metrics PrometheusMetrics 6.053269ms
+2025/04/21 07:26:32 GET /metrics PrometheusMetrics 4.116212ms
+2025/04/21 07:27:02 GET /metrics PrometheusMetrics 6.137965ms
+2025/04/21 07:27:32 GET /metrics PrometheusMetrics 3.939688ms
+2025/04/21 07:28:02 GET /metrics PrometheusMetrics 4.006092ms
+2025/04/21 07:28:32 GET /metrics PrometheusMetrics 6.040558ms
+2025/04/21 07:29:02 GET /metrics PrometheusMetrics 3.932497ms
+2025/04/21 07:29:32 GET /metrics PrometheusMetrics 5.756516ms
+2025/04/21 07:30:02 GET /metrics PrometheusMetrics 3.805611ms
+2025/04/21 07:30:32 GET /metrics PrometheusMetrics 4.520649ms
+2025/04/21 07:31:02 GET /metrics PrometheusMetrics 6.425442ms
+2025/04/21 07:31:32 GET /metrics PrometheusMetrics 3.794758ms
+2025/04/21 07:32:02 GET /metrics PrometheusMetrics 6.019648ms
+2025/04/21 07:32:32 GET /metrics PrometheusMetrics 4.223758ms
+2025/04/21 07:33:02 GET /metrics PrometheusMetrics 3.760953ms
+2025/04/21 07:33:32 GET /metrics PrometheusMetrics 6.01883ms
+2025/04/21 07:34:02 GET /metrics PrometheusMetrics 4.254736ms
+2025/04/21 07:34:32 GET /metrics PrometheusMetrics 6.139732ms
+2025/04/21 07:35:02 GET /metrics PrometheusMetrics 4.840638ms
+2025/04/21 07:35:32 GET /metrics PrometheusMetrics 4.114255ms
+2025/04/21 07:36:02 GET /metrics PrometheusMetrics 5.847845ms
+2025/04/21 07:36:32 GET /metrics PrometheusMetrics 4.157356ms
+2025/04/21 07:37:02 GET /metrics PrometheusMetrics 4.205214ms
+2025/04/21 07:37:32 GET /metrics PrometheusMetrics 6.05603ms
+2025/04/21 07:38:02 GET /metrics PrometheusMetrics 4.650582ms
+2025/04/21 07:38:32 GET /metrics PrometheusMetrics 6.123971ms
+2025/04/21 07:39:02 GET /metrics PrometheusMetrics 4.183668ms
+2025/04/21 07:39:32 GET /metrics PrometheusMetrics 3.998051ms
+2025/04/21 07:40:02 GET /metrics PrometheusMetrics 6.224105ms
+2025/04/21 07:40:32 GET /metrics PrometheusMetrics 4.2379ms
+2025/04/21 07:41:02 GET /metrics PrometheusMetrics 6.356445ms
+2025/04/21 07:41:32 GET /metrics PrometheusMetrics 4.161391ms
+2025/04/21 07:42:02 GET /metrics PrometheusMetrics 4.252279ms
+2025/04/21 07:42:32 GET /metrics PrometheusMetrics 6.070668ms
+2025/04/21 07:43:02 GET /metrics PrometheusMetrics 4.347469ms
+2025/04/21 07:43:32 GET /metrics PrometheusMetrics 3.977395ms
+2025/04/21 07:44:02 GET /metrics PrometheusMetrics 5.194986ms
+2025/04/21 07:44:32 GET /metrics PrometheusMetrics 4.351747ms
+2025/04/21 07:45:02 GET /metrics PrometheusMetrics 6.272423ms
+2025/04/21 07:45:32 GET /metrics PrometheusMetrics 4.942255ms
+2025/04/21 07:46:02 GET /metrics PrometheusMetrics 4.358124ms
+2025/04/21 07:46:32 GET /metrics PrometheusMetrics 6.472173ms
+2025/04/21 07:47:02 GET /metrics PrometheusMetrics 4.457246ms
+2025/04/21 07:47:32 GET /metrics PrometheusMetrics 4.903203ms
+2025/04/21 07:48:02 GET /metrics PrometheusMetrics 4.796529ms
+2025/04/21 07:48:32 GET /metrics PrometheusMetrics 4.357523ms
+2025/04/21 07:49:02 GET /metrics PrometheusMetrics 6.331769ms
+2025/04/21 07:49:32 GET /metrics PrometheusMetrics 3.960362ms
+2025/04/21 07:50:02 GET /metrics PrometheusMetrics 4.793724ms
+2025/04/21 07:50:32 GET /metrics PrometheusMetrics 15.361605ms
+2025/04/21 07:51:02 GET /metrics PrometheusMetrics 3.788834ms
+2025/04/21 07:51:32 GET /metrics PrometheusMetrics 10.317561ms
+2025/04/21 07:52:02 GET /metrics PrometheusMetrics 4.101276ms
+2025/04/21 07:52:32 GET /metrics PrometheusMetrics 4.713517ms
+2025/04/21 07:53:02 GET /metrics PrometheusMetrics 6.102537ms
+2025/04/21 07:53:32 GET /metrics PrometheusMetrics 3.979159ms
+2025/04/21 07:54:02 GET /metrics PrometheusMetrics 5.814323ms
+2025/04/21 07:54:32 GET /metrics PrometheusMetrics 4.083237ms
+2025/04/21 07:55:02 GET /metrics PrometheusMetrics 4.54094ms
+2025/04/21 07:55:32 GET /metrics PrometheusMetrics 6.16414ms
+2025/04/21 07:56:02 GET /metrics PrometheusMetrics 4.264962ms
+2025/04/21 07:56:32 GET /metrics PrometheusMetrics 5.715225ms
+2025/04/21 07:56:35 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:56:35 GET /kfam/v1/role/clusteradmin?user=s-jain-training-30 QueryClusterAdmin 70.2µs
+2025/04/21 07:56:35 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:56:35 GET /kfam/v1/bindings?user=s-jain-training-30 ReadBinding 15.659595ms
+2025/04/21 07:56:35 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 07:56:35 GET /kfam/v1/role/clusteradmin?user=s-jain-training-30 QueryClusterAdmin 53.105µs
+2025/04/21 07:56:35 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:56:35 GET /kfam/v1/bindings?user=s-jain-training-30 ReadBinding 12.694654ms
+2025/04/21 07:56:35 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 07:56:35 GET /kfam/v1/bindings?namespace=s-jain-training-30 ReadBinding 105.513µs
+2025/04/21 07:57:02 GET /metrics PrometheusMetrics 4.614444ms
+2025/04/21 07:57:32 GET /metrics PrometheusMetrics 5.40352ms
+2025/04/21 07:58:02 GET /metrics PrometheusMetrics 4.115864ms
+2025/04/21 07:58:32 GET /metrics PrometheusMetrics 4.272823ms
+2025/04/21 07:59:02 GET /metrics PrometheusMetrics 5.927072ms
+2025/04/21 07:59:32 GET /metrics PrometheusMetrics 4.583825ms
+2025/04/21 08:00:02 GET /metrics PrometheusMetrics 5.405398ms
+2025/04/21 08:00:32 GET /metrics PrometheusMetrics 5.257385ms
+2025/04/21 08:01:02 GET /metrics PrometheusMetrics 8.478646ms
+2025/04/21 08:01:32 GET /metrics PrometheusMetrics 6.418795ms
+2025/04/21 08:02:02 GET /metrics PrometheusMetrics 5.741451ms
+2025/04/21 08:02:32 GET /metrics PrometheusMetrics 8.78567ms
+2025/04/21 08:03:02 GET /metrics PrometheusMetrics 4.525263ms
+2025/04/21 08:03:32 GET /metrics PrometheusMetrics 6.081894ms
+2025/04/21 08:04:02 GET /metrics PrometheusMetrics 4.110147ms
+2025/04/21 08:04:32 GET /metrics PrometheusMetrics 6.073236ms
+2025/04/21 08:05:02 GET /metrics PrometheusMetrics 6.043838ms
+2025/04/21 08:05:32 GET /metrics PrometheusMetrics 4.10988ms
+2025/04/21 08:06:02 GET /metrics PrometheusMetrics 6.364042ms
+2025/04/21 08:06:32 GET /metrics PrometheusMetrics 4.124808ms
+2025/04/21 08:07:02 GET /metrics PrometheusMetrics 4.061445ms
+2025/04/21 08:07:32 GET /metrics PrometheusMetrics 6.253065ms
+2025/04/21 08:08:02 GET /metrics PrometheusMetrics 3.993884ms
+2025/04/21 08:08:32 GET /metrics PrometheusMetrics 5.902758ms
+2025/04/21 08:09:02 GET /metrics PrometheusMetrics 4.161926ms
+2025/04/21 08:09:32 GET /metrics PrometheusMetrics 4.592103ms
+2025/04/21 08:10:02 GET /metrics PrometheusMetrics 5.960887ms
+2025/04/21 08:10:32 GET /metrics PrometheusMetrics 4.386488ms
+2025/04/21 08:11:02 GET /metrics PrometheusMetrics 4.345579ms
+2025/04/21 08:11:32 GET /metrics PrometheusMetrics 6.221699ms
+2025/04/21 08:12:02 GET /metrics PrometheusMetrics 4.313421ms
+2025/04/21 08:12:32 GET /metrics PrometheusMetrics 6.380039ms
+2025/04/21 08:13:02 GET /metrics PrometheusMetrics 4.127328ms
+2025/04/21 08:13:32 GET /metrics PrometheusMetrics 4.643289ms
+2025/04/21 08:14:02 GET /metrics PrometheusMetrics 4.00703ms
+2025/04/21 08:14:32 GET /metrics PrometheusMetrics 4.257636ms
+2025/04/21 08:15:02 GET /metrics PrometheusMetrics 8.161564ms
+2025/04/21 08:15:32 GET /metrics PrometheusMetrics 4.549465ms
+2025/04/21 08:16:02 GET /metrics PrometheusMetrics 4.412027ms
+2025/04/21 08:16:32 GET /metrics PrometheusMetrics 7.568204ms
+2025/04/21 08:17:02 GET /metrics PrometheusMetrics 4.790841ms
+2025/04/21 08:17:32 GET /metrics PrometheusMetrics 6.190251ms
+2025/04/21 08:18:02 GET /metrics PrometheusMetrics 4.350196ms
+2025/04/21 08:18:32 GET /metrics PrometheusMetrics 4.379661ms
+2025/04/21 08:19:02 GET /metrics PrometheusMetrics 3.991159ms
+2025/04/21 08:19:32 GET /metrics PrometheusMetrics 3.934685ms
+2025/04/21 08:20:02 GET /metrics PrometheusMetrics 5.999376ms
+2025/04/21 08:20:32 GET /metrics PrometheusMetrics 4.240894ms
+2025/04/21 08:21:02 GET /metrics PrometheusMetrics 6.148868ms
+2025/04/21 08:21:32 GET /metrics PrometheusMetrics 4.433709ms
+2025/04/21 08:22:02 GET /metrics PrometheusMetrics 4.108307ms
+2025/04/21 08:22:32 GET /metrics PrometheusMetrics 6.418303ms
+2025/04/21 08:23:02 GET /metrics PrometheusMetrics 4.069942ms
+2025/04/21 08:23:32 GET /metrics PrometheusMetrics 6.714625ms
+2025/04/21 08:24:02 GET /metrics PrometheusMetrics 4.108732ms
+2025/04/21 08:24:32 GET /metrics PrometheusMetrics 3.953127ms
+2025/04/21 08:25:02 GET /metrics PrometheusMetrics 10.265745ms
+2025/04/21 08:25:32 GET /metrics PrometheusMetrics 4.263558ms
+2025/04/21 08:26:02 GET /metrics PrometheusMetrics 4.910133ms
+2025/04/21 08:26:32 GET /metrics PrometheusMetrics 4.593323ms
+2025/04/21 08:27:02 GET /metrics PrometheusMetrics 4.355953ms
+2025/04/21 08:27:32 GET /metrics PrometheusMetrics 6.160462ms
+2025/04/21 08:28:02 GET /metrics PrometheusMetrics 4.024231ms
+2025/04/21 08:28:32 GET /metrics PrometheusMetrics 4.305768ms
+2025/04/21 08:29:02 GET /metrics PrometheusMetrics 4.42786ms
+2025/04/21 08:29:32 GET /metrics PrometheusMetrics 4.06146ms
+2025/04/21 08:30:02 GET /metrics PrometheusMetrics 6.621561ms
+2025/04/21 08:30:32 GET /metrics PrometheusMetrics 4.316158ms
+2025/04/21 08:31:02 GET /metrics PrometheusMetrics 4.48271ms
+2025/04/21 08:31:32 GET /metrics PrometheusMetrics 4.725245ms
+2025/04/21 08:32:02 GET /metrics PrometheusMetrics 4.807413ms
+2025/04/21 08:32:32 GET /metrics PrometheusMetrics 6.443847ms
+2025/04/21 08:33:02 GET /metrics PrometheusMetrics 4.218208ms
+2025/04/21 08:33:32 GET /metrics PrometheusMetrics 4.501557ms
+2025/04/21 08:34:02 GET /metrics PrometheusMetrics 5.017334ms
+2025/04/21 08:34:32 GET /metrics PrometheusMetrics 4.346168ms
+2025/04/21 08:35:02 GET /metrics PrometheusMetrics 6.099352ms
+2025/04/21 08:35:32 GET /metrics PrometheusMetrics 4.786701ms
+2025/04/21 08:36:02 GET /metrics PrometheusMetrics 4.890837ms
+2025/04/21 08:36:32 GET /metrics PrometheusMetrics 4.655469ms
+2025/04/21 08:37:02 GET /metrics PrometheusMetrics 4.532321ms
+2025/04/21 08:37:32 GET /metrics PrometheusMetrics 6.086159ms
+2025/04/21 08:38:02 GET /metrics PrometheusMetrics 3.915727ms
+2025/04/21 08:38:32 GET /metrics PrometheusMetrics 3.731316ms
+2025/04/21 08:39:02 GET /metrics PrometheusMetrics 6.26031ms
+2025/04/21 08:39:32 GET /metrics PrometheusMetrics 4.58184ms
+2025/04/21 08:40:02 GET /metrics PrometheusMetrics 5.825052ms
+2025/04/21 08:40:32 GET /metrics PrometheusMetrics 4.146325ms
+2025/04/21 08:41:02 GET /metrics PrometheusMetrics 5.98654ms
+2025/04/21 08:41:32 GET /metrics PrometheusMetrics 4.047103ms
+2025/04/21 08:42:02 GET /metrics PrometheusMetrics 4.276805ms
+2025/04/21 08:42:32 GET /metrics PrometheusMetrics 3.86378ms
+2025/04/21 08:43:02 GET /metrics PrometheusMetrics 4.165391ms
+2025/04/21 08:43:32 GET /metrics PrometheusMetrics 6.25214ms
+2025/04/21 08:44:02 GET /metrics PrometheusMetrics 3.901633ms
+2025/04/21 08:44:32 GET /metrics PrometheusMetrics 4.368352ms
+2025/04/21 08:45:02 GET /metrics PrometheusMetrics 4.563139ms
+2025/04/21 08:45:32 GET /metrics PrometheusMetrics 4.564527ms
+2025/04/21 08:46:02 GET /metrics PrometheusMetrics 6.22658ms
+2025/04/21 08:46:32 GET /metrics PrometheusMetrics 3.967352ms
+2025/04/21 08:47:02 GET /metrics PrometheusMetrics 6.00194ms
+2025/04/21 08:47:32 GET /metrics PrometheusMetrics 4.321137ms
+2025/04/21 08:48:02 GET /metrics PrometheusMetrics 4.445587ms
+2025/04/21 08:48:32 GET /metrics PrometheusMetrics 4.852958ms
+2025/04/21 08:49:02 GET /metrics PrometheusMetrics 4.59037ms
+2025/04/21 08:49:32 GET /metrics PrometheusMetrics 6.218718ms
+2025/04/21 08:50:02 GET /metrics PrometheusMetrics 4.210991ms
+2025/04/21 08:50:32 GET /metrics PrometheusMetrics 4.97838ms
+2025/04/21 08:51:02 GET /metrics PrometheusMetrics 4.781304ms
+2025/04/21 08:51:32 GET /metrics PrometheusMetrics 4.093532ms
+2025/04/21 08:52:02 GET /metrics PrometheusMetrics 5.867533ms
+2025/04/21 08:52:32 GET /metrics PrometheusMetrics 4.231646ms
+2025/04/21 08:53:02 GET /metrics PrometheusMetrics 4.075821ms
+2025/04/21 08:53:32 GET /metrics PrometheusMetrics 3.857868ms
+2025/04/21 08:54:02 GET /metrics PrometheusMetrics 4.322584ms
+2025/04/21 08:54:32 GET /metrics PrometheusMetrics 5.994916ms
+2025/04/21 08:55:02 GET /metrics PrometheusMetrics 4.61348ms
+2025/04/21 08:55:32 GET /metrics PrometheusMetrics 4.671882ms
+2025/04/21 08:56:02 GET /metrics PrometheusMetrics 4.490672ms
+2025/04/21 08:56:32 GET /metrics PrometheusMetrics 4.463563ms
+2025/04/21 08:57:02 GET /metrics PrometheusMetrics 6.443858ms
+2025/04/21 08:57:32 GET /metrics PrometheusMetrics 4.58874ms
+2025/04/21 08:58:02 GET /metrics PrometheusMetrics 4.47226ms
+2025/04/21 08:58:32 GET /metrics PrometheusMetrics 4.928352ms
+2025/04/21 08:59:02 GET /metrics PrometheusMetrics 4.268318ms
+2025/04/21 08:59:32 GET /metrics PrometheusMetrics 5.707562ms
+2025/04/21 09:00:02 GET /metrics PrometheusMetrics 4.128879ms
+2025/04/21 09:00:32 GET /metrics PrometheusMetrics 5.415838ms
+2025/04/21 09:01:02 GET /metrics PrometheusMetrics 4.175098ms
+2025/04/21 09:01:32 GET /metrics PrometheusMetrics 3.834248ms
+2025/04/21 09:02:02 GET /metrics PrometheusMetrics 6.029714ms
+2025/04/21 09:02:32 GET /metrics PrometheusMetrics 3.85401ms
+2025/04/21 09:03:02 GET /metrics PrometheusMetrics 4.709727ms
+2025/04/21 09:03:32 GET /metrics PrometheusMetrics 3.969744ms
+2025/04/21 09:04:02 GET /metrics PrometheusMetrics 4.681638ms
+2025/04/21 09:04:32 GET /metrics PrometheusMetrics 6.380912ms
+2025/04/21 09:05:02 GET /metrics PrometheusMetrics 4.446278ms
+2025/04/21 09:05:32 GET /metrics PrometheusMetrics 4.934669ms
+2025/04/21 09:06:02 GET /metrics PrometheusMetrics 4.318703ms
+2025/04/21 09:06:32 GET /metrics PrometheusMetrics 4.516866ms
+2025/04/21 09:07:02 GET /metrics PrometheusMetrics 6.147858ms
+2025/04/21 09:07:32 GET /metrics PrometheusMetrics 3.870726ms
+2025/04/21 09:08:02 GET /metrics PrometheusMetrics 5.676623ms
+2025/04/21 09:08:32 GET /metrics PrometheusMetrics 3.902756ms
+2025/04/21 09:09:02 GET /metrics PrometheusMetrics 4.174633ms
+2025/04/21 09:09:32 GET /metrics PrometheusMetrics 5.944645ms
+2025/04/21 09:10:02 GET /metrics PrometheusMetrics 4.800543ms
+2025/04/21 09:10:32 GET /metrics PrometheusMetrics 6.09722ms
+2025/04/21 09:11:02 GET /metrics PrometheusMetrics 3.986049ms
+2025/04/21 09:11:32 GET /metrics PrometheusMetrics 4.208483ms
+2025/04/21 09:12:02 GET /metrics PrometheusMetrics 6.091232ms
+2025/04/21 09:12:32 GET /metrics PrometheusMetrics 4.405213ms
+2025/04/21 09:13:02 GET /metrics PrometheusMetrics 6.081864ms
+2025/04/21 09:13:32 GET /metrics PrometheusMetrics 4.195476ms
+2025/04/21 09:14:02 GET /metrics PrometheusMetrics 4.154887ms
+2025/04/21 09:14:32 GET /metrics PrometheusMetrics 6.209343ms
+2025/04/21 09:15:02 GET /metrics PrometheusMetrics 4.301422ms
+2025/04/21 09:15:32 GET /metrics PrometheusMetrics 6.112784ms
+2025/04/21 09:16:02 GET /metrics PrometheusMetrics 3.941603ms
+2025/04/21 09:16:32 GET /metrics PrometheusMetrics 4.150952ms
+2025/04/21 09:17:02 GET /metrics PrometheusMetrics 4.312738ms
+2025/04/21 09:17:32 GET /metrics PrometheusMetrics 4.108179ms
+2025/04/21 09:18:02 GET /metrics PrometheusMetrics 8.149776ms
+2025/04/21 09:18:32 GET /metrics PrometheusMetrics 4.294941ms
+2025/04/21 09:19:02 GET /metrics PrometheusMetrics 4.492927ms
+2025/04/21 09:19:32 GET /metrics PrometheusMetrics 3.945035ms
+2025/04/21 09:20:02 GET /metrics PrometheusMetrics 3.822059ms
+2025/04/21 09:20:32 GET /metrics PrometheusMetrics 6.577127ms
+2025/04/21 09:21:02 GET /metrics PrometheusMetrics 4.15616ms
+2025/04/21 09:21:32 GET /metrics PrometheusMetrics 5.993392ms
+2025/04/21 09:22:02 GET /metrics PrometheusMetrics 4.277296ms
+2025/04/21 09:22:32 GET /metrics PrometheusMetrics 4.038385ms
+2025/04/21 09:23:02 GET /metrics PrometheusMetrics 6.13799ms
+2025/04/21 09:23:32 GET /metrics PrometheusMetrics 4.091287ms
+2025/04/21 09:24:02 GET /metrics PrometheusMetrics 6.045941ms
+2025/04/21 09:24:32 GET /metrics PrometheusMetrics 4.083918ms
+2025/04/21 09:25:02 GET /metrics PrometheusMetrics 4.315969ms
+2025/04/21 09:25:32 GET /metrics PrometheusMetrics 5.994505ms
+2025/04/21 09:26:02 GET /metrics PrometheusMetrics 4.620284ms
+2025/04/21 09:26:32 GET /metrics PrometheusMetrics 6.082171ms
+2025/04/21 09:27:02 GET /metrics PrometheusMetrics 4.087381ms
+2025/04/21 09:27:32 GET /metrics PrometheusMetrics 4.490266ms
+2025/04/21 09:28:02 GET /metrics PrometheusMetrics 5.812531ms
+2025/04/21 09:28:32 GET /metrics PrometheusMetrics 4.302095ms
+2025/04/21 09:29:02 GET /metrics PrometheusMetrics 6.271356ms
+2025/04/21 09:29:32 GET /metrics PrometheusMetrics 4.189547ms
+2025/04/21 09:30:02 GET /metrics PrometheusMetrics 4.164938ms
+2025/04/21 09:30:32 GET /metrics PrometheusMetrics 6.26205ms
+2025/04/21 09:31:02 GET /metrics PrometheusMetrics 4.287238ms
+2025/04/21 09:31:32 GET /metrics PrometheusMetrics 5.889626ms
+2025/04/21 09:32:02 GET /metrics PrometheusMetrics 4.527552ms
+2025/04/21 09:32:32 GET /metrics PrometheusMetrics 4.307589ms
+2025/04/21 09:33:02 GET /metrics PrometheusMetrics 6.149252ms
+2025/04/21 09:33:32 GET /metrics PrometheusMetrics 3.777592ms
+2025/04/21 09:34:02 GET /metrics PrometheusMetrics 5.350216ms
+2025/04/21 09:34:32 GET /metrics PrometheusMetrics 4.309452ms
+2025/04/21 09:35:02 GET /metrics PrometheusMetrics 4.021773ms
+2025/04/21 09:35:32 GET /metrics PrometheusMetrics 6.121521ms
+2025/04/21 09:36:02 GET /metrics PrometheusMetrics 4.069261ms
+2025/04/21 09:36:32 GET /metrics PrometheusMetrics 6.785547ms
+2025/04/21 09:37:02 GET /metrics PrometheusMetrics 4.725536ms
+2025/04/21 09:37:32 GET /metrics PrometheusMetrics 4.932439ms
+2025/04/21 09:38:02 GET /metrics PrometheusMetrics 6.139349ms
+2025/04/21 09:38:32 GET /metrics PrometheusMetrics 4.346652ms
+2025/04/21 09:39:02 GET /metrics PrometheusMetrics 6.253768ms
+2025/04/21 09:39:32 GET /metrics PrometheusMetrics 4.186404ms
+2025/04/21 09:40:02 GET /metrics PrometheusMetrics 4.424356ms
+2025/04/21 09:40:32 GET /metrics PrometheusMetrics 6.157558ms
+2025/04/21 09:41:02 GET /metrics PrometheusMetrics 3.774912ms
+2025/04/21 09:41:32 GET /metrics PrometheusMetrics 7.626076ms
+2025/04/21 09:42:02 GET /metrics PrometheusMetrics 4.135623ms
+2025/04/21 09:42:32 GET /metrics PrometheusMetrics 4.597853ms
+2025/04/21 09:43:02 GET /metrics PrometheusMetrics 6.28788ms
+2025/04/21 09:43:32 GET /metrics PrometheusMetrics 4.367347ms
+2025/04/21 09:44:02 GET /metrics PrometheusMetrics 6.364715ms
+2025/04/21 09:44:32 GET /metrics PrometheusMetrics 3.927396ms
+2025/04/21 09:45:02 GET /metrics PrometheusMetrics 3.723777ms
+2025/04/21 09:45:32 GET /metrics PrometheusMetrics 6.332833ms
+2025/04/21 09:46:02 GET /metrics PrometheusMetrics 3.908838ms
+2025/04/21 09:46:32 GET /metrics PrometheusMetrics 5.113166ms
+2025/04/21 09:47:02 GET /metrics PrometheusMetrics 4.311685ms
+2025/04/21 09:47:32 GET /metrics PrometheusMetrics 4.446889ms
+2025/04/21 09:48:02 GET /metrics PrometheusMetrics 6.056452ms
+2025/04/21 09:48:32 GET /metrics PrometheusMetrics 4.070064ms
+2025/04/21 09:49:02 GET /metrics PrometheusMetrics 3.868288ms
+2025/04/21 09:49:32 GET /metrics PrometheusMetrics 4.24133ms
+2025/04/21 09:50:02 GET /metrics PrometheusMetrics 3.818134ms
+2025/04/21 09:50:32 GET /metrics PrometheusMetrics 5.77775ms
+2025/04/21 09:51:02 GET /metrics PrometheusMetrics 4.520855ms
+2025/04/21 09:51:32 GET /metrics PrometheusMetrics 3.81318ms
+2025/04/21 09:52:02 GET /metrics PrometheusMetrics 5.597696ms
+2025/04/21 09:52:32 GET /metrics PrometheusMetrics 3.691198ms
+2025/04/21 09:53:02 GET /metrics PrometheusMetrics 6.084458ms
+2025/04/21 09:53:32 GET /metrics PrometheusMetrics 4.285978ms
+2025/04/21 09:54:02 GET /metrics PrometheusMetrics 4.866052ms
+2025/04/21 09:54:32 GET /metrics PrometheusMetrics 5.701995ms
+2025/04/21 09:55:02 GET /metrics PrometheusMetrics 4.798494ms
+2025/04/21 09:55:32 GET /metrics PrometheusMetrics 6.295199ms
+2025/04/21 09:56:02 GET /metrics PrometheusMetrics 3.837926ms
+2025/04/21 09:56:32 GET /metrics PrometheusMetrics 3.986135ms
+2025/04/21 09:57:02 GET /metrics PrometheusMetrics 5.824358ms
+2025/04/21 09:57:32 GET /metrics PrometheusMetrics 4.087367ms
+2025/04/21 09:58:02 GET /metrics PrometheusMetrics 5.884392ms
+2025/04/21 09:58:32 GET /metrics PrometheusMetrics 3.95157ms
+2025/04/21 09:59:02 GET /metrics PrometheusMetrics 4.375403ms
+2025/04/21 09:59:32 GET /metrics PrometheusMetrics 6.119284ms
+2025/04/21 10:00:02 GET /metrics PrometheusMetrics 4.021236ms
+2025/04/21 10:00:32 GET /metrics PrometheusMetrics 5.952111ms
+2025/04/21 10:01:02 GET /metrics PrometheusMetrics 4.276719ms
+2025/04/21 10:01:32 GET /metrics PrometheusMetrics 4.332073ms
+2025/04/21 10:02:02 GET /metrics PrometheusMetrics 5.826317ms
+2025/04/21 10:02:32 GET /metrics PrometheusMetrics 4.450568ms
+2025/04/21 10:03:02 GET /metrics PrometheusMetrics 6.481607ms
+2025/04/21 10:03:32 GET /metrics PrometheusMetrics 4.436009ms
+2025/04/21 10:04:02 GET /metrics PrometheusMetrics 4.578626ms
+2025/04/21 10:04:32 GET /metrics PrometheusMetrics 5.877269ms
+2025/04/21 10:05:02 GET /metrics PrometheusMetrics 3.886861ms
+2025/04/21 10:05:32 GET /metrics PrometheusMetrics 4.851363ms
+2025/04/21 10:06:02 GET /metrics PrometheusMetrics 4.376554ms
+2025/04/21 10:06:32 GET /metrics PrometheusMetrics 3.914442ms
+2025/04/21 10:07:02 GET /metrics PrometheusMetrics 6.132768ms
+2025/04/21 10:07:32 GET /metrics PrometheusMetrics 4.047894ms
+2025/04/21 10:08:02 GET /metrics PrometheusMetrics 4.511767ms
+2025/04/21 10:08:32 GET /metrics PrometheusMetrics 6.153246ms
+2025/04/21 10:09:02 GET /metrics PrometheusMetrics 3.861949ms
+2025/04/21 10:09:32 GET /metrics PrometheusMetrics 6.05445ms
+2025/04/21 10:10:02 GET /metrics PrometheusMetrics 3.782158ms
+2025/04/21 10:10:32 GET /metrics PrometheusMetrics 4.17908ms
+2025/04/21 10:11:02 GET /metrics PrometheusMetrics 6.047859ms
+2025/04/21 10:11:32 GET /metrics PrometheusMetrics 4.473242ms
+2025/04/21 10:12:02 GET /metrics PrometheusMetrics 5.737326ms
+2025/04/21 10:12:32 GET /metrics PrometheusMetrics 3.873004ms
+2025/04/21 10:13:02 GET /metrics PrometheusMetrics 4.230506ms
+2025/04/21 10:13:32 GET /metrics PrometheusMetrics 6.263663ms
+2025/04/21 10:14:02 GET /metrics PrometheusMetrics 4.819448ms
+2025/04/21 10:14:32 GET /metrics PrometheusMetrics 5.825422ms
+2025/04/21 10:15:02 GET /metrics PrometheusMetrics 5.14224ms
+2025/04/21 10:15:32 GET /metrics PrometheusMetrics 4.651611ms
+2025/04/21 10:16:02 GET /metrics PrometheusMetrics 4.432606ms
+2025/04/21 10:16:32 GET /metrics PrometheusMetrics 4.014143ms
+2025/04/21 10:17:02 GET /metrics PrometheusMetrics 6.24138ms
+2025/04/21 10:17:32 GET /metrics PrometheusMetrics 4.47363ms
+2025/04/21 10:18:02 GET /metrics PrometheusMetrics 3.708387ms
+2025/04/21 10:18:32 GET /metrics PrometheusMetrics 6.053966ms
+2025/04/21 10:19:02 GET /metrics PrometheusMetrics 4.10174ms
+2025/04/21 10:19:02 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:19:02 GET /kfam/v1/role/clusteradmin?user=f-gi-aiml-1 QueryClusterAdmin 62.657µs
+2025/04/21 10:19:03 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:03 GET /kfam/v1/bindings?user=f-gi-aiml-1 ReadBinding 14.405715ms
+2025/04/21 10:19:03 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:19:03 GET /kfam/v1/role/clusteradmin?user=f-gi-aiml-1 QueryClusterAdmin 53.086µs
+2025/04/21 10:19:03 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:03 GET /kfam/v1/bindings?user=f-gi-aiml-1 ReadBinding 11.162025ms
+2025/04/21 10:19:03 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:03 GET /kfam/v1/bindings?namespace=f-gi-aiml-1 ReadBinding 42.468µs
+2025/04/21 10:19:13 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:19:13 GET /kfam/v1/role/clusteradmin?user=f-gi-aiml-1 QueryClusterAdmin 81.402µs
+2025/04/21 10:19:13 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:13 GET /kfam/v1/bindings?user=f-gi-aiml-1 ReadBinding 18.110225ms
+2025/04/21 10:19:13 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:19:13 GET /kfam/v1/role/clusteradmin?user=f-gi-aiml-1 QueryClusterAdmin 40.448µs
+2025/04/21 10:19:13 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:13 GET /kfam/v1/bindings?user=f-gi-aiml-1 ReadBinding 39.518072ms
+2025/04/21 10:19:13 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:13 GET /kfam/v1/bindings?namespace=f-gi-aiml-1 ReadBinding 68.967µs
+2025/04/21 10:19:16 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:19:16 GET /kfam/v1/role/clusteradmin?user=s-jain-training-30 QueryClusterAdmin 72.673µs
+2025/04/21 10:19:16 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:16 GET /kfam/v1/bindings?user=s-jain-training-30 ReadBinding 14.017986ms
+2025/04/21 10:19:16 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:19:16 GET /kfam/v1/role/clusteradmin?user=s-jain-training-30 QueryClusterAdmin 73.148µs
+2025/04/21 10:19:16 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:16 GET /kfam/v1/bindings?user=s-jain-training-30 ReadBinding 29.756393ms
+2025/04/21 10:19:16 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:16 GET /kfam/v1/bindings?namespace=s-jain-training-30 ReadBinding 137.524µs
+2025/04/21 10:19:24 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:19:24 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 69.054µs
+2025/04/21 10:19:24 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:24 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 12.168787ms
+2025/04/21 10:19:24 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:19:24 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 28.286µs
+2025/04/21 10:19:24 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:24 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 11.876552ms
+2025/04/21 10:19:24 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:24 GET /kfam/v1/bindings?namespace=s-jain-training-3 ReadBinding 39.768µs
+2025/04/21 10:19:26 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:19:26 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 50.453µs
+2025/04/21 10:19:26 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:26 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 15.308106ms
+2025/04/21 10:19:26 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:19:26 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 55.99µs
+2025/04/21 10:19:26 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:26 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 12.807554ms
+2025/04/21 10:19:26 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:26 GET /kfam/v1/bindings?namespace=s-jain-training-3 ReadBinding 108.708µs
+2025/04/21 10:19:31 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:19:31 GET /kfam/v1/role/clusteradmin?user=s-jain-training-30 QueryClusterAdmin 106.013µs
+2025/04/21 10:19:31 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:31 GET /kfam/v1/bindings?user=s-jain-training-30 ReadBinding 16.88232ms
+2025/04/21 10:19:31 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:19:31 GET /kfam/v1/role/clusteradmin?user=s-jain-training-30 QueryClusterAdmin 35.427µs
+2025/04/21 10:19:31 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:31 GET /kfam/v1/bindings?user=s-jain-training-30 ReadBinding 16.290244ms
+2025/04/21 10:19:31 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:31 GET /kfam/v1/bindings?namespace=s-jain-training-30 ReadBinding 100.943µs
+2025/04/21 10:19:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:19:32 GET /kfam/v1/role/clusteradmin?user=s-jain-training-4 QueryClusterAdmin 77.151µs
+2025/04/21 10:19:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:32 GET /kfam/v1/bindings?user=s-jain-training-4 ReadBinding 67.071232ms
+2025/04/21 10:19:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:19:32 GET /kfam/v1/role/clusteradmin?user=s-jain-training-4 QueryClusterAdmin 28.487µs
+2025/04/21 10:19:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:32 GET /kfam/v1/bindings?user=s-jain-training-4 ReadBinding 16.955478ms
+2025/04/21 10:19:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:19:32 GET /kfam/v1/bindings?namespace=s-jain-training-4 ReadBinding 60.365µs
+2025/04/21 10:19:32 GET /metrics PrometheusMetrics 6.083918ms
+2025/04/21 10:20:02 GET /metrics PrometheusMetrics 3.871146ms
+2025/04/21 10:20:17 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:20:17 GET /kfam/v1/role/clusteradmin?user=s-jain-training-13 QueryClusterAdmin 62.305µs
+2025/04/21 10:20:17 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:20:17 GET /kfam/v1/bindings?user=s-jain-training-13 ReadBinding 12.680615ms
+2025/04/21 10:20:17 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:20:17 GET /kfam/v1/role/clusteradmin?user=s-jain-training-13 QueryClusterAdmin 29.804µs
+2025/04/21 10:20:17 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:20:17 GET /kfam/v1/bindings?user=s-jain-training-13 ReadBinding 12.093619ms
+2025/04/21 10:20:17 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:20:17 GET /kfam/v1/bindings?namespace=s-jain-training-13 ReadBinding 53.636µs
+2025/04/21 10:20:31 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:20:31 GET /kfam/v1/role/clusteradmin?user=s-jain-training-13 QueryClusterAdmin 63.55µs
+2025/04/21 10:20:31 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:20:31 GET /kfam/v1/bindings?user=s-jain-training-13 ReadBinding 15.003899ms
+2025/04/21 10:20:31 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:20:31 GET /kfam/v1/role/clusteradmin?user=s-jain-training-13 QueryClusterAdmin 50.841µs
+2025/04/21 10:20:31 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:20:31 GET /kfam/v1/bindings?user=s-jain-training-13 ReadBinding 11.837025ms
+2025/04/21 10:20:31 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:20:31 GET /kfam/v1/bindings?namespace=s-jain-training-13 ReadBinding 62.141µs
+2025/04/21 10:20:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:20:32 GET /kfam/v1/role/clusteradmin?user=s-jain-training-13 QueryClusterAdmin 57.902µs
+2025/04/21 10:20:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:20:32 GET /kfam/v1/bindings?user=s-jain-training-13 ReadBinding 15.429756ms
+2025/04/21 10:20:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:20:32 GET /kfam/v1/role/clusteradmin?user=s-jain-training-13 QueryClusterAdmin 37.812µs
+2025/04/21 10:20:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:20:32 GET /kfam/v1/bindings?user=s-jain-training-13 ReadBinding 12.513064ms
+2025/04/21 10:20:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:20:32 GET /kfam/v1/bindings?namespace=s-jain-training-13 ReadBinding 41.509µs
+2025/04/21 10:20:32 GET /metrics PrometheusMetrics 3.841573ms
+2025/04/21 10:21:02 GET /metrics PrometheusMetrics 6.2966ms
+2025/04/21 10:21:17 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:21:17 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 62.543µs
+2025/04/21 10:21:17 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:21:17 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 12.325754ms
+2025/04/21 10:21:17 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:21:17 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 33.44µs
+2025/04/21 10:21:17 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:21:17 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 10.874005ms
+2025/04/21 10:21:17 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:21:17 GET /kfam/v1/bindings?namespace=s-jain-training-3 ReadBinding 46.011µs
+2025/04/21 10:21:32 GET /metrics PrometheusMetrics 4.99533ms
+2025/04/21 10:22:02 GET /metrics PrometheusMetrics 4.136969ms
+2025/04/21 10:22:32 GET /metrics PrometheusMetrics 5.995917ms
+2025/04/21 10:23:02 GET /metrics PrometheusMetrics 4.555539ms
+2025/04/21 10:23:32 GET /metrics PrometheusMetrics 5.166019ms
+2025/04/21 10:24:02 GET /metrics PrometheusMetrics 6.162979ms
+2025/04/21 10:24:32 GET /metrics PrometheusMetrics 3.840076ms
+2025/04/21 10:25:02 GET /metrics PrometheusMetrics 6.425621ms
+2025/04/21 10:25:32 GET /metrics PrometheusMetrics 4.073213ms
+2025/04/21 10:26:02 GET /metrics PrometheusMetrics 4.235447ms
+2025/04/21 10:26:32 GET /metrics PrometheusMetrics 6.143286ms
+2025/04/21 10:27:02 GET /metrics PrometheusMetrics 3.976998ms
+2025/04/21 10:27:32 GET /metrics PrometheusMetrics 4.178859ms
+2025/04/21 10:28:02 GET /metrics PrometheusMetrics 6.805553ms
+2025/04/21 10:28:08 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:28:08 GET /kfam/v1/role/clusteradmin?user=s-jain-training-20 QueryClusterAdmin 66.936µs
+2025/04/21 10:28:08 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:28:08 GET /kfam/v1/bindings?user=s-jain-training-20 ReadBinding 14.988937ms
+2025/04/21 10:28:08 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:28:08 GET /kfam/v1/role/clusteradmin?user=s-jain-training-20 QueryClusterAdmin 45.658µs
+2025/04/21 10:28:08 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:28:08 GET /kfam/v1/bindings?user=s-jain-training-20 ReadBinding 13.249788ms
+2025/04/21 10:28:08 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:28:08 GET /kfam/v1/bindings?namespace=s-jain-training-20 ReadBinding 79.777µs
+2025/04/21 10:28:32 GET /metrics PrometheusMetrics 4.758961ms
+2025/04/21 10:29:02 GET /metrics PrometheusMetrics 6.011863ms
+2025/04/21 10:29:32 GET /metrics PrometheusMetrics 3.984397ms
+2025/04/21 10:30:02 GET /metrics PrometheusMetrics 4.579845ms
+2025/04/21 10:30:32 GET /metrics PrometheusMetrics 6.306058ms
+2025/04/21 10:31:02 GET /metrics PrometheusMetrics 4.751325ms
+2025/04/21 10:31:11 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:31:11 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 77.884µs
+2025/04/21 10:31:11 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:31:11 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 17.099058ms
+2025/04/21 10:31:11 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:31:11 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 58.459µs
+2025/04/21 10:31:11 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:31:11 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 16.376648ms
+2025/04/21 10:31:12 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:31:12 GET /kfam/v1/bindings?namespace=s-jain-training-3 ReadBinding 101.446µs
+2025/04/21 10:31:32 GET /metrics PrometheusMetrics 4.253151ms
+2025/04/21 10:31:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:31:53 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 85.009µs
+2025/04/21 10:31:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:31:53 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 13.640072ms
+2025/04/21 10:31:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:31:53 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 26.036µs
+2025/04/21 10:31:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:31:53 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 12.851667ms
+2025/04/21 10:31:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:31:53 GET /kfam/v1/bindings?namespace=s-jain-training-3 ReadBinding 37.483µs
+2025/04/21 10:32:02 GET /metrics PrometheusMetrics 6.246015ms
+2025/04/21 10:32:05 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:32:05 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 75.957µs
+2025/04/21 10:32:05 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:32:05 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 22.916969ms
+2025/04/21 10:32:05 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:32:05 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 83.805µs
+2025/04/21 10:32:05 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:32:05 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 21.678006ms
+2025/04/21 10:32:05 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:32:05 GET /kfam/v1/bindings?namespace=s-jain-training-3 ReadBinding 139.113µs
+2025/04/21 10:32:32 GET /metrics PrometheusMetrics 4.328082ms
+2025/04/21 10:33:02 GET /metrics PrometheusMetrics 6.00592ms
+2025/04/21 10:33:32 GET /metrics PrometheusMetrics 4.40085ms
+2025/04/21 10:34:02 GET /metrics PrometheusMetrics 4.019616ms
+2025/04/21 10:34:26 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:34:26 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 65.151µs
+2025/04/21 10:34:26 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:34:26 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 14.074147ms
+2025/04/21 10:34:26 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:34:26 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 51.965µs
+2025/04/21 10:34:26 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:34:26 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 13.823568ms
+2025/04/21 10:34:27 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:34:27 GET /kfam/v1/bindings?namespace=s-jain-training-3 ReadBinding 90.33µs
+2025/04/21 10:34:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:34:32 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 72.424µs
+2025/04/21 10:34:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:34:32 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 17.494147ms
+2025/04/21 10:34:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:34:32 GET /kfam/v1/role/clusteradmin?user=s-jain-training-3 QueryClusterAdmin 38.521µs
+2025/04/21 10:34:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:34:32 GET /kfam/v1/bindings?user=s-jain-training-3 ReadBinding 22.759729ms
+2025/04/21 10:34:32 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:34:32 GET /kfam/v1/bindings?namespace=s-jain-training-3 ReadBinding 68.04µs
+2025/04/21 10:34:32 GET /metrics PrometheusMetrics 6.166487ms
+2025/04/21 10:35:02 GET /metrics PrometheusMetrics 4.841644ms
+2025/04/21 10:35:32 GET /metrics PrometheusMetrics 6.259834ms
+2025/04/21 10:36:02 GET /metrics PrometheusMetrics 6.501445ms
+2025/04/21 10:36:32 GET /metrics PrometheusMetrics 4.302728ms
+2025/04/21 10:37:02 GET /metrics PrometheusMetrics 6.493925ms
+2025/04/21 10:37:32 GET /metrics PrometheusMetrics 3.960996ms
+2025/04/21 10:37:50 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:37:50 GET /kfam/v1/role/clusteradmin?user=s-jain-training-17 QueryClusterAdmin 50.541µs
+2025/04/21 10:37:50 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:37:50 GET /kfam/v1/bindings?user=s-jain-training-17 ReadBinding 12.679084ms
+2025/04/21 10:37:50 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:37:50 GET /kfam/v1/role/clusteradmin?user=s-jain-training-17 QueryClusterAdmin 38.838µs
+2025/04/21 10:37:50 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:37:50 GET /kfam/v1/bindings?user=s-jain-training-17 ReadBinding 12.011479ms
+2025/04/21 10:37:50 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:37:50 GET /kfam/v1/bindings?namespace=s-jain-training-17 ReadBinding 41.422µs
+2025/04/21 10:37:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:37:53 GET /kfam/v1/role/clusteradmin?user=s-jain-training-17 QueryClusterAdmin 62.681µs
+2025/04/21 10:37:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:37:53 GET /kfam/v1/bindings?user=s-jain-training-17 ReadBinding 17.592508ms
+2025/04/21 10:37:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 10:37:53 GET /kfam/v1/role/clusteradmin?user=s-jain-training-17 QueryClusterAdmin 27.634µs
+2025/04/21 10:37:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:37:53 GET /kfam/v1/bindings?user=s-jain-training-17 ReadBinding 16.510592ms
+2025/04/21 10:37:53 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 10:37:53 GET /kfam/v1/bindings?namespace=s-jain-training-17 ReadBinding 65.931µs
+2025/04/21 10:38:02 GET /metrics PrometheusMetrics 4.518951ms
+2025/04/21 10:38:32 GET /metrics PrometheusMetrics 6.030143ms
+2025/04/21 10:39:02 GET /metrics PrometheusMetrics 4.036064ms
+2025/04/21 10:39:32 GET /metrics PrometheusMetrics 4.228811ms
+2025/04/21 10:40:02 GET /metrics PrometheusMetrics 6.40543ms
+2025/04/21 10:40:32 GET /metrics PrometheusMetrics 3.862342ms
+2025/04/21 10:41:02 GET /metrics PrometheusMetrics 6.052096ms
+2025/04/21 10:41:32 GET /metrics PrometheusMetrics 4.253854ms
+2025/04/21 10:42:02 GET /metrics PrometheusMetrics 4.145597ms
+2025/04/21 10:42:32 GET /metrics PrometheusMetrics 6.503705ms
+2025/04/21 10:43:02 GET /metrics PrometheusMetrics 4.83867ms
+2025/04/21 10:43:32 GET /metrics PrometheusMetrics 4.173345ms
+2025/04/21 10:44:02 GET /metrics PrometheusMetrics 4.331074ms
+2025/04/21 10:44:32 GET /metrics PrometheusMetrics 4.406915ms
+2025/04/21 10:45:02 GET /metrics PrometheusMetrics 6.454009ms
+2025/04/21 10:45:32 GET /metrics PrometheusMetrics 3.89314ms
+2025/04/21 10:46:02 GET /metrics PrometheusMetrics 4.136868ms
+2025/04/21 10:46:32 GET /metrics PrometheusMetrics 4.813992ms
+2025/04/21 10:47:02 GET /metrics PrometheusMetrics 4.590272ms
+2025/04/21 10:47:32 GET /metrics PrometheusMetrics 14.24246ms
+2025/04/21 10:48:02 GET /metrics PrometheusMetrics 4.256742ms
+2025/04/21 10:48:32 GET /metrics PrometheusMetrics 4.210458ms
+2025/04/21 10:49:02 GET /metrics PrometheusMetrics 4.364823ms
+2025/04/21 10:49:32 GET /metrics PrometheusMetrics 4.43395ms
+2025/04/21 10:50:02 GET /metrics PrometheusMetrics 6.199276ms
+2025/04/21 10:50:32 GET /metrics PrometheusMetrics 4.594662ms
+2025/04/21 10:51:02 GET /metrics PrometheusMetrics 4.79764ms
+2025/04/21 10:51:32 GET /metrics PrometheusMetrics 6.25685ms
+2025/04/21 10:52:02 GET /metrics PrometheusMetrics 4.754577ms
+2025/04/21 10:52:32 GET /metrics PrometheusMetrics 11.224195ms
+2025/04/21 10:53:02 GET /metrics PrometheusMetrics 4.112089ms
+2025/04/21 10:53:32 GET /metrics PrometheusMetrics 3.716938ms
+2025/04/21 10:54:02 GET /metrics PrometheusMetrics 5.743111ms
+2025/04/21 10:54:32 GET /metrics PrometheusMetrics 4.112672ms
+2025/04/21 10:55:02 GET /metrics PrometheusMetrics 3.815191ms
+2025/04/21 10:55:32 GET /metrics PrometheusMetrics 6.535263ms
+2025/04/21 10:56:02 GET /metrics PrometheusMetrics 4.057923ms
+2025/04/21 10:56:32 GET /metrics PrometheusMetrics 6.623683ms
+2025/04/21 10:57:02 GET /metrics PrometheusMetrics 4.492968ms
+2025/04/21 10:57:32 GET /metrics PrometheusMetrics 4.320472ms
+2025/04/21 10:58:02 GET /metrics PrometheusMetrics 6.001786ms
+2025/04/21 10:58:32 GET /metrics PrometheusMetrics 4.112855ms
+2025/04/21 10:59:02 GET /metrics PrometheusMetrics 5.478007ms
+2025/04/21 10:59:32 GET /metrics PrometheusMetrics 4.311122ms
+2025/04/21 11:00:02 GET /metrics PrometheusMetrics 4.581066ms
+2025/04/21 11:00:32 GET /metrics PrometheusMetrics 6.166009ms
+2025/04/21 11:01:02 GET /metrics PrometheusMetrics 4.769826ms
+2025/04/21 11:01:32 GET /metrics PrometheusMetrics 5.905168ms
+2025/04/21 11:02:02 GET /metrics PrometheusMetrics 3.937369ms
+2025/04/21 11:02:32 GET /metrics PrometheusMetrics 4.29705ms
+2025/04/21 11:03:02 GET /metrics PrometheusMetrics 6.28893ms
+2025/04/21 11:03:32 GET /metrics PrometheusMetrics 4.585963ms
+2025/04/21 11:04:02 GET /metrics PrometheusMetrics 4.316571ms
+2025/04/21 11:04:32 GET /metrics PrometheusMetrics 6.097854ms
+2025/04/21 11:05:02 GET /metrics PrometheusMetrics 4.027342ms
+2025/04/21 11:05:32 GET /metrics PrometheusMetrics 5.391241ms
+2025/04/21 11:06:02 GET /metrics PrometheusMetrics 4.387412ms
+2025/04/21 11:06:32 GET /metrics PrometheusMetrics 4.368464ms
+2025/04/21 11:07:02 GET /metrics PrometheusMetrics 6.151752ms
+2025/04/21 11:07:32 GET /metrics PrometheusMetrics 4.14999ms
+2025/04/21 11:08:02 GET /metrics PrometheusMetrics 4.239121ms
+2025/04/21 11:08:32 GET /metrics PrometheusMetrics 3.878672ms
+2025/04/21 11:09:02 GET /metrics PrometheusMetrics 4.39216ms
+2025/04/21 11:09:32 GET /metrics PrometheusMetrics 6.713373ms
+2025/04/21 11:10:02 GET /metrics PrometheusMetrics 4.445527ms
+2025/04/21 11:10:32 GET /metrics PrometheusMetrics 4.687983ms
+2025/04/21 11:11:02 GET /metrics PrometheusMetrics 6.199145ms
+2025/04/21 11:11:32 GET /metrics PrometheusMetrics 4.065977ms
+2025/04/21 11:12:02 GET /metrics PrometheusMetrics 5.876333ms
+2025/04/21 11:12:32 GET /metrics PrometheusMetrics 4.285827ms
+2025/04/21 11:13:02 GET /metrics PrometheusMetrics 4.589618ms
+2025/04/21 11:13:32 GET /metrics PrometheusMetrics 6.0479ms
+2025/04/21 11:14:02 GET /metrics PrometheusMetrics 4.14161ms
+2025/04/21 11:14:32 GET /metrics PrometheusMetrics 4.009932ms
+2025/04/21 11:15:02 GET /metrics PrometheusMetrics 6.182412ms
+2025/04/21 11:15:32 GET /metrics PrometheusMetrics 4.013961ms
+2025/04/21 11:16:02 GET /metrics PrometheusMetrics 6.413216ms
+2025/04/21 11:16:32 GET /metrics PrometheusMetrics 4.339446ms
+2025/04/21 11:16:33 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 11:16:33 GET /kfam/v1/role/clusteradmin?user=s-jain-training-17 QueryClusterAdmin 57.209µs
+2025/04/21 11:16:33 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 11:16:33 GET /kfam/v1/bindings?user=s-jain-training-17 ReadBinding 12.147387ms
+2025/04/21 11:16:33 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 11:16:33 GET /kfam/v1/role/clusteradmin?user=s-jain-training-17 QueryClusterAdmin 39.209µs
+2025/04/21 11:16:33 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 11:16:33 GET /kfam/v1/bindings?user=s-jain-training-17 ReadBinding 11.395187ms
+2025/04/21 11:16:34 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 11:16:34 GET /kfam/v1/bindings?namespace=s-jain-training-17 ReadBinding 47.609µs
+2025/04/21 11:17:02 GET /metrics PrometheusMetrics 4.373841ms
+2025/04/21 11:17:32 GET /metrics PrometheusMetrics 6.103997ms
+2025/04/21 11:18:02 GET /metrics PrometheusMetrics 4.206452ms
+2025/04/21 11:18:32 GET /metrics PrometheusMetrics 4.266979ms
+2025/04/21 11:19:02 GET /metrics PrometheusMetrics 4.453481ms
+2025/04/21 11:19:32 GET /metrics PrometheusMetrics 4.366895ms
+2025/04/21 11:20:02 GET /metrics PrometheusMetrics 6.035609ms
+2025/04/21 11:20:32 GET /metrics PrometheusMetrics 4.306353ms
+2025/04/21 11:21:02 GET /metrics PrometheusMetrics 4.071806ms
+2025/04/21 11:21:32 GET /metrics PrometheusMetrics 6.217335ms
+2025/04/21 11:22:02 GET /metrics PrometheusMetrics 3.980112ms
+2025/04/21 11:22:32 GET /metrics PrometheusMetrics 5.646883ms
+2025/04/21 11:23:02 GET /metrics PrometheusMetrics 4.091774ms
+2025/04/21 11:23:32 GET /metrics PrometheusMetrics 4.256762ms
+2025/04/21 11:24:02 GET /metrics PrometheusMetrics 5.851398ms
+2025/04/21 11:24:32 GET /metrics PrometheusMetrics 3.914525ms
+2025/04/21 11:25:02 GET /metrics PrometheusMetrics 4.417593ms
+2025/04/21 11:25:32 GET /metrics PrometheusMetrics 3.883066ms
+2025/04/21 11:26:02 GET /metrics PrometheusMetrics 3.820317ms
+2025/04/21 11:26:32 GET /metrics PrometheusMetrics 5.826316ms
+2025/04/21 11:27:02 GET /metrics PrometheusMetrics 3.869019ms
+2025/04/21 11:27:32 GET /metrics PrometheusMetrics 5.157259ms
+2025/04/21 11:28:02 GET /metrics PrometheusMetrics 5.792425ms
+2025/04/21 11:28:32 GET /metrics PrometheusMetrics 3.738589ms
+2025/04/21 11:29:02 GET /metrics PrometheusMetrics 6.138691ms
+2025/04/21 11:29:32 GET /metrics PrometheusMetrics 4.162274ms
+2025/04/21 11:30:02 GET /metrics PrometheusMetrics 4.824347ms
+2025/04/21 11:30:32 GET /metrics PrometheusMetrics 6.00076ms
+2025/04/21 11:31:02 GET /metrics PrometheusMetrics 4.584069ms
+2025/04/21 11:31:32 GET /metrics PrometheusMetrics 3.795558ms
+2025/04/21 11:32:02 GET /metrics PrometheusMetrics 6.245555ms
+2025/04/21 11:32:32 GET /metrics PrometheusMetrics 3.758563ms
+2025/04/21 11:33:02 GET /metrics PrometheusMetrics 5.894295ms
+2025/04/21 11:33:32 GET /metrics PrometheusMetrics 4.075516ms
+2025/04/21 11:34:02 GET /metrics PrometheusMetrics 4.894239ms
+2025/04/21 11:34:32 GET /metrics PrometheusMetrics 5.731843ms
+2025/04/21 11:35:02 GET /metrics PrometheusMetrics 4.266559ms
+2025/04/21 11:35:32 GET /metrics PrometheusMetrics 4.485363ms
+2025/04/21 11:36:02 GET /metrics PrometheusMetrics 6.207661ms
+2025/04/21 11:36:32 GET /metrics PrometheusMetrics 4.378273ms
+2025/04/21 11:37:02 GET /metrics PrometheusMetrics 5.230383ms
+2025/04/21 11:37:32 GET /metrics PrometheusMetrics 4.217343ms
+2025/04/21 11:38:02 GET /metrics PrometheusMetrics 4.03955ms
+2025/04/21 11:38:32 GET /metrics PrometheusMetrics 6.079474ms
+2025/04/21 11:39:02 GET /metrics PrometheusMetrics 4.344616ms
+2025/04/21 11:39:32 GET /metrics PrometheusMetrics 4.229816ms
+2025/04/21 11:40:02 GET /metrics PrometheusMetrics 6.558751ms
+2025/04/21 11:40:32 GET /metrics PrometheusMetrics 4.220604ms
+2025/04/21 11:41:02 GET /metrics PrometheusMetrics 6.221536ms
+2025/04/21 11:41:32 GET /metrics PrometheusMetrics 3.993612ms
+2025/04/21 11:42:02 GET /metrics PrometheusMetrics 3.943032ms
+2025/04/21 11:42:32 GET /metrics PrometheusMetrics 5.817206ms
+2025/04/21 11:43:02 GET /metrics PrometheusMetrics 4.267027ms
+2025/04/21 11:43:32 GET /metrics PrometheusMetrics 4.457689ms
+2025/04/21 11:44:02 GET /metrics PrometheusMetrics 5.743666ms
+2025/04/21 11:44:32 GET /metrics PrometheusMetrics 3.701406ms
+2025/04/21 11:45:02 GET /metrics PrometheusMetrics 3.944402ms
+2025/04/21 11:45:32 GET /metrics PrometheusMetrics 6.134466ms
+2025/04/21 11:46:02 GET /metrics PrometheusMetrics 4.439037ms
+2025/04/21 11:46:32 GET /metrics PrometheusMetrics 4.101194ms
+2025/04/21 11:47:02 GET /metrics PrometheusMetrics 5.713705ms
+2025/04/21 11:47:32 GET /metrics PrometheusMetrics 3.706987ms
+2025/04/21 11:48:02 GET /metrics PrometheusMetrics 6.008565ms
+2025/04/21 11:48:32 GET /metrics PrometheusMetrics 4.287878ms
+2025/04/21 11:49:02 GET /metrics PrometheusMetrics 4.148279ms
+2025/04/21 11:49:32 GET /metrics PrometheusMetrics 6.217767ms
+2025/04/21 11:50:02 GET /metrics PrometheusMetrics 3.950125ms
+2025/04/21 11:50:32 GET /metrics PrometheusMetrics 4.433448ms
+2025/04/21 11:51:02 GET /metrics PrometheusMetrics 6.07026ms
+2025/04/21 11:51:32 GET /metrics PrometheusMetrics 3.915645ms
+2025/04/21 11:52:02 GET /metrics PrometheusMetrics 4.433678ms
+2025/04/21 11:52:32 GET /metrics PrometheusMetrics 4.558667ms
+2025/04/21 11:52:56 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 11:52:56 GET /kfam/v1/role/clusteradmin?user=s-jain-training-20 QueryClusterAdmin 83.709µs
+2025/04/21 11:52:56 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 11:52:56 GET /kfam/v1/bindings?user=s-jain-training-20 ReadBinding 17.946354ms
+2025/04/21 11:52:56 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 11:52:56 GET /kfam/v1/role/clusteradmin?user=s-jain-training-20 QueryClusterAdmin 65.11µs
+2025/04/21 11:52:56 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 11:52:56 GET /kfam/v1/bindings?user=s-jain-training-20 ReadBinding 17.083323ms
+2025/04/21 11:52:56 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 11:52:56 GET /kfam/v1/bindings?namespace=s-jain-training-20 ReadBinding 88.07µs
+2025/04/21 11:53:02 GET /metrics PrometheusMetrics 4.375017ms
+2025/04/21 11:53:32 GET /metrics PrometheusMetrics 5.859854ms
+2025/04/21 11:53:46 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 11:53:46 GET /kfam/v1/role/clusteradmin?user=s-jain-training-21 QueryClusterAdmin 102.135µs
+2025/04/21 11:53:46 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 11:53:46 GET /kfam/v1/bindings?user=s-jain-training-21 ReadBinding 16.490015ms
+2025/04/21 11:53:46 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).QueryClusterAdmin (api_default.go:272)
+2025/04/21 11:53:46 GET /kfam/v1/role/clusteradmin?user=s-jain-training-21 QueryClusterAdmin 84.743µs
+2025/04/21 11:53:46 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 11:53:46 GET /kfam/v1/bindings?user=s-jain-training-21 ReadBinding 15.681057ms
+2025/04/21 11:53:46 http: superfluous response.WriteHeader call from github.com/kubeflow/kubeflow/components/access-management/kfam.(*KfamV1Alpha1Client).ReadBinding (api_default.go:252)
+2025/04/21 11:53:46 GET /kfam/v1/bindings?namespace=s-jain-training-21 ReadBinding 55.928µs
+2025/04/21 11:54:02 GET /metrics PrometheusMetrics 4.208636ms
+2025/04/21 11:54:32 GET /metrics PrometheusMetrics 4.077885ms
+2025/04/21 11:55:02 GET /metrics PrometheusMetrics 4.054761ms
+2025/04/21 11:55:32 GET /metrics PrometheusMetrics 5.707558ms
+2025/04/21 11:56:02 GET /metrics PrometheusMetrics 4.211034ms
+2025/04/21 11:56:32 GET /metrics PrometheusMetrics 3.547551ms
+2025/04/21 11:57:02 GET /metrics PrometheusMetrics 5.822749ms
+2025/04/21 11:57:32 GET /metrics PrometheusMetrics 3.889443ms
+2025/04/21 11:58:02 GET /metrics PrometheusMetrics 3.906779ms
+2025/04/21 11:58:32 GET /metrics PrometheusMetrics 6.158914ms
+2025/04/21 11:59:02 GET /metrics PrometheusMetrics 4.218733ms
+2025/04/21 11:59:32 GET /metrics PrometheusMetrics 4.174364ms
+2025/04/21 12:00:02 GET /metrics PrometheusMetrics 6.279933ms
+2025/04/21 12:00:32 GET /metrics PrometheusMetrics 4.678923ms
+2025/04/21 12:01:02 GET /metrics PrometheusMetrics 4.523696ms
+2025/04/21 12:01:32 GET /metrics PrometheusMetrics 6.104328ms
+2025/04/21 12:02:02 GET /metrics PrometheusMetrics 4.157834ms
+2025/04/21 12:02:32 GET /metrics PrometheusMetrics 4.383979ms
+2025/04/21 12:03:02 GET /metrics PrometheusMetrics 5.764053ms

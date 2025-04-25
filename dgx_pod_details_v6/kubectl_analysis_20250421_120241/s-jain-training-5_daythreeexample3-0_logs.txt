@@ -1,0 +1,2 @@
+Error from server (NotFound): pods "daythreeexample3-0" not found
+Failed to retrieve logs for s-jain-training-5/daythreeexample3-0

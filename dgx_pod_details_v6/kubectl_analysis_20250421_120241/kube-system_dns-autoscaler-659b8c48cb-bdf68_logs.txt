@@ -1,0 +1,18 @@
+I0421 05:29:04.847571       1 autoscaler.go:49] Scaling Namespace: kube-system, Target: deployment/coredns
+E0421 05:29:09.855093       1 autoscaler_server.go:108] Error while getting cluster status: timed out waiting for the condition
+E0421 05:29:19.856371       1 autoscaler_server.go:108] Error while getting cluster status: timed out waiting for the condition
+E0421 05:29:29.859173       1 autoscaler_server.go:108] Error while getting cluster status: timed out waiting for the condition
+W0421 05:29:34.857483       1 reflector.go:424] pkg/autoscaler/k8sclient/k8sclient.go:97: failed to list *v1.Node: Get "https://10.233.0.1:443/api/v1/nodes": dial tcp 10.233.0.1:443: i/o timeout
+I0421 05:29:34.857859       1 trace.go:219] Trace[1487231875]: "Reflector ListAndWatch" name:pkg/autoscaler/k8sclient/k8sclient.go:97 (21-Apr-2025 05:29:04.854) (total time: 30002ms):
+Trace[1487231875]: ---"Objects listed" error:Get "https://10.233.0.1:443/api/v1/nodes": dial tcp 10.233.0.1:443: i/o timeout 30002ms (05:29:34.857)
+Trace[1487231875]: [30.002913487s] [30.002913487s] END
+E0421 05:29:34.857892       1 reflector.go:140] pkg/autoscaler/k8sclient/k8sclient.go:97: Failed to watch *v1.Node: failed to list *v1.Node: Get "https://10.233.0.1:443/api/v1/nodes": dial tcp 10.233.0.1:443: i/o timeout
+E0421 05:29:39.855526       1 autoscaler_server.go:108] Error while getting cluster status: timed out waiting for the condition
+E0421 05:29:49.859713       1 autoscaler_server.go:108] Error while getting cluster status: timed out waiting for the condition
+I0421 05:29:51.533311       1 trace.go:219] Trace[1635088858]: "Reflector ListAndWatch" name:pkg/autoscaler/k8sclient/k8sclient.go:97 (21-Apr-2025 05:29:36.070) (total time: 15462ms):
+Trace[1635088858]: ---"Objects listed" error:<nil> 15462ms (05:29:51.533)
+Trace[1635088858]: [15.462291712s] [15.462291712s] END
+I0421 05:29:54.858314       1 plugin.go:50] Set control mode to linear
+I0421 05:29:54.858372       1 linear_controller.go:60] ConfigMap version change (old:  new: 943) - rebuilding params
+I0421 05:29:54.858377       1 linear_controller.go:61] Params from apiserver: 
+{"coresPerReplica":256,"min":2,"nodesPerReplica":16,"preventSinglePointFailure":true}

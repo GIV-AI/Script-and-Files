@@ -1,0 +1,2 @@
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0421 05:33:49.051429     1 metadata_store_server_main.cc:258] Server listening on 0.0.0.0:8080

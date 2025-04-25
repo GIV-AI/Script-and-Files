@@ -1,0 +1,125 @@
+Namespace: kube-system
+Pod Name: kube-controller-manager-jain-dgx-server
+Status: 1/1
+Other Details: Running     5 (12h ago)    16h
+Name:                 kube-controller-manager-jain-dgx-server
+Namespace:            kube-system
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Node:                 jain-dgx-server/192.168.1.248
+Start Time:           Wed, 16 Apr 2025 04:52:18 +0000
+Labels:               component=kube-controller-manager
+                      tier=control-plane
+Annotations:          kubernetes.io/config.hash: d060d4cb4ec7fd55d32f57394b077c81
+                      kubernetes.io/config.mirror: d060d4cb4ec7fd55d32f57394b077c81
+                      kubernetes.io/config.seen: 2025-04-15T13:24:37.501534740Z
+                      kubernetes.io/config.source: file
+Status:               Running
+IP:                   192.168.1.248
+IPs:
+  IP:           192.168.1.248
+Controlled By:  Node/jain-dgx-server
+Containers:
+  kube-controller-manager:
+    Container ID:  docker://b925f66f873845ba531780527bde41af9429898543b93dbf257c63908bfd6d65
+    Image:         registry.k8s.io/kube-controller-manager:v1.26.5
+    Image ID:      docker-pullable://registry.k8s.io/kube-controller-manager@sha256:a6457911fa41c7706fa1aca6cb50352b1c3e90b70c9707f1e0b6363d3188b81a
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      kube-controller-manager
+      --allocate-node-cidrs=true
+      --authentication-kubeconfig=/etc/kubernetes/controller-manager.conf
+      --authorization-kubeconfig=/etc/kubernetes/controller-manager.conf
+      --bind-address=0.0.0.0
+      --client-ca-file=/etc/kubernetes/ssl/ca.crt
+      --cluster-cidr=10.233.64.0/18
+      --cluster-name=cluster.local
+      --cluster-signing-cert-file=/etc/kubernetes/ssl/ca.crt
+      --cluster-signing-key-file=/etc/kubernetes/ssl/ca.key
+      --configure-cloud-routes=false
+      --controllers=*,bootstrapsigner,tokencleaner
+      --flex-volume-plugin-dir=/usr/libexec/kubernetes/kubelet-plugins/volume/exec
+      --kubeconfig=/etc/kubernetes/controller-manager.conf
+      --leader-elect=true
+      --leader-elect-lease-duration=15s
+      --leader-elect-renew-deadline=10s
+      --node-cidr-mask-size=24
+      --node-monitor-grace-period=40s
+      --node-monitor-period=5s
+      --profiling=False
+      --requestheader-client-ca-file=/etc/kubernetes/ssl/front-proxy-ca.crt
+      --root-ca-file=/etc/kubernetes/ssl/ca.crt
+      --service-account-private-key-file=/etc/kubernetes/ssl/sa.key
+      --service-cluster-ip-range=10.233.0.0/18
+      --terminated-pod-gc-threshold=12500
+      --use-service-account-credentials=true
+    State:          Running
+      Started:      Wed, 16 Apr 2025 04:52:18 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    2
+      Started:      Tue, 15 Apr 2025 13:30:30 +0000
+      Finished:     Tue, 15 Apr 2025 17:46:03 +0000
+    Ready:          True
+    Restart Count:  5
+    Requests:
+      cpu:        200m
+    Liveness:     http-get https://:10257/healthz delay=10s timeout=15s period=10s #success=1 #failure=8
+    Startup:      http-get https://:10257/healthz delay=10s timeout=15s period=10s #success=1 #failure=30
+    Environment:  <none>
+    Mounts:
+      /etc/ca-certificates from etc-ca-certificates (ro)
+      /etc/kubernetes/controller-manager.conf from kubeconfig (ro)
+      /etc/kubernetes/ssl from k8s-certs (ro)
+      /etc/pki from etc-pki (ro)
+      /etc/ssl/certs from ca-certs (ro)
+      /usr/libexec/kubernetes/kubelet-plugins/volume/exec from flexvolume-dir (rw)
+      /usr/local/share/ca-certificates from usr-local-share-ca-certificates (ro)
+      /usr/share/ca-certificates from usr-share-ca-certificates (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  ca-certs:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/ssl/certs
+    HostPathType:  DirectoryOrCreate
+  etc-ca-certificates:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/ca-certificates
+    HostPathType:  DirectoryOrCreate
+  etc-pki:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/pki
+    HostPathType:  DirectoryOrCreate
+  flexvolume-dir:
+    Type:          HostPath (bare host directory volume)
+    Path:          /usr/libexec/kubernetes/kubelet-plugins/volume/exec
+    HostPathType:  DirectoryOrCreate
+  k8s-certs:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/kubernetes/ssl
+    HostPathType:  DirectoryOrCreate
+  kubeconfig:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/kubernetes/controller-manager.conf
+    HostPathType:  FileOrCreate
+  usr-local-share-ca-certificates:
+    Type:          HostPath (bare host directory volume)
+    Path:          /usr/local/share/ca-certificates
+    HostPathType:  DirectoryOrCreate
+  usr-share-ca-certificates:
+    Type:          HostPath (bare host directory volume)
+    Path:          /usr/share/ca-certificates
+    HostPathType:  DirectoryOrCreate
+QoS Class:         Burstable
+Node-Selectors:    <none>
+Tolerations:       :NoExecute op=Exists
+Events:
+  Type     Reason            Age                 From     Message
+  ----     ------            ----                ----     -------
+  Warning  DNSConfigForming  43s (x72 over 86m)  kubelet  Nameserver limits were exceeded, some nameservers have been omitted, the applied nameserver line is: 169.254.25.10 192.168.1.1 8.8.8.8

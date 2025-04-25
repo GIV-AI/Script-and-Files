@@ -1,0 +1,4 @@
+Connected to the metadata store
+Start watching Kubernetes Pods created by Argo
+Start watching Kubernetes Pods created by Argo
+Start watching Kubernetes Pods created by Argo

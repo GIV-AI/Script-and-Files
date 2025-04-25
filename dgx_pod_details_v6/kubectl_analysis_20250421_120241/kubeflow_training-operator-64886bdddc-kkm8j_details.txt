@@ -1,0 +1,64 @@
+Namespace: kubeflow
+Pod Name: training-operator-64886bdddc-kkm8j
+Status: 1/1
+Other Details: Running                    9 (6h32m ago)    5d22h
+Name:             training-operator-64886bdddc-kkm8j
+Namespace:        kubeflow
+Priority:         0
+Service Account:  training-operator
+Node:             jain-dgx-server/192.168.1.248
+Start Time:       Tue, 15 Apr 2025 14:01:33 +0000
+Labels:           control-plane=kubeflow-training-operator
+                  pod-template-hash=64886bdddc
+Annotations:      cni.projectcalico.org/containerID: 0eb0dd0ccf98ecb79a03aadf23187b1c67f0e42a05ed8a67e6322619de2afe26
+                  cni.projectcalico.org/podIP: 10.233.119.138/32
+                  cni.projectcalico.org/podIPs: 10.233.119.138/32
+                  sidecar.istio.io/inject: false
+Status:           Running
+IP:               10.233.119.138
+IPs:
+  IP:           10.233.119.138
+Controlled By:  ReplicaSet/training-operator-64886bdddc
+Containers:
+  training-operator:
+    Container ID:  docker://b7fa4a0b51a60da0448f4cc6c3565aecb55f7f5a0dea4ad03eb4277e6260f12d
+    Image:         kubeflow/training-operator:v1-5a5f92d
+    Image ID:      docker-pullable://kubeflow/training-operator@sha256:f57bdaa35df95a9e03748cd651ad763b012b311ef7a30174b9aaaecc2c60412e
+    Port:          8080/TCP
+    Host Port:     0/TCP
+    Command:
+      /manager
+    State:          Running
+      Started:      Mon, 21 Apr 2025 05:30:36 +0000
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    2
+      Started:      Mon, 21 Apr 2025 05:29:50 +0000
+      Finished:     Mon, 21 Apr 2025 05:30:36 +0000
+    Ready:          True
+    Restart Count:  9
+    Liveness:       http-get http://:8081/healthz delay=15s timeout=3s period=20s #success=1 #failure=3
+    Readiness:      http-get http://:8081/readyz delay=10s timeout=3s period=15s #success=1 #failure=3
+    Environment:
+      MY_POD_NAMESPACE:  kubeflow (v1:metadata.namespace)
+      MY_POD_NAME:       training-operator-64886bdddc-kkm8j (v1:metadata.name)
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-nj4dk (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-nj4dk:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>

@@ -1,0 +1,4 @@
+Namespace: s-jain-training-5
+Pod Name: daythreeexample3-0
+Status: 2/2
+Other Details: Running                    0                101m
