@@ -1,0 +1,42 @@
+apiVersion: v1
+data:
+  config.yaml: |
+    issuer: http://dex.auth.svc.cluster.local:5556/dex
+    storage:
+      type: kubernetes
+      config:
+        inCluster: true
+    web:
+      http: 0.0.0.0:5556
+    logger:
+      level: "debug"
+      format: text
+    oauth2:
+      skipApprovalScreen: true
+    enablePasswordDB: true
+    staticPasswords:
+    - email: deepops@example.com
+      hash: $2y$12$gp0a.WyM2PTn/HPtc62mTOd4ygCpbof7WWkAVfyV4q7g0DLb4PHV.
+      # https://github.com/dexidp/dex/pull/1601/commits
+      # FIXME: Use hashFromEnv instead
+      username: user
+      userID: "15841185641784"
+    - email: s-kle-training-12345
+      hash: $2b$12$.cp/VfoePEF.lBj/Rl6tx.X3XFCc6NXu/g/tEPMf9LR1cAvtz14kC
+      username: s-kle-training-12345
+    staticClients:
+    # https://github.com/dexidp/dex/pull/1664
+    - idEnv: OIDC_CLIENT_ID
+      redirectURIs: ["/login/oidc", "/authservice/oidc/callback"]
+      name: 'Dex Login Application'
+      secretEnv: OIDC_CLIENT_SECRET
+kind: ConfigMap
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","data":{"config.yaml":"issuer: http://dex.auth.svc.cluster.local:5556/dex\nstorage:\n  type: kubernetes\n  config:\n    inCluster: true\nweb:\n  http: 0.0.0.0:5556\nlogger:\n  level: \"debug\"\n  format: text\noauth2:\n  skipApprovalScreen: true\nenablePasswordDB: true\nstaticPasswords:\n- email: deepops@example.com\n  hash: $2y$12$gp0a.WyM2PTn/HPtc62mTOd4ygCpbof7WWkAVfyV4q7g0DLb4PHV.\n  # https://github.com/dexidp/dex/pull/1601/commits\n  # FIXME: Use hashFromEnv instead\n  username: user\n  userID: \"15841185641784\"\n- email: s-kle-training-12345\n  hash: $2b$12$.cp/VfoePEF.lBj/Rl6tx.X3XFCc6NXu/g/tEPMf9LR1cAvtz14kC\n  username: s-kle-training-12345\n- email: f-kle-training-6789\n  hash: $2b$12$9oKMo3W1dafb6CGd7WVMoObDHjShjO.NNJ53eWGPicuGLbvL7a7Fa\n  username: f-kle-training-6789\nstaticClients:\n# https://github.com/dexidp/dex/pull/1664\n- idEnv: OIDC_CLIENT_ID\n  redirectURIs: [\"/login/oidc\", \"/authservice/oidc/callback\"]\n  name: 'Dex Login Application'\n  secretEnv: OIDC_CLIENT_SECRET\n"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2025-02-25T14:06:43Z","name":"dex","namespace":"auth","resourceVersion":"58951231","uid":"949ceb2d-e8dd-4f7e-9430-0a55301bdf0c"}}
+  creationTimestamp: "2025-02-25T14:06:43Z"
+  name: dex
+  namespace: auth
+  resourceVersion: "58951312"
+  uid: 949ceb2d-e8dd-4f7e-9430-0a55301bdf0c

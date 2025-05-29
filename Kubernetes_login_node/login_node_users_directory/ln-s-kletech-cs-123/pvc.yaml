@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ln-s-kletech-cs-123
+  namespace: ln-s-kletech-cs-123
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 50Gi  
+  storageClassName: manual 

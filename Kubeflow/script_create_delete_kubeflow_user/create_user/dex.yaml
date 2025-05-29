@@ -1,0 +1,54 @@
+apiVersion: v1
+data:
+  config.yaml: |
+    issuer: http://dex.auth.svc.cluster.local:5556/dex
+    storage:
+      type: kubernetes
+      config:
+        inCluster: true
+    web:
+      http: 0.0.0.0:5556
+    logger:
+      level: "debug"
+      format: text
+    oauth2:
+      skipApprovalScreen: true
+    enablePasswordDB: true
+    staticPasswords:
+    - email: deepops@example.com
+      hash: $2y$12$gp0a.WyM2PTn/HPtc62mTOd4ygCpbof7WWkAVfyV4q7g0DLb4PHV.
+      # https://github.com/dexidp/dex/pull/1601/commits
+      # FIXME: Use hashFromEnv instead
+      username: user
+      userID: "15841185641784"
+    - email: s-kle-training-12345
+      hash: $2b$12$.cp/VfoePEF.lBj/Rl6tx.X3XFCc6NXu/g/tEPMf9LR1cAvtz14kC
+      username: s-kle-training-12345
+    - email: s-kle-cs-1
+      hash: $2b$12$yUPzLTws0E7x5bKkgJLmBOuJku3RR2rZqVrNOaAnbn3U5390MlPqS
+      username: s-kle-cs-1
+    - email: s-kle-ai-2
+      hash: $2b$12$QeKIjzQw6hpVE1TkNCHs7u7/Wx8xfUa3qwCNxAon5Jc1tDXc5ovIS
+      username: s-kle-ai-2
+    - email: s-kle-training-1
+      hash: $2b$12$SRiN/yNbXukTTePxUyj9UOkUrHY2JNJPZLjhOWzvMJUkiVLabH7RW
+      username: s-kle-training-1
+    - email: s-kle-training-2
+      hash: $2b$12$wUTebHRsKMwTzmUBNUomC.BN6x7gfR76YtLSYZeCEjB4cwR9DfLjO
+      username: s-kle-training-2
+    staticClients:
+    # https://github.com/dexidp/dex/pull/1664
+    - idEnv: OIDC_CLIENT_ID
+      redirectURIs: ["/login/oidc", "/authservice/oidc/callback"]
+      name: 'Dex Login Application'
+      secretEnv: OIDC_CLIENT_SECRET
+kind: ConfigMap
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","data":{"config.yaml":"issuer: http://dex.auth.svc.cluster.local:5556/dex\nstorage:\n  type: kubernetes\n  config:\n    inCluster: true\nweb:\n  http: 0.0.0.0:5556\nlogger:\n  level: \"debug\"\n  format: text\noauth2:\n  skipApprovalScreen: true\nenablePasswordDB: true\nstaticPasswords:\n- email: deepops@example.com\n  hash: $2y$12$gp0a.WyM2PTn/HPtc62mTOd4ygCpbof7WWkAVfyV4q7g0DLb4PHV.\n  # https://github.com/dexidp/dex/pull/1601/commits\n  # FIXME: Use hashFromEnv instead\n  username: user\n  userID: \"15841185641784\"\n- email: s-kle-training-12345\n  hash: $2b$12$.cp/VfoePEF.lBj/Rl6tx.X3XFCc6NXu/g/tEPMf9LR1cAvtz14kC\n  username: s-kle-training-12345\n- email: s-kle-cs-1\n  hash: $2b$12$yUPzLTws0E7x5bKkgJLmBOuJku3RR2rZqVrNOaAnbn3U5390MlPqS\n  username: s-kle-cs-1\n- email: s-kle-ai-2\n  hash: $2b$12$QeKIjzQw6hpVE1TkNCHs7u7/Wx8xfUa3qwCNxAon5Jc1tDXc5ovIS\n  username: s-kle-ai-2\n- email: s-kle-training-1\n  hash: $2b$12$SRiN/yNbXukTTePxUyj9UOkUrHY2JNJPZLjhOWzvMJUkiVLabH7RW\n  username: s-kle-training-1\nstaticClients:\n# https://github.com/dexidp/dex/pull/1664\n- idEnv: OIDC_CLIENT_ID\n  redirectURIs: [\"/login/oidc\", \"/authservice/oidc/callback\"]\n  name: 'Dex Login Application'\n  secretEnv: OIDC_CLIENT_SECRET\n"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2025-02-25T14:06:43Z","name":"dex","namespace":"auth","resourceVersion":"59056349","uid":"949ceb2d-e8dd-4f7e-9430-0a55301bdf0c"}}
+  creationTimestamp: "2025-02-25T14:06:43Z"
+  name: dex
+  namespace: auth
+  resourceVersion: "59102093"
+  uid: 949ceb2d-e8dd-4f7e-9430-0a55301bdf0c

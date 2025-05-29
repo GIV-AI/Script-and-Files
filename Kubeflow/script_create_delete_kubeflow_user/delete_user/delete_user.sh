@@ -5,7 +5,7 @@
 check_valid_namespace() {
     local NAMESPACE="$1"
     NAMESPACE_VALID=$(sudo kubectl get ns)
-    NAMESPACE_VALID_FIRST_COL=$(echo "$NAMESPACE_VALID" | cut -f 1 -d " ")
+    NAMESPACE_VALID_FIRST_COL=$(echo "$NAMESPACE_VALID" | awk '{print $1}')
     if echo "$NAMESPACE_VALID_FIRST_COL" | grep "^$NAMESPACE$" > /dev/null; then
         echo True
     else

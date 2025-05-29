@@ -2,7 +2,7 @@
 
 echo "Processing..... please wait for 10 mintues"
 # Call configuartion file 
-source /home/vips-dgx/Scripts_and_Files/all_logs_of_dgx_scripts/configuration.sh
+source /home/kle-dgx/Scripts_and_Files/all_logs_of_dgx_scripts/configuration.sh
 
 # multiple execution
 
@@ -20,6 +20,9 @@ mkdir -p "$MAIN_PATH/gpu"
 mkdir -p "$MAIN_PATH/network"
 mkdir -p "$MAIN_PATH/disk"
 mkdir -p "$MAIN_PATH/all_running_containers"
+mkdir -p "$MAIN_PATH/all_rootless_containers"
+mkdir -p "$MAIN_PATH/login_node_running_pods_logs"
+
 # Redirect health information
 sudo nvsm show health > "$MAIN_PATH/health/$DATE.txt"
 
@@ -37,12 +40,12 @@ sudo netstat -tulpen > "$MAIN_PATH/network/$DATE.txt"
 sudo df -h > "$MAIN_PATH/disk/$DATE.txt"
 
 # Call the next script
-/home/vips-dgx/Scripts_and_Files/all_logs_of_dgx_scripts/filter_docker_containers_using_gpu.sh > "$MAIN_PATH/all_running_containers/$DATE.txt"
-
+/home/kle-dgx/Scripts_and_Files/all_logs_of_dgx_scripts/filter_docker_containers_using_gpu.sh > "$MAIN_PATH/all_running_containers/$DATE.txt"
+/home/kle-dgx/Scripts_and_Files/all_logs_of_dgx_scripts/filter_rootless_docker_containers_using_gpu.sh > "$MAIN_PATH/all_rootless_containers/$DATE.txt"
 
 sleep 300
 # Call the next script
-/home/vips-dgx/Scripts_and_Files/all_logs_of_dgx_scripts/dgx_logs_summary.sh
+/home/kle-dgx/Scripts_and_Files/all_logs_of_dgx_scripts/dgx_logs_summary.sh
 
 # Exit script
 exit

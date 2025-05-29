@@ -36,6 +36,9 @@ sudo kubectl describe ns -A > "$describe_ns"
 get_configmap="6_get_configmap.txt"
 sudo kubectl get configmap jupyter-web-app-config-84khm987mh -n kubeflow -o yaml > "$get_configmap"
 
+docker_images="7_docker_images.txt"
+docker images > "$docker_images"
+
 
 # Process each pod and store results
 while read -r namespace name status rest; do
@@ -98,6 +101,9 @@ get_user_storage() {
     echo "" >> "$output_file"
 }
 
+
+
+
 # Execute functions
 get_df_command_output
 get_ram_usage
@@ -105,7 +111,6 @@ get_root_directory_storage
 get_user_storage
 
 echo "Storage information saved to $output_file"
-
 
 # Create a zip file with all results
 zip_file="../kubectl_analysis_$(date +%Y%m%d).zip"

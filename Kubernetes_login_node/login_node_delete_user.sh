@@ -1,8 +1,20 @@
 #!/bin/bash
 
-# Prompt for username
-read -p "Enter username to delete: " USERNAME
-USER_DIR=/home/vips-dgx/Scripts_and_Files/Kubernetes_login_node/login_node_users_directory/"$USERNAME"
+# === Step 0: List Kubernetes namespaces starting with 'ln-' ===
+echo "Login node username details"
+LOGIN_USERS=$(sudo kubectl get ns --no-headers -o custom-columns=":metadata.name" | grep '^ln-')
+
+if [[ -z "$LOGIN_USERS" ]]; then
+    echo "No login node username found!"
+    exit 0
+else
+    echo "$LOGIN_USERS"
+    echo
+fi
+
+# === Step 1: Prompt for username ===
+read -p "Enter login node username to delete: " USERNAME
+USER_DIR=/home/kle-dgx/Scripts_and_Files/Kubernetes_login_node/login_node_users_directory/"$USERNAME"
 USER_FILE="$USER_DIR/config_user.yaml"
 
 # Check if namespace exists
@@ -33,3 +45,43 @@ else
     echo "Namespace '$USERNAME' does not exist. No action taken."
 fi
 
+# === Step 3: Delete user on remote server ===
+REMOTE_USER=kle-hp-mgmt
+REMOTE_HOST=10.2.0.41
+
+# Check if user exists remotely
+echo "Checking if '$USERNAME' exists on $REMOTE_HOST..."
+ssh "$REMOTE_USER@$REMOTE_HOST" "id '$USERNAME'" &>/dev/null
+
+if [[ $? -ne 0 ]]; then
+    echo "User '$USERNAME' does not exist on the remote server."
+else
+    read -p "Do you want to delete '$USERNAME' from the remote server as well? [y/N]: " confirm
+    confirm=$(echo "$confirm" | tr '[:upper:]' '[:lower:]')
+
+    if [[ "$confirm" == "y" ]]; then
+        echo "Connecting to remote server to delete user '$USERNAME'..."
+        ssh -t "$REMOTE_USER@$REMOTE_HOST" bash -c "'
+            echo \"Stopping all processes for user '$USERNAME'...\"
+            USER_PROCS=\$(pgrep -u \"$USERNAME\")
+            if [[ -n \"\$USER_PROCS\" ]]; then
+                echo \"Killing user processes: \$USER_PROCS\"
+                sudo kill -9 \$USER_PROCS
+            fi
+
+            echo \"Cleaning up lingering processes...\"
+            sudo pkill -u \"$USERNAME\" &>/dev/null
+            sudo killall -u \"$USERNAME\" &>/dev/null
+
+            echo \"Deleting user '$USERNAME'...\"
+            sudo userdel -r \"$USERNAME\" 2>/dev/null && echo \"User '$USERNAME' deleted.\"
+
+            echo \"Exiting remote server...\"
+            exit
+        '"
+    else
+        echo "Remote deletion skipped."
+    fi
+fi
+
+echo "All operations completed. Back on local machine."

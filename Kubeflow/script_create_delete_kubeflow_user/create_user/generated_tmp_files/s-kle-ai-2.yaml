@@ -1,0 +1,18 @@
+apiVersion: kubeflow.org/v1beta1
+kind: Profile
+metadata:
+  name: s-kle-ai-2
+spec:
+  owner:
+    kind: User
+    name: s-kle-ai-2
+  resourceQuotaSpec:
+    hard:
+      cpu: "17"
+      memory: "33Gi"
+      requests.nvidia.com/gpu: "2"
+      requests.nvidia.com/mig-3g.40gb: "1"
+      requests.nvidia.com/mig-2g.20gb: "0"
+      requests.nvidia.com/mig-1g.10gb: "1"
+      requests.storage: "40Gi"
+  

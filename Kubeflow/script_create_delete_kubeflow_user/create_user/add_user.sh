@@ -1,23 +1,24 @@
 #!/bin/bash
 
 create_username() {
-  local username="$1"
-  local types="$2"
-  local id="$3"
-  
+  local ins="$1"
+  local username="$2"
+  local types="$3"
+  local id="$4"
+
   if [ "$types" = "student" ]; then
-    result="s-$username-$id"
+    result="s-$ins-$username-$id"
   elif [ "$types" = "faculty" ]; then
-    result="f-$username-$id"
+    result="f-$ins-$username-$id"
   else
     result="Invalid type"
   fi
-  
+
   echo "$result"
 }
 # Function to shuffle a string
 shuffle_string() {
-    echo "$1" | fold -w1 | shuf | tr -d '\n'
+    echo "$2" | fold -w1 | shuf | tr -d '\n'
 }
 
 # Function to modify username
@@ -75,11 +76,10 @@ kubeflow_entry() {
   local cpu="$3"
   local memory="$4"
   local gpu="$5"
-  local mig_40="$6"
-  local mig_20="$7"
-  local mig1g_20="$8"
-  local mig_10="$9"
-  local storage="${10}"
+  local mig_71="$6"
+  local mig_35="$7"
+  local mig_18="$8"
+  local storage="$9"
 
   TEMPLATE='''apiVersion: kubeflow.org/v1beta1
 kind: Profile
@@ -96,12 +96,11 @@ spec:
       requests.nvidia.com/gpu: "%s"
       requests.nvidia.com/mig-3g.40gb: "%s"
       requests.nvidia.com/mig-2g.20gb: "%s"
-      requests.nvidia.com/mig-1g.20gb: "%s"
       requests.nvidia.com/mig-1g.10gb: "%s"
       requests.storage: "%sGi"
   '''
 
-  output_config=$(printf "$TEMPLATE" "$name" "$email" "$cpu" "$memory" "$gpu" "$mig_40" "$mig_20" "$mig1g_20" "$mig_10" "$storage")
+  output_config=$(printf "$TEMPLATE" "$name" "$email" "$cpu" "$memory" "$gpu" "$mig_71" "$mig_35" "$mig_18" "$storage")
 
   echo "$output_config" > "$name.yaml"
   #echo "Filled template has been saved to $name.yaml."
@@ -139,4 +138,3 @@ dex_entry() {
     echo "$var1" > "$new_file"
     echo "$var2" >> "$new_file"
 }
-

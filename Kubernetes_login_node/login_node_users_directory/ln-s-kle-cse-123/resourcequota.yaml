@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: resource-quota
+  namespace: ln-s-kle-cse-123
+spec:
+  hard:
+    cpu: "14"
+    memory: "35Gi"
+    requests.nvidia.com/gpu: "1"
+    requests.nvidia.com/mig-3g.40gb: "2"
+    requests.nvidia.com/mig-2g.20gb: "1"
+    requests.nvidia.com/mig-1g.10gb: "1"
+    pods: "2"

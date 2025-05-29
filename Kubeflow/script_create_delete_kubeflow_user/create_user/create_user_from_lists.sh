@@ -15,15 +15,17 @@ else
     mkdir -p "generated_tmp_files"
     echo "Directory created."
 fi
+
 # Function to convert uppercase to lowercase
 convert_to_lowercase() {
     echo "$1" | tr '[:upper:]' '[:lower:]'
 }
 
 # Read the file line by line, starting from the second line
-awk 'NR>1' "$1" | while IFS=, read -r col1 col2 col3 col4 col5 col6 col7 col8 col9 col10 col11 col12
+awk 'NR>1' "$1" | while IFS=, read -r col0 col1 col2 col3 col4 col5 col6 col7 col8 col9 col10 col11
 do
     # Convert col1 and col4 to lowercase
+    col0_lowercase=$(convert_to_lowercase "$col0")
     col1_lowercase=$(convert_to_lowercase "$col1")
     col4_lowercase=$(convert_to_lowercase "$col4")
     col3_lowercase=$(convert_to_lowercase "$col3")
@@ -33,7 +35,7 @@ do
         exit
     fi
     # Execute the script for each line
-    username=$(create_username "$col1_lowercase" "$col4_lowercase" "$col3_lowercase")
+    username=$(create_username "$col0_lowercase" "$col1_lowercase" "$col4_lowercase" "$col3_lowercase")
 
     # Check if the namespace already exists
     if sudo kubectl get ns "$username" 2>/dev/null; then
@@ -47,17 +49,15 @@ do
         col9=$(awk 'BEGIN {print int('$col9')}')
         col10=$(awk 'BEGIN {print int('$col10')}')
         col11=$(awk 'BEGIN {print int('$col11')}')
-	col12=$(awk 'BEGIN {print int('$col12')}')
 
         # Check if variables are within specified range
-        if [ "$col5" -gt 0 ] && [ "$col5" -lt 64 ] &&
-           [ "$col6" -gt 0 ] && [ "$col6" -lt 128 ] &&
-           [ "$col7" -gt 0 ] && [ "$col7" -lt 8 ] &&
-           [ "$col8" -gt 0 ] && [ "$col8" -lt 8 ] &&
-           [ "$col9" -gt 0 ] && [ "$col9" -lt 8 ] &&
-	   [ "$col10" -gt 0 ] && [ "$col10" -lt 8 ] &&
-	   [ "$col11" -gt 0 ] && [ "$col11" -lt 8 ] &&
-           [ "$col12" -gt 0 ] && [ "$col12" -lt 51 ]; then
+        if [ "$col5" -ge 0 ] && [ "$col5" -lt 112 ] &&
+           [ "$col6" -ge 0 ] && [ "$col6" -lt 256 ] &&
+           [ "$col7" -ge 0 ] && [ "$col7" -lt 8 ] &&
+           [ "$col8" -ge 0 ] && [ "$col8" -lt 8 ] &&
+           [ "$col9" -ge 0 ] && [ "$col9" -lt 8 ] &&
+           [ "$col10" -ge 0 ] && [ "$col10" -lt 8 ] &&
+           [ "$col11" -ge 0 ] && [ "$col11" -lt 100 ]; then
            
            echo "$username"
            password=$(modify_username "$col1")
@@ -65,7 +65,7 @@ do
            hashed_password=$(python3 encryption.py $password)
            echo "$hashed_password"
 	   cd generated_tmp_files
-           yamlfile=$(kubeflow_entry "$username" "$username" "$col5" "$col6" "$col7" "$col8" "$col9" "$col10" "$col11" "$col12")
+           yamlfile=$(kubeflow_entry "$username" "$username" "$col5" "$col6" "$col7" "$col8" "$col9" "$col10" "$col11")
            sudo kubectl apply -f "$username".yaml
 	   cd ..
            sudo kubectl get configmap dex -n auth -o yaml > dex.yaml
