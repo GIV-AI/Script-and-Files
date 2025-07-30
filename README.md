@@ -5,7 +5,7 @@ This repository contains various scripts, configurations, and utilities related 
 ## Folder and File Description
 
 ### 1. Kubeflow Folder
-Contains templates and scripts related to Kubeflow setup and user management:
+Contains templates and scripts related to Kubeflow image setup and user management:
 - **Creating_Kubeflow_Images template**
   - `Dockerfile` — Dockerfile template for Kubeflow images
   - `Dockerfile-RAPIDS` — Dockerfile template with RAPIDS support
@@ -21,11 +21,11 @@ Contains logs, user YAML files, and scripts related to managing users and pods o
 - **login_node_users_directory** — Contains user YAML files
 - **script_file_send_to_login_user** — Files sent to users upon creation:
   - `docker_image_available.txt`
-  - `login_node_create_pod_service.sh` — Script to create pod service
+  - `login_node_create_pod_service.sh` — Script to create pod and service
   - `resource_quota.txt`
 - **login_node_create_pod_service.sh** — Script to create pod service (sent to user)
-- **login_node_create_user.sh** — Script to create a login user
-- **login_node_delete_user.sh** — Script to delete a login user
+- **login_node_create_user.sh** — Script to create a login node user
+- **login_node_delete_user.sh** — Script to delete a login node user
 - **login_node_running_pods.sh** — Script to get login node pods details
 
 ---
@@ -41,7 +41,7 @@ Contains scripts run by cronjob to generate and manage DGX system logs:
 ---
 
 ### 4. dgx_pod_details_v6 Folder
-- `pod_details_v6.sh` — Script to collect DGX pod details and generate a report tar file for sharing
+- `pod_details_v6.sh` — Script to collect DGX pod details and generate a report tar file (sent to us by client)
 
 ---
 
@@ -60,7 +60,7 @@ Scripts to manage rootless Docker users and containers:
 ---
 
 ### 7. Other Scripts and Files
-- `filter_docker_containers_using_gpu_v7.sh` — Get all Docker containers utilizing GPUs and their MIG configuration
+- `filter_docker_containers_using_gpu_v7.sh` — Get all rootful Docker containers utilizing GPUs and their MIG configuration
 - `kubeflow_access_logs.sh` — Get all users logged into Kubeflow
 - `kubeflow_notebooks_running_logs.sh` — List all running Kubeflow notebooks
 - `pytorch_gpu_example.py` — Example Python script to check if PyTorch container is utilizing GPU
